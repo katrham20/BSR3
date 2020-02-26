@@ -1,0 +1,92 @@
+!----------------------------------------------------------------------
+!     target --> target_states
+!----------------------------------------------------------------------
+      Implicit real(8) (A-H,O-Z)
+      Character(80), allocatable :: conf(:), name(:)
+      Real(8), allocatable :: E_au(:), E_exp(:)
+      Integer, allocatable :: J2(:)
+      Character(80) :: AF_inp='target'
+      Character(80) :: AF_out='target_states'
+      Character(80) :: AF_exp='thresholds'
+      Character(200) :: AF, AF1,AF2
+
+      Call Read_aarg('inp',AF_inp)
+      Call Check_file(AF_inp)
+      inp=1; open(inp,file=AF_inp)
+
+      ntarg=0; Call Read_ipar(inp,'ntarg',ntarg)
+      if(ntarg.le.0) Stop 'ntarg <= 0'
+
+      Allocate(E_au(ntarg), name(ntarg), conf(ntarg), J2(ntarg) )
+      read(inp,*)
+      Do i = 1, ntarg
+       read(inp,*) name(i), conf(i), i1,i2,i3, E_au(i)
+      End do
+
+      nexp = 3
+      Call Read_aarg('exp',AF_exp)
+      iexp = Icheck_file(AF_exp)
+
+      if(iexp.ne.0)  then
+        open(nexp,file=AF_exp)
+        Allocate(E_exp(ntarg))
+        Do i = 1, ntarg
+         read(nexp,*) E_exp(i)
+        End do
+        close(nexp)
+      end if
+
+      nu = 2;  J2 = 0
+      Do i = 1, ntarg
+       AF = trim(name(i))//'.c'
+       open(nu, file = AF)
+       rewind(nu)
+       read(nu,'(a)') AF
+       in = INDEX(AF,'=') 
+       if(in.gt.0)  read(AF(in+1:),*) J2(i)
+       conf(i) = ' '
+       in = INDEX(AF,':') 
+       if(in.gt.0)  read(AF(in+1:),*) conf(i)
+
+       if(iexp.eq.0) Cycle
+       S = 0.d0
+       Call Read_rpar(nu,'E_exp', S)
+       Backspace(nu)
+       write(nu,*)
+       write(nu,'(a,f16.8)') 'E_exp = ',E_exp(i)
+
+      End do
+
+      Call Read_ipar(inp,'nz',nz);  Z=nz
+      Call Conv_au (Z,AWT,au_cm,au_eV,0)      
+
+      imax=0; jmax=0
+      Do i = 1,ntarg
+       ii = LEN_TRIM(name(i)); if(ii.gt.imax) imax=ii
+       ii = LEN_TRIM(conf(i)); if(ii.gt.jmax) jmax=ii
+      End do
+
+      Call Read_aarg('out',AF_out)
+      open(nu,file=AF_out)
+      write(nu,'(a,i6)') 'ntarg =', ntarg
+      write(nu,*)
+      Do i = 1,ntarg
+       E = E_au(i) - E_au(1)
+       E_Ry = 2*E
+       E_eV = E*au_eV
+       E_cm = E*au_cm
+       AF1 = name(i); AF2 = conf(i)
+       write(nu,'(i4.4,3x,a,3x,a,2x,a,i3,3x,F20.8,F17.6,F15.5,F13.1)') &
+          i, AF1(1:imax),AF2(1:jmax),'2J =',J2(i), E_au(i), E_Ry, E_ev, E_cm
+
+      End do 
+ 
+      End ! program
+
+
+
+      
+                
+
+
+      

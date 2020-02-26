@@ -1,0 +1,15 @@
+rm BS_hd.f90
+
+cat spline_atomic.f90 >> BS_hd.f90
+cat spline_param.f90 >> BS_hd.f90
+cat spline_grid.f90 >> BS_hd.f90
+cat spline_galerkin.f90 >> BS_hd.f90
+cat define_grid.f90 >> BS_hd.f90
+cat define_spline.f90 >> BS_hd.f90
+cat mvcv.f90 >> BS_hd.f90
+cat bvmv.f90 >> BS_hd.f90
+cat mrm.f90 >> BS_hd.f90
+cat gauss.f90 >> BS_hd.f90
+cat facsb.f90 >> BS_hd.f90
+cat vbsplvd.f90 >> BS_hd.f90
+cat azl.f90 >> BS_hd.f90

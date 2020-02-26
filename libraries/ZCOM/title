@@ -1,0 +1,64 @@
+!---------------------------------------------------------------
+!     ZCOM LIBRARY
+!---------------------------------------------------------------
+!     contains common routines frequently used by other programs
+!---------------------------------------------------------------
+!     MODULES:
+!
+!     atom_param - some atomic parameters and quantities
+!---------------------------------------------------------------
+!     ROUTINES:
+!
+!     al.f90
+!     aname.f90
+!     angs_air.f90
+!     anumber.f90
+!     atom_param.f90
+!     check_file.f90
+!     clebsh.f90
+!     conv_au.f90
+!     det.f90
+!     dj_fact.f90
+!     elf.f90
+!     el_nlk.f90
+!     f_gaus.f90
+!     gauss.f90
+!     hwf.f90
+!     iglq.f90
+!     interv.f90
+!     inv.f90
+!     iopen.f90
+!     ipointer.f90
+!     isort.f90
+!     isort1.f90
+!     isort2.f90
+!     iterm.f90
+!     itri.f90
+!     la.f90
+!     num.f90
+!     read_ipar.f90
+!     read_rarg.f90
+!     reduce_mat.f90
+!     rrtc.f90
+!     rw_arrays.f90
+!     sort1.f90
+!     sym_mat.f90
+!     t_ls_jj.f90
+!     t_ls_jk.f90
+!     xlagr.f90
+!     y_3j.f90
+!     zcb.f90
+!     zcfg.f90
+!     zcklm.f90
+!     zclkl.f90
+!     zis.f90
+!     z_3j.f90
+!     z_3j0.f90
+!     z_6j.f90
+!     z_9j.f90
+!
+!--------------------------------------------------------------
+!
+!     Oleg Zatsarinny, COPYRIGHT 2015, oleg_zoi@yahoo.com
+!
+!--------------------------------------------------------------

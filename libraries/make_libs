@@ -1,0 +1,16 @@
+for n in  ZCOM RADIAL SHELLS BS  DBS  ZCONFLS ZCONFJJ  
+do
+
+cd $n
+echo 'making' $n
+make > make_lib.out  
+cd ..
+
+done
+
+
+
+
+
+
+
