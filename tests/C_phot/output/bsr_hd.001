@@ -1,0 +1,40 @@
+B S R _ H D 
+***********
+ 
+calculations for partial wave:  klsp =  1
+ 
+itype =   -1  -  bound-state calculations
+ 
+kch   =    5  -  number of channels
+kcp   =    0  -  number of pertubers
+nhm   =  370  -  full size of matrix
+ 
+iexp  =    0  -  theoretical target energies
+ 
+jmvc  =    0  -  number of channel orbitals for inclusion of
+                 mass-velocity corrections
+ 
+Restrictions on interaction matrix:
+ 
+Emin  =   0.00000
+Emax  =   0.00000
+Egap  =   0.00100
+ 
+All one-channel solutions with E<Emin, E>Emax or abs(E)<Egap will be deleted.
+ 
+Restrictions for output of bound states:
+ 
+msol   =    1  - max. number of solutions
+it_max =    0  - max. target threshold
+ 
+Zero value of any parameter means no restrictions.
+
+Problem is a GENERALIZED eigenvalue problem
+
+
+new basis: khm =   351
+
+
+Eval(1:5) =      -37.81480      -37.77457      -37.76649      -37.75406      -37.73728
+
+time =      0.00 min.

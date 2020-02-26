@@ -1,0 +1,24 @@
+B S R _ D M A T
+***************
+ 
+multipole mode:  E1
+
+Atomic weight =      12.00
+a.u. --> cm-1 , au_cm =    219464.5985484851
+a.u. --> eV   , au_eV =        27.2101394887
+
+ 
+initial state - cfg.001                                 
+ncfg1  =   865
+nterm1 =     1
+ 
+orbitals in first set:    nwf1 =  24   index shift =   1
+ 
+ 
+final state   - cfg.002                                 
+ncfg2  =  2254
+nterm2 =     1
+orbitals in second set:   nwf2 =  29   index shift =   7
+ 
+
+BSR_DMAT:      0.14 min 
