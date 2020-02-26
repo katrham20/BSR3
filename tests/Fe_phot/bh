@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH -J bh??
+#SBATCH -o bh??.out
+#SBATCH -e bh??.err
+#SBATCH -n 1
+#SBATCH -N 1
+#SBATCH -p normal
+#SBATCH -t 12:00:00
+##SBATCH -A TG-PHY080033N
+##SBATCH -M oleg_zoi@yahoo.com
+
+  set echo
+  ~/BIN/bsr_hd3 klsp1=?? 
+ 
+

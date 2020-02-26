@@ -1,0 +1,17 @@
+#!/bin/bash
+#SBATCH -J bm04
+#SBATCH -o bm.out
+#SBATCH -e bm.err
+#SBATCH -n 256
+#SBATCH -N 16
+#SBATCH -p development
+#SBATCH -t 02:00:00
+##SBATCH -A TG-PHY080033N
+##SBATCH -M oleg_zoi@yahoo.com
+
+  set echo
+  ibrun ~/BIN/bsr_breit_mpi4 klsp1=04
+  ibrun ~/BIN/bsr_mat_mpi4 klsp1=04
+  ibrun ~/BIN/bsr_hdb4 klsp1=04 itype=-1
+  ibrun ~/BIN/bsr_hdb4 klsp1=04 itype=1
+
