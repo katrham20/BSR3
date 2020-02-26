@@ -1,0 +1,22 @@
+# bsr_conf
+
+max_LT = 7
+max_ST = 3
+max_ll = 3
+
+#  bsr_mat:
+
+mrel = 2
+
+#  bsr_hd:
+
+itype = -1
+
+jmvc = 10
+
+Emax = -0.1
+
+msol = 30
+
+n_max= 12
+ 
