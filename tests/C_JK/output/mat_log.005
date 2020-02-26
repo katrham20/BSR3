@@ -1,0 +1,96 @@
+BSR_MAT:   klsp =     5
+*************************
+
+c-file data: 
+
+ncfg   =   1692  -  number of configurations
+nwf    =     60  -  number of orbitals: 
+
+
+Partial wave LSP (JP): 
+
+ipar   =      1  -  parity
+jpar   =      5  -  total 2J
+
+Main dimensions in bsr_matrix module:
+
+kch    =     46  -  number of channels 
+kcp    =      0  -  number of perturbers 
+kns    =    121  -  number of splines 
+
+Interaction matrix dimension:       5566
+
+Reqired memory for bsr-matrix:     118.2 Mb
+
+Reqired memory for cmdata:         267.2 Mb
+
+Reqired memory for bufer:           19.1 Mb
+
+ndet  =       58      92
+ndef  =      981    2945
+
+Checking the overlap matrix for overlaps > S_ovl = 0.750
+
+Overlaps:           0.00 min 
+
+L-integrals:        0.02 min 
+
+Z-integrals:        0.05 min 
+
+R-integrals:        1.14 min 
+
+Orthogonal conditions:
+
+ks3  ->      1s  2s1
+ks4  ->      1s  2s1
+kp3  ->     2p1
+kp4  ->     2p1
+kp5  ->     2p1
+kp6  ->     2p1
+kp7  ->     2p1
+kp8  ->     2p1
+kp9  ->     2p1
+kpa  ->     2p1
+kpb  ->     2p1
+kpc  ->     2p1
+kpd  ->     2p1
+
+BS_ORTH:            0.03 min 
+
+Asymptotic coefficients: mk =  7
+
+Target radiative data:  
+
+f-value, A-value, branching ratio, dipole reduced matrix elements
+
+    1    8   9.617E-02   7.689E+07   0.33386   -0.72661E+00     2p2_3P0             2p3s_3P1            
+    1   10   1.427E-05   1.227E+04   0.00006   -0.86890E-02     2p2_3P0             2p3s_1P1            
+    1   11   8.106E-02   7.991E+07   0.55676   -0.63307E+00     2p2_3P0             2s_2p3_3D1          
+    2    6   9.124E-09   2.803E+00   0.25101   -0.57028E-03     2p2_3P1             2s_2p3_5S2          
+    2    7   3.202E-02   2.301E+08   1.00000    0.45197E-08     2p2_3P1             2p3s_3P0            
+    2    8   2.401E-02   5.756E+07   0.24993   -0.62893E+00     2p2_3P1             2p3s_3P1            
+    2    9   4.013E-02   5.780E+07   0.25053    0.81275E+00     2p2_3P1             2p3s_3P2            
+    2   10   4.759E-06   1.228E+04   0.00006   -0.86935E-02     2p2_3P1             2p3s_1P1            
+    2   11   2.019E-02   5.967E+07   0.41576    0.54727E+00     2p2_3P1             2s_2p3_3D1          
+    2   12   6.078E-02   1.078E+08   0.75162   -0.94961E+00     2p2_3P1             2s_2p3_3D2          
+    3    6   1.637E-08   8.364E+00   0.74899    0.98683E-03     2p2_3P2             2s_2p3_5S2          
+    3    8   2.401E-02   9.583E+07   0.41609   -0.81215E+00     2p2_3P2             2p3s_3P1            
+    3    9   7.210E-02   1.729E+08   0.74946   -0.14068E+01     2p2_3P2             2p3s_3P2            
+    3   10   2.700E-06   1.160E+04   0.00005   -0.84560E-02     2p2_3P2             2p3s_1P1            
+    3   11   8.013E-04   3.944E+06   0.02748    0.14080E+00     2p2_3P2             2s_2p3_3D1          
+    3   12   1.206E-02   3.562E+07   0.24838   -0.54629E+00     2p2_3P2             2s_2p3_3D2          
+    3   13   6.792E-02   1.433E+08   1.00000    0.12962E+01     2p2_3P2             2s_2p3_3D3          
+    4    8   9.707E-06   2.488E+04   0.00011   -0.18241E-01     2p2_1D2             2p3s_3P1            
+    4    9   2.120E-07   3.266E+02   0.00000    0.26943E-02     2p2_1D2             2p3s_3P2            
+    4   10   6.404E-02   1.798E+08   0.85252    0.14483E+01     2p2_1D2             2p3s_1P1            
+    4   11   2.271E-09   7.538E+00   0.00000   -0.26159E-03     2p2_1D2             2s_2p3_3D1          
+    4   12   3.323E-08   6.616E+01   0.00000    0.10005E-02     2p2_1D2             2s_2p3_3D2          
+    4   13   1.871E-07   2.662E+02   0.00000   -0.23744E-02     2p2_1D2             2s_2p3_3D3          
+    5    8   1.236E-05   3.753E+03   0.00002    0.10491E-01     2p2_1S0             2p3s_3P1            
+    5   10   9.096E-02   3.107E+07   0.14731   -0.87405E+00     2p2_1S0             2p3s_1P1            
+    5   11   2.249E-07   9.497E+01   0.00000   -0.13035E-02     2p2_1S0             2s_2p3_3D1          
+
+Polarizability of the ground state =     2.169
+
+
+Total time:         1.25 min
