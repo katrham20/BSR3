@@ -1,0 +1,171 @@
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_zconst.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_coef_list.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_det.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_dets.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_id4.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_int_lst.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_rk.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_rk4.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_tmat_ion.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_tmat_list.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_tm_list.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_tm_LS.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_zoef.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_atoms_par.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_atoms_LS.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_orth.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_after.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_new_dets.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_new_defs.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_dip.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_c_data.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_obs.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_file.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries angs_air.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries ANG_dj_fact.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries ANG_itra.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries ANG_kappa.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries ANG_t_ls_jk.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries ANG_zcklm.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries ANG_zclkl.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries ANG_z_3j.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries ANG_z_6j.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries ANG_z_9j.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries check_file.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries clean_a.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries conv_au.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries det.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries full_mat.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries FUN_alegf.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries FUN_bessel.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries FUN_binom.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries FUN_cgamma.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries FUN_dcoulfg.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries FUN_dirac.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries FUN_gaussian.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries FUN_hwf.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries FUN_int_exp.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries FUN_legendre.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries FUN_zcfg.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries gauss_LA.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries gauss_points.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries get_ij.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries interv.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries inv.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries ipointer.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries LAPACK_calls.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries num.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries read_arg.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries read_par.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries recup_a.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries rrtc.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries SCT_coul_phase.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries SCT_epahse.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries SCT_fano_tma.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries SCT_iopen.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries SCT_kma_om.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries SCT_kma_tma.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries SCT_pri_mat.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries SCT_sym_mat.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries SCT_time_del.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries SCT_zkmat.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries SCT_zrmat.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries SCT_zsmat.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries sl_scale.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries sorting_routines.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries spectroscopic.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries splin3.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries xlagr.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries zis.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries xAy.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries det_fact.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries stop_mp.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries check_det_new.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries det_fact_new.f90
+ar rv libzcom.a MOD_zconst.o MOD_coef_list.o MOD_det.o MOD_dets.o MOD_id4.o MOD_int_lst.o MOD_rk.o MOD_rk4.o MOD_tmat_ion.o MOD_tmat_list.o MOD_tm_list.o MOD_tm_LS.o MOD_zoef.o MOD_atoms_par.o MOD_atoms_LS.o MOD_orth.o MOD_after.o MOD_new_dets.o MOD_new_defs.o MOD_dip.o MOD_c_data.o MOD_obs.o MOD_file.o angs_air.o ANG_dj_fact.o ANG_itra.o ANG_kappa.o ANG_t_ls_jk.o ANG_zcklm.o ANG_zclkl.o ANG_z_3j.o ANG_z_6j.o ANG_z_9j.o check_file.o clean_a.o conv_au.o det.o full_mat.o FUN_alegf.o FUN_bessel.o FUN_binom.o FUN_cgamma.o FUN_dcoulfg.o FUN_dirac.o FUN_gaussian.o FUN_hwf.o FUN_int_exp.o FUN_legendre.o FUN_zcfg.o gauss_LA.o gauss_points.o get_ij.o interv.o inv.o ipointer.o LAPACK_calls.o num.o read_arg.o read_par.o recup_a.o rrtc.o SCT_coul_phase.o SCT_epahse.o SCT_fano_tma.o SCT_iopen.o SCT_kma_om.o SCT_kma_tma.o SCT_pri_mat.o SCT_sym_mat.o SCT_time_del.o SCT_zkmat.o SCT_zrmat.o SCT_zsmat.o sl_scale.o sorting_routines.o spectroscopic.o splin3.o xlagr.o zis.o xAy.o det_fact.o stop_mp.o check_det_new.o det_fact_new.o
+a - MOD_zconst.o
+a - MOD_coef_list.o
+a - MOD_det.o
+a - MOD_dets.o
+a - MOD_id4.o
+a - MOD_int_lst.o
+a - MOD_rk.o
+a - MOD_rk4.o
+a - MOD_tmat_ion.o
+a - MOD_tmat_list.o
+a - MOD_tm_list.o
+a - MOD_tm_LS.o
+a - MOD_zoef.o
+a - MOD_atoms_par.o
+a - MOD_atoms_LS.o
+a - MOD_orth.o
+a - MOD_after.o
+a - MOD_new_dets.o
+a - MOD_new_defs.o
+a - MOD_dip.o
+a - MOD_c_data.o
+a - MOD_obs.o
+a - MOD_file.o
+a - angs_air.o
+a - ANG_dj_fact.o
+a - ANG_itra.o
+a - ANG_kappa.o
+a - ANG_t_ls_jk.o
+a - ANG_zcklm.o
+a - ANG_zclkl.o
+a - ANG_z_3j.o
+a - ANG_z_6j.o
+a - ANG_z_9j.o
+a - check_file.o
+a - clean_a.o
+a - conv_au.o
+a - det.o
+a - full_mat.o
+a - FUN_alegf.o
+a - FUN_bessel.o
+a - FUN_binom.o
+a - FUN_cgamma.o
+a - FUN_dcoulfg.o
+a - FUN_dirac.o
+a - FUN_gaussian.o
+a - FUN_hwf.o
+a - FUN_int_exp.o
+a - FUN_legendre.o
+a - FUN_zcfg.o
+a - gauss_LA.o
+a - gauss_points.o
+a - get_ij.o
+a - interv.o
+a - inv.o
+a - ipointer.o
+a - LAPACK_calls.o
+a - num.o
+a - read_arg.o
+a - read_par.o
+a - recup_a.o
+a - rrtc.o
+a - SCT_coul_phase.o
+a - SCT_epahse.o
+a - SCT_fano_tma.o
+a - SCT_iopen.o
+a - SCT_kma_om.o
+a - SCT_kma_tma.o
+a - SCT_pri_mat.o
+a - SCT_sym_mat.o
+a - SCT_time_del.o
+a - SCT_zkmat.o
+a - SCT_zrmat.o
+a - SCT_zsmat.o
+a - sl_scale.o
+a - sorting_routines.o
+a - spectroscopic.o
+a - splin3.o
+a - xlagr.o
+a - zis.o
+a - xAy.o
+a - det_fact.o
+a - stop_mp.o
+a - check_det_new.o
+a - det_fact_new.o
+mv libzcom.a  /home1/06396/tg856958/BSR3/libraries
+rm *.o    

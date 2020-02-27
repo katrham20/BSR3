@@ -1,0 +1,79 @@
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   mod_orb_jj.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   mod_symc.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   mod_symt.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   mod_conf_jj.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   mod_target_jj.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   mod_channel_jj.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   mod_channels_jj.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   mod_phys_orb_jj.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   mod_boef_list.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   mod_det_jq.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   cfp_jj.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   cjkj.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   EL_nljk.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   Incode_cj.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   Incode_mult.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   Jdef_Jp.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   Jdef_nc.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   Jdef_ne.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   Jparity.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   jterm.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   kappa.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   label_jj.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   mj_value.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   new_index.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   prepare_iort_jj.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   print_conf_jj.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   Incode_int_jj.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   read_conf_jj.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   read_core_jj.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   read_expn_jj.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   smu.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   test_cj.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   gen_jj_states.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   coef_1conf.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   coef_2conf_jj.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   read_peel_orb.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   check_conf_jj.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries   read_iort_jj.f90
+ar rv libzconfjj.a mod_orb_jj.o mod_symc.o mod_symt.o mod_conf_jj.o mod_target_jj.o mod_channel_jj.o mod_channels_jj.o mod_phys_orb_jj.o mod_boef_list.o mod_det_jq.o cfp_jj.o cjkj.o EL_nljk.o Incode_cj.o Incode_mult.o Jdef_Jp.o Jdef_nc.o Jdef_ne.o Jparity.o jterm.o kappa.o label_jj.o mj_value.o new_index.o prepare_iort_jj.o print_conf_jj.o Incode_int_jj.o read_conf_jj.o read_core_jj.o read_expn_jj.o smu.o test_cj.o gen_jj_states.o coef_1conf.o coef_2conf_jj.o read_peel_orb.o check_conf_jj.o read_iort_jj.o
+a - mod_orb_jj.o
+a - mod_symc.o
+a - mod_symt.o
+a - mod_conf_jj.o
+a - mod_target_jj.o
+a - mod_channel_jj.o
+a - mod_channels_jj.o
+a - mod_phys_orb_jj.o
+a - mod_boef_list.o
+a - mod_det_jq.o
+a - cfp_jj.o
+a - cjkj.o
+a - EL_nljk.o
+a - Incode_cj.o
+a - Incode_mult.o
+a - Jdef_Jp.o
+a - Jdef_nc.o
+a - Jdef_ne.o
+a - Jparity.o
+a - jterm.o
+a - kappa.o
+a - label_jj.o
+a - mj_value.o
+a - new_index.o
+a - prepare_iort_jj.o
+a - print_conf_jj.o
+a - Incode_int_jj.o
+a - read_conf_jj.o
+a - read_core_jj.o
+a - read_expn_jj.o
+a - smu.o
+a - test_cj.o
+a - gen_jj_states.o
+a - coef_1conf.o
+a - coef_2conf_jj.o
+a - read_peel_orb.o
+a - check_conf_jj.o
+a - read_iort_jj.o
+cp libzconfjj.a /home1/06396/tg856958/BSR3/libraries
+rm *.o *.a

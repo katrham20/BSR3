@@ -1,4 +1,4 @@
-include $(HOME)/DEFS_03
+include $(HOME)/BSR3/DEFS_03
 
 N  = libzcom
  

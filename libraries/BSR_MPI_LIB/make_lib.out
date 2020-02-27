@@ -1,0 +1,33 @@
+mpif90  -c -O2 -module /home1/06396/tg856958/BSR3/libraries br_bsorb.f90
+mpif90  -c -O2 -module /home1/06396/tg856958/BSR3/libraries br_channel.f90
+mpif90  -c -O2 -module /home1/06396/tg856958/BSR3/libraries br_conf_LS.f90
+mpif90  -c -O2 -module /home1/06396/tg856958/BSR3/libraries br_conf_LS1.f90
+mpif90  -c -O2 -module /home1/06396/tg856958/BSR3/libraries br_core.f90
+mpif90  -c -O2 -module /home1/06396/tg856958/BSR3/libraries br_core1.f90
+mpif90  -c -O2 -module /home1/06396/tg856958/BSR3/libraries br_dets.f90
+mpif90  -c -O2 -module /home1/06396/tg856958/BSR3/libraries br_file.f90
+mpif90  -c -O2 -module /home1/06396/tg856958/BSR3/libraries br_grid.f90
+mpif90  -c -O2 -module /home1/06396/tg856958/BSR3/libraries br_orb.f90
+mpif90  -c -O2 -module /home1/06396/tg856958/BSR3/libraries br_phys_orb.f90
+mpif90  -c -O2 -module /home1/06396/tg856958/BSR3/libraries br_symc_LS.f90
+mpif90  -c -O2 -module /home1/06396/tg856958/BSR3/libraries br_symt_LS.f90
+mpif90  -c -O2 -module /home1/06396/tg856958/BSR3/libraries br_target.f90
+mpif90  -c -O2 -module /home1/06396/tg856958/BSR3/libraries br_radial_overlaps.f90
+ar rv lib_bsr_mpi.a br_bsorb.o br_channel.o br_conf_LS.o br_conf_LS1.o br_core.o br_core1.o br_dets.o br_file.o br_grid.o br_orb.o br_phys_orb.o br_symc_LS.o br_symt_LS.o br_target.o br_radial_overlaps.o
+a - br_bsorb.o
+a - br_channel.o
+a - br_conf_LS.o
+a - br_conf_LS1.o
+a - br_core.o
+a - br_core1.o
+a - br_dets.o
+a - br_file.o
+a - br_grid.o
+a - br_orb.o
+a - br_phys_orb.o
+a - br_symc_LS.o
+a - br_symt_LS.o
+a - br_target.o
+a - br_radial_overlaps.o
+mv lib_bsr_mpi.a /home1/06396/tg856958/BSR3/libraries
+rm *.o 

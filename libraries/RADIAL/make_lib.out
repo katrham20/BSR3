@@ -1,0 +1,57 @@
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mod_radial.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries dyk.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries dzk.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries get_ecore.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries grad.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries grad2.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries grad3.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries hl.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries hlc.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries hlc_oo.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries initr.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries iwf.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries nk.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries p_deriv.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries quadr.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries quads.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries rk.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries rk_mass.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries rk_oo.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries rlshft.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries rw_wfn.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries tk.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries uk.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries vk.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries xk.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries zeta.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries zint.f90
+ar rv libradial.a mod_radial.o dyk.o dzk.o get_ecore.o grad.o grad2.o grad3.o hl.o hlc.o hlc_oo.o initr.o iwf.o nk.o p_deriv.o quadr.o quads.o rk.o rk_mass.o rk_oo.o rlshft.o rw_wfn.o tk.o uk.o vk.o xk.o zeta.o zint.o
+a - mod_radial.o
+a - dyk.o
+a - dzk.o
+a - get_ecore.o
+a - grad.o
+a - grad2.o
+a - grad3.o
+a - hl.o
+a - hlc.o
+a - hlc_oo.o
+a - initr.o
+a - iwf.o
+a - nk.o
+a - p_deriv.o
+a - quadr.o
+a - quads.o
+a - rk.o
+a - rk_mass.o
+a - rk_oo.o
+a - rlshft.o
+a - rw_wfn.o
+a - tk.o
+a - uk.o
+a - vk.o
+a - xk.o
+a - zeta.o
+a - zint.o
+mv libradial.a /home1/06396/tg856958/BSR3/libraries
+rm *.o 

@@ -1,4 +1,4 @@
-include ${HOME}/DEFS_03
+include ${HOME}/BSR3/DEFS_03
 
 N  = lib_bsr_mpi
  
@@ -23,5 +23,5 @@ clean:
 .SUFFIXES: .f90 .mod .o 
  
 .f90.o:
-	$(FC) $(compL) $<
+	$(FC_mpi) $(compL) $<
  

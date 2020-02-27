@@ -1,9 +1,9 @@
 FC_mpi = mpif90 
 FC = ifort
  
-LIBDIR   = ${HOME}/T/LIBS_03
-MODDIR   = ${HOME}/T/LIBS_03
-BINDIR   = ${HOME}/BIN
+LIBDIR   = ${HOME}/BSR3/libraries
+MODDIR   = ${HOME}/BSR3/libraries
+BINDIR   = ${HOME}/BSR3/libraries
  
 #link = -O2 -I. -I$(MODDIR) 
 link = -O2 -I. -I$(MODDIR) -mcmodel=medium 

@@ -1,0 +1,87 @@
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_param_LS.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_symc.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_symt.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_conf_LS.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_orb_LS.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_target.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_target_dc.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_target_ion.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_channel.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_channels.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_channels_dc.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_channels_ion.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_channel_dc.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_overlaps_ion.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_phys_orb.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_terms.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries def_term.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries idef_labelc.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries idef_nc.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries ifind_channel.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries incode_c.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries iort_conf.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries iparity.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries iterm_LS.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries label_c.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries new_index.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries pre_iort.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries pri_conf.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries r_closd.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries r_confc.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries r_label.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries r_orth.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries r_term.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries test_a.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries test_c.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries get_term_LS.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries incode_int.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries idef_st.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries r_expn.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries read_sol.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries jopen.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries SCT_tma_om.f90
+ar rv libzconfLS.a MOD_param_LS.o MOD_symc.o MOD_symt.o MOD_conf_LS.o MOD_orb_LS.o MOD_target.o MOD_target_dc.o MOD_target_ion.o MOD_channel.o MOD_channels.o MOD_channels_dc.o MOD_channels_ion.o MOD_channel_dc.o MOD_overlaps_ion.o MOD_phys_orb.o MOD_terms.o def_term.o idef_labelc.o idef_nc.o ifind_channel.o incode_c.o iort_conf.o iparity.o iterm_LS.o label_c.o new_index.o pre_iort.o pri_conf.o r_closd.o r_confc.o r_label.o r_orth.o r_term.o test_a.o test_c.o get_term_LS.o incode_int.o idef_st.o r_expn.o read_sol.o jopen.o SCT_tma_om.o
+a - MOD_param_LS.o
+a - MOD_symc.o
+a - MOD_symt.o
+a - MOD_conf_LS.o
+a - MOD_orb_LS.o
+a - MOD_target.o
+a - MOD_target_dc.o
+a - MOD_target_ion.o
+a - MOD_channel.o
+a - MOD_channels.o
+a - MOD_channels_dc.o
+a - MOD_channels_ion.o
+a - MOD_channel_dc.o
+a - MOD_overlaps_ion.o
+a - MOD_phys_orb.o
+a - MOD_terms.o
+a - def_term.o
+a - idef_labelc.o
+a - idef_nc.o
+a - ifind_channel.o
+a - incode_c.o
+a - iort_conf.o
+a - iparity.o
+a - iterm_LS.o
+a - label_c.o
+a - new_index.o
+a - pre_iort.o
+a - pri_conf.o
+a - r_closd.o
+a - r_confc.o
+a - r_label.o
+a - r_orth.o
+a - r_term.o
+a - test_a.o
+a - test_c.o
+a - get_term_LS.o
+a - incode_int.o
+a - idef_st.o
+a - r_expn.o
+a - read_sol.o
+a - jopen.o
+a - SCT_tma_om.o
+mv libzconfLS.a /home1/06396/tg856958/BSR3/libraries
+rm *.o 
