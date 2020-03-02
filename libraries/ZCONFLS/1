@@ -116,7 +116,7 @@
       mem_oper=0.d0       
       if(m.le.0) Return
 
-      ij8 = nsymt; ij_oper =  ij8*(ij8+1)/2
+      ij = nsymt; ij_oper =  ij*(ij+1)/2
       Allocate(it_oper(noper,ij_oper))
       it_oper = 0
       mem_oper = 1.d0*(noper+1)*ij_oper/(1024*1024)
@@ -262,10 +262,10 @@
       Integer :: j
 
       write(nu) ij_oper
-      Do ij8 = 1,ij_oper
+      Do ij = 1,ij_oper
        Do j=1,noper
-        if(IT_oper(j,ij8).eq. 0) IT_oper(j,ij8)=1
-        if(IT_oper(j,ij8).eq.-1) IT_oper(j,ij8)=0
+        if(IT_oper(j,ij).eq. 0) IT_oper(j,ij)=1
+        if(IT_oper(j,ij).eq.-1) IT_oper(j,ij)=0
        End do 
       End do
       write(nu) IT_oper
@@ -282,9 +282,9 @@
       Integer, intent(in) :: nu
       Integer(8) :: i,j
 
-      read(nu) ij8
-      if(ij_oper.lt.ij8) Stop 'Read_oper_LS: nsymt too small' 
-      read(nu) ((IT_oper(i,j),i=1,noper),j=1,ij8)
+      read(nu) ij
+      if(ij_oper.lt.ij) Stop 'Read_oper_LS: nsymt too small' 
+      read(nu) ((IT_oper(i,j),i=1,noper),j=1,ij)
 
       End Subroutine Load_oper_LS
 

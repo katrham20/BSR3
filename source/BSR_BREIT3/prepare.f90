@@ -21,7 +21,7 @@
       Integer, allocatable :: IM_det(:,:),IS_det(:,:),JM_det(:,:),JS_det(:,:)
       Real(8), allocatable :: CC_det(:,:)
       Integer :: IPT_jc(nsymc)
-      Integer, external :: Iglq, DEF_ij, Iterm_LS
+      Integer, external :: Iglq, DEF_IJ, Iterm_LS
 
 !----------------------------------------------------------------------
 ! ... loop over conf. symmeteries:
@@ -71,7 +71,7 @@
       Do jc = 1,nsymc; if(IC_need(jc).eq.0) Cycle 
 
        if(IPT_jc(jc).eq.0) Cycle    
-       ij=DEF_ij(ic,jc); if(JC_need(ij).eq.0) Cycle      
+       ij=DEF_IJ(ic,jc); if(JC_need(ij).eq.0) Cycle      
  
 ! ... define the det. expansion:
 

@@ -18,7 +18,7 @@
 
       Integer, intent(in) :: nuc,nub,pri
       Integer :: nc, i, ii, ij, ijc, it,jt, ik,jk, nsymt0, ic,jc, icalc
-      Integer, External :: Idef_ncfg, Iadd_cfg_LS, DEF_ij
+      Integer, External :: Idef_ncfg, Iadd_cfg_LS, DEF_IJ
 
 ! ... remove data from previous calculations:
 
@@ -95,7 +95,7 @@
 
         Do ik=IC_term1(ic),IC_term2(ic);  it=IT_sort(ik)
         Do jk=IC_term1(jc),IC_term2(jc);  jt=IT_sort(jk)
-          ij = DEF_ij(it,jt)
+          ij = DEF_IJ(it,jt)
           Do i=1,noper; if(joper(i).eq.1) IT_oper(i,ij)=1; End do
       	End do
         End do

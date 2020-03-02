@@ -1,5 +1,5 @@
 # insert your compiler and flags:
-include ${HOME}/DEFS_03
+include ${HOME}/BSR3/DEFS_03
  
 # make  PROGRAM with name:
  
@@ -13,7 +13,7 @@ O  = bsr_prep.o
 
 bsr_prep: $(O)
 	$(FC) -o $(N) $(link) $(O) $(L) 
-	mv $(N) $(BINDIR)
+#	mv $(N) $(BINDIR)
 	rm *.o 
 
 bsr_prep.o: bsr_prep.f90

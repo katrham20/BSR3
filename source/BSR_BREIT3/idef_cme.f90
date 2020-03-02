@@ -10,13 +10,13 @@
 
       Implicit none
       Integer :: is,js, it,jt,ik,jk, i,ij, k
-      Integer, external :: DEF_ij
+      Integer, external :: DEF_IJ
 
       k = 0; JT_oper = 0
       Do ik=1,kt1;  it=IP_kt1(ik)
       Do jk=1,kt2;  jt=IP_kt2(jk)
        if(is.eq.js.and.it.gt.jt) Cycle;  k = k + 1
-       ij=DEF_ij(it,jt)
+       ij=DEF_IJ(it,jt)
        Do i=1,noper
         if(ioper(i).eq.1.and.IT_oper(i,ij).eq.0) JT_oper(k,i)=1
        End do

@@ -14,7 +14,7 @@
 
       Implicit none
       Integer :: nc, i, ii, ij, ic,jc,ijc, it,jt, ik,jk
-      Integer, external :: Idef_ncfg, Iadd_symc_LS, Iadd_symt_LS, DEF_ij
+      Integer, external :: Idef_ncfg, Iadd_symc_LS, Iadd_symt_LS, DEF_IJ
 
 ! ... remove data from previous calculations:
 
@@ -94,7 +94,7 @@
 
         Do ik=IC_term1(ic),IC_term2(ic);  it=IT_sort(ik)
         Do jk=IC_term1(jc),IC_term2(jc);  jt=IT_sort(jk)
-          ij = DEF_ij(it,jt)
+          ij = DEF_IJ(it,jt)
           Do i=1,noper; if(joper(i).eq.1) IT_oper(i,ij)=1; End do
       	End do
         End do
@@ -131,7 +131,7 @@
       Do ic = 1,nsymc; Do jc = 1,ic; ijc=ic*(ic-1)/2+jc
        Do ik=IC_term1(ic),IC_term2(ic);  it=IT_sort(ik)
        Do jk=IC_term1(jc),IC_term2(jc);  jt=IT_sort(jk)
-        ij = DEF_ij(it,jt)
+        ij = DEF_IJ(it,jt)
         if(JT_need(ij).eq.0) Cycle
 		      JC_need(ijc)=1; IC_need(ic)=1; IC_need(jc)=1
        End do

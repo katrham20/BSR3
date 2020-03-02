@@ -1,5 +1,5 @@
 # insert your compiler and flags:
-include ${HOME}/DEFS_03
+include ${HOME}/BSR3/DEFS_03
  
 # make  PROGRAM with name:
  
@@ -7,7 +7,7 @@ N  = bsr_conf3
  
 # Libraries to be searched:
  
-L  =  $(ZCONFLS) $(ZCOM) 
+L  =  $(ZCONFLS) $(ZCOM) $(SHELLS)
  
 S  =	mod_bsr_conf.f90         bsr_conf.f90             check_cfg.f90            \
 	check_pertuber.f90       def_orth_cond.f90        def_phys_targ.f90        \
@@ -19,7 +19,7 @@ O = $(S:.f90=.o)
  
 $(N): $(O)
 	$(FC) -o $(N) $(O) $(link) $(L)
-	mv $(N) $(BINDIR)
+#	mv $(N) $(BINDIR)
 	rm *.o *.mod 
  
 clean:

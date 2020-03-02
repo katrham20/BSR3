@@ -26,7 +26,7 @@
 
       Integer :: NNP(me),NNP1(me),NNP2(me), MP(me),MP1(me),MP2(me)
 
-      Integer, external :: IDET_SIMP, Iadd_int, Iadd_ndet, Iadd_ndef, Def_ij, IARGC 
+      Integer, external :: IDET_SIMP, Iadd_int, Iadd_ndet, Iadd_ndef, DEF_IJ, IARGC 
 
       Real(8) :: C
  
@@ -221,7 +221,7 @@
 
        it1 = IC_term(ic1)
        it2 = IC_term(ic2)
-       ij = Def_ij (it1,it2)
+       ij = DEF_IJ(it1,it2)
        joper = IT_oper(:,ij)
        Do i=1,noper; if(ioper(i).eq.0) joper(i)=-1; End do
 

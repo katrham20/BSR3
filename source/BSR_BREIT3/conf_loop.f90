@@ -19,7 +19,7 @@
       Implicit none 
       Integer :: k1,k2, it,jt, ij, MLT2,MST2, i,m,k, is,js,ic,jc
       Real(8) :: t1,t2, C_ee,C_so,C_ss, zero=0.d0, one=1.d0  
-      Integer, external :: IDEF_cme, DEF_ij
+      Integer, external :: IDEF_cme, DEF_IJ
       Real(8), external :: RRTC, Z_3j
       Character(80) :: conf
 
@@ -75,7 +75,7 @@
 
        if(MLT2.ne.MLT.or.MST2.ne.MST) Cycle
        if(MLT.ne.min(ILT1,ILT2).or.MST.ne.min(IST1,IST2)) Cycle
-       ij=DEF_ij(ic,jc);  if(JC_need(ij).eq.0) Cycle      
+       ij=DEF_IJ(ic,jc);  if(JC_need(ij).eq.0) Cycle      
 
 !----------------------------------------------------------------------
 ! ...  define number of terms:

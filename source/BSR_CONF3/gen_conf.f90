@@ -87,7 +87,7 @@
       Implicit none
       Integer :: i,j,m,ii,jp,i1,i2,i3
       Integer, External :: Iterm_LS
-      Real(8), External :: Zgen
+      Real(8), External :: zgen
 
       m = Iterm_LS(ln(i),iq(i),-1,i1,i2,i3)
       jp = Iterm_LS(ln(i),iq(i)-1,0,IAP,ILP,ISP)

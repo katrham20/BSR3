@@ -1,4 +1,3 @@
-mpif90  -c -O2 -module /home1/06396/tg856958/BSR3/libraries br_bsorb.f90
 mpif90  -c -O2 -module /home1/06396/tg856958/BSR3/libraries br_channel.f90
 mpif90  -c -O2 -module /home1/06396/tg856958/BSR3/libraries br_conf_LS.f90
 mpif90  -c -O2 -module /home1/06396/tg856958/BSR3/libraries br_conf_LS1.f90

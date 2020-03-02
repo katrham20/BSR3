@@ -1,4 +1,4 @@
-include ${HOME}/DEFS_03
+include ${HOME}/BSR3/DEFS_03
 
 #  make  PROGRAM with name:
  
@@ -21,7 +21,7 @@ O = $(S:.f90=.o)
  
 $(N): $(O)
 	$(FC) -o $(N) $(O) $(link) $(L)
-	mv $(N) $(BINDIR)
+	#mv $(N) $(BINDIR)
 	rm *.o *.mod  
  
 clean:
