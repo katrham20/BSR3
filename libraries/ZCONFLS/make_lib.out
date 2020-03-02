@@ -40,7 +40,8 @@ ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries r_expn.f90
 ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries read_sol.f90
 ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries jopen.f90
 ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries SCT_tma_om.f90
-ar rv libzconfLS.a MOD_param_LS.o MOD_symc.o MOD_symt.o MOD_conf_LS.o MOD_orb_LS.o MOD_target.o MOD_target_dc.o MOD_target_ion.o MOD_channel.o MOD_channels.o MOD_channels_dc.o MOD_channels_ion.o MOD_channel_dc.o MOD_overlaps_ion.o MOD_phys_orb.o MOD_terms.o def_term.o idef_labelc.o idef_nc.o ifind_channel.o incode_c.o iort_conf.o iparity.o iterm_LS.o label_c.o new_index.o pre_iort.o pri_conf.o r_closd.o r_confc.o r_label.o r_orth.o r_term.o test_a.o test_c.o get_term_LS.o incode_int.o idef_st.o r_expn.o read_sol.o jopen.o SCT_tma_om.o
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries symt_list_LS.f90
+ar rv libzconfLS.a MOD_param_LS.o MOD_symc.o MOD_symt.o MOD_conf_LS.o MOD_orb_LS.o MOD_target.o MOD_target_dc.o MOD_target_ion.o MOD_channel.o MOD_channels.o MOD_channels_dc.o MOD_channels_ion.o MOD_channel_dc.o MOD_overlaps_ion.o MOD_phys_orb.o MOD_terms.o def_term.o idef_labelc.o idef_nc.o ifind_channel.o incode_c.o iort_conf.o iparity.o iterm_LS.o label_c.o new_index.o pre_iort.o pri_conf.o r_closd.o r_confc.o r_label.o r_orth.o r_term.o test_a.o test_c.o get_term_LS.o incode_int.o idef_st.o r_expn.o read_sol.o jopen.o SCT_tma_om.o symt_list_LS.o
 a - MOD_param_LS.o
 a - MOD_symc.o
 a - MOD_symt.o
@@ -83,5 +84,6 @@ a - r_expn.o
 a - read_sol.o
 a - jopen.o
 a - SCT_tma_om.o
+a - symt_list_LS.o
 mv libzconfLS.a /home1/06396/tg856958/BSR3/libraries
 rm *.o 

@@ -53,6 +53,7 @@ ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries get_ij.f90
 ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries interv.f90
 ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries inv.f90
 ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries ipointer.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries anumber.f90
 ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries LAPACK_calls.f90
 ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries num.f90
 ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries read_arg.f90
@@ -82,7 +83,7 @@ ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries det_fact.f90
 ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries stop_mp.f90
 ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries check_det_new.f90
 ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries det_fact_new.f90
-ar rv libzcom.a MOD_zconst.o MOD_coef_list.o MOD_det.o MOD_dets.o MOD_id4.o MOD_int_lst.o MOD_rk.o MOD_rk4.o MOD_tmat_ion.o MOD_tmat_list.o MOD_tm_list.o MOD_tm_LS.o MOD_zoef.o MOD_atoms_par.o MOD_atoms_LS.o MOD_orth.o MOD_after.o MOD_new_dets.o MOD_new_defs.o MOD_dip.o MOD_c_data.o MOD_obs.o MOD_file.o angs_air.o ANG_dj_fact.o ANG_itra.o ANG_kappa.o ANG_t_ls_jk.o ANG_zcklm.o ANG_zclkl.o ANG_z_3j.o ANG_z_6j.o ANG_z_9j.o check_file.o clean_a.o conv_au.o det.o full_mat.o FUN_alegf.o FUN_bessel.o FUN_binom.o FUN_cgamma.o FUN_dcoulfg.o FUN_dirac.o FUN_gaussian.o FUN_hwf.o FUN_int_exp.o FUN_legendre.o FUN_zcfg.o gauss_LA.o gauss_points.o get_ij.o interv.o inv.o ipointer.o LAPACK_calls.o num.o read_arg.o read_par.o recup_a.o rrtc.o SCT_coul_phase.o SCT_epahse.o SCT_fano_tma.o SCT_iopen.o SCT_kma_om.o SCT_kma_tma.o SCT_pri_mat.o SCT_sym_mat.o SCT_time_del.o SCT_zkmat.o SCT_zrmat.o SCT_zsmat.o sl_scale.o sorting_routines.o spectroscopic.o splin3.o xlagr.o zis.o xAy.o det_fact.o stop_mp.o check_det_new.o det_fact_new.o
+ar rv libzcom.a MOD_zconst.o MOD_coef_list.o MOD_det.o MOD_dets.o MOD_id4.o MOD_int_lst.o MOD_rk.o MOD_rk4.o MOD_tmat_ion.o MOD_tmat_list.o MOD_tm_list.o MOD_tm_LS.o MOD_zoef.o MOD_atoms_par.o MOD_atoms_LS.o MOD_orth.o MOD_after.o MOD_new_dets.o MOD_new_defs.o MOD_dip.o MOD_c_data.o MOD_obs.o MOD_file.o angs_air.o ANG_dj_fact.o ANG_itra.o ANG_kappa.o ANG_t_ls_jk.o ANG_zcklm.o ANG_zclkl.o ANG_z_3j.o ANG_z_6j.o ANG_z_9j.o check_file.o clean_a.o conv_au.o det.o full_mat.o FUN_alegf.o FUN_bessel.o FUN_binom.o FUN_cgamma.o FUN_dcoulfg.o FUN_dirac.o FUN_gaussian.o FUN_hwf.o FUN_int_exp.o FUN_legendre.o FUN_zcfg.o gauss_LA.o gauss_points.o get_ij.o interv.o inv.o ipointer.o anumber.o LAPACK_calls.o num.o read_arg.o read_par.o recup_a.o rrtc.o SCT_coul_phase.o SCT_epahse.o SCT_fano_tma.o SCT_iopen.o SCT_kma_om.o SCT_kma_tma.o SCT_pri_mat.o SCT_sym_mat.o SCT_time_del.o SCT_zkmat.o SCT_zrmat.o SCT_zsmat.o sl_scale.o sorting_routines.o spectroscopic.o splin3.o xlagr.o zis.o xAy.o det_fact.o stop_mp.o check_det_new.o det_fact_new.o
 a - MOD_zconst.o
 a - MOD_coef_list.o
 a - MOD_det.o
@@ -138,6 +139,7 @@ a - get_ij.o
 a - interv.o
 a - inv.o
 a - ipointer.o
+a - anumber.o
 a - LAPACK_calls.o
 a - num.o
 a - read_arg.o

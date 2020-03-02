@@ -19,7 +19,7 @@ S  =	MOD_zconst.f90           MOD_coef_list.f90        MOD_det.f90   MOD_dets.f9
 	FUN_gaussian.f90         FUN_hwf.f90              FUN_int_exp.f90          \
 	FUN_legendre.f90         FUN_zcfg.f90             gauss_LA.f90             \
 	gauss_points.f90         get_ij.f90               interv.f90               \
-	inv.f90                  ipointer.f90                                      \
+	inv.f90                  ipointer.f90             anumber.f90              \
 	LAPACK_calls.f90         num.f90                  read_arg.f90             \
 	read_par.f90             recup_a.f90              rrtc.f90                 \
 	SCT_coul_phase.f90       SCT_epahse.f90           SCT_fano_tma.f90         \

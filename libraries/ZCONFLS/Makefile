@@ -16,7 +16,8 @@ S  =	MOD_param_LS.f90         MOD_symc.f90             MOD_symt.f90             
 	r_label.f90              r_orth.f90               r_term.f90               \
 	test_a.f90               test_c.f90               get_term_LS.f90          \
      incode_int.f90           idef_st.f90              r_expn.f90               \
-     read_sol.f90             jopen.f90                SCT_tma_om.f90
+     read_sol.f90             jopen.f90                SCT_tma_om.f90             \
+     symt_list_LS.f90
 
 O = $(S:.f90=.o)
  
