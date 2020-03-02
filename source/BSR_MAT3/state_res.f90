@@ -16,7 +16,7 @@
       Integer :: i1,i2,i3,i4,j1,j2,j3,j4,kk1,kk2,kk3,kk4,ic,jc,io,jo,idf
       Integer :: ILT1,ILT2,IST1,IST2
       Real(8) :: C,CC,CCC
-      Integer, external :: Ifind_channel, Idef_itype, no_ic_LS
+      Integer, external :: Ifind_channel_serial, Idef_itype, no_ic_LS
       Real(8), external :: Z_6j
 
 ! ... initilize blocks in cmdata module:
@@ -72,11 +72,11 @@
 
       Do ik=is1,is2; is=IP_stat(ik); ip1=IP_state(is)
        no1=no_ic_LS (is); np1(1:no1)=IP_orb(ip1+1:ip1+no1)
-       ich=Ifind_channel(is)
+       ich=Ifind_channel_serial(is)
        Call Term_ic (is,ILT1,IST1)
       Do jk=js1,js2; js=IP_stat(jk); ip2=IP_state(js)
        no2=no_ic_LS (js); np2(1:no2)=IP_orb(ip2+1:ip2+no2)
-       jch=Ifind_channel(js)
+       jch=Ifind_channel_serial(js)
        Call Term_ic (js,ILT2,IST2)
 
 ! ... consider only low-half of interaction matrix

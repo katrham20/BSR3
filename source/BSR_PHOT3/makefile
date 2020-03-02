@@ -1,4 +1,4 @@
-include ${HOME}/DEFS_03 
+include ${HOME}/BSR3/DEFS_03 
  
 N  = bsr_phot3 
  
@@ -16,7 +16,7 @@ O = $(S:.f90=.o) crees.o
  
 $(N): $(O)
 	$(FC) -o $(N) $(O) $(link) $(L)
-	mv $(N) $(BINDIR)
+	#mv $(N) $(BINDIR)
 	rm *.o *.mod 
  
 clean: 
