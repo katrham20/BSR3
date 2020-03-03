@@ -1,0 +1,70 @@
+BSR_MAT:   klsp =     2
+*************************
+
+c-file data: 
+
+ncfg   =   2254  -  number of configurations
+nwf    =     31  -  number of orbitals: 
+
+
+Partial wave LSP (JP): 
+
+lpar   =      1  -  total L 
+ispar  =      4  -  total 2S+1
+ipar   =      1  -  parity
+
+Main dimensions in bsr_matrix module:
+
+kch    =     10  -  number of channels 
+kcp    =      0  -  number of perturbers 
+kns    =     74  -  number of splines 
+
+Interaction matrix dimension:        740
+
+Reqired memory for bsr-matrix:       2.1 Mb
+
+Reqired memory for cmdata:         267.2 Mb
+
+Reqired memory for bufer:           19.1 Mb
+
+ndet  =      226     529
+ndef  =    14953   48699
+
+Checking the overlap matrix for overlaps > S_ovl = 0.750
+
+Overlaps:           0.13 min 
+
+L-integrals:        0.18 min 
+
+R-integrals:        0.77 min 
+
+Orthogonal conditions:
+
+ks4  ->      1s  2s1
+kp4  ->     2p1
+kp5  ->     2p1
+kp6  ->     2p1
+kp7  ->     2p1
+ks5  ->      1s  2s1
+
+BS_ORTH:            0.00 min 
+
+Asymptotic coefficients: mk =  7
+
+Target radiative data:  
+
+f-value, A-value, branching ratio, dipole reduced matrix elements
+
+    1    3   1.333E-01   3.243E+08   1.00000    0.14765E+01     2p2_3P              2p3s_3Po            
+    1    4   1.068E-01   1.816E+08   1.00000    0.12720E+01     2p2_3P              2p3_3Do             
+    1    5   5.486E-02   2.150E+08   1.00000    0.84069E+00     2p2_3P              2p3_3Po             
+    1    6   1.483E-01   4.317E+09   1.00000    0.11021E+01     2p2_3P              2p3_3So             
+    3    7   8.737E-03   5.922E+07   0.02664   -0.29257E+00     2p3s_3Po            2p4_3P              
+    4    7   1.773E-01   1.816E+09   0.81724   -0.17433E+01     2p3_3Do             2p4_3P              
+    5    7   6.344E-02   3.024E+08   0.13607   -0.86090E+00     2p3_3Po             2p4_3P              
+    6    7   1.216E-01   4.456E+07   0.02005   -0.99317E+00     2p3_3So             2p4_3P              
+
+Polarizability of the ground state =     3.912
+
+
+Total time:         1.08 min

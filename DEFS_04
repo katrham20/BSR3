@@ -1,0 +1,45 @@
+FC_mpi = mpif90 
+FC = ifort
+ 
+LIBDIR   = ${HOME}/BSR3/libraries
+MODDIR   = ${HOME}/BSR3/libraries
+BINDIR   = ${HOME}/BSR3/utilities
+ 
+#link = -O2 -I. -I$(MODDIR) 
+link = -O2 -I. -I$(MODDIR) -mcmodel=medium 
+
+OPTL = $(link)
+comp = -c -O2 -I. -I$(MODDIR) -mcmodel=medium 
+ 
+
+OPTC = $(comp)
+
+compL  = -c -O2 -module $(MODDIR)
+
+#  compL  = -c -O2 -I$(MODDIR)
+
+ARCH     = ar
+ARCHFLAGS= cr
+RANLIB   = ranlib
+
+ZCOM    = $(LIBDIR)/libzcom.a
+ZCONFLS = $(LIBDIR)/libzconfLS.a
+ZCONFJJ = $(LIBDIR)/libzconfjj.a
+RADIAL  = $(LIBDIR)/libradial.a
+BS      = $(LIBDIR)/libBS.a
+DBS     = $(LIBDIR)/libDBS.a
+SHELLS  = $(LIBDIR)/libshells.a
+BSR_MPI = $(LIBDIR)/lib_bsr_mpi.a
+
+LAPACK = $(LIBDIR)/lapack.a $(LIBDIR)/blas.a
+
+CFF_COM = $(LIBDIR)/libcom.a
+CFF_RAD = $(LIBDIR)/librad.a
+CFF_ANG = $(LIBDIR)/libang.a
+
+CFF_LIB = $(LIBDIR)/libang.a $(LIBDIR)/libcom.a $(LIBDIR)/librad.a $(LIBDIR)/libcom.a
+
+mv = mv
+cp = cp
+rm = rm
+exe = 

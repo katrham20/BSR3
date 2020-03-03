@@ -1,0 +1,87 @@
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries det_exp.f
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mod_det_f3.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mod_det_f4.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mod_det_f5.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries detc_d2.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries detc_d3.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries detc_d4.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries detc_d5.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries detc_d6.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries detc_d7.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries detc_d8.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries detc_f11.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries detc_f12.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries detc_f3.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries detc_f4.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries detc_p2.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries detc_p3.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries detc_p4.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries detc_sh.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries detc_sh_LS.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries det_d2.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries det_d3.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries det_d4.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries det_d5.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries det_d6.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries det_d7.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries det_d8.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries det_f11.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries det_f12.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries det_f2.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries det_p2.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries det_p3.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries det_p4.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries det_sh.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries det_sh_LS.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries gen_f3.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries gen_f4.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries gen_f5.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries gen_f6.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries gen_f7.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries ML_id.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries zgen.f90
+ar rv libshells.a det_exp.o mod_det_f3.o mod_det_f4.o mod_det_f5.o detc_d2.o detc_d3.o detc_d4.o detc_d5.o detc_d6.o detc_d7.o detc_d8.o detc_f11.o detc_f12.o detc_f3.o detc_f4.o detc_p2.o detc_p3.o detc_p4.o detc_sh.o detc_sh_LS.o det_d2.o det_d3.o det_d4.o det_d5.o det_d6.o det_d7.o det_d8.o det_f11.o det_f12.o det_f2.o det_p2.o det_p3.o det_p4.o det_sh.o det_sh_LS.o gen_f3.o gen_f4.o gen_f5.o gen_f6.o gen_f7.o ML_id.o zgen.o 
+a - det_exp.o
+a - mod_det_f3.o
+a - mod_det_f4.o
+a - mod_det_f5.o
+a - detc_d2.o
+a - detc_d3.o
+a - detc_d4.o
+a - detc_d5.o
+a - detc_d6.o
+a - detc_d7.o
+a - detc_d8.o
+a - detc_f11.o
+a - detc_f12.o
+a - detc_f3.o
+a - detc_f4.o
+a - detc_p2.o
+a - detc_p3.o
+a - detc_p4.o
+a - detc_sh.o
+a - detc_sh_LS.o
+a - det_d2.o
+a - det_d3.o
+a - det_d4.o
+a - det_d5.o
+a - det_d6.o
+a - det_d7.o
+a - det_d8.o
+a - det_f11.o
+a - det_f12.o
+a - det_f2.o
+a - det_p2.o
+a - det_p3.o
+a - det_p4.o
+a - det_sh.o
+a - det_sh_LS.o
+a - gen_f3.o
+a - gen_f4.o
+a - gen_f5.o
+a - gen_f6.o
+a - gen_f7.o
+a - ML_id.o
+a - zgen.o
+mv libshells.a /home1/06396/tg856958/BSR3/libraries
+rm *.o  

@@ -1,0 +1,89 @@
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries DBS_nuclear.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries DBS_grid.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries DBS_gauss.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries DBS_orbitals_pq.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries MOD_bk4.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries DBS_moments.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries DBS_integrals.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries DBS_core.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries DBS_core_energy.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries DBS_dhl.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries DBS_dhl_core.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries DBS_debug.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries bdcwf.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries bvalue2.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries bav.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries bvalue_bm.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries convert.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries convol.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries def_Vnucl.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries density.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mrk_pppp.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mrk_pqpq.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mrk_qpqp.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mrk_qqqq.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries msk_ppqq.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries msk_pqqp.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries pri_int.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries quadr.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries quadr_pq.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries read_pqbs.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries rk_pq.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries rk.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries sk.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries sk_pq.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries sum_amb.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries tvm.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries update_hs.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries zbsplvd.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries zint.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries zinty.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries vinty.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries DBS_mult.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries gen_hd.f90
+ar rv libDBS.a DBS_nuclear.o DBS_grid.o DBS_gauss.o DBS_orbitals_pq.o MOD_bk4.o DBS_moments.o DBS_integrals.o DBS_core.o DBS_core_energy.o DBS_dhl.o DBS_dhl_core.o DBS_debug.o bdcwf.o bvalue2.o bav.o bvalue_bm.o convert.o convol.o def_Vnucl.o density.o mrk_pppp.o mrk_pqpq.o mrk_qpqp.o mrk_qqqq.o msk_ppqq.o msk_pqqp.o pri_int.o quadr.o quadr_pq.o read_pqbs.o rk_pq.o rk.o sk.o sk_pq.o sum_amb.o tvm.o update_hs.o zbsplvd.o zint.o zinty.o vinty.o DBS_mult.o gen_hd.o
+a - DBS_nuclear.o
+a - DBS_grid.o
+a - DBS_gauss.o
+a - DBS_orbitals_pq.o
+a - MOD_bk4.o
+a - DBS_moments.o
+a - DBS_integrals.o
+a - DBS_core.o
+a - DBS_core_energy.o
+a - DBS_dhl.o
+a - DBS_dhl_core.o
+a - DBS_debug.o
+a - bdcwf.o
+a - bvalue2.o
+a - bav.o
+a - bvalue_bm.o
+a - convert.o
+a - convol.o
+a - def_Vnucl.o
+a - density.o
+a - mrk_pppp.o
+a - mrk_pqpq.o
+a - mrk_qpqp.o
+a - mrk_qqqq.o
+a - msk_ppqq.o
+a - msk_pqqp.o
+a - pri_int.o
+a - quadr.o
+a - quadr_pq.o
+a - read_pqbs.o
+a - rk_pq.o
+a - rk.o
+a - sk.o
+a - sk_pq.o
+a - sum_amb.o
+a - tvm.o
+a - update_hs.o
+a - zbsplvd.o
+a - zint.o
+a - zinty.o
+a - vinty.o
+a - DBS_mult.o
+a - gen_hd.o
+cp libDBS.a /home1/06396/tg856958/BSR3/libraries
+rm *.o *.a

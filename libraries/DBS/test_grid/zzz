@@ -1,0 +1,58 @@
+Comparing files knot.new and C.KNOT
+***** knot.new
+ 
+zg =         6.00000000  !  eff. nuclear charge for point grid
+hi =         0.25000000  !  initial step for r*zg 
+he =         0.25000000  !  exponetial step size
+hmax =      10.51814540  !  maximum step size for r
+rmax =      50.00000000  !  maximum unscaled r
+tmax =      52.59072701  !  maximum t(i), scaled r
+ 
+***** C.KNOT
+ 
+zg =       6.000000      !  eff. nuclear charge for point grid
+hi =       0.250000      !  initial step for r*z from 0 to 1
+he =       0.250000      !  exponetial step size
+hmax =    10.518145      !  maximum step size for r
+rmax =    50.000000      !  maximum unscaled r
+tmax =    52.590727      !  maximum t(i), scaled r
+ 
+*****
+
+***** knot.new
+ 
+I_nuclear =   0.00000000E+00 !  nuclear spin
+D_nuclear =   0.00000000E+00 !  dipole moment, in magnetons
+Q_nuclear =   0.00000000E+00 !  quadrupol, in barns
+ 
+grid points:
+***** C.KNOT
+ 
+grid points:
+*****
+
+***** knot.new
+ 
+ml =  0  number of distinct knots from 0 to 1 (=1/h)
+me =  0  number of knots in the exponential region 
+***** C.KNOT
+ 
+ml =  1  number of distinct knots from 0 to 1 (=1/h)
+me =  0  number of knots in the exponential region 
+*****
+
+***** knot.new
+ 
+possible grid-type:
+ 
+ 0  -  exponential 
+ 1  -  semi-exponential, old 
+ 2  -  semi-exponential, new 
+ 3  -  equally-spaced, for given nv 
+ 4  -  exponential, for given ns and rmax 
+ 5  -  sine-like, for given ns and rmax 
+ 6  -  exponential, for given ns and rmax 
+ 7  -  exponential 
+***** C.KNOT
+*****
+

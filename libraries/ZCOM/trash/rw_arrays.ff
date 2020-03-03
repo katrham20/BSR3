@@ -1,0 +1,448 @@
+!----------------------------------------------------------------------
+!   some auxiliary subprograms for read-write long arrays
+!   from unformatted files, with restricted record lengths.
+!   The different platforms have different restrictions,
+!   so these routines allows us to avoid such problems.
+!----------------------------------------------------------------------
+!
+!   R_i1, RR_i1, W_i1    -  Integer(1) arrays
+!   R_i4, RR_i4, W_i4    -  Integer(4) arrays
+!   R_a, RR_a, W_a       -  Character arrays
+!   R_r8, W_r8           -  Real(8) arrays
+!
+!----------------------------------------------------------------------
+
+!======================================================================
+      Subroutine R_i1(nu,mu,m1,m2,n,AR)
+!======================================================================
+!
+!     read INTEGER(1) array AR(1:n) from UNFORMATED unit 'nu' 
+!     by blocks with length mu
+!
+!----------------------------------------------------------------------
+
+      Implicit none
+
+      Integer(4), Intent(in) :: mu,nu,m1,m2,n
+      Integer(1), Intent(out), Dimension(m1,m2) :: AR
+
+      Integer(4) :: i,j,i1,i2
+
+      i1=1; i2=mu; if(i2.gt.n) i2=n
+    1 read(nu) ((AR(j,i),j=1,m1),i=i1,i2)
+      i1=i1+mu; i2=i2+mu; if(i2.gt.n) i2=n
+      if(i1.le.n) go to 1
+
+	  End Subroutine R_i1
+
+
+!======================================================================
+      Subroutine RR_i1(nu,mu,m,n)
+!======================================================================
+!
+!     read dummy INTEGER(1) array(m,n) from UNFORMATED unit 'nu' 
+!     by blocks with length mu
+!
+!----------------------------------------------------------------------
+
+      Implicit none
+
+      Integer(4), Intent(in) :: mu,nu,m,n
+      Integer(1) :: ii
+
+      Integer(4) :: i,j,i1,i2
+
+      i1=1; i2=mu; if(i2.gt.n) i2=n
+    1 read(nu) ((ii,j=1,m),i=i1,i2)
+      i1=i1+mu; i2=i2+mu; if(i2.gt.n) i2=n
+      if(i1.le.n) go to 1
+
+	  End Subroutine RR_i1
+
+
+!======================================================================
+      Subroutine W_i1(nu,mu,m,n,AR)
+!======================================================================
+!
+!     read real*8 array AR(1:n) from unit 'nu' by blocks with length mu
+!
+!----------------------------------------------------------------------
+
+      Implicit none
+
+      Integer(4), Intent(in) :: mu,nu,m,n
+      Integer(1), Intent(in), Dimension(m,n) :: AR
+
+      Integer(4) :: i,j,i1,i2
+
+      i1=1; i2=mu; if(i2.gt.n) i2=n
+    1 write(nu) ((AR(j,i),j=1,m),i=i1,i2)
+      i1=i1+mu; i2=i2+mu; if(i2.gt.n) i2=n
+      if(i1.le.n) go to 1
+
+	  End Subroutine W_i1
+
+
+!======================================================================
+      Subroutine R_i4(nu,mu,n,A)
+!======================================================================
+!
+!     read INTEGER(4) array AR(1:n) from UNFORMATED unit 'nu' 
+!     by blocks with length mu
+!
+!----------------------------------------------------------------------
+
+      Implicit none
+
+      Integer(4), Intent(in) :: mu,nu,n
+      Integer(4), Intent(out), Dimension(n) :: A
+
+      Integer(4) :: i,i1,i2
+      i1=1; i2=mu; if(i2.gt.n) i2=n
+    1 read(nu) (A(i),i=i1,i2)
+      i1=i1+mu; i2=i2+mu; if(i2.gt.n) i2=n
+      if(i1.le.n) go to 1
+
+	  End Subroutine R_i4
+
+!======================================================================
+      Subroutine R_i2(nu,mu,n,A)
+!======================================================================
+!
+!     read INTEGER(1) array A(1:n) from UNFORMATED unit 'nu' 
+!     by blocks with length 'mu'
+!
+!----------------------------------------------------------------------
+
+      Implicit none
+
+      Integer(4), Intent(in) :: mu,nu,n
+      Integer(1), Intent(out), Dimension(n) :: A
+
+      Integer(4) :: i,i1,i2
+
+      i1=1; i2=mu; if(i2.gt.n) i2=n
+    1 read(nu) (A(i),i=i1,i2)
+      i1=i1+mu; i2=i2+mu; if(i2.gt.n) i2=n
+      if(i1.le.n) go to 1
+
+	  End Subroutine R_i2
+
+
+
+!======================================================================
+      Subroutine RR_i4(nu,mu,n)
+!======================================================================
+!
+!     read dummy INTEGER(4) array (1:n) from UNFORMATED unit 'nu' 
+!     by blocks with length mu
+!
+!----------------------------------------------------------------------
+
+      Implicit none
+
+      Integer(4), Intent(in) :: mu,nu,n
+
+      Integer(4) :: i,ii,i1,i2
+
+      i1=1; i2=mu; if(i2.gt.n) i2=n
+    1 read(nu) (ii,i=i1,i2)
+      i1=i1+mu; i2=i2+mu; if(i2.gt.n) i2=n
+      if(i1.le.n) go to 1
+
+	  End Subroutine RR_i4
+
+
+!======================================================================
+      Subroutine W_i4(nu,mu,n,AR)
+!======================================================================
+!
+!     write Integer(4) array AR(1:n) from unit 'nu' 
+!     by blocks with length mu
+!
+!----------------------------------------------------------------------
+
+      Implicit none
+
+      Integer(4), Intent(in) :: mu,nu,n
+      Integer(4), Intent(in), Dimension(n) :: AR
+
+      Integer(4) :: i,i1,i2
+
+      i1=1; i2=mu; if(i2.gt.n) i2=n
+    1 write(nu) (AR(i),i=i1,i2)
+      i1=i1+mu; i2=i2+mu; if(i2.gt.n) i2=n
+      if(i1.le.n) go to 1
+
+	  End Subroutine W_i4
+
+!======================================================================
+      Subroutine W_i2(nu,mu,n,AR)
+!======================================================================
+!
+!     write Integer(2) array AR(1:n) from unit 'nu' 
+!     by blocks with length mu
+!
+!----------------------------------------------------------------------
+
+      Implicit none
+
+      Integer(4), Intent(in) :: mu,nu,n
+      Integer(2), Intent(in), Dimension(n) :: AR
+
+      Integer(4) :: i,i1,i2
+
+      i1=1; i2=mu; if(i2.gt.n) i2=n
+    1 write(nu) (AR(i),i=i1,i2)
+      i1=i1+mu; i2=i2+mu; if(i2.gt.n) i2=n
+      if(i1.le.n) go to 1
+
+	  End Subroutine W_i2
+
+
+!======================================================================
+      Subroutine R_a(nu,mu,n,A)
+!======================================================================
+!
+!     read CHARACTER array A(1:n) from unit 'nu' 
+!     by blocks with length mu
+!
+!----------------------------------------------------------------------
+
+      Implicit none
+
+      Integer(4), Intent(in) :: mu,nu,n
+      Character(*), Intent(out), Dimension(n) :: A
+
+      Integer(4) :: i,i1,i2
+
+      i1=1; i2=mu; if(i2.gt.n) i2=n
+    1 read(nu) (A(i),i=i1,i2)
+      i1=i1+mu; i2=i2+mu; if(i2.gt.n) i2=n
+      if(i1.le.n) go to 1
+
+	     End Subroutine R_a
+
+
+!======================================================================
+      Subroutine RR_a(nu,mu,n,A)
+!======================================================================
+!
+!     read CHARACTER dummy array A(:) from unit 'nu' 
+!     by blocks with length mu
+!
+!----------------------------------------------------------------------
+
+      Implicit none
+
+      Integer(4), Intent(in) :: mu,nu,n
+      Character(*), Intent(out) :: A
+
+      Integer(4) :: i,i1,i2
+
+      i1=1; i2=mu; if(i2.gt.n) i2=n
+    1 read(nu) (A,i=i1,i2)
+      i1=i1+mu; i2=i2+mu; if(i2.gt.n) i2=n
+      if(i1.le.n) go to 1
+
+	  End Subroutine RR_a
+
+
+!======================================================================
+      Subroutine W_a(nu,mu,n,AR)
+!======================================================================
+!
+!     write CHARACTER array A(1:n) from unit 'nu' 
+!     by blocks with length mu
+!
+!----------------------------------------------------------------------
+
+      Implicit none
+
+      Integer(4), Intent(in) :: mu,nu,n
+      Character(*), Intent(in), Dimension(n) :: AR
+
+      Integer(4) :: i,i1,i2
+
+      i1=1; i2=mu; if(i2.gt.n) i2=n
+    1 write(nu) (AR(i),i=i1,i2)
+      i1=i1+mu; i2=i2+mu; if(i2.gt.n) i2=n
+      if(i1.le.n) go to 1
+
+	  End Subroutine W_a
+
+
+!======================================================================
+      Subroutine R_r8(nu,mu,n,AR)
+!======================================================================
+!
+!     read REAL(8) array AR(1:n) from UNFORMATED unit 'nu' 
+!     by blocks with length mu
+!
+!----------------------------------------------------------------------
+
+      Implicit none
+
+      Integer(4), Intent(in) :: mu,nu,n
+      Real(8), Intent(out), Dimension(n) :: AR
+
+      Integer(4) :: i,i1,i2
+
+      i1=1; i2=mu; if(i2.gt.n) i2=n
+    1 read(nu) (AR(i),i=i1,i2)
+      i1=i1+mu; i2=i2+mu; if(i2.gt.n) i2=n
+      if(i1.le.n) go to 1
+
+	  End Subroutine R_r8
+
+
+!======================================================================
+      Subroutine W_r8(nu,mu,n,AR)
+!======================================================================
+!
+!     write REAL(8) array AR(1:n) from UNFORMATED unit 'nu' 
+!     by blocks with length mu
+!
+!----------------------------------------------------------------------
+
+      Implicit none
+
+      Integer(4), Intent(in) :: mu,nu,n
+      Real(8), Intent(in), Dimension(n) :: AR
+
+      Integer(4) :: i,i1,i2
+
+      i1=1; i2=mu; if(i2.gt.n) i2=n
+    1 write(nu) (AR(i),i=i1,i2)
+      i1=i1+mu; i2=i2+mu; if(i2.gt.n) i2=n
+      if(i1.le.n) go to 1
+
+	  End Subroutine W_r8
+
+
+!======================================================================
+      Subroutine Save_i4(na,ma,n,AR,mode)
+!======================================================================
+!
+!     write Integer(4) array AR(1:n) from unit 'nu' 
+!     by blocks with length mu
+!
+!----------------------------------------------------------------------
+
+      Use zconst, only: nus,mrecl
+
+      Implicit none
+
+      Integer(4), Intent(in) :: na,ma,n,mode
+      Integer(4), Intent(in) :: AR(n)
+
+      Integer(4) :: nu,mu,i,i1,i2
+
+      nu=na; if(na.le.0) nu=nus
+      mu=ma; if(ma.le.0) mu=mrecl
+
+      if(mode.eq.0) then
+       Open(nu,form='UNFORMATTED'); rewind(nu)
+      end if
+
+      i1=1; i2=mu; if(i2.gt.n) i2=n
+    1 write(nu) (AR(i),i=i1,i2)
+      i1=i1+mu; i2=i2+mu; if(i2.gt.n) i2=n
+      if(i1.le.n) go to 1
+
+	  End Subroutine Save_i4
+
+
+!======================================================================
+      Subroutine Restore_i4(na,ma,n,AR,mode)
+!======================================================================
+!
+!     read INTEGER(4) array AR(1:n) from UNFORMATED unit 'na' 
+!     by blocks with length ma
+!
+!----------------------------------------------------------------------
+
+      Use zconst, only: nus,mrecl
+
+      Implicit none
+
+      Integer(4), Intent(in) :: na,ma,n,mode
+      Integer(4), Intent(out), Dimension(*) :: AR
+
+      Integer(4) :: nu,mu, i,i1,i2
+
+      nu=na; if(na.le.0) nu=nus
+      mu=ma; if(ma.le.0) mu=mrecl
+
+      if(mode.eq.0) then; rewind(nu); end if
+
+      i1=1; i2=mu; if(i2.gt.n) i2=n
+    1 read(nu) (AR(i),i=i1,i2)
+      i1=i1+mu; i2=i2+mu; if(i2.gt.n) i2=n
+      if(i1.le.n) go to 1
+
+	  End Subroutine restore_i4
+
+
+!======================================================================
+      Subroutine Save_r8(na,ma,n,AR,mode)
+!======================================================================
+!
+!     write Integer(4) array AR(1:n) from unit 'nu' 
+!     by blocks with length mu
+!
+!----------------------------------------------------------------------
+
+      Use zconst, only: nus,mrecl
+
+      Implicit none
+
+      Integer(4), Intent(in) :: na,ma,n,mode
+      Real(8), Intent(in) :: AR(n)
+
+      Integer(4) :: nu,mu,i,i1,i2
+
+      nu=na; if(na.le.0) nu=nus
+      mu=ma; if(ma.le.0) mu=mrecl
+
+      if(mode.eq.0) then
+       Open(nu,form='UNFORMATTED'); rewind(nu)
+      end if
+
+      i1=1; i2=mu; if(i2.gt.n) i2=n
+    1 write(nu) (AR(i),i=i1,i2)
+      i1=i1+mu; i2=i2+mu; if(i2.gt.n) i2=n
+      if(i1.le.n) go to 1
+
+	  End Subroutine Save_r8
+
+
+!======================================================================
+      Subroutine Restore_r8(na,ma,n,AR,mode)
+!======================================================================
+!
+!     read INTEGER(4) array AR(1:n) from UNFORMATED unit 'na' 
+!     by blocks with length ma
+!
+!----------------------------------------------------------------------
+
+      Use zconst, only: nus,mrecl
+
+      Implicit none
+
+      Integer(4), Intent(in) :: na,ma,n,mode
+      Real(8), Intent(out), Dimension(*) :: AR
+
+      Integer(4) :: nu,mu, i,i1,i2
+
+      nu=na; if(na.le.0) nu=nus
+      mu=ma; if(ma.le.0) mu=mrecl
+
+      if(mode.eq.0) then; rewind(nu); end if
+
+      i1=1; i2=mu; if(i2.gt.n) i2=n
+    1 read(nu) (AR(i),i=i1,i2)
+      i1=i1+mu; i2=i2+mu; if(i2.gt.n) i2=n
+      if(i1.le.n) go to 1
+
+      End Subroutine Restore_r8

@@ -1,0 +1,191 @@
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries spline_param.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries spline_atomic.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries spline_grid.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries spline_galerkin.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries spline_orbitals.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries spline_densities.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries spline_integrals.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries spline_moments.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries spline_hl.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries spline_rk_integrals.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries spline_slater.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries azl.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries bav.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries bcore.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries bhl.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries bhwf.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries bs_cwf.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries bvalue2.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries bvmv.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries bxv.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries bzk.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries convol.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries coulom.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries define_grid.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries define_spline.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries density.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries dinty.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries dvx.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries facdyk.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries facdzk.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries facsb.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries facsbl.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries gauss.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries grad.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries hlc.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries hlm.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries int_de.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries int_v.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries minty.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mk.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mkc.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mkgrid2.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mky.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mk_moments.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mmk_cell.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mmk_diff.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mnk_cell.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mnk_diff.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries moments.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mqk_cell.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mrk_cell.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mrk_diff.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mrm.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mtk_cell.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mtk_diff.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mvc.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mvcv.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mvk_cell.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mvk_diff.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries mwk_cell.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries nk.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries nkc.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries nky.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries nk_moments.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries qk.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries qkc.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries qky.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries qk_moments.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries quadr.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries rk.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries rkc.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries rky.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries rk_moments.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries r_bwfn.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries splin3.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries sum_amb.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries tk.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries tkc.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries tky.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries tk_moments.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries vbsplvd.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries vinty.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries vk.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries vkc.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries vky.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries vk_moments.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries wk.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries wky.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries wk_moments.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries ykf.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries yval.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries zeta_y.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries zinty.f90
+ifort -c -O2 -module /home1/06396/tg856958/BSR3/libraries memory_splines.f90
+ar rv libBS.a spline_param.o spline_atomic.o spline_grid.o spline_galerkin.o spline_orbitals.o spline_densities.o spline_integrals.o spline_moments.o spline_hl.o spline_rk_integrals.o spline_slater.o azl.o bav.o bcore.o bhl.o bhwf.o bs_cwf.o bvalue2.o bvmv.o bxv.o bzk.o convol.o coulom.o define_grid.o define_spline.o density.o dinty.o dvx.o facdyk.o facdzk.o facsb.o facsbl.o gauss.o grad.o hlc.o hlm.o int_de.o int_v.o minty.o mk.o mkc.o mkgrid2.o mky.o mk_moments.o mmk_cell.o mmk_diff.o mnk_cell.o mnk_diff.o moments.o mqk_cell.o mrk_cell.o mrk_diff.o mrm.o mtk_cell.o mtk_diff.o mvc.o mvcv.o mvk_cell.o mvk_diff.o mwk_cell.o nk.o nkc.o nky.o nk_moments.o qk.o qkc.o qky.o qk_moments.o quadr.o rk.o rkc.o rky.o rk_moments.o r_bwfn.o splin3.o sum_amb.o tk.o tkc.o tky.o tk_moments.o vbsplvd.o vinty.o vk.o vkc.o vky.o vk_moments.o wk.o wky.o wk_moments.o ykf.o yval.o zeta_y.o zinty.o memory_splines.o
+a - spline_param.o
+a - spline_atomic.o
+a - spline_grid.o
+a - spline_galerkin.o
+a - spline_orbitals.o
+a - spline_densities.o
+a - spline_integrals.o
+a - spline_moments.o
+a - spline_hl.o
+a - spline_rk_integrals.o
+a - spline_slater.o
+a - azl.o
+a - bav.o
+a - bcore.o
+a - bhl.o
+a - bhwf.o
+a - bs_cwf.o
+a - bvalue2.o
+a - bvmv.o
+a - bxv.o
+a - bzk.o
+a - convol.o
+a - coulom.o
+a - define_grid.o
+a - define_spline.o
+a - density.o
+a - dinty.o
+a - dvx.o
+a - facdyk.o
+a - facdzk.o
+a - facsb.o
+a - facsbl.o
+a - gauss.o
+a - grad.o
+a - hlc.o
+a - hlm.o
+a - int_de.o
+a - int_v.o
+a - minty.o
+a - mk.o
+a - mkc.o
+a - mkgrid2.o
+a - mky.o
+a - mk_moments.o
+a - mmk_cell.o
+a - mmk_diff.o
+a - mnk_cell.o
+a - mnk_diff.o
+a - moments.o
+a - mqk_cell.o
+a - mrk_cell.o
+a - mrk_diff.o
+a - mrm.o
+a - mtk_cell.o
+a - mtk_diff.o
+a - mvc.o
+a - mvcv.o
+a - mvk_cell.o
+a - mvk_diff.o
+a - mwk_cell.o
+a - nk.o
+a - nkc.o
+a - nky.o
+a - nk_moments.o
+a - qk.o
+a - qkc.o
+a - qky.o
+a - qk_moments.o
+a - quadr.o
+a - rk.o
+a - rkc.o
+a - rky.o
+a - rk_moments.o
+a - r_bwfn.o
+a - splin3.o
+a - sum_amb.o
+a - tk.o
+a - tkc.o
+a - tky.o
+a - tk_moments.o
+a - vbsplvd.o
+a - vinty.o
+a - vk.o
+a - vkc.o
+a - vky.o
+a - vk_moments.o
+a - wk.o
+a - wky.o
+a - wk_moments.o
+a - ykf.o
+a - yval.o
+a - zeta_y.o
+a - zinty.o
+a - memory_splines.o
+mv libBS.a /home1/06396/tg856958/BSR3/libraries
+rm *.o 

@@ -1,0 +1,37 @@
+!---------------------------------------------------------------
+!     ZCOM LIBRARY
+!---------------------------------------------------------------
+!     contains common routines frequently used by other programs
+!---------------------------------------------------------------
+!     MODULES:
+!
+!     MOD_zconst.f90     -  physical constants 
+!     MOD_atoms_par.f90  -  atomic parameters and quantities
+!---------------------------------------------------------------
+!     ROUTINES:
+!
+!     ANG_dj_fact.f90
+!     ANG_itra.f90
+!     ANG_kappa.f90
+!     ANG_t_ls_jk.f90
+!     ANG_zcklm.f90
+!     ANG_zclkl.f90
+!     ANG_z_3j.f90
+!     ANG_z_6j.f90
+!     ANG_z_9j.f90
+!     check_file.f90
+!     clean_a.f90
+!     full_mat.f90
+!     FUN_alegf.f90
+!     FUN_cgamma.f90
+!     FUN_dirac.f90
+!     gauss_LA.f90
+!     gauss_points.f90
+!     interv.f90
+!     ipointer.f90
+!     read_arg.f90
+!     read_par.f90
+!     rrtc.f90
+!     splin3.f90
+!---------------------------------------------------------------     
+     

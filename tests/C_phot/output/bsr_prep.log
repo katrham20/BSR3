@@ -1,0 +1,150 @@
+BSR_PREP:
+
+eps_ovl  =     0.10000D-05 - tolerance for orthogonality between orbitals
+
+eps_sub  =     0.50000D+00 - tolerance for substitution orbitals
+
+eps_phys =     0.50000D+00 - tolerance for physical orbitals
+
+
+------------------------------------------------------------------------
+
+CORE:    1s                                                                                                                                                                                                    
+
+------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------
+
+ target     1    2p2_3P              
+
+  1s -->   1s    the same
+  2s -->  2s1    new orbitals and new set index     0.00000000
+  2p -->  2p1    new orbitals and new set index     0.00000000
+  3p -->  3p1    new orbitals but old set index     0.00000003
+  3d -->  3d1    new orbitals and new set index     0.00000003
+  3s -->  3s1    new orbitals but old set index     0.00000003
+  9s -->  9s1    new orbitals but old set index     0.00000001
+  9p -->  9p1    new orbitals but old set index     0.00000002
+  9d -->  9d1    new orbitals but old set index     0.00000000
+  9f -->  9f1    new orbitals and new set index     0.00000000
+
+------------------------------------------------------------------------
+
+ target     2    2p3_5So             
+
+  1s -->   1s    the same
+  2s -->  2s2    new orbitals and new set index     0.99943325
+  2p -->  2p2    new orbitals and new set index     0.99985625
+  3d -->  3d2    new orbitals and new set index     0.99989747
+  3p -->  3p2    new orbitals but old set index     0.00000002
+  3s -->  3s2    new orbitals but old set index     0.00000003
+  4s -->  4s2    new orbitals but old set index     0.00000009
+  9s -->  9s2    new orbitals but old set index     0.00000001
+  9p -->  9p2    new orbitals but old set index     0.00000001
+  9d -->  9d2    new orbitals but old set index     0.00000000
+  9f -->  9f2    new orbitals and new set index     0.98339329
+
+------------------------------------------------------------------------
+
+ target     3    2p3s_3Po            
+
+  1s -->   1s    the same
+  2s -->  2s2    the same
+  2p -->  2p2    the same
+  3d -->  3d2    the same
+  3p -->  3p2    the same
+  3s -->  3s2    the same
+  4s -->  4s2    the same
+  9s -->  9s2    the same
+  9p -->  9p2    the same
+  9d -->  9d2    the same
+  9f -->  9f2    the same
+ 3s2 -->  3s3    new orbitals and new set index     0.99974443
+
+------------------------------------------------------------------------
+
+ target     4    2p3_3Do             
+
+  1s -->   1s    the same
+  2s -->  2s2    the same
+  2p -->  2p2    the same
+  3d -->  3d2    the same
+  3p -->  3p2    the same
+  3s -->  3s2    the same
+  4s -->  4s2    the same
+  9s -->  9s2    the same
+  9p -->  9p2    the same
+  9d -->  9d2    the same
+  9f -->  9f2    the same
+
+------------------------------------------------------------------------
+
+ target     5    2p3_3Po             
+
+  1s -->   1s    the same
+  2s -->  2s2    the same
+  2p -->  2p2    the same
+  3d -->  3d2    the same
+  3p -->  3p2    the same
+  3s -->  3s2    the same
+  4s -->  4s2    the same
+  9s -->  9s2    the same
+  9p -->  9p2    the same
+  9d -->  9d2    the same
+  9f -->  9f2    the same
+
+------------------------------------------------------------------------
+
+ target     6    2p3_3So             
+
+  1s -->   1s    the same
+  2s -->  2s2    the same
+  2p -->  2p2    the same
+  3d -->  3d2    the same
+  3p -->  3p2    the same
+  3s -->  3s2    the same
+  4s -->  4s2    the same
+  9s -->  9s2    the same
+  9p -->  9p2    the same
+  9d -->  9d2    the same
+  9f -->  9f2    the same
+
+------------------------------------------------------------------------
+
+ target     7    2p4_3P              
+
+  1s -->   1s    the same
+  2s -->  2s1    the same
+  2p -->  2p1    the same
+  3p -->  3p1    the same
+  3d -->  3d1    the same
+  3s -->  3s1    the same
+  9s -->  9s1    the same
+  9p -->  9p1    the same
+  9d -->  9d1    the same
+  9f -->  9f1    the same
+
+------------------------------------------------------------------------
+
+
+ target orbitals, nbf =    21
+
+   1s  2s1  2p1  3p1  3d1  3s1  9s1  9p1  9d1  9f1  2s2  2p2  3d2  3p2
+  3s2  4s2  9s2  9p2  9d2  9f2  3s3
+
+------------------------------------------------------------------------
+
+
+ substitution orbitals for target states: nsub =     4
+
+   1s  2s1  2p1  3s3                                                                                                                                                                                    
+
+ all substitution orbitals are orthogonal
+
+
+------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------
+

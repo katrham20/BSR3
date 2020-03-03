@@ -1,0 +1,17 @@
+#!/bin/bash
+#SBATCH -J bd??
+#SBATCH -o bd??.out
+#SBATCH -e bd??.err
+#SBATCH -n 256
+#SBATCH -N 16
+#SBATCH -p normal
+#SBATCH -t 12:00:00
+##SBATCH -A TG-PHY080033N
+##SBATCH -M oleg_zoi@yahoo.com
+
+cho
+  ibrun ~/BIN/bsr_breit_mpi klsp1=??  oper=111110 
+
+  ibrun ~/BIN/bsr_mat_mpi3 klsp1=?? > bm??.out 
+  ibrun ~/BIN/bsr_hdb3 klsp1=?? > bh??.out 
+

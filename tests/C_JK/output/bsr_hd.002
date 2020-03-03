@@ -1,0 +1,33 @@
+B S R _ H D 
+***********
+ 
+calculations for partial wave:  klsp =  2
+ 
+itype =    0  -  scattering calculations
+ 
+kch   =   23  -  number of channels
+kcp   =   23  -  number of pertubers
+nhm   = 2806  -  full size of matrix
+ 
+iexp  =    0  -  theoretical target energies
+ 
+jmvc  =    0  -  number of channel orbitals for inclusion of
+                 mass-velocity corrections
+ 
+Restrictions on interaction matrix:
+ 
+Emin  =   0.00000
+Emax  =1000.00000
+Egap  =   0.00100
+ 
+All one-channel solutions with E<Emin, E>Emax or abs(E)<Egap will be deleted.
+
+Problem is a GENERALIZED eigenvalue problem
+
+
+new basis: khm =  2730
+
+
+Eval(1:5) =      -37.75420      -37.75414      -37.75410      -37.75399      -37.75054
+
+time =      2.98 min.

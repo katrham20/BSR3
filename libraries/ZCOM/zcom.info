@@ -1,0 +1,139 @@
+!--------------------------------------------------------------
+!     ZCOM LIBRARY
+!--------------------------------------------------------------
+!     contains common routines frequently used by other programs
+!--------------------------------------------------------------
+!
+!     MODULES:
+!
+!    
+!     atom_param - atomic parameters and quantities
+!
+!--------------------------------------------------------------
+!
+!     ROUTINES:
+!
+!     al.f90
+!     aname.f90
+!     angs_air.f90
+!     anumber.f90
+!     atom_param.f90
+!     check_file.f90
+!     clebsh.f90
+!     conv_au.f90
+!     det.f90
+!     dj_fact.f90
+!     elf.f90
+!     el_nlk.f90
+!     f_gaus.f90
+!     gauss.f90
+!     hwf.f90
+!     iglq.f90
+!     interv.f90
+!     inv.f90
+!     iopen.f90
+!     ipointer.f90
+!     isort.f90
+!     isort1.f90
+!     isort2.f90
+!     iterm.f90
+!     itri.f90
+!     la.f90
+!     num.f90
+!     read_ipar.f90
+!     read_rarg.f90
+!     reduce_mat.f90
+!     rrtc.f90
+!     rw_arrays.f90
+!     sort1.f90
+!     sym_mat.f90
+!     t_ls_jj.f90
+!     t_ls_jk.f90
+!     xlagr.f90
+!     y_3j.f90
+!     zcb.f90
+!     zcfg.f90
+!     zcklm.f90
+!     zclkl.f90
+!     zis.f90
+!     z_3j.f90
+!     z_3j0.f90
+!     z_6j.f90
+!     z_9j.f90
+!
+!--------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+This library contains common routines, usually without modules
+(excepr zconst - general constants)
+
+-----------------------------------------------------------------------
+MODULES
+-----------------------------------------------------------------------
+
+zconst  -  most common constants 
+
+----------------------------------------------------------------------
+MISCELLANEOUS
+----------------------------------------------------------------------
+
+...
+
+----------------------------------------------------------------------
+LAPACK INTERFACE
+----------------------------------------------------------------------
+
+LAP_DGESV     -   A x = B  real 
+LAP_ZGESV     -   A x = B, complex 
+
+LAP_DSYEV     -   A S = E S
+LAP_DSYEVX    -   A S = E S,  first k lowest eigenvalues
+LAP_ZHEEV     -   A S = E S,  complex A
+
+LAP_DSYGV     -   A S = E C S
+LAP_DSYGVX    -   A S = E C S, first k lowest eigenvalues
+
+LAP_INV       -   A ->  1/A 
+
+----------------------------------------------------------------------
+SORTING
+----------------------------------------------------------------------
+
+SORTI (n,S,IPT)  gives IPT-pointer on sorting of integer array  S
+SORTR (n,S,IPT)  gives IPT-pointer on sorting of real array  S
+SORTA (n,S,IPT)  gives IPT-pointer on sorting of real array  abs(S)
+
+SORTI2(n,S1,S2,IPT) gives IPT-pointer on sorting of S1 and S2
+
+Function ISORT (n,S) - number of permutation for sorting S
+Function RSORT (n,R) - number of permutation for sorting R
+
+Function ISORT2(n,N1,N2) - sorting two arrays N1,N2
+----------------------------------------------------------------------
+
+
+------------------------------------------------------------------
+Scattering calculations:
+------------------------------------------------------------------
+
+ZKMAT   -  K-matrix from R-matrix and asymptotics
+ZRMAT   -  R-matrix based on the surface amplitudes
+ZSMAT   -  S-matrix from K-matrix 
+Sym_mat -  symmetrize the matrix
+ephase  -  eigenohases from K-matrix
+kma_om  -  omega-matrix from K-matrix
+kma_tma -  T-matrix from K-matrix
+ANAME   -  file-names for different transitions
+Iopen   -  number of open channels
+pri_matr-  print matrix with name
+TIME_DEL-  time-delay matrix
+------------------------------------------------------------------
+
+
