@@ -1,7 +1,8 @@
 !======================================================================
       Module bsr_conf
 !======================================================================
-! ... main parameters and variables for BSR_CONF program
+!>@ingroup bsr_conf
+!>@brief main parameters and variables for BSR_CONF program
 !----------------------------------------------------------------------
       Implicit none
 
@@ -18,19 +19,19 @@
        
 ! ... default values for parameters:    
 
-      Real(8) :: c_comp = 1.010  ! tolerance for compensation configurations          
-      Real(8) :: c_conf = 0.333  ! tolerance for physical configurations        
-      Real(8) :: c_pert = 0.500  ! tolerance for physical configurations in perturber        
-      Real(8) :: c_norm = 0.100  ! tolerance for target states normalization        
-      Real(8) :: c_orth = 0.250  ! compensations < c_orth are ignored        
+      Real(8) :: c_comp = 1.010  !< @param tolerance for compensation configurations          
+      Real(8) :: c_conf = 0.333  !< @param tolerance for physical configurations        
+      Real(8) :: c_pert = 0.500  !< @param tolerance for physical configurations in perturber        
+      Real(8) :: c_norm = 0.100  !< @param tolerance for target states normalization        
+      Real(8) :: c_orth = 0.250  !< @param compensations < c_orth are ignored       
 
-      Integer :: max_it = -1     ! upper limit for number of target states
-      Integer :: max_ll = -1     ! upper limit for small "l"
-      Integer :: min_ll = -1     ! lower limit for small "l"
-      Integer :: max_LT = -1     ! upper limit for big "L" (2L+1 - value) 
-      Integer :: max_ST = -1     ! upper limit for total spin (2S+1 - value)
-      Integer :: kort   = -1     ! if kort > 0, program will read additional
-                                 ! orth. conditions from cfg.nnn file
+      Integer :: max_it = -1     !< @param upper limit for number of target states
+      Integer :: max_ll = -1     !< @param upper limit for small "l"
+      Integer :: min_ll = -1     !< @param lower limit for small "l"
+      Integer :: max_LT = -1     !< @param upper limit for big "L" (2L+1 - value) 
+      Integer :: max_ST = -1     !< @param upper limit for total spin (2S+1 - value)
+      Integer :: kort   = -1     !> @param if kort > 0, program will read additional
+                                 !> orth. conditions from cfg.nnn file
 
 ! ... values used in different subroutions:
 
@@ -85,7 +86,8 @@
 !======================================================================
       Subroutine Read_del
 !======================================================================
-!     read "chanel-delete" conditions if any
+!> @ingroup bsr_conf
+!> @brief     read "chanel-delete" conditions if any
 !---------------------------------------------------------------------- 
       Use bsr_conf
       Implicit none
@@ -137,7 +139,8 @@
 !======================================================================
       Integer Function Icheck_del(k1,k2,k3,k4)
 !======================================================================
-!     check if channel with identifiers k1,k2,k3,k4 is in "delete" list
+!> @ingroup bsr_conf
+!> @brief     check if channel with identifiers k1,k2,k3,k4 is in "delete" list
 !----------------------------------------------------------------------
       Use bsr_conf
       Implicit none
@@ -155,7 +158,5 @@
       End do
 
       End Function Icheck_del
-
-
 
 

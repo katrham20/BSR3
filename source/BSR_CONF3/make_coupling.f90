@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine make_coupling
 !======================================================================
-!     prepare coupling scheme for state in module conf_LS: J1_coupling
+!>@ingroup bsr_conf
+!>@brief     prepare coupling scheme for state in module conf_LS: J1_coupling
 !----------------------------------------------------------------------
       Use bsr_conf,  JJ_coupling => J1_coupling
       Use conf_LS,   n=>no
@@ -38,8 +39,9 @@
 !======================================================================
       Subroutine make_coupling_insert(ii)
 !======================================================================
-!     prepare coupling scheme for state in module conf_jj
-!     with outer orbital is going to position ii: J2_coupling
+!>@ingroup bsr_conf
+!>@brief     prepare coupling scheme for state in module conf_jj
+!>     with outer orbital is going to position ii: J2_coupling
 !----------------------------------------------------------------------
 
       Use bsr_conf,  JJ_coupling => J2_coupling   
@@ -85,8 +87,9 @@
 !======================================================================
       Subroutine make_coupling_trap
 !======================================================================
-!     prepare coupling scheme for state in module conf_jj
-!     with outer orbital is going to position ii
+!>@ingroup bsr_conf
+!>@brief     prepare coupling scheme for state in module conf_jj
+!>     with outer orbital is going to position ii
 !----------------------------------------------------------------------
 
       Use bsr_conf,  JJ_coupling => J2_coupling   

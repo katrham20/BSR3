@@ -1,8 +1,9 @@
 !======================================================================
       Subroutine Check_cfg
 !======================================================================
-! ... for given compensation configuration (ic) record all relevant 
-! ... information, see add_comp below
+!>@ingroup bsr_conf
+!>@brief for given compensation configuration (ic) record all relevant 
+!>  information, see add_comp below
 !----------------------------------------------------------------------
       Use bsr_conf 
       USE conf_LS

@@ -6,27 +6,29 @@
 !     Written by:   Oleg Zatsarinny
 !                   email: oleg_zoi@yahoo.com
 !
+!>@author Oleg Zatsarinny
 !======================================================================
-!
-!  1. Target states are ordered according to their energies.
-!  2. The orthogonality conditions for one-electron orbitals 
-!     are analized and new c-files for target states (targ_nnn.c)
-!     and pertubers (pert_nnn.c and pert_nnn.bsw) 
-!     are generated with consistent set-indexes.  
-!     File target.bsw contains all target orbitals.
-!  3. The list of spectroscopic orbitals for target states is created
-!     and recorded in target_orb file.
-!  4  The orthogonal set of "substitution" orbitals is readed from
-!     target_sub.bsw (or created if target_sub.bsw is absent).
-!
-!  In order to define the same orbitals, the following criteria are 
-!  used:  
-!              | <p1|p2> - 1 |               <  eps_ovl
-!              | <p1|r|p1> - <p2|r|p2> |     <  eps_ovl
-!              | <p1|1/r|p1> - <p2|1/r|p2> | <  eps_ovl
-!
-!  where the parameter eps_ovl can be read from bsr_par, 
-!  or as argument: eps_ovl=value
+!>@defgroup bsr_prep BSR_PREP3
+!>
+!>  1. Target states are ordered according to their energies.
+!>  2. The orthogonality conditions for one-electron orbitals 
+!>     are analized and new c-files for target states (targ_nnn.c)
+!>     and pertubers (pert_nnn.c and pert_nnn.bsw) 
+!>     are generated with consistent set-indexes.  
+!>     File target.bsw contains all target orbitals.
+!>  3. The list of spectroscopic orbitals for target states is created
+!>     and recorded in target_orb file.
+!>  4  The orthogonal set of "substitution" orbitals is readed from
+!>     target_sub.bsw (or created if target_sub.bsw is absent).
+!>
+!>  In order to define the same orbitals, the following criteria are 
+!>  used:  
+!>              | <p1|p2> - 1 |               <  eps_ovl
+!>             | <p1|r|p1> - <p2|r|p2> |     <  eps_ovl
+!>              | <p1|1/r|p1> - <p2|1/r|p2> | <  eps_ovl
+!>
+!>  where the parameter eps_ovl can be read from bsr_par, 
+!>  or as argument: eps_ovl=value
 !
 !======================================================================
 !
@@ -50,9 +52,9 @@
 !
 !  ARGUMENTS:   
 !
-!     eps_ovl  [1.d-6] - tolerance for overlaps
-!     eps_phys [0.5  ] - minimum occupation number for physical orbital 
-!     eps_sub  [0.5  ] - tolerance for substitution orbitals
+!     eps_ovl  [1.d-6] - !< @param tolerance for overlaps
+!     eps_phys [0.5  ] - !< @param minimum occupation number for physical orbital 
+!     eps_sub  [0.5  ] - !< @param tolerance for substitution orbitals
 !
 !======================================================================
      
@@ -564,7 +566,7 @@
 !======================================================================
       Subroutine SUB_check_orb
 !======================================================================
-!     this routine analizes one set of orbitals in file AFW
+!> @brief     this routine analizes one set of orbitals in file AFW
 !----------------------------------------------------------------------
       Implicit real(8) (A-H,O-Z)
       Character(4) :: elw
@@ -672,7 +674,7 @@
 !======================================================================
       Subroutine SUB_phys_orb
 !======================================================================
-!     define physical orbitals for given target state
+!>@brief     define physical orbitals for given target state
 !----------------------------------------------------------------------
       Implicit real(8) (A-H,O-Z)
       
@@ -730,7 +732,7 @@
 !======================================================================
       Subroutine SUB_phys_pert
 !======================================================================
-!     define physical orbitals in perturber
+!>@brief     define physical orbitals in perturber
 !----------------------------------------------------------------------
       Implicit real(8) (A-H,O-Z)
       
@@ -838,7 +840,7 @@
 !======================================================================
       Subroutine Assign_index(m)
 !======================================================================
-!     assign set index for orbital m
+!>@brief     assign set index for orbital m
 !----------------------------------------------------------------------
       Implicit real(8) (A-H,O-Z)
       Character(4) :: ELW
@@ -886,7 +888,7 @@
 !======================================================================
       Subroutine Check_bsw_file(AFW,pri)
 !======================================================================
-! ... check if we have bsw-file, otherwis try to call w_bsw
+!>@brief check if we have bsw-file, otherwis try to call w_bsw
 !----------------------------------------------------------------------
       Character(*) :: AFW
       Character(80) :: BFW, AS
@@ -911,7 +913,7 @@
 !======================================================================
       Subroutine Check_BSR_name(AF)
 !======================================================================
-!     rename old-version file-name  as name.c just to name
+!>@brief     rename old-version file-name  as name.c just to name
 !----------------------------------------------------------------------
 
       Character(*) :: AF
@@ -926,7 +928,7 @@
 !=====================================================================
       Subroutine bsr_prep_inf
 !=====================================================================
-!     print information for bsr_prep program
+!>@brief     print information for bsr_prep program
 !---------------------------------------------------------------------
       Implicit none
       Character ::  name = ' '

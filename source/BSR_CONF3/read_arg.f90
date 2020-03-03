@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine Read_arg
 !======================================================================
-! ... read parameters for given case
+!>@ingroup bsr_conf
+!>@brief read parameters for given case
 !----------------------------------------------------------------------
       USE bsr_conf
       USE target, only: coupling

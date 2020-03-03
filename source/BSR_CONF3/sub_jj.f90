@@ -1,7 +1,8 @@
 !======================================================================      
       Subroutine SUB_JJ
 !====================================================================== 
-!     define channels orbitals in JJ case
+!> @ingroup bsr_conf
+!> @brief     define channels orbitals in JJ case
 !----------------------------------------------------------------------
       Use bsr_conf
       Use target; Use channel; Use conf_LS; Use orb_LS

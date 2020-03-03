@@ -1,7 +1,8 @@
 !=====================================================================
       Subroutine bsr_conf_inf
 !=====================================================================
-!     print information for bsr_prep program
+!>@brief     print information for bsr_prep program
+!>@ingroup bsr_conf
 !---------------------------------------------------------------------
       Implicit none
       Integer :: nu=6

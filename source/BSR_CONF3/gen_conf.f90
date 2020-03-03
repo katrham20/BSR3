@@ -1,9 +1,10 @@
 !====================================================================
       Subroutine GEN_CONF
 !====================================================================
-!     generates all configurations from given configuration 'ic'
-!     in module CONFIGS by adding the orbital 'ie' 
-!     so to obtain total term IS,IL
+!>@ingroup bsr_conf
+!>@brief     generates all configurations from given configuration 'ic'
+!>     in module CONFIGS by adding the orbital 'ie' 
+!>     so to obtain total term IS,IL
 !--------------------------------------------------------------------
       Use bsr_conf; Use conf_LS; Use orb_LS
 

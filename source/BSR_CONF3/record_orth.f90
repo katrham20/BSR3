@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine Record_orth
 !======================================================================
-! ... record orthogonal conditions for sct. orbitals:
+!> @ingroup bsr_conf
+!> @brief record orthogonal conditions for sct. orbitals:
 !----------------------------------------------------------------------
       USE bsr_conf
       USE target; USE channel; USE conf_LS;; USE orb_LS; USE phys_orb_LS

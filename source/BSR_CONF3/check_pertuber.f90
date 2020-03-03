@@ -1,9 +1,10 @@
 !======================================================================
       Subroutine Check_perturbers
 !======================================================================     
-!     read the perturber configurations, substitute physical orbitals
-!     and check the "double"  configurations if any
-!     We are supposed that pertuber expansions are ordered
+!>@ingroup bsr_conf
+!>@brief     read the perturber configurations, substitute physical orbitals
+!>     and check the "double"  configurations if any
+!>     We are supposed that pertuber expansions are ordered
 !----------------------------------------------------------------------
       Use bsr_conf
       Use target; Use channel; Use conf_LS; Use orb_LS; Use phys_orb_LS

@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine Def_orth_cond
 !======================================================================
-!     define orthogonal conditions to avoid "over-compensation"
+!>@ingroup bsr_conf
+!>@brief     define orthogonal conditions to avoid "over-compensation"
 !----------------------------------------------------------------------
       Use bsr_conf
       Use target; Use channel; Use conf_LS;; Use orb_LS; Use phys_orb_LS

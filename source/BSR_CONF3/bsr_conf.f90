@@ -7,9 +7,10 @@
 !                   email: oleg_zoi@yahoo.com
 !                        
 !======================================================================
-!     Generates configuration lists for BSR codes
-!     in case of LS(LSJ), JK or JJ couplings
-!     with automatic generation of minimum orthogonal constraints
+!> @defgroup bsr_conf BSR_CONF3
+!> @brief     Generates configuration lists for BSR codes
+!>     in case of LS(LSJ), JK or JJ couplings
+!>     with automatic generation of minimum orthogonal constraints
 !======================================================================
 !
 !     INPUT FILES:
@@ -86,7 +87,7 @@
 ! 5.  read all target configurations  (files target.nnn)
 ! 6.  read "channel-delete" conditions if any
 ! 7.  read information about included partial waves (file target); 
-!     this information should be prepared by hand - not convivient, 
+!     this information should be prepared by hand - not convivient,
 !     I am sorry, but you may copy these lines from previous calculations) 
 !----------------------------------------------------------------------
 ! ... loop other partial waves:  

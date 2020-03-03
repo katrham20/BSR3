@@ -1,10 +1,11 @@
 !======================================================================
       Subroutine Def_phys_targ
 !======================================================================     
-!     define the physical configurations for target expansions;
-!     we do it in two stage: define and record them in targ_nnn.c,
-!     and then read all of them to avoid situation of missing targets
-!     and put target cofigurations in needed order
+!>@ingroup bsr_conf
+!>@brief     define the physical configurations for target expansions;
+!>     we do it in two stage: define and record them in targ_nnn.c,
+!>     and then read all of them to avoid situation of missing targets
+!>     and put target cofigurations in needed order
 !----------------------------------------------------------------------
       Use bsr_conf
       Use target; Use channel; Use conf_LS; Use orb_LS; Use phys_orb_LS

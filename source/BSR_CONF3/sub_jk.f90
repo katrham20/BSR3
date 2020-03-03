@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine SUB_JK
 !====================================================================== 
-!     define channels orbitals in JK case
+!> @ingroup bsr_conf
+!> @brief     define channels orbitals in JK case
 !----------------------------------------------------------------------
       Use bsr_conf
       Use target; Use channel; Use conf_LS; Use orb_LS
