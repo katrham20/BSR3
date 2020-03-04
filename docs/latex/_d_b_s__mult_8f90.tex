@@ -1,0 +1,98 @@
+\hypertarget{_d_b_s__mult_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+D\+B\+S/\+D\+B\+S\+\_\+mult.f90 File Reference}
+\label{_d_b_s__mult_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/DBS/DBS\_mult.f90@{/Users/khamilton/Codes/BSR3/libraries/DBS/DBS\_mult.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacedbs__mult}{dbs\+\_\+mult}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__mult_8f90_ae3db4f8aa82e7f9a6cc2a96120786a46}{dip\+\_\+mat\+\_\+pq}} (wfact, kpol)
+\item 
+real(8) function \mbox{\hyperlink{_d_b_s__mult_8f90_a02a011d45f5cc337a72ceeeceb75a05d}{jkdip\+\_\+pq}} (i, j, kpol, wfact)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__mult_8f90_a1f7b204afca6923c2fdaebe2051b60fc}{ikdip\+\_\+pq}} (i, j, kpol, wfact, CP, CM, met)
+\item 
+real(8) function \mbox{\hyperlink{_d_b_s__mult_8f90_a7225d85cd8103482990f75058063de93}{dipm\+\_\+pq}} (i, j, kpol, wfact)
+\item 
+real(8) function \mbox{\hyperlink{_d_b_s__mult_8f90_a9170c7bded3a125b9b9bfaff822a2eb6}{dquadrm\+\_\+pq}} (i, j, k)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__mult_8f90_ad3fd06aaf3179254eb315a06a3fac3bc}{dipe\+\_\+pq}} (i, j, kpol, wfact, CL, CV)
+\item 
+real(8) function \mbox{\hyperlink{_d_b_s__mult_8f90_a82dd9482a6f7a3b9e29fa5fbfb602b63}{dquadrl\+\_\+pq}} (i, j, k)
+\item 
+real(8) function \mbox{\hyperlink{_d_b_s__mult_8f90_ababde3925e5da064aa3474641eb8c806}{dquadrv\+\_\+pq}} (i, j, k)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{namespacedbs__mult_a720b43ac2ff2dbfb4f9cb5e693f70137}{dbs\+\_\+mult\+::kmult}} = -\/1
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__mult_a6f1eeaf8c938d28a56623d383ca8ad7d}{dbs\+\_\+mult\+::wmult}} = 0.d0
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__mult_a0623ccee725e3c47e0845296def5952c}{dbs\+\_\+mult\+::dipl\+\_\+pp}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__mult_ac48c9f3b492ed949fcf695ddef442d62}{dbs\+\_\+mult\+::dipl\+\_\+qq}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__mult_a0ecf5205a8f9b1d6cbba08e943fb84b3}{dbs\+\_\+mult\+::dipv\+\_\+pq}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__mult_afbaf97892d43786a52ba65c9605e9876}{dbs\+\_\+mult\+::dipk\+\_\+pp}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__mult_a217e25ccaed4cd45ca3d023b7fb650cb}{dbs\+\_\+mult\+::dipk\+\_\+qq}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__mult_a62d4e4d1fafd2453e900408c91cd5a0d}{dbs\+\_\+mult\+::dipkm\+\_\+pq}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__mult_a0e529f40e3a61b2e2ee483d1a1be47ca}{dbs\+\_\+mult\+::dipkp\+\_\+pq}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{_d_b_s__mult_8f90_ae3db4f8aa82e7f9a6cc2a96120786a46}\label{_d_b_s__mult_8f90_ae3db4f8aa82e7f9a6cc2a96120786a46}} 
+\index{DBS\_mult.f90@{DBS\_mult.f90}!dip\_mat\_pq@{dip\_mat\_pq}}
+\index{dip\_mat\_pq@{dip\_mat\_pq}!DBS\_mult.f90@{DBS\_mult.f90}}
+\doxysubsubsection{\texorpdfstring{dip\_mat\_pq()}{dip\_mat\_pq()}}
+{\footnotesize\ttfamily subroutine dip\+\_\+mat\+\_\+pq (\begin{DoxyParamCaption}\item[{real(8), intent(in)}]{wfact,  }\item[{integer, intent(in)}]{kpol }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__mult_8f90_ad3fd06aaf3179254eb315a06a3fac3bc}\label{_d_b_s__mult_8f90_ad3fd06aaf3179254eb315a06a3fac3bc}} 
+\index{DBS\_mult.f90@{DBS\_mult.f90}!dipe\_pq@{dipe\_pq}}
+\index{dipe\_pq@{dipe\_pq}!DBS\_mult.f90@{DBS\_mult.f90}}
+\doxysubsubsection{\texorpdfstring{dipe\_pq()}{dipe\_pq()}}
+{\footnotesize\ttfamily subroutine dipe\+\_\+pq (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i,  }\item[{integer, intent(in)}]{j,  }\item[{integer, intent(in)}]{kpol,  }\item[{real(8), intent(in)}]{wfact,  }\item[{real(8)}]{CL,  }\item[{real(8)}]{CV }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__mult_8f90_a7225d85cd8103482990f75058063de93}\label{_d_b_s__mult_8f90_a7225d85cd8103482990f75058063de93}} 
+\index{DBS\_mult.f90@{DBS\_mult.f90}!dipm\_pq@{dipm\_pq}}
+\index{dipm\_pq@{dipm\_pq}!DBS\_mult.f90@{DBS\_mult.f90}}
+\doxysubsubsection{\texorpdfstring{dipm\_pq()}{dipm\_pq()}}
+{\footnotesize\ttfamily real(8) function dipm\+\_\+pq (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i,  }\item[{integer, intent(in)}]{j,  }\item[{integer, intent(in)}]{kpol,  }\item[{real(8), intent(in)}]{wfact }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__mult_8f90_a82dd9482a6f7a3b9e29fa5fbfb602b63}\label{_d_b_s__mult_8f90_a82dd9482a6f7a3b9e29fa5fbfb602b63}} 
+\index{DBS\_mult.f90@{DBS\_mult.f90}!dquadrl\_pq@{dquadrl\_pq}}
+\index{dquadrl\_pq@{dquadrl\_pq}!DBS\_mult.f90@{DBS\_mult.f90}}
+\doxysubsubsection{\texorpdfstring{dquadrl\_pq()}{dquadrl\_pq()}}
+{\footnotesize\ttfamily real(8) function dquadrl\+\_\+pq (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i,  }\item[{integer, intent(in)}]{j,  }\item[{integer, intent(in)}]{k }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__mult_8f90_a9170c7bded3a125b9b9bfaff822a2eb6}\label{_d_b_s__mult_8f90_a9170c7bded3a125b9b9bfaff822a2eb6}} 
+\index{DBS\_mult.f90@{DBS\_mult.f90}!dquadrm\_pq@{dquadrm\_pq}}
+\index{dquadrm\_pq@{dquadrm\_pq}!DBS\_mult.f90@{DBS\_mult.f90}}
+\doxysubsubsection{\texorpdfstring{dquadrm\_pq()}{dquadrm\_pq()}}
+{\footnotesize\ttfamily real(8) function dquadrm\+\_\+pq (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i,  }\item[{integer, intent(in)}]{j,  }\item[{integer, intent(in)}]{k }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__mult_8f90_ababde3925e5da064aa3474641eb8c806}\label{_d_b_s__mult_8f90_ababde3925e5da064aa3474641eb8c806}} 
+\index{DBS\_mult.f90@{DBS\_mult.f90}!dquadrv\_pq@{dquadrv\_pq}}
+\index{dquadrv\_pq@{dquadrv\_pq}!DBS\_mult.f90@{DBS\_mult.f90}}
+\doxysubsubsection{\texorpdfstring{dquadrv\_pq()}{dquadrv\_pq()}}
+{\footnotesize\ttfamily real(8) function dquadrv\+\_\+pq (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i,  }\item[{integer, intent(in)}]{j,  }\item[{integer, intent(in)}]{k }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__mult_8f90_a1f7b204afca6923c2fdaebe2051b60fc}\label{_d_b_s__mult_8f90_a1f7b204afca6923c2fdaebe2051b60fc}} 
+\index{DBS\_mult.f90@{DBS\_mult.f90}!ikdip\_pq@{ikdip\_pq}}
+\index{ikdip\_pq@{ikdip\_pq}!DBS\_mult.f90@{DBS\_mult.f90}}
+\doxysubsubsection{\texorpdfstring{ikdip\_pq()}{ikdip\_pq()}}
+{\footnotesize\ttfamily subroutine ikdip\+\_\+pq (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i,  }\item[{integer, intent(in)}]{j,  }\item[{integer, intent(in)}]{kpol,  }\item[{real(8), intent(in)}]{wfact,  }\item[{real(8)}]{CP,  }\item[{real(8)}]{CM,  }\item[{integer, intent(in)}]{met }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__mult_8f90_a02a011d45f5cc337a72ceeeceb75a05d}\label{_d_b_s__mult_8f90_a02a011d45f5cc337a72ceeeceb75a05d}} 
+\index{DBS\_mult.f90@{DBS\_mult.f90}!jkdip\_pq@{jkdip\_pq}}
+\index{jkdip\_pq@{jkdip\_pq}!DBS\_mult.f90@{DBS\_mult.f90}}
+\doxysubsubsection{\texorpdfstring{jkdip\_pq()}{jkdip\_pq()}}
+{\footnotesize\ttfamily real(8) function jkdip\+\_\+pq (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i,  }\item[{integer, intent(in)}]{j,  }\item[{integer, intent(in)}]{kpol,  }\item[{real(8), intent(in)}]{wfact }\end{DoxyParamCaption})}
+

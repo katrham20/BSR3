@@ -1,0 +1,72 @@
+\hypertarget{_m_o_d__tmat__ion_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+Z\+C\+O\+M/\+M\+O\+D\+\_\+tmat\+\_\+ion.f90 File Reference}
+\label{_m_o_d__tmat__ion_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/ZCOM/MOD\_tmat\_ion.f90@{/Users/khamilton/Codes/BSR3/libraries/ZCOM/MOD\_tmat\_ion.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacetmat__ion}{tmat\+\_\+ion}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__tmat__ion_8f90_a27442b96a60e92fb4f4efcbfb7e0e799}{alloc\+\_\+tmat\+\_\+ion}} (m)
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__tmat__ion_8f90_a068f48a0bc556f03190918b82ae74715}{add\+\_\+tmat\+\_\+ion}} (e, ar, ai, jj, ii, m1, m2, k1, k2)
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__tmat__ion_8f90_a2cfdad8df0f00016b219ee7d5d50d3d9}{sort\+\_\+tmat\+\_\+ion}}
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__tmat__ion_8f90_a58f7103bd63f09e2fbe5dbf4ad5475a9}{change\+\_\+ij}} (i, j)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{namespacetmat__ion_a3aa8f4c3bc536551dce56eaa71318870}{tmat\+\_\+ion\+::ndata}} = 0
+\item 
+integer \mbox{\hyperlink{namespacetmat__ion_aceead8fbb3dfeee51f833ccb2919b708}{tmat\+\_\+ion\+::mdata}} = 0
+\item 
+integer \mbox{\hyperlink{namespacetmat__ion_aeef97a74764fa26899b624147a5652cc}{tmat\+\_\+ion\+::idata}} = 2$\ast$$\ast$10
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacetmat__ion_a1dbf51a7174d276b983d29dba1d7008b}{tmat\+\_\+ion\+::jjpar}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacetmat__ion_a3db8495acc4ae99de0cac4ee6ccdb3b8}{tmat\+\_\+ion\+::ip}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacetmat__ion_ad3c06d9caca5f24e3d9f18680d24caa6}{tmat\+\_\+ion\+::l1}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacetmat__ion_a647f047bc73f3d614bf518adef6d9c59}{tmat\+\_\+ion\+::l2}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacetmat__ion_a29b2e63dce04c2b4d68adf13ed1141da}{tmat\+\_\+ion\+::jk1}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacetmat__ion_a53ea89229756b6f45bd53e61670bfabd}{tmat\+\_\+ion\+::jk2}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacetmat__ion_a4a2c96a247374df9a0efb5e36326f0ba}{tmat\+\_\+ion\+::ek}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacetmat__ion_ac75da751a5c821a11e87ebf07936c016}{tmat\+\_\+ion\+::tr}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacetmat__ion_ac0c5472bf1bbed44d94f5bfec56162f9}{tmat\+\_\+ion\+::ti}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{_m_o_d__tmat__ion_8f90_a068f48a0bc556f03190918b82ae74715}\label{_m_o_d__tmat__ion_8f90_a068f48a0bc556f03190918b82ae74715}} 
+\index{MOD\_tmat\_ion.f90@{MOD\_tmat\_ion.f90}!add\_tmat\_ion@{add\_tmat\_ion}}
+\index{add\_tmat\_ion@{add\_tmat\_ion}!MOD\_tmat\_ion.f90@{MOD\_tmat\_ion.f90}}
+\doxysubsubsection{\texorpdfstring{add\_tmat\_ion()}{add\_tmat\_ion()}}
+{\footnotesize\ttfamily subroutine add\+\_\+tmat\+\_\+ion (\begin{DoxyParamCaption}\item[{real(8)}]{e,  }\item[{real(8)}]{ar,  }\item[{real(8)}]{ai,  }\item[{integer}]{jj,  }\item[{integer}]{ii,  }\item[{integer}]{m1,  }\item[{integer}]{m2,  }\item[{integer}]{k1,  }\item[{integer}]{k2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_m_o_d__tmat__ion_8f90_a27442b96a60e92fb4f4efcbfb7e0e799}\label{_m_o_d__tmat__ion_8f90_a27442b96a60e92fb4f4efcbfb7e0e799}} 
+\index{MOD\_tmat\_ion.f90@{MOD\_tmat\_ion.f90}!alloc\_tmat\_ion@{alloc\_tmat\_ion}}
+\index{alloc\_tmat\_ion@{alloc\_tmat\_ion}!MOD\_tmat\_ion.f90@{MOD\_tmat\_ion.f90}}
+\doxysubsubsection{\texorpdfstring{alloc\_tmat\_ion()}{alloc\_tmat\_ion()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+tmat\+\_\+ion (\begin{DoxyParamCaption}\item[{integer}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_m_o_d__tmat__ion_8f90_a58f7103bd63f09e2fbe5dbf4ad5475a9}\label{_m_o_d__tmat__ion_8f90_a58f7103bd63f09e2fbe5dbf4ad5475a9}} 
+\index{MOD\_tmat\_ion.f90@{MOD\_tmat\_ion.f90}!change\_ij@{change\_ij}}
+\index{change\_ij@{change\_ij}!MOD\_tmat\_ion.f90@{MOD\_tmat\_ion.f90}}
+\doxysubsubsection{\texorpdfstring{change\_ij()}{change\_ij()}}
+{\footnotesize\ttfamily subroutine sort\+\_\+tmat\+\_\+ion\+::change\+\_\+ij (\begin{DoxyParamCaption}\item[{integer}]{i,  }\item[{integer}]{j }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_m_o_d__tmat__ion_8f90_a2cfdad8df0f00016b219ee7d5d50d3d9}\label{_m_o_d__tmat__ion_8f90_a2cfdad8df0f00016b219ee7d5d50d3d9}} 
+\index{MOD\_tmat\_ion.f90@{MOD\_tmat\_ion.f90}!sort\_tmat\_ion@{sort\_tmat\_ion}}
+\index{sort\_tmat\_ion@{sort\_tmat\_ion}!MOD\_tmat\_ion.f90@{MOD\_tmat\_ion.f90}}
+\doxysubsubsection{\texorpdfstring{sort\_tmat\_ion()}{sort\_tmat\_ion()}}
+{\footnotesize\ttfamily subroutine sort\+\_\+tmat\+\_\+ion}
+

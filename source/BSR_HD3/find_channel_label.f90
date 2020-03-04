@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine Find_channel_label(ich,jch,is,E,Lab)
 !======================================================================
-!     define channel label
+!> @ingroup bsr_hd
+!> @brief     define channel label
 !----------------------------------------------------------------------
       Use bsr_hd; Use target; Use channel;  Use conf_LS
 
@@ -47,7 +48,8 @@
 !======================================================================
       Subroutine Find_channel_nodes(ich,is,nodes)
 !======================================================================
-!     define number of nodes in the given solusion
+!> @ingroup bsr_hd
+!> @brief     define number of nodes in the given solusion
 !----------------------------------------------------------------------
       Use bsr_hd; Use spline_param, only: ns
 

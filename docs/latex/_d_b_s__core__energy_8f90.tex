@@ -1,0 +1,68 @@
+\hypertarget{_d_b_s__core__energy_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+D\+B\+S/\+D\+B\+S\+\_\+core\+\_\+energy.f90 File Reference}
+\label{_d_b_s__core__energy_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/DBS/DBS\_core\_energy.f90@{/Users/khamilton/Codes/BSR3/libraries/DBS/DBS\_core\_energy.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacedbs__core__energy}{dbs\+\_\+core\+\_\+energy}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__core__energy_8f90_a63e01fc87051722ebca63a92b5f04376}{alloc\+\_\+core\+\_\+coefs}} (m)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__core__energy_8f90_a1343663b08bb30ffa86cb323e72141c7}{add\+\_\+core\+\_\+coef}} (int, kpol, i1, i2, i3, i4, C)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__core__energy_8f90_ace54ca9305d5cb4d8765539001b0a0cf}{get\+\_\+core\+\_\+coef}} (ncore, mbreit, kbs)
+\item 
+real(8) function \mbox{\hyperlink{_d_b_s__core__energy_8f90_ac8bed1d332bf5ebf4cb9d038725a8414}{ecore\+\_\+dbs}} (ncore, mbreit, kbs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{namespacedbs__core__energy_ab67fbd3065951682ffc5fd578594f96c}{dbs\+\_\+core\+\_\+energy\+::nbk}} = 0
+\item 
+integer \mbox{\hyperlink{namespacedbs__core__energy_aef1b5378dd7c8f704173724ca9f5d84f}{dbs\+\_\+core\+\_\+energy\+::mbk}} = 0
+\item 
+integer \mbox{\hyperlink{namespacedbs__core__energy_aa08e1df32132e6cb5ad4eb4a7a163815}{dbs\+\_\+core\+\_\+energy\+::ibk}} = 2$\ast$$\ast$10
+\item 
+integer \mbox{\hyperlink{namespacedbs__core__energy_a701918d6460be97dff68307ff9b55d9c}{dbs\+\_\+core\+\_\+energy\+::ibi}} = 2$\ast$$\ast$15
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__core__energy_a3074cae4b5b520e2b53a182fca306fcb}{dbs\+\_\+core\+\_\+energy\+::eps\+\_\+c}} = 1.d-\/10
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacedbs__core__energy_a193199050a62d8cd50a5c2361cc20419}{dbs\+\_\+core\+\_\+energy\+::cbk}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacedbs__core__energy_a8922ea1f42ad1d51ae72e780c77fcceb}{dbs\+\_\+core\+\_\+energy\+::kr1}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacedbs__core__energy_a0ab5cea713cbdf126657566faddb492a}{dbs\+\_\+core\+\_\+energy\+::kr2}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacedbs__core__energy_a57a3141f1d32b522bb14d51a058339c9}{dbs\+\_\+core\+\_\+energy\+::kr3}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacedbs__core__energy_a44e9bf2f9c4af530400c5c10e34fea80}{dbs\+\_\+core\+\_\+energy\+::kr4}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{_d_b_s__core__energy_8f90_a1343663b08bb30ffa86cb323e72141c7}\label{_d_b_s__core__energy_8f90_a1343663b08bb30ffa86cb323e72141c7}} 
+\index{DBS\_core\_energy.f90@{DBS\_core\_energy.f90}!add\_core\_coef@{add\_core\_coef}}
+\index{add\_core\_coef@{add\_core\_coef}!DBS\_core\_energy.f90@{DBS\_core\_energy.f90}}
+\doxysubsubsection{\texorpdfstring{add\_core\_coef()}{add\_core\_coef()}}
+{\footnotesize\ttfamily subroutine add\+\_\+core\+\_\+coef (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{int,  }\item[{integer, intent(in)}]{kpol,  }\item[{integer, intent(in)}]{i1,  }\item[{integer, intent(in)}]{i2,  }\item[{integer, intent(in)}]{i3,  }\item[{integer, intent(in)}]{i4,  }\item[{real(8), intent(in)}]{C }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__core__energy_8f90_a63e01fc87051722ebca63a92b5f04376}\label{_d_b_s__core__energy_8f90_a63e01fc87051722ebca63a92b5f04376}} 
+\index{DBS\_core\_energy.f90@{DBS\_core\_energy.f90}!alloc\_core\_coefs@{alloc\_core\_coefs}}
+\index{alloc\_core\_coefs@{alloc\_core\_coefs}!DBS\_core\_energy.f90@{DBS\_core\_energy.f90}}
+\doxysubsubsection{\texorpdfstring{alloc\_core\_coefs()}{alloc\_core\_coefs()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+core\+\_\+coefs (\begin{DoxyParamCaption}\item[{integer}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__core__energy_8f90_ac8bed1d332bf5ebf4cb9d038725a8414}\label{_d_b_s__core__energy_8f90_ac8bed1d332bf5ebf4cb9d038725a8414}} 
+\index{DBS\_core\_energy.f90@{DBS\_core\_energy.f90}!ecore\_dbs@{ecore\_dbs}}
+\index{ecore\_dbs@{ecore\_dbs}!DBS\_core\_energy.f90@{DBS\_core\_energy.f90}}
+\doxysubsubsection{\texorpdfstring{ecore\_dbs()}{ecore\_dbs()}}
+{\footnotesize\ttfamily real(8) function ecore\+\_\+dbs (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ncore,  }\item[{integer, intent(in)}]{mbreit,  }\item[{integer, dimension($\ast$), intent(in)}]{kbs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__core__energy_8f90_ace54ca9305d5cb4d8765539001b0a0cf}\label{_d_b_s__core__energy_8f90_ace54ca9305d5cb4d8765539001b0a0cf}} 
+\index{DBS\_core\_energy.f90@{DBS\_core\_energy.f90}!get\_core\_coef@{get\_core\_coef}}
+\index{get\_core\_coef@{get\_core\_coef}!DBS\_core\_energy.f90@{DBS\_core\_energy.f90}}
+\doxysubsubsection{\texorpdfstring{get\_core\_coef()}{get\_core\_coef()}}
+{\footnotesize\ttfamily subroutine get\+\_\+core\+\_\+coef (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ncore,  }\item[{integer, intent(in)}]{mbreit,  }\item[{integer, dimension($\ast$), intent(in)}]{kbs }\end{DoxyParamCaption})}
+

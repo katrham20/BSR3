@@ -7,44 +7,46 @@
 !                   email: oleg_zoi@yahoo.com
 !
 !======================================================================
-!   Program diagonalizes the Hamiltonian in the inner region and
-!   generates H.DAT file for scattering or photoionization 
-!   calculations in the R-matrix approach.
-!   Additional option - calculation of bound (or pseudo-) states.
+!> @defgroup bsr_hd BSR_HD3
+!> @ingroup bsr_hd
+!!   Program diagonalizes the Hamiltonian in the inner region and
+!!   generates H.DAT file for scattering or photoionization 
+!!   calculations in the R-matrix approach.
+!!   Additional option - calculation of bound (or pseudo-) states.
 !======================================================================
-!
-!    MAIN INPUT ARGUMENTS:
-!
-!     itype - type of calculations
-!   
-!           = -1 - bound-structure calculations
-!           =  0 - scattering calculations
-!           =  1 - additional output of all R-matrix solutions 
-!                  required for photoionization calculations
-!
-!     klsp  or klsp1,klsp2  - the indexes of partial waves under consideration  
-!
-! 
-!    INPUT FILES:
-!
-!     bsr_par        -  input parameters
-!     target         -  description of target states and partial waves
-!     knot.dat       -  description of B-spline grid
-!     cfg.nnn        -  c-file for close-coupling expansion
-!     bsr_mat.nnn    -  interaction matrix
-!
-!    OUTPUT FILES:
-!   
-!     bsr_hd.nnn     -  running information 
-!     h.nnn          -  eigenvalues and suface amplitudes
-!                       required to obtain R-matrix
-!     w.nnn          -  file of channel weights (optional)
-!     rsol.nnn       -  R-matrix inner-region solutions (optional)
-!     bound.nnn      -  bound-like solutions (old FORMATTED file)
-!     ubound.nnn     -  bound-like solutions (new UNFORMATTED file)
-!
-!     'nnn' indicates the index of the partial wave under consideration
-!
+!!
+!!    MAIN INPUT ARGUMENTS:
+!!
+!!     itype - type of calculations
+!!   
+!!           = -1 - bound-structure calculations
+!!           =  0 - scattering calculations
+!!           =  1 - additional output of all R-matrix solutions 
+!!                  required for photoionization calculations
+!!
+!!     klsp  or klsp1,klsp2  - the indexes of partial waves under consideration  
+!!
+!! 
+!!    INPUT FILES:
+!!
+!!     bsr_par        -  input parameters
+!!     target         -  description of target states and partial waves
+!!     knot.dat       -  description of B-spline grid
+!!     cfg.nnn        -  c-file for close-coupling expansion
+!!     bsr_mat.nnn    -  interaction matrix
+!!
+!!    OUTPUT FILES:
+!!   
+!!     bsr_hd.nnn     -  running information 
+!!     h.nnn          -  eigenvalues and suface amplitudes
+!!                       required to obtain R-matrix
+!!     w.nnn          -  file of channel weights (optional)
+!!     rsol.nnn       -  R-matrix inner-region solutions (optional)
+!!     bound.nnn      -  bound-like solutions (old FORMATTED file)
+!!     ubound.nnn     -  bound-like solutions (new UNFORMATTED file)
+!!
+!!     'nnn' indicates the index of the partial wave under consideration
+!!
 !=====================================================================
       Use bsr_hd
       Use spline_atomic, only: z

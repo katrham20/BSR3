@@ -1,10 +1,11 @@
 !======================================================================
       Subroutine TERM_loop
 !======================================================================
-!     Add to the common list (coef_list) the coeff.s between two 
-!     determinants (zoef_list) weighted with term-dependent factors.
-!     Check also if the specific coefficient is needed to be added
-!     to the bank.
+!> @ingroup bsr_breit
+!!     Add to the common list (coef_list) the coeff.s between two 
+!!     determinants (zoef_list) weighted with term-dependent factors.
+!!     Check also if the specific coefficient is needed to be added
+!!     to the bank.
 !----------------------------------------------------------------------
       Use bsr_breit, only: ct_oper,eps_c,joper
       Use zoef_list, only: nzoef, zoef, iz_int, iz_df 

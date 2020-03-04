@@ -1,0 +1,162 @@
+\hypertarget{_d_b_s__orbitals__pq_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+D\+B\+S/\+D\+B\+S\+\_\+orbitals\+\_\+pq.f90 File Reference}
+\label{_d_b_s__orbitals__pq_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/DBS/DBS\_orbitals\_pq.f90@{/Users/khamilton/Codes/BSR3/libraries/DBS/DBS\_orbitals\_pq.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacedbs__orbitals__pq}{dbs\+\_\+orbitals\+\_\+pq}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__orbitals__pq_8f90_a240589ed08be299a3c9a67b2de4816c6}{alloc\+\_\+dbs\+\_\+orbitals\+\_\+pq}} (m, ns)
+\item 
+integer function \mbox{\hyperlink{_d_b_s__orbitals__pq_8f90_a48efcd205a0daa1e7e18b5eab4b53f0b}{ifind\+\_\+bsorb}} (n, k, iset, job)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__orbitals__pq_8f90_a683bcfc8e9fa185288c78d21860042e5}{get\+\_\+pv}} (i, v, ns)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__orbitals__pq_8f90_a620bad33b1109ce87692ecc6b90a7fb5}{get\+\_\+qv}} (i, v, ns)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__orbitals__pq_8f90_a7a31e15c04b95a49e963ea3f58db4496}{put\+\_\+pv}} (i, v, ns)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__orbitals__pq_8f90_aac8f0b9cc4095592893c3db37cc64f7b}{alloc\+\_\+nv\+\_\+ch}} (m)
+\item 
+integer function \mbox{\hyperlink{_d_b_s__orbitals__pq_8f90_aa22e668d7297703f1cd4cd1915049992}{kbort}} (i, j)
+\item 
+integer function \mbox{\hyperlink{_d_b_s__orbitals__pq_8f90_a0558b138009c48eeeb0240a5974a5d47}{ibort}} (io, jo)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__orbitals__pq_8f90_a85c6ab2678f4c8f8e7994256a8183b01}{nulify\+\_\+bort}} (i, j)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__orbitals__pq_8f90_a2ca9d84de021cf168f5b28e6851e393d}{read\+\_\+bort\+\_\+jj}} (nuc)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__orbitals__pq_8f90_a413ab8ecda964d7c6309ef5d33a266c4}{get\+\_\+v\+\_\+ch}} (m)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__orbitals__pq_8f90_adde9490f8bce3693573f82e24871fdce}{get\+\_\+v}} (kl, nl, v)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{namespacedbs__orbitals__pq_aeb644bdbe6b9919c50765efb221fac8e}{dbs\+\_\+orbitals\+\_\+pq\+::mbf}} = 0
+\item 
+integer \mbox{\hyperlink{namespacedbs__orbitals__pq_aa1c627b1ea2272504d94f781ee76c7c0}{dbs\+\_\+orbitals\+\_\+pq\+::nbf}} = 0
+\item 
+integer \mbox{\hyperlink{namespacedbs__orbitals__pq_a975edf2231936b8c880ba07acda7bb06}{dbs\+\_\+orbitals\+\_\+pq\+::ibf}} = 2$\ast$$\ast$10
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacedbs__orbitals__pq_a04dfdf26f354a91ca1127d894c340e5b}{dbs\+\_\+orbitals\+\_\+pq\+::nbs}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacedbs__orbitals__pq_a4747b618aec19a17b47816cdde7777eb}{dbs\+\_\+orbitals\+\_\+pq\+::kbs}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacedbs__orbitals__pq_af1d1e9d41322b8765a191511d786935e}{dbs\+\_\+orbitals\+\_\+pq\+::lbs}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacedbs__orbitals__pq_a3c3352ae83fa3c17dca1f2094141cd0a}{dbs\+\_\+orbitals\+\_\+pq\+::jbs}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacedbs__orbitals__pq_aac4a8587e40b86ae49cc283bab164a04}{dbs\+\_\+orbitals\+\_\+pq\+::ibs}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacedbs__orbitals__pq_adc1ad7bf1fe952779eeeefc9158ed9e9}{dbs\+\_\+orbitals\+\_\+pq\+::mbs}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacedbs__orbitals__pq_a591db1950e8ee7ad07f3dc25f4f9dfa8}{dbs\+\_\+orbitals\+\_\+pq\+::ipbs}}
+\item 
+character(5), dimension(\+:), allocatable \mbox{\hyperlink{namespacedbs__orbitals__pq_a49393281634a6d57b1ee8bc0c149beae}{dbs\+\_\+orbitals\+\_\+pq\+::ebs}}
+\item 
+real(8), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__orbitals__pq_a2d572df1db64219a770623dacbda6338}{dbs\+\_\+orbitals\+\_\+pq\+::pq}}
+\item 
+real(8), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__orbitals__pq_aa49c41f0f7034006f48833cf9657c93e}{dbs\+\_\+orbitals\+\_\+pq\+::bpq}}
+\item 
+real(8), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__orbitals__pq_a84b5bcb5224e6f0b09aee75a5e96006d}{dbs\+\_\+orbitals\+\_\+pq\+::dbs}}
+\item 
+real(8), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__orbitals__pq_ab3bdb273de1270ca74b79b44c2acec56}{dbs\+\_\+orbitals\+\_\+pq\+::vbs}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacedbs__orbitals__pq_a4e4ded7483a15a487b96c7a1a6ac08db}{dbs\+\_\+orbitals\+\_\+pq\+::obs1}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacedbs__orbitals__pq_aed5077541e3b2e56cdd8962466a96320}{dbs\+\_\+orbitals\+\_\+pq\+::obs2}}
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__orbitals__pq_a5a40ca85ac325b8302f8a00c6eb06a60}{dbs\+\_\+orbitals\+\_\+pq\+::memory\+\_\+dbs\+\_\+orbitals}} = 0.d0
+\item 
+integer \mbox{\hyperlink{namespacedbs__orbitals__pq_a7b81ead57561ac6f73e315e1da6d346f}{dbs\+\_\+orbitals\+\_\+pq\+::ns\+\_\+bf}} = 0
+\item 
+integer \mbox{\hyperlink{namespacedbs__orbitals__pq_a0df1431ff8cecfb98898e36de2189e24}{dbs\+\_\+orbitals\+\_\+pq\+::nv\+\_\+ch}} = 0
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__orbitals__pq_a9285c8646807574972548b7120976d36}{dbs\+\_\+orbitals\+\_\+pq\+::v\+\_\+ch}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacedbs__orbitals__pq_ab8d2f9e48293d530f476accfe02361f1}{dbs\+\_\+orbitals\+\_\+pq\+::i\+\_\+ch}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacedbs__orbitals__pq_af8c5b99900d64e923615d64be6431cae}{dbs\+\_\+orbitals\+\_\+pq\+::j\+\_\+ch}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacedbs__orbitals__pq_a0d98868667f72255e5242cfb4f9d88b8}{dbs\+\_\+orbitals\+\_\+pq\+::ib}} = 2$\ast$$\ast$15
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__orbitals__pq_a4fee675b57eb3488f3673b501bb42ec2}{dbs\+\_\+orbitals\+\_\+pq\+::eps\+\_\+v}} = 1.d-\/10
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{_d_b_s__orbitals__pq_8f90_a240589ed08be299a3c9a67b2de4816c6}\label{_d_b_s__orbitals__pq_8f90_a240589ed08be299a3c9a67b2de4816c6}} 
+\index{DBS\_orbitals\_pq.f90@{DBS\_orbitals\_pq.f90}!alloc\_dbs\_orbitals\_pq@{alloc\_dbs\_orbitals\_pq}}
+\index{alloc\_dbs\_orbitals\_pq@{alloc\_dbs\_orbitals\_pq}!DBS\_orbitals\_pq.f90@{DBS\_orbitals\_pq.f90}}
+\doxysubsubsection{\texorpdfstring{alloc\_dbs\_orbitals\_pq()}{alloc\_dbs\_orbitals\_pq()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+dbs\+\_\+orbitals\+\_\+pq (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{m,  }\item[{integer, intent(in)}]{ns }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__orbitals__pq_8f90_aac8f0b9cc4095592893c3db37cc64f7b}\label{_d_b_s__orbitals__pq_8f90_aac8f0b9cc4095592893c3db37cc64f7b}} 
+\index{DBS\_orbitals\_pq.f90@{DBS\_orbitals\_pq.f90}!alloc\_nv\_ch@{alloc\_nv\_ch}}
+\index{alloc\_nv\_ch@{alloc\_nv\_ch}!DBS\_orbitals\_pq.f90@{DBS\_orbitals\_pq.f90}}
+\doxysubsubsection{\texorpdfstring{alloc\_nv\_ch()}{alloc\_nv\_ch()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+nv\+\_\+ch (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__orbitals__pq_8f90_a683bcfc8e9fa185288c78d21860042e5}\label{_d_b_s__orbitals__pq_8f90_a683bcfc8e9fa185288c78d21860042e5}} 
+\index{DBS\_orbitals\_pq.f90@{DBS\_orbitals\_pq.f90}!get\_pv@{get\_pv}}
+\index{get\_pv@{get\_pv}!DBS\_orbitals\_pq.f90@{DBS\_orbitals\_pq.f90}}
+\doxysubsubsection{\texorpdfstring{get\_pv()}{get\_pv()}}
+{\footnotesize\ttfamily subroutine get\+\_\+pv (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i,  }\item[{real(8), dimension(ns+ns), intent(out)}]{v,  }\item[{integer, intent(in)}]{ns }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__orbitals__pq_8f90_a620bad33b1109ce87692ecc6b90a7fb5}\label{_d_b_s__orbitals__pq_8f90_a620bad33b1109ce87692ecc6b90a7fb5}} 
+\index{DBS\_orbitals\_pq.f90@{DBS\_orbitals\_pq.f90}!get\_qv@{get\_qv}}
+\index{get\_qv@{get\_qv}!DBS\_orbitals\_pq.f90@{DBS\_orbitals\_pq.f90}}
+\doxysubsubsection{\texorpdfstring{get\_qv()}{get\_qv()}}
+{\footnotesize\ttfamily subroutine get\+\_\+qv (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i,  }\item[{real(8), dimension(ns+ns), intent(out)}]{v,  }\item[{integer, intent(in)}]{ns }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__orbitals__pq_8f90_adde9490f8bce3693573f82e24871fdce}\label{_d_b_s__orbitals__pq_8f90_adde9490f8bce3693573f82e24871fdce}} 
+\index{DBS\_orbitals\_pq.f90@{DBS\_orbitals\_pq.f90}!get\_v@{get\_v}}
+\index{get\_v@{get\_v}!DBS\_orbitals\_pq.f90@{DBS\_orbitals\_pq.f90}}
+\doxysubsubsection{\texorpdfstring{get\_v()}{get\_v()}}
+{\footnotesize\ttfamily subroutine get\+\_\+v (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{kl,  }\item[{integer, intent(in)}]{nl,  }\item[{real(8), dimension(ms)}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__orbitals__pq_8f90_a413ab8ecda964d7c6309ef5d33a266c4}\label{_d_b_s__orbitals__pq_8f90_a413ab8ecda964d7c6309ef5d33a266c4}} 
+\index{DBS\_orbitals\_pq.f90@{DBS\_orbitals\_pq.f90}!get\_v\_ch@{get\_v\_ch}}
+\index{get\_v\_ch@{get\_v\_ch}!DBS\_orbitals\_pq.f90@{DBS\_orbitals\_pq.f90}}
+\doxysubsubsection{\texorpdfstring{get\_v\_ch()}{get\_v\_ch()}}
+{\footnotesize\ttfamily subroutine get\+\_\+v\+\_\+ch (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__orbitals__pq_8f90_a0558b138009c48eeeb0240a5974a5d47}\label{_d_b_s__orbitals__pq_8f90_a0558b138009c48eeeb0240a5974a5d47}} 
+\index{DBS\_orbitals\_pq.f90@{DBS\_orbitals\_pq.f90}!ibort@{ibort}}
+\index{ibort@{ibort}!DBS\_orbitals\_pq.f90@{DBS\_orbitals\_pq.f90}}
+\doxysubsubsection{\texorpdfstring{ibort()}{ibort()}}
+{\footnotesize\ttfamily integer function ibort (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{io,  }\item[{integer, intent(in)}]{jo }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__orbitals__pq_8f90_a48efcd205a0daa1e7e18b5eab4b53f0b}\label{_d_b_s__orbitals__pq_8f90_a48efcd205a0daa1e7e18b5eab4b53f0b}} 
+\index{DBS\_orbitals\_pq.f90@{DBS\_orbitals\_pq.f90}!ifind\_bsorb@{ifind\_bsorb}}
+\index{ifind\_bsorb@{ifind\_bsorb}!DBS\_orbitals\_pq.f90@{DBS\_orbitals\_pq.f90}}
+\doxysubsubsection{\texorpdfstring{ifind\_bsorb()}{ifind\_bsorb()}}
+{\footnotesize\ttfamily integer function ifind\+\_\+bsorb (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{n,  }\item[{integer, intent(in)}]{k,  }\item[{integer, intent(in)}]{iset,  }\item[{integer, intent(in)}]{job }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__orbitals__pq_8f90_aa22e668d7297703f1cd4cd1915049992}\label{_d_b_s__orbitals__pq_8f90_aa22e668d7297703f1cd4cd1915049992}} 
+\index{DBS\_orbitals\_pq.f90@{DBS\_orbitals\_pq.f90}!kbort@{kbort}}
+\index{kbort@{kbort}!DBS\_orbitals\_pq.f90@{DBS\_orbitals\_pq.f90}}
+\doxysubsubsection{\texorpdfstring{kbort()}{kbort()}}
+{\footnotesize\ttfamily integer function kbort (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i,  }\item[{integer, intent(in)}]{j }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__orbitals__pq_8f90_a85c6ab2678f4c8f8e7994256a8183b01}\label{_d_b_s__orbitals__pq_8f90_a85c6ab2678f4c8f8e7994256a8183b01}} 
+\index{DBS\_orbitals\_pq.f90@{DBS\_orbitals\_pq.f90}!nulify\_bort@{nulify\_bort}}
+\index{nulify\_bort@{nulify\_bort}!DBS\_orbitals\_pq.f90@{DBS\_orbitals\_pq.f90}}
+\doxysubsubsection{\texorpdfstring{nulify\_bort()}{nulify\_bort()}}
+{\footnotesize\ttfamily subroutine nulify\+\_\+bort (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i,  }\item[{integer, intent(in)}]{j }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__orbitals__pq_8f90_a7a31e15c04b95a49e963ea3f58db4496}\label{_d_b_s__orbitals__pq_8f90_a7a31e15c04b95a49e963ea3f58db4496}} 
+\index{DBS\_orbitals\_pq.f90@{DBS\_orbitals\_pq.f90}!put\_pv@{put\_pv}}
+\index{put\_pv@{put\_pv}!DBS\_orbitals\_pq.f90@{DBS\_orbitals\_pq.f90}}
+\doxysubsubsection{\texorpdfstring{put\_pv()}{put\_pv()}}
+{\footnotesize\ttfamily subroutine put\+\_\+pv (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i,  }\item[{real(8), dimension(ns+ns), intent(in)}]{v,  }\item[{integer, intent(in)}]{ns }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__orbitals__pq_8f90_a2ca9d84de021cf168f5b28e6851e393d}\label{_d_b_s__orbitals__pq_8f90_a2ca9d84de021cf168f5b28e6851e393d}} 
+\index{DBS\_orbitals\_pq.f90@{DBS\_orbitals\_pq.f90}!read\_bort\_jj@{read\_bort\_jj}}
+\index{read\_bort\_jj@{read\_bort\_jj}!DBS\_orbitals\_pq.f90@{DBS\_orbitals\_pq.f90}}
+\doxysubsubsection{\texorpdfstring{read\_bort\_jj()}{read\_bort\_jj()}}
+{\footnotesize\ttfamily subroutine read\+\_\+bort\+\_\+jj (\begin{DoxyParamCaption}\item[{}]{nuc }\end{DoxyParamCaption})}
+

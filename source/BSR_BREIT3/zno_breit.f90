@@ -2,10 +2,11 @@
       Subroutine ZNO_breit( no1,l1,m1,ms1,no2,l2,m2,ms2,  &
                             no3,l3,m3,ms3,no4,l4,m4,ms4,  ide)
 !======================================================================
-!     computes angular coefficients for the two-electron Breit-Pauli
-!     operators in uncouple nlms-representation.
-!     ide = +1  ->  direct interaction
-!     ide = -1  ->  exchange interaction
+!> @ingroup bsr_breit
+!!     computes angular coefficients for the two-electron Breit-Pauli
+!!     operators in uncouple nlms-representation.
+!!     ide = +1  ->  direct interaction
+!!     ide = -1  ->  exchange interaction
 !----------------------------------------------------------------------
       Use bsr_breit, only: mk, joper
 
@@ -214,7 +215,8 @@
 !======================================================================
       Subroutine Add_ci(C,met,k,j1,j2,j3,j4)
 !======================================================================
-!     control the recording of one resulting integral
+!> @ingroup bsr_breit
+!> @brief     control the recording of one resulting integral
 !
 !     Calls: Incode_int, Iadd_boef
 !----------------------------------------------------------------------

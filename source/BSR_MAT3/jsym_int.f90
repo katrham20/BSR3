@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine Jsym_int(met,i1,i2,i3,i4)
 !======================================================================
-!     use integral symmetry to obtaine the 'canonical' form
+!> @ingroup bsr_mat
+!> @brief     use integral symmetry to obtaine the 'canonical' form
 !----------------------------------------------------------------------
 
       m=1; ii=min(i1,i2,i3,i4)

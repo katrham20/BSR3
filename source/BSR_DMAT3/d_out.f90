@@ -1,7 +1,8 @@
 !=======================================================================
       Subroutine D_OUT
 !=======================================================================
-!     define and output dipole matrix for R-matrix solutions:
+!> @ingroup bsr_dmat
+!> @brief     define and output dipole matrix for R-matrix solutions:
 !-----------------------------------------------------------------------
       Use bsr_dmat 
       Use dmatrix

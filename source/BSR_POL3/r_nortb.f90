@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine Read_nortb
 !======================================================================
-! ... provide oscillator strengths for given dipole matrix
+!> @ingroup bsr_pol
+!> @brief provide oscillator strengths for given dipole matrix
 !----------------------------------------------------------------------
       Use bsr_pol
       Use spline_param, only: ns

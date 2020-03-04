@@ -1,0 +1,57 @@
+\hypertarget{mod__intmat_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/source/\+B\+S\+R\+\_\+\+M\+A\+T3/mod\+\_\+intmat.f90 File Reference}
+\label{mod__intmat_8f90}\index{/Users/khamilton/Codes/BSR3/source/BSR\_MAT3/mod\_intmat.f90@{/Users/khamilton/Codes/BSR3/source/BSR\_MAT3/mod\_intmat.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacebsr__matrix}{bsr\+\_\+matrix}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga78af874d39aa31ced6aff5f113b4bf94}{allocate\+\_\+matrix}} (nch, ns, ncp, \mbox{\hyperlink{_r_a_d_i_a_l_2zint_8f90_a742b2f716e44fb7944c8e21ecc31ba98}{mk}}, ncfg)
+\begin{DoxyCompactList}\small\item\em allocate arrays in module \mbox{\hyperlink{namespacebsr__matrix}{bsr\+\_\+matrix}} \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga8ec3b742ec7541197da9e9a49bb7c3b7}{update\+\_\+hx}} (ich, jch, ns, ks, d, sym)
+\begin{DoxyCompactList}\small\item\em update channel block \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga7677a4f429f4e454fa43e7daf2b0d918}{update\+\_\+hl}} (ich, jch, ns, ks, d, c)
+\begin{DoxyCompactList}\small\item\em update symmetric banded matrix in lower-\/column storage mode ! \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_gac9cf44c0c9fc5ad2dd435599ea85f4fc}{update\+\_\+hb}} (ic, jc, c)
+\begin{DoxyCompactList}\small\item\em update scalar in the bound-\/bound block \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga579285c9aa90774a8452e7d02f54507d}{update\+\_\+hv}} (ich, ic, ns, v, c)
+\begin{DoxyCompactList}\small\item\em update vector in the channel-\/bound block \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_gaaa8bf8509f43227d5f00d3d0f423939f}{update\+\_\+hw}} (ich, jch, ns, v, w)
+\begin{DoxyCompactList}\small\item\em update channel block with by v$\ast$w \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga1b5b0c928f5bd0959e03c3d23f136fe5}{update\+\_\+cf}} (k, ich, jch, C)
+\begin{DoxyCompactList}\small\item\em Update asymptotic coefficients. \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga38c33a8251c1d7e2759702c9ebad6f06}{target\+\_\+h}} (ich, jch, C, CC)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_gae18d8db1b226e35e6280aff288338a80}{target\+\_\+print}} (iout, EC, eps)
+\begin{DoxyCompactList}\small\item\em prints target info \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga3a63e173bdc2dbf0377b174dc162ef1e}{target\+\_\+new}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{group__bsr__mat_gaf3e82e5aaa6dbd55b62a26d696f5ddc9}{bsr\+\_\+matrix\+::kch}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__matrix_af74fd4d1dd5a6230c00498c64bb0999e}{bsr\+\_\+matrix\+::kns}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__matrix_a1b61a4583cd1a3a6a701fc9bf020d324}{bsr\+\_\+matrix\+::kcp}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__matrix_ad447501423106a8ddd4bd86fd48d9e8f}{bsr\+\_\+matrix\+::kmk}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__matrix_ab2164f40738c049bfd0f0404e841e958}{bsr\+\_\+matrix\+::kcfg}}
+\item 
+real(8), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__matrix_a263547d587de84f7acea7c11475c63d0}{bsr\+\_\+matrix\+::hcc}}
+\item 
+real(8), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__matrix_a079b8668b5bd86f5d0bec9fae54220a7}{bsr\+\_\+matrix\+::hcb}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__matrix_ac7147d7a7b3a8f4cc770ebaa3633bae2}{bsr\+\_\+matrix\+::hbb}}
+\item 
+real(8), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__matrix_ab93f59442c44f3ac227add02fc83fbdf}{bsr\+\_\+matrix\+::acf}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__matrix_aae805e9c4ed0d08b17a2e645b71c1e4f}{bsr\+\_\+matrix\+::htarg}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__matrix_a4c41126c2d144002ddd8056bf25bf6f1}{bsr\+\_\+matrix\+::otarg}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__matrix_aced4c7caf70611c741f6246b1d4672df}{bsr\+\_\+matrix\+::x}}
+\end{DoxyCompactItemize}

@@ -1,0 +1,74 @@
+\hypertarget{_m_o_d__tm___l_s_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+Z\+C\+O\+M/\+M\+O\+D\+\_\+tm\+\_\+\+LS.f90 File Reference}
+\label{_m_o_d__tm___l_s_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/ZCOM/MOD\_tm\_LS.f90@{/Users/khamilton/Codes/BSR3/libraries/ZCOM/MOD\_tm\_LS.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacetm__ls}{tm\+\_\+ls}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__tm___l_s_8f90_a523ce58a2b025ecd349ff3b7bfd5e56c}{alloc\+\_\+tm\+\_\+ls}} (m)
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__tm___l_s_8f90_acefe1e909d584cbf9fb27c82c6aa1fce}{add\+\_\+tm\+\_\+ls}} (e, ar, ai, L, S, m1, m2, ii)
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__tm___l_s_8f90_a578977864aa408a9eece742ad05608e7}{sort\+\_\+tm\+\_\+ls}}
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__tm___l_s_8f90_aed48f36de2e177be36f2187eb294bdfb}{change\+\_\+tm\+\_\+ls}} (i, j)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{namespacetm__ls_adba8082b22f79f51342da94076922a9a}{tm\+\_\+ls\+::ndata}} = 0
+\item 
+integer \mbox{\hyperlink{namespacetm__ls_aebbcf717469c7d777f322f9f270eb10c}{tm\+\_\+ls\+::mdata}} = 0
+\item 
+integer \mbox{\hyperlink{namespacetm__ls_a33b833d6a4fd3303b1255ff8d306b461}{tm\+\_\+ls\+::idata}} = 2$\ast$$\ast$10
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacetm__ls_a71057b9904ba06ca95bf5b706f2d9100}{tm\+\_\+ls\+::stpar}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacetm__ls_a9ca67872637dd7b0045085bc26f87f4b}{tm\+\_\+ls\+::ltpar}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacetm__ls_a2939744005414d179da4a37dec021a77}{tm\+\_\+ls\+::l1}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacetm__ls_adf38a4b65741286fedd2d171b7c32e48}{tm\+\_\+ls\+::l2}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacetm__ls_acfefef6340affa4d5594d2827f07d522}{tm\+\_\+ls\+::ip}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacetm__ls_ac1cafcb17a1a3291ed866368747a96dc}{tm\+\_\+ls\+::ek}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacetm__ls_a64033bbda32c4c2d55364deb019c63d9}{tm\+\_\+ls\+::tr}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacetm__ls_a35fd137567ad9399b9ff44960561c18c}{tm\+\_\+ls\+::ti}}
+\item 
+integer, dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacetm__ls_ab5b2ab7d3766ae2e7f0fb049e5171645}{tm\+\_\+ls\+::jp}}
+\item 
+integer \mbox{\hyperlink{namespacetm__ls_a9117e6a56f26d70a8f52dfcad74cd1e1}{tm\+\_\+ls\+::kcase}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{_m_o_d__tm___l_s_8f90_acefe1e909d584cbf9fb27c82c6aa1fce}\label{_m_o_d__tm___l_s_8f90_acefe1e909d584cbf9fb27c82c6aa1fce}} 
+\index{MOD\_tm\_LS.f90@{MOD\_tm\_LS.f90}!add\_tm\_ls@{add\_tm\_ls}}
+\index{add\_tm\_ls@{add\_tm\_ls}!MOD\_tm\_LS.f90@{MOD\_tm\_LS.f90}}
+\doxysubsubsection{\texorpdfstring{add\_tm\_ls()}{add\_tm\_ls()}}
+{\footnotesize\ttfamily subroutine add\+\_\+tm\+\_\+ls (\begin{DoxyParamCaption}\item[{real(8)}]{e,  }\item[{real(8)}]{ar,  }\item[{real(8)}]{ai,  }\item[{integer}]{L,  }\item[{integer}]{S,  }\item[{integer}]{m1,  }\item[{integer}]{m2,  }\item[{integer}]{ii }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_m_o_d__tm___l_s_8f90_a523ce58a2b025ecd349ff3b7bfd5e56c}\label{_m_o_d__tm___l_s_8f90_a523ce58a2b025ecd349ff3b7bfd5e56c}} 
+\index{MOD\_tm\_LS.f90@{MOD\_tm\_LS.f90}!alloc\_tm\_ls@{alloc\_tm\_ls}}
+\index{alloc\_tm\_ls@{alloc\_tm\_ls}!MOD\_tm\_LS.f90@{MOD\_tm\_LS.f90}}
+\doxysubsubsection{\texorpdfstring{alloc\_tm\_ls()}{alloc\_tm\_ls()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+tm\+\_\+ls (\begin{DoxyParamCaption}\item[{integer}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_m_o_d__tm___l_s_8f90_aed48f36de2e177be36f2187eb294bdfb}\label{_m_o_d__tm___l_s_8f90_aed48f36de2e177be36f2187eb294bdfb}} 
+\index{MOD\_tm\_LS.f90@{MOD\_tm\_LS.f90}!change\_tm\_ls@{change\_tm\_ls}}
+\index{change\_tm\_ls@{change\_tm\_ls}!MOD\_tm\_LS.f90@{MOD\_tm\_LS.f90}}
+\doxysubsubsection{\texorpdfstring{change\_tm\_ls()}{change\_tm\_ls()}}
+{\footnotesize\ttfamily subroutine change\+\_\+tm\+\_\+ls (\begin{DoxyParamCaption}\item[{integer}]{i,  }\item[{integer}]{j }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_m_o_d__tm___l_s_8f90_a578977864aa408a9eece742ad05608e7}\label{_m_o_d__tm___l_s_8f90_a578977864aa408a9eece742ad05608e7}} 
+\index{MOD\_tm\_LS.f90@{MOD\_tm\_LS.f90}!sort\_tm\_ls@{sort\_tm\_ls}}
+\index{sort\_tm\_ls@{sort\_tm\_ls}!MOD\_tm\_LS.f90@{MOD\_tm\_LS.f90}}
+\doxysubsubsection{\texorpdfstring{sort\_tm\_ls()}{sort\_tm\_ls()}}
+{\footnotesize\ttfamily subroutine sort\+\_\+tm\+\_\+ls}
+

@@ -1,17 +1,18 @@
 !=======================================================================
       Subroutine AK_COEF(nopen,EK)
 !=======================================================================
-!     calculates weights of different components in internal region
+!> @ingroup bsr_phot
+!> @brief     calculates weights of different components in internal region
 !
-!     INPUT:
-!
-!     EK       -  ELECTRON ENERGY (Ry)
-!     AA       -  RMAT^(-1) * F-   (from module bsr_phot)
-!     WT       -  weights of the R_matrix basis components
-!
-!     RETURNS:
-!
-!     AK(i,j)  -  weight of ith channel in solution j (it is c**2 !)
+!>     INPUT:
+!!
+!!     EK       -  ELECTRON ENERGY (Ry)
+!!     AA       -  RMAT^(-1) * F-   (from module bsr_phot)
+!!     WT       -  weights of the R_matrix basis components
+!!
+!!     RETURNS:
+!!
+!!     AK(i,j)  -  weight of ith channel in solution j (it is c**2 !)
 !
 !-----------------------------------------------------------------------
       Use bsr_phot

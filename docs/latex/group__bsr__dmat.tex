@@ -1,0 +1,760 @@
+\hypertarget{group__bsr__dmat}{}\doxysection{B\+S\+R\+\_\+\+D\+M\+A\+T3}
+\label{group__bsr__dmat}\index{BSR\_DMAT3@{BSR\_DMAT3}}
+
+
+Provides different multipole-\/transition matrixes or oscillator strengths and transition probabilities ~\newline
+  
+
+
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga6fceb748a1cf37708a2f0965c8e1c840}{add\+\_\+cdata}} (ip, jp, CL, CV, j1, j2, j3)
+\begin{DoxyCompactList}\small\item\em add new coefficients with indexes (j1,j2,j3) to the list (ip\+:jp) \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_gab85af6ad3ab2c673e8e9d668d20f1324}{add\+\_\+coef}} (CL, CV, j1, j2, j3)
+\begin{DoxyCompactList}\small\item\em add new coefficient to the list for given itype Calls\+: Add\+\_\+cdata, Gen\+\_\+matrix \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga8005bfea023f4e763e7b1aec30de7cee}{check\+\_\+det}} (kdn, N1, N2, iext)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga7609207df74422f8b2758f1a48de118d}{shift}} (n, m, N1, N2)
+\begin{DoxyCompactList}\small\item\em N2 obtained from N1 by deleting element \textquotesingle{}m\textquotesingle{}. \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_gabd34db58eff738278f04d544c424c267}{d\+\_\+data}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga054a33bcf1e19a2d85edd899ab4caeda}{d\+\_\+matr}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga4c1b244d6167084618d00cb106573a2c}{d\+\_\+out}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga6c2755851f509362d7c39fa601392b59}{d\+\_\+prep}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga5ee194906824668dc164fec874779816}{dd\+\_\+out}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga90c3451b67ceab57cb6bdea6dfd91f60}{det\+\_\+fact}} (idf, I\+P\+N1, I\+P\+N2)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga4b60f2d4f15c83175a9bdfaefda5d1d0}{dvec\+\_\+out}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_gabb59e545183ceafd9e9b354159bed952}{fl\+\_\+kpol}} (kpol, li, lj, fl)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_gae61e605c930b652c947df54bf52c0a64}{gen\+\_\+matrix}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_gaf759f06f22bdffd623ed1e4cfface73b}{gen\+\_\+zf}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga0a2d7ebb735c547d7609c50c6ed23340}{get\+\_\+dm}} (i, j, cl, cv, xl, xv)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga3b5a8ff51866ec7e9f87544d09a47a9d}{get\+\_\+dvl}} (i1, i2, cl, cv, v, w)
+\begin{DoxyCompactList}\small\item\em provide d-\/vectors \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga371be37a5fe3b2df10a60535323ad603}{get\+\_\+dvr}} (i1, i2, cl, cv, v, w)
+\begin{DoxyCompactList}\small\item\em provide d-\/vectors \end{DoxyCompactList}\item 
+integer function \mbox{\hyperlink{group__bsr__dmat_ga37118af4399be1bb8c78c0b83f5d71e6}{ifind\+\_\+pert}} (ilsp, ic)
+\begin{DoxyCompactList}\small\item\em find perturber for given configuration \textquotesingle{}ic\textquotesingle{} \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_gaab84c4dfe5d6cbe6b9bca7bb2c162c11}{inf\+\_\+bsr\+\_\+dmat}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_gac0ddb2ece1d49dda88c3367e8a3301a2}{j\+\_\+case}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga3298e8faebcc1ce29979bd2c3dd67074}{ls\+\_\+case}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_gac82250ea05631d273527daa4ee03a726}{merge\+\_\+cdata}} (nn, ip, jp, nc, E\+P\+S\+\_\+c)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_gacced3ce97196d478d15077a836493954}{allocate\+\_\+cmdata}} (k)
+\begin{DoxyCompactList}\small\item\em allocate arrays in module \char`\"{}cmdata\char`\"{} \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_gaea6747918e02428b36d0e66741e9979e}{allocate\+\_\+coeffs}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_gaf2a9580a4618d5edac3cf0e6e68c0bed}{read\+\_\+dets}} (nub)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga2187af463f81d7eca536b9e4dfc98103}{allocate\+\_\+matrix}} (ns, ks, nch1, nch2, ncp1, ncp2, ncfg1, ncfg2)
+\begin{DoxyCompactList}\small\item\em allocate arrays in module \char`\"{}dmatrix\char`\"{} \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga91f81086e5d407eb2af04f81897c22a6}{update\+\_\+dx}} (ich, jch, ns, ks, d1, d2)
+\begin{DoxyCompactList}\small\item\em update channel block with nonsymmetric band matrix \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga1ef01f8311b67eda5b2aeb34c9de3c6c}{update\+\_\+dw}} (ich, jch, ns, v1, w1, v2, w2)
+\begin{DoxyCompactList}\small\item\em update full matrix with v$\ast$w \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_gac7643057d24be4598a213c0b2aee9174}{update\+\_\+dv}} (ich, jch, ic, jc, ns, v1, v2)
+\begin{DoxyCompactList}\small\item\em update full matrix with vector \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga611db0924c82dab792cf1ce278205ea8}{update\+\_\+db}} (ic, jc, CL, CV)
+\begin{DoxyCompactList}\small\item\em update full matrix with scalar \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_gae8e42d9d606df9bcaecf1b767e5106b5}{allocate\+\_\+ndefs}} (m)
+\begin{DoxyCompactList}\small\item\em allocate arrays in module \char`\"{}ndefs\char`\"{} \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga264a971a9f0ec5398f4dc7ad48817982}{iadd\+\_\+ndefs}} (io, jo, S)
+\begin{DoxyCompactList}\small\item\em add new entry in module \char`\"{}ndefs\char`\"{} \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_gab18fa91f9ef0a4fa46223eb20984b401}{allocate\+\_\+ndets}} (m)
+\begin{DoxyCompactList}\small\item\em allocate arrays in module \char`\"{}ndets\char`\"{} \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga50885f1ee12bb74c53e7e1cc3d576806}{iadd\+\_\+ndets}} (io, jo, S)
+\begin{DoxyCompactList}\small\item\em add new entry in the module \char`\"{}ndets\char`\"{} \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga743c63a8d0642b99c15929524ba7345b}{r\+\_\+conf}} (in1, in2, nub)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga0028ec1978b976275928c391e53d96d4}{read\+\_\+arg}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga5e0840f71a37074a76058699488a3547}{read\+\_\+bsw}} (nu, kset)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga591cc0874d36ee473e4fdb2f95d8c9a0}{read\+\_\+sol}} (ctype, nu, nc, C, Label, E, jot)
+\item 
+real(8) function \mbox{\hyperlink{group__bsr__dmat_gaa5916f9f05e8e66f538f9a4196d13af1}{vdet}} (kd, N1, N2)
+\begin{DoxyCompactList}\small\item\em calculate the value of overlap determinant \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{group__bsr__dmat_ga56d91ffde141179b9b66734e1d0f1b90}{cmdata\+::cldata}}
+\item 
+integer \mbox{\hyperlink{group__bsr__dmat_gad00211b7611499b2b902e79183d74fc9}{coeffs\+::ncase}} = 11
+\begin{DoxyCompactList}\small\item\em containes the description and type of possible coefficients \end{DoxyCompactList}\item 
+integer \mbox{\hyperlink{group__bsr__dmat_ga793db1d6710fe8952b0887e9b1978032}{dets\+::ndet}} = 0
+\begin{DoxyCompactList}\small\item\em contains information about overlap determinants \{$<$i$\vert$j$>$\} \end{DoxyCompactList}\item 
+integer \mbox{\hyperlink{group__bsr__dmat_gac1f5f83236c75ea06c6ded3ef6c1a9c4}{dmatrix\+::kns}}
+\item 
+integer \mbox{\hyperlink{group__bsr__dmat_gac9a2ef030a8f7a554c3c06eab847d721}{new\+\_\+defs\+::mndef}} = 0
+\item 
+integer \mbox{\hyperlink{group__bsr__dmat_gaf591a8bd75541df27d2ecd65f585c79c}{new\+\_\+dets\+::mndet}} = 0
+\item 
+integer \mbox{\hyperlink{group__bsr__dmat_ga0b36924f333f87af7cc0487a3f3db575}{bsr\+\_\+dmat\+::in1}} = 1
+\begin{DoxyCompactList}\small\item\em containes some common parameters, variables and arrays specific for this program \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides different multipole-\/transition matrixes or oscillator strengths and transition probabilities ~\newline
+ 
+
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{group__bsr__dmat_ga6fceb748a1cf37708a2f0965c8e1c840}\label{group__bsr__dmat_ga6fceb748a1cf37708a2f0965c8e1c840}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!add\_cdata@{add\_cdata}}
+\index{add\_cdata@{add\_cdata}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{add\_cdata()}{add\_cdata()}}
+{\footnotesize\ttfamily subroutine add\+\_\+cdata (\begin{DoxyParamCaption}\item[{integer}]{ip,  }\item[{integer}]{jp,  }\item[{real(8), intent(in)}]{CL,  }\item[{real(8), intent(in)}]{CV,  }\item[{integer}]{j1,  }\item[{integer}]{j2,  }\item[{integer}]{j3 }\end{DoxyParamCaption})}
+
+
+
+add new coefficients with indexes (j1,j2,j3) to the list (ip\+:jp) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip} & \\
+\hline
+{\em jp} & add new coefficients with indexes (j1,j2,j3) to the list (ip\+:jp) \\
+\hline
+{\em j1} & add new coefficients with indexes (j1,j2,j3) to the list (ip\+:jp) \\
+\hline
+{\em j2} & add new coefficients with indexes (j1,j2,j3) to the list (ip\+:jp) \\
+\hline
+{\em j3} & add new coefficients with indexes (j1,j2,j3) to the list (ip\+:jp) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__dmat_gab85af6ad3ab2c673e8e9d668d20f1324}\label{group__bsr__dmat_gab85af6ad3ab2c673e8e9d668d20f1324}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!add\_coef@{add\_coef}}
+\index{add\_coef@{add\_coef}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{add\_coef()}{add\_coef()}}
+{\footnotesize\ttfamily subroutine add\+\_\+coef (\begin{DoxyParamCaption}\item[{real(8), intent(in)}]{CL,  }\item[{real(8), intent(in)}]{CV,  }\item[{integer, intent(in)}]{j1,  }\item[{integer, intent(in)}]{j2,  }\item[{integer, intent(in)}]{j3 }\end{DoxyParamCaption})}
+
+
+
+add new coefficient to the list for given itype Calls\+: Add\+\_\+cdata, Gen\+\_\+matrix 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cl} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em cv} & add new coefficient to the list for given itype Calls\+: Add\+\_\+cdata, Gen\+\_\+matrix \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__dmat_gacced3ce97196d478d15077a836493954}\label{group__bsr__dmat_gacced3ce97196d478d15077a836493954}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!allocate\_cmdata@{allocate\_cmdata}}
+\index{allocate\_cmdata@{allocate\_cmdata}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{allocate\_cmdata()}{allocate\_cmdata()}}
+{\footnotesize\ttfamily subroutine allocate\+\_\+cmdata (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{k }\end{DoxyParamCaption})}
+
+
+
+allocate arrays in module \char`\"{}cmdata\char`\"{} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em k} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__dmat_gaea6747918e02428b36d0e66741e9979e}\label{group__bsr__dmat_gaea6747918e02428b36d0e66741e9979e}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!allocate\_coeffs@{allocate\_coeffs}}
+\index{allocate\_coeffs@{allocate\_coeffs}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{allocate\_coeffs()}{allocate\_coeffs()}}
+{\footnotesize\ttfamily subroutine allocate\+\_\+coeffs}
+
+allocate arrays in module \char`\"{}coeffs\char`\"{}\mbox{\Hypertarget{group__bsr__dmat_ga2187af463f81d7eca536b9e4dfc98103}\label{group__bsr__dmat_ga2187af463f81d7eca536b9e4dfc98103}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!allocate\_matrix@{allocate\_matrix}}
+\index{allocate\_matrix@{allocate\_matrix}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{allocate\_matrix()}{allocate\_matrix()}}
+{\footnotesize\ttfamily subroutine allocate\+\_\+matrix (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ns,  }\item[{integer, intent(in)}]{ks,  }\item[{integer, intent(in)}]{nch1,  }\item[{integer, intent(in)}]{nch2,  }\item[{integer, intent(in)}]{ncp1,  }\item[{integer, intent(in)}]{ncp2,  }\item[{integer, intent(in)}]{ncfg1,  }\item[{integer, intent(in)}]{ncfg2 }\end{DoxyParamCaption})}
+
+
+
+allocate arrays in module \char`\"{}dmatrix\char`\"{} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ns} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em ks} & allocate arrays in module \char`\"{}dmatrix\char`\"{} \\
+\hline
+\mbox{\texttt{ in}}  & {\em nch1} & allocate arrays in module \char`\"{}dmatrix\char`\"{} \\
+\hline
+\mbox{\texttt{ in}}  & {\em nch2} & allocate arrays in module \char`\"{}dmatrix\char`\"{} \\
+\hline
+\mbox{\texttt{ in}}  & {\em ncp1} & allocate arrays in module \char`\"{}dmatrix\char`\"{} \\
+\hline
+\mbox{\texttt{ in}}  & {\em ncp2} & allocate arrays in module \char`\"{}dmatrix\char`\"{} \\
+\hline
+\mbox{\texttt{ in}}  & {\em ncfg1} & allocate arrays in module \char`\"{}dmatrix\char`\"{} \\
+\hline
+\mbox{\texttt{ in}}  & {\em ncfg2} & allocate arrays in module \char`\"{}dmatrix\char`\"{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__dmat_gae8e42d9d606df9bcaecf1b767e5106b5}\label{group__bsr__dmat_gae8e42d9d606df9bcaecf1b767e5106b5}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!allocate\_ndefs@{allocate\_ndefs}}
+\index{allocate\_ndefs@{allocate\_ndefs}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{allocate\_ndefs()}{allocate\_ndefs()}}
+{\footnotesize\ttfamily subroutine allocate\+\_\+ndefs (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{m }\end{DoxyParamCaption})}
+
+
+
+allocate arrays in module \char`\"{}ndefs\char`\"{} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em m} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__dmat_gab18fa91f9ef0a4fa46223eb20984b401}\label{group__bsr__dmat_gab18fa91f9ef0a4fa46223eb20984b401}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!allocate\_ndets@{allocate\_ndets}}
+\index{allocate\_ndets@{allocate\_ndets}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{allocate\_ndets()}{allocate\_ndets()}}
+{\footnotesize\ttfamily subroutine allocate\+\_\+ndets (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{m }\end{DoxyParamCaption})}
+
+
+
+allocate arrays in module \char`\"{}ndets\char`\"{} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em m} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__dmat_ga8005bfea023f4e763e7b1aec30de7cee}\label{group__bsr__dmat_ga8005bfea023f4e763e7b1aec30de7cee}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!check\_det@{check\_det}}
+\index{check\_det@{check\_det}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{check\_det()}{check\_det()}}
+{\footnotesize\ttfamily subroutine check\+\_\+det (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{kdn,  }\item[{integer, dimension(kdn), intent(in)}]{N1,  }\item[{integer, dimension(kdn), intent(in)}]{N2,  }\item[{integer, intent(in)}]{iext }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em kdn} & Expend the total overlap determinants so that to extract matrix elements with continuum orbitals. Converted overlaps are stored in module \mbox{\hyperlink{namespacenew__dets}{new\+\_\+dets}} with Iadd\+\_\+ndets.\\
+\hline
+\mbox{\texttt{ in}}  & {\em iext} & Expend the total overlap determinants so that to extract matrix elements with continuum orbitals. Converted overlaps are stored in module \mbox{\hyperlink{namespacenew__dets}{new\+\_\+dets}} with Iadd\+\_\+ndets. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__dmat_gabd34db58eff738278f04d544c424c267}\label{group__bsr__dmat_gabd34db58eff738278f04d544c424c267}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!d\_data@{d\_data}}
+\index{d\_data@{d\_data}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{d\_data()}{d\_data()}}
+{\footnotesize\ttfamily subroutine d\+\_\+data}
+
+processing of d-\/integrals in the module \textquotesingle{}cmdata\textquotesingle{}
+
+we have following 10 different structures for radial integrals\+:
+
+1 d( . .) ic, jc -\/ bound-\/bound ~\newline
+ 2 d( i .) jc -\/ bound-\/channel 3 d( . j) ic ~\newline
+ 4 d( . .) $<$ i $\vert$ . $>$ jc ~\newline
+ 5 d( . .) $<$ . $\vert$ j $>$ ic ~\newline
+ 6 d( i j) -\/ channel-\/channel 7 d( i .) $<$ . $\vert$ j $>$ ~\newline
+ 8 d( . j) $<$ i $\vert$ . $>$ ~\newline
+ 9 d( . .) $<$ i $\vert$ . $>$ $<$ . $\vert$ j $>$ ~\newline
+ 10 d( . .) $<$ i $\vert$ j $>$ ~\newline
+
+
+where . denotes bound orbital, i,j -\/ channels, ic,jc -\/ configurations\mbox{\Hypertarget{group__bsr__dmat_ga054a33bcf1e19a2d85edd899ab4caeda}\label{group__bsr__dmat_ga054a33bcf1e19a2d85edd899ab4caeda}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!d\_matr@{d\_matr}}
+\index{d\_matr@{d\_matr}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{d\_matr()}{d\_matr()}}
+{\footnotesize\ttfamily subroutine d\+\_\+matr}
+
+This routine computes the matrix of dipole matrix elements in length and velocity forms according to M\+U\+L\+T\+\_\+\+B\+NK (unit nub)\mbox{\Hypertarget{group__bsr__dmat_ga4c1b244d6167084618d00cb106573a2c}\label{group__bsr__dmat_ga4c1b244d6167084618d00cb106573a2c}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!d\_out@{d\_out}}
+\index{d\_out@{d\_out}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{d\_out()}{d\_out()}}
+{\footnotesize\ttfamily subroutine d\+\_\+out}
+
+define and output dipole matrix for R-\/matrix solutions\+:\mbox{\Hypertarget{group__bsr__dmat_ga6c2755851f509362d7c39fa601392b59}\label{group__bsr__dmat_ga6c2755851f509362d7c39fa601392b59}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!d\_prep@{d\_prep}}
+\index{d\_prep@{d\_prep}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{d\_prep()}{d\_prep()}}
+{\footnotesize\ttfamily subroutine d\+\_\+prep}
+
+prepare B-\/spline multipole arrays and matrix elements\mbox{\Hypertarget{group__bsr__dmat_ga5ee194906824668dc164fec874779816}\label{group__bsr__dmat_ga5ee194906824668dc164fec874779816}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!dd\_out@{dd\_out}}
+\index{dd\_out@{dd\_out}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{dd\_out()}{dd\_out()}}
+{\footnotesize\ttfamily subroutine dd\+\_\+out}
+
+output full d-\/matrix\mbox{\Hypertarget{group__bsr__dmat_ga90c3451b67ceab57cb6bdea6dfd91f60}\label{group__bsr__dmat_ga90c3451b67ceab57cb6bdea6dfd91f60}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!det\_fact@{det\_fact}}
+\index{det\_fact@{det\_fact}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{det\_fact()}{det\_fact()}}
+{\footnotesize\ttfamily subroutine det\+\_\+fact (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{idf,  }\item[{integer, dimension($\ast$), intent(in)}]{I\+P\+N1,  }\item[{integer, dimension($\ast$), intent(in)}]{I\+P\+N2 }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em idf} & Analize the determinant overlap factor. First each overlap determinant is expended into one-\/electron overlaps $<$nl$\vert$n\textquotesingle{}l\textquotesingle{}$>$, with overlaps included only known radial func. to be directly calculated. Results are places in module \mbox{\hyperlink{namespacenew__dets}{new\+\_\+dets}}. Then overlap determinant are combined to obtain the final overlap factors as\+: C, C $<$kl$\vert$nl$>$ or C $<$kl$\vert$k\textquotesingle{}l\textquotesingle{}$>$. Results are places in module \mbox{\hyperlink{namespacenew__defs}{new\+\_\+defs}}.\\
+\hline
+\mbox{\texttt{ in}}  & {\em ipn1} & Analize the determinant overlap factor. First each overlap determinant is expended into one-\/electron overlaps $<$nl$\vert$n\textquotesingle{}l\textquotesingle{}$>$, with overlaps included only known radial func. to be directly calculated. Results are places in module \mbox{\hyperlink{namespacenew__dets}{new\+\_\+dets}}. Then overlap determinant are combined to obtain the final overlap factors as\+: C, C $<$kl$\vert$nl$>$ or C $<$kl$\vert$k\textquotesingle{}l\textquotesingle{}$>$. Results are places in module \mbox{\hyperlink{namespacenew__defs}{new\+\_\+defs}}.\\
+\hline
+\mbox{\texttt{ in}}  & {\em ipn2} & Analize the determinant overlap factor. First each overlap determinant is expended into one-\/electron overlaps $<$nl$\vert$n\textquotesingle{}l\textquotesingle{}$>$, with overlaps included only known radial func. to be directly calculated. Results are places in module \mbox{\hyperlink{namespacenew__dets}{new\+\_\+dets}}. Then overlap determinant are combined to obtain the final overlap factors as\+: C, C $<$kl$\vert$nl$>$ or C $<$kl$\vert$k\textquotesingle{}l\textquotesingle{}$>$. Results are places in module \mbox{\hyperlink{namespacenew__defs}{new\+\_\+defs}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__dmat_ga4b60f2d4f15c83175a9bdfaefda5d1d0}\label{group__bsr__dmat_ga4b60f2d4f15c83175a9bdfaefda5d1d0}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!dvec\_out@{dvec\_out}}
+\index{dvec\_out@{dvec\_out}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{dvec\_out()}{dvec\_out()}}
+{\footnotesize\ttfamily subroutine dvec\+\_\+out}
+
+define and output dipole vector for initial state\mbox{\Hypertarget{group__bsr__dmat_gabb59e545183ceafd9e9b354159bed952}\label{group__bsr__dmat_gabb59e545183ceafd9e9b354159bed952}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!fl\_kpol@{fl\_kpol}}
+\index{fl\_kpol@{fl\_kpol}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{fl\_kpol()}{fl\_kpol()}}
+{\footnotesize\ttfamily subroutine fl\+\_\+kpol (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{kpol,  }\item[{integer, intent(in)}]{li,  }\item[{integer, intent(in)}]{lj,  }\item[{real(8), intent(out)}]{fl }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em kpol} & provide l-\/dependent factor for V-\/form element\+:\\
+\hline
+\end{DoxyParams}
+kpol=1\+: $<$i$\vert$dv$\vert$j$>$ = I\+NT\{ P\+\_\+j(r) \mbox{[}d/dr + fl/r\mbox{]} P\+\_\+i(r); dr\} fl = (l\+\_\+j$\ast$(l\+\_\+j+1) -\/ l\+\_\+i$\ast$(l\+\_\+i+1))/2
+
+kpol=2\+: $<$i$\vert$dv$\vert$j$>$ = I\+NT\{ P\+\_\+j(r) \mbox{[}r d/dr + fl\mbox{]} P\+\_\+i(r); dr\} fl = l\+\_\+i + 2 for lj-\/li = 2 fl = 1/2 for lj-\/li = 0 fl =-\/l\+\_\+i + 1 for lj-\/li =-\/2
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em li} & provide l-\/dependent factor for V-\/form element\+:\\
+\hline
+\end{DoxyParams}
+kpol=1\+: $<$i$\vert$dv$\vert$j$>$ = I\+NT\{ P\+\_\+j(r) \mbox{[}d/dr + fl/r\mbox{]} P\+\_\+i(r); dr\} fl = (l\+\_\+j$\ast$(l\+\_\+j+1) -\/ l\+\_\+i$\ast$(l\+\_\+i+1))/2
+
+kpol=2\+: $<$i$\vert$dv$\vert$j$>$ = I\+NT\{ P\+\_\+j(r) \mbox{[}r d/dr + fl\mbox{]} P\+\_\+i(r); dr\} fl = l\+\_\+i + 2 for lj-\/li = 2 fl = 1/2 for lj-\/li = 0 fl =-\/l\+\_\+i + 1 for lj-\/li =-\/2
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em lj} & provide l-\/dependent factor for V-\/form element\+:\\
+\hline
+\end{DoxyParams}
+kpol=1\+: $<$i$\vert$dv$\vert$j$>$ = I\+NT\{ P\+\_\+j(r) \mbox{[}d/dr + fl/r\mbox{]} P\+\_\+i(r); dr\} fl = (l\+\_\+j$\ast$(l\+\_\+j+1) -\/ l\+\_\+i$\ast$(l\+\_\+i+1))/2
+
+kpol=2\+: $<$i$\vert$dv$\vert$j$>$ = I\+NT\{ P\+\_\+j(r) \mbox{[}r d/dr + fl\mbox{]} P\+\_\+i(r); dr\} fl = l\+\_\+i + 2 for lj-\/li = 2 fl = 1/2 for lj-\/li = 0 fl =-\/l\+\_\+i + 1 for lj-\/li =-\/2 \mbox{\Hypertarget{group__bsr__dmat_gae61e605c930b652c947df54bf52c0a64}\label{group__bsr__dmat_gae61e605c930b652c947df54bf52c0a64}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!gen\_matrix@{gen\_matrix}}
+\index{gen\_matrix@{gen\_matrix}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{gen\_matrix()}{gen\_matrix()}}
+{\footnotesize\ttfamily subroutine gen\+\_\+matrix}
+
+merge data and generate the interaction matrix for current itype\mbox{\Hypertarget{group__bsr__dmat_gaf759f06f22bdffd623ed1e4cfface73b}\label{group__bsr__dmat_gaf759f06f22bdffd623ed1e4cfface73b}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!gen\_zf@{gen\_zf}}
+\index{gen\_zf@{gen\_zf}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{gen\_zf()}{gen\_zf()}}
+{\footnotesize\ttfamily subroutine gen\+\_\+zf}
+
+define the number of solutions and open relevant file, then call LS or L\+SJ routines\+: L\+S\+\_\+case and J\+\_\+case\mbox{\Hypertarget{group__bsr__dmat_ga0a2d7ebb735c547d7609c50c6ed23340}\label{group__bsr__dmat_ga0a2d7ebb735c547d7609c50c6ed23340}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!get\_dm@{get\_dm}}
+\index{get\_dm@{get\_dm}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{get\_dm()}{get\_dm()}}
+{\footnotesize\ttfamily subroutine get\+\_\+dm (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i,  }\item[{integer, intent(in)}]{j,  }\item[{real(8), intent(in)}]{cl,  }\item[{real(8), intent(in)}]{cv,  }\item[{real(8), dimension(ns,ks+ks-\/1), intent(out)}]{xl,  }\item[{real(8), dimension(ns,ks+ks-\/1), intent(out)}]{xv }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i} & provide d-\/matrix\\
+\hline
+\end{DoxyParams}
+kpol=1\+: $<$i$\vert$dv$\vert$j$>$ = I\+NT\{ P\+\_\+j(r) \mbox{[}d/dr + fl/r\mbox{]} P\+\_\+i(r); dr\} fl = (l\+\_\+j$\ast$(l\+\_\+j+1) -\/ l\+\_\+i$\ast$(l\+\_\+i+1))/2
+
+kpol=2\+: $<$i$\vert$dv$\vert$j$>$ = I\+NT\{ P\+\_\+j(r) \mbox{[}r d/dr + fl\mbox{]} P\+\_\+i(r); dr\} fl = l\+\_\+i + 2 for lj-\/li=2 fl = 1/2 for lj-\/li=0 fl =-\/l\+\_\+i + 1 for lj-\/li=-\/2
+
+$<$B\+\_\+i$\vert$d/dr$\vert$\+B\+\_\+j$>$ -\/ anti-\/symmetric $<$B\+\_\+i$\vert$rd/dr$\vert$\+B\+\_\+j$>$ -\/ asymmetric
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em j} & provide d-\/matrix\\
+\hline
+\end{DoxyParams}
+kpol=1\+: $<$i$\vert$dv$\vert$j$>$ = I\+NT\{ P\+\_\+j(r) \mbox{[}d/dr + fl/r\mbox{]} P\+\_\+i(r); dr\} fl = (l\+\_\+j$\ast$(l\+\_\+j+1) -\/ l\+\_\+i$\ast$(l\+\_\+i+1))/2
+
+kpol=2\+: $<$i$\vert$dv$\vert$j$>$ = I\+NT\{ P\+\_\+j(r) \mbox{[}r d/dr + fl\mbox{]} P\+\_\+i(r); dr\} fl = l\+\_\+i + 2 for lj-\/li=2 fl = 1/2 for lj-\/li=0 fl =-\/l\+\_\+i + 1 for lj-\/li=-\/2
+
+$<$B\+\_\+i$\vert$d/dr$\vert$\+B\+\_\+j$>$ -\/ anti-\/symmetric $<$B\+\_\+i$\vert$rd/dr$\vert$\+B\+\_\+j$>$ -\/ asymmetric \mbox{\Hypertarget{group__bsr__dmat_ga3b5a8ff51866ec7e9f87544d09a47a9d}\label{group__bsr__dmat_ga3b5a8ff51866ec7e9f87544d09a47a9d}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!get\_dvl@{get\_dvl}}
+\index{get\_dvl@{get\_dvl}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{get\_dvl()}{get\_dvl()}}
+{\footnotesize\ttfamily subroutine get\+\_\+dvl (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i1,  }\item[{integer, intent(in)}]{i2,  }\item[{real(8), intent(in)}]{cl,  }\item[{real(8), intent(in)}]{cv,  }\item[{real(8), dimension(ns), intent(out)}]{v,  }\item[{real(8), dimension(ns), intent(out)}]{w }\end{DoxyParamCaption})}
+
+
+
+provide d-\/vectors 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i1} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em i2} & provide d-\/vectors \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__dmat_ga371be37a5fe3b2df10a60535323ad603}\label{group__bsr__dmat_ga371be37a5fe3b2df10a60535323ad603}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!get\_dvr@{get\_dvr}}
+\index{get\_dvr@{get\_dvr}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{get\_dvr()}{get\_dvr()}}
+{\footnotesize\ttfamily subroutine get\+\_\+dvr (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i1,  }\item[{integer, intent(in)}]{i2,  }\item[{real(8), intent(in)}]{cl,  }\item[{real(8), intent(in)}]{cv,  }\item[{real(8), dimension(ns), intent(out)}]{v,  }\item[{real(8), dimension(ns), intent(out)}]{w }\end{DoxyParamCaption})}
+
+
+
+provide d-\/vectors 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i1} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em i2} & provide d-\/vectors \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__dmat_ga264a971a9f0ec5398f4dc7ad48817982}\label{group__bsr__dmat_ga264a971a9f0ec5398f4dc7ad48817982}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!iadd\_ndefs@{iadd\_ndefs}}
+\index{iadd\_ndefs@{iadd\_ndefs}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{iadd\_ndefs()}{iadd\_ndefs()}}
+{\footnotesize\ttfamily subroutine iadd\+\_\+ndefs (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{io,  }\item[{integer, intent(in)}]{jo,  }\item[{real(8), intent(in)}]{S }\end{DoxyParamCaption})}
+
+
+
+add new entry in module \char`\"{}ndefs\char`\"{} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em io} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em jo} & add new entry in module \char`\"{}ndefs\char`\"{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__dmat_ga50885f1ee12bb74c53e7e1cc3d576806}\label{group__bsr__dmat_ga50885f1ee12bb74c53e7e1cc3d576806}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!iadd\_ndets@{iadd\_ndets}}
+\index{iadd\_ndets@{iadd\_ndets}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{iadd\_ndets()}{iadd\_ndets()}}
+{\footnotesize\ttfamily subroutine iadd\+\_\+ndets (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{io,  }\item[{integer, intent(in)}]{jo,  }\item[{real(8), intent(in)}]{S }\end{DoxyParamCaption})}
+
+
+
+add new entry in the module \char`\"{}ndets\char`\"{} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em io} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em jo} & add new entry in the module \char`\"{}ndets\char`\"{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__dmat_ga37118af4399be1bb8c78c0b83f5d71e6}\label{group__bsr__dmat_ga37118af4399be1bb8c78c0b83f5d71e6}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!ifind\_pert@{ifind\_pert}}
+\index{ifind\_pert@{ifind\_pert}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{ifind\_pert()}{ifind\_pert()}}
+{\footnotesize\ttfamily integer function ifind\+\_\+pert (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ilsp,  }\item[{integer, intent(in)}]{ic }\end{DoxyParamCaption})}
+
+
+
+find perturber for given configuration \textquotesingle{}ic\textquotesingle{} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ilsp} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em ic} & find perturber for given configuration \textquotesingle{}ic\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__dmat_gaab84c4dfe5d6cbe6b9bca7bb2c162c11}\label{group__bsr__dmat_gaab84c4dfe5d6cbe6b9bca7bb2c162c11}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!inf\_bsr\_dmat@{inf\_bsr\_dmat}}
+\index{inf\_bsr\_dmat@{inf\_bsr\_dmat}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{inf\_bsr\_dmat()}{inf\_bsr\_dmat()}}
+{\footnotesize\ttfamily subroutine inf\+\_\+bsr\+\_\+dmat}
+
+provide screen information about \mbox{\hyperlink{namespacebsr__dmat}{bsr\+\_\+dmat}} program\mbox{\Hypertarget{group__bsr__dmat_gac0ddb2ece1d49dda88c3367e8a3301a2}\label{group__bsr__dmat_gac0ddb2ece1d49dda88c3367e8a3301a2}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!j\_case@{j\_case}}
+\index{j\_case@{j\_case}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{j\_case()}{j\_case()}}
+{\footnotesize\ttfamily subroutine j\+\_\+case}
+
+calculate f-\/values in L\+SJ mode\mbox{\Hypertarget{group__bsr__dmat_ga3298e8faebcc1ce29979bd2c3dd67074}\label{group__bsr__dmat_ga3298e8faebcc1ce29979bd2c3dd67074}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!ls\_case@{ls\_case}}
+\index{ls\_case@{ls\_case}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{ls\_case()}{ls\_case()}}
+{\footnotesize\ttfamily subroutine ls\+\_\+case}
+
+calculate f-\/values in LS mode\mbox{\Hypertarget{group__bsr__dmat_gac82250ea05631d273527daa4ee03a726}\label{group__bsr__dmat_gac82250ea05631d273527daa4ee03a726}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!merge\_cdata@{merge\_cdata}}
+\index{merge\_cdata@{merge\_cdata}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{merge\_cdata()}{merge\_cdata()}}
+{\footnotesize\ttfamily subroutine merge\+\_\+cdata (\begin{DoxyParamCaption}\item[{integer}]{nn,  }\item[{integer, dimension(nn)}]{ip,  }\item[{integer, dimension(nn)}]{jp,  }\item[{integer}]{nc,  }\item[{real(8), intent(in)}]{E\+P\+S\+\_\+c }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em nn} & merge the different blocks of data in M\+O\+D\+U\+LE \textquotesingle{}cmdata\textquotesingle{}\\
+\hline
+\end{DoxyParams}
+nn -\/ number of blocks ip(.) -\/ pointer for begining of block . jp(.) -\/ pointer for end of block . nc -\/ number of result coeff\textquotesingle{}s E\+P\+S\+\_\+c -\/ all coefficients $<$ E\+P\+S\+\_\+c are ignored
+\begin{DoxyParams}{Parameters}
+{\em nc} & merge the different blocks of data in M\+O\+D\+U\+LE \textquotesingle{}cmdata\textquotesingle{}\\
+\hline
+\end{DoxyParams}
+nn -\/ number of blocks ip(.) -\/ pointer for begining of block . jp(.) -\/ pointer for end of block . nc -\/ number of result coeff\textquotesingle{}s E\+P\+S\+\_\+c -\/ all coefficients $<$ E\+P\+S\+\_\+c are ignored \mbox{\Hypertarget{group__bsr__dmat_ga743c63a8d0642b99c15929524ba7345b}\label{group__bsr__dmat_ga743c63a8d0642b99c15929524ba7345b}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!r\_conf@{r\_conf}}
+\index{r\_conf@{r\_conf}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{r\_conf()}{r\_conf()}}
+{\footnotesize\ttfamily subroutine r\+\_\+conf (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{in1,  }\item[{integer, intent(in)}]{in2,  }\item[{integer, intent(in)}]{nub }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em in1} & Read the configuration list from c-\/files (units \textquotesingle{}in1,in2\textquotesingle{}), define there angular symmetries and compare with ones in data-\/bnk if any (unit nub) Prepare the angular arrays.\\
+\hline
+\mbox{\texttt{ in}}  & {\em in2} & Read the configuration list from c-\/files (units \textquotesingle{}in1,in2\textquotesingle{}), define there angular symmetries and compare with ones in data-\/bnk if any (unit nub) Prepare the angular arrays.\\
+\hline
+\mbox{\texttt{ in}}  & {\em nub} & Read the configuration list from c-\/files (units \textquotesingle{}in1,in2\textquotesingle{}), define there angular symmetries and compare with ones in data-\/bnk if any (unit nub) Prepare the angular arrays. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__dmat_ga0028ec1978b976275928c391e53d96d4}\label{group__bsr__dmat_ga0028ec1978b976275928c391e53d96d4}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!read\_arg@{read\_arg}}
+\index{read\_arg@{read\_arg}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{read\_arg()}{read\_arg()}}
+{\footnotesize\ttfamily subroutine read\+\_\+arg}
+
+determine the main input parameters\mbox{\Hypertarget{group__bsr__dmat_ga5e0840f71a37074a76058699488a3547}\label{group__bsr__dmat_ga5e0840f71a37074a76058699488a3547}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!read\_bsw@{read\_bsw}}
+\index{read\_bsw@{read\_bsw}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{read\_bsw()}{read\_bsw()}}
+{\footnotesize\ttfamily subroutine read\+\_\+bsw (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu,  }\item[{integer, intent(in)}]{kset }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nu} & read radial orbitals in B-\/spline representation from file \textquotesingle{}nu\textquotesingle{} with shift of set index on kset value if read orbital is not in the list -\/ drop it!\\
+\hline
+\mbox{\texttt{ in}}  & {\em kset} & read radial orbitals in B-\/spline representation from file \textquotesingle{}nu\textquotesingle{} with shift of set index on kset value if read orbital is not in the list -\/ drop it! \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__dmat_gaf2a9580a4618d5edac3cf0e6e68c0bed}\label{group__bsr__dmat_gaf2a9580a4618d5edac3cf0e6e68c0bed}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!read\_dets@{read\_dets}}
+\index{read\_dets@{read\_dets}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{read\_dets()}{read\_dets()}}
+{\footnotesize\ttfamily subroutine read\+\_\+dets (\begin{DoxyParamCaption}\item[{}]{nub }\end{DoxyParamCaption})}
+
+read the overlap determinants from I\+N\+T\+\_\+\+B\+NK (unit nub) ~\newline
+\mbox{\Hypertarget{group__bsr__dmat_ga591cc0874d36ee473e4fdb2f95d8c9a0}\label{group__bsr__dmat_ga591cc0874d36ee473e4fdb2f95d8c9a0}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!read\_sol@{read\_sol}}
+\index{read\_sol@{read\_sol}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{read\_sol()}{read\_sol()}}
+{\footnotesize\ttfamily subroutine read\+\_\+sol (\begin{DoxyParamCaption}\item[{character(1), intent(in)}]{ctype,  }\item[{integer, intent(in)}]{nu,  }\item[{integer, intent(in)}]{nc,  }\item[{real(8), dimension(nc), intent(out)}]{C,  }\item[{character(64), intent(out)}]{Label,  }\item[{real(8), intent(out)}]{E,  }\item[{integer, intent(inout)}]{jot }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ctype} & read one solution from c-\/,l-\/,j-\/ or b-\/files\\
+\hline
+\end{DoxyParams}
+nu -\/ file unit ctype -\/ type of file (c,l,j,b) nc -\/ dimention of solution C -\/ solution Label -\/ spectroscopic notation E -\/ energy jot -\/ (2J+1) for j-\/type calculations
+
+the first line in files \textquotesingle{}l,j,b\textquotesingle{} is supposed to have already been read ! \mbox{\Hypertarget{group__bsr__dmat_ga7609207df74422f8b2758f1a48de118d}\label{group__bsr__dmat_ga7609207df74422f8b2758f1a48de118d}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!shift@{shift}}
+\index{shift@{shift}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{shift()}{shift()}}
+{\footnotesize\ttfamily subroutine shift (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{n,  }\item[{integer, intent(in)}]{m,  }\item[{integer, dimension(n), intent(in)}]{N1,  }\item[{integer, dimension(n), intent(out)}]{N2 }\end{DoxyParamCaption})}
+
+
+
+N2 obtained from N1 by deleting element \textquotesingle{}m\textquotesingle{}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em n} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em m} & N2 obtained from N1 by deleting element \textquotesingle{}m\textquotesingle{} \\
+\hline
+\mbox{\texttt{ in}}  & {\em n1} & N2 obtained from N1 by deleting element \textquotesingle{}m\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__dmat_ga611db0924c82dab792cf1ce278205ea8}\label{group__bsr__dmat_ga611db0924c82dab792cf1ce278205ea8}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!update\_db@{update\_db}}
+\index{update\_db@{update\_db}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{update\_db()}{update\_db()}}
+{\footnotesize\ttfamily subroutine update\+\_\+db (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ic,  }\item[{integer, intent(in)}]{jc,  }\item[{real(8), intent(in)}]{CL,  }\item[{real(8), intent(in)}]{CV }\end{DoxyParamCaption})}
+
+
+
+update full matrix with scalar 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ic} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em jc} & update full matrix with scalar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__dmat_gac7643057d24be4598a213c0b2aee9174}\label{group__bsr__dmat_gac7643057d24be4598a213c0b2aee9174}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!update\_dv@{update\_dv}}
+\index{update\_dv@{update\_dv}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{update\_dv()}{update\_dv()}}
+{\footnotesize\ttfamily subroutine update\+\_\+dv (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ich,  }\item[{integer, intent(in)}]{jch,  }\item[{integer, intent(in)}]{ic,  }\item[{integer, intent(in)}]{jc,  }\item[{integer, intent(in)}]{ns,  }\item[{real(8), dimension(ns), intent(in)}]{v1,  }\item[{real(8), dimension(ns), intent(in)}]{v2 }\end{DoxyParamCaption})}
+
+
+
+update full matrix with vector 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ich} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em jch} & update full matrix with vector \\
+\hline
+\mbox{\texttt{ in}}  & {\em ic} & update full matrix with vector \\
+\hline
+\mbox{\texttt{ in}}  & {\em jc} & update full matrix with vector \\
+\hline
+\mbox{\texttt{ in}}  & {\em ns} & update full matrix with vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__dmat_ga1ef01f8311b67eda5b2aeb34c9de3c6c}\label{group__bsr__dmat_ga1ef01f8311b67eda5b2aeb34c9de3c6c}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!update\_dw@{update\_dw}}
+\index{update\_dw@{update\_dw}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{update\_dw()}{update\_dw()}}
+{\footnotesize\ttfamily subroutine update\+\_\+dw (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ich,  }\item[{integer, intent(in)}]{jch,  }\item[{integer, intent(in)}]{ns,  }\item[{real(8), dimension(ns), intent(in)}]{v1,  }\item[{real(8), dimension(ns), intent(in)}]{w1,  }\item[{real(8), dimension(ns), intent(in)}]{v2,  }\item[{real(8), dimension(ns), intent(in)}]{w2 }\end{DoxyParamCaption})}
+
+
+
+update full matrix with v$\ast$w 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ich} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em jch} & update full matrix with v$\ast$w \\
+\hline
+\mbox{\texttt{ in}}  & {\em ns} & update full matrix with v$\ast$w \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__dmat_ga91f81086e5d407eb2af04f81897c22a6}\label{group__bsr__dmat_ga91f81086e5d407eb2af04f81897c22a6}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!update\_dx@{update\_dx}}
+\index{update\_dx@{update\_dx}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{update\_dx()}{update\_dx()}}
+{\footnotesize\ttfamily subroutine update\+\_\+dx (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ich,  }\item[{integer, intent(in)}]{jch,  }\item[{integer, intent(in)}]{ns,  }\item[{integer, intent(in)}]{ks,  }\item[{real(8), dimension(ns,ks+ks-\/1), intent(in)}]{d1,  }\item[{real(8), dimension(ns,ks+ks-\/1), intent(in)}]{d2 }\end{DoxyParamCaption})}
+
+
+
+update channel block with nonsymmetric band matrix 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ich} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em jch} & update channel block with nonsymmetric band matrix \\
+\hline
+\mbox{\texttt{ in}}  & {\em ns} & update channel block with nonsymmetric band matrix \\
+\hline
+\mbox{\texttt{ in}}  & {\em ks} & update channel block with nonsymmetric band matrix \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__dmat_gaa5916f9f05e8e66f538f9a4196d13af1}\label{group__bsr__dmat_gaa5916f9f05e8e66f538f9a4196d13af1}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!vdet@{vdet}}
+\index{vdet@{vdet}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{vdet()}{vdet()}}
+{\footnotesize\ttfamily real(8) function vdet (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{kd,  }\item[{integer, dimension(kd), intent(in)}]{N1,  }\item[{integer, dimension(kd), intent(in)}]{N2 }\end{DoxyParamCaption})}
+
+
+
+calculate the value of overlap determinant 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em kd} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em n1} & calculate the value of overlap determinant \\
+\hline
+\mbox{\texttt{ in}}  & {\em n2} & calculate the value of overlap determinant \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{group__bsr__dmat_ga56d91ffde141179b9b66734e1d0f1b90}\label{group__bsr__dmat_ga56d91ffde141179b9b66734e1d0f1b90}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!cldata@{cldata}}
+\index{cldata@{cldata}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{cldata}{cldata}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable cmdata\+::cldata}
+
+Contains a set of coefficients with three identifiers (k1,k2,k3) and order pointer (ipt). The data are devided on different types (ntype, itype) and saved in memory in blocks (nblocks, mblocks). \mbox{\Hypertarget{group__bsr__dmat_ga0b36924f333f87af7cc0487a3f3db575}\label{group__bsr__dmat_ga0b36924f333f87af7cc0487a3f3db575}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!in1@{in1}}
+\index{in1@{in1}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{in1}{in1}}
+{\footnotesize\ttfamily integer bsr\+\_\+dmat\+::in1 = 1}
+
+
+
+containes some common parameters, variables and arrays specific for this program 
+
+\mbox{\Hypertarget{group__bsr__dmat_gac1f5f83236c75ea06c6ded3ef6c1a9c4}\label{group__bsr__dmat_gac1f5f83236c75ea06c6ded3ef6c1a9c4}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!kns@{kns}}
+\index{kns@{kns}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{kns}{kns}}
+{\footnotesize\ttfamily integer dmatrix\+::kns}
+
+contains the dipole matrices and routines for their update DL -\/ dipole transition matrix (L-\/form) DV -\/ dipole transition matrix (V-\/form)
+\begin{DoxyParams}{Parameters}
+{\em size} & of one channel block (=ns) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__dmat_gac9a2ef030a8f7a554c3c06eab847d721}\label{group__bsr__dmat_gac9a2ef030a8f7a554c3c06eab847d721}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!mndef@{mndef}}
+\index{mndef@{mndef}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{mndef}{mndef}}
+{\footnotesize\ttfamily integer new\+\_\+defs\+::mndef = 0}
+
+contains the desription of overlap deferminats which are obtaned by expansion of total overlap deferminants on rows and columns containing the continuum orbitals. The deferminants with known bound orbitals are estimated in line, so, only there values are recoded \mbox{\Hypertarget{group__bsr__dmat_gaf591a8bd75541df27d2ecd65f585c79c}\label{group__bsr__dmat_gaf591a8bd75541df27d2ecd65f585c79c}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!mndet@{mndet}}
+\index{mndet@{mndet}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{mndet}{mndet}}
+{\footnotesize\ttfamily integer new\+\_\+dets\+::mndet = 0}
+
+contains the desription of overlap determinats which are obtaned by expansion of total overlap determinants on rows and columns containing the continuum orbitals. The determinants with known bound orbitals are estimated in line, so only their values are recoded \mbox{\Hypertarget{group__bsr__dmat_gad00211b7611499b2b902e79183d74fc9}\label{group__bsr__dmat_gad00211b7611499b2b902e79183d74fc9}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!ncase@{ncase}}
+\index{ncase@{ncase}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{ncase}{ncase}}
+{\footnotesize\ttfamily integer coeffs\+::ncase = 11}
+
+
+
+containes the description and type of possible coefficients 
+
+\mbox{\Hypertarget{group__bsr__dmat_ga793db1d6710fe8952b0887e9b1978032}\label{group__bsr__dmat_ga793db1d6710fe8952b0887e9b1978032}} 
+\index{BSR\_DMAT3@{BSR\_DMAT3}!ndet@{ndet}}
+\index{ndet@{ndet}!BSR\_DMAT3@{BSR\_DMAT3}}
+\doxysubsubsection{\texorpdfstring{ndet}{ndet}}
+{\footnotesize\ttfamily integer dets\+::ndet = 0}
+
+
+
+contains information about overlap determinants \{$<$i$\vert$j$>$\} 
+
+K\+P\+D(i) -\/ size of i-\/th determinant
+
+I\+P\+D(i) -\/ pointer (ip) of i-\/th determinants in the N\+PD array
+
+N\+PD(ip+1\+:ip+kd) -\/ contains information about orbitals in overlap determinant as ii $\ast$ idet + jj, where ii -\/ pointer on row orbitals jj -\/ pointer on column orbitals
+
+\DoxyHorRuler{0}
+
+
+K\+P\+F(i) -\/ number (kd) of determinants in i-\/th overlap factor
+
+I\+P\+F(i) -\/ pointer (ip) on the i-\/th overlap factor in the N\+PF array
+
+N\+PF(ip+1\+:ip+kd) -\/ i-\/th overlap factors as a list of pointers on individual determinants (ip) and its power (iext)\+: \doxysubsubsection*{npf(i) = ip $\ast$ idef + iext }
+
+parameters idet,idef come from program breit\+\_\+bsr
+
+K\+P\+D(i) -\/ size of i-\/th determinant
+
+I\+P\+D(i) -\/ pointer (ip) of i-\/th determinants in the N\+PD array
+
+N\+PD(ip+1\+:ip+kd) -\/ contains information about orbitals in overlap determinant as ii $\ast$ idet + jj, where ii -\/ pointer on row orbitals jj -\/ pointer on column orbitals
+
+\DoxyHorRuler{0}
+
+
+K\+P\+F(i) -\/ number (kd) of determinants in i-\/th overlap factor
+
+I\+P\+F(i) -\/ pointer (ip) on the i-\/th overlap factor in the N\+PF array
+
+N\+PF(ip+1\+:ip+kd) -\/ i-\/th overlap factors as a list of pointers on individual determinants (ip) and its power (iext)\+: npf(i) = ip $\ast$ idef + iext 

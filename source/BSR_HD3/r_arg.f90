@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine R_arg(nu)
 !======================================================================
-!     read arguments, first from file unit 'nu, then from comand line
+!> @ingroup bsr_hd
+!> @brief     read arguments, first from file unit 'nu, then from comand line
 !----------------------------------------------------------------------
       Use bsr_hd
       Use target,        only: ntarg, Etarg

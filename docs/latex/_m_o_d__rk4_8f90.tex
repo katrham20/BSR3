@@ -1,0 +1,48 @@
+\hypertarget{_m_o_d__rk4_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+Z\+C\+O\+M/\+M\+O\+D\+\_\+rk4.f90 File Reference}
+\label{_m_o_d__rk4_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/ZCOM/MOD\_rk4.f90@{/Users/khamilton/Codes/BSR3/libraries/ZCOM/MOD\_rk4.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacerk4__data}{rk4\+\_\+data}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__rk4_8f90_a861ec2490f147882185ac4f8bcc32f6f}{alloc\+\_\+rk4\+\_\+data}} (m)
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__rk4_8f90_adb1d99a21c6be6a325033e6d0b13ead0}{add\+\_\+rk4\+\_\+data}} (k1, k2, k3, k4, C)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{namespacerk4__data_afc14371d6f25b9b8b623344120e91411}{rk4\+\_\+data\+::nrk}} = 0
+\item 
+integer \mbox{\hyperlink{namespacerk4__data_a19d35d4bd2179d7d232e33e2a1e3b6df}{rk4\+\_\+data\+::mrk}} = 0
+\item 
+integer \mbox{\hyperlink{namespacerk4__data_a1ee3a409367d7f20eac93b4577a9c096}{rk4\+\_\+data\+::irk}} = 2$\ast$$\ast$20
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacerk4__data_a183c8ef3f5c25fa9c98a6f92e7854989}{rk4\+\_\+data\+::crk}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacerk4__data_acbf931b1b6ce400656d922d67439c97d}{rk4\+\_\+data\+::kr1}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacerk4__data_a7e6a3ee98739effe813d3a0a1ccd80b6}{rk4\+\_\+data\+::kr2}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacerk4__data_aa0ed95ac2134f33fbad81478f0e4d628}{rk4\+\_\+data\+::kr3}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacerk4__data_aa6390fb6d62b5397ff3e8ce3605ed3e5}{rk4\+\_\+data\+::kr4}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{_m_o_d__rk4_8f90_adb1d99a21c6be6a325033e6d0b13ead0}\label{_m_o_d__rk4_8f90_adb1d99a21c6be6a325033e6d0b13ead0}} 
+\index{MOD\_rk4.f90@{MOD\_rk4.f90}!add\_rk4\_data@{add\_rk4\_data}}
+\index{add\_rk4\_data@{add\_rk4\_data}!MOD\_rk4.f90@{MOD\_rk4.f90}}
+\doxysubsubsection{\texorpdfstring{add\_rk4\_data()}{add\_rk4\_data()}}
+{\footnotesize\ttfamily subroutine add\+\_\+rk4\+\_\+data (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{k1,  }\item[{integer, intent(in)}]{k2,  }\item[{integer, intent(in)}]{k3,  }\item[{integer, intent(in)}]{k4,  }\item[{real(8), intent(in)}]{C }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_m_o_d__rk4_8f90_a861ec2490f147882185ac4f8bcc32f6f}\label{_m_o_d__rk4_8f90_a861ec2490f147882185ac4f8bcc32f6f}} 
+\index{MOD\_rk4.f90@{MOD\_rk4.f90}!alloc\_rk4\_data@{alloc\_rk4\_data}}
+\index{alloc\_rk4\_data@{alloc\_rk4\_data}!MOD\_rk4.f90@{MOD\_rk4.f90}}
+\doxysubsubsection{\texorpdfstring{alloc\_rk4\_data()}{alloc\_rk4\_data()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+rk4\+\_\+data (\begin{DoxyParamCaption}\item[{integer}]{m }\end{DoxyParamCaption})}
+

@@ -1,9 +1,10 @@
 !======================================================================
       Module zoef_list
 !======================================================================
-!     Containes the coefficients for two configuration symmetries.
-!     Each coefficient has two identifiers: iz_int and iz_df,
-!     the pointers for integral and overlap factor, respectively. 
+!> @ingroup bsr_breit
+!>     Containes the coefficients for two configuration symmetries.
+!>     Each coefficient has two identifiers: iz_int and iz_df,
+!>     the pointers for integral and overlap factor, respectively. 
 !----------------------------------------------------------------------
       Implicit none
 
@@ -20,7 +21,8 @@
 !======================================================================
       Subroutine alloc_zoef(m)
 !======================================================================
-!     allocate arrays in module zoef
+!> @ingroup bsr_breit
+!> @brief     allocate arrays in module zoef
 !----------------------------------------------------------------------
       Use zoef_list
 
@@ -64,7 +66,8 @@
 !=======================================================================
       Subroutine Iadd_zoef(C,int,idf)
 !=======================================================================
-!     add new integral to the list 'zoef'
+!> @ingroup bsr_breit
+!> @brief     add new integral to the list 'zoef'
 !-----------------------------------------------------------------------
       Use zoef_list
 

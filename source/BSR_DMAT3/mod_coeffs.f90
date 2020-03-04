@@ -1,7 +1,8 @@
 !====================================================================
       Module coeffs
 !====================================================================
-!     containes the description and type of possible coefficients
+!> @ingroup bsr_dmat
+!> @brief     containes the description and type of possible coefficients
 !--------------------------------------------------------------------
       Implicit none 
     
@@ -31,7 +32,8 @@
 !====================================================================
       Subroutine Allocate_coeffs
 !====================================================================
-!     allocate arrays in module "coeffs"
+!> @ingroup bsr_dmat
+!> @brief     allocate arrays in module "coeffs"
 !--------------------------------------------------------------------
       Use coeffs
 

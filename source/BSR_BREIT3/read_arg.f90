@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine Read_arg 
 !======================================================================
-!     read arguments from command line and check default settings
+!> @ingroup bsr_breit
+!> @brief     read arguments from command line and check default settings
 !----------------------------------------------------------------------
 	     Use bsr_breit
 

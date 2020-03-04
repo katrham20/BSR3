@@ -1,8 +1,9 @@
 !======================================================================
       Subroutine Check_mat(met)
 !======================================================================
-!     check the overlap matrix for big overlaps and assign new
-!     orthogonality conditions if needed
+!> @ingroup bsr_mat
+!> @brief     check the overlap matrix for big overlaps and assign new
+!>     orthogonality conditions if needed
 !----------------------------------------------------------------------
       Use bsr_mat,     only: S_ovl, S_pert, pri, nuc
       Use target,      only: BFT

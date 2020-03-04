@@ -1,32 +1,33 @@
 !======================================================================
       MODULE L_core
 !======================================================================
-!     contain B-spline representation for L-integral
-!     including the interaction with common core
+!> @ingroup bsr_mat
+!> @brief     contain B-spline representation for L-integral
+!>     including the interaction with common core
 !----------------------------------------------------------------------
-!
-!     hl(ns,ks) - matrix of L-operator in the B-splne basis
-!                 (in symmetric lower-column mode)
-!
-!     hl_dir(ns,ks) - direct interaction with core
-!                     (in symmetric upper-column mode)
-!
-!     hl and hl_dir have different representation  !!!
-!
-!     lh_dir = [-1|1] - (not|yes) shows if hl_dir is done or no
-!     (this parameter allows us to compute the hl_dir only once because 
-!      hl and hl_dir does not depend on l) 
-!
-!     hl_exc(ns,ns) - exchange interaction with core
-!
-!     hl_core(ns,ns) - final hl-matrix with core interaction included
-!                      (in full representation)
-!
-!     mlh - max. l-value
-!
-!     hl_full(ns,ns,mlh) - all L-matreces
-!
-!     vc(ns,ks)  - relativistic mass-velocity correction
+!>
+!!     hl(ns,ks) - matrix of L-operator in the B-splne basis
+!!                 (in symmetric lower-column mode)
+!!
+!!     hl_dir(ns,ks) - direct interaction with core
+!!                     (in symmetric upper-column mode)
+!!
+!!     hl and hl_dir have different representation  !!!
+!!
+!!     lh_dir = [-1|1] - (not|yes) shows if hl_dir is done or no
+!!     (this parameter allows us to compute the hl_dir only once because 
+!!      hl and hl_dir does not depend on l) 
+!!
+!!     hl_exc(ns,ns) - exchange interaction with core
+!!
+!!     hl_core(ns,ns) - final hl-matrix with core interaction included
+!!                      (in full representation)
+!!
+!!     mlh - max. l-value
+!!
+!!     hl_full(ns,ns,mlh) - all L-matreces
+!!
+!!     vc(ns,ks)  - relativistic mass-velocity correction
 !
 !------------------------------------------------------------------
 
@@ -51,7 +52,8 @@
 !=====================================================================
       Subroutine Alloc_Lcore(ns,ks,nbf)
 !=====================================================================
-!     allocate (deallocate) arrays in module L_core
+!> @ingroup bsr_mat
+!> @brief     allocate (deallocate) arrays in module L_core
 !---------------------------------------------------------------------
       Use L_core
 
@@ -88,7 +90,8 @@
 !======================================================================
       SUBROUTINE Gen_Lval
 !======================================================================
-!     Generate the L-integrals <i|L|j> and vectors <.|L|j> 
+!> @ingroup bsr_mat
+!> @brief     Generate the L-integrals <i|L|j> and vectors <.|L|j> 
 !----------------------------------------------------------------------
       Use L_core; Use bsr_mat
       Use spline_param; Use spline_atomic; Use spline_orbitals
@@ -169,7 +172,8 @@
 !=====================================================================
       Subroutine INT_core(l)
 !=====================================================================
-!     generate B-spline representation for interaction with core
+!> @ingroup bsr_mat
+!> @brief     generate B-spline representation for interaction with core
 !---------------------------------------------------------------------
       Use L_core; Use bsr_mat
       Use spline_param;  Use spline_atomic;  Use spline_orbitals
@@ -274,23 +278,23 @@
 !====================================================================
       Subroutine mvcv(l,vc)
 !====================================================================
-!
-!     Computes the matrix elements for the mass-velocity correction
-!     in the B-spline basis.  The lack of symmetry in the d^2/dr^2
-!     operator is ignored.
-!
-!     VC(i,j) = INT [  (d^2/dr^2 - l(l+1)/r) B_i(r) *
-!                      (d^2/dr^2 - l(l+1)/r) B_j(r)  ] dr
-!--------------------------------------------------------------------
-!
-!     on entry
-!     --------
-!       l    the angular momentum
-!
-!     on exit
-!     -------
-!       vc   the mass velocity correction in symmetric storage mode
-!
+!> @ingroup bsr_mat
+!!     Computes the matrix elements for the mass-velocity correction
+!!     in the B-spline basis.  The lack of symmetry in the d^2/dr^2
+!!     operator is ignored.
+!!
+!!     VC(i,j) = INT [  (d^2/dr^2 - l(l+1)/r) B_i(r) *
+!!                      (d^2/dr^2 - l(l+1)/r) B_j(r)  ] dr
+!!--------------------------------------------------------------------
+!!
+!!     on entry
+!!     --------
+!!       l    the angular momentum
+!!
+!!     on exit
+!!     -------
+!!       vc   the mass velocity correction in symmetric storage mode
+!!
 !--------------------------------------------------------------------
       Use spline_param; Use spline_atomic;  Use spline_grid
     

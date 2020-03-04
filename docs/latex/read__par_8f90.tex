@@ -1,0 +1,72 @@
+\hypertarget{read__par_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+Z\+C\+O\+M/read\+\_\+par.f90 File Reference}
+\label{read__par_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/ZCOM/read\_par.f90@{/Users/khamilton/Codes/BSR3/libraries/ZCOM/read\_par.f90}}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{read__par_8f90_af6ee6c112572e79ef7830559dc409ffc}{read\+\_\+ipar}} (nu, name, ivalue)
+\item 
+subroutine \mbox{\hyperlink{read__par_8f90_a803abf83d20a3676c50eba0afca86ba9}{read\+\_\+rpar}} (nu, name, rvalue)
+\item 
+subroutine \mbox{\hyperlink{read__par_8f90_a52268d5f944e25a91bc499fb996eaa09}{read\+\_\+rval}} (nu, name, rvalue)
+\item 
+subroutine \mbox{\hyperlink{read__par_8f90_a388c857acf8c4b69fbabb2f63fc2b170}{read\+\_\+apar}} (nu, name, avalue)
+\item 
+subroutine \mbox{\hyperlink{read__par_8f90_a4ea5d27dfe2a3b65eda5d76c16b75e0f}{read\+\_\+iarray}} (nu, name, nv, ivalue)
+\item 
+integer function \mbox{\hyperlink{read__par_8f90_aff429b6fd3b2d1682d86f2789d7ae298}{ifind\+\_\+position}} (nu, name)
+\item 
+integer function \mbox{\hyperlink{read__par_8f90_aad16fcbfd49f317ff9c2874104641b5a}{jfind\+\_\+position}} (nu, name)
+\item 
+subroutine \mbox{\hyperlink{read__par_8f90_aa03d7500981decba958edf61fd0efe73}{read\+\_\+string}} (nu, name, avalue)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{read__par_8f90_aff429b6fd3b2d1682d86f2789d7ae298}\label{read__par_8f90_aff429b6fd3b2d1682d86f2789d7ae298}} 
+\index{read\_par.f90@{read\_par.f90}!ifind\_position@{ifind\_position}}
+\index{ifind\_position@{ifind\_position}!read\_par.f90@{read\_par.f90}}
+\doxysubsubsection{\texorpdfstring{ifind\_position()}{ifind\_position()}}
+{\footnotesize\ttfamily integer function ifind\+\_\+position (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu,  }\item[{character($\ast$), intent(in)}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{read__par_8f90_aad16fcbfd49f317ff9c2874104641b5a}\label{read__par_8f90_aad16fcbfd49f317ff9c2874104641b5a}} 
+\index{read\_par.f90@{read\_par.f90}!jfind\_position@{jfind\_position}}
+\index{jfind\_position@{jfind\_position}!read\_par.f90@{read\_par.f90}}
+\doxysubsubsection{\texorpdfstring{jfind\_position()}{jfind\_position()}}
+{\footnotesize\ttfamily integer function jfind\+\_\+position (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu,  }\item[{character($\ast$), intent(in)}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{read__par_8f90_a388c857acf8c4b69fbabb2f63fc2b170}\label{read__par_8f90_a388c857acf8c4b69fbabb2f63fc2b170}} 
+\index{read\_par.f90@{read\_par.f90}!read\_apar@{read\_apar}}
+\index{read\_apar@{read\_apar}!read\_par.f90@{read\_par.f90}}
+\doxysubsubsection{\texorpdfstring{read\_apar()}{read\_apar()}}
+{\footnotesize\ttfamily subroutine read\+\_\+apar (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu,  }\item[{character($\ast$), intent(in)}]{name,  }\item[{character($\ast$)}]{avalue }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{read__par_8f90_a4ea5d27dfe2a3b65eda5d76c16b75e0f}\label{read__par_8f90_a4ea5d27dfe2a3b65eda5d76c16b75e0f}} 
+\index{read\_par.f90@{read\_par.f90}!read\_iarray@{read\_iarray}}
+\index{read\_iarray@{read\_iarray}!read\_par.f90@{read\_par.f90}}
+\doxysubsubsection{\texorpdfstring{read\_iarray()}{read\_iarray()}}
+{\footnotesize\ttfamily subroutine read\+\_\+iarray (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu,  }\item[{character($\ast$), intent(in)}]{name,  }\item[{integer, intent(in)}]{nv,  }\item[{integer, dimension(nv), intent(out)}]{ivalue }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{read__par_8f90_af6ee6c112572e79ef7830559dc409ffc}\label{read__par_8f90_af6ee6c112572e79ef7830559dc409ffc}} 
+\index{read\_par.f90@{read\_par.f90}!read\_ipar@{read\_ipar}}
+\index{read\_ipar@{read\_ipar}!read\_par.f90@{read\_par.f90}}
+\doxysubsubsection{\texorpdfstring{read\_ipar()}{read\_ipar()}}
+{\footnotesize\ttfamily subroutine read\+\_\+ipar (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu,  }\item[{character($\ast$), intent(in)}]{name,  }\item[{integer}]{ivalue }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{read__par_8f90_a803abf83d20a3676c50eba0afca86ba9}\label{read__par_8f90_a803abf83d20a3676c50eba0afca86ba9}} 
+\index{read\_par.f90@{read\_par.f90}!read\_rpar@{read\_rpar}}
+\index{read\_rpar@{read\_rpar}!read\_par.f90@{read\_par.f90}}
+\doxysubsubsection{\texorpdfstring{read\_rpar()}{read\_rpar()}}
+{\footnotesize\ttfamily subroutine read\+\_\+rpar (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu,  }\item[{character($\ast$), intent(in)}]{name,  }\item[{real(8)}]{rvalue }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{read__par_8f90_a52268d5f944e25a91bc499fb996eaa09}\label{read__par_8f90_a52268d5f944e25a91bc499fb996eaa09}} 
+\index{read\_par.f90@{read\_par.f90}!read\_rval@{read\_rval}}
+\index{read\_rval@{read\_rval}!read\_par.f90@{read\_par.f90}}
+\doxysubsubsection{\texorpdfstring{read\_rval()}{read\_rval()}}
+{\footnotesize\ttfamily subroutine read\+\_\+rval (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu,  }\item[{character($\ast$), intent(in)}]{name,  }\item[{real(8)}]{rvalue }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{read__par_8f90_aa03d7500981decba958edf61fd0efe73}\label{read__par_8f90_aa03d7500981decba958edf61fd0efe73}} 
+\index{read\_par.f90@{read\_par.f90}!read\_string@{read\_string}}
+\index{read\_string@{read\_string}!read\_par.f90@{read\_par.f90}}
+\doxysubsubsection{\texorpdfstring{read\_string()}{read\_string()}}
+{\footnotesize\ttfamily subroutine read\+\_\+string (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu,  }\item[{character($\ast$), intent(in)}]{name,  }\item[{character($\ast$)}]{avalue }\end{DoxyParamCaption})}
+

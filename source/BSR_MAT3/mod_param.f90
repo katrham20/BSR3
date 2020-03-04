@@ -1,7 +1,8 @@
 !----------------------------------------------------------------------
       Module bsr_mat
 !----------------------------------------------------------------------
-!     main parameters for the BSR_MAT program
+!> @ingroup bsr_mat
+!> @brief     main parameters for the BSR_MAT program
 !----------------------------------------------------------------------
       Implicit none
 

@@ -1,8 +1,9 @@
 !======================================================================
       Module term_exp
 !======================================================================
-!     Containes the term-dependent coefficients of det.expansion
-!     of two given conf.symmetries under consideration.
+!> @ingroup bsr_breit
+!> @brief     Containes the term-dependent coefficients of det.expansion
+!>     of two given conf.symmetries under consideration.
 !----------------------------------------------------------------------
       Implicit none
 

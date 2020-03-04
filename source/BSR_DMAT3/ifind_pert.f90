@@ -1,7 +1,8 @@
 !======================================================================
       Integer Function Ifind_pert(ilsp,ic)
 !======================================================================
-!     find perturber for given configuration 'ic'
+!> @ingroup bsr_dmat
+!> @brief     find perturber for given configuration 'ic'
 !----------------------------------------------------------------------
       Use channels
 

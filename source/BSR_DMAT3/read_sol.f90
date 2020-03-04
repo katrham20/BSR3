@@ -1,18 +1,19 @@
 !======================================================================
       Subroutine Read_sol(ctype,nu,nc,C,Label,E,jot)
 !======================================================================
-!     read one solution from c-,l-,j- or b-files 
-!
-!     nu    -  file unit
-!     ctype -  type of file (c,l,j,b)
-!     nc    -  dimention of solution
-!     C     -  solution
-!     Label -  spectroscopic notation
-!     E     -  energy 
-!     jot   -  (2J+1) for j-type calculations
-!
-!     the first line in files 'l,j,b' is supposed to have already 
-!     been read !
+!> @ingroup bsr_dmat
+!!     read one solution from c-,l-,j- or b-files 
+!!
+!!     nu    -  file unit
+!!     ctype -  type of file (c,l,j,b)
+!!     nc    -  dimention of solution
+!!     C     -  solution
+!!     Label -  spectroscopic notation
+!!     E     -  energy 
+!!     jot   -  (2J+1) for j-type calculations
+!!
+!!     the first line in files 'l,j,b' is supposed to have already 
+!!     been read !
 !----------------------------------------------------------------------
       Implicit none
 

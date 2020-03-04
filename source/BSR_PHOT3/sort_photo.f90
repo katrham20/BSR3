@@ -1,8 +1,9 @@
 !======================================================================
       Subroutine sort_photo (nu,AF)
 !======================================================================
-!     Sorting results in photo.out  -->     photo.new
-!     (from repeated results save only new !)
+!> @ingroup bsr_phot
+!> @brief     Sorting results in photo.out  -->     photo.new
+!>     (from repeated results save only new !)
 !----------------------------------------------------------------------
       Implicit real(8) (A-H,O-Z)
 

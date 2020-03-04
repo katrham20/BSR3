@@ -1,26 +1,25 @@
 !======================================================================
       Subroutine  D_data 
 !======================================================================
-!     processing of d-integrals in the module 'cmdata'
+!> @ingroup bsr_dmat
+!> @brief     processing of d-integrals in the module 'cmdata'
 !----------------------------------------------------------------------
 !
-!    we have following 10 different structures for radial integrals:
-!
-! 1  d( . .)  ic, jc               -  bound-bound  
-
-! 2  d( i .)  jc                   -  bound-channel
-! 3  d( . j)  ic                    
-! 4  d( . .) < i | . > jc           
-! 5  d( . .) < . | j > ic           
-
-! 6  d( i j)                       -  channel-channel
-! 7  d( i .) < . | j >              
-! 8  d( . j) < i | . >               
-! 9  d( . .) < i | . > < . | j >    
-!10  d( . .) < i | j >              
-!
-! where . denotes bound orbital, i,j - channels, ic,jc - configurations
-!
+!>    we have following 10 different structures for radial integrals:
+!!
+!! 1  d( . .)  ic, jc               -  bound-bound  
+!! 2  d( i .)  jc                   -  bound-channel
+!! 3  d( . j)  ic                    
+!! 4  d( . .) < i | . > jc           
+!! 5  d( . .) < . | j > ic           
+!! 6  d( i j)                       -  channel-channel
+!! 7  d( i .) < . | j >              
+!! 8  d( . j) < i | . >               
+!! 9  d( . .) < i | . > < . | j >    
+!!10  d( . .) < i | j >              
+!!
+!! where . denotes bound orbital, i,j - channels, ic,jc - configurations
+!!
 !----------------------------------------------------------------------
       Use spline_param,    only: ns,ks
       Use spline_orbitals, only: iech,qbs

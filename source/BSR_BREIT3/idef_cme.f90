@@ -1,8 +1,9 @@
 !=====================================================================
       Integer Function Idef_cme(is,js)
 !=====================================================================
-!     define the operators to be considered for the given symmetries:
-!            ioper + IT_oper -> joper + JT_oper
+!> @ingroup bsr_breit
+!> @brief     define the operators to be considered for the given symmetries:
+!!            ioper + IT_oper -> joper + JT_oper
 !---------------------------------------------------------------------
       Use bsr_breit,    only: noper, ioper, joper, JT_oper
       Use term_exp,     only: kt1, kt2, IP_kt1, IP_kt2

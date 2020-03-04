@@ -1,15 +1,16 @@
 !======================================================================
       Subroutine fl_kpol(kpol,li,lj,fl)
 !======================================================================
-!     provide l-dependent factor for V-form element:
-!
-!     kpol=1:  <i|dv|j> = INT{ P_j(r) [d/dr + fl/r] P_i(r); dr}
-!                         fl = (l_j*(l_j+1) - l_i*(l_i+1))/2
-!
-!     kpol=2:  <i|dv|j> = INT{ P_j(r) [r d/dr + fl] P_i(r); dr}
-!                         fl = l_i + 2 for lj-li = 2
-!                         fl = 1/2     for lj-li = 0
-!                         fl =-l_i + 1 for lj-li =-2
+!> @ingroup bsr_dmat
+!!     provide l-dependent factor for V-form element:
+!!
+!!     kpol=1:  <i|dv|j> = INT{ P_j(r) [d/dr + fl/r] P_i(r); dr}
+!!                         fl = (l_j*(l_j+1) - l_i*(l_i+1))/2
+!!
+!!     kpol=2:  <i|dv|j> = INT{ P_j(r) [r d/dr + fl] P_i(r); dr}
+!!                         fl = l_i + 2 for lj-li = 2
+!!                         fl = 1/2     for lj-li = 0
+!!                         fl =-l_i + 1 for lj-li =-2
 !======================================================================
       Implicit none
       Integer, intent(in) :: kpol,li,lj

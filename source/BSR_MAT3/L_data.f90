@@ -1,30 +1,31 @@
 !======================================================================
       Subroutine  L_data(jtype,l) 
 !======================================================================
-!     processing of L-integrals in the module cmdata
+!> @ingroup bsr_mat
+!> @brief     processing of L-integrals in the module cmdata
 !----------------------------------------------------------------------
-!     we have following different structures:
-!
-!     L( . .)                        -  bound-bound
-!     L( i .)                        -  bound-channel
-!     L( . .) < i | . >              -  bound-channel
-!     L( i j)                        -  channel-channel
-!     L( i .) < j | . >              -  channel-channel
-!     L( . .) < i | . > < j | . >    -  channel-channel
-!
-!     where .  denotes bound orbital, i,j - channels.
-!
-!     L( . .) < i | j > elements with i/=j are ignored becaUse
-!     we assume that target states diagonalize Hamiltonian
-!     L( . .) < i | i > are included after in B(.,.) * Etarget(i)
-!     where B(.,.) is B-spline overlap matrix
-!     These elements are Used for control calculation of interaction
-!     matrix between target states (Target_h).
-!     L( i j) with with i/=j are also ignored becaUse we assume
-!     that target states are orthpgonal, but we have include
-!     interaction with core which is included in L(i,j)
-!
-!     in int_bnk,  L(a,b) are represented as I(a,a;b,b)
+!>     we have following different structures:
+!!
+!!     L( . .)                        -  bound-bound
+!!     L( i .)                        -  bound-channel
+!!     L( . .) < i | . >              -  bound-channel
+!!     L( i j)                        -  channel-channel
+!!     L( i .) < j | . >              -  channel-channel
+!!     L( . .) < i | . > < j | . >    -  channel-channel
+!!
+!!     where .  denotes bound orbital, i,j - channels.
+!!
+!!     L( . .) < i | j > elements with i/=j are ignored becaUse
+!!     we assume that target states diagonalize Hamiltonian
+!!     L( . .) < i | i > are included after in B(.,.) * Etarget(i)
+!!     where B(.,.) is B-spline overlap matrix
+!!     These elements are Used for control calculation of interaction
+!!     matrix between target states (Target_h).
+!!     L( i j) with with i/=j are also ignored becaUse we assume
+!!     that target states are orthpgonal, but we have include
+!!     interaction with core which is included in L(i,j)
+!!
+!!     in int_bnk,  L(a,b) are represented as I(a,a;b,b)
 !----------------------------------------------------------------------
       Use spline_param;  Use spline_orbitals; Use spline_galerkin
       Use channel

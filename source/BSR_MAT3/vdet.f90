@@ -1,8 +1,9 @@
 !======================================================================
       Real(8) FUNCTION VDET (kd,N1,N2)
 !======================================================================
-!     calculate the value of overlap determinant for given orbitals
-!     Calls:  DET
+!> @ingroup bsr_mat
+!> @brief     calculate the value of overlap determinant for given orbitals
+!!     Calls:  DET
 !----------------------------------------------------------------------
       Use spline_orbitals, only: OBS
       Use target,          only: nelc

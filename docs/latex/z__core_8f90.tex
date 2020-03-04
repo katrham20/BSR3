@@ -1,0 +1,49 @@
+\hypertarget{z__core_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/source/\+B\+S\+R\+\_\+\+M\+A\+T3/z\+\_\+core.f90 File Reference}
+\label{z__core_8f90}\index{/Users/khamilton/Codes/BSR3/source/BSR\_MAT3/z\_core.f90@{/Users/khamilton/Codes/BSR3/source/BSR\_MAT3/z\_core.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacez__core}{z\+\_\+core}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga08f4166bf9b9cd3735b9a7cfbce476e0}{alloc\+\_\+zcore}} (ns, ks, nbf)
+\begin{DoxyCompactList}\small\item\em allocate arrays in module Z\+\_\+core \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_gafe0b04565ad7519f523707bf01ff0eda}{gen\+\_\+zval}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga5dd32e07d22034a2568fd1356a9f0a80}{intz\+\_\+core}} (l)
+\begin{DoxyCompactList}\small\item\em generate B-\/splne representation in array zl\+\_\+core for Z-\/integrals with core interaction for given l \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga4247a44666ad6f229792e15bb0dfa93c}{gen\+\_\+zzeta}} (rm, izcorr)
+\begin{DoxyCompactList}\small\item\em B-\/spline matrix for Z$\ast$fine$\ast$1/r$^\wedge$3, Used for spin-\/orbit interaction; if izcorr $>$ 0, multiplied with correction r/(r+2$\ast$z$\ast$fine) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{group__bsr__mat_ga1307721a915029971f2d37812bc53c39}{z\+\_\+core\+::lz\+\_\+dir}}
+\begin{DoxyCompactList}\small\item\em contains B-\/splne representation for Z-\/integral including the interaction with core \end{DoxyCompactList}\item 
+integer \mbox{\hyperlink{namespacez__core_ae2a99ffa3e81eaf9434e62fe51689b71}{z\+\_\+core\+::mlz}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacez__core_ac804f40325b1e7c05fdc316d1f7b004b}{z\+\_\+core\+::zl}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacez__core_a8a3535902c1457c7f6120659380a5d4c}{z\+\_\+core\+::zl\+\_\+dir}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacez__core_abb73271d13de2c2e3c6065b23c5e7adb}{z\+\_\+core\+::zl\+\_\+exc}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacez__core_a9cc8673fb0077600658d1553ce28e656}{z\+\_\+core\+::zl\+\_\+core}}
+\item 
+real(8), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacez__core_aa8c583159eb49f9df5951dce7e2acdda}{z\+\_\+core\+::zl\+\_\+full}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacez__core_ae9bf235857fdd18efba666737b223b5b}{z\+\_\+core\+::z\+\_\+int}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacez__core_aa2eef52f6e27519dbd8791e3a185cb6e}{z\+\_\+core\+::z\+\_\+vec}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacez__core_a3c07c34d03375e62312f7c61d8479637}{z\+\_\+core\+::d}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacez__core_a74399c56e8e11b6d79da26c6439ee99f}{z\+\_\+core\+::x}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacez__core_a2bee3d040c24d2bc48cf29eaf7fb6d0a}{z\+\_\+core\+::dd}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacez__core_ad365f899db350d61c23eb8326ba8c8a6}{z\+\_\+core\+::xx}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacez__core_a7ad6ac35a43aca30e611ef39e216abbb}{z\+\_\+core\+::yy}}
+\end{DoxyCompactItemize}

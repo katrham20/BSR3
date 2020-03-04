@@ -1,0 +1,136 @@
+\hypertarget{mod__intmat__mpi_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/source/\+B\+S\+R\+\_\+\+M\+A\+T3\+\_\+\+M\+P\+I/mod\+\_\+intmat\+\_\+mpi.f90 File Reference}
+\label{mod__intmat__mpi_8f90}\index{/Users/khamilton/Codes/BSR3/source/BSR\_MAT3\_MPI/mod\_intmat\_mpi.f90@{/Users/khamilton/Codes/BSR3/source/BSR\_MAT3\_MPI/mod\_intmat\_mpi.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacebsr__matrix}{bsr\+\_\+matrix}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{mod__intmat__mpi_8f90_adcc06444a365c347be457c493471e54c}{allocate\+\_\+matrix}} (nch, ns, ncp, \mbox{\hyperlink{_r_a_d_i_a_l_2zint_8f90_a742b2f716e44fb7944c8e21ecc31ba98}{mk}}, ncfg, m)
+\item 
+integer function \mbox{\hyperlink{mod__intmat__mpi_8f90_a6712c91adb823acd3fdb91fda67c2f9b}{mycase}} (ich, jch)
+\item 
+subroutine \mbox{\hyperlink{mod__intmat__mpi_8f90_a8ec3b742ec7541197da9e9a49bb7c3b7}{update\+\_\+hx}} (ich, jch, ns, ks, d, sym)
+\item 
+subroutine \mbox{\hyperlink{mod__intmat__mpi_8f90_a7677a4f429f4e454fa43e7daf2b0d918}{update\+\_\+hl}} (ich, jch, ns, ks, d, c)
+\item 
+subroutine \mbox{\hyperlink{mod__intmat__mpi_8f90_a534a66fd58baadf6bd81fa5d2c81000a}{update\+\_\+hb}} (ichm, jchm, c)
+\item 
+subroutine \mbox{\hyperlink{mod__intmat__mpi_8f90_a00b9922b9c61f7501aec26d7f5d9a204}{update\+\_\+hv}} (ich, ichm, ns, v, c)
+\item 
+subroutine \mbox{\hyperlink{mod__intmat__mpi_8f90_aaa8bf8509f43227d5f00d3d0f423939f}{update\+\_\+hw}} (ich, jch, ns, v, w)
+\item 
+subroutine \mbox{\hyperlink{mod__intmat__mpi_8f90_a1b5b0c928f5bd0959e03c3d23f136fe5}{update\+\_\+cf}} (k, ich, jch, C)
+\item 
+subroutine \mbox{\hyperlink{mod__intmat__mpi_8f90_a38c33a8251c1d7e2759702c9ebad6f06}{target\+\_\+h}} (ich, jch, C, CC)
+\item 
+subroutine \mbox{\hyperlink{mod__intmat__mpi_8f90_ae18d8db1b226e35e6280aff288338a80}{target\+\_\+print}} (iout, EC, eps)
+\item 
+subroutine \mbox{\hyperlink{mod__intmat__mpi_8f90_abb4bfa97207d4b455bd1818b88c1885a}{collect\+\_\+acf}}
+\item 
+subroutine \mbox{\hyperlink{mod__intmat__mpi_8f90_ac50b60c938a3fbf09aea6b82ae73714f}{collect\+\_\+otarg}}
+\item 
+subroutine \mbox{\hyperlink{mod__intmat__mpi_8f90_ab989fb803d3470c2ef77c336bded81a7}{collect\+\_\+htarg}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{namespacebsr__matrix_acca50c9e9e2ea33182c23cab9aa9964c}{bsr\+\_\+matrix\+::kprocs}}
+\item 
+integer, dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__matrix_a4e584b85bc0bcb07b2cf78491f4d69a0}{bsr\+\_\+matrix\+::icc}}
+\item 
+integer, dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__matrix_ac29bab7f0c6e97add248e0e0ece28b36}{bsr\+\_\+matrix\+::icb}}
+\item 
+integer, dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__matrix_a93c49439756442c6780b5406ac9c285d}{bsr\+\_\+matrix\+::ibb}}
+\item 
+integer, dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__matrix_af0ce459440d0ae4cfe6f7a248a2d80dd}{bsr\+\_\+matrix\+::imycase}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__matrix_af6f7f90cc226dc5b9e85b6318b17c9c8}{bsr\+\_\+matrix\+::iicc}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__matrix_afb6d041e89d335f50d171e28f1060390}{bsr\+\_\+matrix\+::iicb}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__matrix_ad271bc7d762a94f26bad1f1190e99b4a}{bsr\+\_\+matrix\+::iibb}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{mod__intmat__mpi_8f90_adcc06444a365c347be457c493471e54c}\label{mod__intmat__mpi_8f90_adcc06444a365c347be457c493471e54c}} 
+\index{mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}!allocate\_matrix@{allocate\_matrix}}
+\index{allocate\_matrix@{allocate\_matrix}!mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}}
+\doxysubsubsection{\texorpdfstring{allocate\_matrix()}{allocate\_matrix()}}
+{\footnotesize\ttfamily subroutine allocate\+\_\+matrix (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nch,  }\item[{integer, intent(in)}]{ns,  }\item[{integer, intent(in)}]{ncp,  }\item[{integer, intent(in)}]{mk,  }\item[{integer, intent(in)}]{ncfg,  }\item[{integer}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mod__intmat__mpi_8f90_abb4bfa97207d4b455bd1818b88c1885a}\label{mod__intmat__mpi_8f90_abb4bfa97207d4b455bd1818b88c1885a}} 
+\index{mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}!collect\_acf@{collect\_acf}}
+\index{collect\_acf@{collect\_acf}!mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}}
+\doxysubsubsection{\texorpdfstring{collect\_acf()}{collect\_acf()}}
+{\footnotesize\ttfamily subroutine collect\+\_\+acf}
+
+\mbox{\Hypertarget{mod__intmat__mpi_8f90_ab989fb803d3470c2ef77c336bded81a7}\label{mod__intmat__mpi_8f90_ab989fb803d3470c2ef77c336bded81a7}} 
+\index{mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}!collect\_htarg@{collect\_htarg}}
+\index{collect\_htarg@{collect\_htarg}!mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}}
+\doxysubsubsection{\texorpdfstring{collect\_htarg()}{collect\_htarg()}}
+{\footnotesize\ttfamily subroutine collect\+\_\+htarg}
+
+\mbox{\Hypertarget{mod__intmat__mpi_8f90_ac50b60c938a3fbf09aea6b82ae73714f}\label{mod__intmat__mpi_8f90_ac50b60c938a3fbf09aea6b82ae73714f}} 
+\index{mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}!collect\_otarg@{collect\_otarg}}
+\index{collect\_otarg@{collect\_otarg}!mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}}
+\doxysubsubsection{\texorpdfstring{collect\_otarg()}{collect\_otarg()}}
+{\footnotesize\ttfamily subroutine collect\+\_\+otarg}
+
+\mbox{\Hypertarget{mod__intmat__mpi_8f90_a6712c91adb823acd3fdb91fda67c2f9b}\label{mod__intmat__mpi_8f90_a6712c91adb823acd3fdb91fda67c2f9b}} 
+\index{mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}!mycase@{mycase}}
+\index{mycase@{mycase}!mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}}
+\doxysubsubsection{\texorpdfstring{mycase()}{mycase()}}
+{\footnotesize\ttfamily integer function mycase (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ich,  }\item[{integer, intent(in)}]{jch }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mod__intmat__mpi_8f90_a38c33a8251c1d7e2759702c9ebad6f06}\label{mod__intmat__mpi_8f90_a38c33a8251c1d7e2759702c9ebad6f06}} 
+\index{mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}!target\_h@{target\_h}}
+\index{target\_h@{target\_h}!mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}}
+\doxysubsubsection{\texorpdfstring{target\_h()}{target\_h()}}
+{\footnotesize\ttfamily subroutine target\+\_\+h (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ich,  }\item[{integer, intent(in)}]{jch,  }\item[{real(8), intent(in)}]{C,  }\item[{real(8), intent(in)}]{CC }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mod__intmat__mpi_8f90_ae18d8db1b226e35e6280aff288338a80}\label{mod__intmat__mpi_8f90_ae18d8db1b226e35e6280aff288338a80}} 
+\index{mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}!target\_print@{target\_print}}
+\index{target\_print@{target\_print}!mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}}
+\doxysubsubsection{\texorpdfstring{target\_print()}{target\_print()}}
+{\footnotesize\ttfamily subroutine target\+\_\+print (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{iout,  }\item[{real(8), intent(in)}]{EC,  }\item[{real(8), intent(in)}]{eps }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mod__intmat__mpi_8f90_a1b5b0c928f5bd0959e03c3d23f136fe5}\label{mod__intmat__mpi_8f90_a1b5b0c928f5bd0959e03c3d23f136fe5}} 
+\index{mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}!update\_cf@{update\_cf}}
+\index{update\_cf@{update\_cf}!mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}}
+\doxysubsubsection{\texorpdfstring{update\_cf()}{update\_cf()}}
+{\footnotesize\ttfamily subroutine update\+\_\+cf (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{k,  }\item[{integer, intent(in)}]{ich,  }\item[{integer, intent(in)}]{jch,  }\item[{real(8), intent(in)}]{C }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mod__intmat__mpi_8f90_a534a66fd58baadf6bd81fa5d2c81000a}\label{mod__intmat__mpi_8f90_a534a66fd58baadf6bd81fa5d2c81000a}} 
+\index{mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}!update\_hb@{update\_hb}}
+\index{update\_hb@{update\_hb}!mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}}
+\doxysubsubsection{\texorpdfstring{update\_hb()}{update\_hb()}}
+{\footnotesize\ttfamily subroutine update\+\_\+hb (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ichm,  }\item[{integer, intent(in)}]{jchm,  }\item[{real(8), intent(in)}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mod__intmat__mpi_8f90_a7677a4f429f4e454fa43e7daf2b0d918}\label{mod__intmat__mpi_8f90_a7677a4f429f4e454fa43e7daf2b0d918}} 
+\index{mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}!update\_hl@{update\_hl}}
+\index{update\_hl@{update\_hl}!mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}}
+\doxysubsubsection{\texorpdfstring{update\_hl()}{update\_hl()}}
+{\footnotesize\ttfamily subroutine update\+\_\+hl (\begin{DoxyParamCaption}\item[{integer(4), intent(in)}]{ich,  }\item[{integer(4), intent(in)}]{jch,  }\item[{integer(4), intent(in)}]{ns,  }\item[{integer(4), intent(in)}]{ks,  }\item[{real(8), dimension(ns,ks), intent(in)}]{d,  }\item[{real(8), intent(in)}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mod__intmat__mpi_8f90_a00b9922b9c61f7501aec26d7f5d9a204}\label{mod__intmat__mpi_8f90_a00b9922b9c61f7501aec26d7f5d9a204}} 
+\index{mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}!update\_hv@{update\_hv}}
+\index{update\_hv@{update\_hv}!mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}}
+\doxysubsubsection{\texorpdfstring{update\_hv()}{update\_hv()}}
+{\footnotesize\ttfamily subroutine update\+\_\+hv (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ich,  }\item[{integer, intent(in)}]{ichm,  }\item[{integer, intent(in)}]{ns,  }\item[{real(8), dimension($\ast$), intent(in)}]{v,  }\item[{real(8), intent(in)}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mod__intmat__mpi_8f90_aaa8bf8509f43227d5f00d3d0f423939f}\label{mod__intmat__mpi_8f90_aaa8bf8509f43227d5f00d3d0f423939f}} 
+\index{mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}!update\_hw@{update\_hw}}
+\index{update\_hw@{update\_hw}!mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}}
+\doxysubsubsection{\texorpdfstring{update\_hw()}{update\_hw()}}
+{\footnotesize\ttfamily subroutine update\+\_\+hw (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ich,  }\item[{integer, intent(in)}]{jch,  }\item[{integer, intent(in)}]{ns,  }\item[{real(8), dimension($\ast$), intent(in)}]{v,  }\item[{real(8), dimension($\ast$), intent(in)}]{w }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mod__intmat__mpi_8f90_a8ec3b742ec7541197da9e9a49bb7c3b7}\label{mod__intmat__mpi_8f90_a8ec3b742ec7541197da9e9a49bb7c3b7}} 
+\index{mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}!update\_hx@{update\_hx}}
+\index{update\_hx@{update\_hx}!mod\_intmat\_mpi.f90@{mod\_intmat\_mpi.f90}}
+\doxysubsubsection{\texorpdfstring{update\_hx()}{update\_hx()}}
+{\footnotesize\ttfamily subroutine update\+\_\+hx (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ich,  }\item[{integer, intent(in)}]{jch,  }\item[{integer, intent(in)}]{ns,  }\item[{integer, intent(in)}]{ks,  }\item[{real(8), dimension(ns,$\ast$), intent(in)}]{d,  }\item[{character(1), intent(in)}]{sym }\end{DoxyParamCaption})}
+

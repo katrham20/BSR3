@@ -1,7 +1,8 @@
 !=====================================================================
       Module bsr_hd      
 !=====================================================================
-!     Contains common variable and arrays for program bsr_hd
+!> @ingroup bsr_hd
+!> @brief     Contains common variable and arrays for program bsr_hd
 !---------------------------------------------------------------------
       Implicit none
 
@@ -39,13 +40,13 @@
 
 ! ... main parameters of calculations:
 
-      Integer :: klsp=0            ! # of partial wave
-      Integer :: klsp1=1,klsp2=1   ! range of partial waves
-      Integer :: mhm               ! dimension for allocation
-      Integer :: nhm               ! size of interaction matrix
-      Integer :: khm               ! number of solutions
-      Integer :: kch               ! number of channels
-      Integer :: kcp               ! perturber
+      Integer :: klsp=0            !> @param # of partial wave
+      Integer :: klsp1=1,klsp2=1   !> @param range of partial waves
+      Integer :: mhm               !> @param dimension for allocation
+      Integer :: nhm               !> @param size of interaction matrix
+      Integer :: khm               !> @param number of solutions
+      Integer :: kch               !> @param number of channels
+      Integer :: kcp               !> @param perturber
 
 
       Real(8), allocatable :: a(:,:)  ! interaction matrix

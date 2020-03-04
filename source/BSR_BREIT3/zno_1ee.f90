@@ -1,8 +1,9 @@
 !====================================================================
       Subroutine ZNO_1ee
 !====================================================================
-!     angular part of one-electron operator between two det.w.f
-!     Calls: Idet_fact, Incode_int, Iadd_zoef.
+!> @ingroup bsr_breit
+!!     angular part of one-electron operator between two det.w.f
+!!     Calls: Idet_fact, Incode_int, Iadd_zoef.
 !--------------------------------------------------------------------
       Use bsr_breit,     only: joper
 	     Use spin_orbitals, only: nsym, kz1,kz2,Msym,Ssym,IPsym1, &

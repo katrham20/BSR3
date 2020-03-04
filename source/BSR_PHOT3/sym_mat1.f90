@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine Sym_mat1 (n,m,R,dmn,dmx,dav)
 !======================================================================
-!     evaluate symmetry of the matrix R(n,n), and then symmetrize it
+!> @ingroup bsr_phot
+!> @brief     evaluate symmetry of the matrix R(n,n), and then symmetrize it
 !----------------------------------------------------------------------
       Implicit none
 

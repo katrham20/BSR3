@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine Add_cdata(ip,jp,CL,CV,j1,j2,j3)
 !======================================================================
-!     add new coefficients with indexes (j1,j2,j3) to the list (ip:jp)
+!> @ingroup bsr_dmat
+!> @brief     add new coefficients with indexes (j1,j2,j3) to the list (ip:jp)
 !----------------------------------------------------------------------
       Use cmdata
       Implicit none

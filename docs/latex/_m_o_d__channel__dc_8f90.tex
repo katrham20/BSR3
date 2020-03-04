@@ -1,0 +1,74 @@
+\hypertarget{_m_o_d__channel__dc_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+Z\+C\+O\+N\+F\+L\+S/\+M\+O\+D\+\_\+channel\+\_\+dc.f90 File Reference}
+\label{_m_o_d__channel__dc_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/ZCONFLS/MOD\_channel\_dc.f90@{/Users/khamilton/Codes/BSR3/libraries/ZCONFLS/MOD\_channel\_dc.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacechannel__dc}{channel\+\_\+dc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__channel__dc_8f90_a3310e431b01863eeacbb6949dc4f0d60}{alloc\+\_\+channel\+\_\+dc}} (m)
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__channel__dc_8f90_a3cee14c4b00b077dd1ce590b9b4d8c0d}{read\+\_\+channel\+\_\+dc}} (nut, klsp)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{namespacechannel__dc_a8568feeb83bc53ee656f984eb25b4b41}{channel\+\_\+dc\+::lpar}} = 0
+\item 
+integer \mbox{\hyperlink{namespacechannel__dc_af4be206a8d386db2cfd5fd36f177b4ba}{channel\+\_\+dc\+::ispar}} = 0
+\item 
+integer \mbox{\hyperlink{namespacechannel__dc_a6d565e62040e1b0a2008e4530826634e}{channel\+\_\+dc\+::ipar}} = 0
+\item 
+integer \mbox{\hyperlink{namespacechannel__dc_aa2d325bc3c952250caaa9d0fbb265a86}{channel\+\_\+dc\+::nch}} = 0
+\item 
+integer \mbox{\hyperlink{namespacechannel__dc_ae0b3fa1b53bb748259107d03da64113b}{channel\+\_\+dc\+::nch1}} = 0
+\item 
+integer \mbox{\hyperlink{namespacechannel__dc_a8d3a8fa0aee484d0d9f71d43ffdf18d4}{channel\+\_\+dc\+::nch2}} = 0
+\item 
+integer \mbox{\hyperlink{namespacechannel__dc_a9f983a58ceba2073f89a009280cd6400}{channel\+\_\+dc\+::mch}} = 0
+\item 
+integer \mbox{\hyperlink{namespacechannel__dc_abaa35f47e5cf0fad70bfc8d574ec7a9e}{channel\+\_\+dc\+::imch}} = 64
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacechannel__dc_ae163c5deccfbfd40da399d56c9052248}{channel\+\_\+dc\+::iptar}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacechannel__dc_aeb47206b3f9a56e10bace816b7a97dc6}{channel\+\_\+dc\+::ipconf}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacechannel__dc_afb7cc5e450c1efec5d6e4a5f2a7aa305}{channel\+\_\+dc\+::lch1}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacechannel__dc_a9704f0fbeebfa110fa5105eaba50ec76}{channel\+\_\+dc\+::lch2}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacechannel__dc_abf5a1ef495bf7d85dcbe7683c4eb7e0a}{channel\+\_\+dc\+::chsym}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacechannel__dc_a9d964d1d8b43b59d968783c1223a6ea5}{channel\+\_\+dc\+::chl}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacechannel__dc_a29ae8a682bf3c3aad9bb4382605cb705}{channel\+\_\+dc\+::chs}}
+\item 
+character(4), dimension(\+:), allocatable \mbox{\hyperlink{namespacechannel__dc_af63d9834e41faf9bd55d9f63f8bce478}{channel\+\_\+dc\+::elc1}}
+\item 
+character(4), dimension(\+:), allocatable \mbox{\hyperlink{namespacechannel__dc_ad234445af5a9c677a4eb5d024ea3abb9}{channel\+\_\+dc\+::elc2}}
+\item 
+integer \mbox{\hyperlink{namespacechannel__dc_a330428f247399a23a2872d9919851ab1}{channel\+\_\+dc\+::ncp}}
+\item 
+integer \mbox{\hyperlink{namespacechannel__dc_ac98fbcaa5cc40fb4a9190d105c2ddcb4}{channel\+\_\+dc\+::nwp}}
+\item 
+character(20) \mbox{\hyperlink{namespacechannel__dc_a39ec40973acd3e3f93a89994a29adb5c}{channel\+\_\+dc\+::afp}}
+\item 
+character(20) \mbox{\hyperlink{namespacechannel__dc_a578d1bdce6da2bb29b971517dc95cd19}{channel\+\_\+dc\+::bfp}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{_m_o_d__channel__dc_8f90_a3310e431b01863eeacbb6949dc4f0d60}\label{_m_o_d__channel__dc_8f90_a3310e431b01863eeacbb6949dc4f0d60}} 
+\index{MOD\_channel\_dc.f90@{MOD\_channel\_dc.f90}!alloc\_channel\_dc@{alloc\_channel\_dc}}
+\index{alloc\_channel\_dc@{alloc\_channel\_dc}!MOD\_channel\_dc.f90@{MOD\_channel\_dc.f90}}
+\doxysubsubsection{\texorpdfstring{alloc\_channel\_dc()}{alloc\_channel\_dc()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+channel\+\_\+dc (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_m_o_d__channel__dc_8f90_a3cee14c4b00b077dd1ce590b9b4d8c0d}\label{_m_o_d__channel__dc_8f90_a3cee14c4b00b077dd1ce590b9b4d8c0d}} 
+\index{MOD\_channel\_dc.f90@{MOD\_channel\_dc.f90}!read\_channel\_dc@{read\_channel\_dc}}
+\index{read\_channel\_dc@{read\_channel\_dc}!MOD\_channel\_dc.f90@{MOD\_channel\_dc.f90}}
+\doxysubsubsection{\texorpdfstring{read\_channel\_dc()}{read\_channel\_dc()}}
+{\footnotesize\ttfamily subroutine read\+\_\+channel\+\_\+dc (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nut,  }\item[{integer, intent(in)}]{klsp }\end{DoxyParamCaption})}
+

@@ -1,0 +1,94 @@
+\hypertarget{spline__orbitals_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+B\+S/spline\+\_\+orbitals.f90 File Reference}
+\label{spline__orbitals_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/BS/spline\_orbitals.f90@{/Users/khamilton/Codes/BSR3/libraries/BS/spline\_orbitals.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacespline__orbitals}{spline\+\_\+orbitals}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{spline__orbitals_8f90_ace14f29390088eab93b8308514ab5579}{allocate\+\_\+bsorb}} (m)
+\item 
+integer function \mbox{\hyperlink{spline__orbitals_8f90_a7ebc1bb423badeccbadd6f339aef6719}{ifind\+\_\+bsorb}} (n, l, k)
+\item 
+integer function \mbox{\hyperlink{spline__orbitals_8f90_a98473f2bd976700ad47e096751e8f12b}{jfind\+\_\+bsorb}} (n, l, k)
+\item 
+integer function \mbox{\hyperlink{spline__orbitals_8f90_a3d864ed8e76ac8ba5d5d7032eafa7346}{iadd\+\_\+bsorb}} (n, l, k)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{namespacespline__orbitals_a80cd8c238d4f1eef6f311a2cb403a1ed}{spline\+\_\+orbitals\+::mbf}} = 0
+\item 
+integer \mbox{\hyperlink{namespacespline__orbitals_aa9c7eb62c3f42ee0bb773ccd8ad2a4e9}{spline\+\_\+orbitals\+::nbf}} = 0
+\item 
+integer \mbox{\hyperlink{namespacespline__orbitals_a1b5af788b7e37afba89385da85d25f2a}{spline\+\_\+orbitals\+::ibf}} = 512
+\item 
+integer \mbox{\hyperlink{namespacespline__orbitals_af29360c10140b64f55fc0e9480883220}{spline\+\_\+orbitals\+::jbf}} = 124
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacespline__orbitals_a1990551bc4b5b56d1324c1f37f14ec66}{spline\+\_\+orbitals\+::nbs}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacespline__orbitals_a59a1ac7989e2d8c12d3c749c9a9c73bd}{spline\+\_\+orbitals\+::lbs}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacespline__orbitals_aa129c4e1e12c1302a29cd48a77d554f9}{spline\+\_\+orbitals\+::kbs}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacespline__orbitals_a93bbebabdb140e52297eb7ec29d6e82a}{spline\+\_\+orbitals\+::mbs}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacespline__orbitals_adf1a55c0853454f7cfed5ea5d5a6cc94}{spline\+\_\+orbitals\+::iech}}
+\item 
+character(4), dimension(\+:), allocatable \mbox{\hyperlink{namespacespline__orbitals_a84709281a2690efaccb835aa38ffc7a3}{spline\+\_\+orbitals\+::ebs}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacespline__orbitals_a74e44d08b35ad742dcb607601d086440}{spline\+\_\+orbitals\+::pbs}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacespline__orbitals_a0d16dd4752e21a96385d115abef58dde}{spline\+\_\+orbitals\+::qbs}}
+\item 
+integer \mbox{\hyperlink{namespacespline__orbitals_a4927e80019333e3ef3a3de901f8de3b6}{spline\+\_\+orbitals\+::jbort}} = 1
+\item 
+integer, dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacespline__orbitals_ac2742ea440109d18d29de26f5e3ebb5b}{spline\+\_\+orbitals\+::ibort}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacespline__orbitals_a81bbc441e0b4b44ea71076362f06793c}{spline\+\_\+orbitals\+::obs}}
+\item 
+integer \mbox{\hyperlink{namespacespline__orbitals_a6f6c804f02c59e1b2433222afe7e4a4e}{spline\+\_\+orbitals\+::m\+\_\+borb}} = 0
+\item 
+real(8) \mbox{\hyperlink{namespacespline__orbitals_ad5200d08a92ee626d5e6d8fca2ac2cf7}{spline\+\_\+orbitals\+::memory\+\_\+bs\+\_\+orbitals}} = 0.d0
+\item 
+integer \mbox{\hyperlink{namespacespline__orbitals_a2ae75f2de81f6b5fa3cbdca033af5bf0}{spline\+\_\+orbitals\+::nv\+\_\+ch}} = 0
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacespline__orbitals_a2ed593f588957680e35f39b9bda6f675}{spline\+\_\+orbitals\+::v\+\_\+ch}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacespline__orbitals_a971fcf91f4ac73db9456be5e31586774}{spline\+\_\+orbitals\+::i\+\_\+ch}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacespline__orbitals_a7d0f8e57a8b5619f421fa33747d4e600}{spline\+\_\+orbitals\+::j\+\_\+ch}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacespline__orbitals_aabe37030ef8574352e93cdeee422152c}{spline\+\_\+orbitals\+::ib}} = 2$\ast$$\ast$15
+\item 
+real(8) \mbox{\hyperlink{namespacespline__orbitals_a97b5df48f9963fab5ef6149b5fa6016b}{spline\+\_\+orbitals\+::eps\+\_\+v}} = 1.d-\/10
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{spline__orbitals_8f90_ace14f29390088eab93b8308514ab5579}\label{spline__orbitals_8f90_ace14f29390088eab93b8308514ab5579}} 
+\index{spline\_orbitals.f90@{spline\_orbitals.f90}!allocate\_bsorb@{allocate\_bsorb}}
+\index{allocate\_bsorb@{allocate\_bsorb}!spline\_orbitals.f90@{spline\_orbitals.f90}}
+\doxysubsubsection{\texorpdfstring{allocate\_bsorb()}{allocate\_bsorb()}}
+{\footnotesize\ttfamily subroutine allocate\+\_\+bsorb (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{spline__orbitals_8f90_a3d864ed8e76ac8ba5d5d7032eafa7346}\label{spline__orbitals_8f90_a3d864ed8e76ac8ba5d5d7032eafa7346}} 
+\index{spline\_orbitals.f90@{spline\_orbitals.f90}!iadd\_bsorb@{iadd\_bsorb}}
+\index{iadd\_bsorb@{iadd\_bsorb}!spline\_orbitals.f90@{spline\_orbitals.f90}}
+\doxysubsubsection{\texorpdfstring{iadd\_bsorb()}{iadd\_bsorb()}}
+{\footnotesize\ttfamily integer function iadd\+\_\+bsorb (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{n,  }\item[{integer, intent(in)}]{l,  }\item[{integer, intent(in)}]{k }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{spline__orbitals_8f90_a7ebc1bb423badeccbadd6f339aef6719}\label{spline__orbitals_8f90_a7ebc1bb423badeccbadd6f339aef6719}} 
+\index{spline\_orbitals.f90@{spline\_orbitals.f90}!ifind\_bsorb@{ifind\_bsorb}}
+\index{ifind\_bsorb@{ifind\_bsorb}!spline\_orbitals.f90@{spline\_orbitals.f90}}
+\doxysubsubsection{\texorpdfstring{ifind\_bsorb()}{ifind\_bsorb()}}
+{\footnotesize\ttfamily integer function ifind\+\_\+bsorb (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{n,  }\item[{integer, intent(in)}]{l,  }\item[{integer, intent(in)}]{k }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{spline__orbitals_8f90_a98473f2bd976700ad47e096751e8f12b}\label{spline__orbitals_8f90_a98473f2bd976700ad47e096751e8f12b}} 
+\index{spline\_orbitals.f90@{spline\_orbitals.f90}!jfind\_bsorb@{jfind\_bsorb}}
+\index{jfind\_bsorb@{jfind\_bsorb}!spline\_orbitals.f90@{spline\_orbitals.f90}}
+\doxysubsubsection{\texorpdfstring{jfind\_bsorb()}{jfind\_bsorb()}}
+{\footnotesize\ttfamily integer function jfind\+\_\+bsorb (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{n,  }\item[{integer, intent(in)}]{l,  }\item[{integer, intent(in)}]{k }\end{DoxyParamCaption})}
+

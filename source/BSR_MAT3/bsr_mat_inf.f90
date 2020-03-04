@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine bsr_mat_inf
 !======================================================================
-!     provide information about bsr_mat program
+!> @ingroup bsr_mat
+!> @brief     provide information about bsr_mat program
 !----------------------------------------------------------------------
       Character :: A
       Integer :: nu = 99;  Character(80) :: AF = 'bsr_mat_inf'

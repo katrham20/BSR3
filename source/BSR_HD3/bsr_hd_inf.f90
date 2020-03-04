@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine bsr_hd_inf
 !======================================================================
-!     provide information about "bsr_hd" program
+!> @ingroup bsr_hd
+!> @brief     provide information about "bsr_hd" program
 !----------------------------------------------------------------------
       Character :: A
       Integer :: nu = 99;  Character(80) :: AF = 'bsr_hd_inf'

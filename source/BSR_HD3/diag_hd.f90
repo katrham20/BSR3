@@ -1,19 +1,20 @@
 !======================================================================
       Subroutine diag_hd
 !======================================================================
-!     Diagonalization procedure:
-!
-!     1. Read diagonal channel blocks and diagonalize them.
-!     2. Transform the overlap and interaction matrixes
-!        to new basis.
-!     3. Add mass-velocity correction if any.
-!     4. Form a Cholesky factorization of the overlap matrix.
-!     5. Transform problem to standard eigenvalue problem.
-!     6. Transform to experimental thresholds energies if any.
-!     7. Solve standard eigenvalue problem. 
-!     8. Call w_out for weights if required.
-!     9. Backtransform eigenvectors to the original problem.
-!        Solutions are still in new basis!!!
+!> @ingroup bsr_hd
+!!     Diagonalization procedure:
+!!
+!!     1. Read diagonal channel blocks and diagonalize them.
+!!     2. Transform the overlap and interaction matrixes
+!!        to new basis.
+!!     3. Add mass-velocity correction if any.
+!!     4. Form a Cholesky factorization of the overlap matrix.
+!!     5. Transform problem to standard eigenvalue problem.
+!!     6. Transform to experimental thresholds energies if any.
+!!     7. Solve standard eigenvalue problem. 
+!!     8. Call w_out for weights if required.
+!!     9. Backtransform eigenvectors to the original problem.
+!!        Solutions are still in new basis!!!
 !----------------------------------------------------------------------
       Use bsr_hd
       Use channel,      only: iptar, lch, elc

@@ -1,19 +1,20 @@
 !======================================================================
       Module dmatrix
 !======================================================================
-!     contains the dipole matrices and routines for their update
-!     DL  -  dipole transition matrix (L-form)
-!     DV  -  dipole transition matrix (V-form)
+!> @ingroup bsr_dmat
+!!     contains the dipole matrices and routines for their update
+!!     DL  -  dipole transition matrix (L-form)
+!!     DV  -  dipole transition matrix (V-form)
 !----------------------------------------------------------------------
       Implicit none
 
-      Integer :: kns          !  size of one channel block (=ns)
-      Integer :: kks          !  B-spline order (=ks)
-      Integer :: kch1,kch2    !  number of channels
-      Integer :: knc1,knc2    !  size of channel block (=kch*kns)
-      Integer :: kcp1,kcp2    !  number of perturbers (not configurations !)
-      Integer :: kcfg1,kcfg2  !  number of configurations
-      Integer :: kdm1,kdm2    !  full size of interaction matrix
+      Integer :: kns          !< @param  size of one channel block (=ns)
+      Integer :: kks          !< @param  B-spline order (=ks)
+      Integer :: kch1,kch2    !< @param  number of channels
+      Integer :: knc1,knc2    !< @param  size of channel block (=kch*kns)
+      Integer :: kcp1,kcp2    !< @param  number of perturbers (not configurations !)
+      Integer :: kcfg1,kcfg2  !< @param  number of configurations
+      Integer :: kdm1,kdm2    !< @param  full size of interaction matrix
 
       Real(8), allocatable :: DL(:,:),DV(:,:)
 
@@ -23,7 +24,8 @@
 !======================================================================
       Subroutine allocate_matrix(ns,ks,nch1,nch2,ncp1,ncp2,ncfg1,ncfg2)
 !======================================================================
-!     allocate arrays in module "dmatrix"
+!> @ingroup bsr_dmat
+!> @brief     allocate arrays in module "dmatrix"
 !----------------------------------------------------------------------    
       Use dmatrix
 
@@ -52,7 +54,8 @@
 !======================================================================
       Subroutine UPDATE_DX(ich,jch,ns,ks,d1,d2)
 !======================================================================
-!     update channel block with nonsymmetric band matrix 
+!> @ingroup bsr_dmat
+!> @brief     update channel block with nonsymmetric band matrix 
 !----------------------------------------------------------------------
       Use dmatrix
 
@@ -81,7 +84,8 @@
 !======================================================================
       Subroutine UPDATE_DW(ich,jch,ns,v1,w1,v2,w2)
 !======================================================================
-!     update full matrix with v*w
+!> @ingroup bsr_dmat
+!> @brief     update full matrix with v*w
 !-----------------------------------------------------------------------
       Use dmatrix
 
@@ -104,7 +108,8 @@
 !======================================================================
       Subroutine UPDATE_DV(ich,jch,ic,jc,ns,v1,v2)
 !======================================================================
-!     update full matrix with vector
+!> @ingroup bsr_dmat
+!> @brief     update full matrix with vector
 !----------------------------------------------------------------------
       Use dmatrix
 
@@ -133,7 +138,8 @@
 !======================================================================
       Subroutine UPDATE_DB(ic,jc,CL,CV)
 !======================================================================
-!     update full matrix with scalar
+!> @ingroup bsr_dmat
+!> @brief     update full matrix with scalar
 !----------------------------------------------------------------------
       Use dmatrix
 

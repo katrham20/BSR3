@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine Add_res(nu,is,js)
 !======================================================================
-!     records results from 'coef_list' to unit 'nu' for the case: is,js
+!> @ingroup bsr_breit
+!> @brief     records results from 'coef_list' to unit 'nu' for the case: is,js
 !----------------------------------------------------------------------
       Use bsr_breit, only: ibc, eps_c
       Use coef_list

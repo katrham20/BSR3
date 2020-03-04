@@ -1,0 +1,927 @@
+\hypertarget{namespacebsr__phot}{}\doxysection{bsr\+\_\+phot Module Reference}
+\label{namespacebsr__phot}\index{bsr\_phot@{bsr\_phot}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{ma}} = 40
+\begin{DoxyCompactList}\small\item\em Contains common variable and arrays. \end{DoxyCompactList}\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a836a9baa47c4ecade13d74a6ac083e4e}{pri}} = 66
+\item 
+character(\mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{ma}}) \mbox{\hyperlink{namespacebsr__phot_a01e47e09eb1180445acad296db364ccb}{af\+\_\+log}} = \textquotesingle{}bsr\+\_\+phot.\+log\textquotesingle{}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_abb0b503cf184624d5cae3d509d7ef623}{inp}} = 7
+\item 
+character(\mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{ma}}) \mbox{\hyperlink{namespacebsr__phot_aac0b1ca9f18cd692d90f5be662675821}{af\+\_\+inp}} = \textquotesingle{}\mbox{\hyperlink{namespacebsr__phot_abb0b503cf184624d5cae3d509d7ef623}{bsr\+\_\+phot.\+inp}}\textquotesingle{}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a1091588b7f2bc58e454e70a042bdfbe6}{nud}} = 11
+\item 
+character(\mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{ma}}) \mbox{\hyperlink{namespacebsr__phot_ab7d29d242b21a18741425e7c9cd87e04}{af\+\_\+d}} = \textquotesingle{}d.\+nnn\textquotesingle{}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a49bf6a567aaf2a077dc05e5f778fb47f}{nuh}} = 12
+\item 
+character(\mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{ma}}) \mbox{\hyperlink{namespacebsr__phot_afdfbe34e46199e0baac9861f74598cee}{af\+\_\+h}} = \textquotesingle{}h.\+nnn\textquotesingle{}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_abed5d0a09f6af1fd0b0ee5e6966c9262}{nuw}} = 13
+\item 
+character(\mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{ma}}) \mbox{\hyperlink{namespacebsr__phot_ab2c2c71126eb6ad1840533a02b4906b0}{af\+\_\+w}} = \textquotesingle{}w.\+nnn\textquotesingle{}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a1d9350f4157517defa757851bb0ec773}{nub}} = 14
+\item 
+character(\mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{ma}}) \mbox{\hyperlink{namespacebsr__phot_a71e7fab1cbdcc31b74791c81cca9090c}{af\+\_\+b}} = \textquotesingle{}bound.\+nnn\textquotesingle{}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a62b8c0fedd9902ee2307d5f53fd3e85b}{ics}} = 16
+\item 
+character(\mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{ma}}) \mbox{\hyperlink{namespacebsr__phot_ae473a20c744b939119fca0bd5be5e901}{af\+\_\+out}} = \textquotesingle{}bsr\+\_\+phot.\+nnn\textquotesingle{}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_af141da023179a9d10e949010fb90e4ff}{iph}} = 17
+\item 
+character(\mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{ma}}) \mbox{\hyperlink{namespacebsr__phot_a3aef74860b8cf27d85190549f2d50b0d}{af\+\_\+ph}} = \textquotesingle{}photo.\+nnn\textquotesingle{}
+\item 
+character(\mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{ma}}) \mbox{\hyperlink{namespacebsr__phot_a19639567f317174b355f9f248e51ab4d}{af}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacebsr__phot_ad4aa69cdd9f611dec7e6cb6658408b09}{nrange}} = 10
+\item 
+real(8), dimension(\mbox{\hyperlink{namespacebsr__phot_ad4aa69cdd9f611dec7e6cb6658408b09}{nrange}}) \mbox{\hyperlink{namespacebsr__phot_a0a9e1d06dfb4385399409d99a4b1a1e7}{elow}}
+\item 
+real(8), dimension(\mbox{\hyperlink{namespacebsr__phot_ad4aa69cdd9f611dec7e6cb6658408b09}{nrange}}) \mbox{\hyperlink{namespacebsr__phot_a96d8103cb299a19d286cc5c96cfcc0e7}{estep}}
+\item 
+real(8), dimension(\mbox{\hyperlink{namespacebsr__phot_ad4aa69cdd9f611dec7e6cb6658408b09}{nrange}}) \mbox{\hyperlink{namespacebsr__phot_a5f206c73402aedbee10c09dae2ad5775}{ehigh}}
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_a9ef48721e4b1f32e5e5229e5d60df7cc}{e\+\_\+exp}} = 0.d0
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_afd4aea4a78c4b7c409a0f6dbd8874ce3}{awt}} = 0.d0
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_af52fdbd4dfa6051fbabc63132b70dbec}{ibug}} = 0
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a7364e1c5d488862189e50469b032053d}{iauto}} = 1
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a80f99bab23f3f038697026d608ae6123}{mfgi}} = 300
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_ad39f90c5f71da8cc5ac7f5d563b91422}{ac}} = 0.\+001
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_a64942297afe9358b841753788433ff70}{dr}} = 0.\+1
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_aa868351d77d2c3289b55141d3868e8c3}{nelc}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a83340b0b3def6085256e8c78f06141d4}{nz}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a98e0dd5d2d1583ea75ce28cfd7cc51e9}{ion}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a6212c6cf00c152c8b366f6524baa2387}{ntarg}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a2692af881fc7da60fe6f087ca09770d9}{etarg}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_ade7c55b93963df192cf3e09f01b6a744}{ltarg}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a6370b1507eedd1d12c0c478931435ee6}{istarg}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a2e34be63feb251f4e6d95a00b75950f2}{iptarg}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a65ef2767abde0d463b69e6fe9533053d}{klsp}} = 0
+\item 
+character(3) \mbox{\hyperlink{namespacebsr__phot_aa9a785d67e47c76825fdde1a31a3694a}{alsp}} = \textquotesingle{}nnn\textquotesingle{}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a8127e9f48c7d14e4717a49ec79818f4e}{il}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a3b6f92ce5b94beeb57da2f117c37ee52}{is}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a38d07f9552ccdd323d26178f250f8db4}{ip}}
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_a9b6e3f273970371b091be2e895fa9f7f}{e1}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_aa6b938d607a6d2c81d9dc9eccca9fb7b}{nch}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a2670d84c88a64ea67e6946cc7e54b299}{ncp}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a07e8525fb5ae26c7e59c594e2c392852}{nhm}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_ab84e720317da080d4ca5c7f7418e8888}{khm}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a2f115510046c93eeab9c6d03b9928157}{km}}
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_a735e7d718bd7c4be89e37c4073e89f08}{athreshold}} =0.\+0001d0
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_acbed7f74954097da992843b8b624c467}{bthreshold}} =0.\+0001d0
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a516d2d7c6123cb92cbb58d35354ee2df}{nconat}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a85d227337262b85fc40e9397459bc64c}{lch}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a893a0d218f16e3d13f556a8fdf8da928}{value}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a96a941371d3005c1fe4f134e626a41bb}{ech}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_aef6c7828f769672e7f4f78822fa66a9b}{wmat}}
+\item 
+real(8), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_aace4343861b6d095bae268adcb256e23}{cf}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a8889e768864b46c38668aa24c67fb109}{rmat}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a9324079b438be192e3aa37ff1e338e95}{rmati}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a383bf6ca3f4c31bacb49c92b1af15504}{kmat}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a009d53c13b746a16d0074902dce4ed20}{uk}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a0d62ad48b78ad504f6685ea104b3454f}{ui}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a82ffb87891d9e0e1b2b5e8be74ee08d9}{f}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a3bdb96b58cd19465056a13bdb712d579}{g}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a8f705c65375623cb9a2010e49601f13b}{fp}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_af9d6f091768b321bb5ddda3a8cb3d5f6}{gp}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a1d11ebafdb3a049ae35a310b6374f5c3}{ikm}} = 0
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a8688776f5323c713f3fb64f8127e5d51}{nwt}} = -\/1
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a56ab69a3472d6a5b5c493d8abeb43437}{wt}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_ac255d6103dc65689c740ab47dafffbe8}{ak}}
+\item 
+integer, dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_ace0bbb94053ff9b66ff1b2a6bc13ca0c}{ipak}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_ac0578dc21079c0f2268f03af2f34c463}{wtch}}
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_a7d84eb072a1b27d7898d3d92736b8604}{cc}} = 0.d0
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_afb922c8072591def35b492e19d2d134a}{ce}} = 0.d0
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_a6c1440082ac3d42cbfec057019a01712}{ra}}
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_ac60cc27104753c0e82027fe4b2bd447e}{rb}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_ae53d1979dbc5d2046b7ed3d7679fbedf}{ili}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a0f64af65e485ca462180156ae99468e8}{isi}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_aa9f87d495dc9b0ea067d6a49ff696968}{ipi}}
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_a0f823f54cbfc982419a3eeae3ba2457a}{ei}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a876d59b20c8d8a125a660ef533ee9c7d}{ndm}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a31f3e70341d92c0c081081eaeed95680}{dkl}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_aeaaaa7050dc8c53953288b084a197a65}{dkv}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_ae4fda237663abd5573b9478e55dd7300}{dlr}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_ac3706fef944bcbd641f477bd04ea74fc}{dli}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a0c64ec59ce45a740ba4c3b3b2ffa8968}{dvr}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a0be100ff885a3710a37e6fe4f50e0a47}{dvi}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a9ab74d8ea1788d5cd287fa341ba2d49a}{sl}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a02fc0d039e5fb6f333992bfb8a188af1}{sv}}
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_ad2054c646dec5f75108758a6aa61e767}{slp}}
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_a1f514ca446fb858d23fd7336855ee015}{svp}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a2334fd3ed7496ee5460e2c747a60080b}{aa}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_abdabca176c45c7aab8f741f343a80eb3}{bb}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a78d1fae07463b64b3e6b5bf61b381059}{ff}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a18063c7646900c3273be32b9f0eaf7ee}{fff}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a278c93fab5fd98de0ef1a2dd1163c6ac}{ffp}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_aa25ce954f239c596d3f3d9836b667e26}{v}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a63680b9fd6a2c6c5f43a9fb99ab5065e}{eps}}
+\item 
+character(\mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{ma}}) \mbox{\hyperlink{namespacebsr__phot_a39e9581ad29d26402d735771df2762df}{bf}}
+\item 
+character(\mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{ma}}) \mbox{\hyperlink{namespacebsr__phot_a1414656ccfe628dbd07a3261887fc9be}{as}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a728b32e5eaaeb21bee24ab35729216f1}{nprocs}} = 1
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a5d919b0263063e66057374075566db87}{myid}} = 0
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a5887ea62f5aefad800dd7c22d2ce8fe6}{ierr}} = 0
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a52b19de0b138282ccb04a9d5e7d0902f}{me}} = 0
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_ae4b9eb29f44c73f82fa89acdb0d9d8e2}{iek}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a8883debe89059d5d2a05209d01dc8294}{ek}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacebsr__phot_a2334fd3ed7496ee5460e2c747a60080b}\label{namespacebsr__phot_a2334fd3ed7496ee5460e2c747a60080b}} 
+\index{bsr\_phot@{bsr\_phot}!aa@{aa}}
+\index{aa@{aa}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{aa}{aa}}
+{\footnotesize\ttfamily real(8), dimension(\+:,\+:), allocatable bsr\+\_\+phot\+::aa}
+
+\mbox{\Hypertarget{namespacebsr__phot_ad39f90c5f71da8cc5ac7f5d563b91422}\label{namespacebsr__phot_ad39f90c5f71da8cc5ac7f5d563b91422}} 
+\index{bsr\_phot@{bsr\_phot}!ac@{ac}}
+\index{ac@{ac}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{ac}{ac}}
+{\footnotesize\ttfamily real(8) bsr\+\_\+phot\+::ac = 0.\+001}
+
+
+\begin{DoxyParams}{Parameters}
+{\em accuracy,$<$} & 0.\+1, but $<$ 0.\+0001 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacebsr__phot_a19639567f317174b355f9f248e51ab4d}\label{namespacebsr__phot_a19639567f317174b355f9f248e51ab4d}} 
+\index{bsr\_phot@{bsr\_phot}!af@{af}}
+\index{af@{af}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{af}{af}}
+{\footnotesize\ttfamily character(\mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{ma}}) bsr\+\_\+phot\+::af}
+
+\mbox{\Hypertarget{namespacebsr__phot_a71e7fab1cbdcc31b74791c81cca9090c}\label{namespacebsr__phot_a71e7fab1cbdcc31b74791c81cca9090c}} 
+\index{bsr\_phot@{bsr\_phot}!af\_b@{af\_b}}
+\index{af\_b@{af\_b}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{af\_b}{af\_b}}
+{\footnotesize\ttfamily character(\mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{ma}}) bsr\+\_\+phot\+::af\+\_\+b = \textquotesingle{}bound.\+nnn\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacebsr__phot_ab7d29d242b21a18741425e7c9cd87e04}\label{namespacebsr__phot_ab7d29d242b21a18741425e7c9cd87e04}} 
+\index{bsr\_phot@{bsr\_phot}!af\_d@{af\_d}}
+\index{af\_d@{af\_d}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{af\_d}{af\_d}}
+{\footnotesize\ttfamily character(\mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{ma}}) bsr\+\_\+phot\+::af\+\_\+d = \textquotesingle{}d.\+nnn\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacebsr__phot_afdfbe34e46199e0baac9861f74598cee}\label{namespacebsr__phot_afdfbe34e46199e0baac9861f74598cee}} 
+\index{bsr\_phot@{bsr\_phot}!af\_h@{af\_h}}
+\index{af\_h@{af\_h}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{af\_h}{af\_h}}
+{\footnotesize\ttfamily character(\mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{ma}}) bsr\+\_\+phot\+::af\+\_\+h = \textquotesingle{}h.\+nnn\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacebsr__phot_aac0b1ca9f18cd692d90f5be662675821}\label{namespacebsr__phot_aac0b1ca9f18cd692d90f5be662675821}} 
+\index{bsr\_phot@{bsr\_phot}!af\_inp@{af\_inp}}
+\index{af\_inp@{af\_inp}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{af\_inp}{af\_inp}}
+{\footnotesize\ttfamily character(\mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{ma}}) bsr\+\_\+phot\+::af\+\_\+inp = \textquotesingle{}\mbox{\hyperlink{namespacebsr__phot_abb0b503cf184624d5cae3d509d7ef623}{bsr\+\_\+phot.\+inp}}\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacebsr__phot_a01e47e09eb1180445acad296db364ccb}\label{namespacebsr__phot_a01e47e09eb1180445acad296db364ccb}} 
+\index{bsr\_phot@{bsr\_phot}!af\_log@{af\_log}}
+\index{af\_log@{af\_log}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{af\_log}{af\_log}}
+{\footnotesize\ttfamily character(\mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{ma}}) bsr\+\_\+phot\+::af\+\_\+log = \textquotesingle{}bsr\+\_\+phot.\+log\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacebsr__phot_ae473a20c744b939119fca0bd5be5e901}\label{namespacebsr__phot_ae473a20c744b939119fca0bd5be5e901}} 
+\index{bsr\_phot@{bsr\_phot}!af\_out@{af\_out}}
+\index{af\_out@{af\_out}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{af\_out}{af\_out}}
+{\footnotesize\ttfamily character(\mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{ma}}) bsr\+\_\+phot\+::af\+\_\+out = \textquotesingle{}bsr\+\_\+phot.\+nnn\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacebsr__phot_a3aef74860b8cf27d85190549f2d50b0d}\label{namespacebsr__phot_a3aef74860b8cf27d85190549f2d50b0d}} 
+\index{bsr\_phot@{bsr\_phot}!af\_ph@{af\_ph}}
+\index{af\_ph@{af\_ph}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{af\_ph}{af\_ph}}
+{\footnotesize\ttfamily character(\mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{ma}}) bsr\+\_\+phot\+::af\+\_\+ph = \textquotesingle{}photo.\+nnn\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacebsr__phot_ab2c2c71126eb6ad1840533a02b4906b0}\label{namespacebsr__phot_ab2c2c71126eb6ad1840533a02b4906b0}} 
+\index{bsr\_phot@{bsr\_phot}!af\_w@{af\_w}}
+\index{af\_w@{af\_w}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{af\_w}{af\_w}}
+{\footnotesize\ttfamily character(\mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{ma}}) bsr\+\_\+phot\+::af\+\_\+w = \textquotesingle{}w.\+nnn\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacebsr__phot_ac255d6103dc65689c740ab47dafffbe8}\label{namespacebsr__phot_ac255d6103dc65689c740ab47dafffbe8}} 
+\index{bsr\_phot@{bsr\_phot}!ak@{ak}}
+\index{ak@{ak}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{ak}{ak}}
+{\footnotesize\ttfamily real(8), dimension(\+:,\+:), allocatable bsr\+\_\+phot\+::ak}
+
+\mbox{\Hypertarget{namespacebsr__phot_aa9a785d67e47c76825fdde1a31a3694a}\label{namespacebsr__phot_aa9a785d67e47c76825fdde1a31a3694a}} 
+\index{bsr\_phot@{bsr\_phot}!alsp@{alsp}}
+\index{alsp@{alsp}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{alsp}{alsp}}
+{\footnotesize\ttfamily character(3) bsr\+\_\+phot\+::alsp = \textquotesingle{}nnn\textquotesingle{}}
+
+\mbox{\Hypertarget{namespacebsr__phot_a1414656ccfe628dbd07a3261887fc9be}\label{namespacebsr__phot_a1414656ccfe628dbd07a3261887fc9be}} 
+\index{bsr\_phot@{bsr\_phot}!as@{as}}
+\index{as@{as}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{as}{as}}
+{\footnotesize\ttfamily character(\mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{ma}}) bsr\+\_\+phot\+::as}
+
+\mbox{\Hypertarget{namespacebsr__phot_a735e7d718bd7c4be89e37c4073e89f08}\label{namespacebsr__phot_a735e7d718bd7c4be89e37c4073e89f08}} 
+\index{bsr\_phot@{bsr\_phot}!athreshold@{athreshold}}
+\index{athreshold@{athreshold}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{athreshold}{athreshold}}
+{\footnotesize\ttfamily real(8) bsr\+\_\+phot\+::athreshold =0.\+0001d0}
+
+\mbox{\Hypertarget{namespacebsr__phot_afd4aea4a78c4b7c409a0f6dbd8874ce3}\label{namespacebsr__phot_afd4aea4a78c4b7c409a0f6dbd8874ce3}} 
+\index{bsr\_phot@{bsr\_phot}!awt@{awt}}
+\index{awt@{awt}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{awt}{awt}}
+{\footnotesize\ttfamily real(8) bsr\+\_\+phot\+::awt = 0.d0}
+
+
+\begin{DoxyParams}{Parameters}
+{\em nuclear} & weight \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacebsr__phot_abdabca176c45c7aab8f741f343a80eb3}\label{namespacebsr__phot_abdabca176c45c7aab8f741f343a80eb3}} 
+\index{bsr\_phot@{bsr\_phot}!bb@{bb}}
+\index{bb@{bb}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{bb}{bb}}
+{\footnotesize\ttfamily real(8), dimension(\+:,\+:), allocatable bsr\+\_\+phot\+::bb}
+
+\mbox{\Hypertarget{namespacebsr__phot_a39e9581ad29d26402d735771df2762df}\label{namespacebsr__phot_a39e9581ad29d26402d735771df2762df}} 
+\index{bsr\_phot@{bsr\_phot}!bf@{bf}}
+\index{bf@{bf}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{bf}{bf}}
+{\footnotesize\ttfamily character(\mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{ma}}) bsr\+\_\+phot\+::bf}
+
+\mbox{\Hypertarget{namespacebsr__phot_acbed7f74954097da992843b8b624c467}\label{namespacebsr__phot_acbed7f74954097da992843b8b624c467}} 
+\index{bsr\_phot@{bsr\_phot}!bthreshold@{bthreshold}}
+\index{bthreshold@{bthreshold}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{bthreshold}{bthreshold}}
+{\footnotesize\ttfamily real(8) bsr\+\_\+phot\+::bthreshold =0.\+0001d0}
+
+\mbox{\Hypertarget{namespacebsr__phot_a7d84eb072a1b27d7898d3d92736b8604}\label{namespacebsr__phot_a7d84eb072a1b27d7898d3d92736b8604}} 
+\index{bsr\_phot@{bsr\_phot}!cc@{cc}}
+\index{cc@{cc}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{cc}{cc}}
+{\footnotesize\ttfamily real(8) bsr\+\_\+phot\+::cc = 0.d0}
+
+\mbox{\Hypertarget{namespacebsr__phot_afb922c8072591def35b492e19d2d134a}\label{namespacebsr__phot_afb922c8072591def35b492e19d2d134a}} 
+\index{bsr\_phot@{bsr\_phot}!ce@{ce}}
+\index{ce@{ce}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{ce}{ce}}
+{\footnotesize\ttfamily real(8) bsr\+\_\+phot\+::ce = 0.d0}
+
+\mbox{\Hypertarget{namespacebsr__phot_aace4343861b6d095bae268adcb256e23}\label{namespacebsr__phot_aace4343861b6d095bae268adcb256e23}} 
+\index{bsr\_phot@{bsr\_phot}!cf@{cf}}
+\index{cf@{cf}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{cf}{cf}}
+{\footnotesize\ttfamily real(8), dimension(\+:,\+:,\+:), allocatable bsr\+\_\+phot\+::cf}
+
+\mbox{\Hypertarget{namespacebsr__phot_a31f3e70341d92c0c081081eaeed95680}\label{namespacebsr__phot_a31f3e70341d92c0c081081eaeed95680}} 
+\index{bsr\_phot@{bsr\_phot}!dkl@{dkl}}
+\index{dkl@{dkl}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{dkl}{dkl}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable bsr\+\_\+phot\+::dkl}
+
+\mbox{\Hypertarget{namespacebsr__phot_aeaaaa7050dc8c53953288b084a197a65}\label{namespacebsr__phot_aeaaaa7050dc8c53953288b084a197a65}} 
+\index{bsr\_phot@{bsr\_phot}!dkv@{dkv}}
+\index{dkv@{dkv}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{dkv}{dkv}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable bsr\+\_\+phot\+::dkv}
+
+\mbox{\Hypertarget{namespacebsr__phot_ac3706fef944bcbd641f477bd04ea74fc}\label{namespacebsr__phot_ac3706fef944bcbd641f477bd04ea74fc}} 
+\index{bsr\_phot@{bsr\_phot}!dli@{dli}}
+\index{dli@{dli}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{dli}{dli}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable bsr\+\_\+phot\+::dli}
+
+\mbox{\Hypertarget{namespacebsr__phot_ae4fda237663abd5573b9478e55dd7300}\label{namespacebsr__phot_ae4fda237663abd5573b9478e55dd7300}} 
+\index{bsr\_phot@{bsr\_phot}!dlr@{dlr}}
+\index{dlr@{dlr}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{dlr}{dlr}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable bsr\+\_\+phot\+::dlr}
+
+\mbox{\Hypertarget{namespacebsr__phot_a64942297afe9358b841753788433ff70}\label{namespacebsr__phot_a64942297afe9358b841753788433ff70}} 
+\index{bsr\_phot@{bsr\_phot}!dr@{dr}}
+\index{dr@{dr}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{dr}{dr}}
+{\footnotesize\ttfamily real(8) bsr\+\_\+phot\+::dr = 0.\+1}
+
+
+\begin{DoxyParams}{Parameters}
+{\em r1} & -\/ r2, $<$ 0.\+2 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacebsr__phot_a0be100ff885a3710a37e6fe4f50e0a47}\label{namespacebsr__phot_a0be100ff885a3710a37e6fe4f50e0a47}} 
+\index{bsr\_phot@{bsr\_phot}!dvi@{dvi}}
+\index{dvi@{dvi}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{dvi}{dvi}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable bsr\+\_\+phot\+::dvi}
+
+\mbox{\Hypertarget{namespacebsr__phot_a0c64ec59ce45a740ba4c3b3b2ffa8968}\label{namespacebsr__phot_a0c64ec59ce45a740ba4c3b3b2ffa8968}} 
+\index{bsr\_phot@{bsr\_phot}!dvr@{dvr}}
+\index{dvr@{dvr}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{dvr}{dvr}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable bsr\+\_\+phot\+::dvr}
+
+\mbox{\Hypertarget{namespacebsr__phot_a9b6e3f273970371b091be2e895fa9f7f}\label{namespacebsr__phot_a9b6e3f273970371b091be2e895fa9f7f}} 
+\index{bsr\_phot@{bsr\_phot}!e1@{e1}}
+\index{e1@{e1}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{e1}{e1}}
+{\footnotesize\ttfamily real(8) bsr\+\_\+phot\+::e1}
+
+\mbox{\Hypertarget{namespacebsr__phot_a9ef48721e4b1f32e5e5229e5d60df7cc}\label{namespacebsr__phot_a9ef48721e4b1f32e5e5229e5d60df7cc}} 
+\index{bsr\_phot@{bsr\_phot}!e\_exp@{e\_exp}}
+\index{e\_exp@{e\_exp}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{e\_exp}{e\_exp}}
+{\footnotesize\ttfamily real(8) bsr\+\_\+phot\+::e\+\_\+exp = 0.d0}
+
+
+\begin{DoxyParams}{Parameters}
+{\em energy} & shift for initial state \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacebsr__phot_a96a941371d3005c1fe4f134e626a41bb}\label{namespacebsr__phot_a96a941371d3005c1fe4f134e626a41bb}} 
+\index{bsr\_phot@{bsr\_phot}!ech@{ech}}
+\index{ech@{ech}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{ech}{ech}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable bsr\+\_\+phot\+::ech}
+
+\mbox{\Hypertarget{namespacebsr__phot_a5f206c73402aedbee10c09dae2ad5775}\label{namespacebsr__phot_a5f206c73402aedbee10c09dae2ad5775}} 
+\index{bsr\_phot@{bsr\_phot}!ehigh@{ehigh}}
+\index{ehigh@{ehigh}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{ehigh}{ehigh}}
+{\footnotesize\ttfamily real(8), dimension(\mbox{\hyperlink{namespacebsr__phot_ad4aa69cdd9f611dec7e6cb6658408b09}{nrange}}) bsr\+\_\+phot\+::ehigh}
+
+\mbox{\Hypertarget{namespacebsr__phot_a0f823f54cbfc982419a3eeae3ba2457a}\label{namespacebsr__phot_a0f823f54cbfc982419a3eeae3ba2457a}} 
+\index{bsr\_phot@{bsr\_phot}!ei@{ei}}
+\index{ei@{ei}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{ei}{ei}}
+{\footnotesize\ttfamily real(8) bsr\+\_\+phot\+::ei}
+
+\mbox{\Hypertarget{namespacebsr__phot_a8883debe89059d5d2a05209d01dc8294}\label{namespacebsr__phot_a8883debe89059d5d2a05209d01dc8294}} 
+\index{bsr\_phot@{bsr\_phot}!ek@{ek}}
+\index{ek@{ek}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{ek}{ek}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable bsr\+\_\+phot\+::ek}
+
+\mbox{\Hypertarget{namespacebsr__phot_a0a9e1d06dfb4385399409d99a4b1a1e7}\label{namespacebsr__phot_a0a9e1d06dfb4385399409d99a4b1a1e7}} 
+\index{bsr\_phot@{bsr\_phot}!elow@{elow}}
+\index{elow@{elow}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{elow}{elow}}
+{\footnotesize\ttfamily real(8), dimension(\mbox{\hyperlink{namespacebsr__phot_ad4aa69cdd9f611dec7e6cb6658408b09}{nrange}}) bsr\+\_\+phot\+::elow}
+
+\mbox{\Hypertarget{namespacebsr__phot_a63680b9fd6a2c6c5f43a9fb99ab5065e}\label{namespacebsr__phot_a63680b9fd6a2c6c5f43a9fb99ab5065e}} 
+\index{bsr\_phot@{bsr\_phot}!eps@{eps}}
+\index{eps@{eps}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{eps}{eps}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable bsr\+\_\+phot\+::eps}
+
+\mbox{\Hypertarget{namespacebsr__phot_a96d8103cb299a19d286cc5c96cfcc0e7}\label{namespacebsr__phot_a96d8103cb299a19d286cc5c96cfcc0e7}} 
+\index{bsr\_phot@{bsr\_phot}!estep@{estep}}
+\index{estep@{estep}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{estep}{estep}}
+{\footnotesize\ttfamily real(8), dimension(\mbox{\hyperlink{namespacebsr__phot_ad4aa69cdd9f611dec7e6cb6658408b09}{nrange}}) bsr\+\_\+phot\+::estep}
+
+\mbox{\Hypertarget{namespacebsr__phot_a2692af881fc7da60fe6f087ca09770d9}\label{namespacebsr__phot_a2692af881fc7da60fe6f087ca09770d9}} 
+\index{bsr\_phot@{bsr\_phot}!etarg@{etarg}}
+\index{etarg@{etarg}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{etarg}{etarg}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable bsr\+\_\+phot\+::etarg}
+
+\mbox{\Hypertarget{namespacebsr__phot_a82ffb87891d9e0e1b2b5e8be74ee08d9}\label{namespacebsr__phot_a82ffb87891d9e0e1b2b5e8be74ee08d9}} 
+\index{bsr\_phot@{bsr\_phot}!f@{f}}
+\index{f@{f}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{f}{f}}
+{\footnotesize\ttfamily real(8), dimension(\+:,\+:), allocatable bsr\+\_\+phot\+::f}
+
+\mbox{\Hypertarget{namespacebsr__phot_a78d1fae07463b64b3e6b5bf61b381059}\label{namespacebsr__phot_a78d1fae07463b64b3e6b5bf61b381059}} 
+\index{bsr\_phot@{bsr\_phot}!ff@{ff}}
+\index{ff@{ff}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{ff}{ff}}
+{\footnotesize\ttfamily real(8), dimension(\+:,\+:), allocatable bsr\+\_\+phot\+::ff}
+
+\mbox{\Hypertarget{namespacebsr__phot_a18063c7646900c3273be32b9f0eaf7ee}\label{namespacebsr__phot_a18063c7646900c3273be32b9f0eaf7ee}} 
+\index{bsr\_phot@{bsr\_phot}!fff@{fff}}
+\index{fff@{fff}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{fff}{fff}}
+{\footnotesize\ttfamily real(8), dimension(\+:,\+:), allocatable bsr\+\_\+phot\+::fff}
+
+\mbox{\Hypertarget{namespacebsr__phot_a278c93fab5fd98de0ef1a2dd1163c6ac}\label{namespacebsr__phot_a278c93fab5fd98de0ef1a2dd1163c6ac}} 
+\index{bsr\_phot@{bsr\_phot}!ffp@{ffp}}
+\index{ffp@{ffp}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{ffp}{ffp}}
+{\footnotesize\ttfamily real(8), dimension(\+:,\+:), allocatable bsr\+\_\+phot\+::ffp}
+
+\mbox{\Hypertarget{namespacebsr__phot_a8f705c65375623cb9a2010e49601f13b}\label{namespacebsr__phot_a8f705c65375623cb9a2010e49601f13b}} 
+\index{bsr\_phot@{bsr\_phot}!fp@{fp}}
+\index{fp@{fp}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{fp}{fp}}
+{\footnotesize\ttfamily real(8), dimension(\+:,\+:), allocatable bsr\+\_\+phot\+::fp}
+
+\mbox{\Hypertarget{namespacebsr__phot_a3bdb96b58cd19465056a13bdb712d579}\label{namespacebsr__phot_a3bdb96b58cd19465056a13bdb712d579}} 
+\index{bsr\_phot@{bsr\_phot}!g@{g}}
+\index{g@{g}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{g}{g}}
+{\footnotesize\ttfamily real(8), dimension(\+:,\+:), allocatable bsr\+\_\+phot\+::g}
+
+\mbox{\Hypertarget{namespacebsr__phot_af9d6f091768b321bb5ddda3a8cb3d5f6}\label{namespacebsr__phot_af9d6f091768b321bb5ddda3a8cb3d5f6}} 
+\index{bsr\_phot@{bsr\_phot}!gp@{gp}}
+\index{gp@{gp}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{gp}{gp}}
+{\footnotesize\ttfamily real(8), dimension(\+:,\+:), allocatable bsr\+\_\+phot\+::gp}
+
+\mbox{\Hypertarget{namespacebsr__phot_a7364e1c5d488862189e50469b032053d}\label{namespacebsr__phot_a7364e1c5d488862189e50469b032053d}} 
+\index{bsr\_phot@{bsr\_phot}!iauto@{iauto}}
+\index{iauto@{iauto}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{iauto}{iauto}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::iauto = 1}
+
+
+\begin{DoxyParams}{Parameters}
+{\em automatic} & choice of method \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacebsr__phot_af52fdbd4dfa6051fbabc63132b70dbec}\label{namespacebsr__phot_af52fdbd4dfa6051fbabc63132b70dbec}} 
+\index{bsr\_phot@{bsr\_phot}!ibug@{ibug}}
+\index{ibug@{ibug}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{ibug}{ibug}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::ibug = 0}
+
+
+\begin{DoxyParams}{Parameters}
+{\em debug} & level \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacebsr__phot_a62b8c0fedd9902ee2307d5f53fd3e85b}\label{namespacebsr__phot_a62b8c0fedd9902ee2307d5f53fd3e85b}} 
+\index{bsr\_phot@{bsr\_phot}!ics@{ics}}
+\index{ics@{ics}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{ics}{ics}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::ics = 16}
+
+\mbox{\Hypertarget{namespacebsr__phot_ae4b9eb29f44c73f82fa89acdb0d9d8e2}\label{namespacebsr__phot_ae4b9eb29f44c73f82fa89acdb0d9d8e2}} 
+\index{bsr\_phot@{bsr\_phot}!iek@{iek}}
+\index{iek@{iek}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{iek}{iek}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable bsr\+\_\+phot\+::iek}
+
+\mbox{\Hypertarget{namespacebsr__phot_a5887ea62f5aefad800dd7c22d2ce8fe6}\label{namespacebsr__phot_a5887ea62f5aefad800dd7c22d2ce8fe6}} 
+\index{bsr\_phot@{bsr\_phot}!ierr@{ierr}}
+\index{ierr@{ierr}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{ierr}{ierr}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::ierr = 0}
+
+\mbox{\Hypertarget{namespacebsr__phot_a1d11ebafdb3a049ae35a310b6374f5c3}\label{namespacebsr__phot_a1d11ebafdb3a049ae35a310b6374f5c3}} 
+\index{bsr\_phot@{bsr\_phot}!ikm@{ikm}}
+\index{ikm@{ikm}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{ikm}{ikm}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::ikm = 0}
+
+\mbox{\Hypertarget{namespacebsr__phot_a8127e9f48c7d14e4717a49ec79818f4e}\label{namespacebsr__phot_a8127e9f48c7d14e4717a49ec79818f4e}} 
+\index{bsr\_phot@{bsr\_phot}!il@{il}}
+\index{il@{il}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{il}{il}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::il}
+
+\mbox{\Hypertarget{namespacebsr__phot_ae53d1979dbc5d2046b7ed3d7679fbedf}\label{namespacebsr__phot_ae53d1979dbc5d2046b7ed3d7679fbedf}} 
+\index{bsr\_phot@{bsr\_phot}!ili@{ili}}
+\index{ili@{ili}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{ili}{ili}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::ili}
+
+\mbox{\Hypertarget{namespacebsr__phot_abb0b503cf184624d5cae3d509d7ef623}\label{namespacebsr__phot_abb0b503cf184624d5cae3d509d7ef623}} 
+\index{bsr\_phot@{bsr\_phot}!inp@{inp}}
+\index{inp@{inp}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{inp}{inp}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::inp = 7}
+
+\mbox{\Hypertarget{namespacebsr__phot_a98e0dd5d2d1583ea75ce28cfd7cc51e9}\label{namespacebsr__phot_a98e0dd5d2d1583ea75ce28cfd7cc51e9}} 
+\index{bsr\_phot@{bsr\_phot}!ion@{ion}}
+\index{ion@{ion}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{ion}{ion}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::ion}
+
+
+\begin{DoxyParams}{Parameters}
+{\em residual} & charge \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacebsr__phot_a38d07f9552ccdd323d26178f250f8db4}\label{namespacebsr__phot_a38d07f9552ccdd323d26178f250f8db4}} 
+\index{bsr\_phot@{bsr\_phot}!ip@{ip}}
+\index{ip@{ip}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{ip}{ip}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::ip}
+
+\mbox{\Hypertarget{namespacebsr__phot_ace0bbb94053ff9b66ff1b2a6bc13ca0c}\label{namespacebsr__phot_ace0bbb94053ff9b66ff1b2a6bc13ca0c}} 
+\index{bsr\_phot@{bsr\_phot}!ipak@{ipak}}
+\index{ipak@{ipak}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{ipak}{ipak}}
+{\footnotesize\ttfamily integer, dimension(\+:,\+:), allocatable bsr\+\_\+phot\+::ipak}
+
+\mbox{\Hypertarget{namespacebsr__phot_af141da023179a9d10e949010fb90e4ff}\label{namespacebsr__phot_af141da023179a9d10e949010fb90e4ff}} 
+\index{bsr\_phot@{bsr\_phot}!iph@{iph}}
+\index{iph@{iph}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{iph}{iph}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::iph = 17}
+
+\mbox{\Hypertarget{namespacebsr__phot_aa9f87d495dc9b0ea067d6a49ff696968}\label{namespacebsr__phot_aa9f87d495dc9b0ea067d6a49ff696968}} 
+\index{bsr\_phot@{bsr\_phot}!ipi@{ipi}}
+\index{ipi@{ipi}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{ipi}{ipi}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::ipi}
+
+\mbox{\Hypertarget{namespacebsr__phot_a2e34be63feb251f4e6d95a00b75950f2}\label{namespacebsr__phot_a2e34be63feb251f4e6d95a00b75950f2}} 
+\index{bsr\_phot@{bsr\_phot}!iptarg@{iptarg}}
+\index{iptarg@{iptarg}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{iptarg}{iptarg}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable bsr\+\_\+phot\+::iptarg}
+
+\mbox{\Hypertarget{namespacebsr__phot_a3b6f92ce5b94beeb57da2f117c37ee52}\label{namespacebsr__phot_a3b6f92ce5b94beeb57da2f117c37ee52}} 
+\index{bsr\_phot@{bsr\_phot}!is@{is}}
+\index{is@{is}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{is}{is}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::is}
+
+\mbox{\Hypertarget{namespacebsr__phot_a0f64af65e485ca462180156ae99468e8}\label{namespacebsr__phot_a0f64af65e485ca462180156ae99468e8}} 
+\index{bsr\_phot@{bsr\_phot}!isi@{isi}}
+\index{isi@{isi}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{isi}{isi}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::isi}
+
+\mbox{\Hypertarget{namespacebsr__phot_a6370b1507eedd1d12c0c478931435ee6}\label{namespacebsr__phot_a6370b1507eedd1d12c0c478931435ee6}} 
+\index{bsr\_phot@{bsr\_phot}!istarg@{istarg}}
+\index{istarg@{istarg}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{istarg}{istarg}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable bsr\+\_\+phot\+::istarg}
+
+\mbox{\Hypertarget{namespacebsr__phot_ab84e720317da080d4ca5c7f7418e8888}\label{namespacebsr__phot_ab84e720317da080d4ca5c7f7418e8888}} 
+\index{bsr\_phot@{bsr\_phot}!khm@{khm}}
+\index{khm@{khm}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{khm}{khm}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::khm}
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & of pseudo-\/states \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacebsr__phot_a65ef2767abde0d463b69e6fe9533053d}\label{namespacebsr__phot_a65ef2767abde0d463b69e6fe9533053d}} 
+\index{bsr\_phot@{bsr\_phot}!klsp@{klsp}}
+\index{klsp@{klsp}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{klsp}{klsp}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::klsp = 0}
+
+\mbox{\Hypertarget{namespacebsr__phot_a2f115510046c93eeab9c6d03b9928157}\label{namespacebsr__phot_a2f115510046c93eeab9c6d03b9928157}} 
+\index{bsr\_phot@{bsr\_phot}!km@{km}}
+\index{km@{km}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{km}{km}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::km}
+
+
+\begin{DoxyParams}{Parameters}
+{\em max.\+multipole} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacebsr__phot_a383bf6ca3f4c31bacb49c92b1af15504}\label{namespacebsr__phot_a383bf6ca3f4c31bacb49c92b1af15504}} 
+\index{bsr\_phot@{bsr\_phot}!kmat@{kmat}}
+\index{kmat@{kmat}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{kmat}{kmat}}
+{\footnotesize\ttfamily real(8), dimension(\+:,\+:), allocatable bsr\+\_\+phot\+::kmat}
+
+\mbox{\Hypertarget{namespacebsr__phot_a85d227337262b85fc40e9397459bc64c}\label{namespacebsr__phot_a85d227337262b85fc40e9397459bc64c}} 
+\index{bsr\_phot@{bsr\_phot}!lch@{lch}}
+\index{lch@{lch}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{lch}{lch}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable bsr\+\_\+phot\+::lch}
+
+\mbox{\Hypertarget{namespacebsr__phot_ade7c55b93963df192cf3e09f01b6a744}\label{namespacebsr__phot_ade7c55b93963df192cf3e09f01b6a744}} 
+\index{bsr\_phot@{bsr\_phot}!ltarg@{ltarg}}
+\index{ltarg@{ltarg}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{ltarg}{ltarg}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable bsr\+\_\+phot\+::ltarg}
+
+\mbox{\Hypertarget{namespacebsr__phot_a52b19de0b138282ccb04a9d5e7d0902f}\label{namespacebsr__phot_a52b19de0b138282ccb04a9d5e7d0902f}} 
+\index{bsr\_phot@{bsr\_phot}!me@{me}}
+\index{me@{me}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{me}{me}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::me = 0}
+
+\mbox{\Hypertarget{namespacebsr__phot_a80f99bab23f3f038697026d608ae6123}\label{namespacebsr__phot_a80f99bab23f3f038697026d608ae6123}} 
+\index{bsr\_phot@{bsr\_phot}!mfgi@{mfgi}}
+\index{mfgi@{mfgi}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{mfgi}{mfgi}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::mfgi = 300}
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & of point in outer region \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacebsr__phot_a5d919b0263063e66057374075566db87}\label{namespacebsr__phot_a5d919b0263063e66057374075566db87}} 
+\index{bsr\_phot@{bsr\_phot}!myid@{myid}}
+\index{myid@{myid}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{myid}{myid}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::myid = 0}
+
+\mbox{\Hypertarget{namespacebsr__phot_aa6b938d607a6d2c81d9dc9eccca9fb7b}\label{namespacebsr__phot_aa6b938d607a6d2c81d9dc9eccca9fb7b}} 
+\index{bsr\_phot@{bsr\_phot}!nch@{nch}}
+\index{nch@{nch}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{nch}{nch}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::nch}
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & of channels \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacebsr__phot_a516d2d7c6123cb92cbb58d35354ee2df}\label{namespacebsr__phot_a516d2d7c6123cb92cbb58d35354ee2df}} 
+\index{bsr\_phot@{bsr\_phot}!nconat@{nconat}}
+\index{nconat@{nconat}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{nconat}{nconat}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable bsr\+\_\+phot\+::nconat}
+
+\mbox{\Hypertarget{namespacebsr__phot_a2670d84c88a64ea67e6946cc7e54b299}\label{namespacebsr__phot_a2670d84c88a64ea67e6946cc7e54b299}} 
+\index{bsr\_phot@{bsr\_phot}!ncp@{ncp}}
+\index{ncp@{ncp}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{ncp}{ncp}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::ncp}
+
+
+\begin{DoxyParams}{Parameters}
+{\em bound} & configurations \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacebsr__phot_a876d59b20c8d8a125a660ef533ee9c7d}\label{namespacebsr__phot_a876d59b20c8d8a125a660ef533ee9c7d}} 
+\index{bsr\_phot@{bsr\_phot}!ndm@{ndm}}
+\index{ndm@{ndm}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{ndm}{ndm}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::ndm}
+
+\mbox{\Hypertarget{namespacebsr__phot_aa868351d77d2c3289b55141d3868e8c3}\label{namespacebsr__phot_aa868351d77d2c3289b55141d3868e8c3}} 
+\index{bsr\_phot@{bsr\_phot}!nelc@{nelc}}
+\index{nelc@{nelc}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{nelc}{nelc}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::nelc}
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & of electrons \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacebsr__phot_a07e8525fb5ae26c7e59c594e2c392852}\label{namespacebsr__phot_a07e8525fb5ae26c7e59c594e2c392852}} 
+\index{bsr\_phot@{bsr\_phot}!nhm@{nhm}}
+\index{nhm@{nhm}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{nhm}{nhm}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::nhm}
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & of R-\/matrix basis \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacebsr__phot_a728b32e5eaaeb21bee24ab35729216f1}\label{namespacebsr__phot_a728b32e5eaaeb21bee24ab35729216f1}} 
+\index{bsr\_phot@{bsr\_phot}!nprocs@{nprocs}}
+\index{nprocs@{nprocs}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{nprocs}{nprocs}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::nprocs = 1}
+
+\mbox{\Hypertarget{namespacebsr__phot_ad4aa69cdd9f611dec7e6cb6658408b09}\label{namespacebsr__phot_ad4aa69cdd9f611dec7e6cb6658408b09}} 
+\index{bsr\_phot@{bsr\_phot}!nrange@{nrange}}
+\index{nrange@{nrange}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{nrange}{nrange}}
+{\footnotesize\ttfamily integer parameter bsr\+\_\+phot\+::nrange = 10}
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & of energy intervals \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacebsr__phot_a6212c6cf00c152c8b366f6524baa2387}\label{namespacebsr__phot_a6212c6cf00c152c8b366f6524baa2387}} 
+\index{bsr\_phot@{bsr\_phot}!ntarg@{ntarg}}
+\index{ntarg@{ntarg}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{ntarg}{ntarg}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::ntarg}
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & of target states \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacebsr__phot_a1d9350f4157517defa757851bb0ec773}\label{namespacebsr__phot_a1d9350f4157517defa757851bb0ec773}} 
+\index{bsr\_phot@{bsr\_phot}!nub@{nub}}
+\index{nub@{nub}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{nub}{nub}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::nub = 14}
+
+\mbox{\Hypertarget{namespacebsr__phot_a1091588b7f2bc58e454e70a042bdfbe6}\label{namespacebsr__phot_a1091588b7f2bc58e454e70a042bdfbe6}} 
+\index{bsr\_phot@{bsr\_phot}!nud@{nud}}
+\index{nud@{nud}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{nud}{nud}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::nud = 11}
+
+\mbox{\Hypertarget{namespacebsr__phot_a49bf6a567aaf2a077dc05e5f778fb47f}\label{namespacebsr__phot_a49bf6a567aaf2a077dc05e5f778fb47f}} 
+\index{bsr\_phot@{bsr\_phot}!nuh@{nuh}}
+\index{nuh@{nuh}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{nuh}{nuh}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::nuh = 12}
+
+\mbox{\Hypertarget{namespacebsr__phot_abed5d0a09f6af1fd0b0ee5e6966c9262}\label{namespacebsr__phot_abed5d0a09f6af1fd0b0ee5e6966c9262}} 
+\index{bsr\_phot@{bsr\_phot}!nuw@{nuw}}
+\index{nuw@{nuw}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{nuw}{nuw}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::nuw = 13}
+
+\mbox{\Hypertarget{namespacebsr__phot_a8688776f5323c713f3fb64f8127e5d51}\label{namespacebsr__phot_a8688776f5323c713f3fb64f8127e5d51}} 
+\index{bsr\_phot@{bsr\_phot}!nwt@{nwt}}
+\index{nwt@{nwt}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{nwt}{nwt}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::nwt = -\/1}
+
+\mbox{\Hypertarget{namespacebsr__phot_a83340b0b3def6085256e8c78f06141d4}\label{namespacebsr__phot_a83340b0b3def6085256e8c78f06141d4}} 
+\index{bsr\_phot@{bsr\_phot}!nz@{nz}}
+\index{nz@{nz}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{nz}{nz}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::nz}
+
+
+\begin{DoxyParams}{Parameters}
+{\em nuclear} & charge \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacebsr__phot_a836a9baa47c4ecade13d74a6ac083e4e}\label{namespacebsr__phot_a836a9baa47c4ecade13d74a6ac083e4e}} 
+\index{bsr\_phot@{bsr\_phot}!pri@{pri}}
+\index{pri@{pri}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{pri}{pri}}
+{\footnotesize\ttfamily integer bsr\+\_\+phot\+::pri = 66}
+
+\mbox{\Hypertarget{namespacebsr__phot_a6c1440082ac3d42cbfec057019a01712}\label{namespacebsr__phot_a6c1440082ac3d42cbfec057019a01712}} 
+\index{bsr\_phot@{bsr\_phot}!ra@{ra}}
+\index{ra@{ra}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{ra}{ra}}
+{\footnotesize\ttfamily real(8) bsr\+\_\+phot\+::ra}
+
+\mbox{\Hypertarget{namespacebsr__phot_ac60cc27104753c0e82027fe4b2bd447e}\label{namespacebsr__phot_ac60cc27104753c0e82027fe4b2bd447e}} 
+\index{bsr\_phot@{bsr\_phot}!rb@{rb}}
+\index{rb@{rb}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{rb}{rb}}
+{\footnotesize\ttfamily real(8) bsr\+\_\+phot\+::rb}
+
+\mbox{\Hypertarget{namespacebsr__phot_a8889e768864b46c38668aa24c67fb109}\label{namespacebsr__phot_a8889e768864b46c38668aa24c67fb109}} 
+\index{bsr\_phot@{bsr\_phot}!rmat@{rmat}}
+\index{rmat@{rmat}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{rmat}{rmat}}
+{\footnotesize\ttfamily real(8), dimension(\+:,\+:), allocatable bsr\+\_\+phot\+::rmat}
+
+\mbox{\Hypertarget{namespacebsr__phot_a9324079b438be192e3aa37ff1e338e95}\label{namespacebsr__phot_a9324079b438be192e3aa37ff1e338e95}} 
+\index{bsr\_phot@{bsr\_phot}!rmati@{rmati}}
+\index{rmati@{rmati}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{rmati}{rmati}}
+{\footnotesize\ttfamily real(8), dimension(\+:,\+:), allocatable bsr\+\_\+phot\+::rmati}
+
+\mbox{\Hypertarget{namespacebsr__phot_a9ab74d8ea1788d5cd287fa341ba2d49a}\label{namespacebsr__phot_a9ab74d8ea1788d5cd287fa341ba2d49a}} 
+\index{bsr\_phot@{bsr\_phot}!sl@{sl}}
+\index{sl@{sl}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{sl}{sl}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable bsr\+\_\+phot\+::sl}
+
+\mbox{\Hypertarget{namespacebsr__phot_ad2054c646dec5f75108758a6aa61e767}\label{namespacebsr__phot_ad2054c646dec5f75108758a6aa61e767}} 
+\index{bsr\_phot@{bsr\_phot}!slp@{slp}}
+\index{slp@{slp}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{slp}{slp}}
+{\footnotesize\ttfamily real(8) bsr\+\_\+phot\+::slp}
+
+\mbox{\Hypertarget{namespacebsr__phot_a02fc0d039e5fb6f333992bfb8a188af1}\label{namespacebsr__phot_a02fc0d039e5fb6f333992bfb8a188af1}} 
+\index{bsr\_phot@{bsr\_phot}!sv@{sv}}
+\index{sv@{sv}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{sv}{sv}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable bsr\+\_\+phot\+::sv}
+
+\mbox{\Hypertarget{namespacebsr__phot_a1f514ca446fb858d23fd7336855ee015}\label{namespacebsr__phot_a1f514ca446fb858d23fd7336855ee015}} 
+\index{bsr\_phot@{bsr\_phot}!svp@{svp}}
+\index{svp@{svp}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{svp}{svp}}
+{\footnotesize\ttfamily real(8) bsr\+\_\+phot\+::svp}
+
+\mbox{\Hypertarget{namespacebsr__phot_a0d62ad48b78ad504f6685ea104b3454f}\label{namespacebsr__phot_a0d62ad48b78ad504f6685ea104b3454f}} 
+\index{bsr\_phot@{bsr\_phot}!ui@{ui}}
+\index{ui@{ui}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable bsr\+\_\+phot\+::ui}
+
+\mbox{\Hypertarget{namespacebsr__phot_a009d53c13b746a16d0074902dce4ed20}\label{namespacebsr__phot_a009d53c13b746a16d0074902dce4ed20}} 
+\index{bsr\_phot@{bsr\_phot}!uk@{uk}}
+\index{uk@{uk}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{uk}{uk}}
+{\footnotesize\ttfamily real(8), dimension(\+:,\+:), allocatable bsr\+\_\+phot\+::uk}
+
+\mbox{\Hypertarget{namespacebsr__phot_aa25ce954f239c596d3f3d9836b667e26}\label{namespacebsr__phot_aa25ce954f239c596d3f3d9836b667e26}} 
+\index{bsr\_phot@{bsr\_phot}!v@{v}}
+\index{v@{v}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{v}{v}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable bsr\+\_\+phot\+::v}
+
+\mbox{\Hypertarget{namespacebsr__phot_a893a0d218f16e3d13f556a8fdf8da928}\label{namespacebsr__phot_a893a0d218f16e3d13f556a8fdf8da928}} 
+\index{bsr\_phot@{bsr\_phot}!value@{value}}
+\index{value@{value}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable bsr\+\_\+phot\+::value}
+
+\mbox{\Hypertarget{namespacebsr__phot_aef6c7828f769672e7f4f78822fa66a9b}\label{namespacebsr__phot_aef6c7828f769672e7f4f78822fa66a9b}} 
+\index{bsr\_phot@{bsr\_phot}!wmat@{wmat}}
+\index{wmat@{wmat}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{wmat}{wmat}}
+{\footnotesize\ttfamily real(8), dimension(\+:,\+:), allocatable bsr\+\_\+phot\+::wmat}
+
+\mbox{\Hypertarget{namespacebsr__phot_a56ab69a3472d6a5b5c493d8abeb43437}\label{namespacebsr__phot_a56ab69a3472d6a5b5c493d8abeb43437}} 
+\index{bsr\_phot@{bsr\_phot}!wt@{wt}}
+\index{wt@{wt}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{wt}{wt}}
+{\footnotesize\ttfamily real(8), dimension(\+:,\+:), allocatable bsr\+\_\+phot\+::wt}
+
+\mbox{\Hypertarget{namespacebsr__phot_ac0578dc21079c0f2268f03af2f34c463}\label{namespacebsr__phot_ac0578dc21079c0f2268f03af2f34c463}} 
+\index{bsr\_phot@{bsr\_phot}!wtch@{wtch}}
+\index{wtch@{wtch}!bsr\_phot@{bsr\_phot}}
+\doxysubsubsection{\texorpdfstring{wtch}{wtch}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable bsr\+\_\+phot\+::wtch}
+

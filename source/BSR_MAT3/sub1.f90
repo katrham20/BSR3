@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine SUB1
 !======================================================================
-!     provides calculations for one partial wave
+!> @ingroup bsr_mat
+!> @brief     provides calculations for one partial wave
 !----------------------------------------------------------------------
       Use bsr_mat
       Use cmdata

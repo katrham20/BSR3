@@ -1,22 +1,23 @@
 !=======================================================================
       Subroutine PHOT_SEC (EK,Ephot,GI,nopen) 
 !=======================================================================
-!     CALCULATES PHOTOIONIZATION CROSS SECTIONS AT GIVEN ENERGY
-!     (for given initial state and final partial wave)
+!> @ingroup bsr_phot
+!> @brief     CALCULATES PHOTOIONIZATION CROSS SECTIONS AT GIVEN ENERGY
+!>     (for given initial state and final partial wave)
 !
-!     INPUT:
-!
-!     EK           - elctron energy (Ry)
-!     EPHOT        - photon energy (Ry)
-!     GI           - statistical weight for initial state
-!     DK           - DIPOLE VECTORS, 1=LENGTH, 2=VELOCITY.
-!
-!     OUTPUT:
-!
-!     DL,DV        - channels DIPOLE VECTORS (within -i factor)
-!     SL,SV        - channels CROSS SECTIONS
-!     SLP,SVP      - partial  CROSS SECTIONS
-!
+!>     INPUT:
+!!
+!!     EK           - elctron energy (Ry)
+!!     EPHOT        - photon energy (Ry)
+!!     GI           - statistical weight for initial state
+!!     DK           - DIPOLE VECTORS, 1=LENGTH, 2=VELOCITY.
+!!
+!!     OUTPUT:
+!!
+!!     DL,DV        - channels DIPOLE VECTORS (within -i factor)
+!!     SL,SV        - channels CROSS SECTIONS
+!!     SLP,SVP      - partial  CROSS SECTIONS
+!!
 !-----------------------------------------------------------------------
       Use bsr_phot
 

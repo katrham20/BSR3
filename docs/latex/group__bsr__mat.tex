@@ -1,0 +1,1334 @@
+\hypertarget{group__bsr__mat}{}\doxysection{Bsr\+\_\+mat}
+\label{group__bsr__mat}\index{Bsr\_mat@{Bsr\_mat}}
+
+
+Generate the interaction matrixes in B-\/spline representation.  
+
+
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_gaecc5c7144cc305a1692709b811ee0022}{add\+\_\+cdata}} (ip, jp, C, j1, j2, j3, j4)
+\begin{DoxyCompactList}\small\item\em add new data (C,j1,j2,j3,j4) to the list (ip\+:jp) in module cmdata \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_gaca8bcb501ac0147d13aa3bfbd9a5a934}{add\+\_\+coef}} (C, j1, j2, j3, j4)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_gab4b084bd6e249e6378845de9a56b81fd}{bs\+\_\+orth}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga0ab1de4a750178e1755ee67a80431932}{bsr\+\_\+mat\+\_\+inf}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga8005bfea023f4e763e7b1aec30de7cee}{check\+\_\+det}} (kdn, N1, N2, iext)
+\begin{DoxyCompactList}\small\item\em expend the total overlap determinant so that to extract one-\/electron overlaps with continuum orbitals \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga7609207df74422f8b2758f1a48de118d}{shift}} (n, m, N1, N2)
+\begin{DoxyCompactList}\small\item\em array N2 obtained from array N1 by deleting element \textquotesingle{}m\textquotesingle{} \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_gae5f049653c4071f1926f39c91ead5168}{check\+\_\+mat}} (met)
+\begin{DoxyCompactList}\small\item\em check the overlap matrix for big overlaps and assign new orthogonality conditions if needed \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga90c3451b67ceab57cb6bdea6dfd91f60}{det\+\_\+fact}} (idf, I\+P\+N1, I\+P\+N2)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga5e417b1eb2333d1787f33a4e54936605}{f\+\_\+values}}
+\item 
+real(8) function \mbox{\hyperlink{group__bsr__mat_ga2f53371f0a86dae4b72d31aba3564bff}{reduce\+\_\+factor}} (ich, jch, k)
+\begin{DoxyCompactList}\small\item\em define factor connecing reduced dipole matrix element with asymptotic coefficient for multipole index k \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_gaee20a200065c16a15bd939770e0b49dd}{gen\+\_\+matrix}} (jtype, jpol)
+\begin{DoxyCompactList}\small\item\em merge data and generate the interaction matrix for current itype \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga75783f72551fe654ab29d55bf336d369}{get\+\_\+v}} (ii, jj, v)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga4884f97fcff28a8fb16a879d24722743}{i\+\_\+data}} (jtype, jpol)
+\item 
+integer function \mbox{\hyperlink{group__bsr__mat_ga609bbd7fa970c4d6290468a42a395906}{ifind\+\_\+channel\+\_\+serial}} (ic)
+\begin{DoxyCompactList}\small\item\em find channel (or perturber) for given configuration \textquotesingle{}ic\textquotesingle{} \end{DoxyCompactList}\item 
+integer function \mbox{\hyperlink{group__bsr__mat_ga2727469ba9e20d91a6158dc13880a30a}{idef\+\_\+itype}} (i1, i2, i3, i4, io, jo, ic, jc, k1, k2, k3, k4, ibi)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga5cd5a33848d99e56fd504fe053d3e5f7}{inf\+\_\+bsr\+\_\+mat}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_gaea49348f90e755d41a4720c7b4b925cd}{jsym\+\_\+int}} (met, i1, i2, i3, i4)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_gae9d7256efddcadb09785f06f0b1b9431}{alloc\+\_\+lcore}} (ns, ks, nbf)
+\begin{DoxyCompactList}\small\item\em allocate (deallocate) arrays in module L\+\_\+core \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga56cddcf4108a3b0a144e49f655e70e4e}{gen\+\_\+lval}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga49eb8485de3fa2b69600b916b3f294e7}{int\+\_\+core}} (l)
+\begin{DoxyCompactList}\small\item\em generate B-\/spline representation for interaction with core \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_gae9277a5b04cada2d259fa5990dd98d8f}{mvcv}} (l, vc)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga31f955cb753cd82e1443578a0e05cf55}{l\+\_\+data}} (jtype, l)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_gacb61b6365a22b464545b654107a56915}{merge\+\_\+cdata}} (nn, ip, jp, nc, eps\+\_\+cc)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga021aa58b6d137adbbfe6ad8228ad87d0}{allocate\+\_\+cmdata}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga6262addd2372f5b910f065c5e9e2c9cb}{initilize\+\_\+cmdata}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga022f005e9c5a726e0aafbfe841c8dbcb}{read\+\_\+dets}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga78af874d39aa31ced6aff5f113b4bf94}{allocate\+\_\+matrix}} (nch, ns, ncp, \mbox{\hyperlink{_r_a_d_i_a_l_2zint_8f90_a742b2f716e44fb7944c8e21ecc31ba98}{mk}}, ncfg)
+\begin{DoxyCompactList}\small\item\em allocate arrays in module \mbox{\hyperlink{namespacebsr__matrix}{bsr\+\_\+matrix}} \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga8ec3b742ec7541197da9e9a49bb7c3b7}{update\+\_\+hx}} (ich, jch, ns, ks, d, sym)
+\begin{DoxyCompactList}\small\item\em update channel block \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga7677a4f429f4e454fa43e7daf2b0d918}{update\+\_\+hl}} (ich, jch, ns, ks, d, c)
+\begin{DoxyCompactList}\small\item\em update symmetric banded matrix in lower-\/column storage mode ! \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_gac9cf44c0c9fc5ad2dd435599ea85f4fc}{update\+\_\+hb}} (ic, jc, c)
+\begin{DoxyCompactList}\small\item\em update scalar in the bound-\/bound block \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga579285c9aa90774a8452e7d02f54507d}{update\+\_\+hv}} (ich, ic, ns, v, c)
+\begin{DoxyCompactList}\small\item\em update vector in the channel-\/bound block \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_gaaa8bf8509f43227d5f00d3d0f423939f}{update\+\_\+hw}} (ich, jch, ns, v, w)
+\begin{DoxyCompactList}\small\item\em update channel block with by v$\ast$w \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga1b5b0c928f5bd0959e03c3d23f136fe5}{update\+\_\+cf}} (k, ich, jch, C)
+\begin{DoxyCompactList}\small\item\em Update asymptotic coefficients. \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga38c33a8251c1d7e2759702c9ebad6f06}{target\+\_\+h}} (ich, jch, C, CC)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_gae18d8db1b226e35e6280aff288338a80}{target\+\_\+print}} (iout, EC, eps)
+\begin{DoxyCompactList}\small\item\em prints target info \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga3a63e173bdc2dbf0377b174dc162ef1e}{target\+\_\+new}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_gae8e42d9d606df9bcaecf1b767e5106b5}{allocate\+\_\+ndefs}} (m)
+\begin{DoxyCompactList}\small\item\em allocate arrays in module ndefs \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga264a971a9f0ec5398f4dc7ad48817982}{iadd\+\_\+ndefs}} (io, jo, S)
+\begin{DoxyCompactList}\small\item\em add new overlap factor if S $>$ Eps\+\_\+det \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_gab18fa91f9ef0a4fa46223eb20984b401}{allocate\+\_\+ndets}} (m)
+\begin{DoxyCompactList}\small\item\em allocate arrays in module ndets \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga50885f1ee12bb74c53e7e1cc3d576806}{iadd\+\_\+ndets}} (io, jo, S)
+\begin{DoxyCompactList}\small\item\em add new determinat overlap if S $>$ Eps\+\_\+det \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga3361f70e89302ec2c692df11ae50028a}{o\+\_\+data}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga6046b07a0612b9253dbf40fa45cd7fa3}{pri\+\_\+int}} (nu, icase, k, i1, i2, i3, i4, S)
+\begin{DoxyCompactList}\small\item\em print the integral for debug purposes \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga3e76be764ac0eec49ea1f658c431f0b4}{read\+\_\+arg}} (nu)
+\begin{DoxyCompactList}\small\item\em read input parameters \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga16b40b53422dc67fe65cf793458d956b}{read\+\_\+bsw}} (nu)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_gae0e423f95e4e3d38efddcd41b370d0cd}{read\+\_\+conf}} (nuc, nub)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_gaae3f5c99fcf27fce39382bb506c6ca50}{read\+\_\+data}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga674f2cb9ac4e85268ece9a306f1f7965}{record\+\_\+matrix}} (nu)
+\begin{DoxyCompactList}\small\item\em record interaction (overlap) matrix to the unit \textquotesingle{}nu\textquotesingle{} \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_gaec39886073e72965c1d3b0438b03e243}{state\+\_\+res}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga40c2d1441db2c6dbe37c5c433560f8c7}{sub1}}
+\item 
+real(8) function \mbox{\hyperlink{group__bsr__mat_gaa5916f9f05e8e66f538f9a4196d13af1}{vdet}} (kd, N1, N2)
+\begin{DoxyCompactList}\small\item\em calculate the value of overlap determinant for given orbitals Calls\+: D\+ET \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga08f4166bf9b9cd3735b9a7cfbce476e0}{alloc\+\_\+zcore}} (ns, ks, nbf)
+\begin{DoxyCompactList}\small\item\em allocate arrays in module Z\+\_\+core \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_gafe0b04565ad7519f523707bf01ff0eda}{gen\+\_\+zval}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga5dd32e07d22034a2568fd1356a9f0a80}{intz\+\_\+core}} (l)
+\begin{DoxyCompactList}\small\item\em generate B-\/splne representation in array zl\+\_\+core for Z-\/integrals with core interaction for given l \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga4247a44666ad6f229792e15bb0dfa93c}{gen\+\_\+zzeta}} (rm, izcorr)
+\begin{DoxyCompactList}\small\item\em B-\/spline matrix for Z$\ast$fine$\ast$1/r$^\wedge$3, Used for spin-\/orbit interaction; if izcorr $>$ 0, multiplied with correction r/(r+2$\ast$z$\ast$fine) \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__mat_ga86aad19d1517654fef57ae806dbf8927}{z\+\_\+data}} (jtype, l)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{group__bsr__mat_ga9e6abf295659518186a90e82f5225f75}{l\+\_\+core\+::lh\+\_\+dir}}
+\begin{DoxyCompactList}\small\item\em contain B-\/spline representation for L-\/integral including the interaction with common core \end{DoxyCompactList}\item 
+integer \mbox{\hyperlink{group__bsr__mat_gaf3e82e5aaa6dbd55b62a26d696f5ddc9}{bsr\+\_\+matrix\+::kch}}
+\item 
+integer, parameter \mbox{\hyperlink{group__bsr__mat_gac8b59f259bef35dc4d68f1cb8102ca76}{bsr\+\_\+mat\+::ma}} =20
+\begin{DoxyCompactList}\small\item\em main parameters for the B\+S\+R\+\_\+\+M\+AT program \end{DoxyCompactList}\item 
+integer \mbox{\hyperlink{group__bsr__mat_ga1307721a915029971f2d37812bc53c39}{z\+\_\+core\+::lz\+\_\+dir}}
+\begin{DoxyCompactList}\small\item\em contains B-\/splne representation for Z-\/integral including the interaction with core \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generate the interaction matrixes in B-\/spline representation. 
+
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{group__bsr__mat_gaecc5c7144cc305a1692709b811ee0022}\label{group__bsr__mat_gaecc5c7144cc305a1692709b811ee0022}} 
+\index{Bsr\_mat@{Bsr\_mat}!add\_cdata@{add\_cdata}}
+\index{add\_cdata@{add\_cdata}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{add\_cdata()}{add\_cdata()}}
+{\footnotesize\ttfamily subroutine add\+\_\+cdata (\begin{DoxyParamCaption}\item[{integer}]{ip,  }\item[{integer}]{jp,  }\item[{real(8)}]{C,  }\item[{integer}]{j1,  }\item[{integer}]{j2,  }\item[{integer}]{j3,  }\item[{integer}]{j4 }\end{DoxyParamCaption})}
+
+
+
+add new data (C,j1,j2,j3,j4) to the list (ip\+:jp) in module cmdata 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip} & \\
+\hline
+{\em jp} & add new data (C,j1,j2,j3,j4) to the list (ip\+:jp) in module cmdata \\
+\hline
+{\em j1} & add new data (C,j1,j2,j3,j4) to the list (ip\+:jp) in module cmdata \\
+\hline
+{\em j2} & add new data (C,j1,j2,j3,j4) to the list (ip\+:jp) in module cmdata \\
+\hline
+{\em j3} & add new data (C,j1,j2,j3,j4) to the list (ip\+:jp) in module cmdata \\
+\hline
+{\em j4} & add new data (C,j1,j2,j3,j4) to the list (ip\+:jp) in module cmdata \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_gaca8bcb501ac0147d13aa3bfbd9a5a934}\label{group__bsr__mat_gaca8bcb501ac0147d13aa3bfbd9a5a934}} 
+\index{Bsr\_mat@{Bsr\_mat}!add\_coef@{add\_coef}}
+\index{add\_coef@{add\_coef}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{add\_coef()}{add\_coef()}}
+{\footnotesize\ttfamily subroutine add\+\_\+coef (\begin{DoxyParamCaption}\item[{real(8)}]{C,  }\item[{integer}]{j1,  }\item[{integer}]{j2,  }\item[{integer}]{j3,  }\item[{integer}]{j4 }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & @bsr\+\_\+brief add new coefficient to the list in cmdata module \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_gae9d7256efddcadb09785f06f0b1b9431}\label{group__bsr__mat_gae9d7256efddcadb09785f06f0b1b9431}} 
+\index{Bsr\_mat@{Bsr\_mat}!alloc\_lcore@{alloc\_lcore}}
+\index{alloc\_lcore@{alloc\_lcore}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{alloc\_lcore()}{alloc\_lcore()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+lcore (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ns,  }\item[{integer, intent(in)}]{ks,  }\item[{integer, intent(in)}]{nbf }\end{DoxyParamCaption})}
+
+
+
+allocate (deallocate) arrays in module L\+\_\+core 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ns} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em ks} & allocate (deallocate) arrays in module L\+\_\+core \\
+\hline
+\mbox{\texttt{ in}}  & {\em nbf} & allocate (deallocate) arrays in module L\+\_\+core \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_ga08f4166bf9b9cd3735b9a7cfbce476e0}\label{group__bsr__mat_ga08f4166bf9b9cd3735b9a7cfbce476e0}} 
+\index{Bsr\_mat@{Bsr\_mat}!alloc\_zcore@{alloc\_zcore}}
+\index{alloc\_zcore@{alloc\_zcore}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{alloc\_zcore()}{alloc\_zcore()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+zcore (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ns,  }\item[{integer, intent(in)}]{ks,  }\item[{integer, intent(in)}]{nbf }\end{DoxyParamCaption})}
+
+
+
+allocate arrays in module Z\+\_\+core 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ns} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em ks} & allocate arrays in module Z\+\_\+core \\
+\hline
+\mbox{\texttt{ in}}  & {\em nbf} & allocate arrays in module Z\+\_\+core \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_ga021aa58b6d137adbbfe6ad8228ad87d0}\label{group__bsr__mat_ga021aa58b6d137adbbfe6ad8228ad87d0}} 
+\index{Bsr\_mat@{Bsr\_mat}!allocate\_cmdata@{allocate\_cmdata}}
+\index{allocate\_cmdata@{allocate\_cmdata}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{allocate\_cmdata()}{allocate\_cmdata()}}
+{\footnotesize\ttfamily subroutine allocate\+\_\+cmdata}
+
+allocate arrays in module cmdata\mbox{\Hypertarget{group__bsr__mat_ga78af874d39aa31ced6aff5f113b4bf94}\label{group__bsr__mat_ga78af874d39aa31ced6aff5f113b4bf94}} 
+\index{Bsr\_mat@{Bsr\_mat}!allocate\_matrix@{allocate\_matrix}}
+\index{allocate\_matrix@{allocate\_matrix}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{allocate\_matrix()}{allocate\_matrix()}}
+{\footnotesize\ttfamily subroutine allocate\+\_\+matrix (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nch,  }\item[{integer, intent(in)}]{ns,  }\item[{integer, intent(in)}]{ncp,  }\item[{integer, intent(in)}]{mk,  }\item[{integer, intent(in)}]{ncfg }\end{DoxyParamCaption})}
+
+
+
+allocate arrays in module \mbox{\hyperlink{namespacebsr__matrix}{bsr\+\_\+matrix}} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nch} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em ns} & allocate arrays in module \mbox{\hyperlink{namespacebsr__matrix}{bsr\+\_\+matrix}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em ncp} & allocate arrays in module \mbox{\hyperlink{namespacebsr__matrix}{bsr\+\_\+matrix}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em mk} & allocate arrays in module \mbox{\hyperlink{namespacebsr__matrix}{bsr\+\_\+matrix}} \\
+\hline
+\mbox{\texttt{ in}}  & {\em ncfg} & allocate arrays in module \mbox{\hyperlink{namespacebsr__matrix}{bsr\+\_\+matrix}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_gae8e42d9d606df9bcaecf1b767e5106b5}\label{group__bsr__mat_gae8e42d9d606df9bcaecf1b767e5106b5}} 
+\index{Bsr\_mat@{Bsr\_mat}!allocate\_ndefs@{allocate\_ndefs}}
+\index{allocate\_ndefs@{allocate\_ndefs}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{allocate\_ndefs()}{allocate\_ndefs()}}
+{\footnotesize\ttfamily subroutine allocate\+\_\+ndefs (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{m }\end{DoxyParamCaption})}
+
+
+
+allocate arrays in module ndefs 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em m} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_gab18fa91f9ef0a4fa46223eb20984b401}\label{group__bsr__mat_gab18fa91f9ef0a4fa46223eb20984b401}} 
+\index{Bsr\_mat@{Bsr\_mat}!allocate\_ndets@{allocate\_ndets}}
+\index{allocate\_ndets@{allocate\_ndets}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{allocate\_ndets()}{allocate\_ndets()}}
+{\footnotesize\ttfamily subroutine allocate\+\_\+ndets (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{m }\end{DoxyParamCaption})}
+
+
+
+allocate arrays in module ndets 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em m} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_gab4b084bd6e249e6378845de9a56b81fd}\label{group__bsr__mat_gab4b084bd6e249e6378845de9a56b81fd}} 
+\index{Bsr\_mat@{Bsr\_mat}!bs\_orth@{bs\_orth}}
+\index{bs\_orth@{bs\_orth}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{bs\_orth()}{bs\_orth()}}
+{\footnotesize\ttfamily subroutine bs\+\_\+orth}
+
+Including the orthogonal conditions for scattering orbitals by updating the interaction matrix according the procedure suggested by M.\+Bentley J.\+Phys.\+B27 (1994) 637.
+
+Let i-\/th channel is supposed to be orthogonal to orbital p. It can be achieved by following modification of Hamiltonian\+: \begin{DoxyVerb}       H -->  (1 - Bcc') H (1 - cc'B) 
+\end{DoxyVerb}
+
+
+where c -\/ full solution vector with all zero elements except the channel i is replaced on B-\/spline expansion of orbital p primes denote the transportasion.
+
+It leads to transformation of separate blocks H(i,j)\+:
+
+H(i,j) with j $<$$>$ i -\/-\/$>$ (1 -\/ Bpp\textquotesingle{}) H(i,j) ~\newline
+ H(j,i) with j $<$$>$ i -\/-\/$>$ H(i,j) (1 -\/ pp\textquotesingle{}B) ~\newline
+ H(i,i) with j = i -\/-\/$>$ (1 -\/ Bpp\textquotesingle{}) H(i,j) (1 -\/ pp\textquotesingle{}B) ~\newline
+ j also includes the block for interaction with perturbers\mbox{\Hypertarget{group__bsr__mat_ga0ab1de4a750178e1755ee67a80431932}\label{group__bsr__mat_ga0ab1de4a750178e1755ee67a80431932}} 
+\index{Bsr\_mat@{Bsr\_mat}!bsr\_mat\_inf@{bsr\_mat\_inf}}
+\index{bsr\_mat\_inf@{bsr\_mat\_inf}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{bsr\_mat\_inf()}{bsr\_mat\_inf()}}
+{\footnotesize\ttfamily subroutine bsr\+\_\+mat\+\_\+inf}
+
+provide information about \mbox{\hyperlink{namespacebsr__mat}{bsr\+\_\+mat}} program\mbox{\Hypertarget{group__bsr__mat_ga8005bfea023f4e763e7b1aec30de7cee}\label{group__bsr__mat_ga8005bfea023f4e763e7b1aec30de7cee}} 
+\index{Bsr\_mat@{Bsr\_mat}!check\_det@{check\_det}}
+\index{check\_det@{check\_det}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{check\_det()}{check\_det()}}
+{\footnotesize\ttfamily subroutine check\+\_\+det (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{kdn,  }\item[{integer, dimension($\ast$), intent(in)}]{N1,  }\item[{integer, dimension($\ast$), intent(in)}]{N2,  }\item[{integer, intent(in)}]{iext }\end{DoxyParamCaption})}
+
+
+
+expend the total overlap determinant so that to extract one-\/electron overlaps with continuum orbitals 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em kdn} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em iext} & expend the total overlap determinant so that to extract one-\/electron overlaps with continuum orbitals \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_gae5f049653c4071f1926f39c91ead5168}\label{group__bsr__mat_gae5f049653c4071f1926f39c91ead5168}} 
+\index{Bsr\_mat@{Bsr\_mat}!check\_mat@{check\_mat}}
+\index{check\_mat@{check\_mat}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{check\_mat()}{check\_mat()}}
+{\footnotesize\ttfamily subroutine check\+\_\+mat (\begin{DoxyParamCaption}\item[{integer}]{met }\end{DoxyParamCaption})}
+
+
+
+check the overlap matrix for big overlaps and assign new orthogonality conditions if needed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em met} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_ga90c3451b67ceab57cb6bdea6dfd91f60}\label{group__bsr__mat_ga90c3451b67ceab57cb6bdea6dfd91f60}} 
+\index{Bsr\_mat@{Bsr\_mat}!det\_fact@{det\_fact}}
+\index{det\_fact@{det\_fact}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{det\_fact()}{det\_fact()}}
+{\footnotesize\ttfamily subroutine det\+\_\+fact (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{idf,  }\item[{integer, dimension($\ast$), intent(in)}]{I\+P\+N1,  }\item[{integer, dimension($\ast$), intent(in)}]{I\+P\+N2 }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em idf} & Analize the determinant overlap factor. First each overlap determinant is expended into one-\/electron overlaps $<$nl$\vert$n\textquotesingle{}l\textquotesingle{}$>$, with overlaps included only known radial func. to be directly calculated. Results are places in module \mbox{\hyperlink{namespacenew__dets}{new\+\_\+dets}}. Then overlap determinant are combined to obtain the final overlap factors as\+: C, C $<$kl$\vert$nl$>$ or C $<$kl$\vert$k\textquotesingle{}l\textquotesingle{}$>$. Results are places in module \mbox{\hyperlink{namespacenew__defs}{new\+\_\+defs}}.\\
+\hline
+\mbox{\texttt{ in}}  & {\em ipn1} & Analize the determinant overlap factor. First each overlap determinant is expended into one-\/electron overlaps $<$nl$\vert$n\textquotesingle{}l\textquotesingle{}$>$, with overlaps included only known radial func. to be directly calculated. Results are places in module \mbox{\hyperlink{namespacenew__dets}{new\+\_\+dets}}. Then overlap determinant are combined to obtain the final overlap factors as\+: C, C $<$kl$\vert$nl$>$ or C $<$kl$\vert$k\textquotesingle{}l\textquotesingle{}$>$. Results are places in module \mbox{\hyperlink{namespacenew__defs}{new\+\_\+defs}}.\\
+\hline
+\mbox{\texttt{ in}}  & {\em ipn2} & Analize the determinant overlap factor. First each overlap determinant is expended into one-\/electron overlaps $<$nl$\vert$n\textquotesingle{}l\textquotesingle{}$>$, with overlaps included only known radial func. to be directly calculated. Results are places in module \mbox{\hyperlink{namespacenew__dets}{new\+\_\+dets}}. Then overlap determinant are combined to obtain the final overlap factors as\+: C, C $<$kl$\vert$nl$>$ or C $<$kl$\vert$k\textquotesingle{}l\textquotesingle{}$>$. Results are places in module \mbox{\hyperlink{namespacenew__defs}{new\+\_\+defs}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_ga5e417b1eb2333d1787f33a4e54936605}\label{group__bsr__mat_ga5e417b1eb2333d1787f33a4e54936605}} 
+\index{Bsr\_mat@{Bsr\_mat}!f\_values@{f\_values}}
+\index{f\_values@{f\_values}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{f\_values()}{f\_values()}}
+{\footnotesize\ttfamily subroutine f\+\_\+values}
+
+define the f-\/values between target states based on the given asimptotic coefficients A\+CF for k=1\mbox{\Hypertarget{group__bsr__mat_ga56cddcf4108a3b0a144e49f655e70e4e}\label{group__bsr__mat_ga56cddcf4108a3b0a144e49f655e70e4e}} 
+\index{Bsr\_mat@{Bsr\_mat}!gen\_lval@{gen\_lval}}
+\index{gen\_lval@{gen\_lval}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{gen\_lval()}{gen\_lval()}}
+{\footnotesize\ttfamily subroutine gen\+\_\+lval}
+
+Generate the L-\/integrals $<$i$\vert$\+L$\vert$j$>$ and vectors $<$.$\vert$\+L$\vert$j$>$\mbox{\Hypertarget{group__bsr__mat_gaee20a200065c16a15bd939770e0b49dd}\label{group__bsr__mat_gaee20a200065c16a15bd939770e0b49dd}} 
+\index{Bsr\_mat@{Bsr\_mat}!gen\_matrix@{gen\_matrix}}
+\index{gen\_matrix@{gen\_matrix}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{gen\_matrix()}{gen\_matrix()}}
+{\footnotesize\ttfamily subroutine gen\+\_\+matrix (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{jtype,  }\item[{integer, intent(in)}]{jpol }\end{DoxyParamCaption})}
+
+
+
+merge data and generate the interaction matrix for current itype 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em jtype} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em jpol} & merge data and generate the interaction matrix for current itype \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_gafe0b04565ad7519f523707bf01ff0eda}\label{group__bsr__mat_gafe0b04565ad7519f523707bf01ff0eda}} 
+\index{Bsr\_mat@{Bsr\_mat}!gen\_zval@{gen\_zval}}
+\index{gen\_zval@{gen\_zval}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{gen\_zval()}{gen\_zval()}}
+{\footnotesize\ttfamily subroutine gen\+\_\+zval}
+
+Generates the Z-\/integrals and vectors\mbox{\Hypertarget{group__bsr__mat_ga4247a44666ad6f229792e15bb0dfa93c}\label{group__bsr__mat_ga4247a44666ad6f229792e15bb0dfa93c}} 
+\index{Bsr\_mat@{Bsr\_mat}!gen\_zzeta@{gen\_zzeta}}
+\index{gen\_zzeta@{gen\_zzeta}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{gen\_zzeta()}{gen\_zzeta()}}
+{\footnotesize\ttfamily subroutine gen\+\_\+zzeta (\begin{DoxyParamCaption}\item[{real(8), dimension(ns,ks)}]{rm,  }\item[{integer}]{izcorr }\end{DoxyParamCaption})}
+
+
+
+B-\/spline matrix for Z$\ast$fine$\ast$1/r$^\wedge$3, Used for spin-\/orbit interaction; if izcorr $>$ 0, multiplied with correction r/(r+2$\ast$z$\ast$fine) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em izcorr} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_ga75783f72551fe654ab29d55bf336d369}\label{group__bsr__mat_ga75783f72551fe654ab29d55bf336d369}} 
+\index{Bsr\_mat@{Bsr\_mat}!get\_v@{get\_v}}
+\index{get\_v@{get\_v}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{get\_v()}{get\_v()}}
+{\footnotesize\ttfamily subroutine get\+\_\+v (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ii,  }\item[{integer, intent(in)}]{jj,  }\item[{real(8), dimension(ns)}]{v }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ii} & provides $<$.$\vert$nl$>$ for $<$kl$\vert$nl$>$; ii -\/$>$ kl; jj -\/$>$ nl; if $<$kl$\vert$n\textquotesingle{}l\textquotesingle{}$>$ = 0 then nl -\/$>$ nl -\/ $<$nl$\vert$n\textquotesingle{}l\textquotesingle{}$>$ n\textquotesingle{}l\textquotesingle{}\\
+\hline
+\mbox{\texttt{ in}}  & {\em jj} & provides $<$.$\vert$nl$>$ for $<$kl$\vert$nl$>$; ii -\/$>$ kl; jj -\/$>$ nl; if $<$kl$\vert$n\textquotesingle{}l\textquotesingle{}$>$ = 0 then nl -\/$>$ nl -\/ $<$nl$\vert$n\textquotesingle{}l\textquotesingle{}$>$ n\textquotesingle{}l\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_ga4884f97fcff28a8fb16a879d24722743}\label{group__bsr__mat_ga4884f97fcff28a8fb16a879d24722743}} 
+\index{Bsr\_mat@{Bsr\_mat}!i\_data@{i\_data}}
+\index{i\_data@{i\_data}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{i\_data()}{i\_data()}}
+{\footnotesize\ttfamily subroutine i\+\_\+data (\begin{DoxyParamCaption}\item[{integer}]{jtype,  }\item[{integer}]{jpol }\end{DoxyParamCaption})}
+
+processing of I-\/integrals from the module \textquotesingle{}cmdata\textquotesingle{}
+
+we have following different structures\+:
+
+1 1.\+0 Rk( . . . .) ic, jc -\/ bound-\/bound ~\newline
+ 2 1.\+1 Rk( . . . .) $<$ i $\vert$ . $>$ ic -\/ bound-\/channel 3 1.\+2 Rk( . . . .) $<$ i $\vert$ . $>$ $<$ j $\vert$ . $>$ -\/ channel-\/channel 4 1.\+3 Rk( . . . .) $<$ i $\vert$ j $>$ -\/ target structure 5 2.\+0 Rk( i . . .) $<$ j $\vert$ . $>$ -\/ channel-\/channel due to 6 3.\+0 Rk( . i . .) $<$ j $\vert$ . $>$ overlaps 7 4.\+0 Rk( . . i .) $<$ j $\vert$ . $>$ 8 5.\+0 Rk( . . . i) $<$ j $\vert$ . $>$ 9 2.\+1 Rk( i . . .) ic -\/ bound-\/channel 10 3.\+1 Rk( . i . .) ic 11 4.\+1 Rk( . . i .) ic 12 5.\+1 Rk( . . . i) ic 13 6.\+0 Rk( i . j .) -\/ direct channel-\/channel 14 7.\+0 Rk( . i . j) 15 8.\+0 Rk( i . . j) -\/ exchange channel-\/channel 16 9.\+0 Rk( . i j .) \begin{DoxyVerb} where .  denotes bound orbital, i,j - channels.
+
+ Rk * < i | j >  elements with i<>j are ignored becaUse
+ we assume that target states diagonalize Hamiltonian
+ These elements are included after in B(.,.) * Etarget(i)
+ where B(.,.) is B-spline overlap matrix
+ These elements are also Used for control calculation of 
+ interaction matrix between target states (Target_h).
+
+ sym_d -  symmetry for convolution
+ sym_r -  symmetry for result
+
+ jcase = 1 -->  INT( . p1; . p2)
+ jcase = 2 -->  INT( p1 .;p2 . )
+ jcase = 3 -->  INT( . p1;p2 . )
+ jcase = 4 -->  INT( p1 .; . p2)
+\end{DoxyVerb}
+\mbox{\Hypertarget{group__bsr__mat_ga264a971a9f0ec5398f4dc7ad48817982}\label{group__bsr__mat_ga264a971a9f0ec5398f4dc7ad48817982}} 
+\index{Bsr\_mat@{Bsr\_mat}!iadd\_ndefs@{iadd\_ndefs}}
+\index{iadd\_ndefs@{iadd\_ndefs}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{iadd\_ndefs()}{iadd\_ndefs()}}
+{\footnotesize\ttfamily subroutine iadd\+\_\+ndefs (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{io,  }\item[{integer, intent(in)}]{jo,  }\item[{real(8), intent(in)}]{S }\end{DoxyParamCaption})}
+
+
+
+add new overlap factor if S $>$ Eps\+\_\+det 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em io} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em jo} & add new overlap factor if S $>$ Eps\+\_\+det \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_ga50885f1ee12bb74c53e7e1cc3d576806}\label{group__bsr__mat_ga50885f1ee12bb74c53e7e1cc3d576806}} 
+\index{Bsr\_mat@{Bsr\_mat}!iadd\_ndets@{iadd\_ndets}}
+\index{iadd\_ndets@{iadd\_ndets}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{iadd\_ndets()}{iadd\_ndets()}}
+{\footnotesize\ttfamily subroutine iadd\+\_\+ndets (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{io,  }\item[{integer, intent(in)}]{jo,  }\item[{real(8), intent(in)}]{S }\end{DoxyParamCaption})}
+
+
+
+add new determinat overlap if S $>$ Eps\+\_\+det 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em io} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em jo} & add new determinat overlap if S $>$ Eps\+\_\+det \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_ga2727469ba9e20d91a6158dc13880a30a}\label{group__bsr__mat_ga2727469ba9e20d91a6158dc13880a30a}} 
+\index{Bsr\_mat@{Bsr\_mat}!idef\_itype@{idef\_itype}}
+\index{idef\_itype@{idef\_itype}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{idef\_itype()}{idef\_itype()}}
+{\footnotesize\ttfamily integer function idef\+\_\+itype (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i1,  }\item[{integer, intent(in)}]{i2,  }\item[{integer, intent(in)}]{i3,  }\item[{integer, intent(in)}]{i4,  }\item[{integer, intent(in)}]{io,  }\item[{integer, intent(in)}]{jo,  }\item[{integer, intent(in)}]{ic,  }\item[{integer, intent(in)}]{jc,  }\item[{integer, intent(out)}]{k1,  }\item[{integer, intent(out)}]{k2,  }\item[{integer, intent(out)}]{k3,  }\item[{integer, intent(out)}]{k4,  }\item[{integer, intent(in)}]{ibi }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i1} & \begin{DoxyVerb} we have following 16 different structures for radial integrals:
+\end{DoxyVerb}
+\\
+\hline
+\end{DoxyParams}
+1 1.\+0 Rk( . . . .) ic, jc -\/ bound-\/bound ~\newline
+ 2 1.\+1 Rk( . . . .) $<$ i $\vert$ . $>$ ic -\/ bound-\/channel 3 1.\+2 Rk( . . . .) $<$ i $\vert$ . $>$ $<$ j $\vert$ . $>$ -\/ channel-\/channel 4 1.\+3 Rk( . . . .) $<$ i $\vert$ j $>$ -\/ target structure
+
+5 2.\+0 Rk( i . . .) $<$ j $\vert$ . $>$ -\/ channel-\/channel due to 6 3.\+0 Rk( . i . .) $<$ j $\vert$ . $>$ overlaps 7 4.\+0 Rk( . . i .) $<$ j $\vert$ . $>$ 8 5.\+0 Rk( . . . i) $<$ j $\vert$ . $>$
+
+9 2.\+1 Rk( i . . .) ic -\/ bound-\/channel 10 3.\+1 Rk( . i . .) ic 11 4.\+1 Rk( . . i .) ic 12 5.\+1 Rk( . . . i) ic
+
+13 6.\+0 Rk( i . j .) -\/ direct channel-\/channel 14 7.\+0 Rk( . i . j) 15 8.\+0 Rk( i . . j) -\/ exchange channel-\/channel 16 9.\+0 Rk( . i j .) \begin{DoxyVerb} where .  denotes bound orbital, i,j - channels.
+
+ How it is packing:
+
+                                    ibi         ibi
+\end{DoxyVerb}
+ 1.\+0 Rk( . . . .) ic, jc -\/ k1=(i1,i3) k2=(i2,i4) k3=-\/ic k4=-\/jc 1.\+1 Rk( . . . .) $<$ i $\vert$ . $>$ ic -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4=-\/ic 1.\+2 Rk( . . . .) $<$i$\vert$.$>$ $<$j$\vert$.$>$ -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4= jo 1.\+3 Rk( . . . .) $<$ i $\vert$ j $>$ -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4= 0
+
+2.\+0 Rk( i . . .) $<$ j $\vert$ . $>$ -\/ k1=(i2,i4) k2=i3 k3=ich k4=io 3.\+0 Rk( . i . .) $<$ j $\vert$ . $>$ -\/ k1=(i1,i3) k2=i4 k3=ich k4=io 4.\+0 Rk( . . i .) $<$ j $\vert$ . $>$ -\/ k1=(i2,i4) k2=i1 k3=ich k4=io 5.\+0 Rk( . . . i) $<$ j $\vert$ . $>$ -\/ k1=(i1,i3) k2=i2 k3=ich k4=io
+
+2.\+1 Rk( i . . .) ic -\/ k1=(i2,i4) k2=i3 k3=ich k4=-\/ic 3.\+1 Rk( . i . .) ic -\/ k1=(i1,i3) k2=i4 k3=ich k4=-\/ic ~\newline
+ 4.\+1 Rk( . . i .) ic -\/ k1=(i2,i4) k2=i1 k3=ich k4=-\/ic 5.\+1 Rk( . . . i) ic -\/ k1=(i1,i3) k2=i2 k3=ich k4=-\/ic
+
+6.\+0 Rk( i . j .) -\/ k1=(ich1,ich2) k2=i2 k3=i4 k4=0 7.\+0 Rk( . i . j) -\/ k1=(ich1,ich2) k2=i1 k3=i3 k4=0 8.\+0 Rk( i . . j) -\/ k1=(ich1,ich2) k2=i2 k3=i3 k4=0 9.\+0 Rk( . i j .) -\/ k1=(ich1,ich2) k2=i1 k3=i4 k4=0
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i2} & \begin{DoxyVerb} we have following 16 different structures for radial integrals:
+\end{DoxyVerb}
+\\
+\hline
+\end{DoxyParams}
+1 1.\+0 Rk( . . . .) ic, jc -\/ bound-\/bound ~\newline
+ 2 1.\+1 Rk( . . . .) $<$ i $\vert$ . $>$ ic -\/ bound-\/channel 3 1.\+2 Rk( . . . .) $<$ i $\vert$ . $>$ $<$ j $\vert$ . $>$ -\/ channel-\/channel 4 1.\+3 Rk( . . . .) $<$ i $\vert$ j $>$ -\/ target structure
+
+5 2.\+0 Rk( i . . .) $<$ j $\vert$ . $>$ -\/ channel-\/channel due to 6 3.\+0 Rk( . i . .) $<$ j $\vert$ . $>$ overlaps 7 4.\+0 Rk( . . i .) $<$ j $\vert$ . $>$ 8 5.\+0 Rk( . . . i) $<$ j $\vert$ . $>$
+
+9 2.\+1 Rk( i . . .) ic -\/ bound-\/channel 10 3.\+1 Rk( . i . .) ic 11 4.\+1 Rk( . . i .) ic 12 5.\+1 Rk( . . . i) ic
+
+13 6.\+0 Rk( i . j .) -\/ direct channel-\/channel 14 7.\+0 Rk( . i . j) 15 8.\+0 Rk( i . . j) -\/ exchange channel-\/channel 16 9.\+0 Rk( . i j .) \begin{DoxyVerb} where .  denotes bound orbital, i,j - channels.
+
+ How it is packing:
+
+                                    ibi         ibi
+\end{DoxyVerb}
+ 1.\+0 Rk( . . . .) ic, jc -\/ k1=(i1,i3) k2=(i2,i4) k3=-\/ic k4=-\/jc 1.\+1 Rk( . . . .) $<$ i $\vert$ . $>$ ic -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4=-\/ic 1.\+2 Rk( . . . .) $<$i$\vert$.$>$ $<$j$\vert$.$>$ -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4= jo 1.\+3 Rk( . . . .) $<$ i $\vert$ j $>$ -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4= 0
+
+2.\+0 Rk( i . . .) $<$ j $\vert$ . $>$ -\/ k1=(i2,i4) k2=i3 k3=ich k4=io 3.\+0 Rk( . i . .) $<$ j $\vert$ . $>$ -\/ k1=(i1,i3) k2=i4 k3=ich k4=io 4.\+0 Rk( . . i .) $<$ j $\vert$ . $>$ -\/ k1=(i2,i4) k2=i1 k3=ich k4=io 5.\+0 Rk( . . . i) $<$ j $\vert$ . $>$ -\/ k1=(i1,i3) k2=i2 k3=ich k4=io
+
+2.\+1 Rk( i . . .) ic -\/ k1=(i2,i4) k2=i3 k3=ich k4=-\/ic 3.\+1 Rk( . i . .) ic -\/ k1=(i1,i3) k2=i4 k3=ich k4=-\/ic ~\newline
+ 4.\+1 Rk( . . i .) ic -\/ k1=(i2,i4) k2=i1 k3=ich k4=-\/ic 5.\+1 Rk( . . . i) ic -\/ k1=(i1,i3) k2=i2 k3=ich k4=-\/ic
+
+6.\+0 Rk( i . j .) -\/ k1=(ich1,ich2) k2=i2 k3=i4 k4=0 7.\+0 Rk( . i . j) -\/ k1=(ich1,ich2) k2=i1 k3=i3 k4=0 8.\+0 Rk( i . . j) -\/ k1=(ich1,ich2) k2=i2 k3=i3 k4=0 9.\+0 Rk( . i j .) -\/ k1=(ich1,ich2) k2=i1 k3=i4 k4=0
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i3} & \begin{DoxyVerb} we have following 16 different structures for radial integrals:
+\end{DoxyVerb}
+\\
+\hline
+\end{DoxyParams}
+1 1.\+0 Rk( . . . .) ic, jc -\/ bound-\/bound ~\newline
+ 2 1.\+1 Rk( . . . .) $<$ i $\vert$ . $>$ ic -\/ bound-\/channel 3 1.\+2 Rk( . . . .) $<$ i $\vert$ . $>$ $<$ j $\vert$ . $>$ -\/ channel-\/channel 4 1.\+3 Rk( . . . .) $<$ i $\vert$ j $>$ -\/ target structure
+
+5 2.\+0 Rk( i . . .) $<$ j $\vert$ . $>$ -\/ channel-\/channel due to 6 3.\+0 Rk( . i . .) $<$ j $\vert$ . $>$ overlaps 7 4.\+0 Rk( . . i .) $<$ j $\vert$ . $>$ 8 5.\+0 Rk( . . . i) $<$ j $\vert$ . $>$
+
+9 2.\+1 Rk( i . . .) ic -\/ bound-\/channel 10 3.\+1 Rk( . i . .) ic 11 4.\+1 Rk( . . i .) ic 12 5.\+1 Rk( . . . i) ic
+
+13 6.\+0 Rk( i . j .) -\/ direct channel-\/channel 14 7.\+0 Rk( . i . j) 15 8.\+0 Rk( i . . j) -\/ exchange channel-\/channel 16 9.\+0 Rk( . i j .) \begin{DoxyVerb} where .  denotes bound orbital, i,j - channels.
+
+ How it is packing:
+
+                                    ibi         ibi
+\end{DoxyVerb}
+ 1.\+0 Rk( . . . .) ic, jc -\/ k1=(i1,i3) k2=(i2,i4) k3=-\/ic k4=-\/jc 1.\+1 Rk( . . . .) $<$ i $\vert$ . $>$ ic -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4=-\/ic 1.\+2 Rk( . . . .) $<$i$\vert$.$>$ $<$j$\vert$.$>$ -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4= jo 1.\+3 Rk( . . . .) $<$ i $\vert$ j $>$ -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4= 0
+
+2.\+0 Rk( i . . .) $<$ j $\vert$ . $>$ -\/ k1=(i2,i4) k2=i3 k3=ich k4=io 3.\+0 Rk( . i . .) $<$ j $\vert$ . $>$ -\/ k1=(i1,i3) k2=i4 k3=ich k4=io 4.\+0 Rk( . . i .) $<$ j $\vert$ . $>$ -\/ k1=(i2,i4) k2=i1 k3=ich k4=io 5.\+0 Rk( . . . i) $<$ j $\vert$ . $>$ -\/ k1=(i1,i3) k2=i2 k3=ich k4=io
+
+2.\+1 Rk( i . . .) ic -\/ k1=(i2,i4) k2=i3 k3=ich k4=-\/ic 3.\+1 Rk( . i . .) ic -\/ k1=(i1,i3) k2=i4 k3=ich k4=-\/ic ~\newline
+ 4.\+1 Rk( . . i .) ic -\/ k1=(i2,i4) k2=i1 k3=ich k4=-\/ic 5.\+1 Rk( . . . i) ic -\/ k1=(i1,i3) k2=i2 k3=ich k4=-\/ic
+
+6.\+0 Rk( i . j .) -\/ k1=(ich1,ich2) k2=i2 k3=i4 k4=0 7.\+0 Rk( . i . j) -\/ k1=(ich1,ich2) k2=i1 k3=i3 k4=0 8.\+0 Rk( i . . j) -\/ k1=(ich1,ich2) k2=i2 k3=i3 k4=0 9.\+0 Rk( . i j .) -\/ k1=(ich1,ich2) k2=i1 k3=i4 k4=0
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i4} & \begin{DoxyVerb} we have following 16 different structures for radial integrals:
+\end{DoxyVerb}
+\\
+\hline
+\end{DoxyParams}
+1 1.\+0 Rk( . . . .) ic, jc -\/ bound-\/bound ~\newline
+ 2 1.\+1 Rk( . . . .) $<$ i $\vert$ . $>$ ic -\/ bound-\/channel 3 1.\+2 Rk( . . . .) $<$ i $\vert$ . $>$ $<$ j $\vert$ . $>$ -\/ channel-\/channel 4 1.\+3 Rk( . . . .) $<$ i $\vert$ j $>$ -\/ target structure
+
+5 2.\+0 Rk( i . . .) $<$ j $\vert$ . $>$ -\/ channel-\/channel due to 6 3.\+0 Rk( . i . .) $<$ j $\vert$ . $>$ overlaps 7 4.\+0 Rk( . . i .) $<$ j $\vert$ . $>$ 8 5.\+0 Rk( . . . i) $<$ j $\vert$ . $>$
+
+9 2.\+1 Rk( i . . .) ic -\/ bound-\/channel 10 3.\+1 Rk( . i . .) ic 11 4.\+1 Rk( . . i .) ic 12 5.\+1 Rk( . . . i) ic
+
+13 6.\+0 Rk( i . j .) -\/ direct channel-\/channel 14 7.\+0 Rk( . i . j) 15 8.\+0 Rk( i . . j) -\/ exchange channel-\/channel 16 9.\+0 Rk( . i j .) \begin{DoxyVerb} where .  denotes bound orbital, i,j - channels.
+
+ How it is packing:
+
+                                    ibi         ibi
+\end{DoxyVerb}
+ 1.\+0 Rk( . . . .) ic, jc -\/ k1=(i1,i3) k2=(i2,i4) k3=-\/ic k4=-\/jc 1.\+1 Rk( . . . .) $<$ i $\vert$ . $>$ ic -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4=-\/ic 1.\+2 Rk( . . . .) $<$i$\vert$.$>$ $<$j$\vert$.$>$ -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4= jo 1.\+3 Rk( . . . .) $<$ i $\vert$ j $>$ -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4= 0
+
+2.\+0 Rk( i . . .) $<$ j $\vert$ . $>$ -\/ k1=(i2,i4) k2=i3 k3=ich k4=io 3.\+0 Rk( . i . .) $<$ j $\vert$ . $>$ -\/ k1=(i1,i3) k2=i4 k3=ich k4=io 4.\+0 Rk( . . i .) $<$ j $\vert$ . $>$ -\/ k1=(i2,i4) k2=i1 k3=ich k4=io 5.\+0 Rk( . . . i) $<$ j $\vert$ . $>$ -\/ k1=(i1,i3) k2=i2 k3=ich k4=io
+
+2.\+1 Rk( i . . .) ic -\/ k1=(i2,i4) k2=i3 k3=ich k4=-\/ic 3.\+1 Rk( . i . .) ic -\/ k1=(i1,i3) k2=i4 k3=ich k4=-\/ic ~\newline
+ 4.\+1 Rk( . . i .) ic -\/ k1=(i2,i4) k2=i1 k3=ich k4=-\/ic 5.\+1 Rk( . . . i) ic -\/ k1=(i1,i3) k2=i2 k3=ich k4=-\/ic
+
+6.\+0 Rk( i . j .) -\/ k1=(ich1,ich2) k2=i2 k3=i4 k4=0 7.\+0 Rk( . i . j) -\/ k1=(ich1,ich2) k2=i1 k3=i3 k4=0 8.\+0 Rk( i . . j) -\/ k1=(ich1,ich2) k2=i2 k3=i3 k4=0 9.\+0 Rk( . i j .) -\/ k1=(ich1,ich2) k2=i1 k3=i4 k4=0
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em io} & \begin{DoxyVerb} we have following 16 different structures for radial integrals:
+\end{DoxyVerb}
+\\
+\hline
+\end{DoxyParams}
+1 1.\+0 Rk( . . . .) ic, jc -\/ bound-\/bound ~\newline
+ 2 1.\+1 Rk( . . . .) $<$ i $\vert$ . $>$ ic -\/ bound-\/channel 3 1.\+2 Rk( . . . .) $<$ i $\vert$ . $>$ $<$ j $\vert$ . $>$ -\/ channel-\/channel 4 1.\+3 Rk( . . . .) $<$ i $\vert$ j $>$ -\/ target structure
+
+5 2.\+0 Rk( i . . .) $<$ j $\vert$ . $>$ -\/ channel-\/channel due to 6 3.\+0 Rk( . i . .) $<$ j $\vert$ . $>$ overlaps 7 4.\+0 Rk( . . i .) $<$ j $\vert$ . $>$ 8 5.\+0 Rk( . . . i) $<$ j $\vert$ . $>$
+
+9 2.\+1 Rk( i . . .) ic -\/ bound-\/channel 10 3.\+1 Rk( . i . .) ic 11 4.\+1 Rk( . . i .) ic 12 5.\+1 Rk( . . . i) ic
+
+13 6.\+0 Rk( i . j .) -\/ direct channel-\/channel 14 7.\+0 Rk( . i . j) 15 8.\+0 Rk( i . . j) -\/ exchange channel-\/channel 16 9.\+0 Rk( . i j .) \begin{DoxyVerb} where .  denotes bound orbital, i,j - channels.
+
+ How it is packing:
+
+                                    ibi         ibi
+\end{DoxyVerb}
+ 1.\+0 Rk( . . . .) ic, jc -\/ k1=(i1,i3) k2=(i2,i4) k3=-\/ic k4=-\/jc 1.\+1 Rk( . . . .) $<$ i $\vert$ . $>$ ic -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4=-\/ic 1.\+2 Rk( . . . .) $<$i$\vert$.$>$ $<$j$\vert$.$>$ -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4= jo 1.\+3 Rk( . . . .) $<$ i $\vert$ j $>$ -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4= 0
+
+2.\+0 Rk( i . . .) $<$ j $\vert$ . $>$ -\/ k1=(i2,i4) k2=i3 k3=ich k4=io 3.\+0 Rk( . i . .) $<$ j $\vert$ . $>$ -\/ k1=(i1,i3) k2=i4 k3=ich k4=io 4.\+0 Rk( . . i .) $<$ j $\vert$ . $>$ -\/ k1=(i2,i4) k2=i1 k3=ich k4=io 5.\+0 Rk( . . . i) $<$ j $\vert$ . $>$ -\/ k1=(i1,i3) k2=i2 k3=ich k4=io
+
+2.\+1 Rk( i . . .) ic -\/ k1=(i2,i4) k2=i3 k3=ich k4=-\/ic 3.\+1 Rk( . i . .) ic -\/ k1=(i1,i3) k2=i4 k3=ich k4=-\/ic ~\newline
+ 4.\+1 Rk( . . i .) ic -\/ k1=(i2,i4) k2=i1 k3=ich k4=-\/ic 5.\+1 Rk( . . . i) ic -\/ k1=(i1,i3) k2=i2 k3=ich k4=-\/ic
+
+6.\+0 Rk( i . j .) -\/ k1=(ich1,ich2) k2=i2 k3=i4 k4=0 7.\+0 Rk( . i . j) -\/ k1=(ich1,ich2) k2=i1 k3=i3 k4=0 8.\+0 Rk( i . . j) -\/ k1=(ich1,ich2) k2=i2 k3=i3 k4=0 9.\+0 Rk( . i j .) -\/ k1=(ich1,ich2) k2=i1 k3=i4 k4=0
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em jo} & \begin{DoxyVerb} we have following 16 different structures for radial integrals:
+\end{DoxyVerb}
+\\
+\hline
+\end{DoxyParams}
+1 1.\+0 Rk( . . . .) ic, jc -\/ bound-\/bound ~\newline
+ 2 1.\+1 Rk( . . . .) $<$ i $\vert$ . $>$ ic -\/ bound-\/channel 3 1.\+2 Rk( . . . .) $<$ i $\vert$ . $>$ $<$ j $\vert$ . $>$ -\/ channel-\/channel 4 1.\+3 Rk( . . . .) $<$ i $\vert$ j $>$ -\/ target structure
+
+5 2.\+0 Rk( i . . .) $<$ j $\vert$ . $>$ -\/ channel-\/channel due to 6 3.\+0 Rk( . i . .) $<$ j $\vert$ . $>$ overlaps 7 4.\+0 Rk( . . i .) $<$ j $\vert$ . $>$ 8 5.\+0 Rk( . . . i) $<$ j $\vert$ . $>$
+
+9 2.\+1 Rk( i . . .) ic -\/ bound-\/channel 10 3.\+1 Rk( . i . .) ic 11 4.\+1 Rk( . . i .) ic 12 5.\+1 Rk( . . . i) ic
+
+13 6.\+0 Rk( i . j .) -\/ direct channel-\/channel 14 7.\+0 Rk( . i . j) 15 8.\+0 Rk( i . . j) -\/ exchange channel-\/channel 16 9.\+0 Rk( . i j .) \begin{DoxyVerb} where .  denotes bound orbital, i,j - channels.
+
+ How it is packing:
+
+                                    ibi         ibi
+\end{DoxyVerb}
+ 1.\+0 Rk( . . . .) ic, jc -\/ k1=(i1,i3) k2=(i2,i4) k3=-\/ic k4=-\/jc 1.\+1 Rk( . . . .) $<$ i $\vert$ . $>$ ic -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4=-\/ic 1.\+2 Rk( . . . .) $<$i$\vert$.$>$ $<$j$\vert$.$>$ -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4= jo 1.\+3 Rk( . . . .) $<$ i $\vert$ j $>$ -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4= 0
+
+2.\+0 Rk( i . . .) $<$ j $\vert$ . $>$ -\/ k1=(i2,i4) k2=i3 k3=ich k4=io 3.\+0 Rk( . i . .) $<$ j $\vert$ . $>$ -\/ k1=(i1,i3) k2=i4 k3=ich k4=io 4.\+0 Rk( . . i .) $<$ j $\vert$ . $>$ -\/ k1=(i2,i4) k2=i1 k3=ich k4=io 5.\+0 Rk( . . . i) $<$ j $\vert$ . $>$ -\/ k1=(i1,i3) k2=i2 k3=ich k4=io
+
+2.\+1 Rk( i . . .) ic -\/ k1=(i2,i4) k2=i3 k3=ich k4=-\/ic 3.\+1 Rk( . i . .) ic -\/ k1=(i1,i3) k2=i4 k3=ich k4=-\/ic ~\newline
+ 4.\+1 Rk( . . i .) ic -\/ k1=(i2,i4) k2=i1 k3=ich k4=-\/ic 5.\+1 Rk( . . . i) ic -\/ k1=(i1,i3) k2=i2 k3=ich k4=-\/ic
+
+6.\+0 Rk( i . j .) -\/ k1=(ich1,ich2) k2=i2 k3=i4 k4=0 7.\+0 Rk( . i . j) -\/ k1=(ich1,ich2) k2=i1 k3=i3 k4=0 8.\+0 Rk( i . . j) -\/ k1=(ich1,ich2) k2=i2 k3=i3 k4=0 9.\+0 Rk( . i j .) -\/ k1=(ich1,ich2) k2=i1 k3=i4 k4=0
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ic} & \begin{DoxyVerb} we have following 16 different structures for radial integrals:
+\end{DoxyVerb}
+\\
+\hline
+\end{DoxyParams}
+1 1.\+0 Rk( . . . .) ic, jc -\/ bound-\/bound ~\newline
+ 2 1.\+1 Rk( . . . .) $<$ i $\vert$ . $>$ ic -\/ bound-\/channel 3 1.\+2 Rk( . . . .) $<$ i $\vert$ . $>$ $<$ j $\vert$ . $>$ -\/ channel-\/channel 4 1.\+3 Rk( . . . .) $<$ i $\vert$ j $>$ -\/ target structure
+
+5 2.\+0 Rk( i . . .) $<$ j $\vert$ . $>$ -\/ channel-\/channel due to 6 3.\+0 Rk( . i . .) $<$ j $\vert$ . $>$ overlaps 7 4.\+0 Rk( . . i .) $<$ j $\vert$ . $>$ 8 5.\+0 Rk( . . . i) $<$ j $\vert$ . $>$
+
+9 2.\+1 Rk( i . . .) ic -\/ bound-\/channel 10 3.\+1 Rk( . i . .) ic 11 4.\+1 Rk( . . i .) ic 12 5.\+1 Rk( . . . i) ic
+
+13 6.\+0 Rk( i . j .) -\/ direct channel-\/channel 14 7.\+0 Rk( . i . j) 15 8.\+0 Rk( i . . j) -\/ exchange channel-\/channel 16 9.\+0 Rk( . i j .) \begin{DoxyVerb} where .  denotes bound orbital, i,j - channels.
+
+ How it is packing:
+
+                                    ibi         ibi
+\end{DoxyVerb}
+ 1.\+0 Rk( . . . .) ic, jc -\/ k1=(i1,i3) k2=(i2,i4) k3=-\/ic k4=-\/jc 1.\+1 Rk( . . . .) $<$ i $\vert$ . $>$ ic -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4=-\/ic 1.\+2 Rk( . . . .) $<$i$\vert$.$>$ $<$j$\vert$.$>$ -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4= jo 1.\+3 Rk( . . . .) $<$ i $\vert$ j $>$ -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4= 0
+
+2.\+0 Rk( i . . .) $<$ j $\vert$ . $>$ -\/ k1=(i2,i4) k2=i3 k3=ich k4=io 3.\+0 Rk( . i . .) $<$ j $\vert$ . $>$ -\/ k1=(i1,i3) k2=i4 k3=ich k4=io 4.\+0 Rk( . . i .) $<$ j $\vert$ . $>$ -\/ k1=(i2,i4) k2=i1 k3=ich k4=io 5.\+0 Rk( . . . i) $<$ j $\vert$ . $>$ -\/ k1=(i1,i3) k2=i2 k3=ich k4=io
+
+2.\+1 Rk( i . . .) ic -\/ k1=(i2,i4) k2=i3 k3=ich k4=-\/ic 3.\+1 Rk( . i . .) ic -\/ k1=(i1,i3) k2=i4 k3=ich k4=-\/ic ~\newline
+ 4.\+1 Rk( . . i .) ic -\/ k1=(i2,i4) k2=i1 k3=ich k4=-\/ic 5.\+1 Rk( . . . i) ic -\/ k1=(i1,i3) k2=i2 k3=ich k4=-\/ic
+
+6.\+0 Rk( i . j .) -\/ k1=(ich1,ich2) k2=i2 k3=i4 k4=0 7.\+0 Rk( . i . j) -\/ k1=(ich1,ich2) k2=i1 k3=i3 k4=0 8.\+0 Rk( i . . j) -\/ k1=(ich1,ich2) k2=i2 k3=i3 k4=0 9.\+0 Rk( . i j .) -\/ k1=(ich1,ich2) k2=i1 k3=i4 k4=0
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em jc} & \begin{DoxyVerb} we have following 16 different structures for radial integrals:
+\end{DoxyVerb}
+\\
+\hline
+\end{DoxyParams}
+1 1.\+0 Rk( . . . .) ic, jc -\/ bound-\/bound ~\newline
+ 2 1.\+1 Rk( . . . .) $<$ i $\vert$ . $>$ ic -\/ bound-\/channel 3 1.\+2 Rk( . . . .) $<$ i $\vert$ . $>$ $<$ j $\vert$ . $>$ -\/ channel-\/channel 4 1.\+3 Rk( . . . .) $<$ i $\vert$ j $>$ -\/ target structure
+
+5 2.\+0 Rk( i . . .) $<$ j $\vert$ . $>$ -\/ channel-\/channel due to 6 3.\+0 Rk( . i . .) $<$ j $\vert$ . $>$ overlaps 7 4.\+0 Rk( . . i .) $<$ j $\vert$ . $>$ 8 5.\+0 Rk( . . . i) $<$ j $\vert$ . $>$
+
+9 2.\+1 Rk( i . . .) ic -\/ bound-\/channel 10 3.\+1 Rk( . i . .) ic 11 4.\+1 Rk( . . i .) ic 12 5.\+1 Rk( . . . i) ic
+
+13 6.\+0 Rk( i . j .) -\/ direct channel-\/channel 14 7.\+0 Rk( . i . j) 15 8.\+0 Rk( i . . j) -\/ exchange channel-\/channel 16 9.\+0 Rk( . i j .) \begin{DoxyVerb} where .  denotes bound orbital, i,j - channels.
+
+ How it is packing:
+
+                                    ibi         ibi
+\end{DoxyVerb}
+ 1.\+0 Rk( . . . .) ic, jc -\/ k1=(i1,i3) k2=(i2,i4) k3=-\/ic k4=-\/jc 1.\+1 Rk( . . . .) $<$ i $\vert$ . $>$ ic -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4=-\/ic 1.\+2 Rk( . . . .) $<$i$\vert$.$>$ $<$j$\vert$.$>$ -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4= jo 1.\+3 Rk( . . . .) $<$ i $\vert$ j $>$ -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4= 0
+
+2.\+0 Rk( i . . .) $<$ j $\vert$ . $>$ -\/ k1=(i2,i4) k2=i3 k3=ich k4=io 3.\+0 Rk( . i . .) $<$ j $\vert$ . $>$ -\/ k1=(i1,i3) k2=i4 k3=ich k4=io 4.\+0 Rk( . . i .) $<$ j $\vert$ . $>$ -\/ k1=(i2,i4) k2=i1 k3=ich k4=io 5.\+0 Rk( . . . i) $<$ j $\vert$ . $>$ -\/ k1=(i1,i3) k2=i2 k3=ich k4=io
+
+2.\+1 Rk( i . . .) ic -\/ k1=(i2,i4) k2=i3 k3=ich k4=-\/ic 3.\+1 Rk( . i . .) ic -\/ k1=(i1,i3) k2=i4 k3=ich k4=-\/ic ~\newline
+ 4.\+1 Rk( . . i .) ic -\/ k1=(i2,i4) k2=i1 k3=ich k4=-\/ic 5.\+1 Rk( . . . i) ic -\/ k1=(i1,i3) k2=i2 k3=ich k4=-\/ic
+
+6.\+0 Rk( i . j .) -\/ k1=(ich1,ich2) k2=i2 k3=i4 k4=0 7.\+0 Rk( . i . j) -\/ k1=(ich1,ich2) k2=i1 k3=i3 k4=0 8.\+0 Rk( i . . j) -\/ k1=(ich1,ich2) k2=i2 k3=i3 k4=0 9.\+0 Rk( . i j .) -\/ k1=(ich1,ich2) k2=i1 k3=i4 k4=0
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ibi} & \begin{DoxyVerb} we have following 16 different structures for radial integrals:
+\end{DoxyVerb}
+\\
+\hline
+\end{DoxyParams}
+1 1.\+0 Rk( . . . .) ic, jc -\/ bound-\/bound ~\newline
+ 2 1.\+1 Rk( . . . .) $<$ i $\vert$ . $>$ ic -\/ bound-\/channel 3 1.\+2 Rk( . . . .) $<$ i $\vert$ . $>$ $<$ j $\vert$ . $>$ -\/ channel-\/channel 4 1.\+3 Rk( . . . .) $<$ i $\vert$ j $>$ -\/ target structure
+
+5 2.\+0 Rk( i . . .) $<$ j $\vert$ . $>$ -\/ channel-\/channel due to 6 3.\+0 Rk( . i . .) $<$ j $\vert$ . $>$ overlaps 7 4.\+0 Rk( . . i .) $<$ j $\vert$ . $>$ 8 5.\+0 Rk( . . . i) $<$ j $\vert$ . $>$
+
+9 2.\+1 Rk( i . . .) ic -\/ bound-\/channel 10 3.\+1 Rk( . i . .) ic 11 4.\+1 Rk( . . i .) ic 12 5.\+1 Rk( . . . i) ic
+
+13 6.\+0 Rk( i . j .) -\/ direct channel-\/channel 14 7.\+0 Rk( . i . j) 15 8.\+0 Rk( i . . j) -\/ exchange channel-\/channel 16 9.\+0 Rk( . i j .) \begin{DoxyVerb} where .  denotes bound orbital, i,j - channels.
+
+ How it is packing:
+
+                                    ibi         ibi
+\end{DoxyVerb}
+ 1.\+0 Rk( . . . .) ic, jc -\/ k1=(i1,i3) k2=(i2,i4) k3=-\/ic k4=-\/jc 1.\+1 Rk( . . . .) $<$ i $\vert$ . $>$ ic -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4=-\/ic 1.\+2 Rk( . . . .) $<$i$\vert$.$>$ $<$j$\vert$.$>$ -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4= jo 1.\+3 Rk( . . . .) $<$ i $\vert$ j $>$ -\/ k1=(i1,i3) k2=(i2,i4) k3= io k4= 0
+
+2.\+0 Rk( i . . .) $<$ j $\vert$ . $>$ -\/ k1=(i2,i4) k2=i3 k3=ich k4=io 3.\+0 Rk( . i . .) $<$ j $\vert$ . $>$ -\/ k1=(i1,i3) k2=i4 k3=ich k4=io 4.\+0 Rk( . . i .) $<$ j $\vert$ . $>$ -\/ k1=(i2,i4) k2=i1 k3=ich k4=io 5.\+0 Rk( . . . i) $<$ j $\vert$ . $>$ -\/ k1=(i1,i3) k2=i2 k3=ich k4=io
+
+2.\+1 Rk( i . . .) ic -\/ k1=(i2,i4) k2=i3 k3=ich k4=-\/ic 3.\+1 Rk( . i . .) ic -\/ k1=(i1,i3) k2=i4 k3=ich k4=-\/ic ~\newline
+ 4.\+1 Rk( . . i .) ic -\/ k1=(i2,i4) k2=i1 k3=ich k4=-\/ic 5.\+1 Rk( . . . i) ic -\/ k1=(i1,i3) k2=i2 k3=ich k4=-\/ic
+
+6.\+0 Rk( i . j .) -\/ k1=(ich1,ich2) k2=i2 k3=i4 k4=0 7.\+0 Rk( . i . j) -\/ k1=(ich1,ich2) k2=i1 k3=i3 k4=0 8.\+0 Rk( i . . j) -\/ k1=(ich1,ich2) k2=i2 k3=i3 k4=0 9.\+0 Rk( . i j .) -\/ k1=(ich1,ich2) k2=i1 k3=i4 k4=0 \mbox{\Hypertarget{group__bsr__mat_ga609bbd7fa970c4d6290468a42a395906}\label{group__bsr__mat_ga609bbd7fa970c4d6290468a42a395906}} 
+\index{Bsr\_mat@{Bsr\_mat}!ifind\_channel\_serial@{ifind\_channel\_serial}}
+\index{ifind\_channel\_serial@{ifind\_channel\_serial}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{ifind\_channel\_serial()}{ifind\_channel\_serial()}}
+{\footnotesize\ttfamily integer function ifind\+\_\+channel\+\_\+serial (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ic }\end{DoxyParamCaption})}
+
+
+
+find channel (or perturber) for given configuration \textquotesingle{}ic\textquotesingle{} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ic} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_ga5cd5a33848d99e56fd504fe053d3e5f7}\label{group__bsr__mat_ga5cd5a33848d99e56fd504fe053d3e5f7}} 
+\index{Bsr\_mat@{Bsr\_mat}!inf\_bsr\_mat@{inf\_bsr\_mat}}
+\index{inf\_bsr\_mat@{inf\_bsr\_mat}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{inf\_bsr\_mat()}{inf\_bsr\_mat()}}
+{\footnotesize\ttfamily subroutine inf\+\_\+bsr\+\_\+mat}
+
+provide screen information about \mbox{\hyperlink{namespacebsr__mat}{bsr\+\_\+mat}} program\mbox{\Hypertarget{group__bsr__mat_ga6262addd2372f5b910f065c5e9e2c9cb}\label{group__bsr__mat_ga6262addd2372f5b910f065c5e9e2c9cb}} 
+\index{Bsr\_mat@{Bsr\_mat}!initilize\_cmdata@{initilize\_cmdata}}
+\index{initilize\_cmdata@{initilize\_cmdata}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{initilize\_cmdata()}{initilize\_cmdata()}}
+{\footnotesize\ttfamily subroutine initilize\+\_\+cmdata}
+
+clear the arrays from previous calculations\mbox{\Hypertarget{group__bsr__mat_ga49eb8485de3fa2b69600b916b3f294e7}\label{group__bsr__mat_ga49eb8485de3fa2b69600b916b3f294e7}} 
+\index{Bsr\_mat@{Bsr\_mat}!int\_core@{int\_core}}
+\index{int\_core@{int\_core}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{int\_core()}{int\_core()}}
+{\footnotesize\ttfamily subroutine int\+\_\+core (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{l }\end{DoxyParamCaption})}
+
+
+
+generate B-\/spline representation for interaction with core 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em l} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_ga5dd32e07d22034a2568fd1356a9f0a80}\label{group__bsr__mat_ga5dd32e07d22034a2568fd1356a9f0a80}} 
+\index{Bsr\_mat@{Bsr\_mat}!intz\_core@{intz\_core}}
+\index{intz\_core@{intz\_core}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{intz\_core()}{intz\_core()}}
+{\footnotesize\ttfamily subroutine intz\+\_\+core (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{l }\end{DoxyParamCaption})}
+
+
+
+generate B-\/splne representation in array zl\+\_\+core for Z-\/integrals with core interaction for given l 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em l} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_gaea49348f90e755d41a4720c7b4b925cd}\label{group__bsr__mat_gaea49348f90e755d41a4720c7b4b925cd}} 
+\index{Bsr\_mat@{Bsr\_mat}!jsym\_int@{jsym\_int}}
+\index{jsym\_int@{jsym\_int}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{jsym\_int()}{jsym\_int()}}
+{\footnotesize\ttfamily subroutine jsym\+\_\+int (\begin{DoxyParamCaption}\item[{}]{met,  }\item[{}]{i1,  }\item[{}]{i2,  }\item[{}]{i3,  }\item[{}]{i4 }\end{DoxyParamCaption})}
+
+use integral symmetry to obtaine the \textquotesingle{}canonical\textquotesingle{} form\mbox{\Hypertarget{group__bsr__mat_ga31f955cb753cd82e1443578a0e05cf55}\label{group__bsr__mat_ga31f955cb753cd82e1443578a0e05cf55}} 
+\index{Bsr\_mat@{Bsr\_mat}!l\_data@{l\_data}}
+\index{l\_data@{l\_data}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{l\_data()}{l\_data()}}
+{\footnotesize\ttfamily subroutine l\+\_\+data (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{jtype,  }\item[{integer, intent(in)}]{l }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em jtype} & we have following different structures\+: \begin{DoxyVerb} L( . .)                        -  bound-bound
+ L( i .)                        -  bound-channel
+ L( . .) < i | . >              -  bound-channel
+ L( i j)                        -  channel-channel
+ L( i .) < j | . >              -  channel-channel
+ L( . .) < i | . > < j | . >    -  channel-channel
+
+ where .  denotes bound orbital, i,j - channels.
+
+ L( . .) < i | j > elements with i/=j are ignored becaUse
+ we assume that target states diagonalize Hamiltonian
+ L( . .) < i | i > are included after in B(.,.) * Etarget(i)
+ where B(.,.) is B-spline overlap matrix
+ These elements are Used for control calculation of interaction
+ matrix between target states (Target_h).
+ L( i j) with with i/=j are also ignored becaUse we assume
+ that target states are orthpgonal, but we have include
+ interaction with core which is included in L(i,j)
+
+ in int_bnk,  L(a,b) are represented as I(a,a;b,b)
+\end{DoxyVerb}
+\\
+\hline
+\mbox{\texttt{ in}}  & {\em l} & we have following different structures\+: \begin{DoxyVerb} L( . .)                        -  bound-bound
+ L( i .)                        -  bound-channel
+ L( . .) < i | . >              -  bound-channel
+ L( i j)                        -  channel-channel
+ L( i .) < j | . >              -  channel-channel
+ L( . .) < i | . > < j | . >    -  channel-channel
+
+ where .  denotes bound orbital, i,j - channels.
+
+ L( . .) < i | j > elements with i/=j are ignored becaUse
+ we assume that target states diagonalize Hamiltonian
+ L( . .) < i | i > are included after in B(.,.) * Etarget(i)
+ where B(.,.) is B-spline overlap matrix
+ These elements are Used for control calculation of interaction
+ matrix between target states (Target_h).
+ L( i j) with with i/=j are also ignored becaUse we assume
+ that target states are orthpgonal, but we have include
+ interaction with core which is included in L(i,j)
+
+ in int_bnk,  L(a,b) are represented as I(a,a;b,b)
+\end{DoxyVerb}
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_gacb61b6365a22b464545b654107a56915}\label{group__bsr__mat_gacb61b6365a22b464545b654107a56915}} 
+\index{Bsr\_mat@{Bsr\_mat}!merge\_cdata@{merge\_cdata}}
+\index{merge\_cdata@{merge\_cdata}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{merge\_cdata()}{merge\_cdata()}}
+{\footnotesize\ttfamily subroutine merge\+\_\+cdata (\begin{DoxyParamCaption}\item[{integer}]{nn,  }\item[{integer, dimension(nn)}]{ip,  }\item[{integer, dimension(nn)}]{jp,  }\item[{integer}]{nc,  }\item[{real(8)}]{eps\+\_\+cc }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em nn} & merge data from different blocks in M\+O\+D\+U\+LE \textquotesingle{}cmdata\textquotesingle{}\\
+\hline
+\end{DoxyParams}
+nn -\/ number of blocks ip(.) -\/ pointer for begining of block . jp(.) -\/ pointer for end of block . nc -\/ number of result coeff\textquotesingle{}s eps\+\_\+cc -\/ all coefficients $<$ eps\+\_\+cc are ignored
+\begin{DoxyParams}{Parameters}
+{\em nc} & merge data from different blocks in M\+O\+D\+U\+LE \textquotesingle{}cmdata\textquotesingle{}\\
+\hline
+\end{DoxyParams}
+nn -\/ number of blocks ip(.) -\/ pointer for begining of block . jp(.) -\/ pointer for end of block . nc -\/ number of result coeff\textquotesingle{}s eps\+\_\+cc -\/ all coefficients $<$ eps\+\_\+cc are ignored \mbox{\Hypertarget{group__bsr__mat_gae9277a5b04cada2d259fa5990dd98d8f}\label{group__bsr__mat_gae9277a5b04cada2d259fa5990dd98d8f}} 
+\index{Bsr\_mat@{Bsr\_mat}!mvcv@{mvcv}}
+\index{mvcv@{mvcv}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{mvcv()}{mvcv()}}
+{\footnotesize\ttfamily subroutine mvcv (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{l,  }\item[{real(8), dimension(ns,ks), intent(inout)}]{vc }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em l} & Computes the matrix elements for the mass-\/velocity correction in the B-\/spline basis. The lack of symmetry in the d$^\wedge$2/dr$^\wedge$2 operator is ignored.\\
+\hline
+\end{DoxyParams}
+V\+C(i,j) = I\+NT \mbox{[} (d$^\wedge$2/dr$^\wedge$2 -\/ l(l+1)/r) B\+\_\+i(r) $\ast$ \doxysubsubsection*{(d$^\wedge$2/dr$^\wedge$2 -\/ l(l+1)/r) B\+\_\+j(r) \mbox{]} dr }
+
+\begin{DoxyVerb} on entry
+ --------
+   l    the angular momentum
+
+ on exit
+ -------
+   vc   the mass velocity correction in symmetric storage mode
+\end{DoxyVerb}
+ \mbox{\Hypertarget{group__bsr__mat_ga3361f70e89302ec2c692df11ae50028a}\label{group__bsr__mat_ga3361f70e89302ec2c692df11ae50028a}} 
+\index{Bsr\_mat@{Bsr\_mat}!o\_data@{o\_data}}
+\index{o\_data@{o\_data}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{o\_data()}{o\_data()}}
+{\footnotesize\ttfamily subroutine o\+\_\+data}
+
+processing of total overlaps
+
+possible structures\+:
+
+c, (ic,jc) -\/ bound-\/bound c $<$ i $\vert$ . $>$, ic -\/ bound-\/channel c $<$ i $\vert$ . $>$ $<$ j $\vert$ . $>$ -\/ channel-\/channel
+
+where . denotes bound orbital, i,j -\/ channels.
+
+$<$ i $\vert$ j $>$ elements are ignored beca\+Use we assume that target states are orthogonal. These elements are Used to check this orthogonality (see array \textquotesingle{}to\textquotesingle{} in \mbox{\hyperlink{namespacebsr__matrix}{bsr\+\_\+matrix}}).\mbox{\Hypertarget{group__bsr__mat_ga6046b07a0612b9253dbf40fa45cd7fa3}\label{group__bsr__mat_ga6046b07a0612b9253dbf40fa45cd7fa3}} 
+\index{Bsr\_mat@{Bsr\_mat}!pri\_int@{pri\_int}}
+\index{pri\_int@{pri\_int}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{pri\_int()}{pri\_int()}}
+{\footnotesize\ttfamily subroutine pri\+\_\+int (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu,  }\item[{integer, intent(in)}]{icase,  }\item[{integer, intent(in)}]{k,  }\item[{integer, intent(in)}]{i1,  }\item[{integer, intent(in)}]{i2,  }\item[{integer, intent(in)}]{i3,  }\item[{integer, intent(in)}]{i4,  }\item[{real(8), intent(in)}]{S }\end{DoxyParamCaption})}
+
+
+
+print the integral for debug purposes 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nu} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em icase} & print the integral for debug purposes \\
+\hline
+\mbox{\texttt{ in}}  & {\em k} & print the integral for debug purposes \\
+\hline
+\mbox{\texttt{ in}}  & {\em i1} & print the integral for debug purposes \\
+\hline
+\mbox{\texttt{ in}}  & {\em i2} & print the integral for debug purposes \\
+\hline
+\mbox{\texttt{ in}}  & {\em i3} & print the integral for debug purposes \\
+\hline
+\mbox{\texttt{ in}}  & {\em i4} & print the integral for debug purposes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_ga3e76be764ac0eec49ea1f658c431f0b4}\label{group__bsr__mat_ga3e76be764ac0eec49ea1f658c431f0b4}} 
+\index{Bsr\_mat@{Bsr\_mat}!read\_arg@{read\_arg}}
+\index{read\_arg@{read\_arg}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{read\_arg()}{read\_arg()}}
+{\footnotesize\ttfamily subroutine read\+\_\+arg (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu }\end{DoxyParamCaption})}
+
+
+
+read input parameters 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nu} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_ga16b40b53422dc67fe65cf793458d956b}\label{group__bsr__mat_ga16b40b53422dc67fe65cf793458d956b}} 
+\index{Bsr\_mat@{Bsr\_mat}!read\_bsw@{read\_bsw}}
+\index{read\_bsw@{read\_bsw}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{read\_bsw()}{read\_bsw()}}
+{\footnotesize\ttfamily subroutine read\+\_\+bsw (\begin{DoxyParamCaption}\item[{integer}]{nu }\end{DoxyParamCaption})}
+
+read B-\/spline orbitals from bsw-\/file (unit nu) only for orbitals which are in the list \char`\"{}orb\+\_\+\+L\+S\char`\"{}\mbox{\Hypertarget{group__bsr__mat_gae0e423f95e4e3d38efddcd41b370d0cd}\label{group__bsr__mat_gae0e423f95e4e3d38efddcd41b370d0cd}} 
+\index{Bsr\_mat@{Bsr\_mat}!read\_conf@{read\_conf}}
+\index{read\_conf@{read\_conf}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{read\_conf()}{read\_conf()}}
+{\footnotesize\ttfamily subroutine read\+\_\+conf (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nuc,  }\item[{integer, intent(in)}]{nub }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nuc} & Read the configuration list from c-\/file (unit \textquotesingle{}nuc\textquotesingle{}), define the corresponding angular and configurational symmetries and compare with information from \textquotesingle{}int\+\_\+bnk\textquotesingle{} (unit \textquotesingle{}nub\textquotesingle{})\\
+\hline
+\mbox{\texttt{ in}}  & {\em nub} & Read the configuration list from c-\/file (unit \textquotesingle{}nuc\textquotesingle{}), define the corresponding angular and configurational symmetries and compare with information from \textquotesingle{}int\+\_\+bnk\textquotesingle{} (unit \textquotesingle{}nub\textquotesingle{}) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_gaae3f5c99fcf27fce39382bb506c6ca50}\label{group__bsr__mat_gaae3f5c99fcf27fce39382bb506c6ca50}} 
+\index{Bsr\_mat@{Bsr\_mat}!read\_data@{read\_data}}
+\index{read\_data@{read\_data}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{read\_data()}{read\_data()}}
+{\footnotesize\ttfamily subroutine read\+\_\+data}
+
+read data for given partial wave, klsp\mbox{\Hypertarget{group__bsr__mat_ga022f005e9c5a726e0aafbfe841c8dbcb}\label{group__bsr__mat_ga022f005e9c5a726e0aafbfe841c8dbcb}} 
+\index{Bsr\_mat@{Bsr\_mat}!read\_dets@{read\_dets}}
+\index{read\_dets@{read\_dets}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{read\_dets()}{read\_dets()}}
+{\footnotesize\ttfamily subroutine read\+\_\+dets}
+
+read the overlap determinants from I\+N\+T\+\_\+\+B\+NK (unit nub) ~\newline
+\mbox{\Hypertarget{group__bsr__mat_ga674f2cb9ac4e85268ece9a306f1f7965}\label{group__bsr__mat_ga674f2cb9ac4e85268ece9a306f1f7965}} 
+\index{Bsr\_mat@{Bsr\_mat}!record\_matrix@{record\_matrix}}
+\index{record\_matrix@{record\_matrix}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{record\_matrix()}{record\_matrix()}}
+{\footnotesize\ttfamily subroutine record\+\_\+matrix (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu }\end{DoxyParamCaption})}
+
+
+
+record interaction (overlap) matrix to the unit \textquotesingle{}nu\textquotesingle{} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nu} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_ga2f53371f0a86dae4b72d31aba3564bff}\label{group__bsr__mat_ga2f53371f0a86dae4b72d31aba3564bff}} 
+\index{Bsr\_mat@{Bsr\_mat}!reduce\_factor@{reduce\_factor}}
+\index{reduce\_factor@{reduce\_factor}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{reduce\_factor()}{reduce\_factor()}}
+{\footnotesize\ttfamily real(8) function reduce\+\_\+factor (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ich,  }\item[{integer, intent(in)}]{jch,  }\item[{integer, intent(in)}]{k }\end{DoxyParamCaption})}
+
+
+
+define factor connecing reduced dipole matrix element with asymptotic coefficient for multipole index k 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ich} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em jch} & define factor connecing reduced dipole matrix element with asymptotic coefficient for multipole index k \\
+\hline
+\mbox{\texttt{ in}}  & {\em k} & define factor connecing reduced dipole matrix element with asymptotic coefficient for multipole index k \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_ga7609207df74422f8b2758f1a48de118d}\label{group__bsr__mat_ga7609207df74422f8b2758f1a48de118d}} 
+\index{Bsr\_mat@{Bsr\_mat}!shift@{shift}}
+\index{shift@{shift}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{shift()}{shift()}}
+{\footnotesize\ttfamily subroutine shift (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{n,  }\item[{integer, intent(in)}]{m,  }\item[{integer, dimension($\ast$), intent(in)}]{N1,  }\item[{integer, dimension($\ast$), intent(out)}]{N2 }\end{DoxyParamCaption})}
+
+
+
+array N2 obtained from array N1 by deleting element \textquotesingle{}m\textquotesingle{} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em n} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em m} & array N2 obtained from array N1 by deleting element \textquotesingle{}m\textquotesingle{} \\
+\hline
+\mbox{\texttt{ in}}  & {\em n1} & array N2 obtained from array N1 by deleting element \textquotesingle{}m\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_gaec39886073e72965c1d3b0438b03e243}\label{group__bsr__mat_gaec39886073e72965c1d3b0438b03e243}} 
+\index{Bsr\_mat@{Bsr\_mat}!state\_res@{state\_res}}
+\index{state\_res@{state\_res}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{state\_res()}{state\_res()}}
+{\footnotesize\ttfamily subroutine state\+\_\+res}
+
+extracts the data from int\+\_\+bnk for specific case\mbox{\Hypertarget{group__bsr__mat_ga40c2d1441db2c6dbe37c5c433560f8c7}\label{group__bsr__mat_ga40c2d1441db2c6dbe37c5c433560f8c7}} 
+\index{Bsr\_mat@{Bsr\_mat}!sub1@{sub1}}
+\index{sub1@{sub1}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{sub1()}{sub1()}}
+{\footnotesize\ttfamily subroutine sub1}
+
+provides calculations for one partial wave\mbox{\Hypertarget{group__bsr__mat_ga38c33a8251c1d7e2759702c9ebad6f06}\label{group__bsr__mat_ga38c33a8251c1d7e2759702c9ebad6f06}} 
+\index{Bsr\_mat@{Bsr\_mat}!target\_h@{target\_h}}
+\index{target\_h@{target\_h}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{target\_h()}{target\_h()}}
+{\footnotesize\ttfamily subroutine target\+\_\+h (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ich,  }\item[{integer, intent(in)}]{jch,  }\item[{real(8), intent(in)}]{C,  }\item[{real(8), intent(in)}]{CC }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ich} & update target interaction and overlap matrixes, by considering the terms with structure $<$kl$\vert$k\textquotesingle{}l$>$ $<$target$\vert$\+H$\vert$target\textquotesingle{}$>$\\
+\hline
+\end{DoxyParams}
+It is not pure target states, but the basis states before $\vert$kl$>$, i.\+e. the basis states may repeat, if one target state can couple to several kl.
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em jch} & update target interaction and overlap matrixes, by considering the terms with structure $<$kl$\vert$k\textquotesingle{}l$>$ $<$target$\vert$\+H$\vert$target\textquotesingle{}$>$\\
+\hline
+\end{DoxyParams}
+It is not pure target states, but the basis states before $\vert$kl$>$, i.\+e. the basis states may repeat, if one target state can couple to several kl. \mbox{\Hypertarget{group__bsr__mat_ga3a63e173bdc2dbf0377b174dc162ef1e}\label{group__bsr__mat_ga3a63e173bdc2dbf0377b174dc162ef1e}} 
+\index{Bsr\_mat@{Bsr\_mat}!target\_new@{target\_new}}
+\index{target\_new@{target\_new}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{target\_new()}{target\_new()}}
+{\footnotesize\ttfamily subroutine target\+\_\+new}
+
+new target energies\mbox{\Hypertarget{group__bsr__mat_gae18d8db1b226e35e6280aff288338a80}\label{group__bsr__mat_gae18d8db1b226e35e6280aff288338a80}} 
+\index{Bsr\_mat@{Bsr\_mat}!target\_print@{target\_print}}
+\index{target\_print@{target\_print}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{target\_print()}{target\_print()}}
+{\footnotesize\ttfamily subroutine target\+\_\+print (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{iout,  }\item[{real(8), intent(in)}]{EC,  }\item[{real(8), intent(in)}]{eps }\end{DoxyParamCaption})}
+
+
+
+prints target info 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em iout} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_ga1b5b0c928f5bd0959e03c3d23f136fe5}\label{group__bsr__mat_ga1b5b0c928f5bd0959e03c3d23f136fe5}} 
+\index{Bsr\_mat@{Bsr\_mat}!update\_cf@{update\_cf}}
+\index{update\_cf@{update\_cf}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{update\_cf()}{update\_cf()}}
+{\footnotesize\ttfamily subroutine update\+\_\+cf (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{k,  }\item[{integer, intent(in)}]{ich,  }\item[{integer, intent(in)}]{jch,  }\item[{real(8), intent(in)}]{C }\end{DoxyParamCaption})}
+
+
+
+Update asymptotic coefficients. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em k} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em ich} & Update asymptotic coefficients \\
+\hline
+\mbox{\texttt{ in}}  & {\em jch} & Update asymptotic coefficients \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_gac9cf44c0c9fc5ad2dd435599ea85f4fc}\label{group__bsr__mat_gac9cf44c0c9fc5ad2dd435599ea85f4fc}} 
+\index{Bsr\_mat@{Bsr\_mat}!update\_hb@{update\_hb}}
+\index{update\_hb@{update\_hb}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{update\_hb()}{update\_hb()}}
+{\footnotesize\ttfamily subroutine update\+\_\+hb (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ic,  }\item[{integer, intent(in)}]{jc,  }\item[{real(8), intent(in)}]{c }\end{DoxyParamCaption})}
+
+
+
+update scalar in the bound-\/bound block 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ic} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em jc} & update scalar in the bound-\/bound block \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_ga7677a4f429f4e454fa43e7daf2b0d918}\label{group__bsr__mat_ga7677a4f429f4e454fa43e7daf2b0d918}} 
+\index{Bsr\_mat@{Bsr\_mat}!update\_hl@{update\_hl}}
+\index{update\_hl@{update\_hl}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{update\_hl()}{update\_hl()}}
+{\footnotesize\ttfamily subroutine update\+\_\+hl (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ich,  }\item[{integer, intent(in)}]{jch,  }\item[{integer, intent(in)}]{ns,  }\item[{integer, intent(in)}]{ks,  }\item[{real(8), dimension(ns,ks), intent(in)}]{d,  }\item[{real(8), intent(in)}]{c }\end{DoxyParamCaption})}
+
+
+
+update symmetric banded matrix in lower-\/column storage mode ! 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ich} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em jch} & update symmetric banded matrix in lower-\/column storage mode ! \\
+\hline
+\mbox{\texttt{ in}}  & {\em ns} & update symmetric banded matrix in lower-\/column storage mode ! \\
+\hline
+\mbox{\texttt{ in}}  & {\em ks} & update symmetric banded matrix in lower-\/column storage mode ! \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_ga579285c9aa90774a8452e7d02f54507d}\label{group__bsr__mat_ga579285c9aa90774a8452e7d02f54507d}} 
+\index{Bsr\_mat@{Bsr\_mat}!update\_hv@{update\_hv}}
+\index{update\_hv@{update\_hv}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{update\_hv()}{update\_hv()}}
+{\footnotesize\ttfamily subroutine update\+\_\+hv (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ich,  }\item[{integer, intent(in)}]{ic,  }\item[{integer, intent(in)}]{ns,  }\item[{real(8), dimension($\ast$), intent(in)}]{v,  }\item[{real(8), intent(in)}]{c }\end{DoxyParamCaption})}
+
+
+
+update vector in the channel-\/bound block 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ich} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em ic} & update vector in the channel-\/bound block \\
+\hline
+\mbox{\texttt{ in}}  & {\em ns} & update vector in the channel-\/bound block \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_gaaa8bf8509f43227d5f00d3d0f423939f}\label{group__bsr__mat_gaaa8bf8509f43227d5f00d3d0f423939f}} 
+\index{Bsr\_mat@{Bsr\_mat}!update\_hw@{update\_hw}}
+\index{update\_hw@{update\_hw}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{update\_hw()}{update\_hw()}}
+{\footnotesize\ttfamily subroutine update\+\_\+hw (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ich,  }\item[{integer, intent(in)}]{jch,  }\item[{integer, intent(in)}]{ns,  }\item[{real(8), dimension($\ast$), intent(in)}]{v,  }\item[{real(8), dimension($\ast$), intent(in)}]{w }\end{DoxyParamCaption})}
+
+
+
+update channel block with by v$\ast$w 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ich} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em jch} & update channel block with by v$\ast$w \\
+\hline
+\mbox{\texttt{ in}}  & {\em ns} & update channel block with by v$\ast$w \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_ga8ec3b742ec7541197da9e9a49bb7c3b7}\label{group__bsr__mat_ga8ec3b742ec7541197da9e9a49bb7c3b7}} 
+\index{Bsr\_mat@{Bsr\_mat}!update\_hx@{update\_hx}}
+\index{update\_hx@{update\_hx}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{update\_hx()}{update\_hx()}}
+{\footnotesize\ttfamily subroutine update\+\_\+hx (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ich,  }\item[{integer, intent(in)}]{jch,  }\item[{integer, intent(in)}]{ns,  }\item[{integer, intent(in)}]{ks,  }\item[{real(8), dimension(ns,$\ast$), intent(in)}]{d,  }\item[{character(1), intent(in)}]{sym }\end{DoxyParamCaption})}
+
+
+
+update channel block 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ich} & \begin{DoxyVerb}sym = 's'  -->  symmetric banded upper-column storage mode
+sym = 'n'  -->  non-symmetric band matrix  
+sym = 'x'  -->  non-symmetric full matrix
+\end{DoxyVerb}
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em jch} & update channel block \begin{DoxyVerb}sym = 's'  -->  symmetric banded upper-column storage mode
+sym = 'n'  -->  non-symmetric band matrix  
+sym = 'x'  -->  non-symmetric full matrix
+\end{DoxyVerb}
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em ns} & update channel block \begin{DoxyVerb}sym = 's'  -->  symmetric banded upper-column storage mode
+sym = 'n'  -->  non-symmetric band matrix  
+sym = 'x'  -->  non-symmetric full matrix
+\end{DoxyVerb}
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em ks} & update channel block \begin{DoxyVerb}sym = 's'  -->  symmetric banded upper-column storage mode
+sym = 'n'  -->  non-symmetric band matrix  
+sym = 'x'  -->  non-symmetric full matrix
+\end{DoxyVerb}
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_gaa5916f9f05e8e66f538f9a4196d13af1}\label{group__bsr__mat_gaa5916f9f05e8e66f538f9a4196d13af1}} 
+\index{Bsr\_mat@{Bsr\_mat}!vdet@{vdet}}
+\index{vdet@{vdet}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{vdet()}{vdet()}}
+{\footnotesize\ttfamily real(8) function vdet (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{kd,  }\item[{integer, dimension(kd), intent(in)}]{N1,  }\item[{integer, dimension(kd), intent(in)}]{N2 }\end{DoxyParamCaption})}
+
+
+
+calculate the value of overlap determinant for given orbitals Calls\+: D\+ET 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em kd} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em n1} & calculate the value of overlap determinant for given orbitals Calls\+: D\+ET \\
+\hline
+\mbox{\texttt{ in}}  & {\em n2} & calculate the value of overlap determinant for given orbitals Calls\+: D\+ET \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_ga86aad19d1517654fef57ae806dbf8927}\label{group__bsr__mat_ga86aad19d1517654fef57ae806dbf8927}} 
+\index{Bsr\_mat@{Bsr\_mat}!z\_data@{z\_data}}
+\index{z\_data@{z\_data}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{z\_data()}{z\_data()}}
+{\footnotesize\ttfamily subroutine z\+\_\+data (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{jtype,  }\item[{integer, intent(in)}]{l }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em jtype} & we have following different structures\+: \begin{DoxyVerb} Z( . .)                        -  bound-bound
+ Z( i .)                        -  bound-channel
+ Z( . .) < i | . >              -  bound-channel
+ Z( i i)                        -  channel-channel
+ Z( i .) < j | . >              -  channel-channel
+ Z( . .) < i | . > < j | . >    -  channel-channel
+
+ where .  denotes bound orbital, i,j - channels.
+\end{DoxyVerb}
+\\
+\hline
+\mbox{\texttt{ in}}  & {\em l} & we have following different structures\+: \begin{DoxyVerb} Z( . .)                        -  bound-bound
+ Z( i .)                        -  bound-channel
+ Z( . .) < i | . >              -  bound-channel
+ Z( i i)                        -  channel-channel
+ Z( i .) < j | . >              -  channel-channel
+ Z( . .) < i | . > < j | . >    -  channel-channel
+
+ where .  denotes bound orbital, i,j - channels.
+\end{DoxyVerb}
+ \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{group__bsr__mat_gaf3e82e5aaa6dbd55b62a26d696f5ddc9}\label{group__bsr__mat_gaf3e82e5aaa6dbd55b62a26d696f5ddc9}} 
+\index{Bsr\_mat@{Bsr\_mat}!kch@{kch}}
+\index{kch@{kch}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{kch}{kch}}
+{\footnotesize\ttfamily integer bsr\+\_\+matrix\+::kch}
+
+\begin{DoxyVerb}contains the basic matrices:
+
+hcc  -  interaction (or overlap) chanel-channel matrix
+hcb  -  interaction (or overlap) chanel-bound matrix
+hbb  -  interaction (or overlap) bound-bound matrix
+ACF  -  array of asymptotic coefficients
+htarg  -  interaction matrix for target states
+otarg  -  overlap matrix for target states
+\end{DoxyVerb}
+
+\begin{DoxyParams}{Parameters}
+{\em number} & of channels \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__mat_ga9e6abf295659518186a90e82f5225f75}\label{group__bsr__mat_ga9e6abf295659518186a90e82f5225f75}} 
+\index{Bsr\_mat@{Bsr\_mat}!lh\_dir@{lh\_dir}}
+\index{lh\_dir@{lh\_dir}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{lh\_dir}{lh\_dir}}
+{\footnotesize\ttfamily integer l\+\_\+core\+::lh\+\_\+dir}
+
+
+
+contain B-\/spline representation for L-\/integral including the interaction with common core 
+
+hl(ns,ks) -\/ matrix of L-\/operator in the B-\/splne basis (in symmetric lower-\/column mode)
+
+hl\+\_\+dir(ns,ks) -\/ direct interaction with core (in symmetric upper-\/column mode)
+
+hl and hl\+\_\+dir have different representation !!!
+
+lh\+\_\+dir = \mbox{[}-\/1$\vert$1\mbox{]} -\/ (not$\vert$yes) shows if hl\+\_\+dir is done or no (this parameter allows us to compute the hl\+\_\+dir only once because hl and hl\+\_\+dir does not depend on l)
+
+hl\+\_\+exc(ns,ns) -\/ exchange interaction with core
+
+hl\+\_\+core(ns,ns) -\/ final hl-\/matrix with core interaction included (in full representation)
+
+mlh -\/ max. l-\/value
+
+hl\+\_\+full(ns,ns,mlh) -\/ all L-\/matreces
+
+vc(ns,ks) -\/ relativistic mass-\/velocity correction \mbox{\Hypertarget{group__bsr__mat_ga1307721a915029971f2d37812bc53c39}\label{group__bsr__mat_ga1307721a915029971f2d37812bc53c39}} 
+\index{Bsr\_mat@{Bsr\_mat}!lz\_dir@{lz\_dir}}
+\index{lz\_dir@{lz\_dir}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{lz\_dir}{lz\_dir}}
+{\footnotesize\ttfamily integer z\+\_\+core\+::lz\+\_\+dir}
+
+
+
+contains B-\/splne representation for Z-\/integral including the interaction with core 
+
+zl(ns,ks) -\/ matrix of Z-\/operator in the B-\/splne basis (in symmetric lower-\/column mode)
+
+zl\+\_\+dir(ns,ks) -\/ direct interaction with core (in symmetric upper-\/column mode)
+
+zl and zl\+\_\+dir have different representation !!!
+
+lz\+\_\+dir = \mbox{[}-\/1$\vert$1\mbox{]} -\/ (not$\vert$yes) for Done of zl\+\_\+dir (this parameter allows us to compute the zl\+\_\+dir only once because zl\+\_\+dir does not depend on l)
+
+zl\+\_\+exc(ns,ns) -\/ exchange interaction with core
+
+zl\+\_\+core(ns,ns) -\/ final zl with core interaction (in full representation)
+
+mlz -\/ max. l for so-\/interaction
+
+zl\+\_\+full(ns,ns,mlz) -\/ all z-\/matreces
+
+Z\+\_\+int -\/ Z-\/integrals $<$P\+\_\+i$\vert$ Z $\vert$\+P\+\_\+j$>$
+
+Z\+\_\+vec -\/ vectors $<$ . $\vert$ Z $\vert$ P\+\_\+i$>$
+
+d,x -\/ auxiliary arrays \mbox{\Hypertarget{group__bsr__mat_gac8b59f259bef35dc4d68f1cb8102ca76}\label{group__bsr__mat_gac8b59f259bef35dc4d68f1cb8102ca76}} 
+\index{Bsr\_mat@{Bsr\_mat}!ma@{ma}}
+\index{ma@{ma}!Bsr\_mat@{Bsr\_mat}}
+\doxysubsubsection{\texorpdfstring{ma}{ma}}
+{\footnotesize\ttfamily integer parameter bsr\+\_\+mat\+::ma =20}
+
+
+
+main parameters for the B\+S\+R\+\_\+\+M\+AT program 
+

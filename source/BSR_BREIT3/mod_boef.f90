@@ -1,12 +1,13 @@
 !======================================================================
       Module boef_list
 !======================================================================
-!     Containes the two-electron integrals for matrix elements
-!     in uncouple nlms-representation.
-!     This list is introduced to decrease the number of calls for
-!     ZNO_breit subroutine. Used only in the ZNO_2ee routine.
-!     The coefficients are recorded by blocks - all integrals for all
-!     operators under concideration for given < 1, 2 | O | 3, 4>
+!> @ingroup bsr_breit
+!!     Containes the two-electron integrals for matrix elements
+!!     in uncouple nlms-representation.
+!!     This list is introduced to decrease the number of calls for
+!!     ZNO_breit subroutine. Used only in the ZNO_2ee routine.
+!!     The coefficients are recorded by blocks - all integrals for all
+!!     operators under concideration for given < 1, 2 | O | 3, 4>
 !----------------------------------------------------------------------
       Implicit none
 
@@ -50,7 +51,8 @@
 !======================================================================
       Subroutine alloc_boef(m)
 !======================================================================
-!     allocate/deallocate arrays in module boef
+!> @ingroup bsr_breit
+!> @brief     allocate/deallocate arrays in module boef
 !---------------------------------------------------------------------- 
       Use boef_list
 
@@ -92,7 +94,8 @@
 !======================================================================
       Subroutine alloc_blk(m)
 !======================================================================
-!     allocate/deallocate 'block' arrays in module boef
+!> @ingroup bsr_breit
+!> @brief     allocate/deallocate 'block' arrays in module boef
 !---------------------------------------------------------------------- 
       Use boef_list
 
@@ -137,8 +140,9 @@
 !=======================================================================
       Subroutine Iadd_boef(C,int)
 !=======================================================================
-!     add new integral to the list 'boef'
-!     (in the range of new block: jboef-nboef)
+!> @ingroup bsr_breit
+!> @brief     add new integral to the list 'boef'
+!>     (in the range of new block: jboef-nboef)
 !-----------------------------------------------------------------------
       Use boef_list
 
@@ -167,12 +171,13 @@
 !=======================================================================
       Subroutine Check_boef(l1,m1,s1,l2,m2,s2,l3,m3,s3,l4,m4,s4)
 !=======================================================================
-!     Check if the m.e. for given orbitals is already in the list,
-!     otherwise - calculate them. 
-!     Procedure use incoding the orbitals parameters, and that
-!     restrict the max. l to 64 (see parameter jbm, jbl). 
-!     We can reduce this restriction  by using four identifiers 
-!     (instead three), one for each orbital.  
+!> @ingroup bsr_breit
+!!     Check if the m.e. for given orbitals is already in the list,
+!!     otherwise - calculate them. 
+!!     Procedure use incoding the orbitals parameters, and that
+!!     restrict the max. l to 64 (see parameter jbm, jbl). 
+!!     We can reduce this restriction  by using four identifiers 
+!!     (instead three), one for each orbital.  
 !----------------------------------------------------------------------
       Use boef_list
       

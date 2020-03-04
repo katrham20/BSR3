@@ -1,8 +1,9 @@
 !====================================================================
       Module coef_list
 !====================================================================
-!     Contains a set of coefficients with two identifiers (intc,idfc)
-!     The list is ordered according to the pointer 'ipcoef'
+!> @ingroup bsr_breit
+!!     Contains a set of coefficients with two identifiers (intc,idfc)
+!!     The list is ordered according to the pointer 'ipcoef'
 !--------------------------------------------------------------------
       Implicit none 
     
@@ -41,7 +42,8 @@
 !======================================================================
       Subroutine Alloc_coef(mc)
 !======================================================================
-!     allocate arrays in module coef
+!> @ingroup bsr_breit
+!> @brief     allocate arrays in module coef
 !----------------------------------------------------------------------
       Use coef_list
 
@@ -93,7 +95,8 @@
 !======================================================================
       Subroutine Add_coef
 !======================================================================
-!     add new coefficient to the list coef 
+!> @ingroup bsr_breit
+!> @brief     add new coefficient to the list coef 
 !----------------------------------------------------------------------
       Use coef_list
 

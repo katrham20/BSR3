@@ -1,0 +1,165 @@
+\hypertarget{group__bsr__hd}{}\doxysection{B\+S\+R\+\_\+\+H\+D3}
+\label{group__bsr__hd}\index{BSR\_HD3@{BSR\_HD3}}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__hd_ga7b3b3bd7ab6592652f6e7fa082b8ee31}{b\+\_\+out}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__hd_gae469cc02544d1c8b7ba4d6d4947e4b0e}{bsr\+\_\+hd\+\_\+inf}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__hd_gaec129487d4a917ecadb104121867b96e}{diag\+\_\+hd}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__hd_ga6f288adbc97f0233b6ae752286f8bdba}{find\+\_\+channel\+\_\+label}} (ich, jch, is, E, Lab)
+\begin{DoxyCompactList}\small\item\em define channel label \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__hd_ga0f28c2e8d28da1dad5d010de3310be59}{find\+\_\+channel\+\_\+nodes}} (ich, is, nodes)
+\begin{DoxyCompactList}\small\item\em define number of nodes in the given solusion \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__hd_gab0b68c0b3cccddd1ff452e79a752a7dd}{h\+\_\+out}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__hd_ga5d6d2e0b974b7e5e4bbaf055abe8e675}{h\+\_\+out1}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__hd_ga83b229cbbab9db96e2899a1f31afea26}{r\+\_\+arg}} (nu)
+\begin{DoxyCompactList}\small\item\em read arguments, first from file unit \textquotesingle{}nu, then from comand line \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__hd_ga473d725a0603a1ade076dd5487e5161e}{rsol\+\_\+out}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__hd_ga1327a2af93a3a5084a1644008946846a}{sub1\+\_\+hd}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__hd_ga94b5a454ce47f7adbf23238d28c2a69e}{w\+\_\+out}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{group__bsr__hd_ga72dbd83d53f195fd3e32be580d5e445e}{bsr\+\_\+hd\+::ma}} = 40
+\begin{DoxyCompactList}\small\item\em Contains common variable and arrays for program \mbox{\hyperlink{namespacebsr__hd}{bsr\+\_\+hd}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Program diagonalizes the Hamiltonian in the inner region and generates H.\+D\+AT file for scattering or photoionization calculations in the R-\/matrix approach. Additional option -\/ calculation of bound (or pseudo-\/) states. 
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{group__bsr__hd_ga7b3b3bd7ab6592652f6e7fa082b8ee31}\label{group__bsr__hd_ga7b3b3bd7ab6592652f6e7fa082b8ee31}} 
+\index{BSR\_HD3@{BSR\_HD3}!b\_out@{b\_out}}
+\index{b\_out@{b\_out}!BSR\_HD3@{BSR\_HD3}}
+\doxysubsubsection{\texorpdfstring{b\_out()}{b\_out()}}
+{\footnotesize\ttfamily subroutine b\+\_\+out}
+
+output the bound solutions\mbox{\Hypertarget{group__bsr__hd_gae469cc02544d1c8b7ba4d6d4947e4b0e}\label{group__bsr__hd_gae469cc02544d1c8b7ba4d6d4947e4b0e}} 
+\index{BSR\_HD3@{BSR\_HD3}!bsr\_hd\_inf@{bsr\_hd\_inf}}
+\index{bsr\_hd\_inf@{bsr\_hd\_inf}!BSR\_HD3@{BSR\_HD3}}
+\doxysubsubsection{\texorpdfstring{bsr\_hd\_inf()}{bsr\_hd\_inf()}}
+{\footnotesize\ttfamily subroutine bsr\+\_\+hd\+\_\+inf}
+
+provide information about \char`\"{}bsr\+\_\+hd\char`\"{} program\mbox{\Hypertarget{group__bsr__hd_gaec129487d4a917ecadb104121867b96e}\label{group__bsr__hd_gaec129487d4a917ecadb104121867b96e}} 
+\index{BSR\_HD3@{BSR\_HD3}!diag\_hd@{diag\_hd}}
+\index{diag\_hd@{diag\_hd}!BSR\_HD3@{BSR\_HD3}}
+\doxysubsubsection{\texorpdfstring{diag\_hd()}{diag\_hd()}}
+{\footnotesize\ttfamily subroutine diag\+\_\+hd}
+
+Diagonalization procedure\+:
+
+
+\begin{DoxyEnumerate}
+\item Read diagonal channel blocks and diagonalize them.
+\item Transform the overlap and interaction matrixes to new basis.
+\item Add mass-\/velocity correction if any.
+\item Form a Cholesky factorization of the overlap matrix.
+\item Transform problem to standard eigenvalue problem.
+\item Transform to experimental thresholds energies if any.
+\item Solve standard eigenvalue problem.
+\item Call w\+\_\+out for weights if required.
+\item Backtransform eigenvectors to the original problem. Solutions are still in new basis!!!
+\end{DoxyEnumerate}\mbox{\Hypertarget{group__bsr__hd_ga6f288adbc97f0233b6ae752286f8bdba}\label{group__bsr__hd_ga6f288adbc97f0233b6ae752286f8bdba}} 
+\index{BSR\_HD3@{BSR\_HD3}!find\_channel\_label@{find\_channel\_label}}
+\index{find\_channel\_label@{find\_channel\_label}!BSR\_HD3@{BSR\_HD3}}
+\doxysubsubsection{\texorpdfstring{find\_channel\_label()}{find\_channel\_label()}}
+{\footnotesize\ttfamily subroutine find\+\_\+channel\+\_\+label (\begin{DoxyParamCaption}\item[{integer}]{ich,  }\item[{integer}]{jch,  }\item[{integer}]{is,  }\item[{real(8)}]{E,  }\item[{character($\ast$)}]{Lab }\end{DoxyParamCaption})}
+
+
+
+define channel label 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & \\
+\hline
+{\em ich} & define channel label \\
+\hline
+{\em jch} & define channel label \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__hd_ga0f28c2e8d28da1dad5d010de3310be59}\label{group__bsr__hd_ga0f28c2e8d28da1dad5d010de3310be59}} 
+\index{BSR\_HD3@{BSR\_HD3}!find\_channel\_nodes@{find\_channel\_nodes}}
+\index{find\_channel\_nodes@{find\_channel\_nodes}!BSR\_HD3@{BSR\_HD3}}
+\doxysubsubsection{\texorpdfstring{find\_channel\_nodes()}{find\_channel\_nodes()}}
+{\footnotesize\ttfamily subroutine find\+\_\+channel\+\_\+nodes (\begin{DoxyParamCaption}\item[{integer}]{ich,  }\item[{integer}]{is,  }\item[{integer}]{nodes }\end{DoxyParamCaption})}
+
+
+
+define number of nodes in the given solusion 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ich} & \\
+\hline
+{\em is} & define number of nodes in the given solusion \\
+\hline
+{\em nodes} & define number of nodes in the given solusion \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__hd_gab0b68c0b3cccddd1ff452e79a752a7dd}\label{group__bsr__hd_gab0b68c0b3cccddd1ff452e79a752a7dd}} 
+\index{BSR\_HD3@{BSR\_HD3}!h\_out@{h\_out}}
+\index{h\_out@{h\_out}!BSR\_HD3@{BSR\_HD3}}
+\doxysubsubsection{\texorpdfstring{h\_out()}{h\_out()}}
+{\footnotesize\ttfamily subroutine h\+\_\+out}
+
+Output results in H.\+D\+AT file according to the B\+E\+L\+F\+A\+ST R-\/matrix code format\mbox{\Hypertarget{group__bsr__hd_ga5d6d2e0b974b7e5e4bbaf055abe8e675}\label{group__bsr__hd_ga5d6d2e0b974b7e5e4bbaf055abe8e675}} 
+\index{BSR\_HD3@{BSR\_HD3}!h\_out1@{h\_out1}}
+\index{h\_out1@{h\_out1}!BSR\_HD3@{BSR\_HD3}}
+\doxysubsubsection{\texorpdfstring{h\_out1()}{h\_out1()}}
+{\footnotesize\ttfamily subroutine h\+\_\+out1}
+
+Output results in H.\+D\+AT file according to the B\+E\+L\+F\+A\+ST R-\/matrix code format\mbox{\Hypertarget{group__bsr__hd_ga83b229cbbab9db96e2899a1f31afea26}\label{group__bsr__hd_ga83b229cbbab9db96e2899a1f31afea26}} 
+\index{BSR\_HD3@{BSR\_HD3}!r\_arg@{r\_arg}}
+\index{r\_arg@{r\_arg}!BSR\_HD3@{BSR\_HD3}}
+\doxysubsubsection{\texorpdfstring{r\_arg()}{r\_arg()}}
+{\footnotesize\ttfamily subroutine r\+\_\+arg (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu }\end{DoxyParamCaption})}
+
+
+
+read arguments, first from file unit \textquotesingle{}nu, then from comand line 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nu} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__hd_ga473d725a0603a1ade076dd5487e5161e}\label{group__bsr__hd_ga473d725a0603a1ade076dd5487e5161e}} 
+\index{BSR\_HD3@{BSR\_HD3}!rsol\_out@{rsol\_out}}
+\index{rsol\_out@{rsol\_out}!BSR\_HD3@{BSR\_HD3}}
+\doxysubsubsection{\texorpdfstring{rsol\_out()}{rsol\_out()}}
+{\footnotesize\ttfamily subroutine rsol\+\_\+out}
+
+output the R-\/matrix solutions and find the surface amplitudes\mbox{\Hypertarget{group__bsr__hd_ga1327a2af93a3a5084a1644008946846a}\label{group__bsr__hd_ga1327a2af93a3a5084a1644008946846a}} 
+\index{BSR\_HD3@{BSR\_HD3}!sub1\_hd@{sub1\_hd}}
+\index{sub1\_hd@{sub1\_hd}!BSR\_HD3@{BSR\_HD3}}
+\doxysubsubsection{\texorpdfstring{sub1\_hd()}{sub1\_hd()}}
+{\footnotesize\ttfamily subroutine sub1\+\_\+hd}
+
+calculations for given partial wave\mbox{\Hypertarget{group__bsr__hd_ga94b5a454ce47f7adbf23238d28c2a69e}\label{group__bsr__hd_ga94b5a454ce47f7adbf23238d28c2a69e}} 
+\index{BSR\_HD3@{BSR\_HD3}!w\_out@{w\_out}}
+\index{w\_out@{w\_out}!BSR\_HD3@{BSR\_HD3}}
+\doxysubsubsection{\texorpdfstring{w\_out()}{w\_out()}}
+{\footnotesize\ttfamily subroutine w\+\_\+out}
+
+define the contributions of channels and pertuber configurations for each solution
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{group__bsr__hd_ga72dbd83d53f195fd3e32be580d5e445e}\label{group__bsr__hd_ga72dbd83d53f195fd3e32be580d5e445e}} 
+\index{BSR\_HD3@{BSR\_HD3}!ma@{ma}}
+\index{ma@{ma}!BSR\_HD3@{BSR\_HD3}}
+\doxysubsubsection{\texorpdfstring{ma}{ma}}
+{\footnotesize\ttfamily integer parameter bsr\+\_\+hd\+::ma = 40}
+
+
+
+Contains common variable and arrays for program \mbox{\hyperlink{namespacebsr__hd}{bsr\+\_\+hd}}. 
+

@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine Read_data
 !======================================================================
-!     read data for given partial wave, klsp
+!> @ingroup bsr_mat
+!> @brief     read data for given partial wave, klsp
 !----------------------------------------------------------------------
       Use bsr_mat
       Use target; Use channel; Use conf_LS;  Use orb_LS

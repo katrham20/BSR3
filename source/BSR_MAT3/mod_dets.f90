@@ -1,27 +1,28 @@
 !======================================================================
       MODULE dets
 !======================================================================
-!     contains information about overlap determinants {<i|j>}
+!> @ingroup bsr_mat
+!> @brief     contains information about overlap determinants {<i|j>}
 !----------------------------------------------------------------------
-!
-! KPD(i)  - size of i-th determinant
-!
-! IPD(i)  - pointer (ip) of i-th determinants in the NPD array
-!
-! NPD(ip+1:ip+kd) - contains information about orbitals in overlap
-!                   determinant as  ii * idet + jj, 
-!                   where ii - pointer on row orbitals
-!                         jj - pointer on column orbitals
-!
-!----------------------------------------------------------------------     
-!
-! KPF(i)  - number (kd) of determinants in i-th overlap factor
-!
-! IPF(i)  - pointer (ip) on the i-th overlap factor in the NPF array
-!
-! NPF(ip+1:ip+kd) - i-th overlap factors as a list of pointers 
-!                   on individual determinants (ip) and its power (iext): 
-!                   npf(i) = ip * idef  +  iext
+!>
+!! KPD(i)  - size of i-th determinant
+!!
+!! IPD(i)  - pointer (ip) of i-th determinants in the NPD array
+!!
+!! NPD(ip+1:ip+kd) - contains information about orbitals in overlap
+!!                   determinant as  ii * idet + jj, 
+!!                   where ii - pointer on row orbitals
+!!                         jj - pointer on column orbitals
+!!
+!!----------------------------------------------------------------------     
+!!
+!! KPF(i)  - number (kd) of determinants in i-th overlap factor
+!!
+!! IPF(i)  - pointer (ip) on the i-th overlap factor in the NPF array
+!!
+!! NPF(ip+1:ip+kd) - i-th overlap factors as a list of pointers 
+!!                   on individual determinants (ip) and its power (iext): 
+!!                   npf(i) = ip * idef  +  iext
 !----------------------------------------------------------------------
 ! parameters idet,idef come from program breit_bsr
 !----------------------------------------------------------------------      
@@ -44,7 +45,8 @@
 !=======================================================================
       Subroutine Read_dets
 !=======================================================================
-!     read the overlap determinants from INT_BNK (unit nub)  
+!> @ingroup bsr_mat
+!> @brief     read the overlap determinants from INT_BNK (unit nub)  
 !-----------------------------------------------------------------------
       Use dets
       Use bsr_mat

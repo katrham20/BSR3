@@ -1,0 +1,100 @@
+\hypertarget{spline__rk__integrals_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+B\+S/spline\+\_\+rk\+\_\+integrals.f90 File Reference}
+\label{spline__rk__integrals_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/BS/spline\_rk\_integrals.f90@{/Users/khamilton/Codes/BSR3/libraries/BS/spline\_rk\_integrals.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacespline__rk__integrals}{spline\+\_\+rk\+\_\+integrals}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{spline__rk__integrals_8f90_a10e4ab3503e054d8972d7e7f86dd7769}{allocate\+\_\+rk\+\_\+integrals}}
+\item 
+subroutine \mbox{\hyperlink{spline__rk__integrals_8f90_af2ed23f64b164f8b852f131019350f51}{dealloc\+\_\+rk\+\_\+integrals}}
+\item 
+subroutine \mbox{\hyperlink{spline__rk__integrals_8f90_af883a9eba56ee3edcd7a7fb053c20862}{mrk\+\_\+cell\+\_\+lb}} (k)
+\item 
+subroutine \mbox{\hyperlink{spline__rk__integrals_8f90_a763c06e31b49c59eca4f996381e1bfd6}{make\+\_\+rkb1}} (k, io)
+\item 
+subroutine \mbox{\hyperlink{spline__rk__integrals_8f90_a90c0c82afcb263c4595a373cd24c02d3}{make\+\_\+rkd}} (k, io, jo)
+\item 
+subroutine \mbox{\hyperlink{spline__rk__integrals_8f90_a9115e266e820f7292cbf7e8a173b1ae3}{make\+\_\+rke}} (k, io, jo)
+\item 
+subroutine \mbox{\hyperlink{spline__rk__integrals_8f90_a4fcf8fd8ebdc0fbd8c05b43d0769271e}{make\+\_\+rkbv}} (k, i1, i2, i3)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer(4) \mbox{\hyperlink{namespacespline__rk__integrals_ab18e1b8cbe1eb1fc17807295db8f4c50}{spline\+\_\+rk\+\_\+integrals\+::krk}} = -\/2
+\item 
+real(8), dimension(\+:,\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacespline__rk__integrals_a9d527d4462408b127c101bd0fffbcf49}{spline\+\_\+rk\+\_\+integrals\+::rkb}}
+\item 
+integer(4) \mbox{\hyperlink{namespacespline__rk__integrals_aee2b4b8058470926528eb1cfd36ca7ac}{spline\+\_\+rk\+\_\+integrals\+::irkb1}}
+\item 
+real(8), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacespline__rk__integrals_af747df432aecc7751aa7bcb230959248}{spline\+\_\+rk\+\_\+integrals\+::rkb1}}
+\item 
+integer(4) \mbox{\hyperlink{namespacespline__rk__integrals_a92e3d9ea7925cbf82af4a5412a0705e4}{spline\+\_\+rk\+\_\+integrals\+::irkbd}}
+\item 
+integer(4) \mbox{\hyperlink{namespacespline__rk__integrals_a6b441720436548acafc14ff4bce0d6ed}{spline\+\_\+rk\+\_\+integrals\+::jrkbd}}
+\item 
+integer(4) \mbox{\hyperlink{namespacespline__rk__integrals_a01f769a13718082b5d2594c85f965797}{spline\+\_\+rk\+\_\+integrals\+::irkbe}}
+\item 
+integer(4) \mbox{\hyperlink{namespacespline__rk__integrals_a1255deb43eebfba4f434fa07eec2e850}{spline\+\_\+rk\+\_\+integrals\+::jrkbe}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacespline__rk__integrals_ae5f342acc887b130499e60b94c437b77}{spline\+\_\+rk\+\_\+integrals\+::rkbd}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacespline__rk__integrals_ad1f88fbccea667f35d96c0031cd13ed2}{spline\+\_\+rk\+\_\+integrals\+::rkbe}}
+\item 
+integer(4) \mbox{\hyperlink{namespacespline__rk__integrals_a2549e848047801e1545408d6a6119ab2}{spline\+\_\+rk\+\_\+integrals\+::irkbv1}}
+\item 
+integer(4) \mbox{\hyperlink{namespacespline__rk__integrals_a40fc7b1cf4dd6a98f22df499eef16d08}{spline\+\_\+rk\+\_\+integrals\+::irkbv2}}
+\item 
+integer(4) \mbox{\hyperlink{namespacespline__rk__integrals_a393459817748ff7731ceeac2a0ff4762}{spline\+\_\+rk\+\_\+integrals\+::irkbv3}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacespline__rk__integrals_ab9ceee6c7c00ff4948cc9b202e381bfb}{spline\+\_\+rk\+\_\+integrals\+::rkbv}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{spline__rk__integrals_8f90_a10e4ab3503e054d8972d7e7f86dd7769}\label{spline__rk__integrals_8f90_a10e4ab3503e054d8972d7e7f86dd7769}} 
+\index{spline\_rk\_integrals.f90@{spline\_rk\_integrals.f90}!allocate\_rk\_integrals@{allocate\_rk\_integrals}}
+\index{allocate\_rk\_integrals@{allocate\_rk\_integrals}!spline\_rk\_integrals.f90@{spline\_rk\_integrals.f90}}
+\doxysubsubsection{\texorpdfstring{allocate\_rk\_integrals()}{allocate\_rk\_integrals()}}
+{\footnotesize\ttfamily subroutine allocate\+\_\+rk\+\_\+integrals}
+
+\mbox{\Hypertarget{spline__rk__integrals_8f90_af2ed23f64b164f8b852f131019350f51}\label{spline__rk__integrals_8f90_af2ed23f64b164f8b852f131019350f51}} 
+\index{spline\_rk\_integrals.f90@{spline\_rk\_integrals.f90}!dealloc\_rk\_integrals@{dealloc\_rk\_integrals}}
+\index{dealloc\_rk\_integrals@{dealloc\_rk\_integrals}!spline\_rk\_integrals.f90@{spline\_rk\_integrals.f90}}
+\doxysubsubsection{\texorpdfstring{dealloc\_rk\_integrals()}{dealloc\_rk\_integrals()}}
+{\footnotesize\ttfamily subroutine dealloc\+\_\+rk\+\_\+integrals}
+
+\mbox{\Hypertarget{spline__rk__integrals_8f90_a763c06e31b49c59eca4f996381e1bfd6}\label{spline__rk__integrals_8f90_a763c06e31b49c59eca4f996381e1bfd6}} 
+\index{spline\_rk\_integrals.f90@{spline\_rk\_integrals.f90}!make\_rkb1@{make\_rkb1}}
+\index{make\_rkb1@{make\_rkb1}!spline\_rk\_integrals.f90@{spline\_rk\_integrals.f90}}
+\doxysubsubsection{\texorpdfstring{make\_rkb1()}{make\_rkb1()}}
+{\footnotesize\ttfamily subroutine make\+\_\+rkb1 (\begin{DoxyParamCaption}\item[{integer(4)}]{k,  }\item[{integer(4)}]{io }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{spline__rk__integrals_8f90_a4fcf8fd8ebdc0fbd8c05b43d0769271e}\label{spline__rk__integrals_8f90_a4fcf8fd8ebdc0fbd8c05b43d0769271e}} 
+\index{spline\_rk\_integrals.f90@{spline\_rk\_integrals.f90}!make\_rkbv@{make\_rkbv}}
+\index{make\_rkbv@{make\_rkbv}!spline\_rk\_integrals.f90@{spline\_rk\_integrals.f90}}
+\doxysubsubsection{\texorpdfstring{make\_rkbv()}{make\_rkbv()}}
+{\footnotesize\ttfamily subroutine make\+\_\+rkbv (\begin{DoxyParamCaption}\item[{integer(4)}]{k,  }\item[{integer(4)}]{i1,  }\item[{integer(4)}]{i2,  }\item[{integer(4)}]{i3 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{spline__rk__integrals_8f90_a90c0c82afcb263c4595a373cd24c02d3}\label{spline__rk__integrals_8f90_a90c0c82afcb263c4595a373cd24c02d3}} 
+\index{spline\_rk\_integrals.f90@{spline\_rk\_integrals.f90}!make\_rkd@{make\_rkd}}
+\index{make\_rkd@{make\_rkd}!spline\_rk\_integrals.f90@{spline\_rk\_integrals.f90}}
+\doxysubsubsection{\texorpdfstring{make\_rkd()}{make\_rkd()}}
+{\footnotesize\ttfamily subroutine make\+\_\+rkd (\begin{DoxyParamCaption}\item[{integer(4)}]{k,  }\item[{integer(4)}]{io,  }\item[{integer(4)}]{jo }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{spline__rk__integrals_8f90_a9115e266e820f7292cbf7e8a173b1ae3}\label{spline__rk__integrals_8f90_a9115e266e820f7292cbf7e8a173b1ae3}} 
+\index{spline\_rk\_integrals.f90@{spline\_rk\_integrals.f90}!make\_rke@{make\_rke}}
+\index{make\_rke@{make\_rke}!spline\_rk\_integrals.f90@{spline\_rk\_integrals.f90}}
+\doxysubsubsection{\texorpdfstring{make\_rke()}{make\_rke()}}
+{\footnotesize\ttfamily subroutine make\+\_\+rke (\begin{DoxyParamCaption}\item[{integer(4)}]{k,  }\item[{integer(4)}]{io,  }\item[{integer(4)}]{jo }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{spline__rk__integrals_8f90_af883a9eba56ee3edcd7a7fb053c20862}\label{spline__rk__integrals_8f90_af883a9eba56ee3edcd7a7fb053c20862}} 
+\index{spline\_rk\_integrals.f90@{spline\_rk\_integrals.f90}!mrk\_cell\_lb@{mrk\_cell\_lb}}
+\index{mrk\_cell\_lb@{mrk\_cell\_lb}!spline\_rk\_integrals.f90@{spline\_rk\_integrals.f90}}
+\doxysubsubsection{\texorpdfstring{mrk\_cell\_lb()}{mrk\_cell\_lb()}}
+{\footnotesize\ttfamily subroutine mrk\+\_\+cell\+\_\+lb (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{k }\end{DoxyParamCaption})}
+

@@ -1,0 +1,138 @@
+\hypertarget{mod__radial_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+R\+A\+D\+I\+A\+L/mod\+\_\+radial.f90 File Reference}
+\label{mod__radial_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/RADIAL/mod\_radial.f90@{/Users/khamilton/Codes/BSR3/libraries/RADIAL/mod\_radial.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespaceradial}{radial}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{mod__radial_8f90_a8bc9a47606e1b24f23f974cca2ee68eb}{alloc\+\_\+radial}} (m)
+\item 
+subroutine \mbox{\hyperlink{mod__radial_8f90_ab8c5e39f1a5cd12f707d900e70081da3}{get\+\_\+overlaps}} (eps\+\_\+c, pri)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_aee81e1d295d4dad29dd6e89f4a55c87e}{radial\+::rho}} = -\/4.D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_aae898bcb0d68585670b2c27bbc005b92}{radial\+::h}} = 1./16.D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a92479320f491d69f88233357a6229cec}{radial\+::h1}}
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_ace94e43425dafb24603c097b2d364d69}{radial\+::eh}}
+\item 
+integer \mbox{\hyperlink{namespaceradial_aa5116d82cd84f34f5455878bc243cb95}{radial\+::nr}} = 220
+\item 
+integer \mbox{\hyperlink{namespaceradial_a7c4ee5f080edda3e18b25a7519be0e99}{radial\+::mrf}} = 0
+\item 
+integer \mbox{\hyperlink{namespaceradial_ab70bf09987e0caab62b1a066384186f0}{radial\+::nrf}} = 0
+\item 
+integer \mbox{\hyperlink{namespaceradial_ae0744b0b9be3d94683a7e8ad974323fe}{radial\+::irf}} = 90
+\item 
+integer \mbox{\hyperlink{namespaceradial_a11f17ed11b0cceca9f90945111caa2da}{radial\+::jrf}} = 90
+\item 
+integer \mbox{\hyperlink{namespaceradial_aa85d1570b304a3eaeb8afebdd95aae56}{radial\+::iscr}} = 90
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_a4846b86be8bd9b80401f174c2c9d781f}{radial\+::r}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_a506d582a90d5f32c8d8a4840b4e1d709}{radial\+::rr}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_a00e1b6345b9a8ac7c1aa8730df7c684e}{radial\+::r2}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespaceradial_a9cf3b931e33e489c5870ca16c6349850}{radial\+::p}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespaceradial_ad3033e7272d1356b3227d6d204cec95d}{radial\+::overlaps}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_a55e0aca435f95fb156129f1f5d95ca2d}{radial\+::nro}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_aee35c1f9bce9257d1f4d04844d4570fc}{radial\+::lro}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_ae627f2eed40df57749ba4a4cb14a82ab}{radial\+::kro}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_a766c211cf806515e609de5b4261084cf}{radial\+::mro}}
+\item 
+character(4), dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_a1cd612100ac6bbc6b6ddf2cad79317b9}{radial\+::ero}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_aa2c736b7cf6e413c56450a2b816fca3f}{radial\+::az}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_a590cca3c449dbf2b108c45a83d1511af}{radial\+::aexp}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_a0bc1427d8643151c227015cb5922efad}{radial\+::bexp}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_acc551f3106b1105758df709f1f65a4f9}{radial\+::mexp}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_ab623d63b64e29958feb081fab49d8b3f}{radial\+::zk}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_a9d73eddd9178c0658c2b46e68f16b0a2}{radial\+::yk}}
+\item 
+integer \mbox{\hyperlink{namespaceradial_a020764b41b5ef4863f16732773c994b4}{radial\+::mzk}}
+\item 
+integer \mbox{\hyperlink{namespaceradial_ab34398d216cdc8ac2409decb393003ae}{radial\+::myk}}
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a8da210606749d4c6b0119fca8361755f}{radial\+::azk}}
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a21f827a27abed0866ca2421b07cac524}{radial\+::bzk}}
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a1e577cc70fca9814191dc682029cb0a7}{radial\+::ayk}}
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_afdcd51f696c1a0102812d6debfe6136b}{radial\+::byk}}
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a0f83df5749b4448507d5d4408262e469}{radial\+::z}} = 0.d0
+\item 
+integer \mbox{\hyperlink{namespaceradial_aa3415891fd2b77b65d5f87f88b9eb264}{radial\+::kclosd}} = 0
+\item 
+logical \mbox{\hyperlink{namespaceradial_a11c8fa9f27b6e943fd45ee6630f0e689}{radial\+::rel}} = .F\+A\+L\+S\+E.
+\item 
+logical \mbox{\hyperlink{namespaceradial_a7d3f2758fcbd5697bacae6e54dfbc989}{radial\+::oo}} = .F\+A\+L\+S\+E.
+\item 
+integer \mbox{\hyperlink{namespaceradial_a3a9ec05fe342c7a03583789ac56f6d5e}{radial\+::mass}} = 0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a6750acc8ce8278a4c9e07354730b37fb}{radial\+::rmass}} = 0.d0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a19e2966926ccb55584dcbe35500cbf6c}{radial\+::fine}} = 0.\+25d0/(137.\+03599976d0)$\ast$$\ast$2
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a7da3d3ff25a084e0f1726b43246456db}{radial\+::d0}} =0.D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a3f769c9476a20540bcc72a69cd0eb89d}{radial\+::d1}} =1.D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a308a72980494f6362513c26743584f04}{radial\+::d2}} =2.D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_aff46e353ad99ca45790d98f101441d0a}{radial\+::d3}} =3.D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_aa2371f9b650105076a0a3509fb6cf46b}{radial\+::d4}} =4.D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_ab285c375f42d3413d8a26d503b1119d2}{radial\+::d5}} =0.\+5D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_ad03a1268c5d4231bdc0da0c2e08df7e8}{radial\+::d6}} =6.D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a29cab2b474da8f8dc7000e9eba6665fe}{radial\+::d8}} =8.D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_af44a7edce48b3594139561fd739a871b}{radial\+::d10}} =10.D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a582f795d42ca403c46fa3a82edbd0827}{radial\+::d12}} =12.D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a1fc198c6969c5a56ac9013fa73c37e20}{radial\+::d16}} =16.D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a5dcbb41fcacfe6e47fe94dd56edaa53f}{radial\+::d30}} =30.D0
+\item 
+character(6) \mbox{\hyperlink{namespaceradial_a5e08af7db01de77b40ba9a0bfcb04cd1}{radial\+::atom}} = \textquotesingle{}atom\textquotesingle{}
+\item 
+character(6) \mbox{\hyperlink{namespaceradial_aecb3549218ccf96cd54aa505104a08b4}{radial\+::term}} = \textquotesingle{}term\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{mod__radial_8f90_a8bc9a47606e1b24f23f974cca2ee68eb}\label{mod__radial_8f90_a8bc9a47606e1b24f23f974cca2ee68eb}} 
+\index{mod\_radial.f90@{mod\_radial.f90}!alloc\_radial@{alloc\_radial}}
+\index{alloc\_radial@{alloc\_radial}!mod\_radial.f90@{mod\_radial.f90}}
+\doxysubsubsection{\texorpdfstring{alloc\_radial()}{alloc\_radial()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+radial (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mod__radial_8f90_ab8c5e39f1a5cd12f707d900e70081da3}\label{mod__radial_8f90_ab8c5e39f1a5cd12f707d900e70081da3}} 
+\index{mod\_radial.f90@{mod\_radial.f90}!get\_overlaps@{get\_overlaps}}
+\index{get\_overlaps@{get\_overlaps}!mod\_radial.f90@{mod\_radial.f90}}
+\doxysubsubsection{\texorpdfstring{get\_overlaps()}{get\_overlaps()}}
+{\footnotesize\ttfamily subroutine get\+\_\+overlaps (\begin{DoxyParamCaption}\item[{real(8), intent(in)}]{eps\+\_\+c,  }\item[{integer, intent(in)}]{pri }\end{DoxyParamCaption})}
+

@@ -1,0 +1,43 @@
+\hypertarget{bsr__breit_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/source/\+B\+S\+R\+\_\+\+B\+R\+E\+I\+T3/bsr\+\_\+breit.f90 File Reference}
+\label{bsr__breit_8f90}\index{/Users/khamilton/Codes/BSR3/source/BSR\_BREIT3/bsr\_breit.f90@{/Users/khamilton/Codes/BSR3/source/BSR\_BREIT3/bsr\_breit.f90}}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+program \mbox{\hyperlink{bsr__breit_8f90_ad159fd37bc0e83f7084d219f9d0ac1f3}{\+\_\+\+\_\+bsr\+\_\+breit.\+f90\+\_\+\+\_\+}}
+\begin{DoxyCompactList}\small\item\em I\+N\+P\+UT A\+R\+G\+U\+M\+E\+N\+TS\+: \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_ga9205d309baf7d6c72dac38f84a486c55}{rw}} (nu1, nu2, nc)
+\begin{DoxyCompactList}\small\item\em re-\/write bnk-\/data from file \textquotesingle{}nu1\textquotesingle{} to \textquotesingle{}nu2\textquotesingle{} by blocks \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{bsr__breit_8f90_ad159fd37bc0e83f7084d219f9d0ac1f3}\label{bsr__breit_8f90_ad159fd37bc0e83f7084d219f9d0ac1f3}} 
+\index{bsr\_breit.f90@{bsr\_breit.f90}!\_\_bsr\_breit.f90\_\_@{\_\_bsr\_breit.f90\_\_}}
+\index{\_\_bsr\_breit.f90\_\_@{\_\_bsr\_breit.f90\_\_}!bsr\_breit.f90@{bsr\_breit.f90}}
+\doxysubsubsection{\texorpdfstring{\_\_bsr\_breit.f90\_\_()}{\_\_bsr\_breit.f90\_\_()}}
+{\footnotesize\ttfamily program \+\_\+\+\_\+bsr\+\_\+breit.\+f90\+\_\+\+\_\+}
+
+
+
+I\+N\+P\+UT A\+R\+G\+U\+M\+E\+N\+TS\+: 
+
+klsp,klsp1,klsp2 -\/ range of partial wave in B\+SR calculations, then cfg.\+001, cfg.\+002, ..., are input files (default -\/$>$ 0, with input file is cfg.\+inp)
+
+oper -\/ character(7), where each position can be 0 or 1, and indicate the operator under consideration\+: oper(1) -\/ O\+V\+E\+R\+L\+A\+PS ~\newline
+ oper(2) -\/ K\+I\+N\+A\+T\+IC E\+N\+E\+R\+GY oper(3) -\/ T\+W\+O-\/\+E\+L\+E\+C\+T\+R\+ON E\+L\+E\+C\+T\+R\+O\+S\+T\+A\+T\+IC oper(4) -\/ S\+P\+IN O\+R\+B\+IT ~\newline
+ oper(5) -\/ S\+P\+I\+N-\/\+O\+T\+H\+E\+R-\/\+O\+R\+B\+IT oper(6) -\/ S\+P\+I\+N-\/\+S\+P\+IN oper(7) -\/ O\+R\+B\+I\+T-\/\+O\+R\+B\+IT ~\newline
+ Default -\/$>$ 1110000 -\/ non-\/relativistic calculations
+
+mk -\/ max.\+multipole index (default -\/$>$ 9) example\+: 1. \mbox{\hyperlink{namespacebsr__breit}{bsr\+\_\+breit}}
+\begin{DoxyEnumerate}
+\item \mbox{\hyperlink{namespacebsr__breit}{bsr\+\_\+breit}} klsp1=1 klsp2=5 oper=1111110 ~\newline
+
+\item \mbox{\hyperlink{namespacebsr__breit}{bsr\+\_\+breit}} km=5 I\+N\+P\+UT F\+I\+L\+ES\+:
+\end{DoxyEnumerate}
+
+cfg.\+nnn -\/ configuration list for partial wave nnn = klsp (cfg.\+inp in case klsp = 0, default)
+
+int\+\_\+bnk.\+nnn -\/ input data bank for angular coefficients (optional; int\+\_\+bnk in case klsp = 0)
+
+O\+U\+T\+P\+UT F\+I\+L\+ES\+:
+
+int\+\_\+bnk.\+nnn -\/ output data bank for angular coefficients (int\+\_\+bnk in case klsp = 0) 

@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine Gen_matrix
 !======================================================================
-!     merge data and generate the interaction matrix for current itype
+!> @ingroup bsr_dmat
+!> @brief     merge data and generate the interaction matrix for current itype
 !----------------------------------------------------------------------
       Use cmdata,      nc => ncdata
       Use bsr_dmat

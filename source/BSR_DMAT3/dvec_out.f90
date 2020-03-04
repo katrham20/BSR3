@@ -1,7 +1,8 @@
 !=======================================================================
       Subroutine dvec_out
 !=======================================================================
-!     define and output dipole vector for initial state
+!> @ingroup bsr_dmat
+!> @brief     define and output dipole vector for initial state
 !-----------------------------------------------------------------------
       Use bsr_dmat
       Use dmatrix

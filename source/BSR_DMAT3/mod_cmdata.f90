@@ -1,9 +1,10 @@
 !====================================================================
       Module cmdata
 !====================================================================
-!  Contains a set of coefficients with three identifiers (k1,k2,k3)
-!  and order pointer (ipt). The data are devided on different types
-!  (ntype, itype) and saved in memory in blocks (nblocks, mblocks).
+!> @ingroup bsr_dmat
+!!  Contains a set of coefficients with three identifiers (k1,k2,k3)
+!!  and order pointer (ipt). The data are devided on different types
+!!  (ntype, itype) and saved in memory in blocks (nblocks, mblocks).
 !--------------------------------------------------------------------
       Implicit none 
     
@@ -52,7 +53,8 @@
 !======================================================================
       Subroutine Allocate_cmdata(k)
 !======================================================================
-!     allocate arrays in module "cmdata"
+!> @ingroup bsr_dmat
+!> @brief     allocate arrays in module "cmdata"
 !----------------------------------------------------------------------
       Use cmdata
    

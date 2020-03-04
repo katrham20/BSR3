@@ -1,7 +1,8 @@
 !=====================================================================
       Subroutine SUB1_HD    
 !=====================================================================
-!     calculations for given partial wave
+!> @ingroup bsr_hd
+!> @brief     calculations for given partial wave
 !---------------------------------------------------------------------
       Use bsr_hd
       Use target

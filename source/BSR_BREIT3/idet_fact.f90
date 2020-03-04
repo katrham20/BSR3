@@ -1,13 +1,14 @@
 !======================================================================
       Integer Function Idet_fact (j1,j2,j3,j4)
 !======================================================================
-!     determines the overlap factor and its position in NDEF list
-!     for matrix element between two determinant wave functions
-!     located in module 'spin_orbitals' 
-!
-!     j1,j2,j3,j4 - interacting electrons
-!
-!     Calls:  Iadd_det, Iadd_def, ISORT
+!> @ingroup bsr_breit
+!!     determines the overlap factor and its position in NDEF list
+!!     for matrix element between two determinant wave functions
+!!     located in module 'spin_orbitals' 
+!!
+!!     j1,j2,j3,j4 - interacting electrons
+!!
+!!     Calls:  Iadd_det, Iadd_def, ISORT
 !----------------------------------------------------------------------
       Use conf_LS,       only: ne
       Use det_list,      only: ibd

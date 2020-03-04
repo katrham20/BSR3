@@ -1,9 +1,10 @@
 !======================================================================
       Subroutine Read_bsw (nu,kset)
 !======================================================================
-!     read radial orbitals in B-spline representation from file 'nu'
-!     with shift of set index on kset value
-!     if read orbital is not in the list - drop it!
+!> @ingroup bsr_dmat
+!!     read radial orbitals in B-spline representation from file 'nu'
+!!     with shift of set index on kset value
+!!     if read orbital is not in the list - drop it!
 !----------------------------------------------------------------------
       USE spline_atomic;  USE spline_param;  USE spline_orbitals
       

@@ -1,13 +1,14 @@
 !======================================================================
       Subroutine Merge_CDATA(nn, ip, jp, nc, EPS_c)
 !======================================================================
-!     merge the different blocks of data in MODULE 'cmdata'
-!
-!     nn    - number of blocks
-!     ip(.) - pointer for begining of block .
-!     jp(.) - pointer for end of block .
-!     nc    - number of result coeff's
-!     EPS_c - all coefficients < EPS_c are ignored
+!> @ingroup bsr_dmat
+!!     merge the different blocks of data in MODULE 'cmdata'
+!!
+!!     nn    - number of blocks
+!!     ip(.) - pointer for begining of block .
+!!     jp(.) - pointer for end of block .
+!!     nc    - number of result coeff's
+!!     EPS_c - all coefficients < EPS_c are ignored
 !----------------------------------------------------------------------
       Use cmdata, only: CLDATA,CVDATA, K1,K2,K3, IPT
 

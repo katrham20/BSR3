@@ -1,0 +1,82 @@
+\hypertarget{_d_b_s__dhl__core_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+D\+B\+S/\+D\+B\+S\+\_\+dhl\+\_\+core.f90 File Reference}
+\label{_d_b_s__dhl__core_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/DBS/DBS\_dhl\_core.f90@{/Users/khamilton/Codes/BSR3/libraries/DBS/DBS\_dhl\_core.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacedhl__core}{dhl\+\_\+core}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__dhl__core_8f90_a562401740970c27f35ee54618a3a6390}{alloc\+\_\+dhl\+\_\+core}} (ms, ncore)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__dhl__core_8f90_a5dfb55a4289bca42d4f8a67d0000b557}{gen\+\_\+dhl\+\_\+core}} (ncore, mbreit, kappa)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__dhl__core_8f90_a3bb67a426ffc3c894ab073329195d815}{add\+\_\+int\+\_\+core}} (ncore, mbreit, kappa)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__dhl__core_8f90_a52d3a8e5150573c6a9d131623bdc57ee}{load\+\_\+int\+\_\+core}}
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__dhl__core_8f90_a0d7064f8873a878e3f0fa9790d42a287}{gen\+\_\+lvec}} (i, vv)
+\item 
+real(8) function \mbox{\hyperlink{_d_b_s__dhl__core_8f90_a1a5980cf28aa59aaf736f907f5498369}{lval}} (i1, i2)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+real(8), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacedhl__core_a750d3199aeb8c155d703b6964be5b85f}{dhl\+\_\+core\+::hd}}
+\item 
+integer \mbox{\hyperlink{namespacedhl__core_af2d033a6b0cba5a6e02a26f0fdd396a2}{dhl\+\_\+core\+::nkap}} = 0
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacedhl__core_a4c93c00712f3a9e300b47732ece4a8d8}{dhl\+\_\+core\+::kap\+\_\+list}}
+\item 
+integer \mbox{\hyperlink{namespacedhl__core_adbc8e6fb811b8f54c2fa704fa0f9cc01}{dhl\+\_\+core\+::iv}} = 0
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacedhl__core_a5aa20c093f2bd3fb161cf639b2034556}{dhl\+\_\+core\+::lvec}}
+\item 
+integer \mbox{\hyperlink{namespacedhl__core_a1ee1339a823d7f5d072cf67cd8181b8a}{dhl\+\_\+core\+::iv1}} = 0
+\item 
+integer \mbox{\hyperlink{namespacedhl__core_a42ccda4b5035d91178b1bc5966e02e87}{dhl\+\_\+core\+::iv2}} = 0
+\item 
+real(8) \mbox{\hyperlink{namespacedhl__core_a87bd41c69e298aa8bf0e67376bccbf2f}{dhl\+\_\+core\+::lvalue}}
+\item 
+integer \mbox{\hyperlink{namespacedhl__core_accd23b3140ccae3bdd81d789500a1292}{dhl\+\_\+core\+::kcore\+\_\+max}} = 7
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{_d_b_s__dhl__core_8f90_a3bb67a426ffc3c894ab073329195d815}\label{_d_b_s__dhl__core_8f90_a3bb67a426ffc3c894ab073329195d815}} 
+\index{DBS\_dhl\_core.f90@{DBS\_dhl\_core.f90}!add\_int\_core@{add\_int\_core}}
+\index{add\_int\_core@{add\_int\_core}!DBS\_dhl\_core.f90@{DBS\_dhl\_core.f90}}
+\doxysubsubsection{\texorpdfstring{add\_int\_core()}{add\_int\_core()}}
+{\footnotesize\ttfamily subroutine add\+\_\+int\+\_\+core (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ncore,  }\item[{integer, intent(in)}]{mbreit,  }\item[{integer, intent(in)}]{kappa }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__dhl__core_8f90_a562401740970c27f35ee54618a3a6390}\label{_d_b_s__dhl__core_8f90_a562401740970c27f35ee54618a3a6390}} 
+\index{DBS\_dhl\_core.f90@{DBS\_dhl\_core.f90}!alloc\_dhl\_core@{alloc\_dhl\_core}}
+\index{alloc\_dhl\_core@{alloc\_dhl\_core}!DBS\_dhl\_core.f90@{DBS\_dhl\_core.f90}}
+\doxysubsubsection{\texorpdfstring{alloc\_dhl\_core()}{alloc\_dhl\_core()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+dhl\+\_\+core (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ms,  }\item[{integer, intent(in)}]{ncore }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__dhl__core_8f90_a5dfb55a4289bca42d4f8a67d0000b557}\label{_d_b_s__dhl__core_8f90_a5dfb55a4289bca42d4f8a67d0000b557}} 
+\index{DBS\_dhl\_core.f90@{DBS\_dhl\_core.f90}!gen\_dhl\_core@{gen\_dhl\_core}}
+\index{gen\_dhl\_core@{gen\_dhl\_core}!DBS\_dhl\_core.f90@{DBS\_dhl\_core.f90}}
+\doxysubsubsection{\texorpdfstring{gen\_dhl\_core()}{gen\_dhl\_core()}}
+{\footnotesize\ttfamily subroutine gen\+\_\+dhl\+\_\+core (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ncore,  }\item[{integer, intent(in)}]{mbreit,  }\item[{integer, intent(in)}]{kappa }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__dhl__core_8f90_a0d7064f8873a878e3f0fa9790d42a287}\label{_d_b_s__dhl__core_8f90_a0d7064f8873a878e3f0fa9790d42a287}} 
+\index{DBS\_dhl\_core.f90@{DBS\_dhl\_core.f90}!gen\_lvec@{gen\_lvec}}
+\index{gen\_lvec@{gen\_lvec}!DBS\_dhl\_core.f90@{DBS\_dhl\_core.f90}}
+\doxysubsubsection{\texorpdfstring{gen\_lvec()}{gen\_lvec()}}
+{\footnotesize\ttfamily subroutine gen\+\_\+lvec (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i,  }\item[{real(8), dimension(ns+ns)}]{vv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__dhl__core_8f90_a52d3a8e5150573c6a9d131623bdc57ee}\label{_d_b_s__dhl__core_8f90_a52d3a8e5150573c6a9d131623bdc57ee}} 
+\index{DBS\_dhl\_core.f90@{DBS\_dhl\_core.f90}!load\_int\_core@{load\_int\_core}}
+\index{load\_int\_core@{load\_int\_core}!DBS\_dhl\_core.f90@{DBS\_dhl\_core.f90}}
+\doxysubsubsection{\texorpdfstring{load\_int\_core()}{load\_int\_core()}}
+{\footnotesize\ttfamily subroutine load\+\_\+int\+\_\+core}
+
+\mbox{\Hypertarget{_d_b_s__dhl__core_8f90_a1a5980cf28aa59aaf736f907f5498369}\label{_d_b_s__dhl__core_8f90_a1a5980cf28aa59aaf736f907f5498369}} 
+\index{DBS\_dhl\_core.f90@{DBS\_dhl\_core.f90}!lval@{lval}}
+\index{lval@{lval}!DBS\_dhl\_core.f90@{DBS\_dhl\_core.f90}}
+\doxysubsubsection{\texorpdfstring{lval()}{lval()}}
+{\footnotesize\ttfamily real(8) function lval (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i1,  }\item[{integer, intent(in)}]{i2 }\end{DoxyParamCaption})}
+

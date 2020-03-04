@@ -1,0 +1,1150 @@
+\hypertarget{dbsr__lib__zconfjj_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+Z\+C\+O\+N\+F\+J\+J/dbsr\+\_\+lib\+\_\+zconfjj.f90 File Reference}
+\label{dbsr__lib__zconfjj_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/ZCONFJJ/dbsr\_lib\_zconfjj.f90@{/Users/khamilton/Codes/BSR3/libraries/ZCONFJJ/dbsr\_lib\_zconfjj.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespaceorb__jj}{orb\+\_\+jj}}
+\item 
+module \mbox{\hyperlink{namespacesymc__list}{symc\+\_\+list}}
+\item 
+module \mbox{\hyperlink{namespacesymt__list}{symt\+\_\+list}}
+\item 
+module \mbox{\hyperlink{namespaceconf__jj}{conf\+\_\+jj}}
+\item 
+module \mbox{\hyperlink{namespaceboef__list}{boef\+\_\+list}}
+\item 
+module \mbox{\hyperlink{namespacedet__jq}{det\+\_\+jq}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a657b513942427e9d3b72335623a2aefa}{alloc\+\_\+orb\+\_\+jj}} (m)
+\item 
+integer function \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_aa1adf86569ef045c752ac2bc4f9e26f8}{ifind\+\_\+jjorb}} (n, k, ii, job)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_ada258091a88aba4bad80c13053b72280}{read\+\_\+bsw\+\_\+orb\+\_\+jj}} (nu)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_ab8fba4c2ec27267647b740991c83221c}{get\+\_\+orb\+\_\+jj}} (i, n, k, iset, ip)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_ad08ae884a20c736f561b5c5c5a367de6}{alloc\+\_\+symc}} (m)
+\item 
+integer function \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_ab88daf48823d188068fe44da21cec2a5}{iadd\+\_\+symc}} (JT, no, iq, kn)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_af1ae15f8ea8c9c2a59127f526c04d835}{get\+\_\+symc}} (ic, JT, no, nn, kn, ln, jn, iq, in)
+\item 
+integer function \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a36ec397499b3df155bc3ec09b5c89d22}{get\+\_\+no}} (iconf)
+\item 
+integer function \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a74a32d4965fea6ea66849c572b213c62}{get\+\_\+jot}} (iconf)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_ab5695dea0f1e504d496cd4704bc69414}{read\+\_\+symc}} (nu)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_aadd2ccae54050a5a1a1cf41059459d02}{dummy\+\_\+symc}} (nu)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_ab8a96953462d60b9e12191eb7499c0d6}{write\+\_\+symc}} (nu)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a05a0f2ecdb60f2cff583172d1ba5768c}{alloc\+\_\+symt}} (m)
+\item 
+integer function \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_ac04844070220ff38ef8353db009ef84b}{iadd\+\_\+symt}} (iconf, no, Jshell, Vshell, Jintra)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_ae32e4e59c1344d9310d777c85618f728}{get\+\_\+symt}} (iterm, iconf, no, Jshell, Vshell, Jintra)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_afad065140e0219fe62317b73a6365824}{read\+\_\+symt}} (nu)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_af8da7e91a74e0a86e6fab8bf6e16c577}{dummy\+\_\+symt}} (nu)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_ae738838bfd2ca4c66b8945478fc578fe}{write\+\_\+symt}} (nu)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a81a61e15c3da77067e3b684569ac291e}{write\+\_\+done}} (nu)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a779b3f63cf3f89cc4df0b1405aa801b4}{read\+\_\+done}} (nu)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a8c3611cc25036500066bd2a9303f333a}{dummy\+\_\+done}} (nu)
+\item 
+integer function \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a2d8d26b101fe64d3453f2615225a87ca}{get\+\_\+iconf}} (iterm)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a7215faffe08b3598621e47f2f64bd451}{alloc\+\_\+cfg}} (m)
+\item 
+integer function \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_ab0f11a57f02238229c9e88bede6c342d}{iadd\+\_\+cfg\+\_\+jj}} (job)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_afa1826e9665e9d0d8cec59383e07d03d}{get\+\_\+cfg\+\_\+jj}} (ic)
+\item 
+integer function \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a76730b04596deb774ba95e2be8c7cfd9}{iort\+\_\+conf\+\_\+jj}} (kk)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a10343d3273f3ffb44153e35f6795d40f}{def\+\_\+jblocks}}
+\item 
+integer function \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a40603e77c5c4660ae23f888a39e1095d}{no\+\_\+ic\+\_\+jj}} (ic)
+\item 
+integer function \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_ae4cca3f4d3d76475a601b03b5c42833f}{jot\+\_\+ic}} (ic)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a57e37c627333842074e1dff8d6ad0bd1}{save\+\_\+cfg\+\_\+jj}} (i)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a7f2cb394fb6e59574ed148b29be3db78}{alloc\+\_\+boef}} (mm)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a9410ff0c2c85392468ecec6b7cdf66c4}{alloc\+\_\+blk}} (mm)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_aac13d62ee5dbbd6fc76f61f18f6743f8}{iadd\+\_\+boef}} (C, int)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_aeef85eee3d116866c5b80b65fcfb176a}{check\+\_\+boef}} (l1, j1, m1, l2, j2, m2, l3, j3, m3, l4, j4, m4)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_acbc7befea6a1c18b8d9d6a2ff197c9a3}{me\+\_\+jj}} (l1, j1, m1, l2, j2, m2, l3, j3, m3, l4, j4, m4, ide)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a4df4a8b0bb88b530faa253903c533778}{det\+\_\+sh\+\_\+jq}} (j, q, id, MJ, Idet)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a4ef89ff7e8ce5eff5ffbe688268ed0c2}{det\+\_\+stop}} (j, q, id)
+\item 
+real(8) function \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_aa76c73c5c3accc2dae0724cd1fb9696f}{detc\+\_\+jq}} (j, q, it, id)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a8e1d20d75bf8ada2c765b672faf5a3e8}{detc\+\_\+stop}} (j, q, it, id)
+\item 
+real(8) function \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a196a3df701dfd8d03d30920a2c5f61f0}{cfp\+\_\+jj}} (j, q, JP, VP, JD, VD)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_aaa4bc4a73670f185717aa8160fdedba9}{coef\+\_\+1conf}} (no, ln, jn, iq, Jshell, Vshell, Jintra, kmax, coefs)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a49942b2b96e67da69b52a8b3c6e7717e}{det\+\_\+expn\+\_\+jj}}
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a8153d9b254fb14daff27fbc605c86179}{me\+\_\+det}}
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_aa50b7e7215d067d97d55afefd963e587}{me\+\_\+ee}} (i, j, i1, j1, i2, j2)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a13c00e048f1bb658c21768cdd1ed2eba}{coef\+\_\+2conf\+\_\+jj}} (no1, nn1, ln1, jn1, iq1, Jshell1, Vshell1, Jintra1, no2, nn2, ln2, jn2, iq2, Jshell2, Vshell2, Jintra2, mcoef, ncoef, icoefs, coefs)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_af40a9b3681d824843607355bc35e0ef2}{det\+\_\+expn\+\_\+jj}} (no, ln, jn, iq, Jshell, Vshell, Jintra)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_aaf2d7e935722e895e4fd408bed717bcf}{me\+\_\+ee}} (i1, j1, i2, j2)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a307f5f728c0cbe4a657a5092e86c5e2c}{el\+\_\+nljk}} (EL, n, kappa, l, j, k)
+\item 
+character(5) function \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a3e91b852d57009e25b73ad8bde0dbf7d}{eli}} (n, kappa, k)
+\item 
+character(5) function \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_aac7bc1cdaf14141e5639ed2b9cafe479}{elj}} (n, l, j, k)
+\item 
+character function \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a67d174ebdf467a9572d14dc5bec2cd07}{al}} (L, k)
+\item 
+integer function \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a35b38ddf12fc0507e3290c01951415f8}{la}} (a)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_aa0adaf7e0dcbf1a3401d6df77894bec4}{incode\+\_\+cj}}
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a824f27e7c87df0854f1e31c4345605a0}{decode\+\_\+cj}}
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a5d9faa1075d70e078dfecd0f44451ad3}{decode\+\_\+confj}}
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_aeee7ae4597b98c1fd0aa80832179b8fc}{incode\+\_\+confj}}
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a79f91e7b6e53d6537bb533bfdf169be2}{incode\+\_\+confj1}}
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_abf4af0146185e97ce01b7556b28b37fc}{decode\+\_\+cjj}} (C\+O\+N\+F\+IG, S\+H\+E\+L\+LJ, I\+N\+T\+R\+AJ, no, nn, kn, ln, jn, iq, in, Jshell, Vshell, Jintra)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a2a2a0cab4907ebd3615668e29be66523}{decode\+\_\+configuration}} (conf)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a635de331c34e7911e8cc4c4528a1d083}{decode\+\_\+core}} (string)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a773b4b7c3f7dc479d4fde6c788b40e79}{reduce\+\_\+ls\+\_\+jj}} (no, nn, kn, ln, jn, iq, in, iq\+\_\+min, iq\+\_\+max)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_aaaabf5306097c8b0968ea554bb3c42b2}{reduce\+\_\+jj\+\_\+ls}} (no, nn, kn, ln, jn, iq, in)
+\item 
+integer function \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a5440b2b80840aec2831ab79dc89bd381}{jdef\+\_\+ncfg}} (nu)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_ab109fdc63d2b5c09cab2603ab0569d3b}{jdef\+\_\+kcfg}} (nu, ncfg, kcfg)
+\item 
+integer function \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a2102ba923e4cbd825a05ff908a567cab}{jterm}} (j, q, k, JT, JV, JW, JQ)
+\item 
+integer function \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a0a25b4274da303aae03177d2839505e2}{index\+\_\+mj}} (mj)
+\item 
+integer function \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_ad24a28cc492f6ab40b3ac17bada35837}{mj\+\_\+value}} (i)
+\item 
+integer function \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a536120addfa495edde406baaaa2c06e4}{ndets\+\_\+jq}} (j, q)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_aa7a78a8e78841cb1da25526a63aa879b}{gen\+\_\+jj\+\_\+states}} (A\+F\+\_\+inp, A\+F\+\_\+out, jmin, jmax)
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_aa2212c67726e7599694cdf150295cfff}{sum\+\_\+term}}
+\item 
+subroutine \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_a7f8f03891d291a593102a5260f6eacc2}{sum\+\_\+iterm}}
+\item 
+integer function \mbox{\hyperlink{dbsr__lib__zconfjj_8f90_ab6da15ae4f349a24352fe5c23dfb6108}{jparity}} (n, l, q)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{namespaceorb__jj_a90230b4d1cea53edeeafa073f30bc4c0}{orb\+\_\+jj\+::mwf}} = 0
+\item 
+integer \mbox{\hyperlink{namespaceorb__jj_a8f2a89732729c87e730a3777784d7ff4}{orb\+\_\+jj\+::nwf}} = 0
+\item 
+integer \mbox{\hyperlink{namespaceorb__jj_a9d5408abe6fcea38bae49e472a797bf0}{orb\+\_\+jj\+::iwf}} = 2$\ast$$\ast$10
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceorb__jj_affb27cfd632bf4ae8730d9cedcf1273e}{orb\+\_\+jj\+::nef}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceorb__jj_a0182c24d000dfc399a557f645f2cc03e}{orb\+\_\+jj\+::kef}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceorb__jj_aab52ac503e8d97393c8dee36980d1d8e}{orb\+\_\+jj\+::lef}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceorb__jj_ab9834ebf22226d49a43bd80fa4d79e4b}{orb\+\_\+jj\+::jef}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceorb__jj_a50d3acd543380286d9daab5a529a7467}{orb\+\_\+jj\+::ief}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceorb__jj_a491be9351ab6a68a6ec8e4bbe92fb8cd}{orb\+\_\+jj\+::ipef}}
+\item 
+character(5), dimension(\+:), allocatable \mbox{\hyperlink{namespaceorb__jj_a94d3696a89148f0ccbddf2e4197c1898}{orb\+\_\+jj\+::elf}}
+\item 
+integer \mbox{\hyperlink{namespaceorb__jj_a557d71a373b60fc888fd244d79bfdeac}{orb\+\_\+jj\+::jort}} = 1
+\item 
+integer, parameter \mbox{\hyperlink{namespaceorb__jj_a50f009476e9f9728e30b54031ec2956d}{orb\+\_\+jj\+::kset}} = 61
+\item 
+character(kset) \mbox{\hyperlink{namespaceorb__jj_a26442e1c8feb7be1dcd4720d7431a9dd}{orb\+\_\+jj\+::aset}} = \textquotesingle{}123456789abcdefghijklmnopqrstuvwxyz\+A\+B\+C\+D\+E\+F\+G\+H\+I\+J\+K\+L\+M\+N\+O\+P\+Q\+R\+S\+T\+U\+V\+W\+X\+YZ\textquotesingle{}
+\item 
+integer, parameter \mbox{\hyperlink{namespaceorb__jj_a7cd87fae52cdde027ed9fb4eeb4b80d2}{orb\+\_\+jj\+::ksmax}} = kset$\ast$kset
+\item 
+integer \mbox{\hyperlink{namespaceorb__jj_a3972ca4732627e1854afea8cc9c6fb61}{orb\+\_\+jj\+::kshift}} = 0
+\item 
+real(8) \mbox{\hyperlink{namespaceorb__jj_abf8df686f352241357125502b5befda8}{orb\+\_\+jj\+::memory\+\_\+orb\+\_\+jj}} = 0.d0
+\item 
+integer \mbox{\hyperlink{namespacesymc__list_ab8392c2b25142223020f94d0bfcda302}{symc\+\_\+list\+::nsymc}} = 0
+\item 
+integer \mbox{\hyperlink{namespacesymc__list_add99fed8de71dbc33e7f1e648f2877f5}{symc\+\_\+list\+::msymc}} = 0
+\item 
+integer \mbox{\hyperlink{namespacesymc__list_af6c27e4ed8cc2d58d4055591537a8d4d}{symc\+\_\+list\+::isymc}} = 10000
+\item 
+integer \mbox{\hyperlink{namespacesymc__list_a802acb66b47fae1929e548ae792b314b}{symc\+\_\+list\+::jsymc}} = 10
+\item 
+integer \mbox{\hyperlink{namespacesymc__list_a675f15491c03b69b7d2c593ec031713f}{symc\+\_\+list\+::ksymc}} = 0
+\item 
+integer \mbox{\hyperlink{namespacesymc__list_a40b33effbd1e54d592dd14ba8f352c81}{symc\+\_\+list\+::lsymc}} = 0
+\item 
+integer(1), dimension(\+:), allocatable \mbox{\hyperlink{namespacesymc__list_ae5254f460076886c14cd669898186941}{symc\+\_\+list\+::jt\+\_\+conf}}
+\item 
+integer(1), dimension(\+:), allocatable \mbox{\hyperlink{namespacesymc__list_acc30cb6407e2b00d217b6dde89150292}{symc\+\_\+list\+::no\+\_\+conf}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacesymc__list_a3dd8b9c6ff701a253f43c0e3ee4b2d54}{symc\+\_\+list\+::ip\+\_\+conf}}
+\item 
+integer(1), dimension(\+:), allocatable \mbox{\hyperlink{namespacesymc__list_ae8a0bba6fdc092b358d0b9f347cb416f}{symc\+\_\+list\+::iq\+\_\+conf}}
+\item 
+integer(1), dimension(\+:), allocatable \mbox{\hyperlink{namespacesymc__list_a8ccd82776fb2542b990b023503dd1b7a}{symc\+\_\+list\+::kn\+\_\+conf}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacesymc__list_ad603c88391add9bd182285a3df3aa077}{symc\+\_\+list\+::ic\+\_\+term1}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacesymc__list_a56b30d7a61d5f43fd1f6aa143f0ac065}{symc\+\_\+list\+::ic\+\_\+term2}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacesymc__list_a9a6db24c512002bf5ac1fee2d9837079}{symc\+\_\+list\+::ic\+\_\+need}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacesymc__list_adf0428c3b227914d3fbae52f45834458}{symc\+\_\+list\+::jc\+\_\+need}}
+\item 
+integer \mbox{\hyperlink{namespacesymt__list_a4fd9c7a2b46aab1424828d23cd966f18}{symt\+\_\+list\+::nsymt}} = 0
+\item 
+integer \mbox{\hyperlink{namespacesymt__list_a64c5f65da118902838310f4fb97db400}{symt\+\_\+list\+::msymt}} = 0
+\item 
+integer \mbox{\hyperlink{namespacesymt__list_ad5447810d925a70be348998598a2cf1b}{symt\+\_\+list\+::isymt}} = 10000
+\item 
+integer \mbox{\hyperlink{namespacesymt__list_abbb4d3e0b15d777d4b39df605dba9533}{symt\+\_\+list\+::jsymt}} = 10
+\item 
+integer \mbox{\hyperlink{namespacesymt__list_a7f2dfb868e8981e56172f7b16ce0bf21}{symt\+\_\+list\+::ksymt}} = 0
+\item 
+integer \mbox{\hyperlink{namespacesymt__list_a29e1e0add0f97a513aa3cf1003f42038}{symt\+\_\+list\+::lsymt}} = 0
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacesymt__list_a1e689e3c2be09c2fe59ae8b475c56dd0}{symt\+\_\+list\+::it\+\_\+conf}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacesymt__list_a36fe561b9b4a5d3ed7e3f09c9163401b}{symt\+\_\+list\+::ip\+\_\+term}}
+\item 
+integer(2), dimension(\+:), allocatable \mbox{\hyperlink{namespacesymt__list_a3bfbec488ccbf62b6b308e58b0acea94}{symt\+\_\+list\+::js\+\_\+term}}
+\item 
+integer(1), dimension(\+:), allocatable \mbox{\hyperlink{namespacesymt__list_adc07e6f927a35bf280d9040bf40e25fc}{symt\+\_\+list\+::vs\+\_\+term}}
+\item 
+integer(2), dimension(\+:), allocatable \mbox{\hyperlink{namespacesymt__list_a911e0c1084ac13b0bfb1d862d029e118}{symt\+\_\+list\+::ji\+\_\+term}}
+\item 
+integer(1), dimension(\+:), allocatable \mbox{\hyperlink{namespacesymt__list_afe29f28a2be328a443000c59a4926e56}{symt\+\_\+list\+::it\+\_\+stat}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacesymt__list_a2108cedb9f97cb48b2415135abc7d041}{symt\+\_\+list\+::jp\+\_\+term}}
+\item 
+integer(1), dimension(\+:), allocatable \mbox{\hyperlink{namespacesymt__list_a2bead3f6ec3a7a88c67d6f75d95a65ea}{symt\+\_\+list\+::it\+\_\+done}}
+\item 
+integer(1), dimension(\+:), allocatable \mbox{\hyperlink{namespacesymt__list_a3c5833a9f66e1f5d165effc0a78bcebc}{symt\+\_\+list\+::it\+\_\+need}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacesymt__list_a515762dac63f59eb80870fe24c1eeaa4}{symt\+\_\+list\+::mrecl}} = 100000
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_aadb3e36a880cf46eae3d00da7230b725}{conf\+\_\+jj\+::ne}} = 0
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_a24fb4f35a76478bfc66cd36000571fbc}{conf\+\_\+jj\+::parity}} = 0
+\item 
+integer, parameter \mbox{\hyperlink{namespaceconf__jj_acc35a65696b3bff7882366b55dc6ac91}{conf\+\_\+jj\+::msh}} = 31
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_a0c0d5223fe628abeb3d5c836e03ffdf6}{conf\+\_\+jj\+::no}}
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_a920c6c245b6b49092b2aaf4a89921060}{conf\+\_\+jj\+::jtotal}}
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_a5c12c1da8bc4a155081da55667fc973e}{conf\+\_\+jj\+::iconf}}
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_ab6a19545df2c1d4f9ab71a5e216e7d55}{conf\+\_\+jj\+::iterm}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a17a034ab536e232498682c9b88dac25d}{conf\+\_\+jj\+::nn}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a49382d6fc16ab361b5a0f050ccd1244d}{conf\+\_\+jj\+::kn}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_ac12e9901c9d0536368643ccae61ef931}{conf\+\_\+jj\+::ln}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_ae5e8e86da07d25e3d2d9d544f8f131b7}{conf\+\_\+jj\+::jn}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_aa87568c175e22c6c0f760782bb719b77}{conf\+\_\+jj\+::iq}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_aef75617ea89c1a59f6a3134cbdaa393f}{conf\+\_\+jj\+::in}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a38c6ab3facc9f8557bb2e99ff4e76cac}{conf\+\_\+jj\+::jshell}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a1f89799b14fab598f243644f6c35cffb}{conf\+\_\+jj\+::vshell}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_af11d5ea3bf2aa711e4a3476aa4da7389}{conf\+\_\+jj\+::jintra}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a4b72b7f9341ca1f6f3022141f395fc02}{conf\+\_\+jj\+::np\+\_\+symc}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a6098df7a41574cc051413256443670a1}{conf\+\_\+jj\+::np\+\_\+symt}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_abd860525280be0b0c0d6545fd8b0d4e1}{conf\+\_\+jj\+::np\+\_\+orb}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a35589d7021a26e661397d27799b613e6}{conf\+\_\+jj\+::np}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a2fd4f182e8860a67ad39bd9552b979f5}{conf\+\_\+jj\+::mp}}
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_ab019fd0d3dfa70014cef788a9b956edf}{conf\+\_\+jj\+::no1}}
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_a5790c0e585d1e24630c2e808cc9948e7}{conf\+\_\+jj\+::jtotal1}}
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_a79e37c36e400c6141117ebc324ce8d4b}{conf\+\_\+jj\+::iconf1}}
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_a8e8082b02ff68b1274659e76d64d2fcd}{conf\+\_\+jj\+::iterm1}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a1212d4b4f5ccc537f39340fe06f13069}{conf\+\_\+jj\+::nn1}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_af4f2b67f672605a40c559f8136c7b878}{conf\+\_\+jj\+::kn1}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a37f978ad508d71b2cc9857da76192d32}{conf\+\_\+jj\+::ln1}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a3ca59745167c2b2df7be8c8e201d1fef}{conf\+\_\+jj\+::jn1}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_ac67aee188dda28428cc7d293167168ff}{conf\+\_\+jj\+::iq1}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_ae4534a498a6b543aa5aaa4d2167f6353}{conf\+\_\+jj\+::in1}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a3f40c8632201d8e5c3a1f6418a022243}{conf\+\_\+jj\+::jshell1}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a0f075b44eb7ef145f663ddc623df36f7}{conf\+\_\+jj\+::vshell1}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a6d52e6c9cf8cdd7a1370b572c9bc0251}{conf\+\_\+jj\+::jintra1}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a32e21a316b63711e84d4b946ae6dd30a}{conf\+\_\+jj\+::np\+\_\+symc1}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a60421bd202e8e220918accbfce4c5aa5}{conf\+\_\+jj\+::np\+\_\+symt1}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a35b5d0ed18b195a9342073816f13c12c}{conf\+\_\+jj\+::np\+\_\+orb1}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a8c43a85d4cbb37e548c9884172066255}{conf\+\_\+jj\+::np1}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_aec503e01110148e45ca78ae8a35a68b1}{conf\+\_\+jj\+::mp1}}
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_affdfd81eaf8da747dd0d13431c32e2ec}{conf\+\_\+jj\+::no2}}
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_a4d38b7a43817ec1264a31c053a52416c}{conf\+\_\+jj\+::jtotal2}}
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_a4adb83a0e32813ffebae7ff39e8b08d2}{conf\+\_\+jj\+::iconf2}}
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_ab198d415f684b64d68bf15283ba8e08e}{conf\+\_\+jj\+::iterm2}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a5bba511e057516706ca52f93fe1602f5}{conf\+\_\+jj\+::nn2}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a52239f3569d65791c0683b0dfcd70f97}{conf\+\_\+jj\+::kn2}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_af9b223b0f52653aae86f1e300eb4a733}{conf\+\_\+jj\+::ln2}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_aa61c3a1deb5f7f614ce0029ecf6c7fd7}{conf\+\_\+jj\+::jn2}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a6a0ab5ee1f706ed6c501ece04cad497d}{conf\+\_\+jj\+::iq2}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a8a1ad10eaf26da0cda6c24ea55b89c9e}{conf\+\_\+jj\+::in2}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_afde7a308a33d4431b7cd55857a282da9}{conf\+\_\+jj\+::jshell2}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a1eb4ade04fa84f439e115a099f4eae33}{conf\+\_\+jj\+::vshell2}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a118669e64b68dc6a3e03df10ca59b5f9}{conf\+\_\+jj\+::jintra2}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a6592957925402c9c5708b8f442b19f44}{conf\+\_\+jj\+::np\+\_\+symc2}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_a105f82148b3282705e619e894af05b26}{conf\+\_\+jj\+::np\+\_\+symt2}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_ac7f4f7a18857b2d648a649cb806dd0cb}{conf\+\_\+jj\+::np\+\_\+orb2}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_ac34c7ebe040ae57179bd19fa6b3f5a5b}{conf\+\_\+jj\+::np2}}
+\item 
+integer, dimension(msh) \mbox{\hyperlink{namespaceconf__jj_ad527477b570c676abfc2e025aab9cc04}{conf\+\_\+jj\+::mp2}}
+\item 
+integer, parameter \mbox{\hyperlink{namespaceconf__jj_adc9f4d5d8e35e8a1409a2abdf2020ce8}{conf\+\_\+jj\+::mas}} = 9$\ast$msh+3
+\item 
+character(mas) \mbox{\hyperlink{namespaceconf__jj_a4523b55c55be68f0e80bb54d38dff390}{conf\+\_\+jj\+::config}}
+\item 
+character(mas) \mbox{\hyperlink{namespaceconf__jj_aa165fad6e78819aab0c88b418126b8d6}{conf\+\_\+jj\+::shellj}}
+\item 
+character(mas) \mbox{\hyperlink{namespaceconf__jj_a439a61db0339836e1c9fc67534886fbc}{conf\+\_\+jj\+::intraj}}
+\item 
+character(mas) \mbox{\hyperlink{namespaceconf__jj_af6ae1a7998c5c53b6c3745229cd97261}{conf\+\_\+jj\+::as}}
+\item 
+character(mas) \mbox{\hyperlink{namespaceconf__jj_ab3e528d5cafeb306cafa51d619a15a6a}{conf\+\_\+jj\+::bs}}
+\item 
+character(mas) \mbox{\hyperlink{namespaceconf__jj_aa7632091aea497f0d351301f3b35951c}{conf\+\_\+jj\+::cs}}
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_a20bb31958eff624683058515582a0fcd}{conf\+\_\+jj\+::ia}}
+\item 
+integer, parameter \mbox{\hyperlink{namespaceconf__jj_a4ef3340ee23120bab1bbb638c5b53d2b}{conf\+\_\+jj\+::mcore}} = 50
+\item 
+character(250) \mbox{\hyperlink{namespaceconf__jj_a8e8e590df538befcc8216e09d496170f}{conf\+\_\+jj\+::core}}
+\item 
+character(250) \mbox{\hyperlink{namespaceconf__jj_ae4e1220bfd65c3666c6b2ff47fd69c00}{conf\+\_\+jj\+::closed}}
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_a0898f4c96c49bd93749ddc2a9ae536ea}{conf\+\_\+jj\+::ncore}} = 0
+\item 
+integer, dimension(mcore) \mbox{\hyperlink{namespaceconf__jj_a6effc1f95fe809c9df50d2bc3c6a03a8}{conf\+\_\+jj\+::nn\+\_\+core}}
+\item 
+integer, dimension(mcore) \mbox{\hyperlink{namespaceconf__jj_a377f1e14afe970ad5a408160d0c3274a}{conf\+\_\+jj\+::k\+\_\+core}}
+\item 
+integer, dimension(mcore) \mbox{\hyperlink{namespaceconf__jj_a7e37fb04ad9f4c9b3879ba85087a5936}{conf\+\_\+jj\+::l\+\_\+core}}
+\item 
+integer, dimension(mcore) \mbox{\hyperlink{namespaceconf__jj_a5f8a9b25b1495d329d5fdf58090c5992}{conf\+\_\+jj\+::j\+\_\+core}}
+\item 
+character(5), dimension(mcore) \mbox{\hyperlink{namespaceconf__jj_a429bdb200f6908cde6008d52101405f2}{conf\+\_\+jj\+::e\+\_\+core}}
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_aed29946d63ba2a4814c9a477fe1ae992}{conf\+\_\+jj\+::ncfg}} = 0
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_a9a3f6cfd2fb43420647da22f1c2a6da2}{conf\+\_\+jj\+::mcfg}} = 0
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_ae8b546487556d994848ee2d1de6e3ac2}{conf\+\_\+jj\+::icfg}} = 50000
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_a7068f53c4aab0cb8a7fa647e9eeeae41}{conf\+\_\+jj\+::jcfg}} = 10
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_ab9c30c9ca125580d044563b54fdee91a}{conf\+\_\+jj\+::kcfg}} = 0
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_ae9a66e77d29958327525f381e05abc28}{conf\+\_\+jj\+::lcfg}} = 0
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceconf__jj_a1416656ac5ccc03d15784d05fd696066}{conf\+\_\+jj\+::ip\+\_\+state}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceconf__jj_a5d5310bd9bd233188524bf6ddf9053fc}{conf\+\_\+jj\+::is\+\_\+term}}
+\item 
+integer(2), dimension(\+:), allocatable \mbox{\hyperlink{namespaceconf__jj_a3caee5a714546530d0e9a8b8c164808f}{conf\+\_\+jj\+::ip\+\_\+orb}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceconf__jj_ada60e44949997601a9ad90fd18a1a12d}{conf\+\_\+jj\+::it\+\_\+state1}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceconf__jj_a867caf0121cd152d5919cb48408ccd7d}{conf\+\_\+jj\+::it\+\_\+state2}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceconf__jj_a81d4db3bf1085b74b99108c23b957355}{conf\+\_\+jj\+::is\+\_\+order}}
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_ae3bea07f217674dafc5e4cf2c37e8834}{conf\+\_\+jj\+::j\+\_\+min}} =-\/1
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_a4e6d36d053f0b1daa56fd40cfc24bc39}{conf\+\_\+jj\+::j\+\_\+max}} =-\/1
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespaceconf__jj_ae0b57811bdaa9869c52a928bdb32a949}{conf\+\_\+jj\+::wc}}
+\item 
+integer, parameter \mbox{\hyperlink{namespaceconf__jj_a968fc9bec4b456bf24d9f5ca823beabf}{conf\+\_\+jj\+::mlab}} = 64
+\item 
+character(mlab), dimension(\+:), allocatable \mbox{\hyperlink{namespaceconf__jj_ac2392e22d50370d92a0dd60758a3a2d4}{conf\+\_\+jj\+::label}}
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_abffae7225c40bff74b61b168fb900c86}{conf\+\_\+jj\+::njbl}} = 0
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceconf__jj_a5d2b7f382822c65e48692e762375bbe1}{conf\+\_\+jj\+::jjc}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceconf__jj_afb6a3c8102f93d897a90196ab04bb46e}{conf\+\_\+jj\+::jtc1}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceconf__jj_a1370fba9ac957a188617fb2362a55f44}{conf\+\_\+jj\+::jtc2}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceconf__jj_a60911badb4d2d841de782c268ced5dea}{conf\+\_\+jj\+::jncfg}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceconf__jj_a9eab24054c5cdd924c37ac8ebc4db9d8}{conf\+\_\+jj\+::jtp}}
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_a83ad554b2f1ab0a3fa356c542128862b}{conf\+\_\+jj\+::njbl1}} = 0
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceconf__jj_ad89550ebefd5227db1480169b4a5dc11}{conf\+\_\+jj\+::jj1c}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceconf__jj_a3f593461b3ee28f906012ef2c4d948ac}{conf\+\_\+jj\+::jt1c1}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceconf__jj_a477a21e304fddc3d24a112135c469cb7}{conf\+\_\+jj\+::jt1c2}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceconf__jj_a6959f812bfd39cbe58aefc6de6cc0ad0}{conf\+\_\+jj\+::jncfg1}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceconf__jj_a0852dafaa9792049b4f641012c96d806}{conf\+\_\+jj\+::jtp1}}
+\item 
+integer \mbox{\hyperlink{namespaceconf__jj_a5e1c76a606f88aecf36d2e1c9edf4d97}{conf\+\_\+jj\+::njbl2}} = 0
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceconf__jj_a906148405747bd909f1a436139ec4a7a}{conf\+\_\+jj\+::jj2c}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceconf__jj_a19142626adfb820c693da6106fca9ac8}{conf\+\_\+jj\+::jt2c1}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceconf__jj_a811d390c6cd84b309270837bd5ea46b2}{conf\+\_\+jj\+::jt2c2}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceconf__jj_a9ffc24cb3374ade803553c234e37eee9}{conf\+\_\+jj\+::jncfg2}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceconf__jj_ab10251fc76e7c6728e992ee41d6e5ca4}{conf\+\_\+jj\+::jtp2}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceboef__list_ab894868ffe0bdb7d3baba231d826efeb}{boef\+\_\+list\+::id1}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceboef__list_ae3734934aeacf895631752e35b3fffaa}{boef\+\_\+list\+::id2}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceboef__list_a63f3ff810d90f8e724fbfa5cbe651cc4}{boef\+\_\+list\+::id3}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceboef__list_ad0b6a890058f94962fbd4db80d107392}{boef\+\_\+list\+::id4}}
+\item 
+integer \mbox{\hyperlink{namespaceboef__list_a34aa8be4ba7e71e9103e745f677c1249}{boef\+\_\+list\+::jd1}}
+\item 
+integer \mbox{\hyperlink{namespaceboef__list_a592dd007942dfe4068bfce42888c46b8}{boef\+\_\+list\+::jd2}}
+\item 
+integer \mbox{\hyperlink{namespaceboef__list_abba74909256969a33db5741a98dec9b8}{boef\+\_\+list\+::jd3}}
+\item 
+integer \mbox{\hyperlink{namespaceboef__list_aa7fc726254603be6d2f4e57863d47130}{boef\+\_\+list\+::jd4}}
+\item 
+integer, parameter \mbox{\hyperlink{namespaceboef__list_a66fc50e228679948077b4285929e9317}{boef\+\_\+list\+::ib10}} = 2$\ast$$\ast$10
+\item 
+integer, parameter \mbox{\hyperlink{namespaceboef__list_af105a521617f390a3608aaced7a12c6f}{boef\+\_\+list\+::ib20}} = 2$\ast$$\ast$20
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a80c88c574b2b044430fb9af13edad74f}{det\+\_\+jq\+::kd\+\_\+j1\+\_\+q2}} = 1
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a004052f4d53e5c372ff2e8e78e9b0011}{det\+\_\+jq\+::nt\+\_\+j1\+\_\+q2}} = 1
+\item 
+integer, dimension(2, kd\+\_\+j1\+\_\+q2) \mbox{\hyperlink{namespacedet__jq_a67962a29aa092d87c895490dd981c7e4}{det\+\_\+jq\+::idet\+\_\+j1\+\_\+q2}}
+\item 
+integer, dimension(kd\+\_\+j1\+\_\+q2) \mbox{\hyperlink{namespacedet__jq_a6f924c389b32f5cecf85d05ffddba4f8}{det\+\_\+jq\+::md\+\_\+j1\+\_\+q2}}
+\item 
+integer, dimension(nt\+\_\+j1\+\_\+q2, kd\+\_\+j1\+\_\+q2) \mbox{\hyperlink{namespacedet__jq_a0ada1593e464f334be487d6312788ae6}{det\+\_\+jq\+::id\+\_\+j1\+\_\+q2}}
+\item 
+integer, dimension(nt\+\_\+j1\+\_\+q2, kd\+\_\+j1\+\_\+q2) \mbox{\hyperlink{namespacedet__jq_aa440854ad5093409308590e580431daf}{det\+\_\+jq\+::jd\+\_\+j1\+\_\+q2}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a43b0283406093c2cba5be0d18e498c3c}{det\+\_\+jq\+::kd\+\_\+j3\+\_\+q2}} = 6
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_ab023ff4ebc5f331901367a38312d6606}{det\+\_\+jq\+::nt\+\_\+j3\+\_\+q2}} = 2
+\item 
+integer, dimension(2, kd\+\_\+j3\+\_\+q2) \mbox{\hyperlink{namespacedet__jq_a997f50ba42f31c5b67aa880ac60c478f}{det\+\_\+jq\+::idet\+\_\+j3\+\_\+q2}}
+\item 
+integer, dimension(kd\+\_\+j3\+\_\+q2) \mbox{\hyperlink{namespacedet__jq_a51bfbd22be2342803118f9092aed3614}{det\+\_\+jq\+::md\+\_\+j3\+\_\+q2}}
+\item 
+integer, dimension(nt\+\_\+j3\+\_\+q2, kd\+\_\+j3\+\_\+q2) \mbox{\hyperlink{namespacedet__jq_aa84908e515c8acdf9838d1843b1cee0f}{det\+\_\+jq\+::id\+\_\+j3\+\_\+q2}}
+\item 
+integer, dimension(nt\+\_\+j3\+\_\+q2, kd\+\_\+j3\+\_\+q2) \mbox{\hyperlink{namespacedet__jq_aa652adeb168d01dcdeadeea8abe3cf31}{det\+\_\+jq\+::jd\+\_\+j3\+\_\+q2}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a40718da9427866d41d8545f68944ed19}{det\+\_\+jq\+::kd\+\_\+j3\+\_\+q3}} = 4
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_aa0850a403a63cf5ff007ef7b71c39cdb}{det\+\_\+jq\+::nt\+\_\+j3\+\_\+q3}} = 1
+\item 
+integer, dimension(3, kd\+\_\+j3\+\_\+q3) \mbox{\hyperlink{namespacedet__jq_ae38e73633432c1044785571244eb6421}{det\+\_\+jq\+::idet\+\_\+j3\+\_\+q3}}
+\item 
+integer, dimension(kd\+\_\+j3\+\_\+q3) \mbox{\hyperlink{namespacedet__jq_a11631e92329bdc00d44d5b34452efd47}{det\+\_\+jq\+::md\+\_\+j3\+\_\+q3}}
+\item 
+integer, dimension(nt\+\_\+j3\+\_\+q3, kd\+\_\+j3\+\_\+q3) \mbox{\hyperlink{namespacedet__jq_a56bd4c2b97c7e5caead856080298c67e}{det\+\_\+jq\+::id\+\_\+j3\+\_\+q3}}
+\item 
+integer, dimension(nt\+\_\+j3\+\_\+q3, kd\+\_\+j3\+\_\+q3) \mbox{\hyperlink{namespacedet__jq_a9d8d0b7bb9d2dbd9c555b9788e65e6c9}{det\+\_\+jq\+::jd\+\_\+j3\+\_\+q3}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a86d638baf32b856a5f49ada588265e3e}{det\+\_\+jq\+::kd\+\_\+j3\+\_\+q4}} = 1
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a9a3d85d25b71f539955bae6e35751922}{det\+\_\+jq\+::nt\+\_\+j3\+\_\+q4}} = 1
+\item 
+integer, dimension(4, kd\+\_\+j3\+\_\+q4) \mbox{\hyperlink{namespacedet__jq_aee26b032126a108b4c241f212b519eec}{det\+\_\+jq\+::idet\+\_\+j3\+\_\+q4}}
+\item 
+integer, dimension(kd\+\_\+j3\+\_\+q4) \mbox{\hyperlink{namespacedet__jq_a96a57d6cbc3c83cad431025cb9d64247}{det\+\_\+jq\+::md\+\_\+j3\+\_\+q4}}
+\item 
+integer, dimension(nt\+\_\+j3\+\_\+q4, kd\+\_\+j3\+\_\+q4) \mbox{\hyperlink{namespacedet__jq_a4ec9af2946f872b00528010daf3cd5eb}{det\+\_\+jq\+::id\+\_\+j3\+\_\+q4}}
+\item 
+integer, dimension(nt\+\_\+j3\+\_\+q4, kd\+\_\+j3\+\_\+q4) \mbox{\hyperlink{namespacedet__jq_adc4cfe60569d8b851c701f3766d3de74}{det\+\_\+jq\+::jd\+\_\+j3\+\_\+q4}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_ae4d64b3bd8ede59a4327d36225283ad7}{det\+\_\+jq\+::kd\+\_\+j5\+\_\+q2}} = 15
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_ad06eeae5bc63926657ade9ea99f10f6f}{det\+\_\+jq\+::nt\+\_\+j5\+\_\+q2}} = 3
+\item 
+integer, dimension(2, kd\+\_\+j5\+\_\+q2) \mbox{\hyperlink{namespacedet__jq_a91815bc9ba16253334ec106555ecab54}{det\+\_\+jq\+::idet\+\_\+j5\+\_\+q2}}
+\item 
+integer, dimension(kd\+\_\+j5\+\_\+q2) \mbox{\hyperlink{namespacedet__jq_ad73966cadb34d55362d69e31e49e5ce3}{det\+\_\+jq\+::md\+\_\+j5\+\_\+q2}}
+\item 
+integer, dimension(nt\+\_\+j5\+\_\+q2, kd\+\_\+j5\+\_\+q2) \mbox{\hyperlink{namespacedet__jq_a26ccc58dae1f5fa700cf5d53b1890bf1}{det\+\_\+jq\+::id\+\_\+j5\+\_\+q2}}
+\item 
+integer, dimension(nt\+\_\+j5\+\_\+q2, kd\+\_\+j5\+\_\+q2) \mbox{\hyperlink{namespacedet__jq_a8c642f653440881a5cb368b283434c4c}{det\+\_\+jq\+::jd\+\_\+j5\+\_\+q2}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a48510e637dcd750626e7de5acac594ce}{det\+\_\+jq\+::kd\+\_\+j5\+\_\+q3}} = 20
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a14c75d4aee38ba23edc602f1bc0c1aad}{det\+\_\+jq\+::nt\+\_\+j5\+\_\+q3}} = 3
+\item 
+integer, dimension(3, kd\+\_\+j5\+\_\+q3) \mbox{\hyperlink{namespacedet__jq_ab2a37cbcc9e637194e1093e21ded535c}{det\+\_\+jq\+::idet\+\_\+j5\+\_\+q3}}
+\item 
+integer, dimension(kd\+\_\+j5\+\_\+q3) \mbox{\hyperlink{namespacedet__jq_aa6ead37f8a7761eb315b7db08c509cd1}{det\+\_\+jq\+::md\+\_\+j5\+\_\+q3}}
+\item 
+integer, dimension(nt\+\_\+j5\+\_\+q3, kd\+\_\+j5\+\_\+q3) \mbox{\hyperlink{namespacedet__jq_a5adf9d90b8491893f7d169060adfb0b5}{det\+\_\+jq\+::id\+\_\+j5\+\_\+q3}}
+\item 
+integer, dimension(nt\+\_\+j5\+\_\+q3, kd\+\_\+j5\+\_\+q3) \mbox{\hyperlink{namespacedet__jq_a32f70a412ac160645094c4b3ad97c0d7}{det\+\_\+jq\+::jd\+\_\+j5\+\_\+q3}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a4f46dd037d9f7ac10dbc883627810e41}{det\+\_\+jq\+::kd\+\_\+j5\+\_\+q4}} = 15
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a3fe6cc859f25a4805b5220d8d926992f}{det\+\_\+jq\+::nt\+\_\+j5\+\_\+q4}} = 3
+\item 
+integer, dimension(4, kd\+\_\+j5\+\_\+q4) \mbox{\hyperlink{namespacedet__jq_a86e924cb6909c220a69a0858233ec02a}{det\+\_\+jq\+::idet\+\_\+j5\+\_\+q4}}
+\item 
+integer, dimension(kd\+\_\+j5\+\_\+q4) \mbox{\hyperlink{namespacedet__jq_aec17277afd1898cfc5f1b224836f0917}{det\+\_\+jq\+::md\+\_\+j5\+\_\+q4}}
+\item 
+integer, dimension(nt\+\_\+j5\+\_\+q4, kd\+\_\+j5\+\_\+q4) \mbox{\hyperlink{namespacedet__jq_ae12f48c282335c2a2a1a9f4948178cee}{det\+\_\+jq\+::id\+\_\+j5\+\_\+q4}}
+\item 
+integer, dimension(nt\+\_\+j5\+\_\+q4, kd\+\_\+j5\+\_\+q4) \mbox{\hyperlink{namespacedet__jq_a2e27ab5edd06db3271fb876bc568921e}{det\+\_\+jq\+::jd\+\_\+j5\+\_\+q4}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a7615e2d90d1737c7445283808a7d87fe}{det\+\_\+jq\+::kd\+\_\+j5\+\_\+q5}} = 6
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a0c598e80bbcf357c8810f00055f3bdde}{det\+\_\+jq\+::nt\+\_\+j5\+\_\+q5}} = 1
+\item 
+integer, dimension(5, kd\+\_\+j5\+\_\+q5) \mbox{\hyperlink{namespacedet__jq_aeb7a0a9e68d4483c7a695de0e7ad1dd0}{det\+\_\+jq\+::idet\+\_\+j5\+\_\+q5}}
+\item 
+integer, dimension(kd\+\_\+j5\+\_\+q5) \mbox{\hyperlink{namespacedet__jq_acc3604abc926c312a8823f8f939f69f4}{det\+\_\+jq\+::md\+\_\+j5\+\_\+q5}}
+\item 
+integer, dimension(nt\+\_\+j5\+\_\+q5, kd\+\_\+j5\+\_\+q5) \mbox{\hyperlink{namespacedet__jq_a66ae7fcfb14d2b039d077ca7b4f9e1b1}{det\+\_\+jq\+::id\+\_\+j5\+\_\+q5}}
+\item 
+integer, dimension(nt\+\_\+j5\+\_\+q5, kd\+\_\+j5\+\_\+q5) \mbox{\hyperlink{namespacedet__jq_ac92c438a932c174f571dcbfdd011c856}{det\+\_\+jq\+::jd\+\_\+j5\+\_\+q5}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_ad9e55a45fbbcbd5dba31341607d7ec73}{det\+\_\+jq\+::kd\+\_\+j5\+\_\+q6}} = 1
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a5f5e211a6e0e409054b78fd9c22c73d1}{det\+\_\+jq\+::nt\+\_\+j5\+\_\+q6}} = 1
+\item 
+integer, dimension(6, kd\+\_\+j5\+\_\+q6) \mbox{\hyperlink{namespacedet__jq_a075ae490741b92997caae1c6c5a2490f}{det\+\_\+jq\+::idet\+\_\+j5\+\_\+q6}}
+\item 
+integer, dimension(kd\+\_\+j5\+\_\+q6) \mbox{\hyperlink{namespacedet__jq_a91c71479ad6f8ee2582f40aff01b08c7}{det\+\_\+jq\+::md\+\_\+j5\+\_\+q6}}
+\item 
+integer, dimension(nt\+\_\+j5\+\_\+q6, kd\+\_\+j5\+\_\+q6) \mbox{\hyperlink{namespacedet__jq_a6a0aa7b47972e8f479afdc4d6624cbd1}{det\+\_\+jq\+::id\+\_\+j5\+\_\+q6}}
+\item 
+integer, dimension(nt\+\_\+j5\+\_\+q6, kd\+\_\+j5\+\_\+q6) \mbox{\hyperlink{namespacedet__jq_a6d8f90387ab9ba82b90722fb88b17947}{det\+\_\+jq\+::jd\+\_\+j5\+\_\+q6}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a4e1f57c4b7f7a6133b5680f17e57f380}{det\+\_\+jq\+::kd\+\_\+j7\+\_\+q2}} = 28
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a0daaab5d7fec53195bc1c4a4d4f1fc80}{det\+\_\+jq\+::nt\+\_\+j7\+\_\+q2}} = 4
+\item 
+integer, dimension(2, kd\+\_\+j7\+\_\+q2) \mbox{\hyperlink{namespacedet__jq_a9511c015af7331ce253a3d3659f304f5}{det\+\_\+jq\+::idet\+\_\+j7\+\_\+q2}}
+\item 
+integer, dimension(kd\+\_\+j7\+\_\+q2) \mbox{\hyperlink{namespacedet__jq_a79ee6307f411bfda4d399856c10ff908}{det\+\_\+jq\+::md\+\_\+j7\+\_\+q2}}
+\item 
+integer, dimension(nt\+\_\+j7\+\_\+q2, kd\+\_\+j7\+\_\+q2) \mbox{\hyperlink{namespacedet__jq_af30f4a0727a2f4c5bb32bdf07ced2e90}{det\+\_\+jq\+::id\+\_\+j7\+\_\+q2}}
+\item 
+integer, dimension(nt\+\_\+j7\+\_\+q2, kd\+\_\+j7\+\_\+q2) \mbox{\hyperlink{namespacedet__jq_a8ee7244532eaab9ce85acfafd657f54d}{det\+\_\+jq\+::jd\+\_\+j7\+\_\+q2}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a2329b78f463baace2c37a84991f6c6fe}{det\+\_\+jq\+::kd\+\_\+j7\+\_\+q3}} = 56
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a79e111402887fdab6cad59de55f11703}{det\+\_\+jq\+::nt\+\_\+j7\+\_\+q3}} = 6
+\item 
+integer, dimension(3, kd\+\_\+j7\+\_\+q3) \mbox{\hyperlink{namespacedet__jq_a93579ee7dca54bca5d60537838ae57b6}{det\+\_\+jq\+::idet\+\_\+j7\+\_\+q3}}
+\item 
+integer, dimension(kd\+\_\+j7\+\_\+q3) \mbox{\hyperlink{namespacedet__jq_aaf66906a5cce7408e6eb668426f291bd}{det\+\_\+jq\+::md\+\_\+j7\+\_\+q3}}
+\item 
+integer, dimension(nt\+\_\+j7\+\_\+q3, kd\+\_\+j7\+\_\+q3) \mbox{\hyperlink{namespacedet__jq_ac75dc1d6fa1efe5f6b42f48f78717f45}{det\+\_\+jq\+::id\+\_\+j7\+\_\+q3}}
+\item 
+integer, dimension(nt\+\_\+j7\+\_\+q3, kd\+\_\+j7\+\_\+q3) \mbox{\hyperlink{namespacedet__jq_a4d1b1a59a8dc522be8a700662ae6cac5}{det\+\_\+jq\+::jd\+\_\+j7\+\_\+q3}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a467a1b9391296fe940314e680e683b9d}{det\+\_\+jq\+::kd\+\_\+j7\+\_\+q4}} = 70
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a44beba3ec01bc2f03eb542d751818169}{det\+\_\+jq\+::nt\+\_\+j7\+\_\+q4}} = 8
+\item 
+integer, dimension(4, kd\+\_\+j7\+\_\+q4) \mbox{\hyperlink{namespacedet__jq_a2e989c08f8f3c4c84e72e738324877d5}{det\+\_\+jq\+::idet\+\_\+j7\+\_\+q4}}
+\item 
+integer, dimension(kd\+\_\+j7\+\_\+q4) \mbox{\hyperlink{namespacedet__jq_a25e28a158ae134b55dc07f46fbd2a72f}{det\+\_\+jq\+::md\+\_\+j7\+\_\+q4}}
+\item 
+integer, dimension(nt\+\_\+j7\+\_\+q4, kd\+\_\+j7\+\_\+q4) \mbox{\hyperlink{namespacedet__jq_a343d696b8c5356744fab6db10e2175a7}{det\+\_\+jq\+::id\+\_\+j7\+\_\+q4}}
+\item 
+integer, dimension(nt\+\_\+j7\+\_\+q4, kd\+\_\+j7\+\_\+q4) \mbox{\hyperlink{namespacedet__jq_a00a7202487e9d57a6e067fd66817e182}{det\+\_\+jq\+::jd\+\_\+j7\+\_\+q4}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a33f97478c95fea0ff01645aad469b8c2}{det\+\_\+jq\+::kd\+\_\+j7\+\_\+q5}} = 56
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a30511bda9858f61d55f588f63c93eb50}{det\+\_\+jq\+::nt\+\_\+j7\+\_\+q5}} = 6
+\item 
+integer, dimension(5, kd\+\_\+j7\+\_\+q5) \mbox{\hyperlink{namespacedet__jq_a99b364ec7bc069a0b27593698e523d3b}{det\+\_\+jq\+::idet\+\_\+j7\+\_\+q5}}
+\item 
+integer, dimension(kd\+\_\+j7\+\_\+q5) \mbox{\hyperlink{namespacedet__jq_a049469442b0a3a53dc4357c845101d31}{det\+\_\+jq\+::md\+\_\+j7\+\_\+q5}}
+\item 
+integer, dimension(nt\+\_\+j7\+\_\+q5, kd\+\_\+j7\+\_\+q5) \mbox{\hyperlink{namespacedet__jq_aabe55537487d43522d60d29ab6938fb4}{det\+\_\+jq\+::id\+\_\+j7\+\_\+q5}}
+\item 
+integer, dimension(nt\+\_\+j7\+\_\+q5, kd\+\_\+j7\+\_\+q5) \mbox{\hyperlink{namespacedet__jq_aad7954b5b28f0545ac38d3c58227b321}{det\+\_\+jq\+::jd\+\_\+j7\+\_\+q5}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a9bbb2544e7cefaf481b07f84f276f7e1}{det\+\_\+jq\+::kd\+\_\+j7\+\_\+q6}} = 28
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a8b8660c569aeabdf0d53931fc078127d}{det\+\_\+jq\+::nt\+\_\+j7\+\_\+q6}} = 4
+\item 
+integer, dimension(6, kd\+\_\+j7\+\_\+q6) \mbox{\hyperlink{namespacedet__jq_a4ce6170f6636e7d94b73a67f5f9a077f}{det\+\_\+jq\+::idet\+\_\+j7\+\_\+q6}}
+\item 
+integer, dimension(kd\+\_\+j7\+\_\+q6) \mbox{\hyperlink{namespacedet__jq_a5c45135f5f7019de115972692007251e}{det\+\_\+jq\+::md\+\_\+j7\+\_\+q6}}
+\item 
+integer, dimension(nt\+\_\+j7\+\_\+q6, kd\+\_\+j7\+\_\+q6) \mbox{\hyperlink{namespacedet__jq_a6ae532573065c67177bb27cb8013866c}{det\+\_\+jq\+::id\+\_\+j7\+\_\+q6}}
+\item 
+integer, dimension(nt\+\_\+j7\+\_\+q6, kd\+\_\+j7\+\_\+q6) \mbox{\hyperlink{namespacedet__jq_a23becdbcb514efba6245a8d9884ba90b}{det\+\_\+jq\+::jd\+\_\+j7\+\_\+q6}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a1392a918282e0e87641297348807a4df}{det\+\_\+jq\+::kd\+\_\+j7\+\_\+q7}} = 8
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a8cfa796c2d6cb2de5e0f930f99970076}{det\+\_\+jq\+::nt\+\_\+j7\+\_\+q7}} = 1
+\item 
+integer, dimension(7, kd\+\_\+j7\+\_\+q7) \mbox{\hyperlink{namespacedet__jq_a54875ad03f0c4b30b3d7dd034c7c9962}{det\+\_\+jq\+::idet\+\_\+j7\+\_\+q7}}
+\item 
+integer, dimension(kd\+\_\+j7\+\_\+q7) \mbox{\hyperlink{namespacedet__jq_ac0b9fe54c87de98dceffb5f7bba4e2fa}{det\+\_\+jq\+::md\+\_\+j7\+\_\+q7}}
+\item 
+integer, dimension(nt\+\_\+j7\+\_\+q7, kd\+\_\+j7\+\_\+q7) \mbox{\hyperlink{namespacedet__jq_a11284314703d07108e4f975b9d98c4c9}{det\+\_\+jq\+::id\+\_\+j7\+\_\+q7}}
+\item 
+integer, dimension(nt\+\_\+j7\+\_\+q7, kd\+\_\+j7\+\_\+q7) \mbox{\hyperlink{namespacedet__jq_a5a7449c7f5a1852b814ac76276adb42c}{det\+\_\+jq\+::jd\+\_\+j7\+\_\+q7}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a164023f46d39bced7fe16c3d2ad3feae}{det\+\_\+jq\+::kd\+\_\+j7\+\_\+q8}} = 1
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a093b5f7548f5c4643cc9c4da16d1b9b8}{det\+\_\+jq\+::nt\+\_\+j7\+\_\+q8}} = 1
+\item 
+integer, dimension(8, kd\+\_\+j7\+\_\+q8) \mbox{\hyperlink{namespacedet__jq_a0852de0ae2597322324625dfba540f13}{det\+\_\+jq\+::idet\+\_\+j7\+\_\+q8}}
+\item 
+integer, dimension(kd\+\_\+j7\+\_\+q8) \mbox{\hyperlink{namespacedet__jq_a19b0933e5a4f1de67848e9c9d9f710a0}{det\+\_\+jq\+::md\+\_\+j7\+\_\+q8}}
+\item 
+integer, dimension(nt\+\_\+j7\+\_\+q8, kd\+\_\+j7\+\_\+q8) \mbox{\hyperlink{namespacedet__jq_ad3e1ca9cfaf1a985a7f88199dedf9bba}{det\+\_\+jq\+::id\+\_\+j7\+\_\+q8}}
+\item 
+integer, dimension(nt\+\_\+j7\+\_\+q8, kd\+\_\+j7\+\_\+q8) \mbox{\hyperlink{namespacedet__jq_ac07ccd220b00d85cdb8d454538bd6f79}{det\+\_\+jq\+::jd\+\_\+j7\+\_\+q8}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a9992470be3811e4d18865330a8812945}{det\+\_\+jq\+::kd\+\_\+j9\+\_\+q2}} = 45
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a0a3c12b0a27fd774948f7a1a6ec33c03}{det\+\_\+jq\+::nt\+\_\+j9\+\_\+q2}} = 5
+\item 
+integer, dimension(2, kd\+\_\+j9\+\_\+q2) \mbox{\hyperlink{namespacedet__jq_a5a1b28b57f0d87eb445167fcca7e48e6}{det\+\_\+jq\+::idet\+\_\+j9\+\_\+q2}}
+\item 
+integer, dimension(kd\+\_\+j9\+\_\+q2) \mbox{\hyperlink{namespacedet__jq_a15b2e6e3f4d373e529ace90641fafb77}{det\+\_\+jq\+::md\+\_\+j9\+\_\+q2}}
+\item 
+integer, dimension(nt\+\_\+j9\+\_\+q2, kd\+\_\+j9\+\_\+q2) \mbox{\hyperlink{namespacedet__jq_a4489c17a7bfc875191413aece7c7e83f}{det\+\_\+jq\+::id\+\_\+j9\+\_\+q2}}
+\item 
+integer, dimension(nt\+\_\+j9\+\_\+q2, kd\+\_\+j9\+\_\+q2) \mbox{\hyperlink{namespacedet__jq_a1deedb764d599c45b8faaa686b2ffacd}{det\+\_\+jq\+::jd\+\_\+j9\+\_\+q2}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a80200241dcf3fff98cd620c5900f4da3}{det\+\_\+jq\+::kd\+\_\+j11\+\_\+q2}} = 66
+\item 
+integer, parameter \mbox{\hyperlink{namespacedet__jq_a4d8db5084b4213a91fe24ef117e570ed}{det\+\_\+jq\+::nt\+\_\+j11\+\_\+q2}} = 6
+\item 
+integer, dimension(2, kd\+\_\+j11\+\_\+q2) \mbox{\hyperlink{namespacedet__jq_a3dbe7932faba123a829f266d6ca2f816}{det\+\_\+jq\+::idet\+\_\+j11\+\_\+q2}}
+\item 
+integer, dimension(kd\+\_\+j11\+\_\+q2) \mbox{\hyperlink{namespacedet__jq_a589128b2239485e80a86979cb002c1d8}{det\+\_\+jq\+::md\+\_\+j11\+\_\+q2}}
+\item 
+integer, dimension(nt\+\_\+j11\+\_\+q2, kd\+\_\+j11\+\_\+q2) \mbox{\hyperlink{namespacedet__jq_a265c8230aa3391fadcaa49ead765d0db}{det\+\_\+jq\+::id\+\_\+j11\+\_\+q2}}
+\item 
+integer, dimension(nt\+\_\+j11\+\_\+q2, kd\+\_\+j11\+\_\+q2) \mbox{\hyperlink{namespacedet__jq_ab385c739c8985f60dc245bdc09c4e355}{det\+\_\+jq\+::jd\+\_\+j11\+\_\+q2}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a67d174ebdf467a9572d14dc5bec2cd07}\label{dbsr__lib__zconfjj_8f90_a67d174ebdf467a9572d14dc5bec2cd07}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!al@{al}}
+\index{al@{al}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{al()}{al()}}
+{\footnotesize\ttfamily character function al (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{L,  }\item[{integer, intent(in)}]{k }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a9410ff0c2c85392468ecec6b7cdf66c4}\label{dbsr__lib__zconfjj_8f90_a9410ff0c2c85392468ecec6b7cdf66c4}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!alloc\_blk@{alloc\_blk}}
+\index{alloc\_blk@{alloc\_blk}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{alloc\_blk()}{alloc\_blk()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+blk (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{mm }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a7f2cb394fb6e59574ed148b29be3db78}\label{dbsr__lib__zconfjj_8f90_a7f2cb394fb6e59574ed148b29be3db78}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!alloc\_boef@{alloc\_boef}}
+\index{alloc\_boef@{alloc\_boef}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{alloc\_boef()}{alloc\_boef()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+boef (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{mm }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a7215faffe08b3598621e47f2f64bd451}\label{dbsr__lib__zconfjj_8f90_a7215faffe08b3598621e47f2f64bd451}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!alloc\_cfg@{alloc\_cfg}}
+\index{alloc\_cfg@{alloc\_cfg}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{alloc\_cfg()}{alloc\_cfg()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+cfg (\begin{DoxyParamCaption}\item[{integer}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a657b513942427e9d3b72335623a2aefa}\label{dbsr__lib__zconfjj_8f90_a657b513942427e9d3b72335623a2aefa}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!alloc\_orb\_jj@{alloc\_orb\_jj}}
+\index{alloc\_orb\_jj@{alloc\_orb\_jj}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{alloc\_orb\_jj()}{alloc\_orb\_jj()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+orb\+\_\+jj (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_ad08ae884a20c736f561b5c5c5a367de6}\label{dbsr__lib__zconfjj_8f90_ad08ae884a20c736f561b5c5c5a367de6}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!alloc\_symc@{alloc\_symc}}
+\index{alloc\_symc@{alloc\_symc}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{alloc\_symc()}{alloc\_symc()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+symc (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a05a0f2ecdb60f2cff583172d1ba5768c}\label{dbsr__lib__zconfjj_8f90_a05a0f2ecdb60f2cff583172d1ba5768c}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!alloc\_symt@{alloc\_symt}}
+\index{alloc\_symt@{alloc\_symt}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{alloc\_symt()}{alloc\_symt()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+symt (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a196a3df701dfd8d03d30920a2c5f61f0}\label{dbsr__lib__zconfjj_8f90_a196a3df701dfd8d03d30920a2c5f61f0}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!cfp\_jj@{cfp\_jj}}
+\index{cfp\_jj@{cfp\_jj}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{cfp\_jj()}{cfp\_jj()}}
+{\footnotesize\ttfamily real(8) function cfp\+\_\+jj (\begin{DoxyParamCaption}\item[{integer}]{j,  }\item[{integer}]{q,  }\item[{integer}]{JP,  }\item[{integer}]{VP,  }\item[{integer}]{JD,  }\item[{integer}]{VD }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_aeef85eee3d116866c5b80b65fcfb176a}\label{dbsr__lib__zconfjj_8f90_aeef85eee3d116866c5b80b65fcfb176a}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!check\_boef@{check\_boef}}
+\index{check\_boef@{check\_boef}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{check\_boef()}{check\_boef()}}
+{\footnotesize\ttfamily subroutine check\+\_\+boef (\begin{DoxyParamCaption}\item[{integer}]{l1,  }\item[{integer}]{j1,  }\item[{integer}]{m1,  }\item[{integer}]{l2,  }\item[{integer}]{j2,  }\item[{integer}]{m2,  }\item[{integer}]{l3,  }\item[{integer}]{j3,  }\item[{integer}]{m3,  }\item[{integer}]{l4,  }\item[{integer}]{j4,  }\item[{integer}]{m4 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_aaa4bc4a73670f185717aa8160fdedba9}\label{dbsr__lib__zconfjj_8f90_aaa4bc4a73670f185717aa8160fdedba9}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!coef\_1conf@{coef\_1conf}}
+\index{coef\_1conf@{coef\_1conf}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{coef\_1conf()}{coef\_1conf()}}
+{\footnotesize\ttfamily subroutine coef\+\_\+1conf (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{no,  }\item[{integer, dimension(no), intent(in)}]{ln,  }\item[{integer, dimension(no), intent(in)}]{jn,  }\item[{integer, dimension(no), intent(in)}]{iq,  }\item[{integer, dimension(no), intent(in)}]{Jshell,  }\item[{integer, dimension(no), intent(in)}]{Vshell,  }\item[{integer, dimension(no), intent(in)}]{Jintra,  }\item[{integer, intent(in)}]{kmax,  }\item[{real(8), dimension(no,no,0\+:kmax), intent(out)}]{coefs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a13c00e048f1bb658c21768cdd1ed2eba}\label{dbsr__lib__zconfjj_8f90_a13c00e048f1bb658c21768cdd1ed2eba}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!coef\_2conf\_jj@{coef\_2conf\_jj}}
+\index{coef\_2conf\_jj@{coef\_2conf\_jj}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{coef\_2conf\_jj()}{coef\_2conf\_jj()}}
+{\footnotesize\ttfamily subroutine coef\+\_\+2conf\+\_\+jj (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{no1,  }\item[{integer, dimension(no1), intent(in)}]{nn1,  }\item[{integer, dimension(no1), intent(in)}]{ln1,  }\item[{integer, dimension(no1), intent(in)}]{jn1,  }\item[{integer, dimension(no1), intent(in)}]{iq1,  }\item[{integer, dimension(no1), intent(in)}]{Jshell1,  }\item[{integer, dimension(no1), intent(in)}]{Vshell1,  }\item[{integer, dimension(no1), intent(in)}]{Jintra1,  }\item[{integer, intent(in)}]{no2,  }\item[{integer, dimension(no2), intent(in)}]{nn2,  }\item[{integer, dimension(no2), intent(in)}]{ln2,  }\item[{integer, dimension(no2), intent(in)}]{jn2,  }\item[{integer, dimension(no2), intent(in)}]{iq2,  }\item[{integer, dimension(no2), intent(in)}]{Jshell2,  }\item[{integer, dimension(no2), intent(in)}]{Vshell2,  }\item[{integer, dimension(no2), intent(in)}]{Jintra2,  }\item[{integer, intent(in)}]{mcoef,  }\item[{integer}]{ncoef,  }\item[{integer, dimension(5,mcoef)}]{icoefs,  }\item[{real(8), dimension(mcoef)}]{coefs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a824f27e7c87df0854f1e31c4345605a0}\label{dbsr__lib__zconfjj_8f90_a824f27e7c87df0854f1e31c4345605a0}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!decode\_cj@{decode\_cj}}
+\index{decode\_cj@{decode\_cj}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{decode\_cj()}{decode\_cj()}}
+{\footnotesize\ttfamily subroutine decode\+\_\+cj}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_abf4af0146185e97ce01b7556b28b37fc}\label{dbsr__lib__zconfjj_8f90_abf4af0146185e97ce01b7556b28b37fc}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!decode\_cjj@{decode\_cjj}}
+\index{decode\_cjj@{decode\_cjj}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{decode\_cjj()}{decode\_cjj()}}
+{\footnotesize\ttfamily subroutine decode\+\_\+cjj (\begin{DoxyParamCaption}\item[{character($\ast$), intent(in)}]{C\+O\+N\+F\+IG,  }\item[{character($\ast$), intent(in)}]{S\+H\+E\+L\+LJ,  }\item[{character($\ast$), intent(in)}]{I\+N\+T\+R\+AJ,  }\item[{integer, intent(out)}]{no,  }\item[{integer, dimension($\ast$), intent(out)}]{nn,  }\item[{integer, dimension($\ast$), intent(out)}]{kn,  }\item[{integer, dimension($\ast$), intent(out)}]{ln,  }\item[{integer, dimension($\ast$), intent(out)}]{jn,  }\item[{integer, dimension($\ast$), intent(out)}]{iq,  }\item[{integer, dimension($\ast$), intent(out)}]{in,  }\item[{integer, dimension($\ast$), intent(out)}]{Jshell,  }\item[{integer, dimension($\ast$), intent(out)}]{Vshell,  }\item[{integer, dimension($\ast$), intent(out)}]{Jintra }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a2a2a0cab4907ebd3615668e29be66523}\label{dbsr__lib__zconfjj_8f90_a2a2a0cab4907ebd3615668e29be66523}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!decode\_configuration@{decode\_configuration}}
+\index{decode\_configuration@{decode\_configuration}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{decode\_configuration()}{decode\_configuration()}}
+{\footnotesize\ttfamily subroutine decode\+\_\+configuration (\begin{DoxyParamCaption}\item[{character($\ast$)}]{conf }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a5d9faa1075d70e078dfecd0f44451ad3}\label{dbsr__lib__zconfjj_8f90_a5d9faa1075d70e078dfecd0f44451ad3}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!decode\_confj@{decode\_confj}}
+\index{decode\_confj@{decode\_confj}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{decode\_confj()}{decode\_confj()}}
+{\footnotesize\ttfamily subroutine decode\+\_\+confj}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a635de331c34e7911e8cc4c4528a1d083}\label{dbsr__lib__zconfjj_8f90_a635de331c34e7911e8cc4c4528a1d083}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!decode\_core@{decode\_core}}
+\index{decode\_core@{decode\_core}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{decode\_core()}{decode\_core()}}
+{\footnotesize\ttfamily subroutine decode\+\_\+core (\begin{DoxyParamCaption}\item[{character($\ast$)}]{string }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a10343d3273f3ffb44153e35f6795d40f}\label{dbsr__lib__zconfjj_8f90_a10343d3273f3ffb44153e35f6795d40f}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!def\_jblocks@{def\_jblocks}}
+\index{def\_jblocks@{def\_jblocks}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{def\_jblocks()}{def\_jblocks()}}
+{\footnotesize\ttfamily subroutine def\+\_\+jblocks}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_af40a9b3681d824843607355bc35e0ef2}\label{dbsr__lib__zconfjj_8f90_af40a9b3681d824843607355bc35e0ef2}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!det\_expn\_jj@{det\_expn\_jj}}
+\index{det\_expn\_jj@{det\_expn\_jj}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{det\_expn\_jj()}{det\_expn\_jj()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily subroutine coef\+\_\+2conf\+\_\+jj\+::det\+\_\+expn\+\_\+jj (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{no,  }\item[{integer, dimension(no), intent(in)}]{ln,  }\item[{integer, dimension(no), intent(in)}]{jn,  }\item[{integer, dimension(no), intent(in)}]{iq,  }\item[{integer, dimension(no), intent(in)}]{Jshell,  }\item[{integer, dimension(no), intent(in)}]{Vshell,  }\item[{integer, dimension(no), intent(in)}]{Jintra }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a49942b2b96e67da69b52a8b3c6e7717e}\label{dbsr__lib__zconfjj_8f90_a49942b2b96e67da69b52a8b3c6e7717e}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!det\_expn\_jj@{det\_expn\_jj}}
+\index{det\_expn\_jj@{det\_expn\_jj}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{det\_expn\_jj()}{det\_expn\_jj()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily subroutine coef\+\_\+1conf\+::det\+\_\+expn\+\_\+jj}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a4df4a8b0bb88b530faa253903c533778}\label{dbsr__lib__zconfjj_8f90_a4df4a8b0bb88b530faa253903c533778}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!det\_sh\_jq@{det\_sh\_jq}}
+\index{det\_sh\_jq@{det\_sh\_jq}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{det\_sh\_jq()}{det\_sh\_jq()}}
+{\footnotesize\ttfamily subroutine det\+\_\+sh\+\_\+jq (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{j,  }\item[{integer, intent(in)}]{q,  }\item[{integer, intent(in)}]{id,  }\item[{integer, intent(out)}]{MJ,  }\item[{integer, dimension(q), intent(out)}]{Idet }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a4ef89ff7e8ce5eff5ffbe688268ed0c2}\label{dbsr__lib__zconfjj_8f90_a4ef89ff7e8ce5eff5ffbe688268ed0c2}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!det\_stop@{det\_stop}}
+\index{det\_stop@{det\_stop}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{det\_stop()}{det\_stop()}}
+{\footnotesize\ttfamily subroutine det\+\_\+stop (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{j,  }\item[{integer, intent(in)}]{q,  }\item[{integer, intent(in)}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_aa76c73c5c3accc2dae0724cd1fb9696f}\label{dbsr__lib__zconfjj_8f90_aa76c73c5c3accc2dae0724cd1fb9696f}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!detc\_jq@{detc\_jq}}
+\index{detc\_jq@{detc\_jq}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{detc\_jq()}{detc\_jq()}}
+{\footnotesize\ttfamily real(8) function detc\+\_\+jq (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{j,  }\item[{integer, intent(in)}]{q,  }\item[{integer, intent(in)}]{it,  }\item[{integer, intent(in)}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a8e1d20d75bf8ada2c765b672faf5a3e8}\label{dbsr__lib__zconfjj_8f90_a8e1d20d75bf8ada2c765b672faf5a3e8}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!detc\_stop@{detc\_stop}}
+\index{detc\_stop@{detc\_stop}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{detc\_stop()}{detc\_stop()}}
+{\footnotesize\ttfamily subroutine detc\+\_\+stop (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{j,  }\item[{integer, intent(in)}]{q,  }\item[{integer, intent(in)}]{it,  }\item[{integer, intent(in)}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a8c3611cc25036500066bd2a9303f333a}\label{dbsr__lib__zconfjj_8f90_a8c3611cc25036500066bd2a9303f333a}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!dummy\_done@{dummy\_done}}
+\index{dummy\_done@{dummy\_done}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{dummy\_done()}{dummy\_done()}}
+{\footnotesize\ttfamily subroutine dummy\+\_\+done (\begin{DoxyParamCaption}\item[{integer}]{nu }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_aadd2ccae54050a5a1a1cf41059459d02}\label{dbsr__lib__zconfjj_8f90_aadd2ccae54050a5a1a1cf41059459d02}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!dummy\_symc@{dummy\_symc}}
+\index{dummy\_symc@{dummy\_symc}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{dummy\_symc()}{dummy\_symc()}}
+{\footnotesize\ttfamily subroutine dummy\+\_\+symc (\begin{DoxyParamCaption}\item[{integer}]{nu }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_af8da7e91a74e0a86e6fab8bf6e16c577}\label{dbsr__lib__zconfjj_8f90_af8da7e91a74e0a86e6fab8bf6e16c577}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!dummy\_symt@{dummy\_symt}}
+\index{dummy\_symt@{dummy\_symt}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{dummy\_symt()}{dummy\_symt()}}
+{\footnotesize\ttfamily subroutine dummy\+\_\+symt (\begin{DoxyParamCaption}\item[{integer}]{nu }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a307f5f728c0cbe4a657a5092e86c5e2c}\label{dbsr__lib__zconfjj_8f90_a307f5f728c0cbe4a657a5092e86c5e2c}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!el\_nljk@{el\_nljk}}
+\index{el\_nljk@{el\_nljk}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{el\_nljk()}{el\_nljk()}}
+{\footnotesize\ttfamily subroutine el\+\_\+nljk (\begin{DoxyParamCaption}\item[{character(5), intent(in)}]{EL,  }\item[{integer, intent(out)}]{n,  }\item[{integer, intent(out)}]{kappa,  }\item[{integer, intent(out)}]{l,  }\item[{integer, intent(out)}]{j,  }\item[{integer, intent(out)}]{k }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a3e91b852d57009e25b73ad8bde0dbf7d}\label{dbsr__lib__zconfjj_8f90_a3e91b852d57009e25b73ad8bde0dbf7d}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!eli@{eli}}
+\index{eli@{eli}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{eli()}{eli()}}
+{\footnotesize\ttfamily character(5) function eli (\begin{DoxyParamCaption}\item[{integer}]{n,  }\item[{integer}]{kappa,  }\item[{integer}]{k }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_aac7bc1cdaf14141e5639ed2b9cafe479}\label{dbsr__lib__zconfjj_8f90_aac7bc1cdaf14141e5639ed2b9cafe479}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!elj@{elj}}
+\index{elj@{elj}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{elj()}{elj()}}
+{\footnotesize\ttfamily character(5) function elj (\begin{DoxyParamCaption}\item[{integer}]{n,  }\item[{integer}]{l,  }\item[{integer}]{j,  }\item[{integer}]{k }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_aa7a78a8e78841cb1da25526a63aa879b}\label{dbsr__lib__zconfjj_8f90_aa7a78a8e78841cb1da25526a63aa879b}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!gen\_jj\_states@{gen\_jj\_states}}
+\index{gen\_jj\_states@{gen\_jj\_states}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{gen\_jj\_states()}{gen\_jj\_states()}}
+{\footnotesize\ttfamily subroutine gen\+\_\+jj\+\_\+states (\begin{DoxyParamCaption}\item[{character($\ast$), intent(in)}]{A\+F\+\_\+inp,  }\item[{character($\ast$), intent(in)}]{A\+F\+\_\+out,  }\item[{integer}]{jmin,  }\item[{integer}]{jmax }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_afa1826e9665e9d0d8cec59383e07d03d}\label{dbsr__lib__zconfjj_8f90_afa1826e9665e9d0d8cec59383e07d03d}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!get\_cfg\_jj@{get\_cfg\_jj}}
+\index{get\_cfg\_jj@{get\_cfg\_jj}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{get\_cfg\_jj()}{get\_cfg\_jj()}}
+{\footnotesize\ttfamily subroutine get\+\_\+cfg\+\_\+jj (\begin{DoxyParamCaption}\item[{integer}]{ic }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a2d8d26b101fe64d3453f2615225a87ca}\label{dbsr__lib__zconfjj_8f90_a2d8d26b101fe64d3453f2615225a87ca}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!get\_iconf@{get\_iconf}}
+\index{get\_iconf@{get\_iconf}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{get\_iconf()}{get\_iconf()}}
+{\footnotesize\ttfamily integer function get\+\_\+iconf (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{iterm }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a74a32d4965fea6ea66849c572b213c62}\label{dbsr__lib__zconfjj_8f90_a74a32d4965fea6ea66849c572b213c62}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!get\_jot@{get\_jot}}
+\index{get\_jot@{get\_jot}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{get\_jot()}{get\_jot()}}
+{\footnotesize\ttfamily integer function get\+\_\+jot (\begin{DoxyParamCaption}\item[{integer}]{iconf }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a36ec397499b3df155bc3ec09b5c89d22}\label{dbsr__lib__zconfjj_8f90_a36ec397499b3df155bc3ec09b5c89d22}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!get\_no@{get\_no}}
+\index{get\_no@{get\_no}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{get\_no()}{get\_no()}}
+{\footnotesize\ttfamily integer function get\+\_\+no (\begin{DoxyParamCaption}\item[{integer}]{iconf }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_ab8fba4c2ec27267647b740991c83221c}\label{dbsr__lib__zconfjj_8f90_ab8fba4c2ec27267647b740991c83221c}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!get\_orb\_jj@{get\_orb\_jj}}
+\index{get\_orb\_jj@{get\_orb\_jj}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{get\_orb\_jj()}{get\_orb\_jj()}}
+{\footnotesize\ttfamily subroutine get\+\_\+orb\+\_\+jj (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i,  }\item[{integer, intent(out)}]{n,  }\item[{integer, intent(out)}]{k,  }\item[{integer, intent(out)}]{iset,  }\item[{integer, intent(out)}]{ip }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_af1ae15f8ea8c9c2a59127f526c04d835}\label{dbsr__lib__zconfjj_8f90_af1ae15f8ea8c9c2a59127f526c04d835}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!get\_symc@{get\_symc}}
+\index{get\_symc@{get\_symc}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{get\_symc()}{get\_symc()}}
+{\footnotesize\ttfamily subroutine get\+\_\+symc (\begin{DoxyParamCaption}\item[{integer}]{ic,  }\item[{integer}]{JT,  }\item[{integer}]{no,  }\item[{integer, dimension($\ast$)}]{nn,  }\item[{integer, dimension($\ast$)}]{kn,  }\item[{integer, dimension($\ast$)}]{ln,  }\item[{integer, dimension($\ast$)}]{jn,  }\item[{integer, dimension($\ast$)}]{iq,  }\item[{integer, dimension($\ast$)}]{in }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_ae32e4e59c1344d9310d777c85618f728}\label{dbsr__lib__zconfjj_8f90_ae32e4e59c1344d9310d777c85618f728}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!get\_symt@{get\_symt}}
+\index{get\_symt@{get\_symt}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{get\_symt()}{get\_symt()}}
+{\footnotesize\ttfamily subroutine get\+\_\+symt (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{iterm,  }\item[{integer, intent(out)}]{iconf,  }\item[{integer, intent(out)}]{no,  }\item[{integer, dimension($\ast$)}]{Jshell,  }\item[{integer, dimension($\ast$)}]{Vshell,  }\item[{integer, dimension($\ast$)}]{Jintra }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_aac13d62ee5dbbd6fc76f61f18f6743f8}\label{dbsr__lib__zconfjj_8f90_aac13d62ee5dbbd6fc76f61f18f6743f8}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!iadd\_boef@{iadd\_boef}}
+\index{iadd\_boef@{iadd\_boef}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{iadd\_boef()}{iadd\_boef()}}
+{\footnotesize\ttfamily subroutine iadd\+\_\+boef (\begin{DoxyParamCaption}\item[{real(8), intent(in)}]{C,  }\item[{integer, intent(in)}]{int }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_ab0f11a57f02238229c9e88bede6c342d}\label{dbsr__lib__zconfjj_8f90_ab0f11a57f02238229c9e88bede6c342d}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!iadd\_cfg\_jj@{iadd\_cfg\_jj}}
+\index{iadd\_cfg\_jj@{iadd\_cfg\_jj}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{iadd\_cfg\_jj()}{iadd\_cfg\_jj()}}
+{\footnotesize\ttfamily integer function iadd\+\_\+cfg\+\_\+jj (\begin{DoxyParamCaption}\item[{character($\ast$), intent(in)}]{job }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_ab88daf48823d188068fe44da21cec2a5}\label{dbsr__lib__zconfjj_8f90_ab88daf48823d188068fe44da21cec2a5}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!iadd\_symc@{iadd\_symc}}
+\index{iadd\_symc@{iadd\_symc}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{iadd\_symc()}{iadd\_symc()}}
+{\footnotesize\ttfamily integer function iadd\+\_\+symc (\begin{DoxyParamCaption}\item[{integer}]{JT,  }\item[{integer}]{no,  }\item[{integer, dimension($\ast$)}]{iq,  }\item[{integer, dimension($\ast$)}]{kn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_ac04844070220ff38ef8353db009ef84b}\label{dbsr__lib__zconfjj_8f90_ac04844070220ff38ef8353db009ef84b}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!iadd\_symt@{iadd\_symt}}
+\index{iadd\_symt@{iadd\_symt}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{iadd\_symt()}{iadd\_symt()}}
+{\footnotesize\ttfamily integer function iadd\+\_\+symt (\begin{DoxyParamCaption}\item[{integer}]{iconf,  }\item[{integer}]{no,  }\item[{integer, dimension($\ast$)}]{Jshell,  }\item[{integer, dimension($\ast$)}]{Vshell,  }\item[{integer, dimension($\ast$)}]{Jintra }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_aa1adf86569ef045c752ac2bc4f9e26f8}\label{dbsr__lib__zconfjj_8f90_aa1adf86569ef045c752ac2bc4f9e26f8}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!ifind\_jjorb@{ifind\_jjorb}}
+\index{ifind\_jjorb@{ifind\_jjorb}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{ifind\_jjorb()}{ifind\_jjorb()}}
+{\footnotesize\ttfamily integer function ifind\+\_\+jjorb (\begin{DoxyParamCaption}\item[{integer}]{n,  }\item[{integer}]{k,  }\item[{integer}]{ii,  }\item[{integer}]{job }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_aa0adaf7e0dcbf1a3401d6df77894bec4}\label{dbsr__lib__zconfjj_8f90_aa0adaf7e0dcbf1a3401d6df77894bec4}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!incode\_cj@{incode\_cj}}
+\index{incode\_cj@{incode\_cj}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{incode\_cj()}{incode\_cj()}}
+{\footnotesize\ttfamily subroutine incode\+\_\+cj}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_aeee7ae4597b98c1fd0aa80832179b8fc}\label{dbsr__lib__zconfjj_8f90_aeee7ae4597b98c1fd0aa80832179b8fc}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!incode\_confj@{incode\_confj}}
+\index{incode\_confj@{incode\_confj}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{incode\_confj()}{incode\_confj()}}
+{\footnotesize\ttfamily subroutine incode\+\_\+confj}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a79f91e7b6e53d6537bb533bfdf169be2}\label{dbsr__lib__zconfjj_8f90_a79f91e7b6e53d6537bb533bfdf169be2}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!incode\_confj1@{incode\_confj1}}
+\index{incode\_confj1@{incode\_confj1}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{incode\_confj1()}{incode\_confj1()}}
+{\footnotesize\ttfamily subroutine incode\+\_\+confj1}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a0a25b4274da303aae03177d2839505e2}\label{dbsr__lib__zconfjj_8f90_a0a25b4274da303aae03177d2839505e2}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!index\_mj@{index\_mj}}
+\index{index\_mj@{index\_mj}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{index\_mj()}{index\_mj()}}
+{\footnotesize\ttfamily integer function index\+\_\+mj (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{mj }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a76730b04596deb774ba95e2be8c7cfd9}\label{dbsr__lib__zconfjj_8f90_a76730b04596deb774ba95e2be8c7cfd9}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!iort\_conf\_jj@{iort\_conf\_jj}}
+\index{iort\_conf\_jj@{iort\_conf\_jj}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{iort\_conf\_jj()}{iort\_conf\_jj()}}
+{\footnotesize\ttfamily integer function iort\+\_\+conf\+\_\+jj (\begin{DoxyParamCaption}\item[{integer}]{kk }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_ab109fdc63d2b5c09cab2603ab0569d3b}\label{dbsr__lib__zconfjj_8f90_ab109fdc63d2b5c09cab2603ab0569d3b}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!jdef\_kcfg@{jdef\_kcfg}}
+\index{jdef\_kcfg@{jdef\_kcfg}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{jdef\_kcfg()}{jdef\_kcfg()}}
+{\footnotesize\ttfamily subroutine jdef\+\_\+kcfg (\begin{DoxyParamCaption}\item[{integer}]{nu,  }\item[{integer}]{ncfg,  }\item[{integer}]{kcfg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a5440b2b80840aec2831ab79dc89bd381}\label{dbsr__lib__zconfjj_8f90_a5440b2b80840aec2831ab79dc89bd381}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!jdef\_ncfg@{jdef\_ncfg}}
+\index{jdef\_ncfg@{jdef\_ncfg}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{jdef\_ncfg()}{jdef\_ncfg()}}
+{\footnotesize\ttfamily integer function jdef\+\_\+ncfg (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_ae4cca3f4d3d76475a601b03b5c42833f}\label{dbsr__lib__zconfjj_8f90_ae4cca3f4d3d76475a601b03b5c42833f}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!jot\_ic@{jot\_ic}}
+\index{jot\_ic@{jot\_ic}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{jot\_ic()}{jot\_ic()}}
+{\footnotesize\ttfamily integer function jot\+\_\+ic (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ic }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_ab6da15ae4f349a24352fe5c23dfb6108}\label{dbsr__lib__zconfjj_8f90_ab6da15ae4f349a24352fe5c23dfb6108}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!jparity@{jparity}}
+\index{jparity@{jparity}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{jparity()}{jparity()}}
+{\footnotesize\ttfamily integer function jparity (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{n,  }\item[{integer, dimension(n), intent(in)}]{l,  }\item[{integer, dimension(n), intent(in)}]{q }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a2102ba923e4cbd825a05ff908a567cab}\label{dbsr__lib__zconfjj_8f90_a2102ba923e4cbd825a05ff908a567cab}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!jterm@{jterm}}
+\index{jterm@{jterm}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{jterm()}{jterm()}}
+{\footnotesize\ttfamily integer function jterm (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{j,  }\item[{integer, intent(in)}]{q,  }\item[{integer, intent(in)}]{k,  }\item[{integer}]{JT,  }\item[{integer}]{JV,  }\item[{integer}]{JW,  }\item[{integer}]{JQ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a35b38ddf12fc0507e3290c01951415f8}\label{dbsr__lib__zconfjj_8f90_a35b38ddf12fc0507e3290c01951415f8}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!la@{la}}
+\index{la@{la}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{la()}{la()}}
+{\footnotesize\ttfamily integer function la (\begin{DoxyParamCaption}\item[{character, intent(in)}]{a }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a8153d9b254fb14daff27fbc605c86179}\label{dbsr__lib__zconfjj_8f90_a8153d9b254fb14daff27fbc605c86179}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!me\_det@{me\_det}}
+\index{me\_det@{me\_det}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{me\_det()}{me\_det()}}
+{\footnotesize\ttfamily subroutine coef\+\_\+1conf\+::me\+\_\+det}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_aa50b7e7215d067d97d55afefd963e587}\label{dbsr__lib__zconfjj_8f90_aa50b7e7215d067d97d55afefd963e587}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!me\_ee@{me\_ee}}
+\index{me\_ee@{me\_ee}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{me\_ee()}{me\_ee()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily subroutine coef\+\_\+1conf\+::me\+\_\+ee (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i,  }\item[{integer, intent(in)}]{j,  }\item[{integer, intent(in)}]{i1,  }\item[{integer, intent(in)}]{j1,  }\item[{integer, intent(in)}]{i2,  }\item[{integer, intent(in)}]{j2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_aaf2d7e935722e895e4fd408bed717bcf}\label{dbsr__lib__zconfjj_8f90_aaf2d7e935722e895e4fd408bed717bcf}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!me\_ee@{me\_ee}}
+\index{me\_ee@{me\_ee}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{me\_ee()}{me\_ee()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily subroutine coef\+\_\+2conf\+\_\+jj\+::me\+\_\+ee (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i1,  }\item[{integer, intent(in)}]{j1,  }\item[{integer, intent(in)}]{i2,  }\item[{integer, intent(in)}]{j2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_acbc7befea6a1c18b8d9d6a2ff197c9a3}\label{dbsr__lib__zconfjj_8f90_acbc7befea6a1c18b8d9d6a2ff197c9a3}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!me\_jj@{me\_jj}}
+\index{me\_jj@{me\_jj}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{me\_jj()}{me\_jj()}}
+{\footnotesize\ttfamily subroutine me\+\_\+jj (\begin{DoxyParamCaption}\item[{integer}]{l1,  }\item[{integer}]{j1,  }\item[{integer}]{m1,  }\item[{integer}]{l2,  }\item[{integer}]{j2,  }\item[{integer}]{m2,  }\item[{integer}]{l3,  }\item[{integer}]{j3,  }\item[{integer}]{m3,  }\item[{integer}]{l4,  }\item[{integer}]{j4,  }\item[{integer}]{m4,  }\item[{integer}]{ide }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_ad24a28cc492f6ab40b3ac17bada35837}\label{dbsr__lib__zconfjj_8f90_ad24a28cc492f6ab40b3ac17bada35837}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!mj\_value@{mj\_value}}
+\index{mj\_value@{mj\_value}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{mj\_value()}{mj\_value()}}
+{\footnotesize\ttfamily integer function mj\+\_\+value (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a536120addfa495edde406baaaa2c06e4}\label{dbsr__lib__zconfjj_8f90_a536120addfa495edde406baaaa2c06e4}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!ndets\_jq@{ndets\_jq}}
+\index{ndets\_jq@{ndets\_jq}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{ndets\_jq()}{ndets\_jq()}}
+{\footnotesize\ttfamily integer function ndets\+\_\+jq (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{j,  }\item[{integer, intent(in)}]{q }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a40603e77c5c4660ae23f888a39e1095d}\label{dbsr__lib__zconfjj_8f90_a40603e77c5c4660ae23f888a39e1095d}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!no\_ic\_jj@{no\_ic\_jj}}
+\index{no\_ic\_jj@{no\_ic\_jj}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{no\_ic\_jj()}{no\_ic\_jj()}}
+{\footnotesize\ttfamily integer function no\+\_\+ic\+\_\+jj (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ic }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_ada258091a88aba4bad80c13053b72280}\label{dbsr__lib__zconfjj_8f90_ada258091a88aba4bad80c13053b72280}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!read\_bsw\_orb\_jj@{read\_bsw\_orb\_jj}}
+\index{read\_bsw\_orb\_jj@{read\_bsw\_orb\_jj}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{read\_bsw\_orb\_jj()}{read\_bsw\_orb\_jj()}}
+{\footnotesize\ttfamily subroutine read\+\_\+bsw\+\_\+orb\+\_\+jj (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a779b3f63cf3f89cc4df0b1405aa801b4}\label{dbsr__lib__zconfjj_8f90_a779b3f63cf3f89cc4df0b1405aa801b4}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!read\_done@{read\_done}}
+\index{read\_done@{read\_done}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{read\_done()}{read\_done()}}
+{\footnotesize\ttfamily subroutine read\+\_\+done (\begin{DoxyParamCaption}\item[{integer}]{nu }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_ab5695dea0f1e504d496cd4704bc69414}\label{dbsr__lib__zconfjj_8f90_ab5695dea0f1e504d496cd4704bc69414}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!read\_symc@{read\_symc}}
+\index{read\_symc@{read\_symc}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{read\_symc()}{read\_symc()}}
+{\footnotesize\ttfamily subroutine read\+\_\+symc (\begin{DoxyParamCaption}\item[{integer}]{nu }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_afad065140e0219fe62317b73a6365824}\label{dbsr__lib__zconfjj_8f90_afad065140e0219fe62317b73a6365824}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!read\_symt@{read\_symt}}
+\index{read\_symt@{read\_symt}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{read\_symt()}{read\_symt()}}
+{\footnotesize\ttfamily subroutine read\+\_\+symt (\begin{DoxyParamCaption}\item[{integer}]{nu }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_aaaabf5306097c8b0968ea554bb3c42b2}\label{dbsr__lib__zconfjj_8f90_aaaabf5306097c8b0968ea554bb3c42b2}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!reduce\_jj\_ls@{reduce\_jj\_ls}}
+\index{reduce\_jj\_ls@{reduce\_jj\_ls}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{reduce\_jj\_ls()}{reduce\_jj\_ls()}}
+{\footnotesize\ttfamily subroutine reduce\+\_\+jj\+\_\+ls (\begin{DoxyParamCaption}\item[{integer}]{no,  }\item[{integer, dimension($\ast$)}]{nn,  }\item[{integer, dimension($\ast$)}]{kn,  }\item[{integer, dimension($\ast$)}]{ln,  }\item[{integer, dimension($\ast$)}]{jn,  }\item[{integer, dimension($\ast$)}]{iq,  }\item[{integer, dimension($\ast$)}]{in }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a773b4b7c3f7dc479d4fde6c788b40e79}\label{dbsr__lib__zconfjj_8f90_a773b4b7c3f7dc479d4fde6c788b40e79}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!reduce\_ls\_jj@{reduce\_ls\_jj}}
+\index{reduce\_ls\_jj@{reduce\_ls\_jj}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{reduce\_ls\_jj()}{reduce\_ls\_jj()}}
+{\footnotesize\ttfamily subroutine reduce\+\_\+ls\+\_\+jj (\begin{DoxyParamCaption}\item[{integer}]{no,  }\item[{integer, dimension($\ast$)}]{nn,  }\item[{integer, dimension($\ast$)}]{kn,  }\item[{integer, dimension($\ast$)}]{ln,  }\item[{integer, dimension($\ast$)}]{jn,  }\item[{integer, dimension($\ast$)}]{iq,  }\item[{integer, dimension($\ast$)}]{in,  }\item[{integer, dimension($\ast$)}]{iq\+\_\+min,  }\item[{integer, dimension($\ast$)}]{iq\+\_\+max }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a57e37c627333842074e1dff8d6ad0bd1}\label{dbsr__lib__zconfjj_8f90_a57e37c627333842074e1dff8d6ad0bd1}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!save\_cfg\_jj@{save\_cfg\_jj}}
+\index{save\_cfg\_jj@{save\_cfg\_jj}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{save\_cfg\_jj()}{save\_cfg\_jj()}}
+{\footnotesize\ttfamily subroutine save\+\_\+cfg\+\_\+jj (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a7f8f03891d291a593102a5260f6eacc2}\label{dbsr__lib__zconfjj_8f90_a7f8f03891d291a593102a5260f6eacc2}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!sum\_iterm@{sum\_iterm}}
+\index{sum\_iterm@{sum\_iterm}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{sum\_iterm()}{sum\_iterm()}}
+{\footnotesize\ttfamily subroutine sum\+\_\+iterm}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_aa2212c67726e7599694cdf150295cfff}\label{dbsr__lib__zconfjj_8f90_aa2212c67726e7599694cdf150295cfff}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!sum\_term@{sum\_term}}
+\index{sum\_term@{sum\_term}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{sum\_term()}{sum\_term()}}
+{\footnotesize\ttfamily subroutine sum\+\_\+term}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_a81a61e15c3da77067e3b684569ac291e}\label{dbsr__lib__zconfjj_8f90_a81a61e15c3da77067e3b684569ac291e}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!write\_done@{write\_done}}
+\index{write\_done@{write\_done}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{write\_done()}{write\_done()}}
+{\footnotesize\ttfamily subroutine write\+\_\+done (\begin{DoxyParamCaption}\item[{integer}]{nu }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_ab8a96953462d60b9e12191eb7499c0d6}\label{dbsr__lib__zconfjj_8f90_ab8a96953462d60b9e12191eb7499c0d6}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!write\_symc@{write\_symc}}
+\index{write\_symc@{write\_symc}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{write\_symc()}{write\_symc()}}
+{\footnotesize\ttfamily subroutine write\+\_\+symc (\begin{DoxyParamCaption}\item[{integer}]{nu }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{dbsr__lib__zconfjj_8f90_ae738838bfd2ca4c66b8945478fc578fe}\label{dbsr__lib__zconfjj_8f90_ae738838bfd2ca4c66b8945478fc578fe}} 
+\index{dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}!write\_symt@{write\_symt}}
+\index{write\_symt@{write\_symt}!dbsr\_lib\_zconfjj.f90@{dbsr\_lib\_zconfjj.f90}}
+\doxysubsubsection{\texorpdfstring{write\_symt()}{write\_symt()}}
+{\footnotesize\ttfamily subroutine write\+\_\+symt (\begin{DoxyParamCaption}\item[{integer}]{nu }\end{DoxyParamCaption})}
+

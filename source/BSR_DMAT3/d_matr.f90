@@ -1,8 +1,9 @@
 !======================================================================
       Subroutine D_matr
 !======================================================================
-!     This routine computes the matrix of dipole matrix elements
-!     in length and velocity forms according to MULT_BNK (unit nub)
+!> @ingroup bsr_dmat
+!> @brief     This routine computes the matrix of dipole matrix elements
+!>     in length and velocity forms according to MULT_BNK (unit nub)
 !----------------------------------------------------------------------
       Use bsr_dmat
       Use conf_LS; Use term_LS

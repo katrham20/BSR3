@@ -1,8 +1,9 @@
 !======================================================================
       Module spin_orbitals
 !======================================================================
-!     contains rather fancy but effective description of two determinant
-!     wave function under consideration 
+!> @ingroup bsr_breit
+!> @brief     contains rather fancy but effective description of two determinant
+!>     wave function under consideration 
 !----------------------------------------------------------------------
       Implicit none
 
@@ -38,7 +39,8 @@
 !======================================================================
       Subroutine Alloc_spin_orbitals(ne)
 !======================================================================
-!     allocate arrays in module spin-orbitals
+!> @ingroup bsr_breit
+!> @brief     allocate arrays in module spin-orbitals
 !----------------------------------------------------------------------
       Use spin_orbitals
 

@@ -1,0 +1,243 @@
+\hypertarget{group__bsr__phot}{}\doxysection{B\+S\+R\+\_\+\+P\+H\+O\+T3}
+\label{group__bsr__phot}\index{BSR\_PHOT3@{BSR\_PHOT3}}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__phot_gaa36587169f4f406410220d1d46c4752f}{ak\+\_\+coef}} (nopen, EK)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__phot_ga7b4d9dd458872fa6d7f3076d4c373399}{phot\+\_\+sec}} (EK, Ephot, GI, nopen)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__phot_ga3e76be764ac0eec49ea1f658c431f0b4}{read\+\_\+arg}} (nu)
+\begin{DoxyCompactList}\small\item\em read arguments from file unit \textquotesingle{}nu\textquotesingle{} \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__phot_ga1ad8402df5f8d257751bb9988bf7372e}{read\+\_\+bound}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__phot_ga2376dfde12e8e7e6255b4887a215d2af}{read\+\_\+ddat}} (nu, ipri)
+\begin{DoxyCompactList}\small\item\em read D.\+D\+AT file (unit nu) \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__phot_gaed2fb92951e3e6ee59dc9a285f394db1}{read\+\_\+hdat}} (nu, ipri)
+\begin{DoxyCompactList}\small\item\em Read H.\+D\+AT file (unit nu) and find the information for partial wave IS,IL,IP. \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__phot_ga3c6f0ae039b796ea6264ef3eeabf66d2}{read\+\_\+wdat}} (nu)
+\begin{DoxyCompactList}\small\item\em read W.\+D\+AT file (unit nu) \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__phot_gac9db8486ae337ce1844642141c32a7c3}{sort\+\_\+photo}} (nu, AF)
+\begin{DoxyCompactList}\small\item\em Sorting results in photo.\+out -\/-\/$>$ photo.\+new (from repeated results save only new !) \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__phot_ga846b08319f3fd01de5756440f3f2120f}{sym\+\_\+mat1}} (n, m, R, dmn, dmx, dav)
+\begin{DoxyCompactList}\small\item\em evaluate symmetry of the matrix R(n,n), and then symmetrize it \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__phot_ga1132f150d2e3bec39e1b10c6d2044aba}{zaface}} (I\+B\+UG, AC, I\+ON, km, R, D\+RI, nch, nopen, L\+CH, E\+CH, CF, iauto, mfgi, info, F, G, FP, GP)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__phot_gaac7c5cde9f77132f279c6be882915309}{zopen}} (E\+T\+OT, N\+A\+ST, E\+N\+AT, N\+C\+O\+N\+AT, nch, nopen, EN)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{bsr\+\_\+phot\+::ma}} = 40
+\begin{DoxyCompactList}\small\item\em Contains common variable and arrays. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{group__bsr__phot_gaa36587169f4f406410220d1d46c4752f}\label{group__bsr__phot_gaa36587169f4f406410220d1d46c4752f}} 
+\index{BSR\_PHOT3@{BSR\_PHOT3}!ak\_coef@{ak\_coef}}
+\index{ak\_coef@{ak\_coef}!BSR\_PHOT3@{BSR\_PHOT3}}
+\doxysubsubsection{\texorpdfstring{ak\_coef()}{ak\_coef()}}
+{\footnotesize\ttfamily subroutine ak\+\_\+coef (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nopen,  }\item[{real(8), intent(in)}]{EK }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nopen} & I\+N\+P\+UT\+: \begin{DoxyVerb} EK       -  ELECTRON ENERGY (Ry)
+ AA       -  RMAT^(-1) * F-   (from module bsr_phot)
+ WT       -  weights of the R_matrix basis components
+
+ RETURNS:
+
+ AK(i,j)  -  weight of ith channel in solution j (it is c**2 !)
+\end{DoxyVerb}
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__phot_ga7b4d9dd458872fa6d7f3076d4c373399}\label{group__bsr__phot_ga7b4d9dd458872fa6d7f3076d4c373399}} 
+\index{BSR\_PHOT3@{BSR\_PHOT3}!phot\_sec@{phot\_sec}}
+\index{phot\_sec@{phot\_sec}!BSR\_PHOT3@{BSR\_PHOT3}}
+\doxysubsubsection{\texorpdfstring{phot\_sec()}{phot\_sec()}}
+{\footnotesize\ttfamily subroutine phot\+\_\+sec (\begin{DoxyParamCaption}\item[{real(8), intent(in)}]{EK,  }\item[{real(8), intent(in)}]{Ephot,  }\item[{real(8), intent(in)}]{GI,  }\item[{integer, intent(in)}]{nopen }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nopen} & I\+N\+P\+UT\+: \begin{DoxyVerb} EK           - elctron energy (Ry)
+ EPHOT        - photon energy (Ry)
+ GI           - statistical weight for initial state
+ DK           - DIPOLE VECTORS, 1=LENGTH, 2=VELOCITY.
+
+ OUTPUT:
+
+ DL,DV        - channels DIPOLE VECTORS (within -i factor)
+ SL,SV        - channels CROSS SECTIONS
+ SLP,SVP      - partial  CROSS SECTIONS
+\end{DoxyVerb}
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__phot_ga3e76be764ac0eec49ea1f658c431f0b4}\label{group__bsr__phot_ga3e76be764ac0eec49ea1f658c431f0b4}} 
+\index{BSR\_PHOT3@{BSR\_PHOT3}!read\_arg@{read\_arg}}
+\index{read\_arg@{read\_arg}!BSR\_PHOT3@{BSR\_PHOT3}}
+\doxysubsubsection{\texorpdfstring{read\_arg()}{read\_arg()}}
+{\footnotesize\ttfamily subroutine read\+\_\+arg (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu }\end{DoxyParamCaption})}
+
+
+
+read arguments from file unit \textquotesingle{}nu\textquotesingle{} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nu} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__phot_ga1ad8402df5f8d257751bb9988bf7372e}\label{group__bsr__phot_ga1ad8402df5f8d257751bb9988bf7372e}} 
+\index{BSR\_PHOT3@{BSR\_PHOT3}!read\_bound@{read\_bound}}
+\index{read\_bound@{read\_bound}!BSR\_PHOT3@{BSR\_PHOT3}}
+\doxysubsubsection{\texorpdfstring{read\_bound()}{read\_bound()}}
+{\footnotesize\ttfamily subroutine read\+\_\+bound}
+
+read pseudo-\/states energies, if any, from bound.\+nnn\mbox{\Hypertarget{group__bsr__phot_ga2376dfde12e8e7e6255b4887a215d2af}\label{group__bsr__phot_ga2376dfde12e8e7e6255b4887a215d2af}} 
+\index{BSR\_PHOT3@{BSR\_PHOT3}!read\_ddat@{read\_ddat}}
+\index{read\_ddat@{read\_ddat}!BSR\_PHOT3@{BSR\_PHOT3}}
+\doxysubsubsection{\texorpdfstring{read\_ddat()}{read\_ddat()}}
+{\footnotesize\ttfamily subroutine read\+\_\+ddat (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu,  }\item[{integer, intent(in)}]{ipri }\end{DoxyParamCaption})}
+
+
+
+read D.\+D\+AT file (unit nu) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nu} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em ipri} & read D.\+D\+AT file (unit nu) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__phot_gaed2fb92951e3e6ee59dc9a285f394db1}\label{group__bsr__phot_gaed2fb92951e3e6ee59dc9a285f394db1}} 
+\index{BSR\_PHOT3@{BSR\_PHOT3}!read\_hdat@{read\_hdat}}
+\index{read\_hdat@{read\_hdat}!BSR\_PHOT3@{BSR\_PHOT3}}
+\doxysubsubsection{\texorpdfstring{read\_hdat()}{read\_hdat()}}
+{\footnotesize\ttfamily subroutine read\+\_\+hdat (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu,  }\item[{integer, intent(in)}]{ipri }\end{DoxyParamCaption})}
+
+
+
+Read H.\+D\+AT file (unit nu) and find the information for partial wave IS,IL,IP. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nu} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em ipri} & Read H.\+D\+AT file (unit nu) and find the information for partial wave IS,IL,IP \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__phot_ga3c6f0ae039b796ea6264ef3eeabf66d2}\label{group__bsr__phot_ga3c6f0ae039b796ea6264ef3eeabf66d2}} 
+\index{BSR\_PHOT3@{BSR\_PHOT3}!read\_wdat@{read\_wdat}}
+\index{read\_wdat@{read\_wdat}!BSR\_PHOT3@{BSR\_PHOT3}}
+\doxysubsubsection{\texorpdfstring{read\_wdat()}{read\_wdat()}}
+{\footnotesize\ttfamily subroutine read\+\_\+wdat (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu }\end{DoxyParamCaption})}
+
+
+
+read W.\+D\+AT file (unit nu) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nu} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__phot_gac9db8486ae337ce1844642141c32a7c3}\label{group__bsr__phot_gac9db8486ae337ce1844642141c32a7c3}} 
+\index{BSR\_PHOT3@{BSR\_PHOT3}!sort\_photo@{sort\_photo}}
+\index{sort\_photo@{sort\_photo}!BSR\_PHOT3@{BSR\_PHOT3}}
+\doxysubsubsection{\texorpdfstring{sort\_photo()}{sort\_photo()}}
+{\footnotesize\ttfamily subroutine sort\+\_\+photo (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu,  }\item[{character(60), intent(in)}]{AF }\end{DoxyParamCaption})}
+
+
+
+Sorting results in photo.\+out -\/-\/$>$ photo.\+new (from repeated results save only new !) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nu} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__phot_ga846b08319f3fd01de5756440f3f2120f}\label{group__bsr__phot_ga846b08319f3fd01de5756440f3f2120f}} 
+\index{BSR\_PHOT3@{BSR\_PHOT3}!sym\_mat1@{sym\_mat1}}
+\index{sym\_mat1@{sym\_mat1}!BSR\_PHOT3@{BSR\_PHOT3}}
+\doxysubsubsection{\texorpdfstring{sym\_mat1()}{sym\_mat1()}}
+{\footnotesize\ttfamily subroutine sym\+\_\+mat1 (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{n,  }\item[{integer, intent(in)}]{m,  }\item[{real(8), dimension(m,m)}]{R,  }\item[{real(8), intent(out)}]{dmn,  }\item[{real(8), intent(out)}]{dmx,  }\item[{real(8), intent(out)}]{dav }\end{DoxyParamCaption})}
+
+
+
+evaluate symmetry of the matrix R(n,n), and then symmetrize it 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em n} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em m} & evaluate symmetry of the matrix R(n,n), and then symmetrize it \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__phot_ga1132f150d2e3bec39e1b10c6d2044aba}\label{group__bsr__phot_ga1132f150d2e3bec39e1b10c6d2044aba}} 
+\index{BSR\_PHOT3@{BSR\_PHOT3}!zaface@{zaface}}
+\index{zaface@{zaface}!BSR\_PHOT3@{BSR\_PHOT3}}
+\doxysubsubsection{\texorpdfstring{zaface()}{zaface()}}
+{\footnotesize\ttfamily subroutine zaface (\begin{DoxyParamCaption}\item[{}]{I\+B\+UG,  }\item[{}]{AC,  }\item[{}]{I\+ON,  }\item[{}]{km,  }\item[{}]{R,  }\item[{}]{D\+RI,  }\item[{}]{nch,  }\item[{}]{nopen,  }\item[{dimension(nch)}]{L\+CH,  }\item[{dimension(nch)}]{E\+CH,  }\item[{dimension(nch,nch,km)}]{CF,  }\item[{}]{iauto,  }\item[{}]{mfgi,  }\item[{}]{info,  }\item[{dimension(nch,nch)}]{F,  }\item[{dimension(nch,nch)}]{G,  }\item[{dimension(nch,nch)}]{FP,  }\item[{dimension(nch,nch)}]{GP }\end{DoxyParamCaption})}
+
+I\+N\+P\+UT\+:
+
+I\+B\+UG = D\+E\+B\+UG P\+R\+I\+NT AC = A\+C\+C\+U\+R\+A\+CY I\+ON = R\+E\+S\+I\+D\+U\+AL C\+H\+A\+R\+GE ON T\+A\+R\+G\+ET (Z-\/\+N\+E\+LC) km = M\+A\+X.\+O\+R\+D\+ER OF L\+O\+NG R\+A\+N\+GE P\+O\+T\+E\+N\+T\+I\+AL CF R = B\+O\+U\+N\+D\+A\+RY R\+A\+D\+I\+US D\+RI = F\+O\+X-\/\+G\+O\+O\+D\+W\+IN S\+T\+EP N\+CH = T\+O\+T\+AL N\+U\+M\+B\+ER OF C\+H\+A\+N\+N\+E\+LS N\+O\+P\+EN = N\+U\+M\+B\+ER OF O\+P\+EN C\+H\+A\+N\+N\+E\+LS CF = L\+O\+NG R\+A\+N\+GE P\+O\+T\+E\+N\+T\+I\+AL C\+O\+E\+F\+F\+I\+C\+I\+E\+N\+TS, U\+P\+P\+ER T\+R\+I\+A\+N\+G\+LE F\+O\+RM L\+CH = C\+H\+A\+N\+N\+EL A\+N\+G\+U\+L\+AR M\+O\+M\+E\+N\+TA E\+CH = C\+H\+A\+N\+N\+EL E\+N\+E\+R\+GY (R\+Y\+D\+B\+E\+RS) iauto = mode for automatic choose og M\+FG mfgi = suggested number of points in outer region (M\+FG)
+
+O\+U\+T\+P\+UT\+:
+
+F,G = sin/cos solutions ON B\+O\+U\+N\+D\+A\+RY FP,GP = their derivatives
+
+info = if not equal 0 -\/ skip the energy!\mbox{\Hypertarget{group__bsr__phot_gaac7c5cde9f77132f279c6be882915309}\label{group__bsr__phot_gaac7c5cde9f77132f279c6be882915309}} 
+\index{BSR\_PHOT3@{BSR\_PHOT3}!zopen@{zopen}}
+\index{zopen@{zopen}!BSR\_PHOT3@{BSR\_PHOT3}}
+\doxysubsubsection{\texorpdfstring{zopen()}{zopen()}}
+{\footnotesize\ttfamily subroutine zopen (\begin{DoxyParamCaption}\item[{real(8), intent(in)}]{E\+T\+OT,  }\item[{integer, intent(in)}]{N\+A\+ST,  }\item[{real(8), dimension(nast), intent(in)}]{E\+N\+AT,  }\item[{integer, dimension(nast), intent(in)}]{N\+C\+O\+N\+AT,  }\item[{integer, intent(in)}]{nch,  }\item[{integer, intent(out)}]{nopen,  }\item[{real(8), dimension(nch), intent(out)}]{EN }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nast} & I\+N\+P\+UT\+: \begin{DoxyVerb}  ETOT       = ELECTRON ENERGY IN RYDS
+  NAST       = NUMBER OF TARGET STATES
+  ENAT       = TARGET ENERGIES IN RYDS
+  NCONAT     = NUMBER OF CHANNELS COUPLED TO EACH TARGET STATE
+  NCH        = NUMBER OF CHANNELS
+
+  RETURNS:
+
+  NOPEN      = NUMBER OF OPEN CHANNELS
+  EN         = CHANNEL ENERGIES IN RYDS.
+\end{DoxyVerb}
+\\
+\hline
+\mbox{\texttt{ in}}  & {\em nch} & I\+N\+P\+UT\+: \begin{DoxyVerb}  ETOT       = ELECTRON ENERGY IN RYDS
+  NAST       = NUMBER OF TARGET STATES
+  ENAT       = TARGET ENERGIES IN RYDS
+  NCONAT     = NUMBER OF CHANNELS COUPLED TO EACH TARGET STATE
+  NCH        = NUMBER OF CHANNELS
+
+  RETURNS:
+
+  NOPEN      = NUMBER OF OPEN CHANNELS
+  EN         = CHANNEL ENERGIES IN RYDS.
+\end{DoxyVerb}
+ \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}\label{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}} 
+\index{BSR\_PHOT3@{BSR\_PHOT3}!ma@{ma}}
+\index{ma@{ma}!BSR\_PHOT3@{BSR\_PHOT3}}
+\doxysubsubsection{\texorpdfstring{ma}{ma}}
+{\footnotesize\ttfamily integer parameter bsr\+\_\+phot\+::ma = 40}
+
+
+
+Contains common variable and arrays. 
+

@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine Read_bound 
 !----------------------------------------------------------------------
-!     read pseudo-states energies, if any, from bound.nnn 
+!> @ingroup bsr_phot
+!> @brief     read pseudo-states energies, if any, from bound.nnn 
 !----------------------------------------------------------------------      
       Use bsr_phot
       Implicit real(8) (A-H,O-Z)

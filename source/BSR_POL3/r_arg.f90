@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine R_arg
 !======================================================================
-!     read arguments, first from file unit 'nu, then from comand line
+!> @ingroup bsr_pol
+!> @brief     read arguments, first from file unit 'nu, then from comand line
 !----------------------------------------------------------------------
       Use bsr_pol
     

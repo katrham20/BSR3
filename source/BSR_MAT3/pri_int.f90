@@ -1,7 +1,8 @@
 !=======================================================================
       Subroutine pri_int (nu,icase,k,i1,i2,i3,i4,S)
 !=======================================================================
-!     print the integral for debug purposes
+!> @ingroup bsr_mat
+!> @brief     print the integral for debug purposes
 !-----------------------------------------------------------------------
       Use spline_orbitals,  only: EBS
 

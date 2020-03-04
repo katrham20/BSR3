@@ -1,8 +1,9 @@
 !======================================================================
       Module  bsr_dmat
 !======================================================================
-!     containes some common parameters, variables and arrays
-!     specific for this program
+!> @ingroup bsr_dmat
+!> @brief     containes some common parameters, variables and arrays
+!>     specific for this program
 !----------------------------------------------------------------------
       Implicit none
 

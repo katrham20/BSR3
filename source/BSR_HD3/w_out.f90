@@ -1,29 +1,30 @@
 !======================================================================
       Subroutine W_OUT
 !======================================================================
-!     define the contributions of channels and pertuber configurations
-!     for each solution
+!> @ingroup bsr_hd
+!> @brief     define the contributions of channels and pertuber configurations
+!>     for each solution
 !----------------------------------------------------------------------
-!     Original egeinproblem:
-!
-!     H C = S C E,   E - diagonal egenvalue matrix
-!                    S - overlap matrix
+!!     Original egeinproblem:
+!!
+!!     H C = S C E,   E - diagonal egenvalue matrix
+!!                    S - overlap matrix
 !
 !----------------------------------------------------------------------
-!     Using squire-root matrix:
-!
-!     C' H C = (C' S C) E  ->  C' S C = 1  =>  (C'S^1/2) (S^1/2 C) = 1
-!
-!     S A = s A;  S^1/2 = A s(1/2) A'
-!
+!!     Using squire-root matrix:
+!!
+!!     C' H C = (C' S C) E  ->  C' S C = 1  =>  (C'S^1/2) (S^1/2 C) = 1
+!!
+!!     S A = s A;  S^1/2 = A s(1/2) A'
+!!
 !-----------------------------------------------------------------------
-!     Using Cholesky decomposition:
-!
-!     S = L L' ->     H C = L L' C E
-!                    [inv(L) H inv(L')] L'C = L'C E
-!                    (L'C)' (L'C) = 1
-!
-!     supposed solutions are given as (L'C) in matrix A
+!!     Using Cholesky decomposition:
+!!
+!!     S = L L' ->     H C = L L' C E
+!!                    [inv(L) H inv(L')] L'C = L'C E
+!!                    (L'C)' (L'C) = 1
+!!
+!!     supposed solutions are given as (L'C) in matrix A
 !-----------------------------------------------------------------------
       Use bsr_hd
       Use conf_LS

@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine Open_br(nu,klsp)
 !======================================================================
-!     open (close) files in the breit_bsr program
+!> @ingroup bsr_breit
+!> @brief     open (close) files in the breit_bsr program
 !----------------------------------------------------------------------
       Use bsr_breit
 

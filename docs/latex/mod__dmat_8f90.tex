@@ -1,0 +1,51 @@
+\hypertarget{mod__dmat_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/source/\+B\+S\+R\+\_\+\+D\+M\+A\+T3/mod\+\_\+dmat.f90 File Reference}
+\label{mod__dmat_8f90}\index{/Users/khamilton/Codes/BSR3/source/BSR\_DMAT3/mod\_dmat.f90@{/Users/khamilton/Codes/BSR3/source/BSR\_DMAT3/mod\_dmat.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacedmatrix}{dmatrix}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga2187af463f81d7eca536b9e4dfc98103}{allocate\+\_\+matrix}} (ns, ks, nch1, nch2, ncp1, ncp2, ncfg1, ncfg2)
+\begin{DoxyCompactList}\small\item\em allocate arrays in module \char`\"{}dmatrix\char`\"{} \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga91f81086e5d407eb2af04f81897c22a6}{update\+\_\+dx}} (ich, jch, ns, ks, d1, d2)
+\begin{DoxyCompactList}\small\item\em update channel block with nonsymmetric band matrix \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga1ef01f8311b67eda5b2aeb34c9de3c6c}{update\+\_\+dw}} (ich, jch, ns, v1, w1, v2, w2)
+\begin{DoxyCompactList}\small\item\em update full matrix with v$\ast$w \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_gac7643057d24be4598a213c0b2aee9174}{update\+\_\+dv}} (ich, jch, ic, jc, ns, v1, v2)
+\begin{DoxyCompactList}\small\item\em update full matrix with vector \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga611db0924c82dab792cf1ce278205ea8}{update\+\_\+db}} (ic, jc, CL, CV)
+\begin{DoxyCompactList}\small\item\em update full matrix with scalar \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{group__bsr__dmat_gac1f5f83236c75ea06c6ded3ef6c1a9c4}{dmatrix\+::kns}}
+\item 
+integer \mbox{\hyperlink{namespacedmatrix_a6de404d251e5de3e03ba3dbaa4e4c611}{dmatrix\+::kks}}
+\item 
+integer \mbox{\hyperlink{namespacedmatrix_a07809309ce262ca4af2a32520b2a797d}{dmatrix\+::kch1}}
+\item 
+integer \mbox{\hyperlink{namespacedmatrix_a5e49dbca8fb3b364f325e4284e068b2b}{dmatrix\+::kch2}}
+\item 
+integer \mbox{\hyperlink{namespacedmatrix_aeca392d910d2e7fbf0ba528a9af3ee89}{dmatrix\+::knc1}}
+\item 
+integer \mbox{\hyperlink{namespacedmatrix_ad2d403113d2bb6e081bfc50d83dbd015}{dmatrix\+::knc2}}
+\item 
+integer \mbox{\hyperlink{namespacedmatrix_a4597432be4dffc755eebe9530acedfa4}{dmatrix\+::kcp1}}
+\item 
+integer \mbox{\hyperlink{namespacedmatrix_a3bac7d4871114f92318c1b66c4ad39f3}{dmatrix\+::kcp2}}
+\item 
+integer \mbox{\hyperlink{namespacedmatrix_a499cd136be754a59fe815b7788eade8d}{dmatrix\+::kcfg1}}
+\item 
+integer \mbox{\hyperlink{namespacedmatrix_abddca8f24d6dda3919e60a77a99e4c12}{dmatrix\+::kcfg2}}
+\item 
+integer \mbox{\hyperlink{namespacedmatrix_a22210097323b878940090b95108b9e17}{dmatrix\+::kdm1}}
+\item 
+integer \mbox{\hyperlink{namespacedmatrix_aa77b85103445270dcb7b30a1052f18ad}{dmatrix\+::kdm2}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacedmatrix_ad6838190319003f0aebaec26146e2f4b}{dmatrix\+::dl}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacedmatrix_a0b0d17e2fd84b8c9741f84d25a15352d}{dmatrix\+::dv}}
+\end{DoxyCompactItemize}

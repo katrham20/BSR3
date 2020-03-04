@@ -1,19 +1,20 @@
 !======================================================================
       Subroutine O_data
 !======================================================================
-!     processing of total overlaps
+!> @ingroup bsr_mat
+!> @brief     processing of total overlaps
 !----------------------------------------------------------------------
-!     possible structures:
-!
-!     c,  (ic,jc)                        -  bound-bound
-!     c < i | . >, ic                    -  bound-channel
-!     c < i | . > < j | . >              -  channel-channel
-!
-!     where .  denotes bound orbital, i,j - channels.
-!
-!     < i | j > elements are ignored becaUse we assume that target
-!     states are orthogonal. These elements are Used to check this 
-!     orthogonality (see array 'to' in bsr_matrix).
+!>     possible structures:
+!!
+!!     c,  (ic,jc)                        -  bound-bound
+!!     c < i | . >, ic                    -  bound-channel
+!!     c < i | . > < j | . >              -  channel-channel
+!!
+!!     where .  denotes bound orbital, i,j - channels.
+!!
+!!     < i | j > elements are ignored becaUse we assume that target
+!!     states are orthogonal. These elements are Used to check this 
+!!     orthogonality (see array 'to' in bsr_matrix).
 !
 !----------------------------------------------------------------------
       Use bsr_mat

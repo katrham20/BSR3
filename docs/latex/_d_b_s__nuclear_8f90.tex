@@ -1,0 +1,98 @@
+\hypertarget{_d_b_s__nuclear_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+D\+B\+S/\+D\+B\+S\+\_\+nuclear.f90 File Reference}
+\label{_d_b_s__nuclear_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/DBS/DBS\_nuclear.f90@{/Users/khamilton/Codes/BSR3/libraries/DBS/DBS\_nuclear.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacedbs__nuclear}{dbs\+\_\+nuclear}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__nuclear_8f90_a0118862942c7ec51c5f7050944809be4}{read\+\_\+nuclear}} (nu, z, atw)
+\item 
+real(8) function \mbox{\hyperlink{_d_b_s__nuclear_8f90_ae8d132c0fa74869262282202edc3619e}{z\+\_\+nuclear}} (r)
+\item 
+real(8) function \mbox{\hyperlink{_d_b_s__nuclear_8f90_a57c7dd7f93ee951d8750cd5cf4032f7f}{v\+\_\+nuclear}} (r)
+\item 
+real(8) function \mbox{\hyperlink{_d_b_s__nuclear_8f90_ab59a43c7059b7edf5eec05bb6edce17a}{skfun}} (k, x)
+\item 
+real(8) function \mbox{\hyperlink{_d_b_s__nuclear_8f90_ae0b89a0990f0b56c9ecd7b12d0fc8658}{estrms}} (A\+P\+A\+RM, C\+P\+A\+RM)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__nuclear_8f90_a13fff56f97149456c3c0f3a448da832c}{getcpr}} (R\+R\+MS, A\+P\+A\+RM, C\+P\+A\+RM)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__nuclear_a784f742fb8e3ab00947e46256dc64fac}{dbs\+\_\+nuclear\+::atomic\+\_\+number}} = zero
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__nuclear_a6b8d9304b7e23663a49d6ac72abf552e}{dbs\+\_\+nuclear\+::atomic\+\_\+weight}} = zero
+\item 
+character(20) \mbox{\hyperlink{namespacedbs__nuclear_a6d986d5abed12c240dd5b73cdbdcc0dd}{dbs\+\_\+nuclear\+::nuclear}} = \textquotesingle{}Fermi\textquotesingle{}
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__nuclear_a756d6fe84c2e943debfca475fdab581b}{dbs\+\_\+nuclear\+::r\+\_\+uniform}} = zero
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__nuclear_ad1b4b686dfa69da9bb89e94299f26b33}{dbs\+\_\+nuclear\+::ro\+\_\+uniform}} = zero
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__nuclear_a9b441edf580675dfbda45c52456e7479}{dbs\+\_\+nuclear\+::a\+\_\+fermi}} = zero
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__nuclear_a81ec7cd4a4db2ca97b670cd93be49208}{dbs\+\_\+nuclear\+::c\+\_\+fermi}} = zero
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__nuclear_a51a8632a0ecbd2bb7a09be2a344d8a35}{dbs\+\_\+nuclear\+::t\+\_\+fermi}} = 2.\+30
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__nuclear_a1ac833c86041c44f5971037276b453b2}{dbs\+\_\+nuclear\+::rrms}} = zero
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__nuclear_a9c64a877762624dbdf2dcd65fe027732}{dbs\+\_\+nuclear\+::ro\+\_\+fermi}} = zero
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__nuclear_a9900bee8325970c62bc026c03ace2810}{dbs\+\_\+nuclear\+::vr\+\_\+nucl}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__nuclear_a415d204fe6935cf656d754e1cd31f2e5}{dbs\+\_\+nuclear\+::vb\+\_\+nucl}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__nuclear_a2b1403c26fcf8ac9847f6f913f276559}{dbs\+\_\+nuclear\+::vf\+\_\+nucl}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__nuclear_aabca48f302459da3a8c6f112b7b54498}{dbs\+\_\+nuclear\+::zr\+\_\+nucl}}
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__nuclear_aee584044a506e093c1f0865fe96d1023}{dbs\+\_\+nuclear\+::i\+\_\+nuclear}} = zero
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__nuclear_a94f38fa190895f7f150c24cf45319e3f}{dbs\+\_\+nuclear\+::d\+\_\+nuclear}} = zero
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__nuclear_aeef5cca2bfffc3668d153a3a0796bceb}{dbs\+\_\+nuclear\+::q\+\_\+nuclear}} = zero
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{_d_b_s__nuclear_8f90_ae0b89a0990f0b56c9ecd7b12d0fc8658}\label{_d_b_s__nuclear_8f90_ae0b89a0990f0b56c9ecd7b12d0fc8658}} 
+\index{DBS\_nuclear.f90@{DBS\_nuclear.f90}!estrms@{estrms}}
+\index{estrms@{estrms}!DBS\_nuclear.f90@{DBS\_nuclear.f90}}
+\doxysubsubsection{\texorpdfstring{estrms()}{estrms()}}
+{\footnotesize\ttfamily real(8) function estrms (\begin{DoxyParamCaption}\item[{real(8), intent(in)}]{A\+P\+A\+RM,  }\item[{real(8), intent(in)}]{C\+P\+A\+RM }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__nuclear_8f90_a13fff56f97149456c3c0f3a448da832c}\label{_d_b_s__nuclear_8f90_a13fff56f97149456c3c0f3a448da832c}} 
+\index{DBS\_nuclear.f90@{DBS\_nuclear.f90}!getcpr@{getcpr}}
+\index{getcpr@{getcpr}!DBS\_nuclear.f90@{DBS\_nuclear.f90}}
+\doxysubsubsection{\texorpdfstring{getcpr()}{getcpr()}}
+{\footnotesize\ttfamily subroutine getcpr (\begin{DoxyParamCaption}\item[{real(8), intent(in)}]{R\+R\+MS,  }\item[{real(8), intent(in)}]{A\+P\+A\+RM,  }\item[{real(8), intent(out)}]{C\+P\+A\+RM }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__nuclear_8f90_a0118862942c7ec51c5f7050944809be4}\label{_d_b_s__nuclear_8f90_a0118862942c7ec51c5f7050944809be4}} 
+\index{DBS\_nuclear.f90@{DBS\_nuclear.f90}!read\_nuclear@{read\_nuclear}}
+\index{read\_nuclear@{read\_nuclear}!DBS\_nuclear.f90@{DBS\_nuclear.f90}}
+\doxysubsubsection{\texorpdfstring{read\_nuclear()}{read\_nuclear()}}
+{\footnotesize\ttfamily subroutine read\+\_\+nuclear (\begin{DoxyParamCaption}\item[{integer}]{nu,  }\item[{real(8)}]{z,  }\item[{real(8)}]{atw }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__nuclear_8f90_ab59a43c7059b7edf5eec05bb6edce17a}\label{_d_b_s__nuclear_8f90_ab59a43c7059b7edf5eec05bb6edce17a}} 
+\index{DBS\_nuclear.f90@{DBS\_nuclear.f90}!skfun@{skfun}}
+\index{skfun@{skfun}!DBS\_nuclear.f90@{DBS\_nuclear.f90}}
+\doxysubsubsection{\texorpdfstring{skfun()}{skfun()}}
+{\footnotesize\ttfamily real(8) function skfun (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{k,  }\item[{real(8), intent(in)}]{x }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__nuclear_8f90_a57c7dd7f93ee951d8750cd5cf4032f7f}\label{_d_b_s__nuclear_8f90_a57c7dd7f93ee951d8750cd5cf4032f7f}} 
+\index{DBS\_nuclear.f90@{DBS\_nuclear.f90}!v\_nuclear@{v\_nuclear}}
+\index{v\_nuclear@{v\_nuclear}!DBS\_nuclear.f90@{DBS\_nuclear.f90}}
+\doxysubsubsection{\texorpdfstring{v\_nuclear()}{v\_nuclear()}}
+{\footnotesize\ttfamily real(8) function v\+\_\+nuclear (\begin{DoxyParamCaption}\item[{real(8), intent(in)}]{r }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__nuclear_8f90_ae8d132c0fa74869262282202edc3619e}\label{_d_b_s__nuclear_8f90_ae8d132c0fa74869262282202edc3619e}} 
+\index{DBS\_nuclear.f90@{DBS\_nuclear.f90}!z\_nuclear@{z\_nuclear}}
+\index{z\_nuclear@{z\_nuclear}!DBS\_nuclear.f90@{DBS\_nuclear.f90}}
+\doxysubsubsection{\texorpdfstring{z\_nuclear()}{z\_nuclear()}}
+{\footnotesize\ttfamily real(8) function z\+\_\+nuclear (\begin{DoxyParamCaption}\item[{real(8), intent(in)}]{r }\end{DoxyParamCaption})}
+

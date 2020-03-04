@@ -1,11 +1,12 @@
 !=================================================================
       MODULE new_defs
 !=================================================================
-!     contains the desription of overlap deferminats which are
-!     obtaned by expansion of total overlap deferminants on rows
-!     and columns containing the continuum orbitals.
-!     The deferminants with known bound orbitals are estimated
-!     in line, so, only there values are recoded 
+!> @ingroup bsr_mat
+!!     contains the desription of overlap deferminats which are
+!!     obtaned by expansion of total overlap deferminants on rows
+!!     and columns containing the continuum orbitals.
+!!     The deferminants with known bound orbitals are estimated
+!!     in line, so, only there values are recoded 
 !-----------------------------------------------------------------
       Implicit none
   
@@ -28,7 +29,8 @@
 !================================================================
       Subroutine Allocate_ndefs(m)
 !================================================================
-!     allocate arrays in module ndefs
+!> @ingroup bsr_mat
+!> @brief     allocate arrays in module ndefs
 !----------------------------------------------------------------
       Use new_defs
 
@@ -68,7 +70,8 @@
 !================================================================
       Subroutine Iadd_ndefs(io,jo,S)
 !================================================================
-!     add new overlap factor if S > Eps_det
+!> @ingroup bsr_mat
+!> @brief     add new overlap factor if S > Eps_det
 !----------------------------------------------------------------
       Use bsr_mat, only: Eps_det
       Use new_defs

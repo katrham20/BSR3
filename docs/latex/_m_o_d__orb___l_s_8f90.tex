@@ -1,0 +1,76 @@
+\hypertarget{_m_o_d__orb___l_s_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+Z\+C\+O\+N\+F\+L\+S/\+M\+O\+D\+\_\+orb\+\_\+\+LS.f90 File Reference}
+\label{_m_o_d__orb___l_s_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/ZCONFLS/MOD\_orb\_LS.f90@{/Users/khamilton/Codes/BSR3/libraries/ZCONFLS/MOD\_orb\_LS.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespaceorb__ls}{orb\+\_\+ls}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__orb___l_s_8f90_a41aee6ad7d3ceee8782f91146d1bc425}{alloc\+\_\+orb\+\_\+ls}} (m)
+\item 
+integer function \mbox{\hyperlink{_m_o_d__orb___l_s_8f90_a0ba2940e2d841beeec91174f54f342f8}{ifind\+\_\+nlk}} (n, l, k, job)
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__orb___l_s_8f90_a9fa6f78214a3ddb09f3953a1f9e5acf1}{get\+\_\+nlki}} (j, n, l, k, i)
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__orb___l_s_8f90_a5c9b4dc9625f3ddb2439c31bf327a252}{read\+\_\+bsw\+\_\+orb\+\_\+ls}} (nu)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{namespaceorb__ls_aa97ddf6e9a887759071313ae8dd8eeb4}{orb\+\_\+ls\+::mwf}} = 0
+\item 
+integer \mbox{\hyperlink{namespaceorb__ls_a6906d4747a517b13c4e70a71c5907a19}{orb\+\_\+ls\+::nwf}} = 0
+\item 
+integer \mbox{\hyperlink{namespaceorb__ls_a95192ef9f67f260baca845ab57c7bf5e}{orb\+\_\+ls\+::iwf}} = 512
+\item 
+integer \mbox{\hyperlink{namespaceorb__ls_a8d13dd3becc045b05785ce20855cd1ae}{orb\+\_\+ls\+::nwf1}}
+\item 
+integer \mbox{\hyperlink{namespaceorb__ls_a27135e3935c89ab9d187fa3f594d3cc2}{orb\+\_\+ls\+::nwf2}}
+\item 
+integer \mbox{\hyperlink{namespaceorb__ls_a1c0de0d6fbd3280dcb9fafb8590c5b12}{orb\+\_\+ls\+::kset1}}
+\item 
+integer \mbox{\hyperlink{namespaceorb__ls_a990b6f97d3abba58cc1890201e87992a}{orb\+\_\+ls\+::kset2}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceorb__ls_a42088c04126b61e8177947a9018f9a0c}{orb\+\_\+ls\+::nef}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceorb__ls_a02ca05977f62a0a1e95a8443ac1b5457}{orb\+\_\+ls\+::lef}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceorb__ls_ad53f58585fe590b54696b4bf59ad8cdb}{orb\+\_\+ls\+::kef}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceorb__ls_a7a79efa8dfddd7901d7d6002c4214277}{orb\+\_\+ls\+::ief}}
+\item 
+character(4), dimension(\+:), allocatable \mbox{\hyperlink{namespaceorb__ls_ad143780239dd40c9298686c6c0956b6e}{orb\+\_\+ls\+::elf}}
+\item 
+integer \mbox{\hyperlink{namespaceorb__ls_ae367837e8eb09262c9d3edd86de4b1c0}{orb\+\_\+ls\+::jort}} = 1
+\item 
+integer, dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespaceorb__ls_a484cd3674f196bc754aa653339247295}{orb\+\_\+ls\+::iort}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{_m_o_d__orb___l_s_8f90_a41aee6ad7d3ceee8782f91146d1bc425}\label{_m_o_d__orb___l_s_8f90_a41aee6ad7d3ceee8782f91146d1bc425}} 
+\index{MOD\_orb\_LS.f90@{MOD\_orb\_LS.f90}!alloc\_orb\_ls@{alloc\_orb\_ls}}
+\index{alloc\_orb\_ls@{alloc\_orb\_ls}!MOD\_orb\_LS.f90@{MOD\_orb\_LS.f90}}
+\doxysubsubsection{\texorpdfstring{alloc\_orb\_ls()}{alloc\_orb\_ls()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+orb\+\_\+ls (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_m_o_d__orb___l_s_8f90_a9fa6f78214a3ddb09f3953a1f9e5acf1}\label{_m_o_d__orb___l_s_8f90_a9fa6f78214a3ddb09f3953a1f9e5acf1}} 
+\index{MOD\_orb\_LS.f90@{MOD\_orb\_LS.f90}!get\_nlki@{get\_nlki}}
+\index{get\_nlki@{get\_nlki}!MOD\_orb\_LS.f90@{MOD\_orb\_LS.f90}}
+\doxysubsubsection{\texorpdfstring{get\_nlki()}{get\_nlki()}}
+{\footnotesize\ttfamily subroutine get\+\_\+nlki (\begin{DoxyParamCaption}\item[{integer}]{j,  }\item[{integer}]{n,  }\item[{integer}]{l,  }\item[{integer}]{k,  }\item[{integer}]{i }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_m_o_d__orb___l_s_8f90_a0ba2940e2d841beeec91174f54f342f8}\label{_m_o_d__orb___l_s_8f90_a0ba2940e2d841beeec91174f54f342f8}} 
+\index{MOD\_orb\_LS.f90@{MOD\_orb\_LS.f90}!ifind\_nlk@{ifind\_nlk}}
+\index{ifind\_nlk@{ifind\_nlk}!MOD\_orb\_LS.f90@{MOD\_orb\_LS.f90}}
+\doxysubsubsection{\texorpdfstring{ifind\_nlk()}{ifind\_nlk()}}
+{\footnotesize\ttfamily integer function ifind\+\_\+nlk (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{n,  }\item[{integer, intent(in)}]{l,  }\item[{integer, intent(in)}]{k,  }\item[{integer, intent(in)}]{job }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_m_o_d__orb___l_s_8f90_a5c9b4dc9625f3ddb2439c31bf327a252}\label{_m_o_d__orb___l_s_8f90_a5c9b4dc9625f3ddb2439c31bf327a252}} 
+\index{MOD\_orb\_LS.f90@{MOD\_orb\_LS.f90}!read\_bsw\_orb\_ls@{read\_bsw\_orb\_ls}}
+\index{read\_bsw\_orb\_ls@{read\_bsw\_orb\_ls}!MOD\_orb\_LS.f90@{MOD\_orb\_LS.f90}}
+\doxysubsubsection{\texorpdfstring{read\_bsw\_orb\_ls()}{read\_bsw\_orb\_ls()}}
+{\footnotesize\ttfamily subroutine read\+\_\+bsw\+\_\+orb\+\_\+ls (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu }\end{DoxyParamCaption})}
+

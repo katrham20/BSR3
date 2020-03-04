@@ -1,7 +1,8 @@
 !=======================================================================
       Subroutine b_out 
 !=======================================================================
-!     output the bound solutions
+!> @ingroup bsr_hd
+!> @brief     output the bound solutions
 !-----------------------------------------------------------------------
       Use bsr_hd
       Use target, only: nelc,nz,Etarg,coupling

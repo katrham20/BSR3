@@ -1,25 +1,26 @@
 !=====================================================================
       Subroutine BS_ORTH
 !=====================================================================
-!     Including the orthogonal conditions for scattering orbitals
-!     by updating the interaction matrix according the procedure
-!     suggested by M.Bentley J.Phys.B27 (1994) 637. 
-!
-!     Let i-th channel is supposed to be orthogonal to orbital p.
-!     It can be achieved by following modification of Hamiltonian:
-!
-!                H -->  (1 - Bcc') H (1 - cc'B) 
-!
-!     where c - full solution vector with all zero elements except
-!     the channel i is replaced on B-spline expansion of orbital p
-!     primes denote the transportasion. 
-!
-!     It leads to transformation of separate blocks  H(i,j):
-!
-!     H(i,j) with j <> i -->  (1 - Bpp') H(i,j)    
-!     H(j,i) with j <> i -->   H(i,j) (1 - pp'B)   
-!     H(i,i) with j  = i -->  (1 - Bpp') H(i,j) (1 - pp'B)    
-!     j also includes the block for interaction with perturbers
+!> @ingroup bsr_mat
+!!     Including the orthogonal conditions for scattering orbitals
+!!     by updating the interaction matrix according the procedure
+!!     suggested by M.Bentley J.Phys.B27 (1994) 637. 
+!!
+!!     Let i-th channel is supposed to be orthogonal to orbital p.
+!!     It can be achieved by following modification of Hamiltonian:
+!!
+!!                H -->  (1 - Bcc') H (1 - cc'B) 
+!!
+!!     where c - full solution vector with all zero elements except
+!!     the channel i is replaced on B-spline expansion of orbital p
+!!     primes denote the transportasion. 
+!!
+!!     It leads to transformation of separate blocks  H(i,j):
+!!
+!!     H(i,j) with j <> i -->  (1 - Bpp') H(i,j)    
+!!     H(j,i) with j <> i -->   H(i,j) (1 - pp'B)   
+!!     H(i,i) with j  = i -->  (1 - Bpp') H(i,j) (1 - pp'B)    
+!!     j also includes the block for interaction with perturbers
 !---------------------------------------------------------------------
       Use bsr_mat, only: pri
       Use bsr_matrix

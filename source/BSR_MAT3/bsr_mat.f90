@@ -7,26 +7,28 @@
 !     email:        oleg_zoi@yahoo.com
 !
 !======================================================================
-!     Generate the interaction matrixes in B-spline representation
+!> @defgroup bsr_mat
+!> @ingroup bsr_mat
+!> @brief     Generate the interaction matrixes in B-spline representation
 !======================================================================
-!
-!   INPUT FILES: 
-!
-!     target         -  description of target states and channels
-!     target.bsw     -  target w.f.'s in B-spline basis
-!     target_orb     -  list of target physical orbitals
-!     knot.dat       -  B-spline grid
-!     bsr_par        -  input parameters
-!     cfg.nnn        -  configuration list for partial wave nnn
-!     bnk_int.nnn    -  angular-coefficients data bank
-!     pert_nnn.bsw   -  perturber orbitals if any
-!
-!   OUTPUT FILES:
-!
-!     bsr_mat.log   -  general running information
-!     mat_log.nnn   -  running information for partial wave nnn
-!     bsr_mat.nnn   -  resulting overlap and interaction matrixes
-!
+!>
+!!   INPUT FILES: 
+!!
+!!     target         -  description of target states and channels
+!!     target.bsw     -  target w.f.'s in B-spline basis
+!!     target_orb     -  list of target physical orbitals
+!!     knot.dat       -  B-spline grid
+!!     bsr_par        -  input parameters
+!!     cfg.nnn        -  configuration list for partial wave nnn
+!!     bnk_int.nnn    -  angular-coefficients data bank
+!!     pert_nnn.bsw   -  perturber orbitals if any
+!!
+!!   OUTPUT FILES:
+!!
+!!     bsr_mat.log   -  general running information
+!!     mat_log.nnn   -  running information for partial wave nnn
+!!     bsr_mat.nnn   -  resulting overlap and interaction matrixes
+!!
 !=====================================================================
       Use bsr_mat; Use target;  Use conf_LS
       Use spline_atomic; Use spline_orbitals

@@ -4,28 +4,29 @@
 !======================================================================
 !      INTERFACE TO CREES ASSYMPTOTIC PROGRAM
 !----------------------------------------------------------------------
-!      INPUT: 
-!
-!      IBUG    = DEBUG PRINT
-!      AC      = ACCURACY
-!      ION     = RESIDUAL CHARGE ON TARGET (Z-NELC)
-!      km      = MAX.ORDER OF LONG RANGE POTENTIAL CF
-!      R       = BOUNDARY RADIUS
-!      DRI     = FOX-GOODWIN STEP
-!      NCH     = TOTAL NUMBER OF CHANNELS
-!      NOPEN   = NUMBER OF OPEN CHANNELS
-!      CF      = LONG RANGE POTENTIAL COEFFICIENTS, UPPER TRIANGLE FORM
-!      LCH     = CHANNEL ANGULAR MOMENTA
-!      ECH     = CHANNEL ENERGY (RYDBERS)
-!      iauto   = mode for automatic choose og MFG
-!      mfgi    = suggested number of points in outer region (MFG)
-!
-!      OUTPUT:
-!
-!      F,G     = sin/cos solutions ON BOUNDARY
-!      FP,GP   = their derivatives
-!
-!      info    = if not equal 0 - skip the energy!
+!> @ingroup bsr_phot
+!!      INPUT: 
+!!
+!!      IBUG    = DEBUG PRINT
+!!      AC      = ACCURACY
+!!      ION     = RESIDUAL CHARGE ON TARGET (Z-NELC)
+!!      km      = MAX.ORDER OF LONG RANGE POTENTIAL CF
+!!      R       = BOUNDARY RADIUS
+!!      DRI     = FOX-GOODWIN STEP
+!!      NCH     = TOTAL NUMBER OF CHANNELS
+!!      NOPEN   = NUMBER OF OPEN CHANNELS
+!!      CF      = LONG RANGE POTENTIAL COEFFICIENTS, UPPER TRIANGLE FORM
+!!      LCH     = CHANNEL ANGULAR MOMENTA
+!!      ECH     = CHANNEL ENERGY (RYDBERS)
+!!      iauto   = mode for automatic choose og MFG
+!!      mfgi    = suggested number of points in outer region (MFG)
+!!
+!!      OUTPUT:
+!!
+!!      F,G     = sin/cos solutions ON BOUNDARY
+!!      FP,GP   = their derivatives
+!!
+!!      info    = if not equal 0 - skip the energy!
 !-----------------------------------------------------------------------
       IMPLICIT REAL(8) (A-H,O-Z)
  

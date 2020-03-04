@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine Read_data
 !======================================================================
-!     read data for given partial wave klsp
+!> @ingroup bsr_pol
+!> @brief     read data for given partial wave klsp
 !----------------------------------------------------------------------
       Use bsr_pol
       Use channel

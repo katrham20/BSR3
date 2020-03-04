@@ -1,9 +1,10 @@
 !======================================================================
       Subroutine Read_conf(nuc,nub)
 !======================================================================
-!     Read the configuration list from c-file (unit 'nuc'),
-!     define the corresponding angular and configurational symmetries
-!     and compare with information from 'int_bnk' (unit 'nub')
+!> @ingroup bsr_mat
+!!     Read the configuration list from c-file (unit 'nuc'),
+!!     define the corresponding angular and configurational symmetries
+!!     and compare with information from 'int_bnk' (unit 'nub')
 !----------------------------------------------------------------------
       Use symc_list_LS
       Use symt_list_LS

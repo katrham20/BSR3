@@ -1,0 +1,99 @@
+\hypertarget{bsr__prep_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/source/\+B\+S\+R\+\_\+\+P\+R\+E\+P3/bsr\+\_\+prep.f90 File Reference}
+\label{bsr__prep_8f90}\index{/Users/khamilton/Codes/BSR3/source/BSR\_PREP3/bsr\_prep.f90@{/Users/khamilton/Codes/BSR3/source/BSR\_PREP3/bsr\_prep.f90}}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+program \mbox{\hyperlink{bsr__prep_8f90_a8a4a8ec3aab486a88f3c52b61115aaff}{\+\_\+\+\_\+bsr\+\_\+prep.\+f90\+\_\+\+\_\+}}
+\item 
+subroutine \mbox{\hyperlink{bsr__prep_8f90_a8a4f4a6b0b1d4e6c57c107f72e811927}{sub\+\_\+check\+\_\+orb}}
+\item 
+subroutine \mbox{\hyperlink{bsr__prep_8f90_a56ca7e6ac62cbf1723cfbac9c9fe9133}{sub\+\_\+phys\+\_\+orb}}
+\item 
+subroutine \mbox{\hyperlink{bsr__prep_8f90_ab7c815498bdfa992170717de107f0f70}{sub\+\_\+phys\+\_\+pert}}
+\item 
+subroutine \mbox{\hyperlink{bsr__prep_8f90_a8cb10902fb34b470a44cdd2eb1f24dc8}{add\+\_\+sub\+\_\+orbital}} (ii, jj)
+\item 
+subroutine \mbox{\hyperlink{bsr__prep_8f90_ae07d0e459585703b483496f7f63d44ec}{assign\+\_\+index}} (m)
+\item 
+subroutine \mbox{\hyperlink{bsr__prep_8f90_a4eb6eb5a8be21c6fd9a2e8bcd6cad881}{check\+\_\+bsw\+\_\+file}} (A\+FW, pri)
+\begin{DoxyCompactList}\small\item\em check if we have bsw-\/file, otherwis try to call w\+\_\+bsw \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{bsr__prep_8f90_a27a3b6f1fb11478aadd05511496a34e5}{check\+\_\+bsr\+\_\+name}} (AF)
+\begin{DoxyCompactList}\small\item\em rename old-\/version file-\/name as name.\+c just to name \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{bsr__prep_8f90_af808796775339c6872dfd1e7a06e6b9f}{bsr\+\_\+prep\+\_\+inf}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{bsr__prep_8f90_a8a4a8ec3aab486a88f3c52b61115aaff}\label{bsr__prep_8f90_a8a4a8ec3aab486a88f3c52b61115aaff}} 
+\index{bsr\_prep.f90@{bsr\_prep.f90}!\_\_bsr\_prep.f90\_\_@{\_\_bsr\_prep.f90\_\_}}
+\index{\_\_bsr\_prep.f90\_\_@{\_\_bsr\_prep.f90\_\_}!bsr\_prep.f90@{bsr\_prep.f90}}
+\doxysubsubsection{\texorpdfstring{\_\_bsr\_prep.f90\_\_()}{\_\_bsr\_prep.f90\_\_()}}
+{\footnotesize\ttfamily program \+\_\+\+\_\+bsr\+\_\+prep.\+f90\+\_\+\+\_\+}
+
+\mbox{\Hypertarget{bsr__prep_8f90_a8cb10902fb34b470a44cdd2eb1f24dc8}\label{bsr__prep_8f90_a8cb10902fb34b470a44cdd2eb1f24dc8}} 
+\index{bsr\_prep.f90@{bsr\_prep.f90}!add\_sub\_orbital@{add\_sub\_orbital}}
+\index{add\_sub\_orbital@{add\_sub\_orbital}!bsr\_prep.f90@{bsr\_prep.f90}}
+\doxysubsubsection{\texorpdfstring{add\_sub\_orbital()}{add\_sub\_orbital()}}
+{\footnotesize\ttfamily subroutine \+\_\+\+\_\+bsr\+\_\+prep.\+f90\+\_\+\+\_\+\+::add\+\_\+sub\+\_\+orbital (\begin{DoxyParamCaption}\item[{}]{ii,  }\item[{}]{jj }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{bsr__prep_8f90_ae07d0e459585703b483496f7f63d44ec}\label{bsr__prep_8f90_ae07d0e459585703b483496f7f63d44ec}} 
+\index{bsr\_prep.f90@{bsr\_prep.f90}!assign\_index@{assign\_index}}
+\index{assign\_index@{assign\_index}!bsr\_prep.f90@{bsr\_prep.f90}}
+\doxysubsubsection{\texorpdfstring{assign\_index()}{assign\_index()}}
+{\footnotesize\ttfamily subroutine \+\_\+\+\_\+bsr\+\_\+prep.\+f90\+\_\+\+\_\+\+::assign\+\_\+index (\begin{DoxyParamCaption}\item[{}]{m }\end{DoxyParamCaption})}
+
+assign set index for orbital m\mbox{\Hypertarget{bsr__prep_8f90_af808796775339c6872dfd1e7a06e6b9f}\label{bsr__prep_8f90_af808796775339c6872dfd1e7a06e6b9f}} 
+\index{bsr\_prep.f90@{bsr\_prep.f90}!bsr\_prep\_inf@{bsr\_prep\_inf}}
+\index{bsr\_prep\_inf@{bsr\_prep\_inf}!bsr\_prep.f90@{bsr\_prep.f90}}
+\doxysubsubsection{\texorpdfstring{bsr\_prep\_inf()}{bsr\_prep\_inf()}}
+{\footnotesize\ttfamily subroutine bsr\+\_\+prep\+\_\+inf}
+
+print information for bsr\+\_\+prep program\mbox{\Hypertarget{bsr__prep_8f90_a27a3b6f1fb11478aadd05511496a34e5}\label{bsr__prep_8f90_a27a3b6f1fb11478aadd05511496a34e5}} 
+\index{bsr\_prep.f90@{bsr\_prep.f90}!check\_bsr\_name@{check\_bsr\_name}}
+\index{check\_bsr\_name@{check\_bsr\_name}!bsr\_prep.f90@{bsr\_prep.f90}}
+\doxysubsubsection{\texorpdfstring{check\_bsr\_name()}{check\_bsr\_name()}}
+{\footnotesize\ttfamily subroutine check\+\_\+bsr\+\_\+name (\begin{DoxyParamCaption}\item[{character($\ast$)}]{AF }\end{DoxyParamCaption})}
+
+
+
+rename old-\/version file-\/name as name.\+c just to name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em af} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{bsr__prep_8f90_a4eb6eb5a8be21c6fd9a2e8bcd6cad881}\label{bsr__prep_8f90_a4eb6eb5a8be21c6fd9a2e8bcd6cad881}} 
+\index{bsr\_prep.f90@{bsr\_prep.f90}!check\_bsw\_file@{check\_bsw\_file}}
+\index{check\_bsw\_file@{check\_bsw\_file}!bsr\_prep.f90@{bsr\_prep.f90}}
+\doxysubsubsection{\texorpdfstring{check\_bsw\_file()}{check\_bsw\_file()}}
+{\footnotesize\ttfamily subroutine check\+\_\+bsw\+\_\+file (\begin{DoxyParamCaption}\item[{character($\ast$)}]{A\+FW,  }\item[{integer}]{pri }\end{DoxyParamCaption})}
+
+
+
+check if we have bsw-\/file, otherwis try to call w\+\_\+bsw 
+
+
+\begin{DoxyParams}{Parameters}
+{\em afw} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{bsr__prep_8f90_a8a4f4a6b0b1d4e6c57c107f72e811927}\label{bsr__prep_8f90_a8a4f4a6b0b1d4e6c57c107f72e811927}} 
+\index{bsr\_prep.f90@{bsr\_prep.f90}!sub\_check\_orb@{sub\_check\_orb}}
+\index{sub\_check\_orb@{sub\_check\_orb}!bsr\_prep.f90@{bsr\_prep.f90}}
+\doxysubsubsection{\texorpdfstring{sub\_check\_orb()}{sub\_check\_orb()}}
+{\footnotesize\ttfamily subroutine \+\_\+\+\_\+bsr\+\_\+prep.\+f90\+\_\+\+\_\+\+::sub\+\_\+check\+\_\+orb}
+
+this routine analizes one set of orbitals in file A\+FW\mbox{\Hypertarget{bsr__prep_8f90_a56ca7e6ac62cbf1723cfbac9c9fe9133}\label{bsr__prep_8f90_a56ca7e6ac62cbf1723cfbac9c9fe9133}} 
+\index{bsr\_prep.f90@{bsr\_prep.f90}!sub\_phys\_orb@{sub\_phys\_orb}}
+\index{sub\_phys\_orb@{sub\_phys\_orb}!bsr\_prep.f90@{bsr\_prep.f90}}
+\doxysubsubsection{\texorpdfstring{sub\_phys\_orb()}{sub\_phys\_orb()}}
+{\footnotesize\ttfamily subroutine \+\_\+\+\_\+bsr\+\_\+prep.\+f90\+\_\+\+\_\+\+::sub\+\_\+phys\+\_\+orb}
+
+define physical orbitals for given target state\mbox{\Hypertarget{bsr__prep_8f90_ab7c815498bdfa992170717de107f0f70}\label{bsr__prep_8f90_ab7c815498bdfa992170717de107f0f70}} 
+\index{bsr\_prep.f90@{bsr\_prep.f90}!sub\_phys\_pert@{sub\_phys\_pert}}
+\index{sub\_phys\_pert@{sub\_phys\_pert}!bsr\_prep.f90@{bsr\_prep.f90}}
+\doxysubsubsection{\texorpdfstring{sub\_phys\_pert()}{sub\_phys\_pert()}}
+{\footnotesize\ttfamily subroutine \+\_\+\+\_\+bsr\+\_\+prep.\+f90\+\_\+\+\_\+\+::sub\+\_\+phys\+\_\+pert}
+
+define physical orbitals in perturber

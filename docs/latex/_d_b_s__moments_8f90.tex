@@ -1,0 +1,130 @@
+\hypertarget{_d_b_s__moments_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+D\+B\+S/\+D\+B\+S\+\_\+moments.f90 File Reference}
+\label{_d_b_s__moments_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/DBS/DBS\_moments.f90@{/Users/khamilton/Codes/BSR3/libraries/DBS/DBS\_moments.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacedbs__moments}{dbs\+\_\+moments}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__moments_8f90_ab27fa1d0be59cc419dc8d04736a833cb}{alloc\+\_\+dbs\+\_\+moments}}
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__moments_8f90_a683345f9e0fe44cfaa7c5890ca69e808}{dealloc\+\_\+dbs\+\_\+moments}}
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__moments_8f90_a12546e553745fffd51ac7544bfb44fb5}{moments}} (k, rkm, sym, dir)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__moments_8f90_a7d6e8105c0077bf4275978b15911b61b}{moment}} (iv, k, rv, sym, dir)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__moments_8f90_ad833c2b4c8dce06e0621143549fda221}{moments\+\_\+pp}} (k, kk, nv, rkm)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__moments_8f90_ac74f3cbc2dada42e36e96635934ac140}{moment\+\_\+pp}} (iv, k, rv)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__moments_8f90_a155c25184a1a61f333b4182ed031d7de}{moments\+\_\+qq}} (k, kk, nv, rkm)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__moments_8f90_a4cf897cee51be975ca77f34d867e1e93}{moment\+\_\+qq}} (iv, k, rv)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__moments_8f90_a7fadd6d343d5b84037667f237688e5a8}{moments\+\_\+pq}} (k, kk, nv, rkm)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__moments_8f90_a42b042fe37283bf8016ec8839511b281}{moment\+\_\+pq}} (iv, k, rv)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__moments_8f90_a52c0db5f3985258ef1763a349301e883}{moments\+\_\+qp}} (k, kk, nv, rkm)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__moments_8f90_a1cf36a40318e3ebecfe84ee2dfe11c14}{moment\+\_\+qp}} (iv, k, rv)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{namespacedbs__moments_a770336d44d09a4a186f9f825d8511674}{dbs\+\_\+moments\+::kmk}} = -\/100
+\item 
+integer \mbox{\hyperlink{namespacedbs__moments_a4a721bf99e75cfd3d1a4c68f34db46c8}{dbs\+\_\+moments\+::kk}} = 0
+\item 
+character(3) \mbox{\hyperlink{namespacedbs__moments_a2322fae7e9fdba1785ebbadeec071467}{dbs\+\_\+moments\+::mtype}} = \textquotesingle{}aaa\textquotesingle{}
+\item 
+real(8), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__moments_a7af0ef4fe6ef7d51a3c46ac8b30e9630}{dbs\+\_\+moments\+::rkd}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__moments_aa007ade6e4d0586c3680acb47b2774d8}{dbs\+\_\+moments\+::rkd1}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__moments_a7de0184aab31c28a079004e7c75284e1}{dbs\+\_\+moments\+::rkd2}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__moments_a1142c6010be6b8958db82265e6f94a40}{dbs\+\_\+moments\+::rkd3}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__moments_a6cd29fa4a2bca5fd123735e11e7cdfd6}{dbs\+\_\+moments\+::rkd4}}
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__moments_abda993386eedb8aa0bfbd1a59afcdeb5}{dbs\+\_\+moments\+::memory\+\_\+dbs\+\_\+moments}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{_d_b_s__moments_8f90_ab27fa1d0be59cc419dc8d04736a833cb}\label{_d_b_s__moments_8f90_ab27fa1d0be59cc419dc8d04736a833cb}} 
+\index{DBS\_moments.f90@{DBS\_moments.f90}!alloc\_dbs\_moments@{alloc\_dbs\_moments}}
+\index{alloc\_dbs\_moments@{alloc\_dbs\_moments}!DBS\_moments.f90@{DBS\_moments.f90}}
+\doxysubsubsection{\texorpdfstring{alloc\_dbs\_moments()}{alloc\_dbs\_moments()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+dbs\+\_\+moments}
+
+\mbox{\Hypertarget{_d_b_s__moments_8f90_a683345f9e0fe44cfaa7c5890ca69e808}\label{_d_b_s__moments_8f90_a683345f9e0fe44cfaa7c5890ca69e808}} 
+\index{DBS\_moments.f90@{DBS\_moments.f90}!dealloc\_dbs\_moments@{dealloc\_dbs\_moments}}
+\index{dealloc\_dbs\_moments@{dealloc\_dbs\_moments}!DBS\_moments.f90@{DBS\_moments.f90}}
+\doxysubsubsection{\texorpdfstring{dealloc\_dbs\_moments()}{dealloc\_dbs\_moments()}}
+{\footnotesize\ttfamily subroutine dealloc\+\_\+dbs\+\_\+moments}
+
+\mbox{\Hypertarget{_d_b_s__moments_8f90_a7d6e8105c0077bf4275978b15911b61b}\label{_d_b_s__moments_8f90_a7d6e8105c0077bf4275978b15911b61b}} 
+\index{DBS\_moments.f90@{DBS\_moments.f90}!moment@{moment}}
+\index{moment@{moment}!DBS\_moments.f90@{DBS\_moments.f90}}
+\doxysubsubsection{\texorpdfstring{moment()}{moment()}}
+{\footnotesize\ttfamily subroutine moment (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{iv,  }\item[{integer, intent(in)}]{k,  }\item[{real(8), dimension(ks$\ast$ks), intent(out)}]{rv,  }\item[{character, intent(in)}]{sym,  }\item[{character, intent(in)}]{dir }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__moments_8f90_ac74f3cbc2dada42e36e96635934ac140}\label{_d_b_s__moments_8f90_ac74f3cbc2dada42e36e96635934ac140}} 
+\index{DBS\_moments.f90@{DBS\_moments.f90}!moment\_pp@{moment\_pp}}
+\index{moment\_pp@{moment\_pp}!DBS\_moments.f90@{DBS\_moments.f90}}
+\doxysubsubsection{\texorpdfstring{moment\_pp()}{moment\_pp()}}
+{\footnotesize\ttfamily subroutine moment\+\_\+pp (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{iv,  }\item[{integer, intent(in)}]{k,  }\item[{real(8), dimension($\ast$), intent(out)}]{rv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__moments_8f90_a42b042fe37283bf8016ec8839511b281}\label{_d_b_s__moments_8f90_a42b042fe37283bf8016ec8839511b281}} 
+\index{DBS\_moments.f90@{DBS\_moments.f90}!moment\_pq@{moment\_pq}}
+\index{moment\_pq@{moment\_pq}!DBS\_moments.f90@{DBS\_moments.f90}}
+\doxysubsubsection{\texorpdfstring{moment\_pq()}{moment\_pq()}}
+{\footnotesize\ttfamily subroutine moment\+\_\+pq (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{iv,  }\item[{integer, intent(in)}]{k,  }\item[{real(8), dimension($\ast$), intent(out)}]{rv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__moments_8f90_a1cf36a40318e3ebecfe84ee2dfe11c14}\label{_d_b_s__moments_8f90_a1cf36a40318e3ebecfe84ee2dfe11c14}} 
+\index{DBS\_moments.f90@{DBS\_moments.f90}!moment\_qp@{moment\_qp}}
+\index{moment\_qp@{moment\_qp}!DBS\_moments.f90@{DBS\_moments.f90}}
+\doxysubsubsection{\texorpdfstring{moment\_qp()}{moment\_qp()}}
+{\footnotesize\ttfamily subroutine moment\+\_\+qp (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{iv,  }\item[{integer, intent(in)}]{k,  }\item[{real(8), dimension($\ast$), intent(out)}]{rv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__moments_8f90_a4cf897cee51be975ca77f34d867e1e93}\label{_d_b_s__moments_8f90_a4cf897cee51be975ca77f34d867e1e93}} 
+\index{DBS\_moments.f90@{DBS\_moments.f90}!moment\_qq@{moment\_qq}}
+\index{moment\_qq@{moment\_qq}!DBS\_moments.f90@{DBS\_moments.f90}}
+\doxysubsubsection{\texorpdfstring{moment\_qq()}{moment\_qq()}}
+{\footnotesize\ttfamily subroutine moment\+\_\+qq (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{iv,  }\item[{integer, intent(in)}]{k,  }\item[{real(8), dimension($\ast$), intent(out)}]{rv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__moments_8f90_a12546e553745fffd51ac7544bfb44fb5}\label{_d_b_s__moments_8f90_a12546e553745fffd51ac7544bfb44fb5}} 
+\index{DBS\_moments.f90@{DBS\_moments.f90}!moments@{moments}}
+\index{moments@{moments}!DBS\_moments.f90@{DBS\_moments.f90}}
+\doxysubsubsection{\texorpdfstring{moments()}{moments()}}
+{\footnotesize\ttfamily subroutine moments (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{k,  }\item[{real(8), dimension(ks$\ast$ks,nv), intent(out)}]{rkm,  }\item[{character, intent(in)}]{sym,  }\item[{character, intent(in)}]{dir }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__moments_8f90_ad833c2b4c8dce06e0621143549fda221}\label{_d_b_s__moments_8f90_ad833c2b4c8dce06e0621143549fda221}} 
+\index{DBS\_moments.f90@{DBS\_moments.f90}!moments\_pp@{moments\_pp}}
+\index{moments\_pp@{moments\_pp}!DBS\_moments.f90@{DBS\_moments.f90}}
+\doxysubsubsection{\texorpdfstring{moments\_pp()}{moments\_pp()}}
+{\footnotesize\ttfamily subroutine moments\+\_\+pp (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{k,  }\item[{integer, intent(in)}]{kk,  }\item[{integer, intent(in)}]{nv,  }\item[{real(8), dimension(kk,nv), intent(out)}]{rkm }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__moments_8f90_a7fadd6d343d5b84037667f237688e5a8}\label{_d_b_s__moments_8f90_a7fadd6d343d5b84037667f237688e5a8}} 
+\index{DBS\_moments.f90@{DBS\_moments.f90}!moments\_pq@{moments\_pq}}
+\index{moments\_pq@{moments\_pq}!DBS\_moments.f90@{DBS\_moments.f90}}
+\doxysubsubsection{\texorpdfstring{moments\_pq()}{moments\_pq()}}
+{\footnotesize\ttfamily subroutine moments\+\_\+pq (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{k,  }\item[{integer, intent(in)}]{kk,  }\item[{integer, intent(in)}]{nv,  }\item[{real(8), dimension(kk,nv), intent(out)}]{rkm }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__moments_8f90_a52c0db5f3985258ef1763a349301e883}\label{_d_b_s__moments_8f90_a52c0db5f3985258ef1763a349301e883}} 
+\index{DBS\_moments.f90@{DBS\_moments.f90}!moments\_qp@{moments\_qp}}
+\index{moments\_qp@{moments\_qp}!DBS\_moments.f90@{DBS\_moments.f90}}
+\doxysubsubsection{\texorpdfstring{moments\_qp()}{moments\_qp()}}
+{\footnotesize\ttfamily subroutine moments\+\_\+qp (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{k,  }\item[{integer, intent(in)}]{kk,  }\item[{integer, intent(in)}]{nv,  }\item[{real(8), dimension(kk,nv), intent(out)}]{rkm }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__moments_8f90_a155c25184a1a61f333b4182ed031d7de}\label{_d_b_s__moments_8f90_a155c25184a1a61f333b4182ed031d7de}} 
+\index{DBS\_moments.f90@{DBS\_moments.f90}!moments\_qq@{moments\_qq}}
+\index{moments\_qq@{moments\_qq}!DBS\_moments.f90@{DBS\_moments.f90}}
+\doxysubsubsection{\texorpdfstring{moments\_qq()}{moments\_qq()}}
+{\footnotesize\ttfamily subroutine moments\+\_\+qq (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{k,  }\item[{integer, intent(in)}]{kk,  }\item[{integer, intent(in)}]{nv,  }\item[{real(8), dimension(kk,nv), intent(out)}]{rkm }\end{DoxyParamCaption})}
+

@@ -1,0 +1,116 @@
+\hypertarget{group__bsr__pol}{}\doxysection{B\+S\+R\+\_\+\+P\+O\+L3}
+\label{group__bsr__pol}\index{BSR\_POL3@{BSR\_POL3}}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__pol_gab96b2857d317326c40c2ca280f7b45ab}{inf\+\_\+bsr\+\_\+pol}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__pol_ga7bc2fbaacdbc8fe50d7a4c318f7c4b5c}{r\+\_\+arg}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__pol_ga0372f691b6441b9d4b181b704e8de4f0}{r\+\_\+bsrmat}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__pol_ga8a94ff0d96e47ca16c6eb1f6d894e1a7}{read\+\_\+bsr\+\_\+matrix}} (nui, mhm, ns, kch, a)
+\begin{DoxyCompactList}\small\item\em read the inreraction (overlap) matrix in B\+S\+R-\/format \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__pol_gae05973708b2657246dc6168990091a39}{r\+\_\+dipmat}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__pol_gadc93c086050034472fda48db78c310c0}{read\+\_\+nortb}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__pol_ga16b40b53422dc67fe65cf793458d956b}{read\+\_\+bsw}} (nu)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__pol_gaae3f5c99fcf27fce39382bb506c6ca50}{read\+\_\+data}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__pol_ga9940e02ebc79238e072653d4df828fa8}{solv\+\_\+mat}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{group__bsr__pol_ga1a121b9d43e9a2ecbc8a13d0e443bec2}{bsr\+\_\+pol\+::ma}} =80
+\begin{DoxyCompactList}\small\item\em common variable and arrays for the program \char`\"{}bsr\+\_\+pol\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{group__bsr__pol_gab96b2857d317326c40c2ca280f7b45ab}\label{group__bsr__pol_gab96b2857d317326c40c2ca280f7b45ab}} 
+\index{BSR\_POL3@{BSR\_POL3}!inf\_bsr\_pol@{inf\_bsr\_pol}}
+\index{inf\_bsr\_pol@{inf\_bsr\_pol}!BSR\_POL3@{BSR\_POL3}}
+\doxysubsubsection{\texorpdfstring{inf\_bsr\_pol()}{inf\_bsr\_pol()}}
+{\footnotesize\ttfamily subroutine inf\+\_\+bsr\+\_\+pol}
+
+provide screen information about \mbox{\hyperlink{namespacebsr__pol}{bsr\+\_\+pol}} program\mbox{\Hypertarget{group__bsr__pol_ga7bc2fbaacdbc8fe50d7a4c318f7c4b5c}\label{group__bsr__pol_ga7bc2fbaacdbc8fe50d7a4c318f7c4b5c}} 
+\index{BSR\_POL3@{BSR\_POL3}!r\_arg@{r\_arg}}
+\index{r\_arg@{r\_arg}!BSR\_POL3@{BSR\_POL3}}
+\doxysubsubsection{\texorpdfstring{r\_arg()}{r\_arg()}}
+{\footnotesize\ttfamily subroutine r\+\_\+arg}
+
+read arguments, first from file unit \textquotesingle{}nu, then from comand line\mbox{\Hypertarget{group__bsr__pol_ga0372f691b6441b9d4b181b704e8de4f0}\label{group__bsr__pol_ga0372f691b6441b9d4b181b704e8de4f0}} 
+\index{BSR\_POL3@{BSR\_POL3}!r\_bsrmat@{r\_bsrmat}}
+\index{r\_bsrmat@{r\_bsrmat}!BSR\_POL3@{BSR\_POL3}}
+\doxysubsubsection{\texorpdfstring{r\_bsrmat()}{r\_bsrmat()}}
+{\footnotesize\ttfamily subroutine r\+\_\+bsrmat}
+
+read the data from bsr\+\_\+mat.\+nnn file for the given partial wave\mbox{\Hypertarget{group__bsr__pol_gae05973708b2657246dc6168990091a39}\label{group__bsr__pol_gae05973708b2657246dc6168990091a39}} 
+\index{BSR\_POL3@{BSR\_POL3}!r\_dipmat@{r\_dipmat}}
+\index{r\_dipmat@{r\_dipmat}!BSR\_POL3@{BSR\_POL3}}
+\doxysubsubsection{\texorpdfstring{r\_dipmat()}{r\_dipmat()}}
+{\footnotesize\ttfamily subroutine r\+\_\+dipmat}
+
+read the data from dv.\+nnn file for the given partial wave\mbox{\Hypertarget{group__bsr__pol_ga8a94ff0d96e47ca16c6eb1f6d894e1a7}\label{group__bsr__pol_ga8a94ff0d96e47ca16c6eb1f6d894e1a7}} 
+\index{BSR\_POL3@{BSR\_POL3}!read\_bsr\_matrix@{read\_bsr\_matrix}}
+\index{read\_bsr\_matrix@{read\_bsr\_matrix}!BSR\_POL3@{BSR\_POL3}}
+\doxysubsubsection{\texorpdfstring{read\_bsr\_matrix()}{read\_bsr\_matrix()}}
+{\footnotesize\ttfamily subroutine read\+\_\+bsr\+\_\+matrix (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nui,  }\item[{integer, intent(in)}]{mhm,  }\item[{integer, intent(in)}]{ns,  }\item[{integer, intent(in)}]{kch,  }\item[{real(8), dimension(mhm,mhm)}]{a }\end{DoxyParamCaption})}
+
+
+
+read the inreraction (overlap) matrix in B\+S\+R-\/format 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nui} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em mhm} & read the inreraction (overlap) matrix in B\+S\+R-\/format \\
+\hline
+\mbox{\texttt{ in}}  & {\em ns} & read the inreraction (overlap) matrix in B\+S\+R-\/format \\
+\hline
+\mbox{\texttt{ in}}  & {\em kch} & read the inreraction (overlap) matrix in B\+S\+R-\/format \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__pol_ga16b40b53422dc67fe65cf793458d956b}\label{group__bsr__pol_ga16b40b53422dc67fe65cf793458d956b}} 
+\index{BSR\_POL3@{BSR\_POL3}!read\_bsw@{read\_bsw}}
+\index{read\_bsw@{read\_bsw}!BSR\_POL3@{BSR\_POL3}}
+\doxysubsubsection{\texorpdfstring{read\_bsw()}{read\_bsw()}}
+{\footnotesize\ttfamily subroutine read\+\_\+bsw (\begin{DoxyParamCaption}\item[{}]{nu }\end{DoxyParamCaption})}
+
+read B-\/spline w.\+f. from bsw-\/file (unit nu) only those orbitals which are in the list \char`\"{}spline\+\_\+orbitals\char`\"{}\mbox{\Hypertarget{group__bsr__pol_gaae3f5c99fcf27fce39382bb506c6ca50}\label{group__bsr__pol_gaae3f5c99fcf27fce39382bb506c6ca50}} 
+\index{BSR\_POL3@{BSR\_POL3}!read\_data@{read\_data}}
+\index{read\_data@{read\_data}!BSR\_POL3@{BSR\_POL3}}
+\doxysubsubsection{\texorpdfstring{read\_data()}{read\_data()}}
+{\footnotesize\ttfamily subroutine read\+\_\+data}
+
+read data for given partial wave klsp\mbox{\Hypertarget{group__bsr__pol_gadc93c086050034472fda48db78c310c0}\label{group__bsr__pol_gadc93c086050034472fda48db78c310c0}} 
+\index{BSR\_POL3@{BSR\_POL3}!read\_nortb@{read\_nortb}}
+\index{read\_nortb@{read\_nortb}!BSR\_POL3@{BSR\_POL3}}
+\doxysubsubsection{\texorpdfstring{read\_nortb()}{read\_nortb()}}
+{\footnotesize\ttfamily subroutine read\+\_\+nortb}
+
+provide oscillator strengths for given dipole matrix\mbox{\Hypertarget{group__bsr__pol_ga9940e02ebc79238e072653d4df828fa8}\label{group__bsr__pol_ga9940e02ebc79238e072653d4df828fa8}} 
+\index{BSR\_POL3@{BSR\_POL3}!solv\_mat@{solv\_mat}}
+\index{solv\_mat@{solv\_mat}!BSR\_POL3@{BSR\_POL3}}
+\doxysubsubsection{\texorpdfstring{solv\_mat()}{solv\_mat()}}
+{\footnotesize\ttfamily subroutine solv\+\_\+mat}
+
+solves the dipole equation\+: (H -\/ E0 C) x = d
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{group__bsr__pol_ga1a121b9d43e9a2ecbc8a13d0e443bec2}\label{group__bsr__pol_ga1a121b9d43e9a2ecbc8a13d0e443bec2}} 
+\index{BSR\_POL3@{BSR\_POL3}!ma@{ma}}
+\index{ma@{ma}!BSR\_POL3@{BSR\_POL3}}
+\doxysubsubsection{\texorpdfstring{ma}{ma}}
+{\footnotesize\ttfamily integer, parameter bsr\+\_\+pol\+::ma =80}
+
+
+
+common variable and arrays for the program \char`\"{}bsr\+\_\+pol\char`\"{} 
+

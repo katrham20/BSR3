@@ -1,0 +1,108 @@
+\hypertarget{_d_b_s__grid_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+D\+B\+S/\+D\+B\+S\+\_\+grid.f90 File Reference}
+\label{_d_b_s__grid_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/DBS/DBS\_grid.f90@{/Users/khamilton/Codes/BSR3/libraries/DBS/DBS\_grid.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacedbs__grid}{dbs\+\_\+grid}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__grid_8f90_adb095aa35f54660f1f6a9b6b5ae217e4}{def\+\_\+grid}} (knot, name, z, atw)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__grid_8f90_abc10092bab296ec2cdb9a12f9a9a7350}{read\+\_\+knot\+\_\+dat}}
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__grid_8f90_a42aa22a77de759473d925bcda8dfa2ec}{read\+\_\+grid}} (nu)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__grid_8f90_aeddf54671c05d03a89b38bdee5399f3e}{read\+\_\+grid\+\_\+bsw}} (nu)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__grid_8f90_aeb8214863a1cb3317cd29e0f3cc19ba7}{write\+\_\+knotdat}}
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__grid_8f90_a546aeba077f2874434e2b69b1dad7f46}{mkgrid\+\_\+01}}
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__grid_8f90_a9a7c718b655706d4e3bd13226b81491d}{mkgrid\+\_\+02}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{namespacedbs__grid_a17a6dce5d1110d85d2de6d8bd295ee25}{dbs\+\_\+grid\+::grid\+\_\+type}} = 1
+\item 
+integer \mbox{\hyperlink{namespacedbs__grid_a9814bc26632405a44300c4954cb765fb}{dbs\+\_\+grid\+::ks}} = 9
+\item 
+integer \mbox{\hyperlink{namespacedbs__grid_a31c391e8a287f6899fd451b67a8e9ab3}{dbs\+\_\+grid\+::ns}} = 0
+\item 
+integer \mbox{\hyperlink{namespacedbs__grid_a4629e3a9468b1e369b2a5fe39ec9c8e0}{dbs\+\_\+grid\+::ms}} = 0
+\item 
+integer \mbox{\hyperlink{namespacedbs__grid_a77e718604abe6ae5e0e0338031e3081f}{dbs\+\_\+grid\+::nv}} = 0
+\item 
+integer \mbox{\hyperlink{namespacedbs__grid_a4d464918348da78b991900ee57a295c7}{dbs\+\_\+grid\+::ml}} = 1
+\item 
+integer \mbox{\hyperlink{namespacedbs__grid_ad41d445fb7631b1a6abc6f915f6234e8}{dbs\+\_\+grid\+::me}} = 0
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__grid_acc1eb9caa0b48c131134cb0a587436fd}{dbs\+\_\+grid\+::hi}} = 0.\+25d0
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__grid_aa6cfb2c57fdf99f86ddc2998cdb520ff}{dbs\+\_\+grid\+::he}} = 0.\+25d0
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__grid_a02a3e7c2b9f4aeb9c75b0c782c107c6c}{dbs\+\_\+grid\+::hmax}} = 1.d0
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__grid_aa9392715fafaecbe8a19f0bec03c5eac}{dbs\+\_\+grid\+::rmax}} = 50.d0
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__grid_ad085f9ee5a38696c04ba7e14e05b70af}{dbs\+\_\+grid\+::tmax}} = 0.d0
+\item 
+integer \mbox{\hyperlink{namespacedbs__grid_a22fc3f7b7d5d34ba3dae802fc56439f9}{dbs\+\_\+grid\+::ksp}} =8
+\item 
+integer \mbox{\hyperlink{namespacedbs__grid_a2e2d6e6e5ea4f53fc43c560ef0f9310b}{dbs\+\_\+grid\+::nsp}} =0
+\item 
+integer \mbox{\hyperlink{namespacedbs__grid_a9d8d42d7fc248885698edfc72e87d409}{dbs\+\_\+grid\+::ksq}} =9
+\item 
+integer \mbox{\hyperlink{namespacedbs__grid_a482f6b7b7f0f66904bb44ad23656d3fb}{dbs\+\_\+grid\+::nsq}} =0
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacedbs__grid_a8b1956dec19ba778f658402c42ae2e40}{dbs\+\_\+grid\+::t}}
+\item 
+character(80) \mbox{\hyperlink{namespacedbs__grid_ad44923d09a5fdd3616edd9b43a80f221}{dbs\+\_\+grid\+::af\+\_\+grid}} = \textquotesingle{}knot.\+dat\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{_d_b_s__grid_8f90_adb095aa35f54660f1f6a9b6b5ae217e4}\label{_d_b_s__grid_8f90_adb095aa35f54660f1f6a9b6b5ae217e4}} 
+\index{DBS\_grid.f90@{DBS\_grid.f90}!def\_grid@{def\_grid}}
+\index{def\_grid@{def\_grid}!DBS\_grid.f90@{DBS\_grid.f90}}
+\doxysubsubsection{\texorpdfstring{def\_grid()}{def\_grid()}}
+{\footnotesize\ttfamily subroutine def\+\_\+grid (\begin{DoxyParamCaption}\item[{character($\ast$)}]{knot,  }\item[{character($\ast$)}]{name,  }\item[{real(8)}]{z,  }\item[{real(8)}]{atw }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__grid_8f90_a546aeba077f2874434e2b69b1dad7f46}\label{_d_b_s__grid_8f90_a546aeba077f2874434e2b69b1dad7f46}} 
+\index{DBS\_grid.f90@{DBS\_grid.f90}!mkgrid\_01@{mkgrid\_01}}
+\index{mkgrid\_01@{mkgrid\_01}!DBS\_grid.f90@{DBS\_grid.f90}}
+\doxysubsubsection{\texorpdfstring{mkgrid\_01()}{mkgrid\_01()}}
+{\footnotesize\ttfamily subroutine mkgrid\+\_\+01}
+
+\mbox{\Hypertarget{_d_b_s__grid_8f90_a9a7c718b655706d4e3bd13226b81491d}\label{_d_b_s__grid_8f90_a9a7c718b655706d4e3bd13226b81491d}} 
+\index{DBS\_grid.f90@{DBS\_grid.f90}!mkgrid\_02@{mkgrid\_02}}
+\index{mkgrid\_02@{mkgrid\_02}!DBS\_grid.f90@{DBS\_grid.f90}}
+\doxysubsubsection{\texorpdfstring{mkgrid\_02()}{mkgrid\_02()}}
+{\footnotesize\ttfamily subroutine mkgrid\+\_\+02}
+
+\mbox{\Hypertarget{_d_b_s__grid_8f90_a42aa22a77de759473d925bcda8dfa2ec}\label{_d_b_s__grid_8f90_a42aa22a77de759473d925bcda8dfa2ec}} 
+\index{DBS\_grid.f90@{DBS\_grid.f90}!read\_grid@{read\_grid}}
+\index{read\_grid@{read\_grid}!DBS\_grid.f90@{DBS\_grid.f90}}
+\doxysubsubsection{\texorpdfstring{read\_grid()}{read\_grid()}}
+{\footnotesize\ttfamily subroutine read\+\_\+grid (\begin{DoxyParamCaption}\item[{integer}]{nu }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__grid_8f90_aeddf54671c05d03a89b38bdee5399f3e}\label{_d_b_s__grid_8f90_aeddf54671c05d03a89b38bdee5399f3e}} 
+\index{DBS\_grid.f90@{DBS\_grid.f90}!read\_grid\_bsw@{read\_grid\_bsw}}
+\index{read\_grid\_bsw@{read\_grid\_bsw}!DBS\_grid.f90@{DBS\_grid.f90}}
+\doxysubsubsection{\texorpdfstring{read\_grid\_bsw()}{read\_grid\_bsw()}}
+{\footnotesize\ttfamily subroutine read\+\_\+grid\+\_\+bsw (\begin{DoxyParamCaption}\item[{integer}]{nu }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__grid_8f90_abc10092bab296ec2cdb9a12f9a9a7350}\label{_d_b_s__grid_8f90_abc10092bab296ec2cdb9a12f9a9a7350}} 
+\index{DBS\_grid.f90@{DBS\_grid.f90}!read\_knot\_dat@{read\_knot\_dat}}
+\index{read\_knot\_dat@{read\_knot\_dat}!DBS\_grid.f90@{DBS\_grid.f90}}
+\doxysubsubsection{\texorpdfstring{read\_knot\_dat()}{read\_knot\_dat()}}
+{\footnotesize\ttfamily subroutine read\+\_\+knot\+\_\+dat}
+
+\mbox{\Hypertarget{_d_b_s__grid_8f90_aeb8214863a1cb3317cd29e0f3cc19ba7}\label{_d_b_s__grid_8f90_aeb8214863a1cb3317cd29e0f3cc19ba7}} 
+\index{DBS\_grid.f90@{DBS\_grid.f90}!write\_knotdat@{write\_knotdat}}
+\index{write\_knotdat@{write\_knotdat}!DBS\_grid.f90@{DBS\_grid.f90}}
+\doxysubsubsection{\texorpdfstring{write\_knotdat()}{write\_knotdat()}}
+{\footnotesize\ttfamily subroutine write\+\_\+knotdat}
+

@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine Read_arg(nu)
 !======================================================================
-!     read input parameters
+!> @ingroup bsr_mat
+!> @brief     read input parameters
 !----------------------------------------------------------------------
       Use bsr_mat;  USE spline_atomic;  Use target
 

@@ -1,9 +1,10 @@
 !======================================================================
       SUBROUTINE ZNO_2ee (i1,i2,j1,j2)
 !======================================================================
-!     angular part of matrix elements between two det.w.f.
-!     for two-electron operator
-!     Calls: Check_boef, Idet_fact, Iadd_zoef.
+!> @ingroup bsr_breit
+!!     angular part of matrix elements between two det.w.f.
+!!     for two-electron operator
+!!     Calls: Check_boef, Idet_fact, Iadd_zoef.
 !----------------------------------------------------------------------
 	     Use spin_orbitals, only: nsym, kz1,kz2,Lsym,Msym,Ssym, &
                                IPsym1,IPsym2,Isym1,Isym2,nnsym1,nnsym2
@@ -66,7 +67,8 @@
 !======================================================================
       Subroutine Jsym_int(icase,j1,j2,j3,j4)
 !======================================================================
-!     define "canonical" form of integral
+!> @ingroup bsr_breit
+!> @brief     define "canonical" form of integral
 !---------------------------------------------------------------------
       Implicit none
       Integer :: icase,j,j1,j2,j3,j4

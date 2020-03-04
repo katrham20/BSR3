@@ -1,0 +1,80 @@
+\hypertarget{_l_a_p_a_c_k__calls_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+Z\+C\+O\+M/\+L\+A\+P\+A\+C\+K\+\_\+calls.f90 File Reference}
+\label{_l_a_p_a_c_k__calls_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/ZCOM/LAPACK\_calls.f90@{/Users/khamilton/Codes/BSR3/libraries/ZCOM/LAPACK\_calls.f90}}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{_l_a_p_a_c_k__calls_8f90_abd25520066ec61614844be5ea8162c09}{lap\+\_\+dgesv}} (m, n, k, A, B, info)
+\item 
+subroutine \mbox{\hyperlink{_l_a_p_a_c_k__calls_8f90_a0aa85da1a51cb901cafe99e68ffbc307}{lap\+\_\+zgesv}} (n, m, A, B, info)
+\item 
+subroutine \mbox{\hyperlink{_l_a_p_a_c_k__calls_8f90_a7e514d3f38421a0cd2a0a7252d94b440}{lap\+\_\+dsyev}} (job, U\+P\+LO, n, m, A, eval, info)
+\item 
+subroutine \mbox{\hyperlink{_l_a_p_a_c_k__calls_8f90_aeecd1d105c15a6650bafdd73f98712f2}{lap\+\_\+dsyevx}} (job, U\+P\+LO, n, m, A, eval, k, info)
+\item 
+subroutine \mbox{\hyperlink{_l_a_p_a_c_k__calls_8f90_a4f234f565f8661a191e4d0e86b79249b}{lap\+\_\+dsygv}} (job, U\+P\+LO, n, m, A, C, eval, info)
+\item 
+subroutine \mbox{\hyperlink{_l_a_p_a_c_k__calls_8f90_a617b927a2513dac29899aa42d867cdf1}{lap\+\_\+dsygvx}} (job, U\+P\+LO, n, m, A, C, eval, k, info)
+\item 
+subroutine \mbox{\hyperlink{_l_a_p_a_c_k__calls_8f90_a7303ff7db908ed0bfed4e5fcd4abbfac}{lap\+\_\+inv}} (n, m, A, info)
+\item 
+subroutine \mbox{\hyperlink{_l_a_p_a_c_k__calls_8f90_a2c5f0cfb657b89c77f66ca6676a8b70c}{lap\+\_\+invs}} (U\+P\+LO, n, m, A, info)
+\item 
+subroutine \mbox{\hyperlink{_l_a_p_a_c_k__calls_8f90_aef6ca01da451cd4979a27132e1575713}{lap\+\_\+zheev}} (job, U\+P\+LO, n, m, A, eval, info)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{_l_a_p_a_c_k__calls_8f90_abd25520066ec61614844be5ea8162c09}\label{_l_a_p_a_c_k__calls_8f90_abd25520066ec61614844be5ea8162c09}} 
+\index{LAPACK\_calls.f90@{LAPACK\_calls.f90}!lap\_dgesv@{lap\_dgesv}}
+\index{lap\_dgesv@{lap\_dgesv}!LAPACK\_calls.f90@{LAPACK\_calls.f90}}
+\doxysubsubsection{\texorpdfstring{lap\_dgesv()}{lap\_dgesv()}}
+{\footnotesize\ttfamily subroutine lap\+\_\+dgesv (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{m,  }\item[{integer, intent(in)}]{n,  }\item[{integer, intent(in)}]{k,  }\item[{real(8), dimension(m,$\ast$)}]{A,  }\item[{real(8), dimension(m,$\ast$)}]{B,  }\item[{integer, intent(out), optional}]{info }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_l_a_p_a_c_k__calls_8f90_a7e514d3f38421a0cd2a0a7252d94b440}\label{_l_a_p_a_c_k__calls_8f90_a7e514d3f38421a0cd2a0a7252d94b440}} 
+\index{LAPACK\_calls.f90@{LAPACK\_calls.f90}!lap\_dsyev@{lap\_dsyev}}
+\index{lap\_dsyev@{lap\_dsyev}!LAPACK\_calls.f90@{LAPACK\_calls.f90}}
+\doxysubsubsection{\texorpdfstring{lap\_dsyev()}{lap\_dsyev()}}
+{\footnotesize\ttfamily subroutine lap\+\_\+dsyev (\begin{DoxyParamCaption}\item[{character(1), intent(in)}]{job,  }\item[{character(1), intent(in)}]{U\+P\+LO,  }\item[{integer, intent(in)}]{n,  }\item[{integer, intent(in)}]{m,  }\item[{real(8), dimension(m,m)}]{A,  }\item[{real(8), dimension(m)}]{eval,  }\item[{integer, intent(out)}]{info }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_l_a_p_a_c_k__calls_8f90_aeecd1d105c15a6650bafdd73f98712f2}\label{_l_a_p_a_c_k__calls_8f90_aeecd1d105c15a6650bafdd73f98712f2}} 
+\index{LAPACK\_calls.f90@{LAPACK\_calls.f90}!lap\_dsyevx@{lap\_dsyevx}}
+\index{lap\_dsyevx@{lap\_dsyevx}!LAPACK\_calls.f90@{LAPACK\_calls.f90}}
+\doxysubsubsection{\texorpdfstring{lap\_dsyevx()}{lap\_dsyevx()}}
+{\footnotesize\ttfamily subroutine lap\+\_\+dsyevx (\begin{DoxyParamCaption}\item[{character(1), intent(in)}]{job,  }\item[{character(1), intent(in)}]{U\+P\+LO,  }\item[{integer, intent(in)}]{n,  }\item[{integer, intent(in)}]{m,  }\item[{real(8), dimension(m,$\ast$)}]{A,  }\item[{real(8), dimension($\ast$)}]{eval,  }\item[{integer, intent(in)}]{k,  }\item[{integer, intent(out), optional}]{info }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_l_a_p_a_c_k__calls_8f90_a4f234f565f8661a191e4d0e86b79249b}\label{_l_a_p_a_c_k__calls_8f90_a4f234f565f8661a191e4d0e86b79249b}} 
+\index{LAPACK\_calls.f90@{LAPACK\_calls.f90}!lap\_dsygv@{lap\_dsygv}}
+\index{lap\_dsygv@{lap\_dsygv}!LAPACK\_calls.f90@{LAPACK\_calls.f90}}
+\doxysubsubsection{\texorpdfstring{lap\_dsygv()}{lap\_dsygv()}}
+{\footnotesize\ttfamily subroutine lap\+\_\+dsygv (\begin{DoxyParamCaption}\item[{character(1), intent(in)}]{job,  }\item[{character(1), intent(in)}]{U\+P\+LO,  }\item[{integer, intent(in)}]{n,  }\item[{integer, intent(in)}]{m,  }\item[{real(8), dimension(m,$\ast$)}]{A,  }\item[{real(8), dimension(m,$\ast$)}]{C,  }\item[{real(8), dimension($\ast$)}]{eval,  }\item[{integer, intent(out), optional}]{info }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_l_a_p_a_c_k__calls_8f90_a617b927a2513dac29899aa42d867cdf1}\label{_l_a_p_a_c_k__calls_8f90_a617b927a2513dac29899aa42d867cdf1}} 
+\index{LAPACK\_calls.f90@{LAPACK\_calls.f90}!lap\_dsygvx@{lap\_dsygvx}}
+\index{lap\_dsygvx@{lap\_dsygvx}!LAPACK\_calls.f90@{LAPACK\_calls.f90}}
+\doxysubsubsection{\texorpdfstring{lap\_dsygvx()}{lap\_dsygvx()}}
+{\footnotesize\ttfamily subroutine lap\+\_\+dsygvx (\begin{DoxyParamCaption}\item[{character(1), intent(in)}]{job,  }\item[{character(1), intent(in)}]{U\+P\+LO,  }\item[{integer, intent(in)}]{n,  }\item[{integer, intent(in)}]{m,  }\item[{real(8), dimension(m,$\ast$)}]{A,  }\item[{real(8), dimension(m,$\ast$)}]{C,  }\item[{real(8), dimension($\ast$)}]{eval,  }\item[{integer, intent(in)}]{k,  }\item[{integer, intent(out), optional}]{info }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_l_a_p_a_c_k__calls_8f90_a7303ff7db908ed0bfed4e5fcd4abbfac}\label{_l_a_p_a_c_k__calls_8f90_a7303ff7db908ed0bfed4e5fcd4abbfac}} 
+\index{LAPACK\_calls.f90@{LAPACK\_calls.f90}!lap\_inv@{lap\_inv}}
+\index{lap\_inv@{lap\_inv}!LAPACK\_calls.f90@{LAPACK\_calls.f90}}
+\doxysubsubsection{\texorpdfstring{lap\_inv()}{lap\_inv()}}
+{\footnotesize\ttfamily subroutine lap\+\_\+inv (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{n,  }\item[{integer, intent(in)}]{m,  }\item[{real(8), dimension(m,m)}]{A,  }\item[{integer, intent(out), optional}]{info }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_l_a_p_a_c_k__calls_8f90_a2c5f0cfb657b89c77f66ca6676a8b70c}\label{_l_a_p_a_c_k__calls_8f90_a2c5f0cfb657b89c77f66ca6676a8b70c}} 
+\index{LAPACK\_calls.f90@{LAPACK\_calls.f90}!lap\_invs@{lap\_invs}}
+\index{lap\_invs@{lap\_invs}!LAPACK\_calls.f90@{LAPACK\_calls.f90}}
+\doxysubsubsection{\texorpdfstring{lap\_invs()}{lap\_invs()}}
+{\footnotesize\ttfamily subroutine lap\+\_\+invs (\begin{DoxyParamCaption}\item[{character(1), intent(in)}]{U\+P\+LO,  }\item[{integer, intent(in)}]{n,  }\item[{integer, intent(in)}]{m,  }\item[{real(8), dimension(m,m)}]{A,  }\item[{integer, intent(out), optional}]{info }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_l_a_p_a_c_k__calls_8f90_a0aa85da1a51cb901cafe99e68ffbc307}\label{_l_a_p_a_c_k__calls_8f90_a0aa85da1a51cb901cafe99e68ffbc307}} 
+\index{LAPACK\_calls.f90@{LAPACK\_calls.f90}!lap\_zgesv@{lap\_zgesv}}
+\index{lap\_zgesv@{lap\_zgesv}!LAPACK\_calls.f90@{LAPACK\_calls.f90}}
+\doxysubsubsection{\texorpdfstring{lap\_zgesv()}{lap\_zgesv()}}
+{\footnotesize\ttfamily subroutine lap\+\_\+zgesv (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{n,  }\item[{integer, intent(in)}]{m,  }\item[{complex(8), dimension(m,m)}]{A,  }\item[{complex(8), dimension(m,m)}]{B,  }\item[{integer, intent(out), optional}]{info }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_l_a_p_a_c_k__calls_8f90_aef6ca01da451cd4979a27132e1575713}\label{_l_a_p_a_c_k__calls_8f90_aef6ca01da451cd4979a27132e1575713}} 
+\index{LAPACK\_calls.f90@{LAPACK\_calls.f90}!lap\_zheev@{lap\_zheev}}
+\index{lap\_zheev@{lap\_zheev}!LAPACK\_calls.f90@{LAPACK\_calls.f90}}
+\doxysubsubsection{\texorpdfstring{lap\_zheev()}{lap\_zheev()}}
+{\footnotesize\ttfamily subroutine lap\+\_\+zheev (\begin{DoxyParamCaption}\item[{character(1), intent(in)}]{job,  }\item[{character(1), intent(in)}]{U\+P\+LO,  }\item[{integer, intent(in)}]{n,  }\item[{integer, intent(in)}]{m,  }\item[{complex(8), dimension(m,m)}]{A,  }\item[{real(8), dimension(m)}]{eval,  }\item[{integer, intent(out), optional}]{info }\end{DoxyParamCaption})}
+

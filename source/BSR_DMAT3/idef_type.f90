@@ -1,24 +1,23 @@
 !======================================================================
      Integer Function Idef_dtype(i1,i2,ich,jch,io,jo,ic,jc,k1,k2,k3)
 !======================================================================
-!
-!    we have following 10 different structures for radial integrals:
-!
-! 1  d( . .)  ic, jc               -  bound-bound  
-!
-! 2  d( i .)  jc                   -  bound-channel
-! 3  d( . j)  ic                    
-! 4  d( . .) < i | . > jc           
-! 5  d( . .) < . | j > ic           
-!
-! 6  d( i j)                       -  channel-channel
-! 7  d( i .) < . | j >              
-! 8  d( . j) < i | . >               
-! 9  d( . .) < i | . > < . | j >    
-!10  d( . .) < i | j >              
-!
-! where . denotes bound orbital (i1,i2), i,j - channels (ich,jch),
-! ic,jc - configurations, <|> - overlaps (io).
+!> @ingroup bsr_dmt
+!!
+!!    we have following 10 different structures for radial integrals:
+!!
+!! 1  d( . .)  ic, jc               -  bound-bound  
+!! 2  d( i .)  jc                   -  bound-channel
+!! 3  d( . j)  ic                    
+!! 4  d( . .) < i | . > jc           
+!! 5  d( . .) < . | j > ic           
+!! 6  d( i j)                       -  channel-channel
+!! 7  d( i .) < . | j >              
+!! 8  d( . j) < i | . >               
+!! 9  d( . .) < i | . > < . | j >    
+!!10  d( . .) < i | j >              
+!!
+!! where . denotes bound orbital (i1,i2), i,j - channels (ich,jch),
+!! ic,jc - configurations, <|> - overlaps (io).
 !
 !----------------------------------------------------------------------
       Implicit none

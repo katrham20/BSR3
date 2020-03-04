@@ -1,8 +1,9 @@
 !======================================================================
       Subroutine H_OUT 
 !======================================================================
-!     Output results in H.DAT file according to the BELFAST R-matrix 
-!     code format
+!> @ingroup bsr_hd
+!> @brief     Output results in H.DAT file according to the BELFAST R-matrix 
+!>     code format
 !----------------------------------------------------------------------
       Use bsr_hd
       Use target
@@ -82,8 +83,9 @@
 !======================================================================
       Subroutine H_OUT1 
 !======================================================================
-!     Output results in H.DAT file according to the BELFAST R-matrix 
-!     code format
+!> @ingroup bsr_hd
+!> @brief     Output results in H.DAT file according to the BELFAST R-matrix 
+!>     code format
 !----------------------------------------------------------------------
       Use bsr_hd;  Use target;  Use channel
       

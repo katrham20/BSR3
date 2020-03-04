@@ -1,7 +1,8 @@
 !=======================================================================
       Subroutine Conf_loop
 !=======================================================================
-!     run loop over configurations 
+!> @ingroup bsr_breit
+!> @brief     run loop over configurations 
 !-----------------------------------------------------------------------
       Use bsr_breit,     only: pri,nui,nud, &
                                noper,joper,coper,JT_oper,CT_oper
@@ -192,7 +193,8 @@
 !======================================================================
       Subroutine Symc_conf(ic,conf)
 !======================================================================
-!     get label for configuration
+!> @ingroup bsr_breit
+!> @brief     get label for configuration
 !----------------------------------------------------------------------
       Use conf_LS, only: LTOTAL,STOTAL,no,nn,ln,iq,kn 
 

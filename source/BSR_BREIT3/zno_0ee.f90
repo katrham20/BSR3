@@ -1,8 +1,9 @@
 !====================================================================
       Subroutine ZNO_0ee
 !====================================================================
-!     computes overlap integral between two determinants
-!     Calls: Idet_fact, Incode_int, Iadd_zoef
+!> @ingroup bsr_breit
+!!     computes overlap integral between two determinants
+!!     Calls: Idet_fact, Incode_int, Iadd_zoef
 !--------------------------------------------------------------------
       Use spin_orbitals,  only: kz1,kz2
 

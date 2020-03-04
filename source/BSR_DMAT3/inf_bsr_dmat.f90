@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine inf_bsr_dmat
 !======================================================================
-!     provide screen information about bsr_dmat program
+!> @ingroup bsr_dmat
+!> @brief     provide screen information about bsr_dmat program
 !----------------------------------------------------------------------
       Implicit none
       Character :: A

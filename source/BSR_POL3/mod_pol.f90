@@ -1,7 +1,8 @@
 !=====================================================================
       Module bsr_pol     
 !=====================================================================
-!     common variable and arrays for the program "bsr_pol"
+!> @ingroup bsr_pol
+!> @brief     common variable and arrays for the program "bsr_pol"
 !---------------------------------------------------------------------
       Implicit none
 
@@ -26,17 +27,17 @@
 
 ! ... main parameters of calculations:
 
-      Integer :: nhm               ! size of interaction matrix
-      Integer :: khm               ! number of solutions
-      Integer :: mhm               ! full size of matrix
+      Integer :: nhm               !< @param size of interaction matrix
+      Integer :: khm               !< @param number of solutions
+      Integer :: mhm               !< @param full size of matrix
 
-      Integer :: nort = 0          ! number of orthogonal constraints
+      Integer :: nort = 0          !< @param number of orthogonal constraints
       Integer :: nortb = 0
       Integer, allocatable :: iortb(:)
 
-      Real(8), allocatable :: a(:,:)      ! interaction matrix
-      Real(8), allocatable :: c(:,:)      ! overlap matrix
-      Real(8), allocatable :: d(:)        ! dipole matrix
+      Real(8), allocatable :: a(:,:)      !< @param interaction matrix
+      Real(8), allocatable :: c(:,:)      !< @param overlap matrix
+      Real(8), allocatable :: d(:)        !< @param dipole matrix
 
 ! ... initial state:
 
@@ -47,8 +48,8 @@
       
 ! ... tarnsition:
 
-      Character(1) :: ktype = 'E'  ! transition type
-      Integer :: kpol              ! multipole index
+      Character(1) :: ktype = 'E'  !< @param transition type
+      Integer :: kpol              !< @param multipole index
 
 ! ... boundary conditions on solution:
 

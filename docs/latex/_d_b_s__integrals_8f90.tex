@@ -1,0 +1,100 @@
+\hypertarget{_d_b_s__integrals_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+D\+B\+S/\+D\+B\+S\+\_\+integrals.f90 File Reference}
+\label{_d_b_s__integrals_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/DBS/DBS\_integrals.f90@{/Users/khamilton/Codes/BSR3/libraries/DBS/DBS\_integrals.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacedbs__integrals}{dbs\+\_\+integrals}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__integrals_8f90_a8894630ba5b663979c2999f4a50f6f85}{alloc\+\_\+rk\+\_\+integrals}} (ns, ks, kmin, kmax, ktype)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__integrals_8f90_a433a26ccbfb2d1ad3e2222ed756053fa}{alloc\+\_\+rk\+\_\+integral}} (ns, ks)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__integrals_8f90_a29e8066ae3255d792b15fd3d36b0c824}{alloc\+\_\+sk\+\_\+integrals}} (ns, ks, kmin, kmax, ktype)
+\item 
+subroutine \mbox{\hyperlink{_d_b_s__integrals_8f90_afadecb53c0fef7d9f6a4c204f406f030}{alloc\+\_\+sk\+\_\+integral}} (ns, ks)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{namespacedbs__integrals_a2516941d919f10770a7ac0e646947632}{dbs\+\_\+integrals\+::krk}} = -\/100
+\item 
+real(8), dimension(\+:,\+:,\+:,\+:), pointer \mbox{\hyperlink{namespacedbs__integrals_a3d3d5c1c914e6dd0eb6fa6fa056b105e}{dbs\+\_\+integrals\+::rkb}}
+\item 
+character(4) \mbox{\hyperlink{namespacedbs__integrals_a310ebf7c610ad1f8e81593eb9f74ff18}{dbs\+\_\+integrals\+::itype}} =\textquotesingle{}aaaa\textquotesingle{}
+\item 
+integer \mbox{\hyperlink{namespacedbs__integrals_a198ca375c6241c25b722a6f3b9e03f7a}{dbs\+\_\+integrals\+::kra\+\_\+min}} = -\/100
+\item 
+integer \mbox{\hyperlink{namespacedbs__integrals_a53745136c5c748d5eaf32b1fd737e1df}{dbs\+\_\+integrals\+::kra\+\_\+max}} = -\/100
+\item 
+integer \mbox{\hyperlink{namespacedbs__integrals_a9a21cffc952e59c3360a88e73fd44d87}{dbs\+\_\+integrals\+::ntype}} = 0
+\item 
+integer, dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__integrals_a0a5195945707961c1135e0a53a4a2eb8}{dbs\+\_\+integrals\+::irka}}
+\item 
+real(8), dimension(\+:,\+:,\+:,\+:,\+:,\+:), allocatable, target \mbox{\hyperlink{namespacedbs__integrals_ac444c70dd6abe5e21e0a08afed2e0c97}{dbs\+\_\+integrals\+::rka}}
+\item 
+real(8), dimension(\+:,\+:,\+:,\+:), allocatable, target \mbox{\hyperlink{namespacedbs__integrals_a1d4c66df5fc445d4afd297543377d460}{dbs\+\_\+integrals\+::rka1}}
+\item 
+integer \mbox{\hyperlink{namespacedbs__integrals_a4f30a22fbcb0907a5a330eeea6e9469e}{dbs\+\_\+integrals\+::ntype1}} = 0
+\item 
+integer \mbox{\hyperlink{namespacedbs__integrals_a1c779d7456e25ded0e828e99b41a5ec4}{dbs\+\_\+integrals\+::krk1}} = -\/100
+\item 
+character(4) \mbox{\hyperlink{namespacedbs__integrals_a9a235f82232ce8778fca7a5412a1475d}{dbs\+\_\+integrals\+::itype1}} =\textquotesingle{}aaaa\textquotesingle{}
+\item 
+integer \mbox{\hyperlink{namespacedbs__integrals_a5fdc788e9d0b030bcb4a3d0dfd2634b2}{dbs\+\_\+integrals\+::krs\+\_\+min}} = -\/100
+\item 
+integer \mbox{\hyperlink{namespacedbs__integrals_a59c0de36bb91c4a10670472098a3b67d}{dbs\+\_\+integrals\+::krs\+\_\+max}} = -\/100
+\item 
+integer \mbox{\hyperlink{namespacedbs__integrals_ab4e5cb90349ccffa7f0566167e187b6c}{dbs\+\_\+integrals\+::stype}} = 0
+\item 
+integer, dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__integrals_a9958414f263f86e75e8ad64fd6400b4f}{dbs\+\_\+integrals\+::isk}}
+\item 
+real(8), dimension(\+:,\+:,\+:,\+:,\+:,\+:), allocatable, target \mbox{\hyperlink{namespacedbs__integrals_aacd78d98c18fe9cbdca0692b27cb3600}{dbs\+\_\+integrals\+::rks}}
+\item 
+real(8), dimension(\+:,\+:,\+:,\+:), allocatable, target \mbox{\hyperlink{namespacedbs__integrals_af76f1028f29c54b0bdf293b0ac8b5e5f}{dbs\+\_\+integrals\+::rks1}}
+\item 
+integer \mbox{\hyperlink{namespacedbs__integrals_a9576f659ef89380fa636f4b63761dbf1}{dbs\+\_\+integrals\+::jtype1}} = 0
+\item 
+integer \mbox{\hyperlink{namespacedbs__integrals_ab78ae290b4e61d12831f309b41fa2980}{dbs\+\_\+integrals\+::krs1}} = -\/100
+\item 
+character(4) \mbox{\hyperlink{namespacedbs__integrals_a1e39dba4c9ce21c126a694668bc21479}{dbs\+\_\+integrals\+::stype1}} =\textquotesingle{}aaaa\textquotesingle{}
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__integrals_add185aa4d08cd3feff332cabf97175f4}{dbs\+\_\+integrals\+::memory\+\_\+dbs\+\_\+integrals}} = 0.d0
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__integrals_abd25774a7688dfdb0fe4486640f5988c}{dbs\+\_\+integrals\+::memory\+\_\+rk\+\_\+integrals}} = 0.d0
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__integrals_a3271ed42bcab812018a38b36a1244dc3}{dbs\+\_\+integrals\+::memory\+\_\+rk\+\_\+integral}} = 0.d0
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__integrals_a578dc9f0af14db8abd415e17595d038d}{dbs\+\_\+integrals\+::memory\+\_\+sk\+\_\+integrals}} = 0.d0
+\item 
+real(8) \mbox{\hyperlink{namespacedbs__integrals_a0316199d4e34f37f16a9ad7dd4c4baff}{dbs\+\_\+integrals\+::memory\+\_\+sk\+\_\+integral}} = 0.d0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{_d_b_s__integrals_8f90_a433a26ccbfb2d1ad3e2222ed756053fa}\label{_d_b_s__integrals_8f90_a433a26ccbfb2d1ad3e2222ed756053fa}} 
+\index{DBS\_integrals.f90@{DBS\_integrals.f90}!alloc\_rk\_integral@{alloc\_rk\_integral}}
+\index{alloc\_rk\_integral@{alloc\_rk\_integral}!DBS\_integrals.f90@{DBS\_integrals.f90}}
+\doxysubsubsection{\texorpdfstring{alloc\_rk\_integral()}{alloc\_rk\_integral()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+rk\+\_\+integral (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ns,  }\item[{integer, intent(in)}]{ks }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__integrals_8f90_a8894630ba5b663979c2999f4a50f6f85}\label{_d_b_s__integrals_8f90_a8894630ba5b663979c2999f4a50f6f85}} 
+\index{DBS\_integrals.f90@{DBS\_integrals.f90}!alloc\_rk\_integrals@{alloc\_rk\_integrals}}
+\index{alloc\_rk\_integrals@{alloc\_rk\_integrals}!DBS\_integrals.f90@{DBS\_integrals.f90}}
+\doxysubsubsection{\texorpdfstring{alloc\_rk\_integrals()}{alloc\_rk\_integrals()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+rk\+\_\+integrals (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ns,  }\item[{integer, intent(in)}]{ks,  }\item[{integer, intent(in)}]{kmin,  }\item[{integer, intent(in)}]{kmax,  }\item[{integer, intent(in)}]{ktype }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__integrals_8f90_afadecb53c0fef7d9f6a4c204f406f030}\label{_d_b_s__integrals_8f90_afadecb53c0fef7d9f6a4c204f406f030}} 
+\index{DBS\_integrals.f90@{DBS\_integrals.f90}!alloc\_sk\_integral@{alloc\_sk\_integral}}
+\index{alloc\_sk\_integral@{alloc\_sk\_integral}!DBS\_integrals.f90@{DBS\_integrals.f90}}
+\doxysubsubsection{\texorpdfstring{alloc\_sk\_integral()}{alloc\_sk\_integral()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+sk\+\_\+integral (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ns,  }\item[{integer, intent(in)}]{ks }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_b_s__integrals_8f90_a29e8066ae3255d792b15fd3d36b0c824}\label{_d_b_s__integrals_8f90_a29e8066ae3255d792b15fd3d36b0c824}} 
+\index{DBS\_integrals.f90@{DBS\_integrals.f90}!alloc\_sk\_integrals@{alloc\_sk\_integrals}}
+\index{alloc\_sk\_integrals@{alloc\_sk\_integrals}!DBS\_integrals.f90@{DBS\_integrals.f90}}
+\doxysubsubsection{\texorpdfstring{alloc\_sk\_integrals()}{alloc\_sk\_integrals()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+sk\+\_\+integrals (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ns,  }\item[{integer, intent(in)}]{ks,  }\item[{integer, intent(in)}]{kmin,  }\item[{integer, intent(in)}]{kmax,  }\item[{integer, intent(in)}]{ktype }\end{DoxyParamCaption})}
+

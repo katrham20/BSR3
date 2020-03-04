@@ -1,11 +1,12 @@
 !=================================================================
       Module new_dets
 !=================================================================
-!     contains the desription of overlap determinats which are
-!     obtaned by expansion of total overlap determinants on rows
-!     and columns containing the continuum orbitals.
-!     The determinants with known bound orbitals are estimated
-!     in line, so only their values are recoded 
+!> @ingroup bsr_dmat
+!!     contains the desription of overlap determinats which are
+!!     obtaned by expansion of total overlap determinants on rows
+!!     and columns containing the continuum orbitals.
+!!     The determinants with known bound orbitals are estimated
+!!     in line, so only their values are recoded 
 !-----------------------------------------------------------------
       Implicit none
   
@@ -28,7 +29,8 @@
 !======================================================================
       Subroutine Allocate_ndets(m)
 !======================================================================
-!     allocate arrays in module "ndets"
+!> @ingroup bsr_dmat
+!> @brief     allocate arrays in module "ndets"
 !----------------------------------------------------------------------
       Use new_dets
 
@@ -68,7 +70,8 @@
 !======================================================================
       Subroutine Iadd_ndets(io,jo,S)
 !======================================================================
-!     add new entry in the module "ndets"
+!> @ingroup bsr_dmat
+!>  @brief     add new entry in the module "ndets"
 !----------------------------------------------------------------------
       Use bsr_dmat, only: Eps_ndet
       Use new_dets

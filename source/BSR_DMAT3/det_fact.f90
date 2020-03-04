@@ -1,13 +1,14 @@
 !======================================================================
       Subroutine Det_fact(idf,IPN1,IPN2)
 !======================================================================
-!     Analize the determinant overlap factor. 
-!     First each overlap determinant is expended into one-electron
-!     overlaps <nl|n'l'>, with overlaps included only known radial func.
-!     to be directly calculated. Results are places in module new_dets. 
-!     Then overlap determinant are combined to obtain the final 
-!     overlap factors as:  C, C <kl|nl> or C <kl|k'l'>. 
-!     Results are places in module new_defs.
+!> @ingroup bsr_dmat
+!!     Analize the determinant overlap factor. 
+!!     First each overlap determinant is expended into one-electron
+!!     overlaps <nl|n'l'>, with overlaps included only known radial func.
+!!     to be directly calculated. Results are places in module new_dets. 
+!!     Then overlap determinant are combined to obtain the final 
+!!     overlap factors as:  C, C <kl|nl> or C <kl|k'l'>. 
+!!     Results are places in module new_defs.
 !----------------------------------------------------------------------
       Use dets
       Use new_dets

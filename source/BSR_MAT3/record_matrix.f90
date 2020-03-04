@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine Record_matrix(nu)
 !======================================================================
-!     record interaction (overlap) matrix to the unit 'nu'
+!> @ingroup bsr_mat
+!> @brief     record interaction (overlap) matrix to the unit 'nu'
 !----------------------------------------------------------------------
       Use bsr_mat
       Use bsr_matrix

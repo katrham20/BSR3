@@ -1,13 +1,14 @@
 !======================================================================
       Subroutine Merge_CDATA(nn, ip, jp, nc, eps_cc)
 !======================================================================
-!     merge data from different blocks in MODULE 'cmdata'
-!
-!     nn     - number of blocks
-!     ip(.)  - pointer for begining of block .
-!     jp(.)  - pointer for end of block .
-!     nc     - number of result coeff's
-!     eps_cc - all coefficients < eps_cc are ignored
+!> @ingroup bsr_mat
+!!     merge data from different blocks in MODULE 'cmdata'
+!!
+!!     nn     - number of blocks
+!!     ip(.)  - pointer for begining of block .
+!!     jp(.)  - pointer for end of block .
+!!     nc     - number of result coeff's
+!!     eps_cc - all coefficients < eps_cc are ignored
 !----------------------------------------------------------------------
       Use bsr_mat, only: pri,debug
       Use cmdata 

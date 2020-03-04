@@ -1,8 +1,9 @@
 !======================================================================
       Subroutine rsol_out
 !======================================================================
-! ... output the R-matrix solutions and 
-! ... find the surface amplitudes
+!> @ingroup bsr_hd
+!> @brief output the R-matrix solutions and 
+!> find the surface amplitudes
 !----------------------------------------------------------------------
       Use bsr_hd     
       Use spline_param, only: ns

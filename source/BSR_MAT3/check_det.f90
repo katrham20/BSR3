@@ -1,8 +1,9 @@
 !======================================================================
       Subroutine Check_det(kdn,N1,N2,iext)
 !======================================================================
-!     expend the total overlap determinant so that to extract 
-!     one-electron overlaps with continuum orbitals
+!> @ingroup bsr_mat
+!> @brief     expend the total overlap determinant so that to extract 
+!>     one-electron overlaps with continuum orbitals
 !----------------------------------------------------------------------
       Use spline_orbitals, only: iech, IBORT 
       Use target,          only: nelc
@@ -102,7 +103,8 @@
 !======================================================================
       Subroutine Shift (n,m,N1,N2)
 !======================================================================
-!     array N2 obtained from array N1 by deleting element 'm'
+!> @ingroup bsr_mat
+!> @brief     array N2 obtained from array N1 by deleting element 'm'
 !----------------------------------------------------------------------
       Implicit none
       Integer, intent(in)  :: n,m, N1(*)

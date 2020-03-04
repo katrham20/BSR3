@@ -1,7 +1,8 @@
 !====================================================================
       SUBROUTINE PRI_COEF (nu,ic1,ic2,mo,mi,mso,mee,msoo,mss,moo)
 !====================================================================
-!     Prints the resulting angular integrals
+!> @ingroup bsr_breit
+!> @brief     Prints the resulting angular integrals
 !--------------------------------------------------------------------
       USE rk4_data; Use int_list
 
@@ -76,7 +77,8 @@
 !======================================================================
       SUBROUTINE PRI_COEF1 (nu,icoef,met,ic1,ic2)
 !======================================================================
-!     Prints one angular integral
+!> @ingroup bsr_breit
+!> @brief     Prints one angular integral
 !----------------------------------------------------------------------
       USE param_br
       USE conf_LS
@@ -176,11 +178,12 @@
       Subroutine NUM(z,k1,k2,i_max,acr)
 !====================================================================
 !
-!    finds  k1 and k2 such that abs(z) = sqrt ( k1 / k2 )
-!    and sign(z) = sign(k1)
-!
-!    k1, k2 < i_max
-!    acr - tollerance for fitting
+!> @ingroup bsr_breit
+!> @brief    finds  k1 and k2 such that abs(z) = sqrt ( k1 / k2 )
+!!    and sign(z) = sign(k1)
+!!
+!!    k1, k2 < i_max
+!!    acr - tollerance for fitting
 !--------------------------------------------------------------------
 
       Implicit none
@@ -227,6 +230,7 @@
 !======================================================================
       Subroutine Check_int(C,icase,k,j1,j2,j3,j4)
 !======================================================================
+!> @ingroup bsr_breit
 
       USE param_br
 

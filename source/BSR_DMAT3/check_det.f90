@@ -1,9 +1,10 @@
 !======================================================================
       Subroutine Check_det(kdn,N1,N2,iext)
 !======================================================================
-!     Expend the total overlap determinants so that to extract 
-!     matrix elements with continuum orbitals.
-!     Converted overlaps are stored in module new_dets with Iadd_ndets.
+!> @ingroup bsr_dmat
+!!     Expend the total overlap determinants so that to extract 
+!!     matrix elements with continuum orbitals.
+!!     Converted overlaps are stored in module new_dets with Iadd_ndets.
 !----------------------------------------------------------------------
       Use spline_orbitals, only: iech, IBORT 
       Use conf_LS,         only: ne
@@ -112,7 +113,8 @@
 !======================================================================
       Subroutine Shift (n,m,N1,N2)
 !======================================================================
-!     N2 obtained from N1 by deleting element 'm'
+!> @ingroup bsr_dmat
+!> @brief     N2 obtained from N1 by deleting element 'm'
 !----------------------------------------------------------------------
       Implicit none 
       Integer, intent(in)  :: n,m, N1(n)

@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine r_dipmat
 !======================================================================
-!     read the data from dv.nnn file for the given partial wave
+!> @ingroup bsr_pol
+!> @brief     read the data from dv.nnn file for the given partial wave
 !----------------------------------------------------------------------
       Use bsr_pol
       Use channel, only: nch,ncp

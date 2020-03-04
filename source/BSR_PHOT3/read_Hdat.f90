@@ -1,8 +1,9 @@
 !======================================================================
       Subroutine Read_Hdat(nu,ipri)
 !----------------------------------------------------------------------
-!     Read H.DAT file (unit nu) and find the information for partial
-!     wave IS,IL,IP
+!> @ingroup bsr_phot
+!> @brief     Read H.DAT file (unit nu) and find the information for partial
+!>     wave IS,IL,IP
 !----------------------------------------------------------------------      
       Use bsr_phot
 

@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine R_bsrmat
 !======================================================================
-!     read the data from bsr_mat.nnn file for the given partial wave
+!> @ingroup bsr_pol
+!> @brief     read the data from bsr_mat.nnn file for the given partial wave
 !----------------------------------------------------------------------
       Use bsr_pol
       Use spline_param, only: ns
@@ -45,7 +46,8 @@
 !======================================================================
       Subroutine Read_bsr_matrix(nui,mhm,ns,kch,a)
 !======================================================================
-!     read the inreraction (overlap) matrix in BSR-format
+!> @ingroup bsr_pol
+!> @brief     read the inreraction (overlap) matrix in BSR-format
 !----------------------------------------------------------------------
       Implicit none
 

@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine State_res
 !======================================================================
-!     extracts the data from int_bnk for specific case
+!> @ingroup bsr_mat
+!> @brief     extracts the data from int_bnk for specific case
 !----------------------------------------------------------------------
       Use bsr_mat
       Use conf_LS; Use orb_LS 

@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine Solv_mat
 !======================================================================
-!     solves the dipole equation: (H - E0 C) x = d
+!> @ingroup bsr_pol
+!> @brief     solves the dipole equation: (H - E0 C) x = d
 !----------------------------------------------------------------------
       Use bsr_pol
       Use channel,         only: nch,ncp,ipar,lpar,ispar,ELC,ipch,lch

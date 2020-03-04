@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine Add_coef(C,j1,j2,j3,j4)
 !======================================================================
-!     add new coefficient to the list in cmdata module
+!> @ingroup bsr_mat
+!> @bsr_brief     add new coefficient to the list in cmdata module
 !----------------------------------------------------------------------
       Use cmdata
 

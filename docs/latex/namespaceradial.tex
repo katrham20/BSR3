@@ -1,0 +1,432 @@
+\hypertarget{namespaceradial}{}\doxysection{radial Module Reference}
+\label{namespaceradial}\index{radial@{radial}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_aee81e1d295d4dad29dd6e89f4a55c87e}{rho}} = -\/4.D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_aae898bcb0d68585670b2c27bbc005b92}{h}} = 1./16.D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a92479320f491d69f88233357a6229cec}{h1}}
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_ace94e43425dafb24603c097b2d364d69}{eh}}
+\item 
+integer \mbox{\hyperlink{namespaceradial_aa5116d82cd84f34f5455878bc243cb95}{nr}} = 220
+\item 
+integer \mbox{\hyperlink{namespaceradial_a7c4ee5f080edda3e18b25a7519be0e99}{mrf}} = 0
+\item 
+integer \mbox{\hyperlink{namespaceradial_ab70bf09987e0caab62b1a066384186f0}{nrf}} = 0
+\item 
+integer \mbox{\hyperlink{namespaceradial_ae0744b0b9be3d94683a7e8ad974323fe}{irf}} = 90
+\item 
+integer \mbox{\hyperlink{namespaceradial_a11f17ed11b0cceca9f90945111caa2da}{jrf}} = 90
+\item 
+integer \mbox{\hyperlink{namespaceradial_aa85d1570b304a3eaeb8afebdd95aae56}{iscr}} = 90
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_a4846b86be8bd9b80401f174c2c9d781f}{r}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_a506d582a90d5f32c8d8a4840b4e1d709}{rr}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_a00e1b6345b9a8ac7c1aa8730df7c684e}{r2}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespaceradial_a9cf3b931e33e489c5870ca16c6349850}{p}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespaceradial_ad3033e7272d1356b3227d6d204cec95d}{overlaps}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_a55e0aca435f95fb156129f1f5d95ca2d}{nro}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_aee35c1f9bce9257d1f4d04844d4570fc}{lro}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_ae627f2eed40df57749ba4a4cb14a82ab}{kro}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_a766c211cf806515e609de5b4261084cf}{mro}}
+\item 
+character(4), dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_a1cd612100ac6bbc6b6ddf2cad79317b9}{ero}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_aa2c736b7cf6e413c56450a2b816fca3f}{az}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_a590cca3c449dbf2b108c45a83d1511af}{aexp}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_a0bc1427d8643151c227015cb5922efad}{bexp}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_acc551f3106b1105758df709f1f65a4f9}{mexp}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_ab623d63b64e29958feb081fab49d8b3f}{zk}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespaceradial_a9d73eddd9178c0658c2b46e68f16b0a2}{yk}}
+\item 
+integer \mbox{\hyperlink{namespaceradial_a020764b41b5ef4863f16732773c994b4}{mzk}}
+\item 
+integer \mbox{\hyperlink{namespaceradial_ab34398d216cdc8ac2409decb393003ae}{myk}}
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a8da210606749d4c6b0119fca8361755f}{azk}}
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a21f827a27abed0866ca2421b07cac524}{bzk}}
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a1e577cc70fca9814191dc682029cb0a7}{ayk}}
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_afdcd51f696c1a0102812d6debfe6136b}{byk}}
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a0f83df5749b4448507d5d4408262e469}{z}} = 0.\mbox{\hyperlink{namespaceradial_a7da3d3ff25a084e0f1726b43246456db}{d0}}
+\item 
+integer \mbox{\hyperlink{namespaceradial_aa3415891fd2b77b65d5f87f88b9eb264}{kclosd}} = 0
+\item 
+logical \mbox{\hyperlink{namespaceradial_a11c8fa9f27b6e943fd45ee6630f0e689}{rel}} = .F\+A\+L\+S\+E.
+\item 
+logical \mbox{\hyperlink{namespaceradial_a7d3f2758fcbd5697bacae6e54dfbc989}{oo}} = .F\+A\+L\+S\+E.
+\item 
+integer \mbox{\hyperlink{namespaceradial_a3a9ec05fe342c7a03583789ac56f6d5e}{mass}} = 0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a6750acc8ce8278a4c9e07354730b37fb}{rmass}} = 0.\mbox{\hyperlink{namespaceradial_a7da3d3ff25a084e0f1726b43246456db}{d0}}
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a19e2966926ccb55584dcbe35500cbf6c}{fine}} = 0.\+25\mbox{\hyperlink{namespaceradial_a7da3d3ff25a084e0f1726b43246456db}{d0}}/(137.\+03599976\mbox{\hyperlink{namespaceradial_a7da3d3ff25a084e0f1726b43246456db}{d0}})$\ast$$\ast$2
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a7da3d3ff25a084e0f1726b43246456db}{d0}} =0.D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a3f769c9476a20540bcc72a69cd0eb89d}{d1}} =1.D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a308a72980494f6362513c26743584f04}{d2}} =2.D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_aff46e353ad99ca45790d98f101441d0a}{d3}} =3.D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_aa2371f9b650105076a0a3509fb6cf46b}{d4}} =4.D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_ab285c375f42d3413d8a26d503b1119d2}{d5}} =0.\+5D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_ad03a1268c5d4231bdc0da0c2e08df7e8}{d6}} =6.D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a29cab2b474da8f8dc7000e9eba6665fe}{d8}} =8.D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_af44a7edce48b3594139561fd739a871b}{d10}} =10.D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a582f795d42ca403c46fa3a82edbd0827}{d12}} =12.D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a1fc198c6969c5a56ac9013fa73c37e20}{d16}} =16.D0
+\item 
+real(8) \mbox{\hyperlink{namespaceradial_a5dcbb41fcacfe6e47fe94dd56edaa53f}{d30}} =30.D0
+\item 
+character(6) \mbox{\hyperlink{namespaceradial_a5e08af7db01de77b40ba9a0bfcb04cd1}{atom}} = \textquotesingle{}atom\textquotesingle{}
+\item 
+character(6) \mbox{\hyperlink{namespaceradial_aecb3549218ccf96cd54aa505104a08b4}{term}} = \textquotesingle{}term\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceradial_a590cca3c449dbf2b108c45a83d1511af}\label{namespaceradial_a590cca3c449dbf2b108c45a83d1511af}} 
+\index{radial@{radial}!aexp@{aexp}}
+\index{aexp@{aexp}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{aexp}{aexp}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable radial\+::aexp}
+
+\mbox{\Hypertarget{namespaceradial_a5e08af7db01de77b40ba9a0bfcb04cd1}\label{namespaceradial_a5e08af7db01de77b40ba9a0bfcb04cd1}} 
+\index{radial@{radial}!atom@{atom}}
+\index{atom@{atom}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{atom}{atom}}
+{\footnotesize\ttfamily character(6) radial\+::atom = \textquotesingle{}atom\textquotesingle{}}
+
+\mbox{\Hypertarget{namespaceradial_a1e577cc70fca9814191dc682029cb0a7}\label{namespaceradial_a1e577cc70fca9814191dc682029cb0a7}} 
+\index{radial@{radial}!ayk@{ayk}}
+\index{ayk@{ayk}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{ayk}{ayk}}
+{\footnotesize\ttfamily real(8) radial\+::ayk}
+
+\mbox{\Hypertarget{namespaceradial_aa2c736b7cf6e413c56450a2b816fca3f}\label{namespaceradial_aa2c736b7cf6e413c56450a2b816fca3f}} 
+\index{radial@{radial}!az@{az}}
+\index{az@{az}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{az}{az}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable radial\+::az}
+
+\mbox{\Hypertarget{namespaceradial_a8da210606749d4c6b0119fca8361755f}\label{namespaceradial_a8da210606749d4c6b0119fca8361755f}} 
+\index{radial@{radial}!azk@{azk}}
+\index{azk@{azk}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{azk}{azk}}
+{\footnotesize\ttfamily real(8) radial\+::azk}
+
+\mbox{\Hypertarget{namespaceradial_a0bc1427d8643151c227015cb5922efad}\label{namespaceradial_a0bc1427d8643151c227015cb5922efad}} 
+\index{radial@{radial}!bexp@{bexp}}
+\index{bexp@{bexp}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{bexp}{bexp}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable radial\+::bexp}
+
+\mbox{\Hypertarget{namespaceradial_afdcd51f696c1a0102812d6debfe6136b}\label{namespaceradial_afdcd51f696c1a0102812d6debfe6136b}} 
+\index{radial@{radial}!byk@{byk}}
+\index{byk@{byk}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{byk}{byk}}
+{\footnotesize\ttfamily real(8) radial\+::byk}
+
+\mbox{\Hypertarget{namespaceradial_a21f827a27abed0866ca2421b07cac524}\label{namespaceradial_a21f827a27abed0866ca2421b07cac524}} 
+\index{radial@{radial}!bzk@{bzk}}
+\index{bzk@{bzk}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{bzk}{bzk}}
+{\footnotesize\ttfamily real(8) radial\+::bzk}
+
+\mbox{\Hypertarget{namespaceradial_a7da3d3ff25a084e0f1726b43246456db}\label{namespaceradial_a7da3d3ff25a084e0f1726b43246456db}} 
+\index{radial@{radial}!d0@{d0}}
+\index{d0@{d0}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{d0}{d0}}
+{\footnotesize\ttfamily real(8) radial\+::d0 =0.D0}
+
+\mbox{\Hypertarget{namespaceradial_a3f769c9476a20540bcc72a69cd0eb89d}\label{namespaceradial_a3f769c9476a20540bcc72a69cd0eb89d}} 
+\index{radial@{radial}!d1@{d1}}
+\index{d1@{d1}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{d1}{d1}}
+{\footnotesize\ttfamily real(8) radial\+::d1 =1.D0}
+
+\mbox{\Hypertarget{namespaceradial_af44a7edce48b3594139561fd739a871b}\label{namespaceradial_af44a7edce48b3594139561fd739a871b}} 
+\index{radial@{radial}!d10@{d10}}
+\index{d10@{d10}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{d10}{d10}}
+{\footnotesize\ttfamily real(8) radial\+::d10 =10.D0}
+
+\mbox{\Hypertarget{namespaceradial_a582f795d42ca403c46fa3a82edbd0827}\label{namespaceradial_a582f795d42ca403c46fa3a82edbd0827}} 
+\index{radial@{radial}!d12@{d12}}
+\index{d12@{d12}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{d12}{d12}}
+{\footnotesize\ttfamily real(8) radial\+::d12 =12.D0}
+
+\mbox{\Hypertarget{namespaceradial_a1fc198c6969c5a56ac9013fa73c37e20}\label{namespaceradial_a1fc198c6969c5a56ac9013fa73c37e20}} 
+\index{radial@{radial}!d16@{d16}}
+\index{d16@{d16}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{d16}{d16}}
+{\footnotesize\ttfamily real(8) radial\+::d16 =16.D0}
+
+\mbox{\Hypertarget{namespaceradial_a308a72980494f6362513c26743584f04}\label{namespaceradial_a308a72980494f6362513c26743584f04}} 
+\index{radial@{radial}!d2@{d2}}
+\index{d2@{d2}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{d2}{d2}}
+{\footnotesize\ttfamily real(8) radial\+::d2 =2.D0}
+
+\mbox{\Hypertarget{namespaceradial_aff46e353ad99ca45790d98f101441d0a}\label{namespaceradial_aff46e353ad99ca45790d98f101441d0a}} 
+\index{radial@{radial}!d3@{d3}}
+\index{d3@{d3}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{d3}{d3}}
+{\footnotesize\ttfamily real(8) radial\+::d3 =3.D0}
+
+\mbox{\Hypertarget{namespaceradial_a5dcbb41fcacfe6e47fe94dd56edaa53f}\label{namespaceradial_a5dcbb41fcacfe6e47fe94dd56edaa53f}} 
+\index{radial@{radial}!d30@{d30}}
+\index{d30@{d30}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{d30}{d30}}
+{\footnotesize\ttfamily real(8) radial\+::d30 =30.D0}
+
+\mbox{\Hypertarget{namespaceradial_aa2371f9b650105076a0a3509fb6cf46b}\label{namespaceradial_aa2371f9b650105076a0a3509fb6cf46b}} 
+\index{radial@{radial}!d4@{d4}}
+\index{d4@{d4}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{d4}{d4}}
+{\footnotesize\ttfamily real(8) radial\+::d4 =4.D0}
+
+\mbox{\Hypertarget{namespaceradial_ab285c375f42d3413d8a26d503b1119d2}\label{namespaceradial_ab285c375f42d3413d8a26d503b1119d2}} 
+\index{radial@{radial}!d5@{d5}}
+\index{d5@{d5}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{d5}{d5}}
+{\footnotesize\ttfamily real(8) radial\+::d5 =0.\+5D0}
+
+\mbox{\Hypertarget{namespaceradial_ad03a1268c5d4231bdc0da0c2e08df7e8}\label{namespaceradial_ad03a1268c5d4231bdc0da0c2e08df7e8}} 
+\index{radial@{radial}!d6@{d6}}
+\index{d6@{d6}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{d6}{d6}}
+{\footnotesize\ttfamily real(8) radial\+::d6 =6.D0}
+
+\mbox{\Hypertarget{namespaceradial_a29cab2b474da8f8dc7000e9eba6665fe}\label{namespaceradial_a29cab2b474da8f8dc7000e9eba6665fe}} 
+\index{radial@{radial}!d8@{d8}}
+\index{d8@{d8}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{d8}{d8}}
+{\footnotesize\ttfamily real(8) radial\+::d8 =8.D0}
+
+\mbox{\Hypertarget{namespaceradial_ace94e43425dafb24603c097b2d364d69}\label{namespaceradial_ace94e43425dafb24603c097b2d364d69}} 
+\index{radial@{radial}!eh@{eh}}
+\index{eh@{eh}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{eh}{eh}}
+{\footnotesize\ttfamily real(8) radial\+::eh}
+
+\mbox{\Hypertarget{namespaceradial_a1cd612100ac6bbc6b6ddf2cad79317b9}\label{namespaceradial_a1cd612100ac6bbc6b6ddf2cad79317b9}} 
+\index{radial@{radial}!ero@{ero}}
+\index{ero@{ero}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{ero}{ero}}
+{\footnotesize\ttfamily character(4), dimension(\+:), allocatable radial\+::ero}
+
+\mbox{\Hypertarget{namespaceradial_a19e2966926ccb55584dcbe35500cbf6c}\label{namespaceradial_a19e2966926ccb55584dcbe35500cbf6c}} 
+\index{radial@{radial}!fine@{fine}}
+\index{fine@{fine}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{fine}{fine}}
+{\footnotesize\ttfamily real(8) radial\+::fine = 0.\+25\mbox{\hyperlink{namespaceradial_a7da3d3ff25a084e0f1726b43246456db}{d0}}/(137.\+03599976\mbox{\hyperlink{namespaceradial_a7da3d3ff25a084e0f1726b43246456db}{d0}})$\ast$$\ast$2}
+
+\mbox{\Hypertarget{namespaceradial_aae898bcb0d68585670b2c27bbc005b92}\label{namespaceradial_aae898bcb0d68585670b2c27bbc005b92}} 
+\index{radial@{radial}!h@{h}}
+\index{h@{h}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily real(8) radial\+::h = 1./16.D0}
+
+\mbox{\Hypertarget{namespaceradial_a92479320f491d69f88233357a6229cec}\label{namespaceradial_a92479320f491d69f88233357a6229cec}} 
+\index{radial@{radial}!h1@{h1}}
+\index{h1@{h1}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{h1}{h1}}
+{\footnotesize\ttfamily real(8) radial\+::h1}
+
+\mbox{\Hypertarget{namespaceradial_ae0744b0b9be3d94683a7e8ad974323fe}\label{namespaceradial_ae0744b0b9be3d94683a7e8ad974323fe}} 
+\index{radial@{radial}!irf@{irf}}
+\index{irf@{irf}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{irf}{irf}}
+{\footnotesize\ttfamily integer radial\+::irf = 90}
+
+\mbox{\Hypertarget{namespaceradial_aa85d1570b304a3eaeb8afebdd95aae56}\label{namespaceradial_aa85d1570b304a3eaeb8afebdd95aae56}} 
+\index{radial@{radial}!iscr@{iscr}}
+\index{iscr@{iscr}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{iscr}{iscr}}
+{\footnotesize\ttfamily integer radial\+::iscr = 90}
+
+\mbox{\Hypertarget{namespaceradial_a11f17ed11b0cceca9f90945111caa2da}\label{namespaceradial_a11f17ed11b0cceca9f90945111caa2da}} 
+\index{radial@{radial}!jrf@{jrf}}
+\index{jrf@{jrf}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{jrf}{jrf}}
+{\footnotesize\ttfamily integer radial\+::jrf = 90}
+
+\mbox{\Hypertarget{namespaceradial_aa3415891fd2b77b65d5f87f88b9eb264}\label{namespaceradial_aa3415891fd2b77b65d5f87f88b9eb264}} 
+\index{radial@{radial}!kclosd@{kclosd}}
+\index{kclosd@{kclosd}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{kclosd}{kclosd}}
+{\footnotesize\ttfamily integer radial\+::kclosd = 0}
+
+\mbox{\Hypertarget{namespaceradial_ae627f2eed40df57749ba4a4cb14a82ab}\label{namespaceradial_ae627f2eed40df57749ba4a4cb14a82ab}} 
+\index{radial@{radial}!kro@{kro}}
+\index{kro@{kro}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{kro}{kro}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable radial\+::kro}
+
+\mbox{\Hypertarget{namespaceradial_aee35c1f9bce9257d1f4d04844d4570fc}\label{namespaceradial_aee35c1f9bce9257d1f4d04844d4570fc}} 
+\index{radial@{radial}!lro@{lro}}
+\index{lro@{lro}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{lro}{lro}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable radial\+::lro}
+
+\mbox{\Hypertarget{namespaceradial_a3a9ec05fe342c7a03583789ac56f6d5e}\label{namespaceradial_a3a9ec05fe342c7a03583789ac56f6d5e}} 
+\index{radial@{radial}!mass@{mass}}
+\index{mass@{mass}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{mass}{mass}}
+{\footnotesize\ttfamily integer radial\+::mass = 0}
+
+\mbox{\Hypertarget{namespaceradial_acc551f3106b1105758df709f1f65a4f9}\label{namespaceradial_acc551f3106b1105758df709f1f65a4f9}} 
+\index{radial@{radial}!mexp@{mexp}}
+\index{mexp@{mexp}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{mexp}{mexp}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable radial\+::mexp}
+
+\mbox{\Hypertarget{namespaceradial_a7c4ee5f080edda3e18b25a7519be0e99}\label{namespaceradial_a7c4ee5f080edda3e18b25a7519be0e99}} 
+\index{radial@{radial}!mrf@{mrf}}
+\index{mrf@{mrf}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{mrf}{mrf}}
+{\footnotesize\ttfamily integer radial\+::mrf = 0}
+
+\mbox{\Hypertarget{namespaceradial_a766c211cf806515e609de5b4261084cf}\label{namespaceradial_a766c211cf806515e609de5b4261084cf}} 
+\index{radial@{radial}!mro@{mro}}
+\index{mro@{mro}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{mro}{mro}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable radial\+::mro}
+
+\mbox{\Hypertarget{namespaceradial_ab34398d216cdc8ac2409decb393003ae}\label{namespaceradial_ab34398d216cdc8ac2409decb393003ae}} 
+\index{radial@{radial}!myk@{myk}}
+\index{myk@{myk}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{myk}{myk}}
+{\footnotesize\ttfamily integer radial\+::myk}
+
+\mbox{\Hypertarget{namespaceradial_a020764b41b5ef4863f16732773c994b4}\label{namespaceradial_a020764b41b5ef4863f16732773c994b4}} 
+\index{radial@{radial}!mzk@{mzk}}
+\index{mzk@{mzk}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{mzk}{mzk}}
+{\footnotesize\ttfamily integer radial\+::mzk}
+
+\mbox{\Hypertarget{namespaceradial_aa5116d82cd84f34f5455878bc243cb95}\label{namespaceradial_aa5116d82cd84f34f5455878bc243cb95}} 
+\index{radial@{radial}!nr@{nr}}
+\index{nr@{nr}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{nr}{nr}}
+{\footnotesize\ttfamily integer radial\+::nr = 220}
+
+\mbox{\Hypertarget{namespaceradial_ab70bf09987e0caab62b1a066384186f0}\label{namespaceradial_ab70bf09987e0caab62b1a066384186f0}} 
+\index{radial@{radial}!nrf@{nrf}}
+\index{nrf@{nrf}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{nrf}{nrf}}
+{\footnotesize\ttfamily integer radial\+::nrf = 0}
+
+\mbox{\Hypertarget{namespaceradial_a55e0aca435f95fb156129f1f5d95ca2d}\label{namespaceradial_a55e0aca435f95fb156129f1f5d95ca2d}} 
+\index{radial@{radial}!nro@{nro}}
+\index{nro@{nro}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{nro}{nro}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable radial\+::nro}
+
+\mbox{\Hypertarget{namespaceradial_a7d3f2758fcbd5697bacae6e54dfbc989}\label{namespaceradial_a7d3f2758fcbd5697bacae6e54dfbc989}} 
+\index{radial@{radial}!oo@{oo}}
+\index{oo@{oo}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{oo}{oo}}
+{\footnotesize\ttfamily logical radial\+::oo = .F\+A\+L\+S\+E.}
+
+\mbox{\Hypertarget{namespaceradial_ad3033e7272d1356b3227d6d204cec95d}\label{namespaceradial_ad3033e7272d1356b3227d6d204cec95d}} 
+\index{radial@{radial}!overlaps@{overlaps}}
+\index{overlaps@{overlaps}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{overlaps}{overlaps}}
+{\footnotesize\ttfamily real(8), dimension(\+:,\+:), allocatable radial\+::overlaps}
+
+\mbox{\Hypertarget{namespaceradial_a9cf3b931e33e489c5870ca16c6349850}\label{namespaceradial_a9cf3b931e33e489c5870ca16c6349850}} 
+\index{radial@{radial}!p@{p}}
+\index{p@{p}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily real(8), dimension(\+:,\+:), allocatable radial\+::p}
+
+\mbox{\Hypertarget{namespaceradial_a4846b86be8bd9b80401f174c2c9d781f}\label{namespaceradial_a4846b86be8bd9b80401f174c2c9d781f}} 
+\index{radial@{radial}!r@{r}}
+\index{r@{r}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable radial\+::r}
+
+\mbox{\Hypertarget{namespaceradial_a00e1b6345b9a8ac7c1aa8730df7c684e}\label{namespaceradial_a00e1b6345b9a8ac7c1aa8730df7c684e}} 
+\index{radial@{radial}!r2@{r2}}
+\index{r2@{r2}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{r2}{r2}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable radial\+::r2}
+
+\mbox{\Hypertarget{namespaceradial_a11c8fa9f27b6e943fd45ee6630f0e689}\label{namespaceradial_a11c8fa9f27b6e943fd45ee6630f0e689}} 
+\index{radial@{radial}!rel@{rel}}
+\index{rel@{rel}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{rel}{rel}}
+{\footnotesize\ttfamily logical radial\+::rel = .F\+A\+L\+S\+E.}
+
+\mbox{\Hypertarget{namespaceradial_aee81e1d295d4dad29dd6e89f4a55c87e}\label{namespaceradial_aee81e1d295d4dad29dd6e89f4a55c87e}} 
+\index{radial@{radial}!rho@{rho}}
+\index{rho@{rho}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{rho}{rho}}
+{\footnotesize\ttfamily real(8) radial\+::rho = -\/4.D0}
+
+\mbox{\Hypertarget{namespaceradial_a6750acc8ce8278a4c9e07354730b37fb}\label{namespaceradial_a6750acc8ce8278a4c9e07354730b37fb}} 
+\index{radial@{radial}!rmass@{rmass}}
+\index{rmass@{rmass}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{rmass}{rmass}}
+{\footnotesize\ttfamily real(8) radial\+::rmass = 0.\mbox{\hyperlink{namespaceradial_a7da3d3ff25a084e0f1726b43246456db}{d0}}}
+
+\mbox{\Hypertarget{namespaceradial_a506d582a90d5f32c8d8a4840b4e1d709}\label{namespaceradial_a506d582a90d5f32c8d8a4840b4e1d709}} 
+\index{radial@{radial}!rr@{rr}}
+\index{rr@{rr}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{rr}{rr}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable radial\+::rr}
+
+\mbox{\Hypertarget{namespaceradial_aecb3549218ccf96cd54aa505104a08b4}\label{namespaceradial_aecb3549218ccf96cd54aa505104a08b4}} 
+\index{radial@{radial}!term@{term}}
+\index{term@{term}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{term}{term}}
+{\footnotesize\ttfamily character(6) radial\+::term = \textquotesingle{}term\textquotesingle{}}
+
+\mbox{\Hypertarget{namespaceradial_a9d73eddd9178c0658c2b46e68f16b0a2}\label{namespaceradial_a9d73eddd9178c0658c2b46e68f16b0a2}} 
+\index{radial@{radial}!yk@{yk}}
+\index{yk@{yk}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{yk}{yk}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable radial\+::yk}
+
+\mbox{\Hypertarget{namespaceradial_a0f83df5749b4448507d5d4408262e469}\label{namespaceradial_a0f83df5749b4448507d5d4408262e469}} 
+\index{radial@{radial}!z@{z}}
+\index{z@{z}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily real(8) radial\+::z = 0.\mbox{\hyperlink{namespaceradial_a7da3d3ff25a084e0f1726b43246456db}{d0}}}
+
+\mbox{\Hypertarget{namespaceradial_ab623d63b64e29958feb081fab49d8b3f}\label{namespaceradial_ab623d63b64e29958feb081fab49d8b3f}} 
+\index{radial@{radial}!zk@{zk}}
+\index{zk@{zk}!radial@{radial}}
+\doxysubsubsection{\texorpdfstring{zk}{zk}}
+{\footnotesize\ttfamily real(8), dimension(\+:), allocatable radial\+::zk}
+

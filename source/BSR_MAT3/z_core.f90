@@ -1,35 +1,36 @@
 !======================================================================
       MODULE Z_core
 !======================================================================
-!     contains B-splne representation for Z-integral
-!     including the interaction with core
+!> @ingroup bsr_mat
+!> @brief     contains B-splne representation for Z-integral
+!>     including the interaction with core
 !----------------------------------------------------------------------
-!     zl(ns,ks) - matrix of Z-operator in the B-splne basis
-!                 (in symmetric lower-column mode)
-!
-!     zl_dir(ns,ks) - direct interaction with core
-!                     (in symmetric upper-column mode)
-!
-!     zl and zl_dir have different representation !!!
-!
-!     lz_dir = [-1|1] - (not|yes) for Done of zl_dir
-!     (this parameter allows us to compute the zl_dir only once because 
+!>     zl(ns,ks) - matrix of Z-operator in the B-splne basis
+!!                 (in symmetric lower-column mode)
+!!
+!!     zl_dir(ns,ks) - direct interaction with core
+!!                     (in symmetric upper-column mode)
+!!
+!!     zl and zl_dir have different representation !!!
+!!
+!!     lz_dir = [-1|1] - (not|yes) for Done of zl_dir
+!!     (this parameter allows us to compute the zl_dir only once because 
 !!     zl_dir does not depend on l) 
-!
-!     zl_exc(ns,ns) - exchange interaction with core
-!
-!     zl_core(ns,ns) - final zl with core interaction
-!                      (in full representation)
-!
-!     mlz - max. l for so-interaction
-!
-!     zl_full(ns,ns,mlz) - all z-matreces
-!
-!     Z_int - Z-integrals <P_i| Z |P_j>
-! 
-!     Z_vec - vectors  < . | Z | P_i>
-!
-!     d,x - auxiliary arrays
+!!
+!!     zl_exc(ns,ns) - exchange interaction with core
+!!
+!!     zl_core(ns,ns) - final zl with core interaction
+!!                      (in full representation)
+!!
+!!     mlz - max. l for so-interaction
+!!
+!!     zl_full(ns,ns,mlz) - all z-matreces
+!!
+!!     Z_int - Z-integrals <P_i| Z |P_j>
+!! 
+!!     Z_vec - vectors  < . | Z | P_i>
+!!
+!!     d,x - auxiliary arrays
 !------------------------------------------------------------------
 
       Implicit none
@@ -44,7 +45,8 @@
 !=====================================================================
       Subroutine Alloc_zcore(ns,ks,nbf)
 !=====================================================================
-!     allocate arrays in module Z_core
+!> @ingroup bsr_mat
+!> @brief     allocate arrays in module Z_core
 !---------------------------------------------------------------------
       Use Z_core
 
@@ -81,7 +83,8 @@
 !======================================================================
       SUBROUTINE Gen_Zval
 !======================================================================
-!     Generates the Z-integrals and vectors 
+!> @ingroup bsr_mat
+!> @brief     Generates the Z-integrals and vectors 
 !----------------------------------------------------------------------
       Use bsr_mat
       Use Z_core 
@@ -131,8 +134,9 @@
 !=====================================================================
       Subroutine INTZ_core(l)
 !=====================================================================
-!     generate B-splne representation in array zl_core 
-!     for Z-integrals with core interaction for given l 
+!> @ingroup bsr_mat
+!> @brief     generate B-splne representation in array zl_core 
+!>     for Z-integrals with core interaction for given l 
 !---------------------------------------------------------------------
       Use bsr_mat;  Use Z_core
       Use spline_param; Use spline_atomic; Use spline_orbitals
@@ -253,8 +257,9 @@
 !====================================================================
       SUBROUTINE Gen_zzeta(rm,izcorr)
 !====================================================================
-!     B-spline matrix for Z*fine*1/r^3, Used for spin-orbit interaction;
-!     if izcorr > 0,  multiplied with correction r/(r+2*z*fine)
+!> @ingroup bsr_mat
+!> @brief     B-spline matrix for Z*fine*1/r^3, Used for spin-orbit interaction;
+!>     if izcorr > 0,  multiplied with correction r/(r+2*z*fine)
 !--------------------------------------------------------------------
       Use spline_param; Use spline_grid;  Use spline_atomic
 

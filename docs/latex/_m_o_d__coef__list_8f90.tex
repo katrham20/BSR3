@@ -1,0 +1,46 @@
+\hypertarget{_m_o_d__coef__list_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+Z\+C\+O\+M/\+M\+O\+D\+\_\+coef\+\_\+list.f90 File Reference}
+\label{_m_o_d__coef__list_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/ZCOM/MOD\_coef\_list.f90@{/Users/khamilton/Codes/BSR3/libraries/ZCOM/MOD\_coef\_list.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacecoef__list}{coef\+\_\+list}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__coef__list_8f90_ad4d78550d96eaf16e8409224d954b7d4}{alloc\+\_\+coef\+\_\+list}} (m, k, eps)
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__coef__list_8f90_a5725f3d523d6ca0fe968bb68211a914c}{add\+\_\+coef\+\_\+list}} (n, in, C)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{namespacecoef__list_ad613b2142dcf5d8e1d19f18475a45ea8}{coef\+\_\+list\+::nrk}} = 0
+\item 
+integer \mbox{\hyperlink{namespacecoef__list_a9896f866d31b4829b79b431041365071}{coef\+\_\+list\+::mrk}} = 0
+\item 
+integer \mbox{\hyperlink{namespacecoef__list_a7a88637bb55c33e9b9a2967f4fc35c3d}{coef\+\_\+list\+::irk}} = 2$\ast$$\ast$10
+\item 
+integer \mbox{\hyperlink{namespacecoef__list_afa7a8376ca942fdbe313b47338990c6f}{coef\+\_\+list\+::nnk}} = 0
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacecoef__list_a5bf453b8deebb4168b2a0d1cc7636a88}{coef\+\_\+list\+::crk}}
+\item 
+integer, dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacecoef__list_a6d0470b31f954bb4633ec2ca1c3a2a0a}{coef\+\_\+list\+::krk}}
+\item 
+real(8) \mbox{\hyperlink{namespacecoef__list_a10a378c1c58e9bbd8623116e4bfe277c}{coef\+\_\+list\+::eps\+\_\+c}} = 1.d-\/12
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{_m_o_d__coef__list_8f90_a5725f3d523d6ca0fe968bb68211a914c}\label{_m_o_d__coef__list_8f90_a5725f3d523d6ca0fe968bb68211a914c}} 
+\index{MOD\_coef\_list.f90@{MOD\_coef\_list.f90}!add\_coef\_list@{add\_coef\_list}}
+\index{add\_coef\_list@{add\_coef\_list}!MOD\_coef\_list.f90@{MOD\_coef\_list.f90}}
+\doxysubsubsection{\texorpdfstring{add\_coef\_list()}{add\_coef\_list()}}
+{\footnotesize\ttfamily subroutine add\+\_\+coef\+\_\+list (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{n,  }\item[{integer, dimension(n), intent(in)}]{in,  }\item[{real(8), intent(in)}]{C }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_m_o_d__coef__list_8f90_ad4d78550d96eaf16e8409224d954b7d4}\label{_m_o_d__coef__list_8f90_ad4d78550d96eaf16e8409224d954b7d4}} 
+\index{MOD\_coef\_list.f90@{MOD\_coef\_list.f90}!alloc\_coef\_list@{alloc\_coef\_list}}
+\index{alloc\_coef\_list@{alloc\_coef\_list}!MOD\_coef\_list.f90@{MOD\_coef\_list.f90}}
+\doxysubsubsection{\texorpdfstring{alloc\_coef\_list()}{alloc\_coef\_list()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+coef\+\_\+list (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{m,  }\item[{integer, intent(in)}]{k,  }\item[{real(8), intent(in)}]{eps }\end{DoxyParamCaption})}
+

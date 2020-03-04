@@ -1,0 +1,98 @@
+\hypertarget{mod__channel__jj_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+Z\+C\+O\+N\+F\+J\+J/mod\+\_\+channel\+\_\+jj.f90 File Reference}
+\label{mod__channel__jj_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/ZCONFJJ/mod\_channel\_jj.f90@{/Users/khamilton/Codes/BSR3/libraries/ZCONFJJ/mod\_channel\_jj.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacechannel__jj}{channel\+\_\+jj}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{mod__channel__jj_8f90_aefe48eadd54587d50a3f661bb1d49d4b}{alloc\+\_\+channel\+\_\+jj}} (m)
+\item 
+subroutine \mbox{\hyperlink{mod__channel__jj_8f90_ab585d0dda61ed4240963f47d671a759c}{read\+\_\+channel\+\_\+jj}} (nut, klsp)
+\item 
+subroutine \mbox{\hyperlink{mod__channel__jj_8f90_a122b6f7e0b723b456fe8bdc49bd2a82a}{r\+\_\+pert}} (nu)
+\item 
+subroutine \mbox{\hyperlink{mod__channel__jj_8f90_a9aa4b73bb0d32e44191a047bc633d379}{allocate\+\_\+pert}} (m)
+\item 
+integer function \mbox{\hyperlink{mod__channel__jj_8f90_a5e483f71075fbf98dd45cfedf7903095}{ifind\+\_\+channel\+\_\+jj}} (ic)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{namespacechannel__jj_a1c69bb74d707423f16646f99f7ad1920}{channel\+\_\+jj\+::jpar}} = 0
+\item 
+integer \mbox{\hyperlink{namespacechannel__jj_a896eed825fa1892855729d567078ecc3}{channel\+\_\+jj\+::ipar}} = 0
+\item 
+integer \mbox{\hyperlink{namespacechannel__jj_a4266aaf48c9b16f2976ce3792a52b54a}{channel\+\_\+jj\+::nch}} = 0
+\item 
+integer \mbox{\hyperlink{namespacechannel__jj_a3f211f85caf707bac41b0efc7c01f0f9}{channel\+\_\+jj\+::mch}} = 0
+\item 
+integer \mbox{\hyperlink{namespacechannel__jj_a44b6c88b0b69e0be989fe86a6448163b}{channel\+\_\+jj\+::imch}} =512
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacechannel__jj_a01a106770d5474c49e8d205baf8d39fe}{channel\+\_\+jj\+::kch}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacechannel__jj_a967746bf9653140cedd542811b88f5ec}{channel\+\_\+jj\+::lch}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacechannel__jj_a3e369c2be0e2468395b32236d919ddc0}{channel\+\_\+jj\+::jjch}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacechannel__jj_a6d6d860a9053c6668ab006de62fd6239}{channel\+\_\+jj\+::iptar}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacechannel__jj_a77a13adb87f6c646b082f62964c9ca10}{channel\+\_\+jj\+::ipconf}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacechannel__jj_a2fec350164ae5f18e2749787eea6468f}{channel\+\_\+jj\+::ipch}}
+\item 
+character(5), dimension(\+:), allocatable \mbox{\hyperlink{namespacechannel__jj_aa117c5f9992a1a4236c6c1f0cd2c2a24}{channel\+\_\+jj\+::elc}}
+\item 
+integer \mbox{\hyperlink{namespacechannel__jj_af6b9a346dce0ecd858e4c78fc618aa82}{channel\+\_\+jj\+::ncp}}
+\item 
+integer \mbox{\hyperlink{namespacechannel__jj_a0913e031b2885d2584a0bfbc68a82fd9}{channel\+\_\+jj\+::nwp}}
+\item 
+character(80) \mbox{\hyperlink{namespacechannel__jj_a3616e821d478da5ecb85a4f73041c387}{channel\+\_\+jj\+::afp}}
+\item 
+character(80) \mbox{\hyperlink{namespacechannel__jj_ac610aad16a0604826b9c2e4f609a5cce}{channel\+\_\+jj\+::bfp}}
+\item 
+integer \mbox{\hyperlink{namespacechannel__jj_a20ad2a82d6ddc5d6f84da35e89b331ac}{channel\+\_\+jj\+::npert}} =0
+\item 
+integer \mbox{\hyperlink{namespacechannel__jj_a310c30ef88bbc0da4c4312b76e812c02}{channel\+\_\+jj\+::mpert}} =0
+\item 
+integer \mbox{\hyperlink{namespacechannel__jj_afea0702e76312fb429bd2d036d4a5dce}{channel\+\_\+jj\+::ipert}} =64
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacechannel__jj_a36ba3aa62e2939328d6c44c22ed68a59}{channel\+\_\+jj\+::ippert}}
+\item 
+character(4) \mbox{\hyperlink{namespacechannel__jj_ae6848c87d12b3d2f8ca7f8d0cfa2a381}{channel\+\_\+jj\+::tpar}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{mod__channel__jj_8f90_aefe48eadd54587d50a3f661bb1d49d4b}\label{mod__channel__jj_8f90_aefe48eadd54587d50a3f661bb1d49d4b}} 
+\index{mod\_channel\_jj.f90@{mod\_channel\_jj.f90}!alloc\_channel\_jj@{alloc\_channel\_jj}}
+\index{alloc\_channel\_jj@{alloc\_channel\_jj}!mod\_channel\_jj.f90@{mod\_channel\_jj.f90}}
+\doxysubsubsection{\texorpdfstring{alloc\_channel\_jj()}{alloc\_channel\_jj()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+channel\+\_\+jj (\begin{DoxyParamCaption}\item[{integer}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mod__channel__jj_8f90_a9aa4b73bb0d32e44191a047bc633d379}\label{mod__channel__jj_8f90_a9aa4b73bb0d32e44191a047bc633d379}} 
+\index{mod\_channel\_jj.f90@{mod\_channel\_jj.f90}!allocate\_pert@{allocate\_pert}}
+\index{allocate\_pert@{allocate\_pert}!mod\_channel\_jj.f90@{mod\_channel\_jj.f90}}
+\doxysubsubsection{\texorpdfstring{allocate\_pert()}{allocate\_pert()}}
+{\footnotesize\ttfamily subroutine allocate\+\_\+pert (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{m }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mod__channel__jj_8f90_a5e483f71075fbf98dd45cfedf7903095}\label{mod__channel__jj_8f90_a5e483f71075fbf98dd45cfedf7903095}} 
+\index{mod\_channel\_jj.f90@{mod\_channel\_jj.f90}!ifind\_channel\_jj@{ifind\_channel\_jj}}
+\index{ifind\_channel\_jj@{ifind\_channel\_jj}!mod\_channel\_jj.f90@{mod\_channel\_jj.f90}}
+\doxysubsubsection{\texorpdfstring{ifind\_channel\_jj()}{ifind\_channel\_jj()}}
+{\footnotesize\ttfamily integer function ifind\+\_\+channel\+\_\+jj (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ic }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mod__channel__jj_8f90_a122b6f7e0b723b456fe8bdc49bd2a82a}\label{mod__channel__jj_8f90_a122b6f7e0b723b456fe8bdc49bd2a82a}} 
+\index{mod\_channel\_jj.f90@{mod\_channel\_jj.f90}!r\_pert@{r\_pert}}
+\index{r\_pert@{r\_pert}!mod\_channel\_jj.f90@{mod\_channel\_jj.f90}}
+\doxysubsubsection{\texorpdfstring{r\_pert()}{r\_pert()}}
+{\footnotesize\ttfamily subroutine r\+\_\+pert (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mod__channel__jj_8f90_ab585d0dda61ed4240963f47d671a759c}\label{mod__channel__jj_8f90_ab585d0dda61ed4240963f47d671a759c}} 
+\index{mod\_channel\_jj.f90@{mod\_channel\_jj.f90}!read\_channel\_jj@{read\_channel\_jj}}
+\index{read\_channel\_jj@{read\_channel\_jj}!mod\_channel\_jj.f90@{mod\_channel\_jj.f90}}
+\doxysubsubsection{\texorpdfstring{read\_channel\_jj()}{read\_channel\_jj()}}
+{\footnotesize\ttfamily subroutine read\+\_\+channel\+\_\+jj (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nut,  }\item[{integer, intent(in)}]{klsp }\end{DoxyParamCaption})}
+

@@ -1,7 +1,8 @@
 !======================================================================
       Integer Function Ifind_channel_serial(ic)
 !======================================================================
-!     find channel (or perturber) for given configuration 'ic'
+!> @ingroup bsr_mat
+!> @brief     find channel (or perturber) for given configuration 'ic'
 !----------------------------------------------------------------------
       Use target; Use channel
 

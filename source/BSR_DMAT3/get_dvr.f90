@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine  Get_dvr(i1,i2,cl,cv,v,w)
 !======================================================================
-!     provide d-vectors
+!> @ingroup bsr_dmat
+!> @brief     provide d-vectors
 !----------------------------------------------------------------------
       Use spline_param,    only: ns
       Use spline_orbitals, only: lbs

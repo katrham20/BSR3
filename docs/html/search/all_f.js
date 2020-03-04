@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['o_5fdata_2796',['o_data',['../group__bsr__mat.html#ga3361f70e89302ec2c692df11ae50028a',1,'o_data:&#160;O_data.f90'],['../_m_p_i_2_o__data_8f90.html#a3361f70e89302ec2c692df11ae50028a',1,'o_data:&#160;o_data.f90']]],
+  ['o_5fdata_2ef90_2797',['O_data.f90',['../_o__data_8f90.html',1,'(Global Namespace)'],['../_m_p_i_2_o__data_8f90.html',1,'(Global Namespace)']]],
+  ['obs_2798',['obs',['../namespacespline__orbitals.html#a81bbc441e0b4b44ea71076362f06793c',1,'spline_orbitals::obs()'],['../_m_o_d__obs_8f90.html#a6495ecea757b4b064beac3feeb3c500c',1,'obs():&#160;MOD_obs.f90']]],
+  ['obs1_2799',['obs1',['../namespacedbs__orbitals__pq.html#a4e4ded7483a15a487b96c7a1a6ac08db',1,'dbs_orbitals_pq']]],
+  ['obs2_2800',['obs2',['../namespacedbs__orbitals__pq.html#aed5077541e3b2e56cdd8962466a96320',1,'dbs_orbitals_pq']]],
+  ['of_2801',['of',['../namespacebsr__hd.html#a84a799951b89e2b360dcb101658bdc75',1,'bsr_hd']]],
+  ['omega_2802',['omega',['../crees_8f.html#a01eb41a6f7c144e31d98169baf9b2833',1,'omega:&#160;crees.f'],['../_m_p_i_2crees_8f.html#a01eb41a6f7c144e31d98169baf9b2833',1,'omega:&#160;crees.f'],['../_s_c_t__crees_8f.html#a01eb41a6f7c144e31d98169baf9b2833',1,'omega:&#160;SCT_crees.f']]],
+  ['one_2803',['one',['../namespacebsr__hd.html#a6535acc02c3409e7e23f070fd0561e38',1,'bsr_hd::one()'],['../namespacebsr__pol.html#a72bd3561a65bb9da3cc1618221bf5edf',1,'bsr_pol::one()'],['../namespacezconst.html#afa89b518b203e15e4706b110997142b6',1,'zconst::one()']]],
+  ['one_5fover_5falpha_2804',['one_over_alpha',['../namespacezconst.html#afe57ccf1dcbf11c81ac70f0ca725c275',1,'zconst']]],
+  ['oo_2805',['oo',['../namespaceradial.html#a7d3f2758fcbd5697bacae6e54dfbc989',1,'radial']]],
+  ['open_5fbr_2806',['open_br',['../group__bsr__breit.html#ga2a93524886ea8debe392f17df7f605d8',1,'open_br(nu, klsp):&#160;open_br.f90'],['../_m_p_i_2open__br_8f90.html#a894fed9323ba9c1b6febf288e7e45f15',1,'open_br(nu):&#160;open_br.f90']]],
+  ['open_5fbr_2ef90_2807',['open_br.f90',['../open__br_8f90.html',1,'(Global Namespace)'],['../_m_p_i_2open__br_8f90.html',1,'(Global Namespace)']]],
+  ['openf_2808',['openf',['../source_2_b_s_r___u_t_i_l_s_2bsw123_8f90.html#adf4f38e90a93a9fe0db265cd881b91ab',1,'openf(nu, AF, AFOR, AST):&#160;bsw123.f90'],['../utilities_2bsw123_8f90.html#adf4f38e90a93a9fe0db265cd881b91ab',1,'openf(nu, AF, AFOR, AST):&#160;bsw123.f90']]],
+  ['oper_2809',['oper',['../namespaceparam__br.html#a4b9364e9b9d20f500c0da4ec29ffb4d2',1,'param_br']]],
+  ['orb_5fjj_2810',['orb_jj',['../namespaceorb__jj.html',1,'']]],
+  ['orb_5fls_2811',['orb_ls',['../namespaceorb__ls.html',1,'']]],
+  ['orthogonality_2812',['orthogonality',['../namespaceorthogonality.html',1,'']]],
+  ['otarg_2813',['otarg',['../namespacebsr__matrix.html#a4c41126c2d144002ddd8056bf25bf6f1',1,'bsr_matrix']]],
+  ['overlaps_2814',['overlaps',['../namespaceradial.html#ad3033e7272d1356b3227d6d204cec95d',1,'radial']]],
+  ['overlaps_5fion_2815',['overlaps_ion',['../namespaceoverlaps__ion.html',1,'']]],
+  ['ovli_2816',['ovli',['../namespaceoverlaps__ion.html#a4fbb9b3443d5759b854e93b4f0b942b9',1,'overlaps_ion']]],
+  ['ovlr_2817',['ovlr',['../namespaceoverlaps__ion.html#a81758e963b0a4bb0f9715c91e8aa5ca0',1,'overlaps_ion']]],
+  ['ovlt_2818',['ovlt',['../namespaceoverlaps__ion.html#a0fbf4e33d319f5e6a21970de5ac97057',1,'overlaps_ion']]]
+];

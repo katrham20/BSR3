@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine Add_cdata(ip,jp,C,j1,j2,j3,j4)
 !======================================================================
-!     add new data (C,j1,j2,j3,j4) to the list (ip:jp) in module cmdata
+!> @ingroup bsr_mat
+!> @brief     add new data (C,j1,j2,j3,j4) to the list (ip:jp) in module cmdata
 !----------------------------------------------------------------------
       Use cmdata
 

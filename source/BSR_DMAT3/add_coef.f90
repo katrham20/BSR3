@@ -1,8 +1,9 @@
 !======================================================================
       Subroutine Add_coef(CL,CV,j1,j2,j3)
 !======================================================================
-!     add new coefficient to the list for given itype
-!     Calls: Add_cdata, Gen_matrix
+!> @ingroup bsr_dmat
+!> @brief     add new coefficient to the list for given itype
+!>     Calls: Add_cdata, Gen_matrix
 !----------------------------------------------------------------------
       Use cmdata
 

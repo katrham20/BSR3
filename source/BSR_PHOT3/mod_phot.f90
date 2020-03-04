@@ -1,7 +1,8 @@
 !=====================================================================
       Module bsr_phot      
 !=====================================================================
-!     Contains common variable and arrays 
+!> @ingroup bsr_phot
+!> @brief     Contains common variable and arrays 
 !---------------------------------------------------------------------
       Implicit none
 
@@ -21,28 +22,28 @@
 
 ! ... arguments:
 
-      Integer, parameter :: nrange = 10  ! number of energy intervals
+      Integer, parameter :: nrange = 10  !< @param number of energy intervals
 
       Real(8) :: ELOW(nrange),ESTEP(nrange),EHIGH(nrange)
 
-      Real(8) :: e_exp = 0.d0      ! energy shift for initial state
-      Real(8) :: AWT = 0.d0        ! nuclear weight
+      Real(8) :: e_exp = 0.d0      !< @param energy shift for initial state
+      Real(8) :: AWT = 0.d0        !< @param nuclear weight
 
-      Integer :: ibug = 0          ! debug level
+      Integer :: ibug = 0          !< @param debug level
 
 ! ... ASYPCK parameters:
 
-      Integer :: iauto = 1         ! automatic choice of method
-      Integer :: mfgi  = 300       ! number of point in outer region
-      Real(8) :: AC = 0.001        ! accuracy, < 0.1, but < 0.0001
-      Real(8) :: DR = 0.1          ! r1 - r2, < 0.2 
+      Integer :: iauto = 1         !< @param automatic choice of method
+      Integer :: mfgi  = 300       !< @param number of point in outer region
+      Real(8) :: AC = 0.001        !< @param accuracy, < 0.1, but < 0.0001
+      Real(8) :: DR = 0.1          !< @param r1 - r2, < 0.2 
 
 ! ... target data:
 
-      Integer :: nelc              ! number of electrons
-      Integer :: nz                ! nuclear charge
-      Integer :: ion               ! residual charge
-      Integer :: ntarg             ! number of target states
+      Integer :: nelc              !< @param number of electrons
+      Integer :: nz                !< @param nuclear charge
+      Integer :: ion               !< @param residual charge
+      Integer :: ntarg             !< @param number of target states
       Real(8), allocatable :: Etarg(:) 
       Integer, allocatable :: Ltarg(:),IStarg(:),IPtarg(:) 
 
@@ -53,11 +54,11 @@
       Integer :: IL,IS,IP
       Real(8) :: E1
 
-      Integer :: nch               ! number of channels
-      Integer :: ncp               ! bound configurations
-      Integer :: nhm               ! size of R-matrix basis
-      Integer :: khm               ! number of pseudo-states
-      Integer :: km                ! max.multipole
+      Integer :: nch               !< @param number of channels
+      Integer :: ncp               !< @param bound configurations
+      Integer :: nhm               !< @param size of R-matrix basis
+      Integer :: khm               !< @param number of pseudo-states
+      Integer :: km                !< @param max.multipole
 
       Real(8) :: athreshold=0.0001d0, bthreshold=0.0001d0
 

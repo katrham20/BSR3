@@ -9,6 +9,7 @@
 !>@author Oleg Zatsarinny
 !======================================================================
 !>@defgroup bsr_prep BSR_PREP3
+!>@ingroup bsr_prep
 !>
 !>  1. Target states are ordered according to their energies.
 !>  2. The orthogonality conditions for one-electron orbitals 
@@ -29,33 +30,33 @@
 !>
 !>  where the parameter eps_ovl can be read from bsr_par, 
 !>  or as argument: eps_ovl=value
-!
-!======================================================================
-!
-!  INPUT FILES:
-!
-!     bsr_par   -  parameters of calculation if any
-!     target    -  list of target states and partial waves 
-!     c- and bsw-files for target states and perturbers if any
-!     knot.dat  -  B-spline parameters
-!     target_sub.bsw  - additional orbitals for orthogonality, if any 
-!
-!  OUTPUT FILES:
-!
-!     target        -  modified list of target states
-!     target.bsw    -  all target one-elelectron bsw-functions
-!     target_orb    -  list of physical target orbitals 
-!     targ_nnn.c    -  c-file for target nnn
-!     pert_nnn.c    -  c-file for perturber nnn, if any
-!     pert_nnn.bsw  -  w-file for perturber nnn, if any
-!     bsr_prep.log  -  running information
-!
-!  ARGUMENTS:   
-!
-!     eps_ovl  [1.d-6] - !< @param tolerance for overlaps
-!     eps_phys [0.5  ] - !< @param minimum occupation number for physical orbital 
-!     eps_sub  [0.5  ] - !< @param tolerance for substitution orbitals
-!
+!!
+!!======================================================================
+!!
+!!  INPUT FILES:
+!!
+!!     bsr_par   -  parameters of calculation if any
+!!     target    -  list of target states and partial waves 
+!!     c- and bsw-files for target states and perturbers if any
+!!     knot.dat  -  B-spline parameters
+!!     target_sub.bsw  - additional orbitals for orthogonality, if any 
+!!
+!!  OUTPUT FILES:
+!!
+!!     target        -  modified list of target states
+!!     target.bsw    -  all target one-elelectron bsw-functions
+!!     target_orb    -  list of physical target orbitals 
+!!     targ_nnn.c    -  c-file for target nnn
+!!     pert_nnn.c    -  c-file for perturber nnn, if any
+!!     pert_nnn.bsw  -  w-file for perturber nnn, if any
+!!     bsr_prep.log  -  running information
+!!
+!!  ARGUMENTS:   
+!!
+!!     eps_ovl  [1.d-6] - !< @param tolerance for overlaps
+!!     eps_phys [0.5  ] - !< @param minimum occupation number for physical orbital 
+!!     eps_sub  [0.5  ] - !< @param tolerance for substitution orbitals
+!!
 !======================================================================
      
       Use spline_param; Use spline_grid; Use spline_atomic               

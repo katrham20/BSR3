@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine J_case
 !======================================================================
-!     calculate f-values in LSJ mode
+!> @ingroup bsr_dmat
+!> @brief     calculate f-values in LSJ mode
 !----------------------------------------------------------------------
       Use bsr_dmat; Use dmatrix; Use term_LS
 

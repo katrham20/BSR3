@@ -1,0 +1,204 @@
+\hypertarget{mod__phot_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/source/\+B\+S\+R\+\_\+\+P\+H\+O\+T3/mod\+\_\+phot.f90 File Reference}
+\label{mod__phot_8f90}\index{/Users/khamilton/Codes/BSR3/source/BSR\_PHOT3/mod\_phot.f90@{/Users/khamilton/Codes/BSR3/source/BSR\_PHOT3/mod\_phot.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacebsr__phot}{bsr\+\_\+phot}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{group__bsr__phot_ga80ffdeb2062e76c99e2eb7d65df6aa71}{bsr\+\_\+phot\+::ma}} = 40
+\begin{DoxyCompactList}\small\item\em Contains common variable and arrays. \end{DoxyCompactList}\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a836a9baa47c4ecade13d74a6ac083e4e}{bsr\+\_\+phot\+::pri}} = 66
+\item 
+character(ma) \mbox{\hyperlink{namespacebsr__phot_a01e47e09eb1180445acad296db364ccb}{bsr\+\_\+phot\+::af\+\_\+log}} = \textquotesingle{}bsr\+\_\+phot.\+log\textquotesingle{}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_abb0b503cf184624d5cae3d509d7ef623}{bsr\+\_\+phot\+::inp}} = 7
+\item 
+character(ma) \mbox{\hyperlink{namespacebsr__phot_aac0b1ca9f18cd692d90f5be662675821}{bsr\+\_\+phot\+::af\+\_\+inp}} = \textquotesingle{}\mbox{\hyperlink{namespacebsr__phot_abb0b503cf184624d5cae3d509d7ef623}{bsr\+\_\+phot.\+inp}}\textquotesingle{}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a1091588b7f2bc58e454e70a042bdfbe6}{bsr\+\_\+phot\+::nud}} = 11
+\item 
+character(ma) \mbox{\hyperlink{namespacebsr__phot_ab7d29d242b21a18741425e7c9cd87e04}{bsr\+\_\+phot\+::af\+\_\+d}} = \textquotesingle{}d.\+nnn\textquotesingle{}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a49bf6a567aaf2a077dc05e5f778fb47f}{bsr\+\_\+phot\+::nuh}} = 12
+\item 
+character(ma) \mbox{\hyperlink{namespacebsr__phot_afdfbe34e46199e0baac9861f74598cee}{bsr\+\_\+phot\+::af\+\_\+h}} = \textquotesingle{}h.\+nnn\textquotesingle{}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_abed5d0a09f6af1fd0b0ee5e6966c9262}{bsr\+\_\+phot\+::nuw}} = 13
+\item 
+character(ma) \mbox{\hyperlink{namespacebsr__phot_ab2c2c71126eb6ad1840533a02b4906b0}{bsr\+\_\+phot\+::af\+\_\+w}} = \textquotesingle{}w.\+nnn\textquotesingle{}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a1d9350f4157517defa757851bb0ec773}{bsr\+\_\+phot\+::nub}} = 14
+\item 
+character(ma) \mbox{\hyperlink{namespacebsr__phot_a71e7fab1cbdcc31b74791c81cca9090c}{bsr\+\_\+phot\+::af\+\_\+b}} = \textquotesingle{}bound.\+nnn\textquotesingle{}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a62b8c0fedd9902ee2307d5f53fd3e85b}{bsr\+\_\+phot\+::ics}} = 16
+\item 
+character(ma) \mbox{\hyperlink{namespacebsr__phot_ae473a20c744b939119fca0bd5be5e901}{bsr\+\_\+phot\+::af\+\_\+out}} = \textquotesingle{}bsr\+\_\+phot.\+nnn\textquotesingle{}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_af141da023179a9d10e949010fb90e4ff}{bsr\+\_\+phot\+::iph}} = 17
+\item 
+character(ma) \mbox{\hyperlink{namespacebsr__phot_a3aef74860b8cf27d85190549f2d50b0d}{bsr\+\_\+phot\+::af\+\_\+ph}} = \textquotesingle{}photo.\+nnn\textquotesingle{}
+\item 
+character(ma) \mbox{\hyperlink{namespacebsr__phot_a19639567f317174b355f9f248e51ab4d}{bsr\+\_\+phot\+::af}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacebsr__phot_ad4aa69cdd9f611dec7e6cb6658408b09}{bsr\+\_\+phot\+::nrange}} = 10
+\item 
+real(8), dimension(nrange) \mbox{\hyperlink{namespacebsr__phot_a0a9e1d06dfb4385399409d99a4b1a1e7}{bsr\+\_\+phot\+::elow}}
+\item 
+real(8), dimension(nrange) \mbox{\hyperlink{namespacebsr__phot_a96d8103cb299a19d286cc5c96cfcc0e7}{bsr\+\_\+phot\+::estep}}
+\item 
+real(8), dimension(nrange) \mbox{\hyperlink{namespacebsr__phot_a5f206c73402aedbee10c09dae2ad5775}{bsr\+\_\+phot\+::ehigh}}
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_a9ef48721e4b1f32e5e5229e5d60df7cc}{bsr\+\_\+phot\+::e\+\_\+exp}} = 0.d0
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_afd4aea4a78c4b7c409a0f6dbd8874ce3}{bsr\+\_\+phot\+::awt}} = 0.d0
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_af52fdbd4dfa6051fbabc63132b70dbec}{bsr\+\_\+phot\+::ibug}} = 0
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a7364e1c5d488862189e50469b032053d}{bsr\+\_\+phot\+::iauto}} = 1
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a80f99bab23f3f038697026d608ae6123}{bsr\+\_\+phot\+::mfgi}} = 300
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_ad39f90c5f71da8cc5ac7f5d563b91422}{bsr\+\_\+phot\+::ac}} = 0.\+001
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_a64942297afe9358b841753788433ff70}{bsr\+\_\+phot\+::dr}} = 0.\+1
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_aa868351d77d2c3289b55141d3868e8c3}{bsr\+\_\+phot\+::nelc}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a83340b0b3def6085256e8c78f06141d4}{bsr\+\_\+phot\+::nz}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a98e0dd5d2d1583ea75ce28cfd7cc51e9}{bsr\+\_\+phot\+::ion}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a6212c6cf00c152c8b366f6524baa2387}{bsr\+\_\+phot\+::ntarg}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a2692af881fc7da60fe6f087ca09770d9}{bsr\+\_\+phot\+::etarg}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_ade7c55b93963df192cf3e09f01b6a744}{bsr\+\_\+phot\+::ltarg}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a6370b1507eedd1d12c0c478931435ee6}{bsr\+\_\+phot\+::istarg}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a2e34be63feb251f4e6d95a00b75950f2}{bsr\+\_\+phot\+::iptarg}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a65ef2767abde0d463b69e6fe9533053d}{bsr\+\_\+phot\+::klsp}} = 0
+\item 
+character(3) \mbox{\hyperlink{namespacebsr__phot_aa9a785d67e47c76825fdde1a31a3694a}{bsr\+\_\+phot\+::alsp}} = \textquotesingle{}nnn\textquotesingle{}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a8127e9f48c7d14e4717a49ec79818f4e}{bsr\+\_\+phot\+::il}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a3b6f92ce5b94beeb57da2f117c37ee52}{bsr\+\_\+phot\+::is}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a38d07f9552ccdd323d26178f250f8db4}{bsr\+\_\+phot\+::ip}}
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_a9b6e3f273970371b091be2e895fa9f7f}{bsr\+\_\+phot\+::e1}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_aa6b938d607a6d2c81d9dc9eccca9fb7b}{bsr\+\_\+phot\+::nch}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a2670d84c88a64ea67e6946cc7e54b299}{bsr\+\_\+phot\+::ncp}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a07e8525fb5ae26c7e59c594e2c392852}{bsr\+\_\+phot\+::nhm}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_ab84e720317da080d4ca5c7f7418e8888}{bsr\+\_\+phot\+::khm}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a2f115510046c93eeab9c6d03b9928157}{bsr\+\_\+phot\+::km}}
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_a735e7d718bd7c4be89e37c4073e89f08}{bsr\+\_\+phot\+::athreshold}} =0.\+0001d0
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_acbed7f74954097da992843b8b624c467}{bsr\+\_\+phot\+::bthreshold}} =0.\+0001d0
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a516d2d7c6123cb92cbb58d35354ee2df}{bsr\+\_\+phot\+::nconat}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a85d227337262b85fc40e9397459bc64c}{bsr\+\_\+phot\+::lch}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a893a0d218f16e3d13f556a8fdf8da928}{bsr\+\_\+phot\+::value}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a96a941371d3005c1fe4f134e626a41bb}{bsr\+\_\+phot\+::ech}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_aef6c7828f769672e7f4f78822fa66a9b}{bsr\+\_\+phot\+::wmat}}
+\item 
+real(8), dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_aace4343861b6d095bae268adcb256e23}{bsr\+\_\+phot\+::cf}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a8889e768864b46c38668aa24c67fb109}{bsr\+\_\+phot\+::rmat}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a9324079b438be192e3aa37ff1e338e95}{bsr\+\_\+phot\+::rmati}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a383bf6ca3f4c31bacb49c92b1af15504}{bsr\+\_\+phot\+::kmat}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a009d53c13b746a16d0074902dce4ed20}{bsr\+\_\+phot\+::uk}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a0d62ad48b78ad504f6685ea104b3454f}{bsr\+\_\+phot\+::ui}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a82ffb87891d9e0e1b2b5e8be74ee08d9}{bsr\+\_\+phot\+::f}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a3bdb96b58cd19465056a13bdb712d579}{bsr\+\_\+phot\+::g}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a8f705c65375623cb9a2010e49601f13b}{bsr\+\_\+phot\+::fp}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_af9d6f091768b321bb5ddda3a8cb3d5f6}{bsr\+\_\+phot\+::gp}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a1d11ebafdb3a049ae35a310b6374f5c3}{bsr\+\_\+phot\+::ikm}} = 0
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a8688776f5323c713f3fb64f8127e5d51}{bsr\+\_\+phot\+::nwt}} = -\/1
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a56ab69a3472d6a5b5c493d8abeb43437}{bsr\+\_\+phot\+::wt}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_ac255d6103dc65689c740ab47dafffbe8}{bsr\+\_\+phot\+::ak}}
+\item 
+integer, dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_ace0bbb94053ff9b66ff1b2a6bc13ca0c}{bsr\+\_\+phot\+::ipak}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_ac0578dc21079c0f2268f03af2f34c463}{bsr\+\_\+phot\+::wtch}}
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_a7d84eb072a1b27d7898d3d92736b8604}{bsr\+\_\+phot\+::cc}} = 0.d0
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_afb922c8072591def35b492e19d2d134a}{bsr\+\_\+phot\+::ce}} = 0.d0
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_a6c1440082ac3d42cbfec057019a01712}{bsr\+\_\+phot\+::ra}}
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_ac60cc27104753c0e82027fe4b2bd447e}{bsr\+\_\+phot\+::rb}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_ae53d1979dbc5d2046b7ed3d7679fbedf}{bsr\+\_\+phot\+::ili}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a0f64af65e485ca462180156ae99468e8}{bsr\+\_\+phot\+::isi}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_aa9f87d495dc9b0ea067d6a49ff696968}{bsr\+\_\+phot\+::ipi}}
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_a0f823f54cbfc982419a3eeae3ba2457a}{bsr\+\_\+phot\+::ei}}
+\item 
+integer \mbox{\hyperlink{namespacebsr__phot_a876d59b20c8d8a125a660ef533ee9c7d}{bsr\+\_\+phot\+::ndm}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a31f3e70341d92c0c081081eaeed95680}{bsr\+\_\+phot\+::dkl}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_aeaaaa7050dc8c53953288b084a197a65}{bsr\+\_\+phot\+::dkv}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_ae4fda237663abd5573b9478e55dd7300}{bsr\+\_\+phot\+::dlr}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_ac3706fef944bcbd641f477bd04ea74fc}{bsr\+\_\+phot\+::dli}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a0c64ec59ce45a740ba4c3b3b2ffa8968}{bsr\+\_\+phot\+::dvr}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a0be100ff885a3710a37e6fe4f50e0a47}{bsr\+\_\+phot\+::dvi}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a9ab74d8ea1788d5cd287fa341ba2d49a}{bsr\+\_\+phot\+::sl}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a02fc0d039e5fb6f333992bfb8a188af1}{bsr\+\_\+phot\+::sv}}
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_ad2054c646dec5f75108758a6aa61e767}{bsr\+\_\+phot\+::slp}}
+\item 
+real(8) \mbox{\hyperlink{namespacebsr__phot_a1f514ca446fb858d23fd7336855ee015}{bsr\+\_\+phot\+::svp}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a2334fd3ed7496ee5460e2c747a60080b}{bsr\+\_\+phot\+::aa}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_abdabca176c45c7aab8f741f343a80eb3}{bsr\+\_\+phot\+::bb}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a78d1fae07463b64b3e6b5bf61b381059}{bsr\+\_\+phot\+::ff}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a18063c7646900c3273be32b9f0eaf7ee}{bsr\+\_\+phot\+::fff}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a278c93fab5fd98de0ef1a2dd1163c6ac}{bsr\+\_\+phot\+::ffp}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_aa25ce954f239c596d3f3d9836b667e26}{bsr\+\_\+phot\+::v}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacebsr__phot_a63680b9fd6a2c6c5f43a9fb99ab5065e}{bsr\+\_\+phot\+::eps}}
+\end{DoxyCompactItemize}

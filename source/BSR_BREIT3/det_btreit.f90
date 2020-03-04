@@ -1,12 +1,13 @@
 !======================================================================
       Subroutine DET_breit2
 !======================================================================
-!     creates the common list of orbital symmetries for two input
-!     determinants and call the subroutines for calculations of
-!     coefficients between possible combinations of symmetries
-!
-!     Isym - new disribution (perutatiom) of orbitals
-!     IPsym - pointer on last same orbutal in new list 
+!> @ingroup bsr_breit
+!!     creates the common list of orbital symmetries for two input
+!!     determinants and call the subroutines for calculations of
+!!     coefficients between possible combinations of symmetries
+!!
+!!     Isym - new disribution (perutatiom) of orbitals
+!!     IPsym - pointer on last same orbutal in new list 
 !----------------------------------------------------------------------
       Use bsr_breit
       Use spin_orbitals
@@ -148,12 +149,13 @@
 !======================================================================
       Subroutine DET_breit1
 !======================================================================
-!     creates the common list of orbital symmetries for two input
-!     determinants and call the subroutines for calculations of
-!     coefficients between possible combinations of symmetries
-!
-!     Isym - new disribution (perutatiom) of orbitals
-!     IPsym - pointer on last same orbutal in new list 
+!> @ingroup bsr_breit 
+!!    creates the common list of orbital symmetries for two input
+!!     determinants and call the subroutines for calculations of
+!!     coefficients between possible combinations of symmetries
+!!
+!!     Isym - new disribution (perutatiom) of orbitals
+!!     IPsym - pointer on last same orbutal in new list 
 !----------------------------------------------------------------------
 	     Use spin_orbitals
 	     Use conf_LS,         only: ne

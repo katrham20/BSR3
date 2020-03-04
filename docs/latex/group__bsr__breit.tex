@@ -1,0 +1,725 @@
+\hypertarget{group__bsr__breit}{}\doxysection{B\+S\+R\+\_\+\+B\+R\+E\+I\+T3}
+\label{group__bsr__breit}\index{BSR\_BREIT3@{BSR\_BREIT3}}
+
+
+generates angular coefficient in non-\/orthogonal mode  
+
+
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_gab532af1a42057459f73fa7667a7a0f08}{add\+\_\+it\+\_\+oper}} (is, js)
+\begin{DoxyCompactList}\small\item\em record what has been done for given case\+: is,js \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_gacf0a226914f46136c01fc27c0cfb6188}{add\+\_\+res}} (nu, is, js)
+\begin{DoxyCompactList}\small\item\em records results from \textquotesingle{}\mbox{\hyperlink{namespacecoef__list}{coef\+\_\+list}}\textquotesingle{} to unit \textquotesingle{}nu\textquotesingle{} for the case\+: is,js \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_ga9205d309baf7d6c72dac38f84a486c55}{rw}} (nu1, nu2, nc)
+\begin{DoxyCompactList}\small\item\em re-\/write bnk-\/data from file \textquotesingle{}nu1\textquotesingle{} to \textquotesingle{}nu2\textquotesingle{} by blocks \end{DoxyCompactList}\item 
+program \mbox{\hyperlink{group__bsr__breit_ga37d62b2efac7bd2ea4b10f9101584809}{\+\_\+\+\_\+coef\+\_\+tab3.\+f90\+\_\+\+\_\+}}
+\begin{DoxyCompactList}\small\item\em prints from unformated I\+N\+T\+\_\+\+B\+NK file to C\+O\+E\+F.\+T\+AB file the integral coefficients for selected states in C\+F\+G.\+I\+NP \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_ga38828094cda4639f3677cf37606ea45b}{alloc\+\_\+zoef}} (m)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_ga7146bb032f717633b21e42c67a625c1c}{iadd\+\_\+zoef}} (C, int, idf)
+\begin{DoxyCompactList}\small\item\em add the integral to the list \textquotesingle{}zoef\textquotesingle{} \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_gaf10daa5e8cda304b0e04ce137da0d71e}{pri\+\_\+coef}} (nu, ic1, ic2, mo, mi, mso, mee, msoo, mss, moo)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_ga4e319f0a9f4bf0546fd91a875695c70e}{pri\+\_\+coef1}} (nu, icoef, met, ic1, ic2)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_ga0ea6409638de3dd02754f308a7389686}{num}} (z, k1, k2, i\+\_\+max, acr)
+\begin{DoxyCompactList}\small\item\em finds k1 and k2 such that abs(z) = sqrt ( k1 / k2 ) and sign(z) = sign(k1) \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_gaf3e08f4c9252631317f7518b254938e8}{check\+\_\+int}} (C, icase, k, j1, j2, j3, j4)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_ga4d754eb9ab0b5932ce040f2b2b55eb9f}{rr\+\_\+conf}} (nuc, nub, pri)
+\begin{DoxyCompactList}\small\item\em Read the configuration list from c-\/file (unit \textquotesingle{}nuc\textquotesingle{}), define there angular symmetries and compare with existing ones. Prepare the angular arrays. \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_ga89f1add7c12ac7aea668c0bf84b03be9}{conf\+\_\+loop}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_gad426dc768612cf6e89844fabbd0ce7e5}{symc\+\_\+conf}} (ic, conf)
+\begin{DoxyCompactList}\small\item\em get label for configuration \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_ga0676ba093c49a007338be36499250db2}{det\+\_\+breit2}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_ga372f1792731386fa90588c065b283cf3}{det\+\_\+breit1}}
+\item 
+integer function \mbox{\hyperlink{group__bsr__breit_ga2648461b5ea64d8caf54007d3459e5da}{idef\+\_\+cme}} (is, js)
+\begin{DoxyCompactList}\small\item\em define the operators to be considered for the given symmetries\+: ioper + I\+T\+\_\+oper -\/$>$ joper + J\+T\+\_\+oper \end{DoxyCompactList}\item 
+integer function \mbox{\hyperlink{group__bsr__breit_gad06f288c4f8ae0191fb086686bc2e58d}{idet\+\_\+fact}} (j1, j2, j3, j4)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_ga08b29fd46088b727c2a0580f5015adf0}{alloc\+\_\+boef}} (m)
+\begin{DoxyCompactList}\small\item\em allocate/deallocate arrays in module boef \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_gab8aabe3fc9050b496cd33ef9787c8e61}{alloc\+\_\+blk}} (m)
+\begin{DoxyCompactList}\small\item\em allocate/deallocate \textquotesingle{}block\textquotesingle{} arrays in module boef \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_gaac13d62ee5dbbd6fc76f61f18f6743f8}{iadd\+\_\+boef}} (C, int)
+\begin{DoxyCompactList}\small\item\em add new integral to the list \textquotesingle{}boef\textquotesingle{} (in the range of new block\+: jboef-\/nboef) \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_ga99d30b6ca6dc72895db4aeebc25390a1}{check\+\_\+boef}} (l1, m1, s1, l2, m2, s2, l3, m3, s3, l4, m4, s4)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_ga31d0e9f5441b2b4ca5552ec5fb98f861}{alloc\+\_\+coef}} (mc)
+\begin{DoxyCompactList}\small\item\em allocate arrays in module coef \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_ga64c8e773d2204a5b28a90dff05d699cd}{add\+\_\+coef}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_ga892c4e4d2f503e1e96af3f2f1ee46739}{alloc\+\_\+spin\+\_\+orbitals}} (ne)
+\begin{DoxyCompactList}\small\item\em allocate arrays in module spin-\/orbitals \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_ga38828094cda4639f3677cf37606ea45b}{alloc\+\_\+zoef}} (m)
+\begin{DoxyCompactList}\small\item\em allocate arrays in module zoef \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_ga7146bb032f717633b21e42c67a625c1c}{iadd\+\_\+zoef}} (C, int, idf)
+\begin{DoxyCompactList}\small\item\em add new integral to the list \textquotesingle{}zoef\textquotesingle{} \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_ga2a93524886ea8debe392f17df7f605d8}{open\+\_\+br}} (nu, klsp)
+\begin{DoxyCompactList}\small\item\em open (close) files in the breit\+\_\+bsr program \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_gaab785097f786fd46848941744017da5c}{pre\+\_\+det\+\_\+exp}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_ga2df8f2d531f372d49c69f5258ebb6060}{det\+\_\+expn}} (nua, kt, kdt, M\+LT, M\+ST)
+\begin{DoxyCompactList}\small\item\em determined all possible determinants and their coefficients for given set of terms (kt). Results are recorded to unit \textquotesingle{}nua\textquotesingle{} \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_ga81d240c98c1e272e009fa62a9dec4612}{r\+\_\+conf}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_ga0028ec1978b976275928c391e53d96d4}{read\+\_\+arg}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_ga3055f73a755da6d73ff149af18cbd735}{term\+\_\+loop}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_ga1abb9e028adc1aa972d64a0f301125ca}{zno\+\_\+0ee}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_gaf72db8ac85f9b47521d2b5afadab475c}{zno\+\_\+1ee}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_gaf82b77a3aae5a49ff88ad3ded443e84e}{zno\+\_\+2ee}} (i1, i2, j1, j2)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_gab17c65591027657ae45f2a47966913b8}{jsym\+\_\+int}} (icase, j1, j2, j3, j4)
+\begin{DoxyCompactList}\small\item\em define \char`\"{}canonical\char`\"{} form of integral \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_ga8c8fc4fd5c2adc652c70a905a1bfd59d}{zno\+\_\+breit}} (no1, l1, m1, ms1, no2, l2, m2, ms2, no3, l3, m3, ms3, no4, l4, m4, ms4, ide)
+\item 
+subroutine \mbox{\hyperlink{group__bsr__breit_gab26be6e61b1b57669041b58ac44b0abf}{add\+\_\+ci}} (C, met, k, j1, j2, j3, j4)
+\begin{DoxyCompactList}\small\item\em control the recording of one resulting integral \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{group__bsr__breit_ga65c34466a7b24bbc49193cfe5dd9efa8}{boef\+\_\+list\+::nboef}} = 0
+\item 
+integer \mbox{\hyperlink{group__bsr__breit_gaf2f5a31066b8eb26f156b1994395c973}{coef\+\_\+list\+::ncoef}} = 0
+\item 
+integer, parameter \mbox{\hyperlink{group__bsr__breit_gaffdc404a2e557ba3274cb0e67d774b67}{bsr\+\_\+breit\+::ma}} =80
+\begin{DoxyCompactList}\small\item\em main parameters and files\+: \end{DoxyCompactList}\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{group__bsr__breit_gaa9a69f20a51e72c11ca2c03a1d040e4a}{spin\+\_\+orbitals\+::ml\+\_\+orb}}
+\begin{DoxyCompactList}\small\item\em contains rather fancy but effective description of two determinant wave function under consideration \end{DoxyCompactList}\item 
+integer \mbox{\hyperlink{group__bsr__breit_gad0f3e2cd3afab93abe72a7e443499f7f}{term\+\_\+exp\+::ilt1}}
+\begin{DoxyCompactList}\small\item\em Containes the term-\/dependent coefficients of det.\+expansion of two given conf.\+symmetries under consideration. \end{DoxyCompactList}\item 
+integer(4) \mbox{\hyperlink{group__bsr__breit_ga0a3756039c369a6e1476e7a5caf87756}{zoef\+\_\+list\+::nzoef}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+generates angular coefficient in non-\/orthogonal mode 
+
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{group__bsr__breit_ga37d62b2efac7bd2ea4b10f9101584809}\label{group__bsr__breit_ga37d62b2efac7bd2ea4b10f9101584809}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!\_\_coef\_tab3.f90\_\_@{\_\_coef\_tab3.f90\_\_}}
+\index{\_\_coef\_tab3.f90\_\_@{\_\_coef\_tab3.f90\_\_}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{\_\_coef\_tab3.f90\_\_()}{\_\_coef\_tab3.f90\_\_()}}
+{\footnotesize\ttfamily program \+\_\+\+\_\+coef\+\_\+tab3.\+f90\+\_\+\+\_\+}
+
+
+
+prints from unformated I\+N\+T\+\_\+\+B\+NK file to C\+O\+E\+F.\+T\+AB file the integral coefficients for selected states in C\+F\+G.\+I\+NP 
+
+\mbox{\Hypertarget{group__bsr__breit_gab26be6e61b1b57669041b58ac44b0abf}\label{group__bsr__breit_gab26be6e61b1b57669041b58ac44b0abf}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!add\_ci@{add\_ci}}
+\index{add\_ci@{add\_ci}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{add\_ci()}{add\_ci()}}
+{\footnotesize\ttfamily subroutine add\+\_\+ci (\begin{DoxyParamCaption}\item[{real(8), intent(in)}]{C,  }\item[{integer, intent(in)}]{met,  }\item[{integer, intent(in)}]{k,  }\item[{integer, intent(in)}]{j1,  }\item[{integer, intent(in)}]{j2,  }\item[{integer, intent(in)}]{j3,  }\item[{integer, intent(in)}]{j4 }\end{DoxyParamCaption})}
+
+
+
+control the recording of one resulting integral 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em met} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em k} & control the recording of one resulting integral \\
+\hline
+\mbox{\texttt{ in}}  & {\em j1} & control the recording of one resulting integral \\
+\hline
+\mbox{\texttt{ in}}  & {\em j2} & control the recording of one resulting integral \\
+\hline
+\mbox{\texttt{ in}}  & {\em j3} & control the recording of one resulting integral \\
+\hline
+\mbox{\texttt{ in}}  & {\em j4} & control the recording of one resulting integral \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__breit_ga64c8e773d2204a5b28a90dff05d699cd}\label{group__bsr__breit_ga64c8e773d2204a5b28a90dff05d699cd}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!add\_coef@{add\_coef}}
+\index{add\_coef@{add\_coef}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{add\_coef()}{add\_coef()}}
+{\footnotesize\ttfamily subroutine add\+\_\+coef}
+
+add new coefficient to the list coef\mbox{\Hypertarget{group__bsr__breit_gab532af1a42057459f73fa7667a7a0f08}\label{group__bsr__breit_gab532af1a42057459f73fa7667a7a0f08}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!add\_it\_oper@{add\_it\_oper}}
+\index{add\_it\_oper@{add\_it\_oper}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{add\_it\_oper()}{add\_it\_oper()}}
+{\footnotesize\ttfamily subroutine add\+\_\+it\+\_\+oper (\begin{DoxyParamCaption}\item[{integer}]{is,  }\item[{integer}]{js }\end{DoxyParamCaption})}
+
+
+
+record what has been done for given case\+: is,js 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & \\
+\hline
+{\em js} & record what has been done for given case\+: is,js \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__breit_gacf0a226914f46136c01fc27c0cfb6188}\label{group__bsr__breit_gacf0a226914f46136c01fc27c0cfb6188}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!add\_res@{add\_res}}
+\index{add\_res@{add\_res}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{add\_res()}{add\_res()}}
+{\footnotesize\ttfamily subroutine add\+\_\+res (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu,  }\item[{integer}]{is,  }\item[{integer}]{js }\end{DoxyParamCaption})}
+
+
+
+records results from \textquotesingle{}\mbox{\hyperlink{namespacecoef__list}{coef\+\_\+list}}\textquotesingle{} to unit \textquotesingle{}nu\textquotesingle{} for the case\+: is,js 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nu} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__breit_gab8aabe3fc9050b496cd33ef9787c8e61}\label{group__bsr__breit_gab8aabe3fc9050b496cd33ef9787c8e61}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!alloc\_blk@{alloc\_blk}}
+\index{alloc\_blk@{alloc\_blk}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{alloc\_blk()}{alloc\_blk()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+blk (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{m }\end{DoxyParamCaption})}
+
+
+
+allocate/deallocate \textquotesingle{}block\textquotesingle{} arrays in module boef 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em m} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__breit_ga08b29fd46088b727c2a0580f5015adf0}\label{group__bsr__breit_ga08b29fd46088b727c2a0580f5015adf0}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!alloc\_boef@{alloc\_boef}}
+\index{alloc\_boef@{alloc\_boef}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{alloc\_boef()}{alloc\_boef()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+boef (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{m }\end{DoxyParamCaption})}
+
+
+
+allocate/deallocate arrays in module boef 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em m} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__breit_ga31d0e9f5441b2b4ca5552ec5fb98f861}\label{group__bsr__breit_ga31d0e9f5441b2b4ca5552ec5fb98f861}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!alloc\_coef@{alloc\_coef}}
+\index{alloc\_coef@{alloc\_coef}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{alloc\_coef()}{alloc\_coef()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+coef (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{mc }\end{DoxyParamCaption})}
+
+
+
+allocate arrays in module coef 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mc} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__breit_ga892c4e4d2f503e1e96af3f2f1ee46739}\label{group__bsr__breit_ga892c4e4d2f503e1e96af3f2f1ee46739}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!alloc\_spin\_orbitals@{alloc\_spin\_orbitals}}
+\index{alloc\_spin\_orbitals@{alloc\_spin\_orbitals}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{alloc\_spin\_orbitals()}{alloc\_spin\_orbitals()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+spin\+\_\+orbitals (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ne }\end{DoxyParamCaption})}
+
+
+
+allocate arrays in module spin-\/orbitals 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ne} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__breit_ga38828094cda4639f3677cf37606ea45b}\label{group__bsr__breit_ga38828094cda4639f3677cf37606ea45b}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!alloc\_zoef@{alloc\_zoef}}
+\index{alloc\_zoef@{alloc\_zoef}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{alloc\_zoef()}{alloc\_zoef()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+zoef (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{m }\end{DoxyParamCaption})}
+
+
+
+allocate arrays in module zoef 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em m} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__breit_ga38828094cda4639f3677cf37606ea45b}\label{group__bsr__breit_ga38828094cda4639f3677cf37606ea45b}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!alloc\_zoef@{alloc\_zoef}}
+\index{alloc\_zoef@{alloc\_zoef}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{alloc\_zoef()}{alloc\_zoef()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+zoef (\begin{DoxyParamCaption}\item[{integer(4), intent(in)}]{m }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em m} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__breit_ga99d30b6ca6dc72895db4aeebc25390a1}\label{group__bsr__breit_ga99d30b6ca6dc72895db4aeebc25390a1}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!check\_boef@{check\_boef}}
+\index{check\_boef@{check\_boef}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{check\_boef()}{check\_boef()}}
+{\footnotesize\ttfamily subroutine check\+\_\+boef (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{l1,  }\item[{integer, intent(in)}]{m1,  }\item[{integer, intent(in)}]{s1,  }\item[{integer, intent(in)}]{l2,  }\item[{integer, intent(in)}]{m2,  }\item[{integer, intent(in)}]{s2,  }\item[{integer, intent(in)}]{l3,  }\item[{integer, intent(in)}]{m3,  }\item[{integer, intent(in)}]{s3,  }\item[{integer, intent(in)}]{l4,  }\item[{integer, intent(in)}]{m4,  }\item[{integer, intent(in)}]{s4 }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em l1} & Check if the m.\+e. for given orbitals is already in the list, otherwise -\/ calculate them. Procedure use incoding the orbitals parameters, and that restrict the max. l to 64 (see parameter jbm, jbl). We can reduce this restriction by using four identifiers (instead three), one for each orbital.\\
+\hline
+\mbox{\texttt{ in}}  & {\em m1} & Check if the m.\+e. for given orbitals is already in the list, otherwise -\/ calculate them. Procedure use incoding the orbitals parameters, and that restrict the max. l to 64 (see parameter jbm, jbl). We can reduce this restriction by using four identifiers (instead three), one for each orbital.\\
+\hline
+\mbox{\texttt{ in}}  & {\em s1} & Check if the m.\+e. for given orbitals is already in the list, otherwise -\/ calculate them. Procedure use incoding the orbitals parameters, and that restrict the max. l to 64 (see parameter jbm, jbl). We can reduce this restriction by using four identifiers (instead three), one for each orbital.\\
+\hline
+\mbox{\texttt{ in}}  & {\em l2} & Check if the m.\+e. for given orbitals is already in the list, otherwise -\/ calculate them. Procedure use incoding the orbitals parameters, and that restrict the max. l to 64 (see parameter jbm, jbl). We can reduce this restriction by using four identifiers (instead three), one for each orbital.\\
+\hline
+\mbox{\texttt{ in}}  & {\em m2} & Check if the m.\+e. for given orbitals is already in the list, otherwise -\/ calculate them. Procedure use incoding the orbitals parameters, and that restrict the max. l to 64 (see parameter jbm, jbl). We can reduce this restriction by using four identifiers (instead three), one for each orbital.\\
+\hline
+\mbox{\texttt{ in}}  & {\em s2} & Check if the m.\+e. for given orbitals is already in the list, otherwise -\/ calculate them. Procedure use incoding the orbitals parameters, and that restrict the max. l to 64 (see parameter jbm, jbl). We can reduce this restriction by using four identifiers (instead three), one for each orbital.\\
+\hline
+\mbox{\texttt{ in}}  & {\em l3} & Check if the m.\+e. for given orbitals is already in the list, otherwise -\/ calculate them. Procedure use incoding the orbitals parameters, and that restrict the max. l to 64 (see parameter jbm, jbl). We can reduce this restriction by using four identifiers (instead three), one for each orbital.\\
+\hline
+\mbox{\texttt{ in}}  & {\em m3} & Check if the m.\+e. for given orbitals is already in the list, otherwise -\/ calculate them. Procedure use incoding the orbitals parameters, and that restrict the max. l to 64 (see parameter jbm, jbl). We can reduce this restriction by using four identifiers (instead three), one for each orbital.\\
+\hline
+\mbox{\texttt{ in}}  & {\em s3} & Check if the m.\+e. for given orbitals is already in the list, otherwise -\/ calculate them. Procedure use incoding the orbitals parameters, and that restrict the max. l to 64 (see parameter jbm, jbl). We can reduce this restriction by using four identifiers (instead three), one for each orbital.\\
+\hline
+\mbox{\texttt{ in}}  & {\em l4} & Check if the m.\+e. for given orbitals is already in the list, otherwise -\/ calculate them. Procedure use incoding the orbitals parameters, and that restrict the max. l to 64 (see parameter jbm, jbl). We can reduce this restriction by using four identifiers (instead three), one for each orbital.\\
+\hline
+\mbox{\texttt{ in}}  & {\em m4} & Check if the m.\+e. for given orbitals is already in the list, otherwise -\/ calculate them. Procedure use incoding the orbitals parameters, and that restrict the max. l to 64 (see parameter jbm, jbl). We can reduce this restriction by using four identifiers (instead three), one for each orbital.\\
+\hline
+\mbox{\texttt{ in}}  & {\em s4} & Check if the m.\+e. for given orbitals is already in the list, otherwise -\/ calculate them. Procedure use incoding the orbitals parameters, and that restrict the max. l to 64 (see parameter jbm, jbl). We can reduce this restriction by using four identifiers (instead three), one for each orbital. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__breit_gaf3e08f4c9252631317f7518b254938e8}\label{group__bsr__breit_gaf3e08f4c9252631317f7518b254938e8}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!check\_int@{check\_int}}
+\index{check\_int@{check\_int}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{check\_int()}{check\_int()}}
+{\footnotesize\ttfamily subroutine check\+\_\+int (\begin{DoxyParamCaption}\item[{real(8)}]{C,  }\item[{integer}]{icase,  }\item[{integer}]{k,  }\item[{integer}]{j1,  }\item[{integer}]{j2,  }\item[{integer}]{j3,  }\item[{integer}]{j4 }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em icase} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__breit_ga89f1add7c12ac7aea668c0bf84b03be9}\label{group__bsr__breit_ga89f1add7c12ac7aea668c0bf84b03be9}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!conf\_loop@{conf\_loop}}
+\index{conf\_loop@{conf\_loop}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{conf\_loop()}{conf\_loop()}}
+{\footnotesize\ttfamily subroutine conf\+\_\+loop}
+
+run loop over configurations\mbox{\Hypertarget{group__bsr__breit_ga372f1792731386fa90588c065b283cf3}\label{group__bsr__breit_ga372f1792731386fa90588c065b283cf3}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!det\_breit1@{det\_breit1}}
+\index{det\_breit1@{det\_breit1}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{det\_breit1()}{det\_breit1()}}
+{\footnotesize\ttfamily subroutine det\+\_\+breit1}
+
+creates the common list of orbital symmetries for two input determinants and call the subroutines for calculations of coefficients between possible combinations of symmetries
+
+Isym -\/ new disribution (perutatiom) of orbitals I\+Psym -\/ pointer on last same orbutal in new list\mbox{\Hypertarget{group__bsr__breit_ga0676ba093c49a007338be36499250db2}\label{group__bsr__breit_ga0676ba093c49a007338be36499250db2}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!det\_breit2@{det\_breit2}}
+\index{det\_breit2@{det\_breit2}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{det\_breit2()}{det\_breit2()}}
+{\footnotesize\ttfamily subroutine det\+\_\+breit2}
+
+creates the common list of orbital symmetries for two input determinants and call the subroutines for calculations of coefficients between possible combinations of symmetries
+
+Isym -\/ new disribution (perutatiom) of orbitals I\+Psym -\/ pointer on last same orbutal in new list\mbox{\Hypertarget{group__bsr__breit_ga2df8f2d531f372d49c69f5258ebb6060}\label{group__bsr__breit_ga2df8f2d531f372d49c69f5258ebb6060}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!det\_expn@{det\_expn}}
+\index{det\_expn@{det\_expn}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{det\_expn()}{det\_expn()}}
+{\footnotesize\ttfamily subroutine det\+\_\+expn (\begin{DoxyParamCaption}\item[{integer}]{nua,  }\item[{integer}]{kt,  }\item[{integer}]{kdt,  }\item[{integer}]{M\+LT,  }\item[{integer}]{M\+ST }\end{DoxyParamCaption})}
+
+
+
+determined all possible determinants and their coefficients for given set of terms (kt). Results are recorded to unit \textquotesingle{}nua\textquotesingle{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nua} & \\
+\hline
+{\em kt} & determined all possible determinants and their coefficients for given set of terms (kt). Results are recorded to unit \textquotesingle{}nua\textquotesingle{} \\
+\hline
+{\em kdt} & determined all possible determinants and their coefficients for given set of terms (kt). Results are recorded to unit \textquotesingle{}nua\textquotesingle{} \\
+\hline
+{\em mlt} & determined all possible determinants and their coefficients for given set of terms (kt). Results are recorded to unit \textquotesingle{}nua\textquotesingle{} \\
+\hline
+{\em mst} & determined all possible determinants and their coefficients for given set of terms (kt). Results are recorded to unit \textquotesingle{}nua\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__breit_gaac13d62ee5dbbd6fc76f61f18f6743f8}\label{group__bsr__breit_gaac13d62ee5dbbd6fc76f61f18f6743f8}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!iadd\_boef@{iadd\_boef}}
+\index{iadd\_boef@{iadd\_boef}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{iadd\_boef()}{iadd\_boef()}}
+{\footnotesize\ttfamily subroutine iadd\+\_\+boef (\begin{DoxyParamCaption}\item[{real(8), intent(in)}]{C,  }\item[{integer, intent(in)}]{int }\end{DoxyParamCaption})}
+
+
+
+add new integral to the list \textquotesingle{}boef\textquotesingle{} (in the range of new block\+: jboef-\/nboef) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em int} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__breit_ga7146bb032f717633b21e42c67a625c1c}\label{group__bsr__breit_ga7146bb032f717633b21e42c67a625c1c}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!iadd\_zoef@{iadd\_zoef}}
+\index{iadd\_zoef@{iadd\_zoef}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{iadd\_zoef()}{iadd\_zoef()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily subroutine iadd\+\_\+zoef (\begin{DoxyParamCaption}\item[{real(8), intent(in)}]{C,  }\item[{integer, intent(in)}]{int,  }\item[{integer, intent(in)}]{idf }\end{DoxyParamCaption})}
+
+
+
+add new integral to the list \textquotesingle{}zoef\textquotesingle{} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em int} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em idf} & add new integral to the list \textquotesingle{}zoef\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__breit_ga7146bb032f717633b21e42c67a625c1c}\label{group__bsr__breit_ga7146bb032f717633b21e42c67a625c1c}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!iadd\_zoef@{iadd\_zoef}}
+\index{iadd\_zoef@{iadd\_zoef}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{iadd\_zoef()}{iadd\_zoef()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily subroutine iadd\+\_\+zoef (\begin{DoxyParamCaption}\item[{real(8), intent(in)}]{C,  }\item[{integer(4), intent(in)}]{int,  }\item[{integer(4), intent(in)}]{idf }\end{DoxyParamCaption})}
+
+
+
+add the integral to the list \textquotesingle{}zoef\textquotesingle{} 
+
+\mbox{\Hypertarget{group__bsr__breit_ga2648461b5ea64d8caf54007d3459e5da}\label{group__bsr__breit_ga2648461b5ea64d8caf54007d3459e5da}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!idef\_cme@{idef\_cme}}
+\index{idef\_cme@{idef\_cme}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{idef\_cme()}{idef\_cme()}}
+{\footnotesize\ttfamily integer function idef\+\_\+cme (\begin{DoxyParamCaption}\item[{integer}]{is,  }\item[{integer}]{js }\end{DoxyParamCaption})}
+
+
+
+define the operators to be considered for the given symmetries\+: ioper + I\+T\+\_\+oper -\/$>$ joper + J\+T\+\_\+oper 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & \\
+\hline
+{\em js} & define the operators to be considered for the given symmetries\+: ioper + I\+T\+\_\+oper -\/$>$ joper + J\+T\+\_\+oper \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__breit_gad06f288c4f8ae0191fb086686bc2e58d}\label{group__bsr__breit_gad06f288c4f8ae0191fb086686bc2e58d}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!idet\_fact@{idet\_fact}}
+\index{idet\_fact@{idet\_fact}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{idet\_fact()}{idet\_fact()}}
+{\footnotesize\ttfamily integer function idet\+\_\+fact (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{j1,  }\item[{integer, intent(in)}]{j2,  }\item[{integer, intent(in)}]{j3,  }\item[{integer, intent(in)}]{j4 }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em j1} & determines the overlap factor and its position in N\+D\+EF list for matrix element between two determinant wave functions located in module \textquotesingle{}\mbox{\hyperlink{namespacespin__orbitals}{spin\+\_\+orbitals}}\textquotesingle{}\\
+\hline
+\end{DoxyParams}
+j1,j2,j3,j4 -\/ interacting electrons
+
+Calls\+: Iadd\+\_\+det, Iadd\+\_\+def, I\+S\+O\+RT
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em j2} & determines the overlap factor and its position in N\+D\+EF list for matrix element between two determinant wave functions located in module \textquotesingle{}\mbox{\hyperlink{namespacespin__orbitals}{spin\+\_\+orbitals}}\textquotesingle{}\\
+\hline
+\end{DoxyParams}
+j1,j2,j3,j4 -\/ interacting electrons
+
+Calls\+: Iadd\+\_\+det, Iadd\+\_\+def, I\+S\+O\+RT
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em j3} & determines the overlap factor and its position in N\+D\+EF list for matrix element between two determinant wave functions located in module \textquotesingle{}\mbox{\hyperlink{namespacespin__orbitals}{spin\+\_\+orbitals}}\textquotesingle{}\\
+\hline
+\end{DoxyParams}
+j1,j2,j3,j4 -\/ interacting electrons
+
+Calls\+: Iadd\+\_\+det, Iadd\+\_\+def, I\+S\+O\+RT
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em j4} & determines the overlap factor and its position in N\+D\+EF list for matrix element between two determinant wave functions located in module \textquotesingle{}\mbox{\hyperlink{namespacespin__orbitals}{spin\+\_\+orbitals}}\textquotesingle{}\\
+\hline
+\end{DoxyParams}
+j1,j2,j3,j4 -\/ interacting electrons
+
+Calls\+: Iadd\+\_\+det, Iadd\+\_\+def, I\+S\+O\+RT \mbox{\Hypertarget{group__bsr__breit_gab17c65591027657ae45f2a47966913b8}\label{group__bsr__breit_gab17c65591027657ae45f2a47966913b8}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!jsym\_int@{jsym\_int}}
+\index{jsym\_int@{jsym\_int}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{jsym\_int()}{jsym\_int()}}
+{\footnotesize\ttfamily subroutine jsym\+\_\+int (\begin{DoxyParamCaption}\item[{integer}]{icase,  }\item[{integer}]{j1,  }\item[{integer}]{j2,  }\item[{integer}]{j3,  }\item[{integer}]{j4 }\end{DoxyParamCaption})}
+
+
+
+define \char`\"{}canonical\char`\"{} form of integral 
+
+
+\begin{DoxyParams}{Parameters}
+{\em icase} & \\
+\hline
+{\em j1} & define \char`\"{}canonical\char`\"{} form of integral \\
+\hline
+{\em j2} & define \char`\"{}canonical\char`\"{} form of integral \\
+\hline
+{\em j3} & define \char`\"{}canonical\char`\"{} form of integral \\
+\hline
+{\em j4} & define \char`\"{}canonical\char`\"{} form of integral \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__breit_ga0ea6409638de3dd02754f308a7389686}\label{group__bsr__breit_ga0ea6409638de3dd02754f308a7389686}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!num@{num}}
+\index{num@{num}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{num()}{num()}}
+{\footnotesize\ttfamily subroutine num (\begin{DoxyParamCaption}\item[{real(8), intent(in)}]{z,  }\item[{integer, intent(out)}]{k1,  }\item[{integer, intent(out)}]{k2,  }\item[{integer, intent(in)}]{i\+\_\+max,  }\item[{real(8), intent(in)}]{acr }\end{DoxyParamCaption})}
+
+
+
+finds k1 and k2 such that abs(z) = sqrt ( k1 / k2 ) and sign(z) = sign(k1) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em z} & k1, k2 $<$ i\+\_\+max acr -\/ tollerance for fitting \\
+\hline
+\mbox{\texttt{ in}}  & {\em acr} & finds k1 and k2 such that abs(z) = sqrt ( k1 / k2 ) and sign(z) = sign(k1)\\
+\hline
+\end{DoxyParams}
+k1, k2 $<$ i\+\_\+max acr -\/ tollerance for fitting \mbox{\Hypertarget{group__bsr__breit_ga2a93524886ea8debe392f17df7f605d8}\label{group__bsr__breit_ga2a93524886ea8debe392f17df7f605d8}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!open\_br@{open\_br}}
+\index{open\_br@{open\_br}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{open\_br()}{open\_br()}}
+{\footnotesize\ttfamily subroutine open\+\_\+br (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu,  }\item[{integer, intent(in)}]{klsp }\end{DoxyParamCaption})}
+
+
+
+open (close) files in the breit\+\_\+bsr program 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nu} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em klsp} & open (close) files in the breit\+\_\+bsr program \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__breit_gaab785097f786fd46848941744017da5c}\label{group__bsr__breit_gaab785097f786fd46848941744017da5c}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!pre\_det\_exp@{pre\_det\_exp}}
+\index{pre\_det\_exp@{pre\_det\_exp}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{pre\_det\_exp()}{pre\_det\_exp()}}
+{\footnotesize\ttfamily subroutine pre\+\_\+det\+\_\+exp}
+
+define the det. expansions and write the information in scratch file \textquotesingle{}nud\textquotesingle{}. \textquotesingle{}nua\textquotesingle{} is just Used for temporally storing. Expansion is given for max. ML and MS, and for all pairs of configurations\mbox{\Hypertarget{group__bsr__breit_gaf10daa5e8cda304b0e04ce137da0d71e}\label{group__bsr__breit_gaf10daa5e8cda304b0e04ce137da0d71e}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!pri\_coef@{pri\_coef}}
+\index{pri\_coef@{pri\_coef}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{pri\_coef()}{pri\_coef()}}
+{\footnotesize\ttfamily subroutine pri\+\_\+coef (\begin{DoxyParamCaption}\item[{}]{nu,  }\item[{}]{ic1,  }\item[{}]{ic2,  }\item[{}]{mo,  }\item[{}]{mi,  }\item[{}]{mso,  }\item[{}]{mee,  }\item[{}]{msoo,  }\item[{}]{mss,  }\item[{}]{moo }\end{DoxyParamCaption})}
+
+Prints the resulting angular integrals\mbox{\Hypertarget{group__bsr__breit_ga4e319f0a9f4bf0546fd91a875695c70e}\label{group__bsr__breit_ga4e319f0a9f4bf0546fd91a875695c70e}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!pri\_coef1@{pri\_coef1}}
+\index{pri\_coef1@{pri\_coef1}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{pri\_coef1()}{pri\_coef1()}}
+{\footnotesize\ttfamily subroutine pri\+\_\+coef1 (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu,  }\item[{integer, intent(in)}]{icoef,  }\item[{integer, intent(in)}]{met,  }\item[{integer, intent(in)}]{ic1,  }\item[{integer, intent(in)}]{ic2 }\end{DoxyParamCaption})}
+
+Prints one angular integral\mbox{\Hypertarget{group__bsr__breit_ga81d240c98c1e272e009fa62a9dec4612}\label{group__bsr__breit_ga81d240c98c1e272e009fa62a9dec4612}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!r\_conf@{r\_conf}}
+\index{r\_conf@{r\_conf}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{r\_conf()}{r\_conf()}}
+{\footnotesize\ttfamily subroutine r\+\_\+conf}
+
+Read the configuration list from c-\/file (unit \textquotesingle{}nuc\textquotesingle{}), define there angular symmetries and compare with existing ones. Prepare the angular arrays.
+
+nub, nui -\/ file units for old and new results, respectively\mbox{\Hypertarget{group__bsr__breit_ga0028ec1978b976275928c391e53d96d4}\label{group__bsr__breit_ga0028ec1978b976275928c391e53d96d4}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!read\_arg@{read\_arg}}
+\index{read\_arg@{read\_arg}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{read\_arg()}{read\_arg()}}
+{\footnotesize\ttfamily subroutine read\+\_\+arg}
+
+read arguments from command line and check default settings\mbox{\Hypertarget{group__bsr__breit_ga4d754eb9ab0b5932ce040f2b2b55eb9f}\label{group__bsr__breit_ga4d754eb9ab0b5932ce040f2b2b55eb9f}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!rr\_conf@{rr\_conf}}
+\index{rr\_conf@{rr\_conf}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{rr\_conf()}{rr\_conf()}}
+{\footnotesize\ttfamily subroutine rr\+\_\+conf (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nuc,  }\item[{integer, intent(in)}]{nub,  }\item[{integer, intent(in)}]{pri }\end{DoxyParamCaption})}
+
+
+
+Read the configuration list from c-\/file (unit \textquotesingle{}nuc\textquotesingle{}), define there angular symmetries and compare with existing ones. Prepare the angular arrays. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nuc} & nub, nui -\/ file units for old and new results, respectively \\
+\hline
+\mbox{\texttt{ in}}  & {\em nub} & Read the configuration list from c-\/file (unit \textquotesingle{}nuc\textquotesingle{}), define there angular symmetries and compare with existing ones. Prepare the angular arrays.\\
+\hline
+\end{DoxyParams}
+nub, nui -\/ file units for old and new results, respectively 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pri} & Read the configuration list from c-\/file (unit \textquotesingle{}nuc\textquotesingle{}), define there angular symmetries and compare with existing ones. Prepare the angular arrays.\\
+\hline
+\end{DoxyParams}
+nub, nui -\/ file units for old and new results, respectively \mbox{\Hypertarget{group__bsr__breit_ga9205d309baf7d6c72dac38f84a486c55}\label{group__bsr__breit_ga9205d309baf7d6c72dac38f84a486c55}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!rw@{rw}}
+\index{rw@{rw}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{rw()}{rw()}}
+{\footnotesize\ttfamily subroutine rw (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nu1,  }\item[{integer, intent(in)}]{nu2,  }\item[{integer}]{nc }\end{DoxyParamCaption})}
+
+
+
+re-\/write bnk-\/data from file \textquotesingle{}nu1\textquotesingle{} to \textquotesingle{}nu2\textquotesingle{} by blocks 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nu1} & ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em nu2} & ~\newline
+\\
+\hline
+\end{DoxyParams}
+re-\/write bnk-\/data from file \textquotesingle{}nu1\textquotesingle{} to \textquotesingle{}nu2\textquotesingle{} by blocks \mbox{\Hypertarget{group__bsr__breit_gad426dc768612cf6e89844fabbd0ce7e5}\label{group__bsr__breit_gad426dc768612cf6e89844fabbd0ce7e5}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!symc\_conf@{symc\_conf}}
+\index{symc\_conf@{symc\_conf}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{symc\_conf()}{symc\_conf()}}
+{\footnotesize\ttfamily subroutine symc\+\_\+conf (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ic,  }\item[{character($\ast$)}]{conf }\end{DoxyParamCaption})}
+
+
+
+get label for configuration 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ic} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__breit_ga3055f73a755da6d73ff149af18cbd735}\label{group__bsr__breit_ga3055f73a755da6d73ff149af18cbd735}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!term\_loop@{term\_loop}}
+\index{term\_loop@{term\_loop}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{term\_loop()}{term\_loop()}}
+{\footnotesize\ttfamily subroutine term\+\_\+loop}
+
+Add to the common list (\mbox{\hyperlink{namespacecoef__list}{coef\+\_\+list}}) the coeff.\+s between two determinants (\mbox{\hyperlink{namespacezoef__list}{zoef\+\_\+list}}) weighted with term-\/dependent factors. Check also if the specific coefficient is needed to be added to the bank.\mbox{\Hypertarget{group__bsr__breit_ga1abb9e028adc1aa972d64a0f301125ca}\label{group__bsr__breit_ga1abb9e028adc1aa972d64a0f301125ca}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!zno\_0ee@{zno\_0ee}}
+\index{zno\_0ee@{zno\_0ee}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{zno\_0ee()}{zno\_0ee()}}
+{\footnotesize\ttfamily subroutine zno\+\_\+0ee}
+
+computes overlap integral between two determinants Calls\+: Idet\+\_\+fact, Incode\+\_\+int, Iadd\+\_\+zoef\mbox{\Hypertarget{group__bsr__breit_gaf72db8ac85f9b47521d2b5afadab475c}\label{group__bsr__breit_gaf72db8ac85f9b47521d2b5afadab475c}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!zno\_1ee@{zno\_1ee}}
+\index{zno\_1ee@{zno\_1ee}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{zno\_1ee()}{zno\_1ee()}}
+{\footnotesize\ttfamily subroutine zno\+\_\+1ee}
+
+angular part of one-\/electron operator between two det.\+w.\+f Calls\+: Idet\+\_\+fact, Incode\+\_\+int, Iadd\+\_\+zoef.\mbox{\Hypertarget{group__bsr__breit_gaf82b77a3aae5a49ff88ad3ded443e84e}\label{group__bsr__breit_gaf82b77a3aae5a49ff88ad3ded443e84e}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!zno\_2ee@{zno\_2ee}}
+\index{zno\_2ee@{zno\_2ee}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{zno\_2ee()}{zno\_2ee()}}
+{\footnotesize\ttfamily subroutine zno\+\_\+2ee (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i1,  }\item[{integer, intent(in)}]{i2,  }\item[{integer, intent(in)}]{j1,  }\item[{integer, intent(in)}]{j2 }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i1} & angular part of matrix elements between two det.\+w.\+f. for two-\/electron operator Calls\+: Check\+\_\+boef, Idet\+\_\+fact, Iadd\+\_\+zoef.\\
+\hline
+\mbox{\texttt{ in}}  & {\em i2} & angular part of matrix elements between two det.\+w.\+f. for two-\/electron operator Calls\+: Check\+\_\+boef, Idet\+\_\+fact, Iadd\+\_\+zoef.\\
+\hline
+\mbox{\texttt{ in}}  & {\em j1} & angular part of matrix elements between two det.\+w.\+f. for two-\/electron operator Calls\+: Check\+\_\+boef, Idet\+\_\+fact, Iadd\+\_\+zoef.\\
+\hline
+\mbox{\texttt{ in}}  & {\em j2} & angular part of matrix elements between two det.\+w.\+f. for two-\/electron operator Calls\+: Check\+\_\+boef, Idet\+\_\+fact, Iadd\+\_\+zoef. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__breit_ga8c8fc4fd5c2adc652c70a905a1bfd59d}\label{group__bsr__breit_ga8c8fc4fd5c2adc652c70a905a1bfd59d}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!zno\_breit@{zno\_breit}}
+\index{zno\_breit@{zno\_breit}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{zno\_breit()}{zno\_breit()}}
+{\footnotesize\ttfamily subroutine zno\+\_\+breit (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{no1,  }\item[{integer, intent(in)}]{l1,  }\item[{integer, intent(in)}]{m1,  }\item[{integer, intent(in)}]{ms1,  }\item[{integer, intent(in)}]{no2,  }\item[{integer, intent(in)}]{l2,  }\item[{integer, intent(in)}]{m2,  }\item[{integer, intent(in)}]{ms2,  }\item[{integer, intent(in)}]{no3,  }\item[{integer, intent(in)}]{l3,  }\item[{integer, intent(in)}]{m3,  }\item[{integer, intent(in)}]{ms3,  }\item[{integer, intent(in)}]{no4,  }\item[{integer, intent(in)}]{l4,  }\item[{integer, intent(in)}]{m4,  }\item[{integer, intent(in)}]{ms4,  }\item[{integer, intent(in)}]{ide }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em no1} & computes angular coefficients for the two-\/electron Breit-\/\+Pauli operators in uncouple nlms-\/representation. ide = +1 -\/$>$ direct interaction ide = -\/1 -\/$>$ exchange interaction\\
+\hline
+\mbox{\texttt{ in}}  & {\em l1} & computes angular coefficients for the two-\/electron Breit-\/\+Pauli operators in uncouple nlms-\/representation. ide = +1 -\/$>$ direct interaction ide = -\/1 -\/$>$ exchange interaction\\
+\hline
+\mbox{\texttt{ in}}  & {\em m1} & computes angular coefficients for the two-\/electron Breit-\/\+Pauli operators in uncouple nlms-\/representation. ide = +1 -\/$>$ direct interaction ide = -\/1 -\/$>$ exchange interaction\\
+\hline
+\mbox{\texttt{ in}}  & {\em ms1} & computes angular coefficients for the two-\/electron Breit-\/\+Pauli operators in uncouple nlms-\/representation. ide = +1 -\/$>$ direct interaction ide = -\/1 -\/$>$ exchange interaction\\
+\hline
+\mbox{\texttt{ in}}  & {\em no2} & computes angular coefficients for the two-\/electron Breit-\/\+Pauli operators in uncouple nlms-\/representation. ide = +1 -\/$>$ direct interaction ide = -\/1 -\/$>$ exchange interaction\\
+\hline
+\mbox{\texttt{ in}}  & {\em l2} & computes angular coefficients for the two-\/electron Breit-\/\+Pauli operators in uncouple nlms-\/representation. ide = +1 -\/$>$ direct interaction ide = -\/1 -\/$>$ exchange interaction\\
+\hline
+\mbox{\texttt{ in}}  & {\em m2} & computes angular coefficients for the two-\/electron Breit-\/\+Pauli operators in uncouple nlms-\/representation. ide = +1 -\/$>$ direct interaction ide = -\/1 -\/$>$ exchange interaction\\
+\hline
+\mbox{\texttt{ in}}  & {\em ms2} & computes angular coefficients for the two-\/electron Breit-\/\+Pauli operators in uncouple nlms-\/representation. ide = +1 -\/$>$ direct interaction ide = -\/1 -\/$>$ exchange interaction\\
+\hline
+\mbox{\texttt{ in}}  & {\em no3} & computes angular coefficients for the two-\/electron Breit-\/\+Pauli operators in uncouple nlms-\/representation. ide = +1 -\/$>$ direct interaction ide = -\/1 -\/$>$ exchange interaction\\
+\hline
+\mbox{\texttt{ in}}  & {\em l3} & computes angular coefficients for the two-\/electron Breit-\/\+Pauli operators in uncouple nlms-\/representation. ide = +1 -\/$>$ direct interaction ide = -\/1 -\/$>$ exchange interaction\\
+\hline
+\mbox{\texttt{ in}}  & {\em m3} & computes angular coefficients for the two-\/electron Breit-\/\+Pauli operators in uncouple nlms-\/representation. ide = +1 -\/$>$ direct interaction ide = -\/1 -\/$>$ exchange interaction\\
+\hline
+\mbox{\texttt{ in}}  & {\em ms3} & computes angular coefficients for the two-\/electron Breit-\/\+Pauli operators in uncouple nlms-\/representation. ide = +1 -\/$>$ direct interaction ide = -\/1 -\/$>$ exchange interaction\\
+\hline
+\mbox{\texttt{ in}}  & {\em no4} & computes angular coefficients for the two-\/electron Breit-\/\+Pauli operators in uncouple nlms-\/representation. ide = +1 -\/$>$ direct interaction ide = -\/1 -\/$>$ exchange interaction\\
+\hline
+\mbox{\texttt{ in}}  & {\em l4} & computes angular coefficients for the two-\/electron Breit-\/\+Pauli operators in uncouple nlms-\/representation. ide = +1 -\/$>$ direct interaction ide = -\/1 -\/$>$ exchange interaction\\
+\hline
+\mbox{\texttt{ in}}  & {\em m4} & computes angular coefficients for the two-\/electron Breit-\/\+Pauli operators in uncouple nlms-\/representation. ide = +1 -\/$>$ direct interaction ide = -\/1 -\/$>$ exchange interaction\\
+\hline
+\mbox{\texttt{ in}}  & {\em ms4} & computes angular coefficients for the two-\/electron Breit-\/\+Pauli operators in uncouple nlms-\/representation. ide = +1 -\/$>$ direct interaction ide = -\/1 -\/$>$ exchange interaction\\
+\hline
+\mbox{\texttt{ in}}  & {\em ide} & computes angular coefficients for the two-\/electron Breit-\/\+Pauli operators in uncouple nlms-\/representation. ide = +1 -\/$>$ direct interaction ide = -\/1 -\/$>$ exchange interaction \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{group__bsr__breit_gad0f3e2cd3afab93abe72a7e443499f7f}\label{group__bsr__breit_gad0f3e2cd3afab93abe72a7e443499f7f}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!ilt1@{ilt1}}
+\index{ilt1@{ilt1}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{ilt1}{ilt1}}
+{\footnotesize\ttfamily integer term\+\_\+exp\+::ilt1}
+
+
+
+Containes the term-\/dependent coefficients of det.\+expansion of two given conf.\+symmetries under consideration. 
+
+\mbox{\Hypertarget{group__bsr__breit_gaffdc404a2e557ba3274cb0e67d774b67}\label{group__bsr__breit_gaffdc404a2e557ba3274cb0e67d774b67}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!ma@{ma}}
+\index{ma@{ma}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{ma}{ma}}
+{\footnotesize\ttfamily integer parameter bsr\+\_\+breit\+::ma =80}
+
+
+
+main parameters and files\+: 
+
+\mbox{\Hypertarget{group__bsr__breit_gaa9a69f20a51e72c11ca2c03a1d040e4a}\label{group__bsr__breit_gaa9a69f20a51e72c11ca2c03a1d040e4a}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!ml\_orb@{ml\_orb}}
+\index{ml\_orb@{ml\_orb}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{ml\_orb}{ml\_orb}}
+{\footnotesize\ttfamily integer, dimension(\+:), allocatable spin\+\_\+orbitals\+::ml\+\_\+orb}
+
+
+
+contains rather fancy but effective description of two determinant wave function under consideration 
+
+\mbox{\Hypertarget{group__bsr__breit_ga65c34466a7b24bbc49193cfe5dd9efa8}\label{group__bsr__breit_ga65c34466a7b24bbc49193cfe5dd9efa8}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!nboef@{nboef}}
+\index{nboef@{nboef}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{nboef}{nboef}}
+{\footnotesize\ttfamily integer boef\+\_\+list\+::nboef = 0}
+
+Containes the two-\/electron integrals for matrix elements in uncouple nlms-\/representation. This list is introduced to decrease the number of calls for Z\+N\+O\+\_\+breit subroutine. Used only in the Z\+N\+O\+\_\+2ee routine. The coefficients are recorded by blocks -\/ all integrals for all operators under concideration for given $<$ 1, 2 $\vert$ O $\vert$ 3, 4$>$ \mbox{\Hypertarget{group__bsr__breit_gaf2f5a31066b8eb26f156b1994395c973}\label{group__bsr__breit_gaf2f5a31066b8eb26f156b1994395c973}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!ncoef@{ncoef}}
+\index{ncoef@{ncoef}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{ncoef}{ncoef}}
+{\footnotesize\ttfamily integer coef\+\_\+list\+::ncoef = 0}
+
+Contains a set of coefficients with two identifiers (intc,idfc) The list is ordered according to the pointer \textquotesingle{}ipcoef\textquotesingle{} \mbox{\Hypertarget{group__bsr__breit_ga0a3756039c369a6e1476e7a5caf87756}\label{group__bsr__breit_ga0a3756039c369a6e1476e7a5caf87756}} 
+\index{BSR\_BREIT3@{BSR\_BREIT3}!nzoef@{nzoef}}
+\index{nzoef@{nzoef}!BSR\_BREIT3@{BSR\_BREIT3}}
+\doxysubsubsection{\texorpdfstring{nzoef}{nzoef}}
+{\footnotesize\ttfamily integer zoef\+\_\+list\+::nzoef = 0}
+
+Containes the coefficients for two configuration symmetries. Each coefficient has two identifiers\+: iz\+\_\+int and iz\+\_\+df, the pointers for integral and overlap factor, respectively. 

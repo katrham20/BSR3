@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine inf_bsr_mat
 !======================================================================
-!     provide screen information about bsr_mat program
+!> @ingroup bsr_mat
+!> @brief     provide screen information about bsr_mat program
 !----------------------------------------------------------------------
       Character(80) :: A
 

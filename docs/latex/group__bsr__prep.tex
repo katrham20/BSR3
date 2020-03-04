@@ -1,0 +1,41 @@
+\hypertarget{group__bsr__prep}{}\doxysection{B\+S\+R\+\_\+\+P\+R\+E\+P3}
+\label{group__bsr__prep}\index{BSR\_PREP3@{BSR\_PREP3}}
+\begin{DoxyAuthor}{Author}
+Oleg Zatsarinny
+\end{DoxyAuthor}
+
+\begin{DoxyEnumerate}
+\item Target states are ordered according to their energies.
+\item The orthogonality conditions for one-\/electron orbitals are analized and new c-\/files for target states (targ\+\_\+nnn.\+c) and pertubers (pert\+\_\+nnn.\+c and pert\+\_\+nnn.\+bsw) are generated with consistent set-\/indexes. ~\newline
+ File target.\+bsw contains all target orbitals.
+\item The list of spectroscopic orbitals for target states is created and recorded in target\+\_\+orb file. 4 The orthogonal set of \char`\"{}substitution\char`\"{} orbitals is readed from target\+\_\+sub.\+bsw (or created if target\+\_\+sub.\+bsw is absent).
+\end{DoxyEnumerate}
+
+In order to define the same orbitals, the following criteria are used\+: ~\newline
+ $\vert$ $<$p1$\vert$p2$>$ -\/ 1 $\vert$ $<$ eps\+\_\+ovl $\vert$ $<$p1$\vert$r$\vert$p1$>$ -\/ $<$p2$\vert$r$\vert$p2$>$ $\vert$ $<$ eps\+\_\+ovl $\vert$ $<$p1$\vert$1/r$\vert$p1$>$ -\/ $<$p2$\vert$1/r$\vert$p2$>$ $\vert$ $<$ eps\+\_\+ovl
+
+where the parameter eps\+\_\+ovl can be read from bsr\+\_\+par, or as argument\+: eps\+\_\+ovl=value
+
+\DoxyHorRuler{0}
+
+
+I\+N\+P\+UT F\+I\+L\+ES\+:
+
+bsr\+\_\+par -\/ parameters of calculation if any target -\/ list of target states and partial waves c-\/ and bsw-\/files for target states and perturbers if any knot.\+dat -\/ B-\/spline parameters target\+\_\+sub.\+bsw -\/ additional orbitals for orthogonality, if any
+
+O\+U\+T\+P\+UT F\+I\+L\+ES\+:
+
+target -\/ modified list of target states target.\+bsw -\/ all target one-\/elelectron bsw-\/functions target\+\_\+orb -\/ list of physical target orbitals targ\+\_\+nnn.\+c -\/ c-\/file for target nnn pert\+\_\+nnn.\+c -\/ c-\/file for perturber nnn, if any pert\+\_\+nnn.\+bsw -\/ w-\/file for perturber nnn, if any bsr\+\_\+prep.\+log -\/ running information
+
+A\+R\+G\+U\+M\+E\+N\+TS\+: ~\newline
+
+
+eps\+\_\+ovl \mbox{[}1.\+d-\/6\mbox{]} -\/ !$<$
+\begin{DoxyParams}{Parameters}
+{\em tolerance} & for overlaps eps\+\_\+phys \mbox{[}0.\+5 \mbox{]} -\/ !$<$\\
+\hline
+{\em minimum} & occupation number for physical orbital eps\+\_\+sub \mbox{[}0.\+5 \mbox{]} -\/ !$<$\\
+\hline
+{\em tolerance} & for substitution orbitals \\
+\hline
+\end{DoxyParams}

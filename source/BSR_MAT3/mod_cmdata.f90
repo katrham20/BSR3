@@ -1,10 +1,11 @@
 !====================================================================
       MODULE cmdata
 !====================================================================
-!     contains a set of coefficients with four identifiers
-!     (k1,k2,k3,k4) and one pointer (ipt)
-!     other arrays define the decomposition of coefficients into 
-!     blocks according corresponding integral type 
+!> @ingroup bsr_mat
+!!     contains a set of coefficients with four identifiers
+!!     (k1,k2,k3,k4) and one pointer (ipt)
+!!     other arrays define the decomposition of coefficients into 
+!!     blocks according corresponding integral type 
 !--------------------------------------------------------------------
       Use bsr_mat
 
@@ -71,7 +72,8 @@
 !======================================================================
       Subroutine Allocate_cmdata
 !======================================================================
-!     allocate arrays in module cmdata
+!> @ingroup bsr_mat
+!> @brief     allocate arrays in module cmdata
 !----------------------------------------------------------------------
       Use cmdata
       Use bsr_mat, only: nb,mb,kb
@@ -101,7 +103,8 @@
 !======================================================================
       Subroutine Initilize_cmdata
 !======================================================================
-!     clear the arrays from previous calculations
+!> @ingroup bsr_mat
+!> @brief     clear the arrays from previous calculations
 !----------------------------------------------------------------------
       Use cmdata
 

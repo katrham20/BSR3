@@ -1,0 +1,188 @@
+\hypertarget{group__bsr__conf}{}\doxysection{B\+S\+R\+\_\+\+C\+O\+N\+F3}
+\label{group__bsr__conf}\index{BSR\_CONF3@{BSR\_CONF3}}
+
+
+Generates configuration lists for B\+SR codes in case of L\+S(\+L\+S\+J), JK or JJ couplings with automatic generation of minimum orthogonal constraints.  
+
+
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__conf_gaeff40ce31bf7bb5d3c6a65a79b626c29}{bsr\+\_\+conf\+\_\+inf}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__conf_gaa64972fabe0c3348d9c2f411d6be5f61}{check\+\_\+cfg}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__conf_gaf1215b8333358cd53b8dc19248356aa9}{check\+\_\+perturbers}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__conf_ga944d92a6fabe85067c975920fb983e11}{def\+\_\+orth\+\_\+cond}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__conf_gae0c40eddddcd7d587398f08cf623ce04}{def\+\_\+phys\+\_\+targ}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__conf_gab0d6328bf63986ff4761b2fdf66b2d19}{gen\+\_\+conf}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__conf_ga77cc00fb7e998c68a9bfcd3263107747}{make\+\_\+coupling}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__conf_ga7ec99ffb5205e6d4708567969902eeb5}{make\+\_\+coupling\+\_\+insert}} (ii)
+\begin{DoxyCompactList}\small\item\em prepare coupling scheme for state in module \mbox{\hyperlink{namespaceconf__jj}{conf\+\_\+jj}} with outer orbital is going to position ii\+: J2\+\_\+coupling \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__conf_ga3296f27c2c0924d6a33f8f401da09aea}{make\+\_\+coupling\+\_\+trap}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__conf_gab8bc0f0002f2f94c56dec6887fb51a26}{read\+\_\+del}}
+\item 
+integer function \mbox{\hyperlink{group__bsr__conf_ga5d099f8d01146a9f82f668554efd0c4a}{icheck\+\_\+del}} (k1, k2, k3, k4)
+\begin{DoxyCompactList}\small\item\em check if channel with identifiers k1,k2,k3,k4 is in \char`\"{}delete\char`\"{} list \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bsr__conf_ga0028ec1978b976275928c391e53d96d4}{read\+\_\+arg}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__conf_gac3d6e39a0f19ff52a3128362f24185de}{record\+\_\+orth}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__conf_ga50c8b916cb241c0475319f801e91481e}{sub\+\_\+jj}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__conf_gacdafe977f462fb6ea41d1d0f2a92ecee}{sub\+\_\+jk}}
+\item 
+subroutine \mbox{\hyperlink{group__bsr__conf_gaf791d2ce052edab00a15e6fd96346fcc}{sub\+\_\+ls}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{group__bsr__conf_ga81b1607e114b8b6851fc0ef70f991e13}{bsr\+\_\+conf\+::ma}} =80
+\begin{DoxyCompactList}\small\item\em main parameters and variables for B\+S\+R\+\_\+\+C\+O\+NF program \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generates configuration lists for B\+SR codes in case of L\+S(\+L\+S\+J), JK or JJ couplings with automatic generation of minimum orthogonal constraints. 
+
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{group__bsr__conf_gaeff40ce31bf7bb5d3c6a65a79b626c29}\label{group__bsr__conf_gaeff40ce31bf7bb5d3c6a65a79b626c29}} 
+\index{BSR\_CONF3@{BSR\_CONF3}!bsr\_conf\_inf@{bsr\_conf\_inf}}
+\index{bsr\_conf\_inf@{bsr\_conf\_inf}!BSR\_CONF3@{BSR\_CONF3}}
+\doxysubsubsection{\texorpdfstring{bsr\_conf\_inf()}{bsr\_conf\_inf()}}
+{\footnotesize\ttfamily subroutine bsr\+\_\+conf\+\_\+inf}
+
+print information for bsr\+\_\+prep program\mbox{\Hypertarget{group__bsr__conf_gaa64972fabe0c3348d9c2f411d6be5f61}\label{group__bsr__conf_gaa64972fabe0c3348d9c2f411d6be5f61}} 
+\index{BSR\_CONF3@{BSR\_CONF3}!check\_cfg@{check\_cfg}}
+\index{check\_cfg@{check\_cfg}!BSR\_CONF3@{BSR\_CONF3}}
+\doxysubsubsection{\texorpdfstring{check\_cfg()}{check\_cfg()}}
+{\footnotesize\ttfamily subroutine check\+\_\+cfg}
+
+for given compensation configuration (ic) record all relevant information, see add\+\_\+comp below\mbox{\Hypertarget{group__bsr__conf_gaf1215b8333358cd53b8dc19248356aa9}\label{group__bsr__conf_gaf1215b8333358cd53b8dc19248356aa9}} 
+\index{BSR\_CONF3@{BSR\_CONF3}!check\_perturbers@{check\_perturbers}}
+\index{check\_perturbers@{check\_perturbers}!BSR\_CONF3@{BSR\_CONF3}}
+\doxysubsubsection{\texorpdfstring{check\_perturbers()}{check\_perturbers()}}
+{\footnotesize\ttfamily subroutine check\+\_\+perturbers}
+
+read the perturber configurations, substitute physical orbitals and check the \char`\"{}double\char`\"{} configurations if any We are supposed that pertuber expansions are ordered\mbox{\Hypertarget{group__bsr__conf_ga944d92a6fabe85067c975920fb983e11}\label{group__bsr__conf_ga944d92a6fabe85067c975920fb983e11}} 
+\index{BSR\_CONF3@{BSR\_CONF3}!def\_orth\_cond@{def\_orth\_cond}}
+\index{def\_orth\_cond@{def\_orth\_cond}!BSR\_CONF3@{BSR\_CONF3}}
+\doxysubsubsection{\texorpdfstring{def\_orth\_cond()}{def\_orth\_cond()}}
+{\footnotesize\ttfamily subroutine def\+\_\+orth\+\_\+cond}
+
+define orthogonal conditions to avoid \char`\"{}over-\/compensation\char`\"{}\mbox{\Hypertarget{group__bsr__conf_gae0c40eddddcd7d587398f08cf623ce04}\label{group__bsr__conf_gae0c40eddddcd7d587398f08cf623ce04}} 
+\index{BSR\_CONF3@{BSR\_CONF3}!def\_phys\_targ@{def\_phys\_targ}}
+\index{def\_phys\_targ@{def\_phys\_targ}!BSR\_CONF3@{BSR\_CONF3}}
+\doxysubsubsection{\texorpdfstring{def\_phys\_targ()}{def\_phys\_targ()}}
+{\footnotesize\ttfamily subroutine def\+\_\+phys\+\_\+targ}
+
+define the physical configurations for target expansions; we do it in two stage\+: define and record them in targ\+\_\+nnn.\+c, and then read all of them to avoid situation of missing targets and put target cofigurations in needed order\mbox{\Hypertarget{group__bsr__conf_gab0d6328bf63986ff4761b2fdf66b2d19}\label{group__bsr__conf_gab0d6328bf63986ff4761b2fdf66b2d19}} 
+\index{BSR\_CONF3@{BSR\_CONF3}!gen\_conf@{gen\_conf}}
+\index{gen\_conf@{gen\_conf}!BSR\_CONF3@{BSR\_CONF3}}
+\doxysubsubsection{\texorpdfstring{gen\_conf()}{gen\_conf()}}
+{\footnotesize\ttfamily subroutine gen\+\_\+conf}
+
+generates all configurations from given configuration \textquotesingle{}ic\textquotesingle{} in module C\+O\+N\+F\+I\+GS by adding the orbital \textquotesingle{}ie\textquotesingle{} so to obtain total term IS,IL\mbox{\Hypertarget{group__bsr__conf_ga5d099f8d01146a9f82f668554efd0c4a}\label{group__bsr__conf_ga5d099f8d01146a9f82f668554efd0c4a}} 
+\index{BSR\_CONF3@{BSR\_CONF3}!icheck\_del@{icheck\_del}}
+\index{icheck\_del@{icheck\_del}!BSR\_CONF3@{BSR\_CONF3}}
+\doxysubsubsection{\texorpdfstring{icheck\_del()}{icheck\_del()}}
+{\footnotesize\ttfamily integer function icheck\+\_\+del (\begin{DoxyParamCaption}\item[{integer}]{k1,  }\item[{integer}]{k2,  }\item[{integer}]{k3,  }\item[{integer}]{k4 }\end{DoxyParamCaption})}
+
+
+
+check if channel with identifiers k1,k2,k3,k4 is in \char`\"{}delete\char`\"{} list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k1} & \\
+\hline
+{\em k2} & check if channel with identifiers k1,k2,k3,k4 is in \char`\"{}delete\char`\"{} list \\
+\hline
+{\em k3} & check if channel with identifiers k1,k2,k3,k4 is in \char`\"{}delete\char`\"{} list \\
+\hline
+{\em k4} & check if channel with identifiers k1,k2,k3,k4 is in \char`\"{}delete\char`\"{} list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__conf_ga77cc00fb7e998c68a9bfcd3263107747}\label{group__bsr__conf_ga77cc00fb7e998c68a9bfcd3263107747}} 
+\index{BSR\_CONF3@{BSR\_CONF3}!make\_coupling@{make\_coupling}}
+\index{make\_coupling@{make\_coupling}!BSR\_CONF3@{BSR\_CONF3}}
+\doxysubsubsection{\texorpdfstring{make\_coupling()}{make\_coupling()}}
+{\footnotesize\ttfamily subroutine make\+\_\+coupling}
+
+prepare coupling scheme for state in module conf\+\_\+\+LS\+: J1\+\_\+coupling\mbox{\Hypertarget{group__bsr__conf_ga7ec99ffb5205e6d4708567969902eeb5}\label{group__bsr__conf_ga7ec99ffb5205e6d4708567969902eeb5}} 
+\index{BSR\_CONF3@{BSR\_CONF3}!make\_coupling\_insert@{make\_coupling\_insert}}
+\index{make\_coupling\_insert@{make\_coupling\_insert}!BSR\_CONF3@{BSR\_CONF3}}
+\doxysubsubsection{\texorpdfstring{make\_coupling\_insert()}{make\_coupling\_insert()}}
+{\footnotesize\ttfamily subroutine make\+\_\+coupling\+\_\+insert (\begin{DoxyParamCaption}\item[{integer}]{ii }\end{DoxyParamCaption})}
+
+
+
+prepare coupling scheme for state in module \mbox{\hyperlink{namespaceconf__jj}{conf\+\_\+jj}} with outer orbital is going to position ii\+: J2\+\_\+coupling 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ii} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bsr__conf_ga3296f27c2c0924d6a33f8f401da09aea}\label{group__bsr__conf_ga3296f27c2c0924d6a33f8f401da09aea}} 
+\index{BSR\_CONF3@{BSR\_CONF3}!make\_coupling\_trap@{make\_coupling\_trap}}
+\index{make\_coupling\_trap@{make\_coupling\_trap}!BSR\_CONF3@{BSR\_CONF3}}
+\doxysubsubsection{\texorpdfstring{make\_coupling\_trap()}{make\_coupling\_trap()}}
+{\footnotesize\ttfamily subroutine make\+\_\+coupling\+\_\+trap}
+
+prepare coupling scheme for state in module \mbox{\hyperlink{namespaceconf__jj}{conf\+\_\+jj}} with outer orbital is going to position ii\mbox{\Hypertarget{group__bsr__conf_ga0028ec1978b976275928c391e53d96d4}\label{group__bsr__conf_ga0028ec1978b976275928c391e53d96d4}} 
+\index{BSR\_CONF3@{BSR\_CONF3}!read\_arg@{read\_arg}}
+\index{read\_arg@{read\_arg}!BSR\_CONF3@{BSR\_CONF3}}
+\doxysubsubsection{\texorpdfstring{read\_arg()}{read\_arg()}}
+{\footnotesize\ttfamily subroutine read\+\_\+arg}
+
+read parameters for given case\mbox{\Hypertarget{group__bsr__conf_gab8bc0f0002f2f94c56dec6887fb51a26}\label{group__bsr__conf_gab8bc0f0002f2f94c56dec6887fb51a26}} 
+\index{BSR\_CONF3@{BSR\_CONF3}!read\_del@{read\_del}}
+\index{read\_del@{read\_del}!BSR\_CONF3@{BSR\_CONF3}}
+\doxysubsubsection{\texorpdfstring{read\_del()}{read\_del()}}
+{\footnotesize\ttfamily subroutine read\+\_\+del}
+
+read \char`\"{}chanel-\/delete\char`\"{} conditions if any\mbox{\Hypertarget{group__bsr__conf_gac3d6e39a0f19ff52a3128362f24185de}\label{group__bsr__conf_gac3d6e39a0f19ff52a3128362f24185de}} 
+\index{BSR\_CONF3@{BSR\_CONF3}!record\_orth@{record\_orth}}
+\index{record\_orth@{record\_orth}!BSR\_CONF3@{BSR\_CONF3}}
+\doxysubsubsection{\texorpdfstring{record\_orth()}{record\_orth()}}
+{\footnotesize\ttfamily subroutine record\+\_\+orth}
+
+record orthogonal conditions for sct. orbitals\+:\mbox{\Hypertarget{group__bsr__conf_ga50c8b916cb241c0475319f801e91481e}\label{group__bsr__conf_ga50c8b916cb241c0475319f801e91481e}} 
+\index{BSR\_CONF3@{BSR\_CONF3}!sub\_jj@{sub\_jj}}
+\index{sub\_jj@{sub\_jj}!BSR\_CONF3@{BSR\_CONF3}}
+\doxysubsubsection{\texorpdfstring{sub\_jj()}{sub\_jj()}}
+{\footnotesize\ttfamily subroutine sub\+\_\+jj}
+
+define channels orbitals in JJ case\mbox{\Hypertarget{group__bsr__conf_gacdafe977f462fb6ea41d1d0f2a92ecee}\label{group__bsr__conf_gacdafe977f462fb6ea41d1d0f2a92ecee}} 
+\index{BSR\_CONF3@{BSR\_CONF3}!sub\_jk@{sub\_jk}}
+\index{sub\_jk@{sub\_jk}!BSR\_CONF3@{BSR\_CONF3}}
+\doxysubsubsection{\texorpdfstring{sub\_jk()}{sub\_jk()}}
+{\footnotesize\ttfamily subroutine sub\+\_\+jk}
+
+define channels orbitals in JK case\mbox{\Hypertarget{group__bsr__conf_gaf791d2ce052edab00a15e6fd96346fcc}\label{group__bsr__conf_gaf791d2ce052edab00a15e6fd96346fcc}} 
+\index{BSR\_CONF3@{BSR\_CONF3}!sub\_ls@{sub\_ls}}
+\index{sub\_ls@{sub\_ls}!BSR\_CONF3@{BSR\_CONF3}}
+\doxysubsubsection{\texorpdfstring{sub\_ls()}{sub\_ls()}}
+{\footnotesize\ttfamily subroutine sub\+\_\+ls}
+
+define channels orbitals in L\+S(\+J) case
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{group__bsr__conf_ga81b1607e114b8b6851fc0ef70f991e13}\label{group__bsr__conf_ga81b1607e114b8b6851fc0ef70f991e13}} 
+\index{BSR\_CONF3@{BSR\_CONF3}!ma@{ma}}
+\index{ma@{ma}!BSR\_CONF3@{BSR\_CONF3}}
+\doxysubsubsection{\texorpdfstring{ma}{ma}}
+{\footnotesize\ttfamily integer, parameter bsr\+\_\+conf\+::ma =80}
+
+
+
+main parameters and variables for B\+S\+R\+\_\+\+C\+O\+NF program 
+

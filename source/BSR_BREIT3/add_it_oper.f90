@@ -1,7 +1,8 @@
 !=====================================================================
       Subroutine Add_it_oper(is,js)
 !=====================================================================
-! ... record what has been done for given case: is,js 
+!> @ingroup bsr_breit
+!> @brief  record what has been done for given case: is,js 
 !---------------------------------------------------------------------
       Use bsr_breit,    only: JT_oper, noper
       Use symt_list_LS, only: IT_oper 

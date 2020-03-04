@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine D_prep
 !======================================================================
-!     prepare B-spline multipole arrays and matrix elements
+!> @ingroup bsr_dmat
+!> @brief     prepare B-spline multipole arrays and matrix elements
 !----------------------------------------------------------------------
       Use bsr_dmat
       Use spline_param; Use spline_grid; Use spline_orbitals

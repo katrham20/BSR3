@@ -1,0 +1,58 @@
+\hypertarget{_m_o_d__overlaps__ion_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+Z\+C\+O\+N\+F\+L\+S/\+M\+O\+D\+\_\+overlaps\+\_\+ion.f90 File Reference}
+\label{_m_o_d__overlaps__ion_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/ZCONFLS/MOD\_overlaps\_ion.f90@{/Users/khamilton/Codes/BSR3/libraries/ZCONFLS/MOD\_overlaps\_ion.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespaceoverlaps__ion}{overlaps\+\_\+ion}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__overlaps__ion_8f90_abbe063ad6287fef42a022611a84784c2}{r\+\_\+overlaps\+\_\+ion}} (nut, mch, ntarg)
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__overlaps__ion_8f90_a9880a522a3470e9e19c6f5d5b6eaf859}{find\+\_\+overlap}} (ion\+\_\+state, ii\+\_\+ion, E, or, oi, phase)
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__overlaps__ion_8f90_aaa32646e83b9579ad5e6866f4e4b688b}{find\+\_\+ovl\+\_\+ion}} (ilsp\+\_\+ion, E, ntarg, ot)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{namespaceoverlaps__ion_a79fc24aa2572e36394ed2375f5401546}{overlaps\+\_\+ion\+::novl}} = 0
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceoverlaps__ion_a4c1b523b5f4110e3bc0894ca737d5652}{overlaps\+\_\+ion\+::iipar}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespaceoverlaps__ion_a253ca32f0784136edfb32fd1ced3959c}{overlaps\+\_\+ion\+::nopen}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespaceoverlaps__ion_abe98d8c66753887aee562a6a15eb5d85}{overlaps\+\_\+ion\+::eovl}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespaceoverlaps__ion_a81758e963b0a4bb0f9715c91e8aa5ca0}{overlaps\+\_\+ion\+::ovlr}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespaceoverlaps__ion_a4fbb9b3443d5759b854e93b4f0b942b9}{overlaps\+\_\+ion\+::ovli}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespaceoverlaps__ion_a0fbf4e33d319f5e6a21970de5ac97057}{overlaps\+\_\+ion\+::ovlt}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespaceoverlaps__ion_a78e3400c36532127fe013ed762eb9e65}{overlaps\+\_\+ion\+::ui}}
+\item 
+real(8), parameter \mbox{\hyperlink{namespaceoverlaps__ion_aa8a2f384213d0738a3cdb4959a12a7bb}{overlaps\+\_\+ion\+::eps\+\_\+e}} = 1.d-\/7
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{_m_o_d__overlaps__ion_8f90_a9880a522a3470e9e19c6f5d5b6eaf859}\label{_m_o_d__overlaps__ion_8f90_a9880a522a3470e9e19c6f5d5b6eaf859}} 
+\index{MOD\_overlaps\_ion.f90@{MOD\_overlaps\_ion.f90}!find\_overlap@{find\_overlap}}
+\index{find\_overlap@{find\_overlap}!MOD\_overlaps\_ion.f90@{MOD\_overlaps\_ion.f90}}
+\doxysubsubsection{\texorpdfstring{find\_overlap()}{find\_overlap()}}
+{\footnotesize\ttfamily subroutine find\+\_\+overlap (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ion\+\_\+state,  }\item[{integer, intent(in)}]{ii\+\_\+ion,  }\item[{real(8), intent(in)}]{E,  }\item[{real(8), intent(out)}]{or,  }\item[{real(8), intent(out)}]{oi,  }\item[{real(8), intent(out)}]{phase }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_m_o_d__overlaps__ion_8f90_aaa32646e83b9579ad5e6866f4e4b688b}\label{_m_o_d__overlaps__ion_8f90_aaa32646e83b9579ad5e6866f4e4b688b}} 
+\index{MOD\_overlaps\_ion.f90@{MOD\_overlaps\_ion.f90}!find\_ovl\_ion@{find\_ovl\_ion}}
+\index{find\_ovl\_ion@{find\_ovl\_ion}!MOD\_overlaps\_ion.f90@{MOD\_overlaps\_ion.f90}}
+\doxysubsubsection{\texorpdfstring{find\_ovl\_ion()}{find\_ovl\_ion()}}
+{\footnotesize\ttfamily subroutine find\+\_\+ovl\+\_\+ion (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ilsp\+\_\+ion,  }\item[{real(8), intent(in)}]{E,  }\item[{integer, intent(in)}]{ntarg,  }\item[{real(8), dimension(ntarg), intent(out)}]{ot }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_m_o_d__overlaps__ion_8f90_abbe063ad6287fef42a022611a84784c2}\label{_m_o_d__overlaps__ion_8f90_abbe063ad6287fef42a022611a84784c2}} 
+\index{MOD\_overlaps\_ion.f90@{MOD\_overlaps\_ion.f90}!r\_overlaps\_ion@{r\_overlaps\_ion}}
+\index{r\_overlaps\_ion@{r\_overlaps\_ion}!MOD\_overlaps\_ion.f90@{MOD\_overlaps\_ion.f90}}
+\doxysubsubsection{\texorpdfstring{r\_overlaps\_ion()}{r\_overlaps\_ion()}}
+{\footnotesize\ttfamily subroutine r\+\_\+overlaps\+\_\+ion (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nut,  }\item[{integer, intent(in)}]{mch,  }\item[{integer, intent(in)}]{ntarg }\end{DoxyParamCaption})}
+

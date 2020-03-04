@@ -1,11 +1,12 @@
 !======================================================================
       Subroutine R_conf
 !======================================================================
-!     Read the configuration list from c-file (unit 'nuc'),
-!     define there angular symmetries and compare with existing ones.
-!     Prepare the angular arrays.
-!
-!     nub, nui - file units for old and new results, respectively
+!> @ingroup bsr_breit
+!!     Read the configuration list from c-file (unit 'nuc'),
+!!     define there angular symmetries and compare with existing ones.
+!!     Prepare the angular arrays.
+!!
+!!     nub, nui - file units for old and new results, respectively
 !----------------------------------------------------------------------
       Use bsr_breit,       only: nuc,nub,pri,new,icalc,ioper,joper  
       Use symc_list_LS

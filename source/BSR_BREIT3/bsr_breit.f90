@@ -6,50 +6,51 @@
 !     Written by:   Oleg Zatsarinny 
 !                   email: oleg_zoi@yahoo.com
 !======================================================================
-!    generates angular coefficient in non-orthogonal mode 
+!> @defgroup bsr_breit BSR_BREIT3
+!> @brief    generates angular coefficient in non-orthogonal mode 
 !----------------------------------------------------------------------
 !
-!    INPUT ARGUMENTS:
-!    
-!    klsp,klsp1,klsp2  - range of partial wave in BSR calculations,
-!                        then cfg.001, cfg.002, ..., are input files
-!                        (default -> 0, with input file is cfg.inp)
-!   
-!    oper  - character(7), where each position can be 0 or 1,
-!            and indicate the operator under consideration:
-!            oper(1) - OVERLAPS       
-!            oper(2) - KINATIC ENERGY
-!            oper(3) - TWO-ELECTRON ELECTROSTATIC
-!            oper(4) - SPIN ORBIT       
-!            oper(5) - SPIN-OTHER-ORBIT
-!            oper(6) - SPIN-SPIN
-!            oper(7) - ORBIT-ORBIT       
-!            Default -> 1110000 - non-relativistic calculations
-!
-!    mk    - max.multipole index (default -> 9)
-!
+!>    INPUT ARGUMENTS:
+!!    
+!!    klsp,klsp1,klsp2  - range of partial wave in BSR calculations,
+!!                        then cfg.001, cfg.002, ..., are input files
+!!                        (default -> 0, with input file is cfg.inp)
+!!   
+!!    oper  - character(7), where each position can be 0 or 1,
+!!            and indicate the operator under consideration:
+!!            oper(1) - OVERLAPS       
+!!            oper(2) - KINATIC ENERGY
+!!            oper(3) - TWO-ELECTRON ELECTROSTATIC
+!!            oper(4) - SPIN ORBIT       
+!!            oper(5) - SPIN-OTHER-ORBIT
+!!            oper(6) - SPIN-SPIN
+!!            oper(7) - ORBIT-ORBIT       
+!!            Default -> 1110000 - non-relativistic calculations
+!!
+!!    mk    - max.multipole index (default -> 9)
+!!
 !----------------------------------------------------------------------
 !
-!    example:    1.  bsr_breit 
-!                2.  bsr_breit klsp1=1 klsp2=5 oper=1111110  
-!                3.  bsr_breit km=5
+!>    example:    1.  bsr_breit 
+!!                2.  bsr_breit klsp1=1 klsp2=5 oper=1111110  
+!!                3.  bsr_breit km=5
 !            
 !----------------------------------------------------------------------
 !
-!    INPUT FILES:
-!    
-!    cfg.nnn     -  configuration list for partial wave nnn = klsp
-!                   (cfg.inp in case klsp = 0, default)
-!                  
-!    int_bnk.nnn -  input data bank for angular coefficients
-!                   (optional; int_bnk in case klsp = 0)
-!                   
-!    
-!    OUTPUT FILES:
-!    
-!    int_bnk.nnn  - output data bank for angular coefficients
-!                   (int_bnk in case klsp = 0)
-!                   
+!>    INPUT FILES:
+!!    
+!!    cfg.nnn     -  configuration list for partial wave nnn = klsp
+!!                   (cfg.inp in case klsp = 0, default)
+!!                  
+!!    int_bnk.nnn -  input data bank for angular coefficients
+!!                   (optional; int_bnk in case klsp = 0)
+!!                   
+!!    
+!!    OUTPUT FILES:
+!!    
+!!    int_bnk.nnn  - output data bank for angular coefficients
+!!                   (int_bnk in case klsp = 0)
+!!                   
 !---------------------------------------------------------------------     
       Use bsr_breit
       Use conf_LS,      only: ne
@@ -189,7 +190,8 @@
 !======================================================================
       Subroutine RW(nu1,nu2,nc)
 !======================================================================
-!     re-write bnk-data from file 'nu1' to 'nu2' by blocks
+!> @ingroup bsr_breit	
+!> @brief     re-write bnk-data from file 'nu1' to 'nu2' by blocks
 !----------------------------------------------------------------------
       Implicit none
       Integer, intent(in) :: nu1,nu2

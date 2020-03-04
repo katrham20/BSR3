@@ -7,24 +7,26 @@
 !                   email: oleg_zoi@yahoo.com
 !
 !======================================================================
+!> @defgroup bsr_pol BSR_POL3
+!> @ingroup bsr_pol
 !
-!    INPUT  ARGUMENTS:
-!
-!     klsp  - the indexes of partial waves under consideration  
-!
-!    INPUT FILES:
-!
-!     bsr_par       -  description of partial waves
-!     cfg.nnn       -  c-file for close-coupling expansion
-!     bsr_mat.nnn   -  interaction matrix
-!     dv.nnn        -  dipole matrix
-!
-!    OUTPUT FILES:
-!   
-!     bsr_pol.log   -  running information 
-!     pol.nnn       -  bound-like solusions for polarized pseudo-states
-!
-!     Above, nnn indicates index of the partial wave
+!>    INPUT  ARGUMENTS:
+!!
+!!     klsp  - the indexes of partial waves under consideration  
+!!
+!!    INPUT FILES:
+!!
+!!     bsr_par       -  description of partial waves
+!!     cfg.nnn       -  c-file for close-coupling expansion
+!!     bsr_mat.nnn   -  interaction matrix
+!!     dv.nnn        -  dipole matrix
+!!
+!!    OUTPUT FILES:
+!!   
+!!     bsr_pol.log   -  running information 
+!!     pol.nnn       -  bound-like solusions for polarized pseudo-states
+!!
+!!     Above, nnn indicates index of the partial wave
 !
 !=====================================================================
       Use bsr_pol, only: pri

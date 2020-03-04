@@ -1,0 +1,72 @@
+\hypertarget{recup__a_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+Z\+C\+O\+M/recup\+\_\+a.f90 File Reference}
+\label{recup__a_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/ZCOM/recup\_a.f90@{/Users/khamilton/Codes/BSR3/libraries/ZCOM/recup\_a.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacerecup__a}{recup\+\_\+a}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{recup__a_8f90_a3fba961e51bc360553faeeeccbd87718}{recup}} (mi, n, J1, J2)
+\item 
+real(8) function \mbox{\hyperlink{recup__a_8f90_a223f7cb2a610c9bc678f054eea503545}{zrecup}} (mi, JJ)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{namespacerecup__a_a83ea3a3cc8d79bd15e003d324784a4d5}{recup\+\_\+a\+::mc}} = 25
+\item 
+integer, dimension(3, mc) \mbox{\hyperlink{namespacerecup__a_ae080d81d39e599cc9a5168276efafd7e}{recup\+\_\+a\+::y1}}
+\item 
+integer, dimension(3, mc) \mbox{\hyperlink{namespacerecup__a_a824bbab5a31801375578e2ac4fa50544}{recup\+\_\+a\+::y2}}
+\item 
+integer, dimension(mc) \mbox{\hyperlink{namespacerecup__a_ac89f1030467192b5a46e2466b1d7829e}{recup\+\_\+a\+::jp1}}
+\item 
+integer, dimension(mc) \mbox{\hyperlink{namespacerecup__a_ae18060ed2c65fc74a4ee0034dc0f4d91}{recup\+\_\+a\+::jp2}}
+\item 
+integer, parameter \mbox{\hyperlink{namespacerecup__a_a565a2b90504a4177e4ce858477b96340}{recup\+\_\+a\+::mm}} = 3$\ast$mc-\/2
+\item 
+integer, parameter \mbox{\hyperlink{namespacerecup__a_a38f543e479a16ca9c967844b576465e5}{recup\+\_\+a\+::mw}} = 100
+\item 
+integer, parameter \mbox{\hyperlink{namespacerecup__a_a73ebe3bb814fbee5507d509f9ee59124}{recup\+\_\+a\+::mj}} = mw + mm
+\item 
+integer, dimension(2, mj) \mbox{\hyperlink{namespacerecup__a_a9ff0022285cdfbc7c2d02bfcd75ca856}{recup\+\_\+a\+::jd}}
+\item 
+integer, dimension(mj) \mbox{\hyperlink{namespacerecup__a_a3d7d44417fa5f807e1a745d1bdd20b00}{recup\+\_\+a\+::jsign}}
+\item 
+integer, dimension(mj) \mbox{\hyperlink{namespacerecup__a_aea459aaebce380170cdd2f36b0ed6345}{recup\+\_\+a\+::jfact}}
+\item 
+integer, dimension(6, mw) \mbox{\hyperlink{namespacerecup__a_abae337d95998294cb371cba13fb9d252}{recup\+\_\+a\+::jw}}
+\item 
+integer \mbox{\hyperlink{namespacerecup__a_ae93f503346af156dedcd4c04448eeb13}{recup\+\_\+a\+::nw}}
+\item 
+integer \mbox{\hyperlink{namespacerecup__a_a2a45ba2246e84f90154e7178a9d82506}{recup\+\_\+a\+::nd}}
+\item 
+integer, dimension(mw) \mbox{\hyperlink{namespacerecup__a_a45de11c65aec1d99c052df3a0dbc1034}{recup\+\_\+a\+::jsum}}
+\item 
+integer, dimension(mw) \mbox{\hyperlink{namespacerecup__a_af2884b385ca467a16aae1aeba5f1def5}{recup\+\_\+a\+::is}}
+\item 
+integer, dimension(mw) \mbox{\hyperlink{namespacerecup__a_a93341bcf19592e66a203a7ff616e7a24}{recup\+\_\+a\+::jmax}}
+\item 
+real(8), dimension(mw) \mbox{\hyperlink{namespacerecup__a_a7410800b33735dafb6971096bf91ac9a}{recup\+\_\+a\+::r}}
+\item 
+real(8), dimension(mw) \mbox{\hyperlink{namespacerecup__a_a82a4dcb8a6ab6964b631f37d56400faf}{recup\+\_\+a\+::z}}
+\item 
+real(8) \mbox{\hyperlink{namespacerecup__a_ab7377aab13c5141f5161e6d9ca1ed03f}{recup\+\_\+a\+::eps\+\_\+r}} = 1.d-\/8
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{recup__a_8f90_a3fba961e51bc360553faeeeccbd87718}\label{recup__a_8f90_a3fba961e51bc360553faeeeccbd87718}} 
+\index{recup\_a.f90@{recup\_a.f90}!recup@{recup}}
+\index{recup@{recup}!recup\_a.f90@{recup\_a.f90}}
+\doxysubsubsection{\texorpdfstring{recup()}{recup()}}
+{\footnotesize\ttfamily subroutine recup (\begin{DoxyParamCaption}\item[{}]{mi,  }\item[{}]{n,  }\item[{integer, dimension(3,$\ast$)}]{J1,  }\item[{integer, dimension(3,$\ast$)}]{J2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{recup__a_8f90_a223f7cb2a610c9bc678f054eea503545}\label{recup__a_8f90_a223f7cb2a610c9bc678f054eea503545}} 
+\index{recup\_a.f90@{recup\_a.f90}!zrecup@{zrecup}}
+\index{zrecup@{zrecup}!recup\_a.f90@{recup\_a.f90}}
+\doxysubsubsection{\texorpdfstring{zrecup()}{zrecup()}}
+{\footnotesize\ttfamily real(8) function zrecup (\begin{DoxyParamCaption}\item[{}]{mi,  }\item[{integer, dimension($\ast$)}]{JJ }\end{DoxyParamCaption})}
+

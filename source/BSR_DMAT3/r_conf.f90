@@ -1,10 +1,11 @@
 !======================================================================
       Subroutine R_conf(in1,in2,nub)
 !======================================================================
-!     Read the configuration list from c-files (units 'in1,in2'),
-!     define there angular symmetries and compare with ones in
-!     data-bnk if any (unit nub)
-!     Prepare the angular arrays.
+!> @ingroup bsr_dmat
+!!     Read the configuration list from c-files (units 'in1,in2'),
+!!     define there angular symmetries and compare with ones in
+!!     data-bnk if any (unit nub)
+!!     Prepare the angular arrays.
 !----------------------------------------------------------------------
       Use symc_list_LS
       Use symt_list_LS

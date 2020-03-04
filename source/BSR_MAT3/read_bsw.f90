@@ -1,8 +1,9 @@
 !======================================================================
       Subroutine Read_bsw(nu)
 !======================================================================
-!     read B-spline orbitals from bsw-file (unit nu)
-!     only for orbitals which are in the list "orb_LS"
+!> @ingroup bsr_mat
+!> @brief     read B-spline orbitals from bsw-file (unit nu)
+!>     only for orbitals which are in the list "orb_LS"
 !----------------------------------------------------------------------
       Use spline_param
       Use spline_atomic

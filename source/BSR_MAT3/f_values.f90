@@ -1,8 +1,9 @@
 !======================================================================
       Subroutine f_values
 !======================================================================
-!     define the f-values between target states based on the
-!     given asimptotic coefficients ACF for k=1 
+!> @ingroup bsr_mat
+!> @brief     define the f-values between target states based on the
+!>     given asimptotic coefficients ACF for k=1 
 !----------------------------------------------------------------------
       Use bsr_mat
       Use target
@@ -89,8 +90,9 @@
 !======================================================================
       Real(8) Function Reduce_factor(ich,jch,k)
 !======================================================================
-!     define factor connecing reduced dipole matrix element with
-!     asymptotic coefficient for multipole index k
+!> @ingroup bsr_mat
+!> @brief     define factor connecing reduced dipole matrix element with
+!>     asymptotic coefficient for multipole index k
 !----------------------------------------------------------------------
       Use target
       Use channel

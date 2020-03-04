@@ -1,0 +1,68 @@
+\hypertarget{spline__slater_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+B\+S/spline\+\_\+slater.f90 File Reference}
+\label{spline__slater_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/BS/spline\_slater.f90@{/Users/khamilton/Codes/BSR3/libraries/BS/spline\_slater.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacespline__slater}{spline\+\_\+slater}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{spline__slater_8f90_a6ac3b9ef4818d1aab96e8dd6dbb335f1}{allocate\+\_\+slater}}
+\item 
+subroutine \mbox{\hyperlink{spline__slater_8f90_a37fd0a072e9ace6077a1d8e1851da133}{dealloc\+\_\+slater}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{namespacespline__slater_a40bfa392c29ecd329d3a19f861921dc1}{spline\+\_\+slater\+::ic1}} =0
+\item 
+integer \mbox{\hyperlink{namespacespline__slater_a9f17e47538a71da19c3c5abfd2d6fccf}{spline\+\_\+slater\+::ic2}} =0
+\item 
+integer \mbox{\hyperlink{namespacespline__slater_a429803db36e66e76d15319c574df598d}{spline\+\_\+slater\+::iy1}} =0
+\item 
+integer \mbox{\hyperlink{namespacespline__slater_a390ba73e610e0d669c16a184108d364a}{spline\+\_\+slater\+::iy2}} =0
+\item 
+integer \mbox{\hyperlink{namespacespline__slater_a24e75d9ab4018a11d54b4bd5f2da400d}{spline\+\_\+slater\+::ky}} =-\/100
+\item 
+integer \mbox{\hyperlink{namespacespline__slater_adf0a056d8f3988746a0c7b3cb7890b4c}{spline\+\_\+slater\+::kz}} =-\/100
+\item 
+integer \mbox{\hyperlink{namespacespline__slater_a59193293a41373acc157d6390f40e875}{spline\+\_\+slater\+::ktx}} = 0
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacespline__slater_ad4515e8b0a69043f15f78144b453194e}{spline\+\_\+slater\+::fc1}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacespline__slater_adaab626d7ef0e4ee41bda94b54b7b1a0}{spline\+\_\+slater\+::fc2}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacespline__slater_aeb663dde25014f019d06471efebd4449}{spline\+\_\+slater\+::fy1}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacespline__slater_a345dde74e899bb550f4976c104674ac0}{spline\+\_\+slater\+::fy2}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacespline__slater_aba53fbf018c9170786446acfd59f3625}{spline\+\_\+slater\+::fc}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacespline__slater_a90baa50455d68ed5d929196bb1075536}{spline\+\_\+slater\+::fyk}}
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacespline__slater_a6692d2ca56da6eabc4c1bc8929e9d966}{spline\+\_\+slater\+::yk}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacespline__slater_a95b0f20ad4e8bbc2c9a716138c162b79}{spline\+\_\+slater\+::dyk}}
+\item 
+real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacespline__slater_a70340710f3279853262f1135c4d7be8b}{spline\+\_\+slater\+::dzk}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacespline__slater_a1273dc83ad8411fa4f267205d354bd18}{spline\+\_\+slater\+::ipvtd}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacespline__slater_a8483be27c9b3f8fdd7d08e7b0e9b7803}{spline\+\_\+slater\+::ipvtz}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{spline__slater_8f90_a6ac3b9ef4818d1aab96e8dd6dbb335f1}\label{spline__slater_8f90_a6ac3b9ef4818d1aab96e8dd6dbb335f1}} 
+\index{spline\_slater.f90@{spline\_slater.f90}!allocate\_slater@{allocate\_slater}}
+\index{allocate\_slater@{allocate\_slater}!spline\_slater.f90@{spline\_slater.f90}}
+\doxysubsubsection{\texorpdfstring{allocate\_slater()}{allocate\_slater()}}
+{\footnotesize\ttfamily subroutine allocate\+\_\+slater}
+
+\mbox{\Hypertarget{spline__slater_8f90_a37fd0a072e9ace6077a1d8e1851da133}\label{spline__slater_8f90_a37fd0a072e9ace6077a1d8e1851da133}} 
+\index{spline\_slater.f90@{spline\_slater.f90}!dealloc\_slater@{dealloc\_slater}}
+\index{dealloc\_slater@{dealloc\_slater}!spline\_slater.f90@{spline\_slater.f90}}
+\doxysubsubsection{\texorpdfstring{dealloc\_slater()}{dealloc\_slater()}}
+{\footnotesize\ttfamily subroutine dealloc\+\_\+slater}
+

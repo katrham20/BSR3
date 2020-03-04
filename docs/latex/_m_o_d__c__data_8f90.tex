@@ -1,0 +1,100 @@
+\hypertarget{_m_o_d__c__data_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/libraries/\+Z\+C\+O\+M/\+M\+O\+D\+\_\+c\+\_\+data.f90 File Reference}
+\label{_m_o_d__c__data_8f90}\index{/Users/khamilton/Codes/BSR3/libraries/ZCOM/MOD\_c\_data.f90@{/Users/khamilton/Codes/BSR3/libraries/ZCOM/MOD\_c\_data.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespacec__data}{c\+\_\+data}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__c__data_8f90_ad0de935762ed22a3a901e2d23c404444}{alloc\+\_\+c\+\_\+data}} (nt, kp1, kp2, mblock, nblock, kblock, eps\+\_\+c)
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__c__data_8f90_abb889c5a8cc27e12d06c460efd3937db}{add\+\_\+coef}} (C, kpol, j1, j2, j3, j4, itype)
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__c__data_8f90_aecc5c7144cc305a1692709b811ee0022}{add\+\_\+cdata}} (ip, jp, C, j1, j2, j3, j4)
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__c__data_8f90_a8284125bf322dd54eab86856c20886a9}{merge\+\_\+cdata}} (nn, ip, jp, nc)
+\item 
+subroutine \mbox{\hyperlink{_m_o_d__c__data_8f90_aa448f47faad142e4bfaa0b1777d3b424}{add\+\_\+matrix}} (itype, kpol)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer \mbox{\hyperlink{namespacec__data_a9fe57ce4750566b00e7bdfdfb4f899d2}{c\+\_\+data\+::ncdata}} = 0
+\item 
+real(8), dimension(\+:), allocatable \mbox{\hyperlink{namespacec__data_acabb6e70d87679d8477d5a85f46634da}{c\+\_\+data\+::cdata}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacec__data_a387d3f57a1aa3359efe57d6ff0d1b754}{c\+\_\+data\+::k1}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacec__data_ab7ec91dfbb50f835d484e004f3056659}{c\+\_\+data\+::k2}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacec__data_a69e5929f3a68568908d8100e8880eb60}{c\+\_\+data\+::k3}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacec__data_a4702c55c9b242f8e1c64b5115699262f}{c\+\_\+data\+::k4}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacec__data_a9ad9a58e0f94e220ff926f2f83d90c86}{c\+\_\+data\+::ipt}}
+\item 
+integer \mbox{\hyperlink{namespacec__data_a8fe2c72c586fdf7f3b093c8c38712dc6}{c\+\_\+data\+::nb}} = 1000
+\item 
+integer \mbox{\hyperlink{namespacec__data_a04ab601faf5537591fe1012db568b266}{c\+\_\+data\+::mb}} = 2000
+\item 
+integer \mbox{\hyperlink{namespacec__data_a0c6b01650ed2fac16f75c7b6dc6de911}{c\+\_\+data\+::kb}} = 100
+\item 
+integer \mbox{\hyperlink{namespacec__data_a824140b12e5d290a0955a1cab2a51cab}{c\+\_\+data\+::ntype}} = 4
+\item 
+integer \mbox{\hyperlink{namespacec__data_a10b2f5c4da4d689e5f29501bba2eef41}{c\+\_\+data\+::kpol1}} = 0
+\item 
+integer \mbox{\hyperlink{namespacec__data_a6937cab4ca0f2cf601419acc96db1236}{c\+\_\+data\+::kpol2}} = 7
+\item 
+real(8) \mbox{\hyperlink{namespacec__data_a0de2535c3b3e41f3d83efd87959a7271}{c\+\_\+data\+::mem\+\_\+cdata}} = 0.d0
+\item 
+real(8) \mbox{\hyperlink{namespacec__data_ab34b159fd4390be1d43ba1a8bf0bc5b3}{c\+\_\+data\+::eps\+\_\+cdata}} = 1.d-\/12
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacec__data_ad2672f009925713da57483f7a354beea}{c\+\_\+data\+::ipblk}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacec__data_abbdf64fb215723fa7e2349049398101f}{c\+\_\+data\+::ipi}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacec__data_a088fb86c4ee7223d85ccbb96765c4a6d}{c\+\_\+data\+::jpblk}}
+\item 
+integer, dimension(\+:), allocatable \mbox{\hyperlink{namespacec__data_a43ec188ddf49f778ca716cfffcb8cbf5}{c\+\_\+data\+::ipj}}
+\item 
+integer, dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacec__data_ac48286a90e990d8d6edcd6e8b93cc8e8}{c\+\_\+data\+::iblk}}
+\item 
+integer, dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacec__data_ac8a7789be969ff5dc37efceaeb1343f8}{c\+\_\+data\+::nblk}}
+\item 
+integer, dimension(\+:,\+:,\+:), allocatable \mbox{\hyperlink{namespacec__data_a12cc4b9edd9c36b6f640f2535ac9bd27}{c\+\_\+data\+::kblk}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{_m_o_d__c__data_8f90_aecc5c7144cc305a1692709b811ee0022}\label{_m_o_d__c__data_8f90_aecc5c7144cc305a1692709b811ee0022}} 
+\index{MOD\_c\_data.f90@{MOD\_c\_data.f90}!add\_cdata@{add\_cdata}}
+\index{add\_cdata@{add\_cdata}!MOD\_c\_data.f90@{MOD\_c\_data.f90}}
+\doxysubsubsection{\texorpdfstring{add\_cdata()}{add\_cdata()}}
+{\footnotesize\ttfamily subroutine add\+\_\+cdata (\begin{DoxyParamCaption}\item[{integer}]{ip,  }\item[{integer}]{jp,  }\item[{real(8), intent(in)}]{C,  }\item[{integer}]{j1,  }\item[{integer}]{j2,  }\item[{integer}]{j3,  }\item[{integer}]{j4 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_m_o_d__c__data_8f90_abb889c5a8cc27e12d06c460efd3937db}\label{_m_o_d__c__data_8f90_abb889c5a8cc27e12d06c460efd3937db}} 
+\index{MOD\_c\_data.f90@{MOD\_c\_data.f90}!add\_coef@{add\_coef}}
+\index{add\_coef@{add\_coef}!MOD\_c\_data.f90@{MOD\_c\_data.f90}}
+\doxysubsubsection{\texorpdfstring{add\_coef()}{add\_coef()}}
+{\footnotesize\ttfamily subroutine add\+\_\+coef (\begin{DoxyParamCaption}\item[{real(8), intent(in)}]{C,  }\item[{integer, intent(in)}]{kpol,  }\item[{integer, intent(in)}]{j1,  }\item[{integer, intent(in)}]{j2,  }\item[{integer, intent(in)}]{j3,  }\item[{integer, intent(in)}]{j4,  }\item[{integer, intent(in)}]{itype }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_m_o_d__c__data_8f90_aa448f47faad142e4bfaa0b1777d3b424}\label{_m_o_d__c__data_8f90_aa448f47faad142e4bfaa0b1777d3b424}} 
+\index{MOD\_c\_data.f90@{MOD\_c\_data.f90}!add\_matrix@{add\_matrix}}
+\index{add\_matrix@{add\_matrix}!MOD\_c\_data.f90@{MOD\_c\_data.f90}}
+\doxysubsubsection{\texorpdfstring{add\_matrix()}{add\_matrix()}}
+{\footnotesize\ttfamily subroutine add\+\_\+matrix (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{itype,  }\item[{integer, intent(in)}]{kpol }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_m_o_d__c__data_8f90_ad0de935762ed22a3a901e2d23c404444}\label{_m_o_d__c__data_8f90_ad0de935762ed22a3a901e2d23c404444}} 
+\index{MOD\_c\_data.f90@{MOD\_c\_data.f90}!alloc\_c\_data@{alloc\_c\_data}}
+\index{alloc\_c\_data@{alloc\_c\_data}!MOD\_c\_data.f90@{MOD\_c\_data.f90}}
+\doxysubsubsection{\texorpdfstring{alloc\_c\_data()}{alloc\_c\_data()}}
+{\footnotesize\ttfamily subroutine alloc\+\_\+c\+\_\+data (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{nt,  }\item[{integer, intent(in)}]{kp1,  }\item[{integer, intent(in)}]{kp2,  }\item[{integer, intent(in)}]{mblock,  }\item[{integer, intent(in)}]{nblock,  }\item[{integer, intent(in)}]{kblock,  }\item[{real(8), intent(in)}]{eps\+\_\+c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_m_o_d__c__data_8f90_a8284125bf322dd54eab86856c20886a9}\label{_m_o_d__c__data_8f90_a8284125bf322dd54eab86856c20886a9}} 
+\index{MOD\_c\_data.f90@{MOD\_c\_data.f90}!merge\_cdata@{merge\_cdata}}
+\index{merge\_cdata@{merge\_cdata}!MOD\_c\_data.f90@{MOD\_c\_data.f90}}
+\doxysubsubsection{\texorpdfstring{merge\_cdata()}{merge\_cdata()}}
+{\footnotesize\ttfamily subroutine merge\+\_\+cdata (\begin{DoxyParamCaption}\item[{integer}]{nn,  }\item[{integer, dimension($\ast$)}]{ip,  }\item[{integer, dimension($\ast$)}]{jp,  }\item[{integer}]{nc }\end{DoxyParamCaption})}
+

@@ -6,8 +6,9 @@
 !     Written by:   Oleg Zatsarinny,   email: oleg_zoi@yahoo.com
 !                         
 !======================================================================
-!     prints from unformated INT_BNK file to COEF.TAB file the integral
-!     coefficients for selected states in CFG.INP 
+!> @ingroup bsr_breit
+!> @brief     prints from unformated INT_BNK file to COEF.TAB file the integral
+!>     coefficients for selected states in CFG.INP 
 !----------------------------------------------------------------------
       Use param_br
       Use conf_LS

@@ -1,25 +1,26 @@
 !======================================================================
       MODULE bsr_matrix
 !======================================================================
-!
-!     contains the basic matrices:
-!
-!     hcc  -  interaction (or overlap) chanel-channel matrix
-!     hcb  -  interaction (or overlap) chanel-bound matrix
-!     hbb  -  interaction (or overlap) bound-bound matrix
-!     ACF  -  array of asymptotic coefficients
-!     htarg  -  interaction matrix for target states
-!     otarg  -  overlap matrix for target states
-!
+!> @ingroup bsr_mat
+!!
+!!     contains the basic matrices:
+!!
+!!     hcc  -  interaction (or overlap) chanel-channel matrix
+!!     hcb  -  interaction (or overlap) chanel-bound matrix
+!!     hbb  -  interaction (or overlap) bound-bound matrix
+!!     ACF  -  array of asymptotic coefficients
+!!     htarg  -  interaction matrix for target states
+!!     otarg  -  overlap matrix for target states
+!!
 !----------------------------------------------------------------------
 
       Implicit none
 
-      Integer :: kch      !   number of channels
-      Integer :: kns      !   size of one channel block (=ns)
-      Integer :: kcp      !   number of perturber configurations
-      Integer :: kmk      !   maximmum multipole
-      Integer :: kcfg     !   number of configurations in channel blocks
+      Integer :: kch      !< @param   number of channels
+      Integer :: kns      !< @param   size of one channel block (=ns)
+      Integer :: kcp      !< @param   number of perturber configurations
+      Integer :: kmk      !< @param   maximmum multipole
+      Integer :: kcfg     !< @param   number of configurations in channel blocks
 
       Real(8), allocatable :: hcc(:,:,:),hcb(:,:,:),hbb(:)
       Real(8), allocatable :: ACF(:,:,:)
@@ -32,7 +33,8 @@
 !======================================================================
       Subroutine allocate_matrix(nch,ns,ncp,mk,ncfg)
 !======================================================================
-!     allocate arrays in module bsr_matrix
+!> @ingroup bsr_mat
+!> @brief     allocate arrays in module bsr_matrix
 !----------------------------------------------------------------------
       Use bsr_matrix
 
@@ -68,11 +70,12 @@
 !======================================================================
       Subroutine UPDATE_HX(ich,jch,ns,ks,d,sym)
 !======================================================================
-!     update channel block 
-!
-!     sym = 's'  -->  symmetric banded upper-column storage mode
-!     sym = 'n'  -->  non-symmetric band matrix  
-!     sym = 'x'  -->  non-symmetric full matrix
+!> @ingroup bsr_mat
+!> @brief     update channel block 
+!!
+!!     sym = 's'  -->  symmetric banded upper-column storage mode
+!!     sym = 'n'  -->  non-symmetric band matrix  
+!!     sym = 'x'  -->  non-symmetric full matrix
 !----------------------------------------------------------------------
       Use bsr_matrix
 
@@ -130,7 +133,8 @@
 !======================================================================
       Subroutine UPDATE_HL(ich,jch,ns,ks,d,c)
 !======================================================================
-!     update symmetric banded matrix in lower-column storage mode !
+!> @ingroup bsr_mat
+!> @brief     update symmetric banded matrix in lower-column storage mode !
 !----------------------------------------------------------------------
       Use bsr_matrix
 
@@ -165,7 +169,8 @@
 !======================================================================
       Subroutine UPDATE_HB(ic,jc,c)
 !======================================================================
-!     update scalar in the bound-bound block
+!> @ingroup bsr_mat
+!> @brief     update scalar in the bound-bound block
 !----------------------------------------------------------------------
       Use bsr_matrix
 
@@ -186,7 +191,8 @@
 !======================================================================
       Subroutine UPDATE_HV(ich,ic,ns,v,c)
 !======================================================================
-!     update vector in the channel-bound block
+!> @ingroup bsr_mat
+!> @brief     update vector in the channel-bound block
 !----------------------------------------------------------------------
       Use bsr_matrix
 
@@ -208,7 +214,8 @@
 !======================================================================
       Subroutine UPDATE_HW(ich,jch,ns,v,w)
 !======================================================================
-!     update channel block with by v*w
+!> @ingroup bsr_mat
+!> @brief     update channel block with by v*w
 !-----------------------------------------------------------------------
       Use bsr_matrix
 
@@ -244,7 +251,8 @@
 !=======================================================================
       Subroutine UPDATE_CF(k,ich,jch,C)
 !=======================================================================
-!     Update asymptotic coefficients
+!> @ingroup bsr_mat
+!> @brief     Update asymptotic coefficients
 !-----------------------------------------------------------------------
       Use bsr_matrix
 
@@ -267,12 +275,13 @@
 !======================================================================
       Subroutine Target_h(ich,jch,C,CC)
 !======================================================================
-!     update target interaction and overlap matrixes, by considering 
-!     the terms with structure <kl|k'l> <target|H|target'>
-!
-!     It is not pure target states, but the basis states before |kl>,
-!     i.e. the basis states may repeat, if one target state can
-!     couple to several kl.
+!> @ingroup bsr_mat
+!!     update target interaction and overlap matrixes, by considering 
+!!     the terms with structure <kl|k'l> <target|H|target'>
+!!
+!!     It is not pure target states, but the basis states before |kl>,
+!!     i.e. the basis states may repeat, if one target state can
+!!     couple to several kl.
 !----------------------------------------------------------------------
       Use bsr_matrix
 
@@ -296,6 +305,9 @@
 !======================================================================
       Subroutine Target_print(iout,EC,eps)
 !======================================================================
+!> @ingroup bsr_mat
+!> @brief prints target info
+
       Use bsr_matrix
       Use channel
       Use target
@@ -355,7 +367,8 @@
 !======================================================================
       Subroutine Target_new
 !======================================================================
-!     new target energies 
+!> @ingroup bsr_mat
+!> @brief new target energies 
 !----------------------------------------------------------------------
       Use bsr_matrix, only: htarg
       Use channel,    only: nch,iptar,ELC

@@ -1,10 +1,11 @@
 !======================================================================
       Subroutine pre_det_exp 
 !======================================================================
-!     define the det. expansions and write the information
-!     in scratch file 'nud'. 'nua' is just Used for temporally storing.
-!     Expansion is given for max. ML and MS,
-!     and for all pairs of configurations
+!> @ingroup bsr_breit
+!!     define the det. expansions and write the information
+!!     in scratch file 'nud'. 'nua' is just Used for temporally storing.
+!!     Expansion is given for max. ML and MS,
+!!     and for all pairs of configurations
 !-----------------------------------------------------------------------
       Use bsr_breit,    only: nud,nua,ioper,mktkdt
       Use term_exp,     only: ic_case, MLT,MST
@@ -167,8 +168,9 @@
 !======================================================================
       Subroutine Det_expn (nua,kt,kdt,MLT,MST) 
 !======================================================================
-!     determined all possible determinants and their coefficients
-!     for given set of terms (kt). Results are recorded to unit 'nua'
+!> @ingroup bsr_breit
+!> @brief     determined all possible determinants and their coefficients
+!>     for given set of terms (kt). Results are recorded to unit 'nua'
 !----------------------------------------------------------------------
       Use conf_LS,       only: ne,no,ln,iq,LS,LS1,LSI
       Use spin_orbitals, only: in,md,Msym,Ssym,MS_orb,ML_orb 

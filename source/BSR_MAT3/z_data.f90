@@ -1,18 +1,19 @@
 !======================================================================
       Subroutine Z_data (jtype,l) 
 !======================================================================
-!     processing the Z-integrals from the module 'cmdata'
+!> @ingroup bsr_mat
+!> @brief     processing the Z-integrals from the module 'cmdata'
 !----------------------------------------------------------------------
-!     we have following different structures:
-!
-!     Z( . .)                        -  bound-bound
-!     Z( i .)                        -  bound-channel
-!     Z( . .) < i | . >              -  bound-channel
-!     Z( i i)                        -  channel-channel
-!     Z( i .) < j | . >              -  channel-channel
-!     Z( . .) < i | . > < j | . >    -  channel-channel
-!
-!     where .  denotes bound orbital, i,j - channels.
+!>     we have following different structures:
+!!
+!!     Z( . .)                        -  bound-bound
+!!     Z( i .)                        -  bound-channel
+!!     Z( . .) < i | . >              -  bound-channel
+!!     Z( i i)                        -  channel-channel
+!!     Z( i .) < j | . >              -  channel-channel
+!!     Z( . .) < i | . > < j | . >    -  channel-channel
+!!
+!!     where .  denotes bound orbital, i,j - channels.
 !----------------------------------------------------------------------
       Use Z_core; Use bsr_mat
       Use cmdata; Use target;  Use channel

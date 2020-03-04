@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine Read_arg
 !======================================================================
-!     determine the main input parameters
+!> @ingroup bsr_dmat
+!> @brief     determine the main input parameters
 !----------------------------------------------------------------------
       Use bsr_dmat
 

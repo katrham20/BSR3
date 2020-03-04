@@ -1,0 +1,90 @@
+\hypertarget{mod__blacs_8f90}{}\doxysection{/\+Users/khamilton/\+Codes/\+B\+S\+R3/source/\+B\+S\+R\+\_\+\+H\+D\+B3/mod\+\_\+blacs.f90 File Reference}
+\label{mod__blacs_8f90}\index{/Users/khamilton/Codes/BSR3/source/BSR\_HDB3/mod\_blacs.f90@{/Users/khamilton/Codes/BSR3/source/BSR\_HDB3/mod\_blacs.f90}}
+\doxysubsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+module \mbox{\hyperlink{namespaceblacs}{blacs}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+subroutine \mbox{\hyperlink{mod__blacs_8f90_a633641a892834d08882862d56be76897}{p\+\_\+error}} (err, msg)
+\item 
+subroutine \mbox{\hyperlink{mod__blacs_8f90_af3c0f9ae198bab8f9514978c495eb337}{br\+\_\+ipar}} (i)
+\item 
+subroutine \mbox{\hyperlink{mod__blacs_8f90_a212162cffef1b1145dc3cc2f0e77b948}{br\+\_\+dpar}} (i)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+integer, parameter \mbox{\hyperlink{namespaceblacs_ac1f34ad58e28c515bf36bb4414377782}{blacs\+::dlen\+\_\+}} = 9
+\item 
+integer, parameter \mbox{\hyperlink{namespaceblacs_a981742061d61052517a1cf253f8e2ade}{blacs\+::block\+\_\+cyclic\+\_\+2d}} = 1
+\item 
+integer, parameter \mbox{\hyperlink{namespaceblacs_aadef190dd4ecf98237bd557eef70359c}{blacs\+::ctxt\+\_\+}} = 2
+\item 
+integer, parameter \mbox{\hyperlink{namespaceblacs_aeac0c0301bc9b40e0978dc7ebb49e4c9}{blacs\+::m\+\_\+}} = 3
+\item 
+integer, parameter \mbox{\hyperlink{namespaceblacs_aac8f7b25fac64c2edd748c041ea9c987}{blacs\+::n\+\_\+}} = 4
+\item 
+integer, parameter \mbox{\hyperlink{namespaceblacs_a81de7ef9578c13a3f2bf51062e5ea576}{blacs\+::mb\+\_\+}} = 5
+\item 
+integer, parameter \mbox{\hyperlink{namespaceblacs_a811d4649e2d4f127eb2d2bae3ef5ad1b}{blacs\+::nb\+\_\+}} = 6
+\item 
+integer, parameter \mbox{\hyperlink{namespaceblacs_a1f02ee306477668ea347f29be551eb22}{blacs\+::rsrc\+\_\+}} = 7
+\item 
+integer, parameter \mbox{\hyperlink{namespaceblacs_a2ae5b8fcea6accba8b7e11a442bf6819}{blacs\+::csrc\+\_\+}} = 8
+\item 
+integer, parameter \mbox{\hyperlink{namespaceblacs_a8ae54ca89c06801a2722c779c8b90ea3}{blacs\+::lld\+\_\+}} = 9
+\item 
+integer, save \mbox{\hyperlink{namespaceblacs_a065956edbede1bed7431d51dfb6d097b}{blacs\+::ictxt}}
+\item 
+integer, save \mbox{\hyperlink{namespaceblacs_a2154e536d03d6b438b612006302c41e9}{blacs\+::iam}}
+\item 
+integer, save \mbox{\hyperlink{namespaceblacs_a93822177efa601698188d29d2a94c355}{blacs\+::nprocs}}
+\item 
+integer, save \mbox{\hyperlink{namespaceblacs_a52594dd81b62e4fd7c5231ea87cf1dd4}{blacs\+::ctxt}}
+\item 
+integer, save \mbox{\hyperlink{namespaceblacs_a50ad262c770bb66ebeb2db496e4b68ae}{blacs\+::p}} =0
+\item 
+integer, save \mbox{\hyperlink{namespaceblacs_aa24841bafd305da690d51346a80cfa3d}{blacs\+::q}} =0
+\item 
+integer, save \mbox{\hyperlink{namespaceblacs_aa0709bc6fbcbf904875e1fdd05041172}{blacs\+::mycol}}
+\item 
+integer, save \mbox{\hyperlink{namespaceblacs_accea93ef00ba1360a18b4fd48952ba6f}{blacs\+::myrow}}
+\item 
+logical, save \mbox{\hyperlink{namespaceblacs_a4c654a8e517733f9de0bb6ed85d4b65b}{blacs\+::io\+\_\+processor}}
+\item 
+integer, save \mbox{\hyperlink{namespaceblacs_a3ec2d6c57eced2fb89404ce75bf2234a}{blacs\+::nblock}} = 64
+\item 
+integer, save \mbox{\hyperlink{namespaceblacs_a5d2954610dec6fdf127eef832ace69bb}{blacs\+::rsrc}} =0
+\item 
+integer, save \mbox{\hyperlink{namespaceblacs_a61a85e3499e506eaeff544f2f3a1bdd4}{blacs\+::csrc}} =0
+\item 
+integer, save \mbox{\hyperlink{namespaceblacs_afbd17356994aa3a2ca5a38e65617b008}{blacs\+::np}} =1
+\item 
+integer, save \mbox{\hyperlink{namespaceblacs_af44a88c27c6af4cb6d2353a97806ecae}{blacs\+::nq}} =1
+\item 
+integer, save \mbox{\hyperlink{namespaceblacs_ab503d8955a37de0b7ede53f8dabcf54d}{blacs\+::ld}} =1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{mod__blacs_8f90_a212162cffef1b1145dc3cc2f0e77b948}\label{mod__blacs_8f90_a212162cffef1b1145dc3cc2f0e77b948}} 
+\index{mod\_blacs.f90@{mod\_blacs.f90}!br\_dpar@{br\_dpar}}
+\index{br\_dpar@{br\_dpar}!mod\_blacs.f90@{mod\_blacs.f90}}
+\doxysubsubsection{\texorpdfstring{br\_dpar()}{br\_dpar()}}
+{\footnotesize\ttfamily subroutine br\+\_\+dpar (\begin{DoxyParamCaption}\item[{real(8)}]{i }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mod__blacs_8f90_af3c0f9ae198bab8f9514978c495eb337}\label{mod__blacs_8f90_af3c0f9ae198bab8f9514978c495eb337}} 
+\index{mod\_blacs.f90@{mod\_blacs.f90}!br\_ipar@{br\_ipar}}
+\index{br\_ipar@{br\_ipar}!mod\_blacs.f90@{mod\_blacs.f90}}
+\doxysubsubsection{\texorpdfstring{br\_ipar()}{br\_ipar()}}
+{\footnotesize\ttfamily subroutine br\+\_\+ipar (\begin{DoxyParamCaption}\item[{integer}]{i }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mod__blacs_8f90_a633641a892834d08882862d56be76897}\label{mod__blacs_8f90_a633641a892834d08882862d56be76897}} 
+\index{mod\_blacs.f90@{mod\_blacs.f90}!p\_error@{p\_error}}
+\index{p\_error@{p\_error}!mod\_blacs.f90@{mod\_blacs.f90}}
+\doxysubsubsection{\texorpdfstring{p\_error()}{p\_error()}}
+{\footnotesize\ttfamily subroutine p\+\_\+error (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{err,  }\item[{character(len=$\ast$), intent(in)}]{msg }\end{DoxyParamCaption})}
+

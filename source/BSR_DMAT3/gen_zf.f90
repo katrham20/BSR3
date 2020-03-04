@@ -1,8 +1,9 @@
 !======================================================================
       Subroutine Gen_zf
 !======================================================================
-! ... define the number of solutions and open relevant file,
-! ... then call LS or LSJ routines:  LS_case and J_case
+!> @ingroup bsr_dmat
+!> @brief define the number of solutions and open relevant file,
+!> then call LS or LSJ routines:  LS_case and J_case
 !----------------------------------------------------------------------
       USE bsr_dmat
       USE dmatrix

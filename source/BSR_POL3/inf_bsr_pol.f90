@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine inf_bsr_pol
 !======================================================================
-!     provide screen information about bsr_mat program
+!> @ingroup bsr_pol
+!> @brief     provide screen information about bsr_pol program
 !----------------------------------------------------------------------
       Character(80) :: A
 

@@ -1,46 +1,44 @@
 !======================================================================
       Subroutine I_data(jtype,jpol)
 !======================================================================
-!     processing of I-integrals from the module 'cmdata'
+!> @ingroup bsr_mat
+!> @brief     processing of I-integrals from the module 'cmdata'
 !----------------------------------------------------------------------
-!     we have following different structures:
-!
-! 1 1.0  Rk( . . . .)  ic, jc               -  bound-bound  
-! 2 1.1  Rk( . . . .) < i | . > ic          -  bound-channel
-! 3 1.2  Rk( . . . .) < i | . > < j | . >   -  channel-channel
-! 4 1.3  Rk( . . . .) < i | j >             -  target structure
-!
-! 5 2.0  Rk( i . . .) < j | . >             -  channel-channel due to
-! 6 3.0  Rk( . i . .) < j | . >                overlaps
-! 7 4.0  Rk( . . i .) < j | . >
-! 8 5.0  Rk( . . . i) < j | . >
-!
-! 9 2.1  Rk( i . . .)  ic                   -  bound-channel
-!10 3.1  Rk( . i . .)  ic
-!11 4.1  Rk( . . i .)  ic
-!12 5.1  Rk( . . . i)  ic
-!
-!13 6.0  Rk( i . j .)                       -  direct channel-channel
-!14 7.0  Rk( . i . j)
-!15 8.0  Rk( i . . j)                       -  exchange channel-channel
-!16 9.0  Rk( . i j .)
-!
-!     where .  denotes bound orbital, i,j - channels.
-!
-!     Rk * < i | j >  elements with i<>j are ignored becaUse
-!     we assume that target states diagonalize Hamiltonian
-!     These elements are included after in B(.,.) * Etarget(i)
-!     where B(.,.) is B-spline overlap matrix
-!     These elements are also Used for control calculation of 
-!     interaction matrix between target states (Target_h).
-!
-!     sym_d -  symmetry for convolution
-!     sym_r -  symmetry for result
-!
-!     jcase = 1 -->  INT( . p1; . p2)
-!     jcase = 2 -->  INT( p1 .;p2 . )
-!     jcase = 3 -->  INT( . p1;p2 . )
-!     jcase = 4 -->  INT( p1 .; . p2)
+!>     we have following different structures:
+!!
+!! 1 1.0  Rk( . . . .)  ic, jc               -  bound-bound  
+!! 2 1.1  Rk( . . . .) < i | . > ic          -  bound-channel
+!! 3 1.2  Rk( . . . .) < i | . > < j | . >   -  channel-channel
+!! 4 1.3  Rk( . . . .) < i | j >             -  target structure
+!! 5 2.0  Rk( i . . .) < j | . >             -  channel-channel due to
+!! 6 3.0  Rk( . i . .) < j | . >                overlaps
+!! 7 4.0  Rk( . . i .) < j | . >
+!! 8 5.0  Rk( . . . i) < j | . >
+!! 9 2.1  Rk( i . . .)  ic                   -  bound-channel
+!!10 3.1  Rk( . i . .)  ic
+!!11 4.1  Rk( . . i .)  ic
+!!12 5.1  Rk( . . . i)  ic
+!!13 6.0  Rk( i . j .)                       -  direct channel-channel
+!!14 7.0  Rk( . i . j)
+!!15 8.0  Rk( i . . j)                       -  exchange channel-channel
+!!16 9.0  Rk( . i j .)
+!!
+!!     where .  denotes bound orbital, i,j - channels.
+!!
+!!     Rk * < i | j >  elements with i<>j are ignored becaUse
+!!     we assume that target states diagonalize Hamiltonian
+!!     These elements are included after in B(.,.) * Etarget(i)
+!!     where B(.,.) is B-spline overlap matrix
+!!     These elements are also Used for control calculation of 
+!!     interaction matrix between target states (Target_h).
+!!
+!!     sym_d -  symmetry for convolution
+!!     sym_r -  symmetry for result
+!!
+!!     jcase = 1 -->  INT( . p1; . p2)
+!!     jcase = 2 -->  INT( p1 .;p2 . )
+!!     jcase = 3 -->  INT( . p1;p2 . )
+!!     jcase = 4 -->  INT( p1 .; . p2)
 !----------------------------------------------------------------------
       Use cmdata; Use bsr_mat; Use target
       Use spline_param; Use spline_galerkin
