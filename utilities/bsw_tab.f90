@@ -6,8 +6,9 @@
 !     Written by:   Oleg Zatsarinny
 !
 !======================================================================
-!     connverts the B-spline radial orbital wbs-files into tab-files
-!     suitable for grafic display
+!> @ingroup utilities
+!> @brief     connverts the B-spline radial orbital wbs-files into tab-files
+!>     suitable for grafic display
 !----------------------------------------------------------------------
 !     INPUT FILES:   name.bsw
 !     OUTPUT FILES:  name.tab

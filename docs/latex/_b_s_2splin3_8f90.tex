@@ -3,22 +3,91 @@
 \doxysubsection*{Functions/\+Subroutines}
 \begin{DoxyCompactItemize}
 \item 
-subroutine \mbox{\hyperlink{_b_s_2splin3_8f90_a122df0c2e23f04935fd80294b6847e64}{splin3}} (N, X, Y, B, C, D)
+real(8) function \mbox{\hyperlink{group__bs_gac9bbb8b25ea1bf0f2fd8730ce0639379}{seval}} (N, U, X, Y, B, C, D)
+\begin{DoxyCompactList}\small\item\em Evaluates the value of cubic spline for abscisa U. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
 \item 
-real(8) function \mbox{\hyperlink{_b_s_2splin3_8f90_ac9bbb8b25ea1bf0f2fd8730ce0639379}{seval}} (N, U, X, Y, B, C, D)
+integer(4), intent(in) \mbox{\hyperlink{_b_s_2splin3_8f90_a852381143d9266abcddc6861cb77d6d4}{n}}
+\item 
+real(8), dimension(\mbox{\hyperlink{_b_s_2splin3_8f90_a852381143d9266abcddc6861cb77d6d4}{n}}), intent(in) \mbox{\hyperlink{_b_s_2splin3_8f90_a4350387a0c7eb5a41421ee777828c135}{x}}
+\item 
+real(8), dimension(\mbox{\hyperlink{_b_s_2splin3_8f90_a852381143d9266abcddc6861cb77d6d4}{n}}), intent(in) \mbox{\hyperlink{_b_s_2splin3_8f90_ae8b4a885c0cf6cf1aaad5f68095313d7}{y}}
+\item 
+real(8), dimension(\mbox{\hyperlink{_b_s_2splin3_8f90_a852381143d9266abcddc6861cb77d6d4}{n}}), intent(out) \mbox{\hyperlink{_b_s_2splin3_8f90_a983ea838b1a659f1e88b234de9992964}{b}}
+\item 
+real(8), dimension(\mbox{\hyperlink{_b_s_2splin3_8f90_a852381143d9266abcddc6861cb77d6d4}{n}}), intent(out) \mbox{\hyperlink{_b_s_2splin3_8f90_a2f7004228343cae95e5a421c20c308eb}{c}}
+\item 
+real(8), dimension(\mbox{\hyperlink{_b_s_2splin3_8f90_a852381143d9266abcddc6861cb77d6d4}{n}}), intent(out) \mbox{\hyperlink{_b_s_2splin3_8f90_a7db533a94595eeb5a76807f817790b1c}{d}}
+\item 
+integer(4) \mbox{\hyperlink{_b_s_2splin3_8f90_ae40c19aabb565eaf2c1c661401324359}{i}}
+\item 
+integer(4) \mbox{\hyperlink{_b_s_2splin3_8f90_ad88c702f1539d93fb8bf4736f275abc2}{j}}
+\item 
+integer(4) \mbox{\hyperlink{_b_s_2splin3_8f90_a599fed65f96e49980db577206ec1e670}{m}}
+\item 
+real(8) \mbox{\hyperlink{_b_s_2splin3_8f90_a4e4ff0a8854ff45b60a1b0423ff2cc20}{t}}
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Function/\+Subroutine Documentation}
-\mbox{\Hypertarget{_b_s_2splin3_8f90_ac9bbb8b25ea1bf0f2fd8730ce0639379}\label{_b_s_2splin3_8f90_ac9bbb8b25ea1bf0f2fd8730ce0639379}} 
-\index{splin3.f90@{splin3.f90}!seval@{seval}}
-\index{seval@{seval}!splin3.f90@{splin3.f90}}
-\doxysubsubsection{\texorpdfstring{seval()}{seval()}}
-{\footnotesize\ttfamily real(8) function seval (\begin{DoxyParamCaption}\item[{integer(4), intent(in)}]{N,  }\item[{real(8), intent(in)}]{U,  }\item[{real(8), dimension(n), intent(in)}]{X,  }\item[{real(8), dimension(n), intent(in)}]{Y,  }\item[{real(8), dimension(n), intent(in)}]{B,  }\item[{real(8), dimension(n), intent(in)}]{C,  }\item[{real(8), dimension(n), intent(in)}]{D }\end{DoxyParamCaption})}
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_b_s_2splin3_8f90_a983ea838b1a659f1e88b234de9992964}\label{_b_s_2splin3_8f90_a983ea838b1a659f1e88b234de9992964}} 
+\index{splin3.f90@{splin3.f90}!b@{b}}
+\index{b@{b}!splin3.f90@{splin3.f90}}
+\doxysubsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily real(8), dimension(\mbox{\hyperlink{_b_s_2splin3_8f90_a852381143d9266abcddc6861cb77d6d4}{n}}), intent(out) b}
 
-\mbox{\Hypertarget{_b_s_2splin3_8f90_a122df0c2e23f04935fd80294b6847e64}\label{_b_s_2splin3_8f90_a122df0c2e23f04935fd80294b6847e64}} 
-\index{splin3.f90@{splin3.f90}!splin3@{splin3}}
-\index{splin3@{splin3}!splin3.f90@{splin3.f90}}
-\doxysubsubsection{\texorpdfstring{splin3()}{splin3()}}
-{\footnotesize\ttfamily subroutine splin3 (\begin{DoxyParamCaption}\item[{integer(4), intent(in)}]{N,  }\item[{real(8), dimension(n), intent(in)}]{X,  }\item[{real(8), dimension(n), intent(in)}]{Y,  }\item[{real(8), dimension(n), intent(out)}]{B,  }\item[{real(8), dimension(n), intent(out)}]{C,  }\item[{real(8), dimension(n), intent(out)}]{D }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{_b_s_2splin3_8f90_a2f7004228343cae95e5a421c20c308eb}\label{_b_s_2splin3_8f90_a2f7004228343cae95e5a421c20c308eb}} 
+\index{splin3.f90@{splin3.f90}!c@{c}}
+\index{c@{c}!splin3.f90@{splin3.f90}}
+\doxysubsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily real(8), dimension(\mbox{\hyperlink{_b_s_2splin3_8f90_a852381143d9266abcddc6861cb77d6d4}{n}}), intent(out) c}
+
+\mbox{\Hypertarget{_b_s_2splin3_8f90_a7db533a94595eeb5a76807f817790b1c}\label{_b_s_2splin3_8f90_a7db533a94595eeb5a76807f817790b1c}} 
+\index{splin3.f90@{splin3.f90}!d@{d}}
+\index{d@{d}!splin3.f90@{splin3.f90}}
+\doxysubsubsection{\texorpdfstring{d}{d}}
+{\footnotesize\ttfamily real(8), dimension(\mbox{\hyperlink{_b_s_2splin3_8f90_a852381143d9266abcddc6861cb77d6d4}{n}}), intent(out) d}
+
+\mbox{\Hypertarget{_b_s_2splin3_8f90_ae40c19aabb565eaf2c1c661401324359}\label{_b_s_2splin3_8f90_ae40c19aabb565eaf2c1c661401324359}} 
+\index{splin3.f90@{splin3.f90}!i@{i}}
+\index{i@{i}!splin3.f90@{splin3.f90}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily integer(4) i}
+
+\mbox{\Hypertarget{_b_s_2splin3_8f90_ad88c702f1539d93fb8bf4736f275abc2}\label{_b_s_2splin3_8f90_ad88c702f1539d93fb8bf4736f275abc2}} 
+\index{splin3.f90@{splin3.f90}!j@{j}}
+\index{j@{j}!splin3.f90@{splin3.f90}}
+\doxysubsubsection{\texorpdfstring{j}{j}}
+{\footnotesize\ttfamily integer(4) j}
+
+\mbox{\Hypertarget{_b_s_2splin3_8f90_a599fed65f96e49980db577206ec1e670}\label{_b_s_2splin3_8f90_a599fed65f96e49980db577206ec1e670}} 
+\index{splin3.f90@{splin3.f90}!m@{m}}
+\index{m@{m}!splin3.f90@{splin3.f90}}
+\doxysubsubsection{\texorpdfstring{m}{m}}
+{\footnotesize\ttfamily integer(4) m}
+
+\mbox{\Hypertarget{_b_s_2splin3_8f90_a852381143d9266abcddc6861cb77d6d4}\label{_b_s_2splin3_8f90_a852381143d9266abcddc6861cb77d6d4}} 
+\index{splin3.f90@{splin3.f90}!n@{n}}
+\index{n@{n}!splin3.f90@{splin3.f90}}
+\doxysubsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily integer(4), intent(in) n}
+
+\mbox{\Hypertarget{_b_s_2splin3_8f90_a4e4ff0a8854ff45b60a1b0423ff2cc20}\label{_b_s_2splin3_8f90_a4e4ff0a8854ff45b60a1b0423ff2cc20}} 
+\index{splin3.f90@{splin3.f90}!t@{t}}
+\index{t@{t}!splin3.f90@{splin3.f90}}
+\doxysubsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily real(8) t}
+
+\mbox{\Hypertarget{_b_s_2splin3_8f90_a4350387a0c7eb5a41421ee777828c135}\label{_b_s_2splin3_8f90_a4350387a0c7eb5a41421ee777828c135}} 
+\index{splin3.f90@{splin3.f90}!x@{x}}
+\index{x@{x}!splin3.f90@{splin3.f90}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily real(8), dimension(\mbox{\hyperlink{_b_s_2splin3_8f90_a852381143d9266abcddc6861cb77d6d4}{n}}), intent(in) x}
+
+\mbox{\Hypertarget{_b_s_2splin3_8f90_ae8b4a885c0cf6cf1aaad5f68095313d7}\label{_b_s_2splin3_8f90_ae8b4a885c0cf6cf1aaad5f68095313d7}} 
+\index{splin3.f90@{splin3.f90}!y@{y}}
+\index{y@{y}!splin3.f90@{splin3.f90}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily real(8), dimension(\mbox{\hyperlink{_b_s_2splin3_8f90_a852381143d9266abcddc6861cb77d6d4}{n}}), intent(in) y}
 

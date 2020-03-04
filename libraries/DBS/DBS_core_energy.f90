@@ -1,7 +1,8 @@
 !====================================================================
       Module DBS_core_energy
 !====================================================================
-!     core-associated  parameters for core energy
+!> @ingroup dbs
+!> @brief     core-associated  parameters for core energy
 !--------------------------------------------------------------------
       Implicit none 
     

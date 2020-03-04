@@ -3,7 +3,7 @@
 \doxysubsection*{Functions/\+Subroutines}
 \begin{DoxyCompactItemize}
 \item 
-subroutine \mbox{\hyperlink{_b_s_2bav_8f90_a562e14b5abf50e6819ae3e95a27b9a0b}{bav}} (ns, ks, b, v, y, type, side)
+subroutine \mbox{\hyperlink{_b_s_2bav_8f90_a562e14b5abf50e6819ae3e95a27b9a0b}{bav}} (ns, ks, \mbox{\hyperlink{_b_s_2splin3_8f90_a983ea838b1a659f1e88b234de9992964}{b}}, \mbox{\hyperlink{_d_b_s__core_8f90_a3826b2426c89afe924cd76c7c994af5d}{v}}, \mbox{\hyperlink{_b_s_2splin3_8f90_ae8b4a885c0cf6cf1aaad5f68095313d7}{y}}, type, side)
 \end{DoxyCompactItemize}
 
 
@@ -14,3 +14,16 @@ subroutine \mbox{\hyperlink{_b_s_2bav_8f90_a562e14b5abf50e6819ae3e95a27b9a0b}{ba
 \doxysubsubsection{\texorpdfstring{bav()}{bav()}}
 {\footnotesize\ttfamily subroutine bav (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{ns,  }\item[{integer, intent(in)}]{ks,  }\item[{real(8), dimension(ns,$\ast$), intent(in)}]{b,  }\item[{real(8), dimension(ns), intent(in)}]{v,  }\item[{real(8), dimension(ns), intent(out)}]{y,  }\item[{character}]{type,  }\item[{character}]{side }\end{DoxyParamCaption})}
 
+\doxysubsubsection*{@param ns on entry }
+
+ks the number of diagonals ns the order of the matrix B the banded matrix in column (upper) storage mode v vector
+
+\doxysubsubsection*{on exit }
+
+y y = B$\ast$v\doxysubsubsection*{@param ks on entry }
+
+ks the number of diagonals ns the order of the matrix B the banded matrix in column (upper) storage mode v vector
+
+\doxysubsubsection*{on exit }
+
+y y = B$\ast$v 

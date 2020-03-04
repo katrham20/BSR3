@@ -1,26 +1,24 @@
 !=======================================================================
       Subroutine bav(ns,ks,b,v,y,type,side)
 !=======================================================================
-!
-!     Computes  y = B * v    or   y = v * B     (side =  'r' or 'l')
-!
-!     where b is a symmetric or non-symmetric banded matrix
-!     (type = 's' or 'n')
-!
-!     and  v, y  are vectors
+!> @ingroup BS
+!> @brief     Computes  y = B * v    or   y = v * B     (side =  'r' or 'l')
+!>     where b is a symmetric or non-symmetric banded matrix
+!>     (type = 's' or 'n')
+!>    and  v, y  are vectors
 !
 !-----------------------------------------------------------------------
 !
-!     on entry
-!     --------
-!       ks      the number of diagonals
-!       ns      the order of the matrix
-!       B       the  banded matrix in column (upper) storage mode
-!       v       vector
-!
-!     on exit
-!     -------
-!       y       y = B*v
+!>     on entry
+!!     --------
+!!       ks      the number of diagonals
+!!       ns      the order of the matrix
+!!       B       the  banded matrix in column (upper) storage mode
+!!       v       vector
+!!
+!!     on exit
+!!     -------
+!!       y       y = B*v
 !
 !-----------------------------------------------------------------------
 

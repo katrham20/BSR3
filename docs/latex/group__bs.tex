@@ -1,0 +1,90 @@
+\hypertarget{group__bs}{}\doxysection{BS}
+\label{group__bs}\index{BS@{BS}}
+\doxysubsection*{Functions/\+Subroutines}
+\begin{DoxyCompactItemize}
+\item 
+real(8) function \mbox{\hyperlink{group__bs_ga5751800ff7de4eefa42b29aed649930f}{azl}} (z, h, ks, lp)
+\begin{DoxyCompactList}\small\item\em Value of B\+\_\+(lp+1)/r$^\wedge$lp at r = 0 where lp = l+1. \end{DoxyCompactList}\item 
+subroutine \mbox{\hyperlink{group__bs_gae6fcc2d573956f55999c85df5d61ede2}{bcore}}
+\item 
+real(8) function \mbox{\hyperlink{group__bs_gad61413d5ec53ad2aeec57f471605b284}{bhl}} (\mbox{\hyperlink{_d_b_s__core_8f90_aaea4baed8fd8b780f6938f0dc1fb0f72}{i}}, \mbox{\hyperlink{_d_b_s__core_8f90_aeadbc0ce9b66517f8fde156199772ec1}{j}})
+\begin{DoxyCompactList}\small\item\em $<$P\+\_\+i$\vert$ L $\vert$\+P\+\_\+j$>$ with inclusion of rel.\+shift if rel = .true. \end{DoxyCompactList}\item 
+real(8) function \mbox{\hyperlink{group__bs_gac9bbb8b25ea1bf0f2fd8730ce0639379}{seval}} (N, U, X, Y, B, C, D)
+\begin{DoxyCompactList}\small\item\em Evaluates the value of cubic spline for abscisa U. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+T\+HE C\+O\+E\+F\+F\+I\+C\+I\+E\+N\+TS B(\+I), C(\+I), A\+ND D(\+I), I=1,2,...,N A\+RE C\+O\+M\+P\+U\+T\+ED F\+OR A C\+U\+B\+IC I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+NG S\+P\+L\+I\+NE
+
+S(\+X) = Y(\+I) + B(\+I)$\ast$(X-\/X(I)) + C(\+I)$\ast$(X-\/X(I))$\ast$$\ast$2 + D(\+I)$\ast$(X-\/X(I))$\ast$$\ast$3
+
+F\+OR X(\+I) .LE. X .LE. X(I+1)
+
+I\+N\+P\+UT\+:
+
+N = T\+HE N\+U\+M\+B\+ER OF D\+A\+TA P\+O\+I\+N\+TS OR K\+N\+O\+TS (N=$>$2) X = T\+HE A\+B\+S\+C\+I\+S\+S\+AS OF T\+HE K\+N\+O\+TS IN S\+T\+R\+I\+C\+T\+LY I\+N\+C\+R\+E\+A\+S\+I\+NG O\+R\+D\+ER Y = T\+HE O\+R\+D\+I\+N\+A\+T\+ES OF T\+HE K\+N\+O\+TS
+
+O\+U\+T\+P\+UT\+:
+
+B, C, D = A\+R\+R\+A\+YS OF S\+P\+L\+I\+NE C\+O\+E\+F\+F\+I\+C\+I\+E\+N\+TS AS D\+E\+F\+I\+N\+ED A\+B\+O\+VE.
+
+U\+S\+I\+NG P TO D\+E\+N\+O\+TE D\+I\+F\+F\+E\+R\+E\+N\+T\+I\+A\+T\+I\+ON\+: Y(\+I) = S(\+X(\+I)) B(\+I) = S\+P(\+X(\+I)) C(\+I) = S\+P\+P(\+X(\+I))/2 D(\+I) = S\+P\+P\+P(\+X(\+I))/6 (D\+E\+R\+I\+V\+A\+T\+I\+VE F\+R\+OM T\+HE R\+I\+G\+HT)
+
+T\+HE A\+C\+C\+O\+M\+P\+A\+N\+Y\+I\+NG F\+U\+N\+C\+T\+I\+ON \textquotesingle{}S\+E\+V\+AL\textquotesingle{} C\+AN BE U\+S\+ED TO E\+V\+A\+L\+U\+A\+TE T\+HE S\+P\+L\+I\+NE.
+
+\doxysubsection{Function/\+Subroutine Documentation}
+\mbox{\Hypertarget{group__bs_ga5751800ff7de4eefa42b29aed649930f}\label{group__bs_ga5751800ff7de4eefa42b29aed649930f}} 
+\index{BS@{BS}!azl@{azl}}
+\index{azl@{azl}!BS@{BS}}
+\doxysubsubsection{\texorpdfstring{azl()}{azl()}}
+{\footnotesize\ttfamily real(8) function azl (\begin{DoxyParamCaption}\item[{real(8), intent(in)}]{z,  }\item[{real(8), intent(in)}]{h,  }\item[{integer, intent(in)}]{ks,  }\item[{integer, intent(in)}]{lp }\end{DoxyParamCaption})}
+
+
+
+Value of B\+\_\+(lp+1)/r$^\wedge$lp at r = 0 where lp = l+1. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ks} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em lp} & Value of B\+\_\+(lp+1)/r$^\wedge$lp at r = 0 where lp = l+1 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bs_gae6fcc2d573956f55999c85df5d61ede2}\label{group__bs_gae6fcc2d573956f55999c85df5d61ede2}} 
+\index{BS@{BS}!bcore@{bcore}}
+\index{bcore@{bcore}!BS@{BS}}
+\doxysubsubsection{\texorpdfstring{bcore()}{bcore()}}
+{\footnotesize\ttfamily subroutine bcore}
+
+C\+O\+M\+P\+U\+T\+ES T\+HE E\+N\+E\+R\+GY OF T\+HE C\+O\+M\+M\+ON C\+L\+O\+S\+ED S\+H\+E\+L\+LS (C\+O\+RE)\mbox{\Hypertarget{group__bs_gad61413d5ec53ad2aeec57f471605b284}\label{group__bs_gad61413d5ec53ad2aeec57f471605b284}} 
+\index{BS@{BS}!bhl@{bhl}}
+\index{bhl@{bhl}!BS@{BS}}
+\doxysubsubsection{\texorpdfstring{bhl()}{bhl()}}
+{\footnotesize\ttfamily real(8) function bhl (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{i,  }\item[{integer, intent(in)}]{j }\end{DoxyParamCaption})}
+
+
+
+$<$P\+\_\+i$\vert$ L $\vert$\+P\+\_\+j$>$ with inclusion of rel.\+shift if rel = .true. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em j} & $<$P\+\_\+i$\vert$ L $\vert$\+P\+\_\+j$>$ with inclusion of rel.\+shift if rel = .true. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__bs_gac9bbb8b25ea1bf0f2fd8730ce0639379}\label{group__bs_gac9bbb8b25ea1bf0f2fd8730ce0639379}} 
+\index{BS@{BS}!seval@{seval}}
+\index{seval@{seval}!BS@{BS}}
+\doxysubsubsection{\texorpdfstring{seval()}{seval()}}
+{\footnotesize\ttfamily real(8) function seval (\begin{DoxyParamCaption}\item[{integer(4), intent(in)}]{N,  }\item[{real(8), intent(in)}]{U,  }\item[{real(8), dimension(\mbox{\hyperlink{_b_s_2splin3_8f90_a852381143d9266abcddc6861cb77d6d4}{n}}), intent(in)}]{X,  }\item[{real(8), dimension(\mbox{\hyperlink{_b_s_2splin3_8f90_a852381143d9266abcddc6861cb77d6d4}{n}}), intent(in)}]{Y,  }\item[{real(8), dimension(\mbox{\hyperlink{_b_s_2splin3_8f90_a852381143d9266abcddc6861cb77d6d4}{n}}), intent(in)}]{B,  }\item[{real(8), dimension(\mbox{\hyperlink{_b_s_2splin3_8f90_a852381143d9266abcddc6861cb77d6d4}{n}}), intent(in)}]{C,  }\item[{real(8), dimension(\mbox{\hyperlink{_b_s_2splin3_8f90_a852381143d9266abcddc6861cb77d6d4}{n}}), intent(in)}]{D }\end{DoxyParamCaption})}
+
+
+
+Evaluates the value of cubic spline for abscisa U. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em n} & \\
+\hline
+\end{DoxyParams}

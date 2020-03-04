@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine br_orb
 !======================================================================
-!     broadcast data from  module spline_orbitals
+!> @ingroup bsr_mpi_lib
+!> @brief     broadcast data from  module spline_orbitals
 !======================================================================
       Use MPI
       Use orb_LS

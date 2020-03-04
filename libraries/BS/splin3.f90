@@ -1,32 +1,34 @@
 !======================================================================
       SUBROUTINE SPLIN3 (N, X, Y, B, C, D)
 !======================================================================
+!> @addtogroup bs BS
+!> @ingroup libraries
 !
-!     THE COEFFICIENTS B(I), C(I), AND D(I), I=1,2,...,N  ARE COMPUTED
-!     FOR A CUBIC INTERPOLATING SPLINE
-!
-!     S(X) = Y(I) + B(I)*(X-X(I)) + C(I)*(X-X(I))**2 + D(I)*(X-X(I))**3
-!
-!     FOR  X(I) .LE. X .LE. X(I+1)
-!
-!     INPUT:
-!
-!     N = THE NUMBER OF DATA POINTS OR KNOTS (N=>2)
-!     X = THE ABSCISSAS OF THE KNOTS IN STRICTLY INCREASING ORDER
-!     Y = THE ORDINATES OF THE KNOTS
-!
-!     OUTPUT:
-!
-!     B, C, D  = ARRAYS OF SPLINE COEFFICIENTS AS DEFINED ABOVE.
-!
-!     USING  P  TO DENOTE DIFFERENTIATION:
-!     Y(I) = S(X(I))
-!     B(I) = SP(X(I))
-!     C(I) = SPP(X(I))/2
-!     D(I) = SPPP(X(I))/6  (DERIVATIVE FROM THE RIGHT)
-!
-!     THE ACCOMPANYING FUNCTION  'SEVAL'  CAN BE USED
-!     TO EVALUATE THE SPLINE.
+!>     THE COEFFICIENTS B(I), C(I), AND D(I), I=1,2,...,N  ARE COMPUTED
+!!     FOR A CUBIC INTERPOLATING SPLINE
+!!
+!!     S(X) = Y(I) + B(I)*(X-X(I)) + C(I)*(X-X(I))**2 + D(I)*(X-X(I))**3
+!!
+!!     FOR  X(I) .LE. X .LE. X(I+1)
+!!
+!!     INPUT:
+!!
+!!     N = THE NUMBER OF DATA POINTS OR KNOTS (N=>2)
+!!     X = THE ABSCISSAS OF THE KNOTS IN STRICTLY INCREASING ORDER
+!!     Y = THE ORDINATES OF THE KNOTS
+!!
+!!     OUTPUT:
+!!
+!!     B, C, D  = ARRAYS OF SPLINE COEFFICIENTS AS DEFINED ABOVE.
+!!
+!!     USING  P  TO DENOTE DIFFERENTIATION:
+!!     Y(I) = S(X(I))
+!!     B(I) = SP(X(I))
+!!     C(I) = SPP(X(I))/2
+!!     D(I) = SPPP(X(I))/6  (DERIVATIVE FROM THE RIGHT)
+!!
+!!     THE ACCOMPANYING FUNCTION  'SEVAL'  CAN BE USED
+!!     TO EVALUATE THE SPLINE.
 !----------------------------------------------------------------------
       
       IMPLICIT NONE
@@ -109,8 +111,8 @@
 !=======================================================================
       Real(8) function SEVAL(N,U,X,Y,B,C,D)
 !=======================================================================
-!
-!     Evaluates the value of cubic spline for abscisa U
+!> @ingroup bs
+!> @brief     Evaluates the value of cubic spline for abscisa U
 !
 !-----------------------------------------------------------------------
 

@@ -9,13 +9,13 @@ Provides different multipole-\/transition matrixes or oscillator strengths and t
 \doxysubsection*{Functions/\+Subroutines}
 \begin{DoxyCompactItemize}
 \item 
-subroutine \mbox{\hyperlink{group__bsr__dmat_ga6fceb748a1cf37708a2f0965c8e1c840}{add\+\_\+cdata}} (ip, jp, CL, CV, j1, j2, j3)
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga6fceb748a1cf37708a2f0965c8e1c840}{add\+\_\+cdata}} (ip, jp, CL, CV, \mbox{\hyperlink{_d_b_s__core_8f90_adb1420ceddc2be1411560d4b4d3257e3}{j1}}, \mbox{\hyperlink{_d_b_s__core_8f90_a56cac856c78a3e6fe83db83b30cb6106}{j2}}, j3)
 \begin{DoxyCompactList}\small\item\em add new coefficients with indexes (j1,j2,j3) to the list (ip\+:jp) \end{DoxyCompactList}\item 
-subroutine \mbox{\hyperlink{group__bsr__dmat_gab85af6ad3ab2c673e8e9d668d20f1324}{add\+\_\+coef}} (CL, CV, j1, j2, j3)
+subroutine \mbox{\hyperlink{group__bsr__dmat_gab85af6ad3ab2c673e8e9d668d20f1324}{add\+\_\+coef}} (CL, CV, \mbox{\hyperlink{_d_b_s__core_8f90_adb1420ceddc2be1411560d4b4d3257e3}{j1}}, \mbox{\hyperlink{_d_b_s__core_8f90_a56cac856c78a3e6fe83db83b30cb6106}{j2}}, j3)
 \begin{DoxyCompactList}\small\item\em add new coefficient to the list for given itype Calls\+: Add\+\_\+cdata, Gen\+\_\+matrix \end{DoxyCompactList}\item 
 subroutine \mbox{\hyperlink{group__bsr__dmat_ga8005bfea023f4e763e7b1aec30de7cee}{check\+\_\+det}} (kdn, N1, N2, iext)
 \item 
-subroutine \mbox{\hyperlink{group__bsr__dmat_ga7609207df74422f8b2758f1a48de118d}{shift}} (n, m, N1, N2)
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga7609207df74422f8b2758f1a48de118d}{shift}} (\mbox{\hyperlink{_b_s_2splin3_8f90_a852381143d9266abcddc6861cb77d6d4}{n}}, \mbox{\hyperlink{_b_s_2splin3_8f90_a599fed65f96e49980db577206ec1e670}{m}}, N1, N2)
 \begin{DoxyCompactList}\small\item\em N2 obtained from N1 by deleting element \textquotesingle{}m\textquotesingle{}. \end{DoxyCompactList}\item 
 subroutine \mbox{\hyperlink{group__bsr__dmat_gabd34db58eff738278f04d544c424c267}{d\+\_\+data}}
 \item 
@@ -37,11 +37,11 @@ subroutine \mbox{\hyperlink{group__bsr__dmat_gae61e605c930b652c947df54bf52c0a64}
 \item 
 subroutine \mbox{\hyperlink{group__bsr__dmat_gaf759f06f22bdffd623ed1e4cfface73b}{gen\+\_\+zf}}
 \item 
-subroutine \mbox{\hyperlink{group__bsr__dmat_ga0a2d7ebb735c547d7609c50c6ed23340}{get\+\_\+dm}} (i, j, cl, cv, xl, xv)
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga0a2d7ebb735c547d7609c50c6ed23340}{get\+\_\+dm}} (\mbox{\hyperlink{_d_b_s__core_8f90_aaea4baed8fd8b780f6938f0dc1fb0f72}{i}}, \mbox{\hyperlink{_d_b_s__core_8f90_aeadbc0ce9b66517f8fde156199772ec1}{j}}, cl, cv, xl, xv)
 \item 
-subroutine \mbox{\hyperlink{group__bsr__dmat_ga3b5a8ff51866ec7e9f87544d09a47a9d}{get\+\_\+dvl}} (i1, i2, cl, cv, v, w)
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga3b5a8ff51866ec7e9f87544d09a47a9d}{get\+\_\+dvl}} (\mbox{\hyperlink{_d_b_s__core_8f90_af963619ce97fcda891257c2a296fc0b9}{i1}}, \mbox{\hyperlink{_d_b_s__core_8f90_a5f589bc83e55eecc5b1c372de3376ea9}{i2}}, cl, cv, \mbox{\hyperlink{_d_b_s__core_8f90_a3826b2426c89afe924cd76c7c994af5d}{v}}, w)
 \begin{DoxyCompactList}\small\item\em provide d-\/vectors \end{DoxyCompactList}\item 
-subroutine \mbox{\hyperlink{group__bsr__dmat_ga371be37a5fe3b2df10a60535323ad603}{get\+\_\+dvr}} (i1, i2, cl, cv, v, w)
+subroutine \mbox{\hyperlink{group__bsr__dmat_ga371be37a5fe3b2df10a60535323ad603}{get\+\_\+dvr}} (\mbox{\hyperlink{_d_b_s__core_8f90_af963619ce97fcda891257c2a296fc0b9}{i1}}, \mbox{\hyperlink{_d_b_s__core_8f90_a5f589bc83e55eecc5b1c372de3376ea9}{i2}}, cl, cv, \mbox{\hyperlink{_d_b_s__core_8f90_a3826b2426c89afe924cd76c7c994af5d}{v}}, w)
 \begin{DoxyCompactList}\small\item\em provide d-\/vectors \end{DoxyCompactList}\item 
 integer function \mbox{\hyperlink{group__bsr__dmat_ga37118af4399be1bb8c78c0b83f5d71e6}{ifind\+\_\+pert}} (ilsp, ic)
 \begin{DoxyCompactList}\small\item\em find perturber for given configuration \textquotesingle{}ic\textquotesingle{} \end{DoxyCompactList}\item 
@@ -53,7 +53,7 @@ subroutine \mbox{\hyperlink{group__bsr__dmat_ga3298e8faebcc1ce29979bd2c3dd67074}
 \item 
 subroutine \mbox{\hyperlink{group__bsr__dmat_gac82250ea05631d273527daa4ee03a726}{merge\+\_\+cdata}} (nn, ip, jp, nc, E\+P\+S\+\_\+c)
 \item 
-subroutine \mbox{\hyperlink{group__bsr__dmat_gacced3ce97196d478d15077a836493954}{allocate\+\_\+cmdata}} (k)
+subroutine \mbox{\hyperlink{group__bsr__dmat_gacced3ce97196d478d15077a836493954}{allocate\+\_\+cmdata}} (\mbox{\hyperlink{_d_b_s__core_8f90_af22c486581933c52df7d4aa306382074}{k}})
 \begin{DoxyCompactList}\small\item\em allocate arrays in module \char`\"{}cmdata\char`\"{} \end{DoxyCompactList}\item 
 subroutine \mbox{\hyperlink{group__bsr__dmat_gaea6747918e02428b36d0e66741e9979e}{allocate\+\_\+coeffs}}
 \item 
@@ -69,11 +69,11 @@ subroutine \mbox{\hyperlink{group__bsr__dmat_gac7643057d24be4598a213c0b2aee9174}
 \begin{DoxyCompactList}\small\item\em update full matrix with vector \end{DoxyCompactList}\item 
 subroutine \mbox{\hyperlink{group__bsr__dmat_ga611db0924c82dab792cf1ce278205ea8}{update\+\_\+db}} (ic, jc, CL, CV)
 \begin{DoxyCompactList}\small\item\em update full matrix with scalar \end{DoxyCompactList}\item 
-subroutine \mbox{\hyperlink{group__bsr__dmat_gae8e42d9d606df9bcaecf1b767e5106b5}{allocate\+\_\+ndefs}} (m)
+subroutine \mbox{\hyperlink{group__bsr__dmat_gae8e42d9d606df9bcaecf1b767e5106b5}{allocate\+\_\+ndefs}} (\mbox{\hyperlink{_b_s_2splin3_8f90_a599fed65f96e49980db577206ec1e670}{m}})
 \begin{DoxyCompactList}\small\item\em allocate arrays in module \char`\"{}ndefs\char`\"{} \end{DoxyCompactList}\item 
 subroutine \mbox{\hyperlink{group__bsr__dmat_ga264a971a9f0ec5398f4dc7ad48817982}{iadd\+\_\+ndefs}} (io, jo, S)
 \begin{DoxyCompactList}\small\item\em add new entry in module \char`\"{}ndefs\char`\"{} \end{DoxyCompactList}\item 
-subroutine \mbox{\hyperlink{group__bsr__dmat_gab18fa91f9ef0a4fa46223eb20984b401}{allocate\+\_\+ndets}} (m)
+subroutine \mbox{\hyperlink{group__bsr__dmat_gab18fa91f9ef0a4fa46223eb20984b401}{allocate\+\_\+ndets}} (\mbox{\hyperlink{_b_s_2splin3_8f90_a599fed65f96e49980db577206ec1e670}{m}})
 \begin{DoxyCompactList}\small\item\em allocate arrays in module \char`\"{}ndets\char`\"{} \end{DoxyCompactList}\item 
 subroutine \mbox{\hyperlink{group__bsr__dmat_ga50885f1ee12bb74c53e7e1cc3d576806}{iadd\+\_\+ndets}} (io, jo, S)
 \begin{DoxyCompactList}\small\item\em add new entry in the module \char`\"{}ndets\char`\"{} \end{DoxyCompactList}\item 
@@ -551,7 +551,7 @@ the first line in files \textquotesingle{}l,j,b\textquotesingle{} is supposed to
 \index{BSR\_DMAT3@{BSR\_DMAT3}!shift@{shift}}
 \index{shift@{shift}!BSR\_DMAT3@{BSR\_DMAT3}}
 \doxysubsubsection{\texorpdfstring{shift()}{shift()}}
-{\footnotesize\ttfamily subroutine shift (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{n,  }\item[{integer, intent(in)}]{m,  }\item[{integer, dimension(n), intent(in)}]{N1,  }\item[{integer, dimension(n), intent(out)}]{N2 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily subroutine shift (\begin{DoxyParamCaption}\item[{integer, intent(in)}]{n,  }\item[{integer, intent(in)}]{m,  }\item[{integer, dimension(\mbox{\hyperlink{_b_s_2splin3_8f90_a852381143d9266abcddc6861cb77d6d4}{n}}), intent(in)}]{N1,  }\item[{integer, dimension(\mbox{\hyperlink{_b_s_2splin3_8f90_a852381143d9266abcddc6861cb77d6d4}{n}}), intent(out)}]{N2 }\end{DoxyParamCaption})}
 
 
 

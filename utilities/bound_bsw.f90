@@ -7,23 +7,24 @@
 !                   email: oleg_zoi@yahoo.com 
 !
 !======================================================================
-!     converts bound.nnn files to (c- + bsw-) files
+!> @ingroup utilities
+!> @brief     converts bound.nnn files to (c- + bsw-) files
 !======================================================================
 !
-!     INPUT FILES:
-!
-!      bound_bsw.inp - input data
-!      target  - information about channels
-!      knot.dat - B-spline information
-!      cfg.nnn  - list of configurations for the partial waves nnn
-!      bound.nnn  - file with solutions for the partial wave nnn
-!      target.bsw  - target B-spline w.f.
-!      pert_nnn.bsw - perturber orbitals
-!
-!     OUTPUT FILES:
-!
-!      c- and bsw- files for the indicated states
-!      bound_bsw.log - running information
+!>     INPUT FILES:
+!!
+!!      bound_bsw.inp - input data
+!!      target  - information about channels
+!!      knot.dat - B-spline information
+!!      cfg.nnn  - list of configurations for the partial waves nnn
+!!      bound.nnn  - file with solutions for the partial wave nnn
+!!      target.bsw  - target B-spline w.f.
+!!      pert_nnn.bsw - perturber orbitals
+!!
+!!     OUTPUT FILES:
+!!
+!!      c- and bsw- files for the indicated states
+!!      bound_bsw.log - running information
 !----------------------------------------------------------------------
 !
 !      target_LS  ->  contains all LS target states

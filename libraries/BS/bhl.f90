@@ -1,7 +1,8 @@
 !======================================================================
       Function BHL(i,j)
 !======================================================================
-!     <P_i| L |P_j>  with inclusion of rel.shift if rel = .true.
+!> @ingroup bs
+!> @brief     <P_i| L |P_j>  with inclusion of rel.shift if rel = .true.
 !----------------------------------------------------------------------
       Use spline_param
       Use spline_orbitals

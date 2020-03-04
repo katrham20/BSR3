@@ -16,9 +16,9 @@ subroutine \mbox{\hyperlink{group__bsr__breit_ga9205d309baf7d6c72dac38f84a486c55
 \begin{DoxyCompactList}\small\item\em re-\/write bnk-\/data from file \textquotesingle{}nu1\textquotesingle{} to \textquotesingle{}nu2\textquotesingle{} by blocks \end{DoxyCompactList}\item 
 program \mbox{\hyperlink{group__bsr__breit_ga37d62b2efac7bd2ea4b10f9101584809}{\+\_\+\+\_\+coef\+\_\+tab3.\+f90\+\_\+\+\_\+}}
 \begin{DoxyCompactList}\small\item\em prints from unformated I\+N\+T\+\_\+\+B\+NK file to C\+O\+E\+F.\+T\+AB file the integral coefficients for selected states in C\+F\+G.\+I\+NP \end{DoxyCompactList}\item 
-subroutine \mbox{\hyperlink{group__bsr__breit_ga38828094cda4639f3677cf37606ea45b}{alloc\+\_\+zoef}} (m)
+subroutine \mbox{\hyperlink{group__bsr__breit_ga38828094cda4639f3677cf37606ea45b}{alloc\+\_\+zoef}} (\mbox{\hyperlink{_b_s_2splin3_8f90_a599fed65f96e49980db577206ec1e670}{m}})
 \item 
-subroutine \mbox{\hyperlink{group__bsr__breit_ga7146bb032f717633b21e42c67a625c1c}{iadd\+\_\+zoef}} (C, int, idf)
+subroutine \mbox{\hyperlink{group__bsr__breit_ga7146bb032f717633b21e42c67a625c1c}{iadd\+\_\+zoef}} (C, \mbox{\hyperlink{_d_b_s__core_8f90_a5f2233dd7c5228eee73ceaf187fe9ea8}{int}}, idf)
 \begin{DoxyCompactList}\small\item\em add the integral to the list \textquotesingle{}zoef\textquotesingle{} \end{DoxyCompactList}\item 
 subroutine \mbox{\hyperlink{group__bsr__breit_gaf10daa5e8cda304b0e04ce137da0d71e}{pri\+\_\+coef}} (nu, ic1, ic2, mo, mi, mso, mee, msoo, mss, moo)
 \item 
@@ -26,7 +26,7 @@ subroutine \mbox{\hyperlink{group__bsr__breit_ga4e319f0a9f4bf0546fd91a875695c70e
 \item 
 subroutine \mbox{\hyperlink{group__bsr__breit_ga0ea6409638de3dd02754f308a7389686}{num}} (z, k1, k2, i\+\_\+max, acr)
 \begin{DoxyCompactList}\small\item\em finds k1 and k2 such that abs(z) = sqrt ( k1 / k2 ) and sign(z) = sign(k1) \end{DoxyCompactList}\item 
-subroutine \mbox{\hyperlink{group__bsr__breit_gaf3e08f4c9252631317f7518b254938e8}{check\+\_\+int}} (C, icase, k, j1, j2, j3, j4)
+subroutine \mbox{\hyperlink{group__bsr__breit_gaf3e08f4c9252631317f7518b254938e8}{check\+\_\+int}} (C, icase, \mbox{\hyperlink{_d_b_s__core_8f90_af22c486581933c52df7d4aa306382074}{k}}, \mbox{\hyperlink{_d_b_s__core_8f90_adb1420ceddc2be1411560d4b4d3257e3}{j1}}, \mbox{\hyperlink{_d_b_s__core_8f90_a56cac856c78a3e6fe83db83b30cb6106}{j2}}, j3, j4)
 \item 
 subroutine \mbox{\hyperlink{group__bsr__breit_ga4d754eb9ab0b5932ce040f2b2b55eb9f}{rr\+\_\+conf}} (nuc, nub, pri)
 \begin{DoxyCompactList}\small\item\em Read the configuration list from c-\/file (unit \textquotesingle{}nuc\textquotesingle{}), define there angular symmetries and compare with existing ones. Prepare the angular arrays. \end{DoxyCompactList}\item 
@@ -40,13 +40,13 @@ subroutine \mbox{\hyperlink{group__bsr__breit_ga372f1792731386fa90588c065b283cf3
 \item 
 integer function \mbox{\hyperlink{group__bsr__breit_ga2648461b5ea64d8caf54007d3459e5da}{idef\+\_\+cme}} (is, js)
 \begin{DoxyCompactList}\small\item\em define the operators to be considered for the given symmetries\+: ioper + I\+T\+\_\+oper -\/$>$ joper + J\+T\+\_\+oper \end{DoxyCompactList}\item 
-integer function \mbox{\hyperlink{group__bsr__breit_gad06f288c4f8ae0191fb086686bc2e58d}{idet\+\_\+fact}} (j1, j2, j3, j4)
+integer function \mbox{\hyperlink{group__bsr__breit_gad06f288c4f8ae0191fb086686bc2e58d}{idet\+\_\+fact}} (\mbox{\hyperlink{_d_b_s__core_8f90_adb1420ceddc2be1411560d4b4d3257e3}{j1}}, \mbox{\hyperlink{_d_b_s__core_8f90_a56cac856c78a3e6fe83db83b30cb6106}{j2}}, j3, j4)
 \item 
-subroutine \mbox{\hyperlink{group__bsr__breit_ga08b29fd46088b727c2a0580f5015adf0}{alloc\+\_\+boef}} (m)
+subroutine \mbox{\hyperlink{group__bsr__breit_ga08b29fd46088b727c2a0580f5015adf0}{alloc\+\_\+boef}} (\mbox{\hyperlink{_b_s_2splin3_8f90_a599fed65f96e49980db577206ec1e670}{m}})
 \begin{DoxyCompactList}\small\item\em allocate/deallocate arrays in module boef \end{DoxyCompactList}\item 
-subroutine \mbox{\hyperlink{group__bsr__breit_gab8aabe3fc9050b496cd33ef9787c8e61}{alloc\+\_\+blk}} (m)
+subroutine \mbox{\hyperlink{group__bsr__breit_gab8aabe3fc9050b496cd33ef9787c8e61}{alloc\+\_\+blk}} (\mbox{\hyperlink{_b_s_2splin3_8f90_a599fed65f96e49980db577206ec1e670}{m}})
 \begin{DoxyCompactList}\small\item\em allocate/deallocate \textquotesingle{}block\textquotesingle{} arrays in module boef \end{DoxyCompactList}\item 
-subroutine \mbox{\hyperlink{group__bsr__breit_gaac13d62ee5dbbd6fc76f61f18f6743f8}{iadd\+\_\+boef}} (C, int)
+subroutine \mbox{\hyperlink{group__bsr__breit_gaac13d62ee5dbbd6fc76f61f18f6743f8}{iadd\+\_\+boef}} (C, \mbox{\hyperlink{_d_b_s__core_8f90_a5f2233dd7c5228eee73ceaf187fe9ea8}{int}})
 \begin{DoxyCompactList}\small\item\em add new integral to the list \textquotesingle{}boef\textquotesingle{} (in the range of new block\+: jboef-\/nboef) \end{DoxyCompactList}\item 
 subroutine \mbox{\hyperlink{group__bsr__breit_ga99d30b6ca6dc72895db4aeebc25390a1}{check\+\_\+boef}} (l1, m1, s1, l2, m2, s2, l3, m3, s3, l4, m4, s4)
 \item 
@@ -56,9 +56,9 @@ subroutine \mbox{\hyperlink{group__bsr__breit_ga64c8e773d2204a5b28a90dff05d699cd
 \item 
 subroutine \mbox{\hyperlink{group__bsr__breit_ga892c4e4d2f503e1e96af3f2f1ee46739}{alloc\+\_\+spin\+\_\+orbitals}} (ne)
 \begin{DoxyCompactList}\small\item\em allocate arrays in module spin-\/orbitals \end{DoxyCompactList}\item 
-subroutine \mbox{\hyperlink{group__bsr__breit_ga38828094cda4639f3677cf37606ea45b}{alloc\+\_\+zoef}} (m)
+subroutine \mbox{\hyperlink{group__bsr__breit_ga38828094cda4639f3677cf37606ea45b}{alloc\+\_\+zoef}} (\mbox{\hyperlink{_b_s_2splin3_8f90_a599fed65f96e49980db577206ec1e670}{m}})
 \begin{DoxyCompactList}\small\item\em allocate arrays in module zoef \end{DoxyCompactList}\item 
-subroutine \mbox{\hyperlink{group__bsr__breit_ga7146bb032f717633b21e42c67a625c1c}{iadd\+\_\+zoef}} (C, int, idf)
+subroutine \mbox{\hyperlink{group__bsr__breit_ga7146bb032f717633b21e42c67a625c1c}{iadd\+\_\+zoef}} (C, \mbox{\hyperlink{_d_b_s__core_8f90_a5f2233dd7c5228eee73ceaf187fe9ea8}{int}}, idf)
 \begin{DoxyCompactList}\small\item\em add new integral to the list \textquotesingle{}zoef\textquotesingle{} \end{DoxyCompactList}\item 
 subroutine \mbox{\hyperlink{group__bsr__breit_ga2a93524886ea8debe392f17df7f605d8}{open\+\_\+br}} (nu, klsp)
 \begin{DoxyCompactList}\small\item\em open (close) files in the breit\+\_\+bsr program \end{DoxyCompactList}\item 
@@ -76,13 +76,13 @@ subroutine \mbox{\hyperlink{group__bsr__breit_ga1abb9e028adc1aa972d64a0f301125ca
 \item 
 subroutine \mbox{\hyperlink{group__bsr__breit_gaf72db8ac85f9b47521d2b5afadab475c}{zno\+\_\+1ee}}
 \item 
-subroutine \mbox{\hyperlink{group__bsr__breit_gaf82b77a3aae5a49ff88ad3ded443e84e}{zno\+\_\+2ee}} (i1, i2, j1, j2)
+subroutine \mbox{\hyperlink{group__bsr__breit_gaf82b77a3aae5a49ff88ad3ded443e84e}{zno\+\_\+2ee}} (\mbox{\hyperlink{_d_b_s__core_8f90_af963619ce97fcda891257c2a296fc0b9}{i1}}, \mbox{\hyperlink{_d_b_s__core_8f90_a5f589bc83e55eecc5b1c372de3376ea9}{i2}}, \mbox{\hyperlink{_d_b_s__core_8f90_adb1420ceddc2be1411560d4b4d3257e3}{j1}}, \mbox{\hyperlink{_d_b_s__core_8f90_a56cac856c78a3e6fe83db83b30cb6106}{j2}})
 \item 
-subroutine \mbox{\hyperlink{group__bsr__breit_gab17c65591027657ae45f2a47966913b8}{jsym\+\_\+int}} (icase, j1, j2, j3, j4)
+subroutine \mbox{\hyperlink{group__bsr__breit_gab17c65591027657ae45f2a47966913b8}{jsym\+\_\+int}} (icase, \mbox{\hyperlink{_d_b_s__core_8f90_adb1420ceddc2be1411560d4b4d3257e3}{j1}}, \mbox{\hyperlink{_d_b_s__core_8f90_a56cac856c78a3e6fe83db83b30cb6106}{j2}}, j3, j4)
 \begin{DoxyCompactList}\small\item\em define \char`\"{}canonical\char`\"{} form of integral \end{DoxyCompactList}\item 
 subroutine \mbox{\hyperlink{group__bsr__breit_ga8c8fc4fd5c2adc652c70a905a1bfd59d}{zno\+\_\+breit}} (no1, l1, m1, ms1, no2, l2, m2, ms2, no3, l3, m3, ms3, no4, l4, m4, ms4, ide)
 \item 
-subroutine \mbox{\hyperlink{group__bsr__breit_gab26be6e61b1b57669041b58ac44b0abf}{add\+\_\+ci}} (C, met, k, j1, j2, j3, j4)
+subroutine \mbox{\hyperlink{group__bsr__breit_gab26be6e61b1b57669041b58ac44b0abf}{add\+\_\+ci}} (C, met, \mbox{\hyperlink{_d_b_s__core_8f90_af22c486581933c52df7d4aa306382074}{k}}, \mbox{\hyperlink{_d_b_s__core_8f90_adb1420ceddc2be1411560d4b4d3257e3}{j1}}, \mbox{\hyperlink{_d_b_s__core_8f90_a56cac856c78a3e6fe83db83b30cb6106}{j2}}, j3, j4)
 \begin{DoxyCompactList}\small\item\em control the recording of one resulting integral \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}

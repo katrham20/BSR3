@@ -1,7 +1,9 @@
 !======================================================================
       Subroutine br_bsorb
 !======================================================================
-!     broadcast data from  module spline_orbitals
+!> @addtogroup bsr_mpi_lib BSR_MPI_LIB
+!> @ingroup libraries
+!> @brief     broadcast data from  module spline_orbitals
 !======================================================================
       Use MPI
       Use spline_orbitals

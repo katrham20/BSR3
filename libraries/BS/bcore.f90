@@ -1,7 +1,8 @@
 !======================================================================
       Subroutine BCORE
 !======================================================================
-!     COMPUTES THE ENERGY OF THE COMMON CLOSED SHELLS  (CORE)
+!> @ingroup bs
+!> @brief     COMPUTES THE ENERGY OF THE COMMON CLOSED SHELLS  (CORE)
 !----------------------------------------------------------------------
       Use spline_atomic, nclosd => kclosd
       Use spline_orbitals, L => LBS

@@ -14,7 +14,7 @@ real(8) function \mbox{\hyperlink{_d_b_s__nuclear_8f90_ae8d132c0fa74869262282202
 \item 
 real(8) function \mbox{\hyperlink{_d_b_s__nuclear_8f90_a57c7dd7f93ee951d8750cd5cf4032f7f}{v\+\_\+nuclear}} (r)
 \item 
-real(8) function \mbox{\hyperlink{_d_b_s__nuclear_8f90_ab59a43c7059b7edf5eec05bb6edce17a}{skfun}} (k, x)
+real(8) function \mbox{\hyperlink{_d_b_s__nuclear_8f90_ab59a43c7059b7edf5eec05bb6edce17a}{skfun}} (\mbox{\hyperlink{_d_b_s__core_8f90_af22c486581933c52df7d4aa306382074}{k}}, \mbox{\hyperlink{_b_s_2splin3_8f90_a4350387a0c7eb5a41421ee777828c135}{x}})
 \item 
 real(8) function \mbox{\hyperlink{_d_b_s__nuclear_8f90_ae0b89a0990f0b56c9ecd7b12d0fc8658}{estrms}} (A\+P\+A\+RM, C\+P\+A\+RM)
 \item 
@@ -23,25 +23,25 @@ subroutine \mbox{\hyperlink{_d_b_s__nuclear_8f90_a13fff56f97149456c3c0f3a448da83
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-real(8) \mbox{\hyperlink{namespacedbs__nuclear_a784f742fb8e3ab00947e46256dc64fac}{dbs\+\_\+nuclear\+::atomic\+\_\+number}} = zero
+real(8) \mbox{\hyperlink{namespacedbs__nuclear_a784f742fb8e3ab00947e46256dc64fac}{dbs\+\_\+nuclear\+::atomic\+\_\+number}} = \mbox{\hyperlink{_d_b_s__core_8f90_a28ef6bb056fb1caf48696e8979882b5c}{zero}}
 \item 
-real(8) \mbox{\hyperlink{namespacedbs__nuclear_a6b8d9304b7e23663a49d6ac72abf552e}{dbs\+\_\+nuclear\+::atomic\+\_\+weight}} = zero
+real(8) \mbox{\hyperlink{namespacedbs__nuclear_a6b8d9304b7e23663a49d6ac72abf552e}{dbs\+\_\+nuclear\+::atomic\+\_\+weight}} = \mbox{\hyperlink{_d_b_s__core_8f90_a28ef6bb056fb1caf48696e8979882b5c}{zero}}
 \item 
 character(20) \mbox{\hyperlink{namespacedbs__nuclear_a6d986d5abed12c240dd5b73cdbdcc0dd}{dbs\+\_\+nuclear\+::nuclear}} = \textquotesingle{}Fermi\textquotesingle{}
 \item 
-real(8) \mbox{\hyperlink{namespacedbs__nuclear_a756d6fe84c2e943debfca475fdab581b}{dbs\+\_\+nuclear\+::r\+\_\+uniform}} = zero
+real(8) \mbox{\hyperlink{namespacedbs__nuclear_a756d6fe84c2e943debfca475fdab581b}{dbs\+\_\+nuclear\+::r\+\_\+uniform}} = \mbox{\hyperlink{_d_b_s__core_8f90_a28ef6bb056fb1caf48696e8979882b5c}{zero}}
 \item 
-real(8) \mbox{\hyperlink{namespacedbs__nuclear_ad1b4b686dfa69da9bb89e94299f26b33}{dbs\+\_\+nuclear\+::ro\+\_\+uniform}} = zero
+real(8) \mbox{\hyperlink{namespacedbs__nuclear_ad1b4b686dfa69da9bb89e94299f26b33}{dbs\+\_\+nuclear\+::ro\+\_\+uniform}} = \mbox{\hyperlink{_d_b_s__core_8f90_a28ef6bb056fb1caf48696e8979882b5c}{zero}}
 \item 
-real(8) \mbox{\hyperlink{namespacedbs__nuclear_a9b441edf580675dfbda45c52456e7479}{dbs\+\_\+nuclear\+::a\+\_\+fermi}} = zero
+real(8) \mbox{\hyperlink{namespacedbs__nuclear_a9b441edf580675dfbda45c52456e7479}{dbs\+\_\+nuclear\+::a\+\_\+fermi}} = \mbox{\hyperlink{_d_b_s__core_8f90_a28ef6bb056fb1caf48696e8979882b5c}{zero}}
 \item 
-real(8) \mbox{\hyperlink{namespacedbs__nuclear_a81ec7cd4a4db2ca97b670cd93be49208}{dbs\+\_\+nuclear\+::c\+\_\+fermi}} = zero
+real(8) \mbox{\hyperlink{namespacedbs__nuclear_a81ec7cd4a4db2ca97b670cd93be49208}{dbs\+\_\+nuclear\+::c\+\_\+fermi}} = \mbox{\hyperlink{_d_b_s__core_8f90_a28ef6bb056fb1caf48696e8979882b5c}{zero}}
 \item 
 real(8) \mbox{\hyperlink{namespacedbs__nuclear_a51a8632a0ecbd2bb7a09be2a344d8a35}{dbs\+\_\+nuclear\+::t\+\_\+fermi}} = 2.\+30
 \item 
-real(8) \mbox{\hyperlink{namespacedbs__nuclear_a1ac833c86041c44f5971037276b453b2}{dbs\+\_\+nuclear\+::rrms}} = zero
+real(8) \mbox{\hyperlink{namespacedbs__nuclear_a1ac833c86041c44f5971037276b453b2}{dbs\+\_\+nuclear\+::rrms}} = \mbox{\hyperlink{_d_b_s__core_8f90_a28ef6bb056fb1caf48696e8979882b5c}{zero}}
 \item 
-real(8) \mbox{\hyperlink{namespacedbs__nuclear_a9c64a877762624dbdf2dcd65fe027732}{dbs\+\_\+nuclear\+::ro\+\_\+fermi}} = zero
+real(8) \mbox{\hyperlink{namespacedbs__nuclear_a9c64a877762624dbdf2dcd65fe027732}{dbs\+\_\+nuclear\+::ro\+\_\+fermi}} = \mbox{\hyperlink{_d_b_s__core_8f90_a28ef6bb056fb1caf48696e8979882b5c}{zero}}
 \item 
 real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__nuclear_a9900bee8325970c62bc026c03ace2810}{dbs\+\_\+nuclear\+::vr\+\_\+nucl}}
 \item 
@@ -51,11 +51,11 @@ real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__nuclear_
 \item 
 real(8), dimension(\+:,\+:), allocatable \mbox{\hyperlink{namespacedbs__nuclear_aabca48f302459da3a8c6f112b7b54498}{dbs\+\_\+nuclear\+::zr\+\_\+nucl}}
 \item 
-real(8) \mbox{\hyperlink{namespacedbs__nuclear_aee584044a506e093c1f0865fe96d1023}{dbs\+\_\+nuclear\+::i\+\_\+nuclear}} = zero
+real(8) \mbox{\hyperlink{namespacedbs__nuclear_aee584044a506e093c1f0865fe96d1023}{dbs\+\_\+nuclear\+::i\+\_\+nuclear}} = \mbox{\hyperlink{_d_b_s__core_8f90_a28ef6bb056fb1caf48696e8979882b5c}{zero}}
 \item 
-real(8) \mbox{\hyperlink{namespacedbs__nuclear_a94f38fa190895f7f150c24cf45319e3f}{dbs\+\_\+nuclear\+::d\+\_\+nuclear}} = zero
+real(8) \mbox{\hyperlink{namespacedbs__nuclear_a94f38fa190895f7f150c24cf45319e3f}{dbs\+\_\+nuclear\+::d\+\_\+nuclear}} = \mbox{\hyperlink{_d_b_s__core_8f90_a28ef6bb056fb1caf48696e8979882b5c}{zero}}
 \item 
-real(8) \mbox{\hyperlink{namespacedbs__nuclear_aeef5cca2bfffc3668d153a3a0796bceb}{dbs\+\_\+nuclear\+::q\+\_\+nuclear}} = zero
+real(8) \mbox{\hyperlink{namespacedbs__nuclear_aeef5cca2bfffc3668d153a3a0796bceb}{dbs\+\_\+nuclear\+::q\+\_\+nuclear}} = \mbox{\hyperlink{_d_b_s__core_8f90_a28ef6bb056fb1caf48696e8979882b5c}{zero}}
 \end{DoxyCompactItemize}
 
 

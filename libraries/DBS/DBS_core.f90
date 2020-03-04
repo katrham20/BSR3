@@ -1,6 +1,8 @@
 !======================================================================
       Real(8) Function DBS_core_pq (nclosed,mbreit)
 !======================================================================
+!> @addtogroup dbs DBS
+!> @ingroup libraries
 !     computes the energy of the common closed shells (called as core);
 !     core is supposed to have "nclosed" shells in exact correspondence
 !     with first "nclosed" orbitals in module DBS_orbitals_pq.

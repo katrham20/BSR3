@@ -209,6 +209,6 @@ var searchData=
   ['ayk_252',['ayk',['../namespaceradial.html#a1e577cc70fca9814191dc682029cb0a7',1,'radial']]],
   ['az_253',['az',['../namespaceradial.html#aa2c736b7cf6e413c56450a2b816fca3f',1,'radial']]],
   ['azk_254',['azk',['../namespaceradial.html#a8da210606749d4c6b0119fca8361755f',1,'radial']]],
-  ['azl_255',['azl',['../azl_8f90.html#a5751800ff7de4eefa42b29aed649930f',1,'azl.f90']]],
+  ['azl_255',['azl',['../group__bs.html#ga5751800ff7de4eefa42b29aed649930f',1,'azl.f90']]],
   ['azl_2ef90_256',['azl.f90',['../azl_8f90.html',1,'']]]
 ];
