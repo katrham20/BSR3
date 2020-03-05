@@ -1,5 +1,6 @@
 !=======================================================================
-!     Processing the photoionization data in bsr_phot.nnn files
+!> @ingroup utilities
+!> @brief     Processing the photoionization data in bsr_phot.nnn files
 !=======================================================================
       Use target; Use channels
 

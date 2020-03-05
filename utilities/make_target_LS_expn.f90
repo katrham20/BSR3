@@ -1,7 +1,8 @@
 !----------------------------------------------------------------------
-!     make target_LS_expn  using information in the end of c-file
-!     (see npert =  flag)
-!     this information if any is created by 'bound_bsw' program 
+!> @ingroup utilities
+!> @brief     make target_LS_expn  using information in the end of c-file
+!!     (see npert =  flag)
+!!     this information if any is created by 'bound_bsw' program 
 !----------------------------------------------------------------------
       Use target
 

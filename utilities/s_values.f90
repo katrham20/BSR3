@@ -1,10 +1,10 @@
 !=======================================================================
 !     Program s-values 
 !=======================================================================
-!     generate the oscillator strengths (dipole only !?) 
-!     based on the asymptotic coefficients saved in the H.DAT file
-!
-!     target,  H.DAT   ->   s_values,  s_values_###
+!> @ingroup utilities
+!> @brief     generate the oscillator strengths (dipole only !?) 
+!>     based on the asymptotic coefficients saved in the H.DAT file
+!>     target,  H.DAT   ->   s_values,  s_values_###
 !-----------------------------------------------------------------------
       Use target
       Use channels

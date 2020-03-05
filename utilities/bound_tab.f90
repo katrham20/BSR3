@@ -1,5 +1,6 @@
 !--------------------------------------------------------------------
-!     bound.nnn  -->  bound_tab - list of states
+!> @ingroup utilities
+!> @brief     bound.nnn  -->  bound_tab - list of states
 !--------------------------------------------------------------------
 
       Implicit real(8) (A-H,O-Z)

@@ -1,5 +1,6 @@
 !======================================================================
-!     Test Coulomb integrals from the direct integration
+!> @ingroup utilities
+!> @brief     Test Coulomb integrals from the direct integration
 !======================================================================
       Use spline_atomic, only: Z
       Use spline_param, only: hmax,rmax,ns

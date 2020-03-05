@@ -1,6 +1,7 @@
 !======================================================================
-!     zf_cc_bsr - utility for the f-value calculations 
-!                 between set of c-files
+!> @ingroup utilities
+!> @brief     zf_cc_bsr - utility for the f-value calculations 
+!>                 between set of c-files
 !======================================================================
 !
 !     INPUT:    zf_cc_bsr.inp

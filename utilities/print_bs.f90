@@ -1,8 +1,9 @@
 !======================================================================
     Program print_bs
 !======================================================================
-!   This utilty prints B-splines (in separate files bs_###)
-!   for given "knot.dat" 
+!> @ingroup utilities
+!> @brief   This utilty prints B-splines (in separate files bs_###)
+!>   for given "knot.dat" 
 !----------------------------------------------------------------------
     Use spline_atomic
     Use spline_param

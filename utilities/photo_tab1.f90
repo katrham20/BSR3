@@ -1,5 +1,6 @@
 !=======================================================================
-!     Processing the photoionization data
+!> @ingroup utilities
+!> @brief     Processing the photoionization data
 !=======================================================================
 
       Use target; Use channels

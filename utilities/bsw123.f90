@@ -1,8 +1,8 @@
 !=======================================================================
-!     merging the set of w-files with choice of orbitals and 
-!     with optional changing the spectroscopic notation
-! 
-!        1.bsw + 2.bsww + 3.bsw + ... --> res.bsw 
+!> @ingroup utilities
+!> @brief     merging the set of w-files with choice of orbitals and 
+!>     with optional changing the spectroscopic notation 
+!>        1.bsw + 2.bsww + 3.bsw + ... --> res.bsw 
 !
 !=======================================================================
       Use spline_param; Use spline_atomic; Use spline_grid

@@ -25,7 +25,12 @@ var menudata={children:[
 {text:"Programs",url:"usergroup0.html",children:[
 {text:"BSR_PREP",url:"group__bsr__prep.html"},
 {text:"BSR_CONF",url:"group__bsr__conf.html"},
-{text:"BSR_BREIT",url:"group__bsr__breit.html"}]},
+{text:"BSR_BREIT",url:"group__bsr__breit.html"},
+{text:"BSR_MAT",url:"group__bsr__mat.html"},
+{text:"BSR_HD",url:"group__bsr__hd.html"},
+{text:"BSR_DMAT",url:"group__bsr__dmat.html"},
+{text:"BSR_POL",url:"group__bsr__pol.html"},
+{text:"BSR_PHOT",url:"group__bsr__phot.html"}]},
 {text:"Libraries",url:"usergroup1.html",children:[
 {text:"BS",url:"group__bs.html"},
 {text:"DBS",url:"group__dbs.html"},

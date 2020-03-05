@@ -1,6 +1,7 @@
 !======================================================================
-!  zf_bb_bsr - utility for the f-value calculations between states in
-!  bound.nnn files
+!> @ingroup utilities
+!> @brief  zf_bb_bsr - utility for the f-value calculations between states in
+!>  bound.nnn files
 !======================================================================
 !
 !     INPUT:    zf_bb.inp

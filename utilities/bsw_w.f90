@@ -5,7 +5,8 @@
 !
 !     Written by:   Oleg Zatsarinny
 !======================================================================
-!     connvert the B-spline results in the MCHF format
+!> @ingroup utilities
+!> @brief     connvert the B-spline results in the MCHF format
 !======================================================================
 !     INPUT FILES:   name.bsw
 !     OUTPUT FILES:  name.w

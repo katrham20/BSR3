@@ -1,5 +1,6 @@
 !======================================================================
-!  dd_bsr - utility for the dipole files between states in rsol.nnn files
+!> @ingroup utilities
+!> @brief  dd_bsr - utility for the dipole files between states in rsol.nnn files
 !======================================================================
 !
 !     OUTPUT:   dd_nnn_mmm

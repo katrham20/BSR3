@@ -1,4 +1,5 @@
 !----------------------------------------------------------------------
+!> @ingroup utilities
 !     target, thresholds --> target_states
 !     provide information about target states and exp. thresholds
 !     put E_exp in the target states

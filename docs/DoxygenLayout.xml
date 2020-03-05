@@ -13,6 +13,11 @@
       <tab type="user" url="@ref bsr_prep" title="BSR_PREP"/>
       <tab type="user" url="@ref bsr_conf" title="BSR_CONF"/>
       <tab type="user" url="@ref bsr_breit" title="BSR_BREIT"/>
+      <tab type="user" url="@ref bsr_mat" title="BSR_MAT"/>
+      <tab type="user" url="@ref bsr_hd" title="BSR_HD"/>
+      <tab type="user" url="@ref bsr_dmat" title="BSR_DMAT"/>
+      <tab type="user" url="@ref bsr_pol" title="BSR_POL"/>
+      <tab type="user" url="@ref bsr_phot" title="BSR_PHOT"/>
     </tab>
     <tab type="usergroup" title="Libraries">
       <tab type="user" url="@ref bs" title="BS"/>

@@ -1,5 +1,6 @@
 !======================================================================
-!     UTILITY   P H O T O _ C O L L E C T
+!> @ingroup utilities
+!> @brief     UTILITY   P H O T O _ C O L L E C T
 !=====================================================================
  
       IMPLICIT REAL(8) (A-H,O-Z)

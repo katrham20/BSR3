@@ -1,5 +1,6 @@
 !======================================================================
-!     Utility program   divide_bnk:   int_bnk -> int_inf + int_int
+!> @ingroup utilities
+!> @brief     Utility program   divide_bnk:   int_bnk -> int_inf + int_int
 !======================================================================
       Use symc_list_LS
       Use symt_list_LS

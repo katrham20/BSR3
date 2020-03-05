@@ -1,5 +1,6 @@
 !----------------------------------------------------------------------
-!     define  thresholds.### if any
+!> @ingroup utilities
+!> @brief     define  thresholds.### if any
 !----------------------------------------------------------------------
       Implicit real(8) (A-H,O-Z)
 

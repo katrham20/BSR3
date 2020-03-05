@@ -1,5 +1,6 @@
 !======================================================================
-!     Convert c-file to unformated form
+!> @ingroup utilities
+!> @brief     Convert c-file to unformated form
 !======================================================================
       Use symc_list_LS
       Use symt_list_LS

@@ -1,5 +1,6 @@
 !--------------------------------------------------------------------
-!     w.nnn  -->  bound_ovl - list of ion-target weights
+!> @ingroup utilities
+!> @brief     w.nnn  -->  bound_ovl - list of ion-target weights
 !--------------------------------------------------------------------
       Use target
       Use channels

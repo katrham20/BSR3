@@ -1,8 +1,9 @@
 !=========================================================================
       Program bs_hwf
 !=========================================================================
-!     This utility provides hydrogen-like bound and continuum pseudo-state 
-!     on the given B-spline basis (with output in BSR format)
+!> @ingroup utilities
+!> @brief     This utility provides hydrogen-like bound and continuum pseudo-state 
+!>     on the given B-spline basis (with output in BSR format)
 !-------------------------------------------------------------------------
       Use spline_atomic
       Use spline_param

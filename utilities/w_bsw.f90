@@ -7,8 +7,9 @@
 !                   free shooter
 !                   email: oleg_zoi@yahoo.com
 !======================================================================
-!     Generation B-spline representation for orbitals 
-!     given in MCHF package format, w-files (C. Froese Fisher)
+!> @ingroup utilities
+!> @brief     Generation B-spline representation for orbitals 
+!>     given in MCHF package format, w-files (C. Froese Fisher)
 !----------------------------------------------------------------------
 !
 !     INPUT ARGUMENTS:

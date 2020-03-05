@@ -6,7 +6,8 @@
 !     Written by:   Oleg Zatsarinny 
 !                   email: oleg_zoi@yahoo.com
 !======================================================================
-!    prepare determinats expansions for the given c-files
+!> @ingroup utilities
+!> @brief    prepare determinats expansions for the given c-files
 !----------------------------------------------------------------------
 !
 !    INPUT ARGUMENTS:
